@@ -1,20 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/widgets/buttons/app_button.dart';
+import '../controllers/settings_controller.dart';
 
 /// PIN setup/change page for parental controls
 /// From Issue #3 - Navigation & Routing
-class ParentalPinPage extends StatefulWidget {
+/// Updated in Issue #9 - Parental Controls & Settings
+class ParentalPinPage extends ConsumerStatefulWidget {
   const ParentalPinPage({super.key});
 
   @override
-  State<ParentalPinPage> createState() => _ParentalPinPageState();
+  ConsumerState<ParentalPinPage> createState() => _ParentalPinPageState();
 }
 
-class _ParentalPinPageState extends State<ParentalPinPage> {
+class _ParentalPinPageState extends ConsumerState<ParentalPinPage> {
   final _pinController = TextEditingController();
   final _confirmPinController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
@@ -36,22 +39,42 @@ class _ParentalPinPageState extends State<ParentalPinPage> {
       _error = null;
     });
 
-    // Simulate saving
-    await Future.delayed(const Duration(seconds: 1));
+    try {
+      final success = await ref
+          .read(settingsControllerProvider.notifier)
+          .setParentalPin(_pinController.text);
 
-    if (mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('PIN saved successfully')),
-      );
-      Navigator.of(context).pop();
+      if (mounted) {
+        if (success) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('PIN saved successfully')),
+          );
+          Navigator.of(context).pop();
+        } else {
+          setState(() {
+            _error = 'Failed to save PIN. Please try again.';
+            _isLoading = false;
+          });
+        }
+      }
+    } catch (e) {
+      if (mounted) {
+        setState(() {
+          _error = e.toString();
+          _isLoading = false;
+        });
+      }
     }
   }
 
   @override
   Widget build(BuildContext context) {
+    final settingsState = ref.watch(settingsControllerProvider);
+    final hasExistingPin = settingsState.hasParentalPin;
+
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Set PIN'),
+        title: Text(hasExistingPin ? 'Change PIN' : 'Set PIN'),
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(Spacing.lg),
@@ -105,6 +128,11 @@ class _ParentalPinPageState extends State<ParentalPinPage> {
                   if (value == null || value.length != 4) {
                     return 'Please enter a 4-digit PIN';
                   }
+                  // Check for common weak PINs
+                  final weakPins = ['0000', '1234', '1111', '2222', '3333', '4444', '5555', '6666', '7777', '8888', '9999'];
+                  if (weakPins.contains(value)) {
+                    return 'Please choose a stronger PIN';
+                  }
                   return null;
                 },
               ),
@@ -147,7 +175,7 @@ class _ParentalPinPageState extends State<ParentalPinPage> {
                   ),
                   child: Text(
                     _error!,
-                    style: TextStyle(color: AppColors.error),
+                    style: const TextStyle(color: AppColors.error),
                     textAlign: TextAlign.center,
                   ),
                 ),
@@ -156,13 +184,54 @@ class _ParentalPinPageState extends State<ParentalPinPage> {
 
               // Save button
               AppButton(
-                text: 'Save PIN',
+                text: hasExistingPin ? 'Update PIN' : 'Set PIN',
                 onPressed: _savePin,
                 isLoading: _isLoading,
               ),
+
+              // Remove PIN option (if has existing)
+              if (hasExistingPin) ...[
+                const SizedBox(height: Spacing.lg),
+                TextButton(
+                  onPressed: () => _showRemovePinDialog(context),
+                  style: TextButton.styleFrom(foregroundColor: AppColors.error),
+                  child: const Text('Remove PIN'),
+                ),
+              ],
             ],
           ),
         ),
+      ),
+    );
+  }
+
+  void _showRemovePinDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Remove PIN?'),
+        content: const Text(
+          'This will disable PIN protection for parental controls. '
+          'Anyone will be able to access these settings.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () {
+              ref.read(settingsControllerProvider.notifier).removeParentalPin();
+              Navigator.of(context).pop(); // Close dialog
+              Navigator.of(context).pop(); // Go back
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(content: Text('PIN removed')),
+              );
+            },
+            style: TextButton.styleFrom(foregroundColor: AppColors.error),
+            child: const Text('Remove'),
+          ),
+        ],
       ),
     );
   }
