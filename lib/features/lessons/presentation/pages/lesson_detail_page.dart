@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/router/app_routes.dart';
 import '../../../../core/widgets/buttons/app_button.dart';
+import '../../../bookmarks/data/repositories/bookmark_repository.dart';
 
 /// Lesson detail page with content options
 /// From Issue #3 - Navigation & Routing
-class LessonDetailPage extends StatelessWidget {
+/// Updated in Issue #8 - Bookmarks Feature
+class LessonDetailPage extends ConsumerWidget {
   const LessonDetailPage({
     required this.chapterId,
     required this.lessonId,
@@ -19,15 +22,38 @@ class LessonDetailPage extends StatelessWidget {
   final String lessonId;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    // Parse lesson ID for bookmark functionality
+    final parsedLessonId = int.tryParse(lessonId) ?? 0;
+
+    // Watch bookmark state
+    final isBookmarkedAsync = ref.watch(isLessonBookmarkedProvider(parsedLessonId));
+    final isBookmarked = isBookmarkedAsync.valueOrNull ?? false;
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Lesson'),
         actions: [
           IconButton(
-            icon: const Icon(Icons.bookmark_border),
-            onPressed: () {
-              // TODO: Add to bookmarks
+            icon: Icon(
+              isBookmarked ? Icons.bookmark : Icons.bookmark_border,
+              color: isBookmarked ? AppColors.secondary : null,
+            ),
+            onPressed: () async {
+              final repo = ref.read(bookmarkRepositoryProvider);
+              final wasBookmarked = await repo.toggleBookmark(parsedLessonId);
+              if (context.mounted) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text(
+                      wasBookmarked
+                          ? 'Added to bookmarks'
+                          : 'Removed from bookmarks',
+                    ),
+                    duration: const Duration(seconds: 2),
+                  ),
+                );
+              }
             },
           ),
         ],
@@ -132,6 +158,9 @@ class LessonDetailPage extends StatelessWidget {
               color: AppColors.secondary,
               onTap: () {
                 // TODO: Open audio player
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('Audio player coming soon!')),
+                );
               },
             ),
             const SizedBox(height: Spacing.md),
@@ -214,7 +243,7 @@ class _LessonOptionCard extends StatelessWidget {
                   ],
                 ),
               ),
-              Icon(
+              const Icon(
                 Icons.chevron_right,
                 color: AppColors.textHint,
               ),
