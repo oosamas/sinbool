@@ -2,7 +2,6 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 import '../../features/chapters/data/repositories/chapter_repository.dart';
 import '../../features/lessons/data/repositories/lesson_repository.dart';
-import '../database/database_provider.dart';
 
 part 'data_initialization_service.g.dart';
 
