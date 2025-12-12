@@ -1,0 +1,65 @@
+{
+  "@@locale": "en",
+  "appName": "Sinbool",
+  "welcomeMessage": "Welcome to Sinbool",
+  "continueReading": "Continue Reading",
+  "chapters": "Chapters",
+  "lessons": "Lessons",
+  "quiz": "Quiz",
+  "profile": "Profile",
+  "settings": "Settings",
+  "home": "Home",
+  "search": "Search",
+  "bookmarks": "Bookmarks",
+  "achievements": "Achievements",
+  "progress": "Progress",
+  "loading": "Loading...",
+  "retry": "Try Again",
+  "error": "Something went wrong",
+  "noInternet": "No internet connection",
+  "login": "Login",
+  "register": "Register",
+  "email": "Email",
+  "password": "Password",
+  "forgotPassword": "Forgot Password?",
+  "createAccount": "Create Account",
+  "alreadyHaveAccount": "Already have an account?",
+  "dontHaveAccount": "Don't have an account?",
+  "logout": "Logout",
+  "cancel": "Cancel",
+  "confirm": "Confirm",
+  "save": "Save",
+  "delete": "Delete",
+  "edit": "Edit",
+  "next": "Next",
+  "back": "Back",
+  "done": "Done",
+  "skip": "Skip",
+  "start": "Start",
+  "finish": "Finish",
+  "lessonComplete": "Lesson Complete!",
+  "quizScore": "Your Score: {score}%",
+  "@quizScore": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "minutesRead": "{count} min read",
+  "@minutesRead": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lessonsCompleted": "{count} lessons completed",
+  "@lessonsCompleted": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}

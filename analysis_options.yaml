@@ -1,0 +1,37 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  errors:
+    invalid_annotation_target: ignore
+  exclude:
+    - '**/*.g.dart'
+    - '**/*.freezed.dart'
+    - '**/*.gr.dart'
+
+linter:
+  rules:
+    - always_declare_return_types
+    - always_put_required_named_parameters_first
+    - avoid_print
+    - avoid_returning_null_for_future
+    - avoid_slow_async_io
+    - avoid_type_to_string
+    - avoid_void_async
+    - cancel_subscriptions
+    - close_sinks
+    - directives_ordering
+    - eol_at_end_of_file
+    - omit_local_variable_types
+    - prefer_const_constructors
+    - prefer_const_declarations
+    - prefer_final_in_for_each
+    - prefer_final_locals
+    - prefer_single_quotes
+    - require_trailing_commas
+    - sort_constructors_first
+    - sort_pub_dependencies
+    - type_annotate_public_apis
+    - unawaited_futures
+    - unnecessary_await_in_return
+    - unnecessary_lambdas
+    - unnecessary_parenthesis

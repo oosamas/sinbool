@@ -1,0 +1,65 @@
+{
+  "@@locale": "ar",
+  "appName": "سنبول",
+  "welcomeMessage": "مرحباً بكم في سنبول",
+  "continueReading": "متابعة القراءة",
+  "chapters": "الفصول",
+  "lessons": "الدروس",
+  "quiz": "اختبار",
+  "profile": "الملف الشخصي",
+  "settings": "الإعدادات",
+  "home": "الرئيسية",
+  "search": "بحث",
+  "bookmarks": "المحفوظات",
+  "achievements": "الإنجازات",
+  "progress": "التقدم",
+  "loading": "جاري التحميل...",
+  "retry": "حاول مرة أخرى",
+  "error": "حدث خطأ ما",
+  "noInternet": "لا يوجد اتصال بالإنترنت",
+  "login": "تسجيل الدخول",
+  "register": "إنشاء حساب",
+  "email": "البريد الإلكتروني",
+  "password": "كلمة المرور",
+  "forgotPassword": "نسيت كلمة المرور؟",
+  "createAccount": "إنشاء حساب جديد",
+  "alreadyHaveAccount": "لديك حساب بالفعل؟",
+  "dontHaveAccount": "ليس لديك حساب؟",
+  "logout": "تسجيل الخروج",
+  "cancel": "إلغاء",
+  "confirm": "تأكيد",
+  "save": "حفظ",
+  "delete": "حذف",
+  "edit": "تعديل",
+  "next": "التالي",
+  "back": "رجوع",
+  "done": "تم",
+  "skip": "تخطي",
+  "start": "ابدأ",
+  "finish": "إنهاء",
+  "lessonComplete": "تم إكمال الدرس!",
+  "quizScore": "نتيجتك: {score}٪",
+  "@quizScore": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "minutesRead": "{count} دقيقة للقراءة",
+  "@minutesRead": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lessonsCompleted": "{count} دروس مكتملة",
+  "@lessonsCompleted": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
