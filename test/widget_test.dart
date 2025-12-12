@@ -18,7 +18,7 @@ void main() {
     // Verify that the subtitle is displayed
     expect(find.text('Islamic Stories for Children'), findsOneWidget);
 
-    // Verify that the setup complete message is displayed
-    expect(find.textContaining('Project setup complete'), findsOneWidget);
+    // Verify that the design system complete message is displayed
+    expect(find.textContaining('Design System Complete'), findsOneWidget);
   });
 }

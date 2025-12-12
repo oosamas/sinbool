@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'core/constants/app_colors.dart';
 import 'core/constants/app_strings.dart';
+import 'core/theme/app_theme.dart';
 
 /// Root application widget
 class SinboolApp extends ConsumerWidget {
@@ -15,9 +15,9 @@ class SinboolApp extends ConsumerWidget {
       title: AppStrings.appName,
       debugShowCheckedModeBanner: false,
 
-      // Theme
-      theme: _buildLightTheme(),
-      darkTheme: _buildDarkTheme(),
+      // Theme - using centralized AppTheme
+      theme: AppTheme.light,
+      darkTheme: AppTheme.dark,
       themeMode: ThemeMode.system,
 
       // Localization
@@ -37,125 +37,6 @@ class SinboolApp extends ConsumerWidget {
 
       // Initial route - will be replaced with go_router
       home: const _PlaceholderHome(),
-    );
-  }
-
-  ThemeData _buildLightTheme() {
-    return ThemeData(
-      useMaterial3: true,
-      brightness: Brightness.light,
-      colorScheme: ColorScheme.fromSeed(
-        seedColor: AppColors.primary,
-        brightness: Brightness.light,
-        primary: AppColors.primary,
-        secondary: AppColors.secondary,
-        surface: AppColors.surface,
-        error: AppColors.error,
-      ),
-      scaffoldBackgroundColor: AppColors.background,
-      appBarTheme: const AppBarTheme(
-        backgroundColor: AppColors.primary,
-        foregroundColor: AppColors.textOnPrimary,
-        elevation: 0,
-        centerTitle: true,
-      ),
-      elevatedButtonTheme: ElevatedButtonThemeData(
-        style: ElevatedButton.styleFrom(
-          backgroundColor: AppColors.primary,
-          foregroundColor: AppColors.textOnPrimary,
-          minimumSize: const Size(double.infinity, 48),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
-          ),
-        ),
-      ),
-      outlinedButtonTheme: OutlinedButtonThemeData(
-        style: OutlinedButton.styleFrom(
-          foregroundColor: AppColors.primary,
-          minimumSize: const Size(double.infinity, 48),
-          side: const BorderSide(color: AppColors.primary),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
-          ),
-        ),
-      ),
-      textButtonTheme: TextButtonThemeData(
-        style: TextButton.styleFrom(
-          foregroundColor: AppColors.primary,
-        ),
-      ),
-      inputDecorationTheme: InputDecorationTheme(
-        filled: true,
-        fillColor: AppColors.surfaceVariant,
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide.none,
-        ),
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide.none,
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(color: AppColors.primary, width: 2),
-        ),
-        errorBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(color: AppColors.error),
-        ),
-        contentPadding: const EdgeInsets.symmetric(
-          horizontal: 16,
-          vertical: 16,
-        ),
-      ),
-      cardTheme: CardThemeData(
-        elevation: 2,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(16),
-        ),
-        color: AppColors.surface,
-      ),
-      // fontFamily: 'Poppins', // Will be added in Issue #2
-    );
-  }
-
-  ThemeData _buildDarkTheme() {
-    return ThemeData(
-      useMaterial3: true,
-      brightness: Brightness.dark,
-      colorScheme: ColorScheme.fromSeed(
-        seedColor: AppColors.primary,
-        brightness: Brightness.dark,
-        primary: AppColors.primaryLight,
-        secondary: AppColors.secondary,
-        surface: AppColors.darkSurface,
-        error: AppColors.error,
-      ),
-      scaffoldBackgroundColor: AppColors.darkBackground,
-      appBarTheme: const AppBarTheme(
-        backgroundColor: AppColors.darkSurface,
-        foregroundColor: AppColors.darkTextPrimary,
-        elevation: 0,
-        centerTitle: true,
-      ),
-      elevatedButtonTheme: ElevatedButtonThemeData(
-        style: ElevatedButton.styleFrom(
-          backgroundColor: AppColors.primaryLight,
-          foregroundColor: AppColors.textOnPrimary,
-          minimumSize: const Size(double.infinity, 48),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
-          ),
-        ),
-      ),
-      cardTheme: CardThemeData(
-        elevation: 2,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(16),
-        ),
-        color: AppColors.darkSurface,
-      ),
-      // fontFamily: 'Poppins', // Will be added in Issue #2
     );
   }
 }
@@ -199,7 +80,7 @@ class _PlaceholderHome extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 32),
               child: Text(
-                'Project setup complete!\nProceeding to Issue #2: Design System',
+                'Design System Complete!\nFonts: Poppins & Amiri loaded',
                 textAlign: TextAlign.center,
               ),
             ),
