@@ -119,6 +119,7 @@ class StoryCardHorizontal extends StatelessWidget {
     this.subtitle,
     this.imageUrl,
     this.width = 160,
+    this.progress,
   });
 
   final String title;
@@ -126,6 +127,7 @@ class StoryCardHorizontal extends StatelessWidget {
   final VoidCallback onTap;
   final String? imageUrl;
   final double width;
+  final double? progress;
 
   @override
   Widget build(BuildContext context) {
@@ -184,6 +186,20 @@ class StoryCardHorizontal extends StatelessWidget {
                             ),
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
+                      ),
+                    ],
+                    if (progress != null) ...[
+                      const SizedBox(height: Spacing.sm),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(2),
+                        child: LinearProgressIndicator(
+                          value: progress,
+                          minHeight: 4,
+                          backgroundColor: AppColors.surfaceVariant,
+                          valueColor: const AlwaysStoppedAnimation<Color>(
+                            AppColors.primary,
+                          ),
+                        ),
                       ),
                     ],
                   ],
