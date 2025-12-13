@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "403072536070",
+    "project_id": "sinbool-6e4c3",
+    "storage_bucket": "sinbool-6e4c3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:403072536070:android:d17fda13a4e5b65990fd87",
+        "android_client_info": {
+          "package_name": "com.sinbool.sinbool"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATu6Je4C6qFfMUg00t8CEPdAyefX3zoAs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

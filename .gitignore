@@ -48,10 +48,12 @@ app.*.map.json
 android/key.properties
 android/*.keystore
 android/*.jks
-android/app/google-services.json
-ios/Runner/GoogleService-Info.plist
-ios/firebase_app_id_file.json
-lib/firebase_options.dart
+
+# Firebase config files (these contain API keys but are restricted to this app)
+# Uncomment below if you want to keep them private
+# android/app/google-services.json
+# ios/Runner/GoogleService-Info.plist
+# lib/firebase_options.dart
 
 # Environment files
 .env

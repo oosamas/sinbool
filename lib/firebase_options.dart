@@ -1,24 +1,17 @@
+// File generated based on Firebase configuration
+// Project: sinbool-6e4c3
+
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
 
-/// Default Firebase options for each platform.
-///
-/// To configure Firebase:
-/// 1. Go to https://console.firebase.google.com
-/// 2. Create a new project or select existing one
-/// 3. Add Android app with package name: com.sinbool.sinbool
-/// 4. Add iOS app with bundle ID: com.sinbool.sinbool
-/// 5. Download and add the configuration files:
-///    - Android: google-services.json to android/app/
-///    - iOS: GoogleService-Info.plist to ios/Runner/
-/// 6. Replace the placeholder values below with your Firebase config
-///
-/// Run: flutterfire configure (after installing FlutterFire CLI)
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      return web;
+      throw UnsupportedError(
+        'DefaultFirebaseOptions have not been configured for web - '
+        'you can reconfigure this by running the FlutterFire CLI again.',
+      );
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -26,9 +19,15 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
-        return windows;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for windows - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -41,51 +40,20 @@ class DefaultFirebaseOptions {
     }
   }
 
-  // TODO: Replace with your Firebase Web config
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'YOUR_WEB_API_KEY',
-    appId: 'YOUR_WEB_APP_ID',
-    messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
-    projectId: 'sinbool-app',
-    authDomain: 'sinbool-app.firebaseapp.com',
-    storageBucket: 'sinbool-app.appspot.com',
-  );
-
-  // TODO: Replace with your Firebase Android config
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'YOUR_ANDROID_API_KEY',
-    appId: 'YOUR_ANDROID_APP_ID',
-    messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
-    projectId: 'sinbool-app',
-    storageBucket: 'sinbool-app.appspot.com',
+    apiKey: 'AIzaSyATu6Je4C6qFfMUg00t8CEPdAyefX3zoAs',
+    appId: '1:403072536070:android:d17fda13a4e5b65990fd87',
+    messagingSenderId: '403072536070',
+    projectId: 'sinbool-6e4c3',
+    storageBucket: 'sinbool-6e4c3.firebasestorage.app',
   );
 
-  // TODO: Replace with your Firebase iOS config
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'YOUR_IOS_API_KEY',
-    appId: 'YOUR_IOS_APP_ID',
-    messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
-    projectId: 'sinbool-app',
-    storageBucket: 'sinbool-app.appspot.com',
+    apiKey: 'AIzaSyAiviviL7mX7p1BFBzJ83r_9XHu9V6UQYM',
+    appId: '1:403072536070:ios:40d493fb7d2b578690fd87',
+    messagingSenderId: '403072536070',
+    projectId: 'sinbool-6e4c3',
+    storageBucket: 'sinbool-6e4c3.firebasestorage.app',
     iosBundleId: 'com.sinbool.sinbool',
-  );
-
-  // TODO: Replace with your Firebase macOS config
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'YOUR_MACOS_API_KEY',
-    appId: 'YOUR_MACOS_APP_ID',
-    messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
-    projectId: 'sinbool-app',
-    storageBucket: 'sinbool-app.appspot.com',
-    iosBundleId: 'com.sinbool.sinbool',
-  );
-
-  // TODO: Replace with your Firebase Windows config
-  static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'YOUR_WINDOWS_API_KEY',
-    appId: 'YOUR_WINDOWS_APP_ID',
-    messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
-    projectId: 'sinbool-app',
-    storageBucket: 'sinbool-app.appspot.com',
   );
 }
