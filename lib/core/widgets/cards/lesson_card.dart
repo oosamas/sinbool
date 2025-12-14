@@ -17,6 +17,7 @@ class LessonCard extends StatelessWidget {
     this.hasAudio = false,
     this.hasQuiz = false,
     this.thumbnailUrl,
+    this.trailing,
   });
 
   final String title;
@@ -28,13 +29,14 @@ class LessonCard extends StatelessWidget {
   final bool hasAudio;
   final bool hasQuiz;
   final String? thumbnailUrl;
+  final Widget? trailing;
 
   @override
   Widget build(BuildContext context) {
     return Card(
       child: InkWell(
         onTap: isLocked ? null : onTap,
-        borderRadius: BorderRadius.circular(Radius.lg),
+        borderRadius: BorderRadius.circular(AppRadius.lg),
         child: Padding(
           padding: const EdgeInsets.all(Spacing.md),
           child: Row(
@@ -45,7 +47,7 @@ class LessonCard extends StatelessWidget {
                 height: 80,
                 decoration: BoxDecoration(
                   color: AppColors.surfaceVariant,
-                  borderRadius: BorderRadius.circular(Radius.md),
+                  borderRadius: BorderRadius.circular(AppRadius.md),
                   image: thumbnailUrl != null
                       ? DecorationImage(
                           image: NetworkImage(thumbnailUrl!),
@@ -122,9 +124,9 @@ class LessonCard extends StatelessWidget {
                 ),
               ),
 
-              // Status icon
+              // Status icon or trailing widget
               const SizedBox(width: Spacing.sm),
-              _buildStatusIcon(),
+              trailing ?? _buildStatusIcon(),
             ],
           ),
         ),
@@ -187,7 +189,7 @@ class _FeatureChip extends StatelessWidget {
       ),
       decoration: BoxDecoration(
         color: AppColors.primary.withValues(alpha: 0.1),
-        borderRadius: BorderRadius.circular(Radius.sm),
+        borderRadius: BorderRadius.circular(AppRadius.sm),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,

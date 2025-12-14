@@ -188,7 +188,7 @@ class _BookmarkCard extends StatelessWidget {
         padding: const EdgeInsets.only(right: Spacing.lg),
         decoration: BoxDecoration(
           color: AppColors.error,
-          borderRadius: BorderRadius.circular(Radius.md),
+          borderRadius: BorderRadius.circular(AppRadius.md),
         ),
         child: const Icon(
           Icons.delete,

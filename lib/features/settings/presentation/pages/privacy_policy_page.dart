@@ -24,7 +24,7 @@ class PrivacyPolicyPage extends StatelessWidget {
               padding: const EdgeInsets.all(Spacing.md),
               decoration: BoxDecoration(
                 color: AppColors.success.withValues(alpha: 0.1),
-                borderRadius: BorderRadius.circular(Radius.md),
+                borderRadius: BorderRadius.circular(AppRadius.md),
                 border: Border.all(color: AppColors.success.withValues(alpha: 0.3)),
               ),
               child: Row(

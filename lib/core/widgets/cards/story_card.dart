@@ -72,7 +72,7 @@ class StoryCard extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: (tagColor ?? AppColors.primary)
                             .withValues(alpha: 0.15),
-                        borderRadius: BorderRadius.circular(Radius.sm),
+                        borderRadius: BorderRadius.circular(AppRadius.sm),
                       ),
                       child: Text(
                         tag!,

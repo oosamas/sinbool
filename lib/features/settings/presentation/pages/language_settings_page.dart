@@ -70,7 +70,7 @@ class _LanguageSettingsPageState extends State<LanguageSettingsPage> {
                           color: isSelected
                               ? AppColors.primary.withValues(alpha: 0.1)
                               : AppColors.surfaceVariant,
-                          borderRadius: BorderRadius.circular(Radius.md),
+                          borderRadius: BorderRadius.circular(AppRadius.md),
                         ),
                         child: Center(
                           child: Text(

@@ -116,7 +116,7 @@ class _ThemeOption extends StatelessWidget {
           color: isSelected
               ? AppColors.primary.withValues(alpha: 0.1)
               : AppColors.surfaceVariant,
-          borderRadius: BorderRadius.circular(Radius.md),
+          borderRadius: BorderRadius.circular(AppRadius.md),
         ),
         child: Icon(
           icon,
@@ -154,7 +154,7 @@ class _ThemePreviewCard extends StatelessWidget {
       height: 180,
       decoration: BoxDecoration(
         color: backgroundColor,
-        borderRadius: BorderRadius.circular(Radius.lg),
+        borderRadius: BorderRadius.circular(AppRadius.lg),
         border: Border.all(color: AppColors.surfaceVariant),
       ),
       padding: const EdgeInsets.all(Spacing.md),
@@ -166,7 +166,7 @@ class _ThemePreviewCard extends StatelessWidget {
             height: 24,
             decoration: BoxDecoration(
               color: accentColor,
-              borderRadius: BorderRadius.circular(Radius.sm),
+              borderRadius: BorderRadius.circular(AppRadius.sm),
             ),
           ),
           const SizedBox(height: Spacing.md),

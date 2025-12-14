@@ -168,12 +168,12 @@ class _QuizPageState extends State<QuizPage> {
                 padding: const EdgeInsets.only(bottom: Spacing.md),
                 child: InkWell(
                   onTap: () => _selectAnswer(index),
-                  borderRadius: BorderRadius.circular(Radius.lg),
+                  borderRadius: BorderRadius.circular(AppRadius.lg),
                   child: Container(
                     padding: const EdgeInsets.all(Spacing.md),
                     decoration: BoxDecoration(
                       color: backgroundColor ?? AppColors.surfaceVariant,
-                      borderRadius: BorderRadius.circular(Radius.lg),
+                      borderRadius: BorderRadius.circular(AppRadius.lg),
                       border: borderColor != null
                           ? Border.all(color: borderColor, width: 2)
                           : null,

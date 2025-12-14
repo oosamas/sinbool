@@ -36,7 +36,7 @@ class ChapterCard extends StatelessWidget {
     return Card(
       child: InkWell(
         onTap: onTap,
-        borderRadius: BorderRadius.circular(Radius.lg),
+        borderRadius: BorderRadius.circular(AppRadius.lg),
         child: Padding(
           padding: const EdgeInsets.all(Spacing.md),
           child: Row(
@@ -47,7 +47,7 @@ class ChapterCard extends StatelessWidget {
                 height: 64,
                 decoration: BoxDecoration(
                   color: cardColor.withValues(alpha: 0.15),
-                  borderRadius: BorderRadius.circular(Radius.md),
+                  borderRadius: BorderRadius.circular(AppRadius.md),
                 ),
                 child: Icon(
                   icon,
@@ -80,7 +80,7 @@ class ChapterCard extends StatelessWidget {
                             ),
                             decoration: BoxDecoration(
                               color: AppColors.secondary,
-                              borderRadius: BorderRadius.circular(Radius.sm),
+                              borderRadius: BorderRadius.circular(AppRadius.sm),
                             ),
                             child: const Icon(
                               Icons.star,
@@ -104,7 +104,7 @@ class ChapterCard extends StatelessWidget {
                       children: [
                         Expanded(
                           child: ClipRRect(
-                            borderRadius: BorderRadius.circular(Radius.full),
+                            borderRadius: BorderRadius.circular(AppRadius.full),
                             child: LinearProgressIndicator(
                               value: progress,
                               backgroundColor: cardColor.withValues(alpha: 0.2),

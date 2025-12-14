@@ -69,7 +69,7 @@ class LessonDetailPage extends ConsumerWidget {
               width: double.infinity,
               decoration: BoxDecoration(
                 color: AppColors.primary.withValues(alpha: 0.1),
-                borderRadius: BorderRadius.circular(Radius.lg),
+                borderRadius: BorderRadius.circular(AppRadius.lg),
               ),
               child: const Center(
                 child: Icon(
@@ -211,7 +211,7 @@ class _LessonOptionCard extends StatelessWidget {
     return Card(
       child: InkWell(
         onTap: onTap,
-        borderRadius: BorderRadius.circular(Radius.lg),
+        borderRadius: BorderRadius.circular(AppRadius.lg),
         child: Padding(
           padding: const EdgeInsets.all(Spacing.md),
           child: Row(
@@ -221,7 +221,7 @@ class _LessonOptionCard extends StatelessWidget {
                 height: 56,
                 decoration: BoxDecoration(
                   color: color.withValues(alpha: 0.15),
-                  borderRadius: BorderRadius.circular(Radius.md),
+                  borderRadius: BorderRadius.circular(AppRadius.md),
                 ),
                 child: Icon(icon, color: color, size: 28),
               ),

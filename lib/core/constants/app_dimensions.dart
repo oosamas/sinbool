@@ -12,8 +12,8 @@ class Spacing {
 }
 
 /// Border radius constants for consistent rounded corners
-class Radius {
-  Radius._();
+class AppRadius {
+  AppRadius._();
 
   static const double sm = 4;
   static const double md = 8;

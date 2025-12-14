@@ -511,7 +511,7 @@ class _AchievementsSheet extends StatelessWidget {
                   ),
                   decoration: BoxDecoration(
                     color: AppColors.secondary.withValues(alpha: 0.15),
-                    borderRadius: BorderRadius.circular(Radius.sm),
+                    borderRadius: BorderRadius.circular(AppRadius.sm),
                   ),
                   child: Text(
                     '${unlocked.length}/${achievements.length}',

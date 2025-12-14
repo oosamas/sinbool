@@ -88,7 +88,7 @@ class _ParentalPinPageState extends ConsumerState<ParentalPinPage> {
                 padding: const EdgeInsets.all(Spacing.md),
                 decoration: BoxDecoration(
                   color: AppColors.info.withValues(alpha: 0.1),
-                  borderRadius: BorderRadius.circular(Radius.md),
+                  borderRadius: BorderRadius.circular(AppRadius.md),
                 ),
                 child: Row(
                   children: [
@@ -171,7 +171,7 @@ class _ParentalPinPageState extends ConsumerState<ParentalPinPage> {
                   padding: const EdgeInsets.all(Spacing.md),
                   decoration: BoxDecoration(
                     color: AppColors.error.withValues(alpha: 0.1),
-                    borderRadius: BorderRadius.circular(Radius.md),
+                    borderRadius: BorderRadius.circular(AppRadius.md),
                   ),
                   child: Text(
                     _error!,

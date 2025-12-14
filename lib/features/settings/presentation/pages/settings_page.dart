@@ -233,7 +233,7 @@ class _SettingsItem extends StatelessWidget {
         height: 40,
         decoration: BoxDecoration(
           color: AppColors.primary.withValues(alpha: 0.1),
-          borderRadius: BorderRadius.circular(Radius.md),
+          borderRadius: BorderRadius.circular(AppRadius.md),
         ),
         child: Icon(icon, color: AppColors.primary, size: 22),
       ),

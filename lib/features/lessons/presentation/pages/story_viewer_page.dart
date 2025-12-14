@@ -283,7 +283,7 @@ class _StoryPageWidget extends StatelessWidget {
             width: double.infinity,
             decoration: BoxDecoration(
               color: AppColors.primary.withValues(alpha: 0.1),
-              borderRadius: BorderRadius.circular(Radius.lg),
+              borderRadius: BorderRadius.circular(AppRadius.lg),
             ),
             child: Center(
               child: Column(

@@ -19,7 +19,7 @@ class AudioPlayerWidget extends ConsumerWidget {
       padding: const EdgeInsets.all(Spacing.md),
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.surface,
-        borderRadius: BorderRadius.circular(Radius.lg),
+        borderRadius: BorderRadius.circular(AppRadius.lg),
         boxShadow: [
           BoxShadow(
             color: Colors.black.withValues(alpha: 0.1),
@@ -284,7 +284,7 @@ class _SpeedButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
-      borderRadius: BorderRadius.circular(Radius.sm),
+      borderRadius: BorderRadius.circular(AppRadius.sm),
       child: Container(
         padding: const EdgeInsets.symmetric(
           horizontal: Spacing.sm,
@@ -292,7 +292,7 @@ class _SpeedButton extends StatelessWidget {
         ),
         decoration: BoxDecoration(
           color: AppColors.surfaceVariant,
-          borderRadius: BorderRadius.circular(Radius.sm),
+          borderRadius: BorderRadius.circular(AppRadius.sm),
         ),
         child: Text(
           '${speed}x',

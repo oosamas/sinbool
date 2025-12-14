@@ -33,6 +33,8 @@ class SettingsKeys {
   static const String parentalPin = 'parental_pin'; // Hashed
   static const String timeLimitEnabled = 'time_limit_enabled';
   static const String dailyTimeLimitMinutes = 'daily_time_limit_minutes';
+  static const String allowPremiumContent = 'allow_premium_content';
+  static const String allowAudioPlayback = 'allow_audio_playback';
 
   // Onboarding
   static const String onboardingCompleted = 'onboarding_completed';
