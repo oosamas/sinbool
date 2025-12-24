@@ -6,9 +6,6 @@ import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/theme/app_typography.dart';
 import '../../../../core/widgets/buttons/app_button.dart';
 import '../../../audio/data/services/tts_service.dart';
-import '../../../audio/domain/entities/audio_state.dart';
-import '../../../audio/presentation/controllers/audio_controller.dart';
-import '../../../audio/presentation/widgets/audio_player_widget.dart';
 import '../../../settings/presentation/controllers/settings_controller.dart';
 import '../../data/repositories/lesson_repository.dart';
 import '../../domain/entities/lesson_entity.dart';
@@ -418,15 +415,13 @@ class _StoryViewerPageState extends ConsumerState<StoryViewerPage> {
                           ),
                           onPressed: _increaseFontSize,
                         ),
-                        // Read Aloud TTS button
+                        // Read Aloud TTS button - reads the story text aloud
                         _ReadAloudButton(
                           isReading: _isReadingAloud,
                           onReadPage: () => _readCurrentPageAloud(pages),
                           onReadAll: () => _readAllPagesAloud(pages),
                           onStop: _stopReading,
                         ),
-                        if (lesson.hasAudio)
-                          _AudioButton(lesson: lesson),
                       ],
                     ),
                   ),
@@ -625,11 +620,11 @@ class _ReadAloudButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return IconButton(
       icon: Icon(
-        isReading ? Icons.stop_circle : Icons.record_voice_over,
+        isReading ? Icons.stop_circle : Icons.headphones,
         color: isReading ? Colors.orange : Colors.white,
       ),
       onPressed: isReading ? onStop : () => _showReadOptions(context),
-      tooltip: isReading ? 'Stop Reading' : 'Read Aloud',
+      tooltip: isReading ? 'Stop Reading' : 'Listen to Story',
     );
   }
 
@@ -711,214 +706,6 @@ class _ReadAloudButton extends StatelessWidget {
             const SizedBox(height: Spacing.md),
           ],
         ),
-      ),
-    );
-  }
-}
-
-/// Audio button for story viewer
-class _AudioButton extends ConsumerWidget {
-  const _AudioButton({required this.lesson});
-
-  final LessonEntity lesson;
-
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final audioState = ref.watch(audioControllerProvider);
-    final isPlayingThisLesson =
-        audioState.currentTrackId?.startsWith(lesson.serverId) ?? false;
-
-    return IconButton(
-      icon: Icon(
-        isPlayingThisLesson
-            ? (audioState.isPlaying ? Icons.pause : Icons.play_arrow)
-            : Icons.headphones,
-        color: Colors.white,
-      ),
-      onPressed: () => _handleAudioTap(context, ref, isPlayingThisLesson),
-    );
-  }
-
-  void _handleAudioTap(
-      BuildContext context, WidgetRef ref, bool isPlayingThisLesson) {
-    final audioController = ref.read(audioControllerProvider.notifier);
-
-    if (isPlayingThisLesson) {
-      // Toggle play/pause
-      audioController.togglePlayPause();
-      return;
-    }
-
-    // Show audio mode selection
-    _showAudioModeDialog(context, ref);
-  }
-
-  void _showAudioModeDialog(BuildContext context, WidgetRef ref) {
-    showModalBottomSheet(
-      context: context,
-      backgroundColor: Colors.transparent,
-      builder: (context) => Container(
-        padding: const EdgeInsets.all(Spacing.lg),
-        decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.surface,
-          borderRadius: const BorderRadius.vertical(
-            top: Radius.circular(AppRadius.xl),
-          ),
-        ),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Center(
-              child: Container(
-                width: 40,
-                height: 4,
-                decoration: BoxDecoration(
-                  color: AppColors.textHint,
-                  borderRadius: BorderRadius.circular(2),
-                ),
-              ),
-            ),
-            const SizedBox(height: Spacing.lg),
-            Text(
-              'Choose Audio Type',
-              style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
-            ),
-            const SizedBox(height: Spacing.lg),
-            ...AudioMode.values.map((mode) => _buildModeOption(context, ref, mode)),
-            const SizedBox(height: Spacing.md),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget _buildModeOption(BuildContext context, WidgetRef ref, AudioMode mode) {
-    return Card(
-      margin: const EdgeInsets.only(bottom: Spacing.sm),
-      child: ListTile(
-        leading: Icon(mode.icon, color: AppColors.primary),
-        title: Text(mode.displayName),
-        subtitle: Text(mode.description),
-        trailing: const Icon(Icons.play_arrow, color: AppColors.primary),
-        onTap: () {
-          Navigator.pop(context);
-          _playAudioWithMode(context, ref, mode);
-        },
-      ),
-    );
-  }
-
-  void _playAudioWithMode(BuildContext context, WidgetRef ref, AudioMode mode) {
-    final audioController = ref.read(audioControllerProvider.notifier);
-    final settingsState = ref.read(settingsControllerProvider);
-    final language = settingsState.settings.language;
-
-    final tracks = LessonAudioHelper.getTracksForLesson(
-      lessonId: lesson.serverId,
-      lessonTitle: lesson.title,
-      lessonTitleArabic: lesson.titleArabic,
-      language: language,
-      mode: mode,
-      durationMinutes: lesson.durationMinutes,
-    );
-
-    if (tracks.isNotEmpty) {
-      audioController.loadAndPlay(tracks.first);
-      _showMiniPlayer(context, tracks.first);
-    }
-  }
-
-  void _showMiniPlayer(BuildContext context, AudioTrack track) {
-    final isQuran = track.trackType == AudioTrackType.quranRecitation;
-
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Row(
-          children: [
-            Icon(
-              isQuran ? Icons.menu_book : Icons.record_voice_over,
-              color: Colors.white,
-            ),
-            const SizedBox(width: Spacing.sm),
-            Text(isQuran ? 'Quran playing' : 'Story playing (${track.language})'),
-          ],
-        ),
-        backgroundColor: AppColors.primary,
-        behavior: SnackBarBehavior.floating,
-        action: SnackBarAction(
-          label: 'PLAYER',
-          textColor: Colors.white,
-          onPressed: () => _showAudioPlayerSheet(context),
-        ),
-      ),
-    );
-  }
-
-  void _showAudioPlayerSheet(BuildContext context) {
-    showModalBottomSheet(
-      context: context,
-      isScrollControlled: true,
-      backgroundColor: Colors.transparent,
-      builder: (context) => Consumer(
-        builder: (context, ref, _) {
-          final audioState = ref.watch(audioControllerProvider);
-          final isQuran = audioState.currentTrackId?.contains('quran') ?? false;
-
-          return Container(
-            padding: const EdgeInsets.all(Spacing.lg),
-            decoration: BoxDecoration(
-              color: Theme.of(context).colorScheme.surface,
-              borderRadius: const BorderRadius.vertical(
-                top: Radius.circular(AppRadius.xl),
-              ),
-            ),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Container(
-                  width: 40,
-                  height: 4,
-                  decoration: BoxDecoration(
-                    color: AppColors.textHint,
-                    borderRadius: BorderRadius.circular(2),
-                  ),
-                ),
-                const SizedBox(height: Spacing.lg),
-                Text(
-                  lesson.title,
-                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                        fontWeight: FontWeight.bold,
-                      ),
-                  textAlign: TextAlign.center,
-                ),
-                const SizedBox(height: Spacing.xs),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      isQuran ? Icons.menu_book : Icons.record_voice_over,
-                      size: 16,
-                      color: AppColors.textSecondary,
-                    ),
-                    const SizedBox(width: Spacing.xs),
-                    Text(
-                      isQuran ? 'Quran Recitation' : 'Story Narration',
-                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            color: AppColors.textSecondary,
-                          ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: Spacing.xl),
-                const AudioPlayerWidget(),
-                const SizedBox(height: Spacing.lg),
-              ],
-            ),
-          );
-        },
       ),
     );
   }
