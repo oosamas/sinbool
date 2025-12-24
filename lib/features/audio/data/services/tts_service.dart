@@ -12,6 +12,7 @@ enum TtsState { playing, stopped, paused, continued }
 
 /// Text-to-Speech service for reading lesson content aloud
 /// Enables kids to listen to stories like an audiobook
+/// Uses premium voices for natural storytelling experience
 class TtsService {
   TtsService() {
     _initTts();
@@ -25,17 +26,22 @@ class TtsService {
   String? _currentText;
   String? get currentText => _currentText;
 
-  double _speechRate = 0.45; // Slower for children
+  // Natural speech rate - not too slow, not too fast
+  double _speechRate = 0.5;
   double get speechRate => _speechRate;
 
   double _volume = 1.0;
   double get volume => _volume;
 
+  // Natural pitch - slightly warm tone
   double _pitch = 1.0;
   double get pitch => _pitch;
 
   String _language = 'en-US';
   String get language => _language;
+
+  String? _currentVoice;
+  String? get currentVoice => _currentVoice;
 
   // Stream controllers for state updates
   final _stateController = StreamController<TtsState>.broadcast();
@@ -91,27 +97,89 @@ class TtsService {
     if (!kIsWeb) {
       if (Platform.isIOS) {
         await _flutterTts.setSharedInstance(true);
+        // Use playback category for best audio quality
         await _flutterTts.setIosAudioCategory(
-          IosTextToSpeechAudioCategory.ambient,
+          IosTextToSpeechAudioCategory.playback,
           [
             IosTextToSpeechAudioCategoryOptions.allowBluetooth,
             IosTextToSpeechAudioCategoryOptions.allowBluetoothA2DP,
-            IosTextToSpeechAudioCategoryOptions.mixWithOthers,
+            IosTextToSpeechAudioCategoryOptions.defaultToSpeaker,
           ],
-          IosTextToSpeechAudioMode.voicePrompt,
+          IosTextToSpeechAudioMode.defaultMode,
         );
+
+        // Select best available voice for storytelling
+        await _selectBestVoice();
       }
 
       if (Platform.isAndroid) {
-        await _flutterTts.setQueueMode(1); // Queue mode
+        await _flutterTts.setQueueMode(1);
+        // On Android, try to use Google's neural voices
+        await _selectBestVoice();
       }
     }
 
-    // Set default values - slower speed for children
+    // Set default values for natural speech
     await _flutterTts.setSpeechRate(_speechRate);
     await _flutterTts.setVolume(_volume);
     await _flutterTts.setPitch(_pitch);
     await _flutterTts.setLanguage(_language);
+  }
+
+  /// Select the best available voice for natural storytelling
+  Future<void> _selectBestVoice() async {
+    try {
+      final voices = await _flutterTts.getVoices as List<dynamic>;
+
+      // Preferred voices for natural English storytelling (iOS)
+      // These are premium/enhanced voices that sound more natural
+      final preferredVoices = [
+        // iOS Premium voices (need to be downloaded in Settings > Accessibility > Spoken Content)
+        'Samantha (Enhanced)', // Very natural American female
+        'com.apple.voice.enhanced.en-US.Samantha',
+        'com.apple.ttsbundle.Samantha-premium',
+        'Samantha',
+        'Evan (Enhanced)', // Natural American male
+        'com.apple.voice.enhanced.en-US.Evan',
+        'Evan',
+        'Allison (Enhanced)', // Another natural option
+        'com.apple.voice.enhanced.en-US.Allison',
+        'Allison',
+        // Android Google TTS neural voices
+        'en-us-x-tpc-network', // Google US English (natural)
+        'en-us-x-tpd-network',
+        'en-us-x-tpf-network',
+        'en-us-x-sfg-network',
+      ];
+
+      String? selectedVoice;
+
+      for (final preferred in preferredVoices) {
+        for (final voice in voices) {
+          final voiceName = voice['name']?.toString() ?? '';
+          final voiceId = voice['identifier']?.toString() ?? '';
+
+          if (voiceName.toLowerCase().contains(preferred.toLowerCase()) ||
+              voiceId.toLowerCase().contains(preferred.toLowerCase())) {
+            selectedVoice = voiceName.isNotEmpty ? voiceName : voiceId;
+            break;
+          }
+        }
+        if (selectedVoice != null) break;
+      }
+
+      if (selectedVoice != null) {
+        await _flutterTts.setVoice({'name': selectedVoice, 'locale': 'en-US'});
+        _currentVoice = selectedVoice;
+        debugPrint('TTS: Selected premium voice: $selectedVoice');
+      } else {
+        // Fall back to default en-US voice
+        debugPrint('TTS: Using default voice (no premium voice found)');
+        debugPrint('TTS: Available voices: ${voices.take(10)}');
+      }
+    } catch (e) {
+      debugPrint('TTS: Error selecting voice: $e');
+    }
   }
 
   /// Get available languages
@@ -124,11 +192,13 @@ class TtsService {
     return await _flutterTts.getVoices;
   }
 
-  /// Set the language for TTS
+  /// Set the language for TTS and select best voice
   /// Supports: en-US, ar-SA, ur-PK, id-ID, es-ES, fr-FR
   Future<void> setLanguage(String languageCode) async {
     _language = _mapLanguageCode(languageCode);
     await _flutterTts.setLanguage(_language);
+    // Select best voice for this language
+    await _selectBestVoiceForLanguage(_language);
   }
 
   /// Map app language codes to TTS language codes
@@ -151,8 +221,52 @@ class TtsService {
     }
   }
 
+  /// Select the best voice for a specific language
+  Future<void> _selectBestVoiceForLanguage(String locale) async {
+    try {
+      final voices = await _flutterTts.getVoices as List<dynamic>;
+      final localePrefix = locale.split('-')[0].toLowerCase();
+
+      // Find premium/enhanced voices for this locale
+      final localeVoices = voices.where((voice) {
+        final voiceLocale = (voice['locale'] ?? '').toString().toLowerCase();
+        return voiceLocale.startsWith(localePrefix);
+      }).toList();
+
+      if (localeVoices.isEmpty) {
+        debugPrint('TTS: No voices found for locale $locale');
+        return;
+      }
+
+      // Prefer enhanced/premium voices
+      dynamic bestVoice;
+      for (final voice in localeVoices) {
+        final name = (voice['name'] ?? '').toString().toLowerCase();
+        final id = (voice['identifier'] ?? '').toString().toLowerCase();
+        if (name.contains('enhanced') || name.contains('premium') ||
+            id.contains('enhanced') || id.contains('premium') ||
+            id.contains('compact') == false) {
+          bestVoice = voice;
+          break;
+        }
+      }
+
+      // If no premium voice, use first available
+      bestVoice ??= localeVoices.first;
+
+      final voiceName = bestVoice['name']?.toString() ?? '';
+      if (voiceName.isNotEmpty) {
+        await _flutterTts.setVoice({'name': voiceName, 'locale': locale});
+        _currentVoice = voiceName;
+        debugPrint('TTS: Selected voice "$voiceName" for $locale');
+      }
+    } catch (e) {
+      debugPrint('TTS: Error selecting voice for $locale: $e');
+    }
+  }
+
   /// Set speech rate (0.0 to 1.0)
-  /// Default 0.45 is slower for children's comprehension
+  /// Default 0.5 for natural conversational pace
   Future<void> setSpeechRate(double rate) async {
     _speechRate = rate.clamp(0.0, 1.0);
     await _flutterTts.setSpeechRate(_speechRate);

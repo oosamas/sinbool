@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -382,12 +381,9 @@ class _LessonDetailContentState extends ConsumerState<_LessonDetailContent> {
 
     // Get lesson content from repository (await the future)
     final repository = ref.read(lessonRepositoryProvider);
-    debugPrint('TTS: Fetching content for lesson.id=${lesson.id}, serverId=${lesson.serverId}');
     final content = await repository.getContentForLesson(lesson.id);
-    debugPrint('TTS: Found ${content.length} content pages');
 
     if (content.isEmpty) {
-      debugPrint('TTS: No content found!');
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(content: Text('No content available to read')),
@@ -400,18 +396,20 @@ class _LessonDetailContentState extends ConsumerState<_LessonDetailContent> {
     final settingsState = ref.read(settingsControllerProvider);
     final language = settingsState.settings.language;
 
-    // Configure TTS for natural voice
+    // Configure TTS for natural storytelling voice
     await ttsService.setLanguage(language);
-    await ttsService.setSpeechRate(0.42); // Slower for children
-    await ttsService.setPitch(1.1); // Slightly higher for friendly tone
+    // Natural speech rate - 0.5 is conversational pace
+    await ttsService.setSpeechRate(0.5);
+    // Keep pitch at 1.0 for natural tone
+    await ttsService.setPitch(1.0);
 
-    // Combine all pages into one text
+    // Combine all pages into one text with proper pauses
     final allText = content.map((page) {
       if (language == 'ar' && page.contentTextArabic != null) {
         return page.contentTextArabic!;
       }
       return page.contentText;
-    }).join('\n\n');
+    }).join('\n\n... ');
 
     // Show confirmation and start reading
     if (context.mounted) {
