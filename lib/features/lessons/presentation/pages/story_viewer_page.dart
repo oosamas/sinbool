@@ -5,6 +5,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/theme/app_typography.dart';
 import '../../../../core/widgets/buttons/app_button.dart';
+import '../../../audio/data/services/tts_service.dart';
 import '../../../audio/domain/entities/audio_state.dart';
 import '../../../audio/presentation/controllers/audio_controller.dart';
 import '../../../audio/presentation/widgets/audio_player_widget.dart';
@@ -34,11 +35,104 @@ class _StoryViewerPageState extends ConsumerState<StoryViewerPage> {
   double _fontSize = 18;
   bool _showControls = true;
   bool _isMarkingComplete = false;
+  bool _isReadingAloud = false;
+  bool _autoReadEnabled = false;
 
   @override
   void dispose() {
+    // Stop TTS when leaving the page
+    ref.read(ttsServiceProvider).stop();
     _pageController.dispose();
     super.dispose();
+  }
+
+  /// Start reading the current page aloud using TTS
+  Future<void> _readCurrentPageAloud(List<LessonContentEntity> pages) async {
+    if (_currentPage >= pages.length) return;
+
+    final ttsService = ref.read(ttsServiceProvider);
+    final settingsState = ref.read(settingsControllerProvider);
+    final language = settingsState.settings.language;
+
+    // Set language for TTS
+    await ttsService.setLanguage(language);
+
+    // Get content based on language
+    final page = pages[_currentPage];
+    String textToRead;
+
+    if (language == 'ar' && page.contentTextArabic != null) {
+      textToRead = page.contentTextArabic!;
+    } else {
+      textToRead = page.contentText;
+    }
+
+    setState(() => _isReadingAloud = true);
+
+    await ttsService.speak(textToRead);
+  }
+
+  /// Read all pages aloud starting from current page
+  Future<void> _readAllPagesAloud(List<LessonContentEntity> pages) async {
+    final ttsService = ref.read(ttsServiceProvider);
+    final settingsState = ref.read(settingsControllerProvider);
+    final language = settingsState.settings.language;
+
+    await ttsService.setLanguage(language);
+
+    setState(() {
+      _isReadingAloud = true;
+      _autoReadEnabled = true;
+    });
+
+    for (int i = _currentPage; i < pages.length; i++) {
+      if (!_autoReadEnabled) break;
+
+      // Navigate to page
+      if (_pageController.hasClients && i != _currentPage) {
+        _pageController.animateToPage(
+          i,
+          duration: const Duration(milliseconds: 300),
+          curve: Curves.easeInOut,
+        );
+      }
+
+      final page = pages[i];
+      String textToRead;
+
+      if (language == 'ar' && page.contentTextArabic != null) {
+        textToRead = page.contentTextArabic!;
+      } else {
+        textToRead = page.contentText;
+      }
+
+      await ttsService.speak(textToRead);
+
+      // Wait for speech to complete before moving to next page
+      await _waitForSpeechComplete();
+    }
+
+    setState(() {
+      _isReadingAloud = false;
+      _autoReadEnabled = false;
+    });
+  }
+
+  Future<void> _waitForSpeechComplete() async {
+    final ttsService = ref.read(ttsServiceProvider);
+    while (ttsService.isPlaying && _autoReadEnabled) {
+      await Future.delayed(const Duration(milliseconds: 100));
+    }
+  }
+
+  /// Stop reading aloud
+  Future<void> _stopReading() async {
+    final ttsService = ref.read(ttsServiceProvider);
+    await ttsService.stop();
+    setState(() {
+      _isReadingAloud = false;
+      _autoReadEnabled = false;
+    });
   }
 
   void _toggleControls() {
@@ -324,6 +418,13 @@ class _StoryViewerPageState extends ConsumerState<StoryViewerPage> {
                           ),
                           onPressed: _increaseFontSize,
                         ),
+                        // Read Aloud TTS button
+                        _ReadAloudButton(
+                          isReading: _isReadingAloud,
+                          onReadPage: () => _readCurrentPageAloud(pages),
+                          onReadAll: () => _readAllPagesAloud(pages),
+                          onStop: _stopReading,
+                        ),
                         if (lesson.hasAudio)
                           _AudioButton(lesson: lesson),
                       ],
@@ -499,6 +600,115 @@ class _StoryPageWidget extends StatelessWidget {
                   ),
               textAlign: TextAlign.center,
             ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Read Aloud button with TTS functionality
+class _ReadAloudButton extends StatelessWidget {
+  const _ReadAloudButton({
+    required this.isReading,
+    required this.onReadPage,
+    required this.onReadAll,
+    required this.onStop,
+  });
+
+  final bool isReading;
+  final VoidCallback onReadPage;
+  final VoidCallback onReadAll;
+  final VoidCallback onStop;
+
+  @override
+  Widget build(BuildContext context) {
+    return IconButton(
+      icon: Icon(
+        isReading ? Icons.stop_circle : Icons.record_voice_over,
+        color: isReading ? Colors.orange : Colors.white,
+      ),
+      onPressed: isReading ? onStop : () => _showReadOptions(context),
+      tooltip: isReading ? 'Stop Reading' : 'Read Aloud',
+    );
+  }
+
+  void _showReadOptions(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: Colors.transparent,
+      builder: (context) => Container(
+        padding: const EdgeInsets.all(Spacing.lg),
+        decoration: BoxDecoration(
+          color: Theme.of(context).colorScheme.surface,
+          borderRadius: const BorderRadius.vertical(
+            top: Radius.circular(AppRadius.xl),
+          ),
+        ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Center(
+              child: Container(
+                width: 40,
+                height: 4,
+                decoration: BoxDecoration(
+                  color: AppColors.textHint,
+                  borderRadius: BorderRadius.circular(2),
+                ),
+              ),
+            ),
+            const SizedBox(height: Spacing.lg),
+            Row(
+              children: [
+                const Icon(Icons.record_voice_over, color: AppColors.primary),
+                const SizedBox(width: Spacing.sm),
+                Text(
+                  'Read Aloud',
+                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                        fontWeight: FontWeight.bold,
+                      ),
+                ),
+              ],
+            ),
+            const SizedBox(height: Spacing.sm),
+            Text(
+              'Listen to the story being read aloud - perfect for car rides!',
+              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                    color: AppColors.textSecondary,
+                  ),
+            ),
+            const SizedBox(height: Spacing.lg),
+            // Read this page
+            Card(
+              margin: const EdgeInsets.only(bottom: Spacing.sm),
+              child: ListTile(
+                leading: const Icon(Icons.article, color: AppColors.primary),
+                title: const Text('Read This Page'),
+                subtitle: const Text('Listen to the current page only'),
+                trailing: const Icon(Icons.play_arrow, color: AppColors.primary),
+                onTap: () {
+                  Navigator.pop(context);
+                  onReadPage();
+                },
+              ),
+            ),
+            // Read entire story
+            Card(
+              margin: const EdgeInsets.only(bottom: Spacing.sm),
+              child: ListTile(
+                leading: const Icon(Icons.auto_stories, color: AppColors.primary),
+                title: const Text('Read Entire Story'),
+                subtitle: const Text('Listen to all pages automatically'),
+                trailing: const Icon(Icons.play_arrow, color: AppColors.primary),
+                onTap: () {
+                  Navigator.pop(context);
+                  onReadAll();
+                },
+              ),
+            ),
+            const SizedBox(height: Spacing.md),
           ],
         ),
       ),
