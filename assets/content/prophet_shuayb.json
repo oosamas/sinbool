@@ -1,0 +1,324 @@
+{
+  "chapter": {
+    "serverId": "prophet_shuayb",
+    "title": "Prophet Shuayb",
+    "titleArabic": "النبي شعيب",
+    "description": "The story of Prophet Shuayb who called his people to be honest and fair in business",
+    "descriptionArabic": "قصة النبي شعيب الذي دعا قومه للصدق والعدل في التجارة",
+    "iconName": "shuayb",
+    "colorHex": "#558B2F",
+    "sortOrder": 13
+  },
+  "lessons": [
+    {
+      "serverId": "prophet_shuayb_lesson_1",
+      "title": "The People of Madyan",
+      "titleArabic": "أهل مدين",
+      "sortOrder": 1,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "In a land called Madyan, there lived a people who were blessed with good trade routes. Travelers and merchants would pass through their city, making it a center of business and commerce.",
+          "contentTextArabic": "في أرض تُسمى مدين، عاش قوم بورك لهم بطرق تجارة جيدة. كان المسافرون والتجار يمرون عبر مدينتهم، مما جعلها مركزاً للأعمال والتجارة."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "But the people of Madyan had a serious problem. They were dishonest in their business dealings. When they sold goods, they would give less than the proper amount. When they bought, they demanded more than they paid for.",
+          "contentTextArabic": "لكن أهل مدين كانت لديهم مشكلة خطيرة. كانوا غير أمناء في تعاملاتهم التجارية. عندما يبيعون سلعاً، يعطون أقل من الكمية الصحيحة. وعندما يشترون، يطلبون أكثر مما دفعوا."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "They would use scales that were rigged to cheat customers. They would rob travelers on the roads. They cared only about making money, even if it meant being unfair to others.",
+          "contentTextArabic": "كانوا يستخدمون موازين مزورة لخداع الزبائن. وكانوا يسرقون المسافرين على الطرق. كانوا يهتمون فقط بجمع المال، حتى لو كان ذلك يعني الظلم للآخرين."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "They also worshipped idols instead of Allah. They had turned away from the right path in both their worship and their daily dealings with people.",
+          "contentTextArabic": "كانوا أيضاً يعبدون الأصنام بدلاً من الله. ابتعدوا عن الطريق الصحيح في عبادتهم ومعاملاتهم اليومية مع الناس."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "So Allah, in His mercy, sent them a prophet from among themselves. His name was Shuayb, and he was known for his wisdom and eloquent speech. He would call them back to the right path.",
+          "contentTextArabic": "فأرسل الله برحمته نبياً من بينهم. اسمه شعيب، وعُرف بحكمته وفصاحته. كان سيدعوهم للعودة إلى الطريق الصحيح."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What was the main sin of the people of Madyan?",
+          "questionArabic": "ما هو الذنب الرئيسي لأهل مدين؟",
+          "options": ["They were lazy", "They were dishonest in business", "They slept too much", "They traveled too far"],
+          "optionsArabic": ["كانوا كسالى", "كانوا غير أمناء في التجارة", "ناموا كثيراً", "سافروا بعيداً جداً"],
+          "correctIndex": 1,
+          "explanation": "The people of Madyan were dishonest - they cheated customers with rigged scales and unfair dealings.",
+          "explanationArabic": "كان أهل مدين غير أمناء - خدعوا الزبائن بموازين مزورة ومعاملات غير عادلة."
+        },
+        {
+          "question": "How did the people of Madyan cheat in business?",
+          "questionArabic": "كيف كان أهل مدين يغشون في التجارة؟",
+          "options": ["They sold only good products", "They gave less when selling and took more when buying", "They were very generous", "They gave free samples"],
+          "optionsArabic": ["باعوا منتجات جيدة فقط", "أعطوا أقل عند البيع وأخذوا أكثر عند الشراء", "كانوا كرماء جداً", "أعطوا عينات مجانية"],
+          "correctIndex": 1,
+          "explanation": "They gave less than the proper amount when selling and demanded more than they paid for when buying.",
+          "explanationArabic": "أعطوا أقل من الكمية الصحيحة عند البيع وطلبوا أكثر مما دفعوا عند الشراء."
+        },
+        {
+          "question": "What was Prophet Shuayb known for?",
+          "questionArabic": "بماذا عُرف النبي شعيب؟",
+          "options": ["His strength", "His wisdom and eloquent speech", "His wealth", "His army"],
+          "optionsArabic": ["قوته", "حكمته وفصاحته", "ثروته", "جيشه"],
+          "correctIndex": 1,
+          "explanation": "Prophet Shuayb was known for his wisdom and eloquent, wise speech.",
+          "explanationArabic": "عُرف النبي شعيب بحكمته وكلامه الفصيح الحكيم."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_shuayb_lesson_2",
+      "title": "Shuayb's Message",
+      "titleArabic": "رسالة شعيب",
+      "sortOrder": 2,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Prophet Shuayb called his people to worship Allah alone and to be honest in their dealings. He said, 'O my people! Worship Allah - you have no god other than Him.'",
+          "contentTextArabic": "دعا النبي شعيب قومه لعبادة الله وحده والصدق في معاملاتهم. قال: 'يا قوم اعبدوا الله ما لكم من إله غيره.'"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "He also told them: 'Give full measure and weight, and do not deprive people of their things. Do not spread corruption in the land after it has been set in order.'",
+          "contentTextArabic": "وقال لهم أيضاً: 'أوفوا الكيل والميزان ولا تبخسوا الناس أشياءهم ولا تفسدوا في الأرض بعد إصلاحها.'"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Shuayb explained that being honest was part of worshipping Allah. He said, 'That is better for you, if you are true believers.' Honesty and fairness are signs of true faith.",
+          "contentTextArabic": "شرح شعيب أن الصدق جزء من عبادة الله. قال: 'ذلكم خير لكم إن كنتم مؤمنين.' الصدق والعدل علامات الإيمان الحقيقي."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "He warned them gently: 'I fear for you the punishment of a Day that will surround you.' Shuayb loved his people and wanted them to be saved from Allah's punishment.",
+          "contentTextArabic": "حذرهم بلطف: 'إني أخاف عليكم عذاب يوم محيط.' أحبّ شعيب قومه وأراد لهم النجاة من عذاب الله."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Shuayb reminded them: 'I only want to improve things as much as I can. My success comes only through Allah. In Him I trust, and to Him I turn.' He was a sincere and caring messenger.",
+          "contentTextArabic": "ذكّرهم شعيب: 'إن أريد إلا الإصلاح ما استطعت وما توفيقي إلا بالله عليه توكلت وإليه أنيب.' كان رسولاً مخلصاً ومحباً."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What two things did Shuayb call his people to?",
+          "questionArabic": "ما هما الأمران اللذان دعا شعيب قومه إليهما؟",
+          "options": ["Fighting and wealth", "Worship Allah and be honest", "Travel and trade", "Building and farming"],
+          "optionsArabic": ["القتال والثروة", "عبادة الله والصدق", "السفر والتجارة", "البناء والزراعة"],
+          "correctIndex": 1,
+          "explanation": "Shuayb called them to worship Allah alone and to be honest in their business dealings.",
+          "explanationArabic": "دعاهم شعيب لعبادة الله وحده والصدق في تعاملاتهم التجارية."
+        },
+        {
+          "question": "What did Shuayb say about giving measure and weight?",
+          "questionArabic": "ماذا قال شعيب عن الكيل والميزان؟",
+          "options": ["Cheat when you can", "Give full measure and weight", "Give less to save money", "Only measure sometimes"],
+          "optionsArabic": ["اغش عندما تستطيع", "أوفوا الكيل والميزان", "أعطوا أقل لتوفير المال", "قس أحياناً فقط"],
+          "correctIndex": 1,
+          "explanation": "Shuayb told them to give full measure and weight - to be completely fair and honest.",
+          "explanationArabic": "أخبرهم شعيب أن يوفوا الكيل والميزان - أن يكونوا عادلين وصادقين تماماً."
+        },
+        {
+          "question": "Why did Shuayb warn his people?",
+          "questionArabic": "لماذا حذر شعيب قومه؟",
+          "options": ["He hated them", "He loved them and wanted to save them", "He wanted their money", "He was ordered to scare them"],
+          "optionsArabic": ["كان يكرههم", "أحبهم وأراد إنقاذهم", "أراد أموالهم", "أُمر بإخافتهم"],
+          "correctIndex": 1,
+          "explanation": "Shuayb loved his people and wanted to save them from Allah's punishment.",
+          "explanationArabic": "أحبّ شعيب قومه وأراد إنقاذهم من عذاب الله."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_shuayb_lesson_3",
+      "title": "The People's Rejection",
+      "titleArabic": "رفض القوم",
+      "sortOrder": 3,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Sadly, most of the people rejected Shuayb's message. They loved their dishonest ways and didn't want to change. They said, 'Does your prayer command you to tell us to leave what our fathers worshipped?'",
+          "contentTextArabic": "للأسف، رفض معظم القوم رسالة شعيب. أحبوا طرقهم الخادعة ولم يريدوا التغيير. قالوا: 'أصلاتك تأمرك أن نترك ما يعبد آباؤنا؟'"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "They mocked him: 'Or that we should not do with our money as we please?' They thought they had the right to cheat others with their wealth. They didn't understand that all blessings come from Allah.",
+          "contentTextArabic": "سخروا منه: 'أو أن نفعل في أموالنا ما نشاء؟' ظنوا أن لهم الحق في خداع الآخرين بأموالهم. لم يفهموا أن كل النعم من الله."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "They said sarcastically, 'You are indeed gentle and sensible!' - but they didn't mean it kindly. They were making fun of his patient and wise way of speaking to them.",
+          "contentTextArabic": "قالوا ساخرين: 'إنك لأنت الحليم الرشيد!' - لكنهم لم يقصدوها بلطف. كانوا يسخرون من طريقته الصبورة والحكيمة في مخاطبتهم."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "They even threatened to drive Shuayb and his followers out of the city. They said, 'We will surely drive you out of our city, unless you return to our religion.'",
+          "contentTextArabic": "حتى أنهم هددوا بطرد شعيب وأتباعه من المدينة. قالوا: 'لنخرجنك يا شعيب والذين آمنوا معك من قريتنا أو لتعودن في ملتنا.'"
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Shuayb responded wisely: 'Even if we were unwilling? We would have invented a lie against Allah if we returned to your religion after Allah had saved us from it.' He refused to give up the truth.",
+          "contentTextArabic": "أجاب شعيب بحكمة: 'أولو كنا كارهين؟ قد افترينا على الله كذباً إن عدنا في ملتكم بعد إذ نجانا الله منها.' رفض التخلي عن الحق."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why did the people reject Shuayb's message?",
+          "questionArabic": "لماذا رفض القوم رسالة شعيب؟",
+          "options": ["They couldn't understand it", "They loved their dishonest ways", "Shuayb spoke too quietly", "They were too busy"],
+          "optionsArabic": ["لم يستطيعوا فهمها", "أحبوا طرقهم الخادعة", "شعيب تكلم بهدوء شديد", "كانوا مشغولين جداً"],
+          "correctIndex": 1,
+          "explanation": "The people loved their dishonest ways and didn't want to change or give up their cheating.",
+          "explanationArabic": "أحب القوم طرقهم الخادعة ولم يريدوا التغيير أو التخلي عن غشهم."
+        },
+        {
+          "question": "What did the people threaten to do to Shuayb?",
+          "questionArabic": "بماذا هدد القوم شعيب؟",
+          "options": ["Give him gifts", "Drive him out of the city", "Make him king", "Build him a house"],
+          "optionsArabic": ["إعطاؤه هدايا", "طرده من المدينة", "جعله ملكاً", "بناء بيت له"],
+          "correctIndex": 1,
+          "explanation": "They threatened to drive Shuayb and his followers out of the city if they didn't return to idol worship.",
+          "explanationArabic": "هددوا بطرد شعيب وأتباعه من المدينة إن لم يعودوا لعبادة الأصنام."
+        },
+        {
+          "question": "How did Shuayb respond to their threats?",
+          "questionArabic": "كيف رد شعيب على تهديداتهم؟",
+          "options": ["He ran away", "He refused to give up the truth", "He agreed to their demands", "He got angry and fought them"],
+          "optionsArabic": ["هرب", "رفض التخلي عن الحق", "وافق على مطالبهم", "غضب وقاتلهم"],
+          "correctIndex": 1,
+          "explanation": "Shuayb wisely refused to give up the truth, saying he wouldn't invent lies against Allah.",
+          "explanationArabic": "رفض شعيب بحكمة التخلي عن الحق، قائلاً إنه لن يفتري على الله الكذب."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_shuayb_lesson_4",
+      "title": "The Punishment",
+      "titleArabic": "العذاب",
+      "sortOrder": 4,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "The people of Madyan continued in their stubbornness. They demanded that Shuayb bring down the punishment if he was telling the truth. They did not believe Allah's warning would come.",
+          "contentTextArabic": "استمر أهل مدين في عنادهم. طلبوا من شعيب أن ينزل عليهم العذاب إن كان صادقاً. لم يصدقوا أن تحذير الله سيأتي."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Shuayb warned them one last time: 'O my people! Do your work - I am doing mine. Soon you will know who will receive a humiliating punishment.' But they refused to listen.",
+          "contentTextArabic": "حذرهم شعيب للمرة الأخيرة: 'يا قوم اعملوا على مكانتكم إني عامل سوف تعلمون من يأتيه عذاب يخزيه.' لكنهم رفضوا الاستماع."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Then Allah's punishment came. A terrible earthquake struck the land. The Quran says they became motionless in their homes, as if they had never lived there.",
+          "contentTextArabic": "ثم جاء عذاب الله. ضرب زلزال مروع الأرض. يقول القرآن إنهم أصبحوا جاثمين في ديارهم، كأن لم يغنوا فيها."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "The people who cheated others and refused to worship Allah were destroyed. Their wealth and their tricks could not save them. Only those who believed in Shuayb were saved.",
+          "contentTextArabic": "أُهلك الذين غشوا الآخرين ورفضوا عبادة الله. لم تنفعهم أموالهم وحيلهم. نجا فقط الذين آمنوا بشعيب."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Shuayb was saddened by what happened to his people. He said, 'O my people! I have delivered to you the messages of my Lord and advised you. How can I grieve for a disbelieving people?'",
+          "contentTextArabic": "حزن شعيب على ما حدث لقومه. قال: 'يا قوم لقد أبلغتكم رسالات ربي ونصحت لكم فكيف آسى على قوم كافرين؟'"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What did the people of Madyan demand from Shuayb?",
+          "questionArabic": "ماذا طلب أهل مدين من شعيب؟",
+          "options": ["More warnings", "To bring down the punishment to prove he's truthful", "To leave them alone", "To give them money"],
+          "optionsArabic": ["المزيد من التحذيرات", "إنزال العذاب ليثبت صدقه", "أن يتركهم وشأنهم", "أن يعطيهم مالاً"],
+          "correctIndex": 1,
+          "explanation": "The arrogant people demanded that Shuayb bring down the punishment if he was telling the truth.",
+          "explanationArabic": "طلب القوم المتكبرون من شعيب أن ينزل عليهم العذاب إن كان صادقاً."
+        },
+        {
+          "question": "What punishment came upon the people of Madyan?",
+          "questionArabic": "ما العذاب الذي نزل على أهل مدين؟",
+          "options": ["A flood", "A terrible earthquake", "A drought", "A plague"],
+          "optionsArabic": ["طوفان", "زلزال مروع", "جفاف", "وباء"],
+          "correctIndex": 1,
+          "explanation": "A terrible earthquake struck the people of Madyan and destroyed them.",
+          "explanationArabic": "ضرب زلزال مروع أهل مدين وأهلكهم."
+        },
+        {
+          "question": "Who was saved from the punishment?",
+          "questionArabic": "من نجا من العذاب؟",
+          "options": ["The rich people", "Those who believed in Shuayb", "The merchants", "No one"],
+          "optionsArabic": ["الأغنياء", "الذين آمنوا بشعيب", "التجار", "لا أحد"],
+          "correctIndex": 1,
+          "explanation": "Only those who believed in Shuayb and followed his message were saved.",
+          "explanationArabic": "نجا فقط الذين آمنوا بشعيب واتبعوا رسالته."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_shuayb_lesson_5",
+      "title": "Lessons from Shuayb",
+      "titleArabic": "دروس من شعيب",
+      "sortOrder": 5,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "The story of Prophet Shuayb teaches us that Islam is not just about prayer and fasting. It is also about being honest and fair in all our dealings with people.",
+          "contentTextArabic": "تعلمنا قصة النبي شعيب أن الإسلام ليس فقط عن الصلاة والصيام. بل أيضاً عن الصدق والعدل في كل تعاملاتنا مع الناس."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Cheating others is a serious sin. When we buy or sell, we must be completely fair. We should give full measure and never try to deceive anyone, even in small things.",
+          "contentTextArabic": "خداع الآخرين ذنب خطير. عندما نشتري أو نبيع، يجب أن نكون عادلين تماماً. يجب أن نوفي الكيل ولا نحاول خداع أحد، حتى في الأشياء الصغيرة."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "We also learn that wealth gained through cheating brings no blessing. The people of Madyan were wealthy from their cheating, but their wealth could not save them from Allah's punishment.",
+          "contentTextArabic": "نتعلم أيضاً أن المال المكتسب بالغش لا بركة فيه. كان أهل مدين أغنياء من غشهم، لكن أموالهم لم تنفعهم من عذاب الله."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Shuayb spoke to his people with patience and wisdom. He never gave up trying to guide them, even when they mocked him. We should also be patient when calling others to good.",
+          "contentTextArabic": "تكلم شعيب مع قومه بصبر وحكمة. لم يتوقف عن محاولة هدايتهم، حتى عندما سخروا منه. يجب أن نكون صبورين أيضاً عند دعوة الآخرين للخير."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Finally, we learn that true faith shows in our actions. A believer is someone who is trustworthy, honest, and fair. May Allah help us to be honest in all our dealings, just as Prophet Shuayb taught!",
+          "contentTextArabic": "أخيراً، نتعلم أن الإيمان الحقيقي يظهر في أفعالنا. المؤمن شخص أمين وصادق وعادل. نسأل الله أن يعيننا على الصدق في كل تعاملاتنا، كما علّم النبي شعيب!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does Shuayb's story teach us about Islam?",
+          "questionArabic": "ماذا تعلمنا قصة شعيب عن الإسلام؟",
+          "options": ["It's only about prayer", "It includes being honest and fair with people", "It's only about fasting", "It's about being rich"],
+          "optionsArabic": ["هو فقط عن الصلاة", "يشمل الصدق والعدل مع الناس", "هو فقط عن الصيام", "هو عن الثراء"],
+          "correctIndex": 1,
+          "explanation": "Islam includes being honest and fair in all dealings - not just worship, but also how we treat others.",
+          "explanationArabic": "الإسلام يشمل الصدق والعدل في كل التعاملات - ليس فقط العبادة، بل أيضاً كيف نعامل الآخرين."
+        },
+        {
+          "question": "What happened to wealth gained through cheating?",
+          "questionArabic": "ماذا حدث للمال المكتسب بالغش؟",
+          "options": ["It brought happiness", "It had no blessing and couldn't save them", "It multiplied", "It was accepted by Allah"],
+          "optionsArabic": ["جلب السعادة", "لم تكن فيه بركة ولم ينفعهم", "تضاعف", "قبله الله"],
+          "correctIndex": 1,
+          "explanation": "Wealth gained through cheating had no blessing and could not save them from punishment.",
+          "explanationArabic": "المال المكتسب بالغش لم تكن فيه بركة ولم ينفعهم من العذاب."
+        },
+        {
+          "question": "What shows true faith according to this story?",
+          "questionArabic": "ما الذي يُظهر الإيمان الحقيقي حسب هذه القصة؟",
+          "options": ["Having lots of money", "Being trustworthy, honest, and fair", "Being strong", "Living in a big city"],
+          "optionsArabic": ["امتلاك الكثير من المال", "الأمانة والصدق والعدل", "القوة", "العيش في مدينة كبيرة"],
+          "correctIndex": 1,
+          "explanation": "True faith shows in our actions - being trustworthy, honest, and fair in all dealings.",
+          "explanationArabic": "الإيمان الحقيقي يظهر في أفعالنا - الأمانة والصدق والعدل في كل التعاملات."
+        }
+      ]
+    }
+  ]
+}

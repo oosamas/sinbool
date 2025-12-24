@@ -351,6 +351,318 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count} lessons completed'**
   String lessonsCompleted(int count);
+
+  /// No description provided for @unlockAllStories.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlock All Islamic Stories'**
+  String get unlockAllStories;
+
+  /// No description provided for @premiumDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Get full access to 50+ beautifully narrated stories about prophets, companions, and Islamic values for your children.'**
+  String get premiumDescription;
+
+  /// No description provided for @monthlySubscription.
+  ///
+  /// In en, this message translates to:
+  /// **'Monthly Subscription'**
+  String get monthlySubscription;
+
+  /// No description provided for @perMonth.
+  ///
+  /// In en, this message translates to:
+  /// **'/month'**
+  String get perMonth;
+
+  /// No description provided for @cancelAnytime.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel anytime. Subscription renews automatically.'**
+  String get cancelAnytime;
+
+  /// No description provided for @subscribe.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscribe Now'**
+  String get subscribe;
+
+  /// No description provided for @restorePurchases.
+  ///
+  /// In en, this message translates to:
+  /// **'Restore Purchases'**
+  String get restorePurchases;
+
+  /// No description provided for @havePromoCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Have a promo code?'**
+  String get havePromoCode;
+
+  /// No description provided for @termsOfService.
+  ///
+  /// In en, this message translates to:
+  /// **'Terms of Service'**
+  String get termsOfService;
+
+  /// No description provided for @privacyPolicy.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy Policy'**
+  String get privacyPolicy;
+
+  /// No description provided for @subscriptionSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome to Sinbool Premium!'**
+  String get subscriptionSuccess;
+
+  /// No description provided for @purchasesRestored.
+  ///
+  /// In en, this message translates to:
+  /// **'Your purchases have been restored'**
+  String get purchasesRestored;
+
+  /// No description provided for @noPurchasesToRestore.
+  ///
+  /// In en, this message translates to:
+  /// **'No previous purchases found'**
+  String get noPurchasesToRestore;
+
+  /// No description provided for @benefitAllStories.
+  ///
+  /// In en, this message translates to:
+  /// **'50+ Beautiful Stories'**
+  String get benefitAllStories;
+
+  /// No description provided for @benefitAllStoriesDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Access the complete library of Islamic stories'**
+  String get benefitAllStoriesDesc;
+
+  /// No description provided for @benefitAudioNarration.
+  ///
+  /// In en, this message translates to:
+  /// **'Audio Narration'**
+  String get benefitAudioNarration;
+
+  /// No description provided for @benefitAudioNarrationDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional narration for every story'**
+  String get benefitAudioNarrationDesc;
+
+  /// No description provided for @benefitQuizzes.
+  ///
+  /// In en, this message translates to:
+  /// **'Interactive Quizzes'**
+  String get benefitQuizzes;
+
+  /// No description provided for @benefitQuizzesDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Test your knowledge after each story'**
+  String get benefitQuizzesDesc;
+
+  /// No description provided for @benefitNewContent.
+  ///
+  /// In en, this message translates to:
+  /// **'New Content Monthly'**
+  String get benefitNewContent;
+
+  /// No description provided for @benefitNewContentDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Fresh stories added every month'**
+  String get benefitNewContentDesc;
+
+  /// No description provided for @benefitOffline.
+  ///
+  /// In en, this message translates to:
+  /// **'Offline Access'**
+  String get benefitOffline;
+
+  /// No description provided for @benefitOfflineDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Download and read anywhere'**
+  String get benefitOfflineDesc;
+
+  /// No description provided for @premium.
+  ///
+  /// In en, this message translates to:
+  /// **'Premium'**
+  String get premium;
+
+  /// No description provided for @premiumContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Premium Content'**
+  String get premiumContent;
+
+  /// No description provided for @tapToUnlock.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to unlock with Sinbool Premium'**
+  String get tapToUnlock;
+
+  /// No description provided for @firstLessonFree.
+  ///
+  /// In en, this message translates to:
+  /// **'First Lesson Free'**
+  String get firstLessonFree;
+
+  /// No description provided for @promoCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Promo Code'**
+  String get promoCode;
+
+  /// No description provided for @enterPromoCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter Your Promo Code'**
+  String get enterPromoCode;
+
+  /// No description provided for @promoCodeDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'If you have a promo code, enter it below to unlock premium access.'**
+  String get promoCodeDescription;
+
+  /// No description provided for @promoCodeHint.
+  ///
+  /// In en, this message translates to:
+  /// **'e.g. SINBOOL2024'**
+  String get promoCodeHint;
+
+  /// No description provided for @pleaseEnterPromoCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a promo code'**
+  String get pleaseEnterPromoCode;
+
+  /// No description provided for @promoCodeTooShort.
+  ///
+  /// In en, this message translates to:
+  /// **'Promo code is too short'**
+  String get promoCodeTooShort;
+
+  /// No description provided for @applyPromoCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Apply Code'**
+  String get applyPromoCode;
+
+  /// No description provided for @promoCodeInfo.
+  ///
+  /// In en, this message translates to:
+  /// **'Promo codes are case-insensitive and may be limited time offers. Contact support if you have any issues.'**
+  String get promoCodeInfo;
+
+  /// No description provided for @promoCodeSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Promo code applied successfully! Welcome to Premium!'**
+  String get promoCodeSuccess;
+
+  /// No description provided for @promoCodeInvalid.
+  ///
+  /// In en, this message translates to:
+  /// **'Invalid or expired promo code'**
+  String get promoCodeInvalid;
+
+  /// No description provided for @subscription.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscription'**
+  String get subscription;
+
+  /// No description provided for @subscriptionStatus.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscription Status'**
+  String get subscriptionStatus;
+
+  /// No description provided for @subscriptionActive.
+  ///
+  /// In en, this message translates to:
+  /// **'Premium Active'**
+  String get subscriptionActive;
+
+  /// No description provided for @subscriptionExpires.
+  ///
+  /// In en, this message translates to:
+  /// **'Expires: {date}'**
+  String subscriptionExpires(String date);
+
+  /// No description provided for @manageSubscription.
+  ///
+  /// In en, this message translates to:
+  /// **'Manage Subscription'**
+  String get manageSubscription;
+
+  /// No description provided for @upgradeToPremium.
+  ///
+  /// In en, this message translates to:
+  /// **'Upgrade to Premium'**
+  String get upgradeToPremium;
+
+  /// No description provided for @redeemPromoCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Redeem Promo Code'**
+  String get redeemPromoCode;
+
+  /// No description provided for @freeUser.
+  ///
+  /// In en, this message translates to:
+  /// **'Free User'**
+  String get freeUser;
+
+  /// No description provided for @premiumFeatures.
+  ///
+  /// In en, this message translates to:
+  /// **'Premium Features'**
+  String get premiumFeatures;
+
+  /// No description provided for @getStartedWithPremium.
+  ///
+  /// In en, this message translates to:
+  /// **'Get Started'**
+  String get getStartedWithPremium;
+
+  /// No description provided for @premiumOnboardingTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Premium Experience'**
+  String get premiumOnboardingTitle;
+
+  /// No description provided for @premiumOnboardingDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlock the full Sinbool experience with premium access to all stories, audio narration, and quizzes.'**
+  String get premiumOnboardingDesc;
+
+  /// No description provided for @freeVsPremium.
+  ///
+  /// In en, this message translates to:
+  /// **'Free vs Premium'**
+  String get freeVsPremium;
+
+  /// No description provided for @freeFeatures.
+  ///
+  /// In en, this message translates to:
+  /// **'Free: First lesson of each chapter'**
+  String get freeFeatures;
+
+  /// No description provided for @premiumFeaturesDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Premium: All stories, audio, quizzes & more'**
+  String get premiumFeaturesDesc;
 }
 
 class _AppLocalizationsDelegate

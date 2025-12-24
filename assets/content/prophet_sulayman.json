@@ -1,0 +1,324 @@
+{
+  "chapter": {
+    "serverId": "prophet_sulayman",
+    "title": "Prophet Sulayman",
+    "titleArabic": "النبي سليمان",
+    "description": "The story of Prophet Sulayman, the wise king who could speak to animals and command the wind and jinn",
+    "descriptionArabic": "قصة النبي سليمان، الملك الحكيم الذي كان يتكلم مع الحيوانات ويسخر الريح والجن",
+    "iconName": "sulayman",
+    "colorHex": "#1565C0",
+    "sortOrder": 9
+  },
+  "lessons": [
+    {
+      "serverId": "prophet_sulayman_lesson_1",
+      "title": "The Wise Son of Dawud",
+      "titleArabic": "ابن داود الحكيم",
+      "sortOrder": 1,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Prophet Sulayman was the son of Prophet Dawud. He grew up learning wisdom and faith from his father. Even as a young boy, Sulayman showed remarkable wisdom in solving difficult problems.",
+          "contentTextArabic": "كان النبي سليمان ابن النبي داود. نشأ يتعلم الحكمة والإيمان من أبيه. حتى وهو صبي، أظهر سليمان حكمة مذهلة في حل المشاكل الصعبة."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "The Quran tells us about a time when two men came to Dawud with a problem. One man's sheep had eaten the crops in the other man's field at night. Dawud ruled that the sheep should be given to the farmer.",
+          "contentTextArabic": "يخبرنا القرآن عن مرة جاء فيها رجلان إلى داود بمشكلة. أكلت أغنام أحدهما زرع الآخر في الليل. حكم داود بأن تُعطى الأغنام للمزارع."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Young Sulayman had a better idea. He suggested that the farmer take the sheep temporarily to benefit from their milk and wool, while the sheep owner works to regrow the crops. Then both would get their property back!",
+          "contentTextArabic": "كان لسليمان الشاب فكرة أفضل. اقترح أن يأخذ المزارع الأغنام مؤقتاً ليستفيد من حليبها وصوفها، بينما يعمل صاحب الأغنام على إعادة زراعة المحاصيل. ثم يستعيد كل منهما ملكه!"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Allah says in the Quran: 'And We gave understanding of it to Sulayman.' This showed that Allah had blessed young Sulayman with special wisdom, even when he was still learning from his father.",
+          "contentTextArabic": "يقول الله في القرآن: 'ففهمناها سليمان.' هذا يُظهر أن الله بارك سليمان الشاب بحكمة خاصة، حتى عندما كان لا يزال يتعلم من أبيه."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "When Dawud passed away, Sulayman became the king after him. Sulayman prayed to Allah: 'My Lord, grant me a kingdom that will not belong to anyone after me.' Allah answered his prayer with blessings beyond imagination!",
+          "contentTextArabic": "عندما توفي داود، أصبح سليمان الملك بعده. دعا سليمان الله: 'رب هب لي ملكاً لا ينبغي لأحد من بعدي.' واستجاب الله لدعائه بنعم تفوق الخيال!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Who was Prophet Sulayman's father?",
+          "questionArabic": "من كان والد النبي سليمان؟",
+          "options": ["Prophet Ibrahim", "Prophet Musa", "Prophet Dawud", "Prophet Yusuf"],
+          "optionsArabic": ["النبي إبراهيم", "النبي موسى", "النبي داود", "النبي يوسف"],
+          "correctIndex": 2,
+          "explanation": "Prophet Sulayman was the son of Prophet Dawud, and he inherited the kingdom after his father.",
+          "explanationArabic": "كان النبي سليمان ابن النبي داود، وورث الملك بعد أبيه."
+        },
+        {
+          "question": "What did young Sulayman's judgment about the sheep show?",
+          "questionArabic": "ماذا أظهر حكم سليمان الشاب في قضية الأغنام؟",
+          "options": ["He was cruel", "He was wise beyond his years", "He didn't understand", "He was unfair"],
+          "optionsArabic": ["كان قاسياً", "كان حكيماً فوق سنه", "لم يفهم", "كان غير عادل"],
+          "correctIndex": 1,
+          "explanation": "Sulayman's wise solution showed that Allah had blessed him with special understanding even as a young boy.",
+          "explanationArabic": "أظهر حل سليمان الحكيم أن الله باركه بفهم خاص حتى وهو صبي."
+        },
+        {
+          "question": "What did Sulayman pray for when he became king?",
+          "questionArabic": "بماذا دعا سليمان عندما أصبح ملكاً؟",
+          "options": ["For wealth", "For a unique kingdom", "For long life", "For many children"],
+          "optionsArabic": ["بالثروة", "بملك لا ينبغي لأحد من بعده", "بطول العمر", "بكثرة الأولاد"],
+          "correctIndex": 1,
+          "explanation": "Sulayman asked Allah for a kingdom that would not belong to anyone after him, and Allah granted it.",
+          "explanationArabic": "سأل سليمان الله ملكاً لا ينبغي لأحد من بعده، فأعطاه الله ذلك."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_sulayman_lesson_2",
+      "title": "Amazing Gifts from Allah",
+      "titleArabic": "هبات عجيبة من الله",
+      "sortOrder": 2,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Allah gave Prophet Sulayman gifts that no one else has ever received. He could understand the language of birds and animals! When birds chirped or ants spoke, Sulayman knew exactly what they were saying.",
+          "contentTextArabic": "أعطى الله النبي سليمان هبات لم يتلقها أحد غيره. كان يفهم لغة الطيور والحيوانات! عندما تغرد الطيور أو يتكلم النمل، كان سليمان يعرف بالضبط ما يقولونه."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Allah also gave Sulayman control over the wind. The wind would carry him and his armies wherever he wanted to go. A journey that would take a month could be done in just a morning or evening!",
+          "contentTextArabic": "كما أعطى الله سليمان السيطرة على الريح. كانت الريح تحمله وجيوشه أينما أراد. رحلة تستغرق شهراً يمكن إتمامها في صباح أو مساء واحد!"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "The jinn were also made to serve Sulayman by Allah's command. Some of them were builders who made great palaces and statues. Others were divers who brought pearls and treasures from the sea.",
+          "contentTextArabic": "كما سُخّر الجن لخدمة سليمان بأمر الله. كان بعضهم بنّائين يبنون القصور والتماثيل العظيمة. وآخرون غواصين يجلبون اللؤلؤ والكنوز من البحر."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Sulayman had armies of humans, jinn, and birds! They would march in organized ranks. This was a kingdom like no other before or after. Yet Sulayman remained humble and grateful to Allah.",
+          "contentTextArabic": "كان لسليمان جيوش من البشر والجن والطيور! كانوا يسيرون في صفوف منظمة. كان هذا ملكاً لا مثيل له من قبل أو بعد. ومع ذلك ظل سليمان متواضعاً وشاكراً لله."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Despite all these powers, Sulayman never forgot that everything came from Allah. He would always say: 'This is from the favor of my Lord, to test me whether I will be grateful or ungrateful.'",
+          "contentTextArabic": "رغم كل هذه القوى، لم ينسَ سليمان أبداً أن كل شيء من الله. كان يقول دائماً: 'هذا من فضل ربي ليبلوني أأشكر أم أكفر.'"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What special ability did Allah give Sulayman with animals?",
+          "questionArabic": "ما القدرة الخاصة التي أعطاها الله لسليمان مع الحيوانات؟",
+          "options": ["He could transform into animals", "He could understand their language", "He could make them disappear", "He could make them grow big"],
+          "optionsArabic": ["كان يتحول إلى حيوانات", "كان يفهم لغتهم", "كان يخفيهم", "كان يجعلهم يكبرون"],
+          "correctIndex": 1,
+          "explanation": "Allah gave Sulayman the ability to understand the language of birds and animals.",
+          "explanationArabic": "أعطى الله سليمان القدرة على فهم لغة الطيور والحيوانات."
+        },
+        {
+          "question": "What did the wind do for Prophet Sulayman?",
+          "questionArabic": "ماذا كانت الريح تفعل للنبي سليمان؟",
+          "options": ["Made him invisible", "Carried him and his armies", "Brought him food", "Cleaned his palace"],
+          "optionsArabic": ["جعلته غير مرئي", "حملته وجيوشه", "جلبت له الطعام", "نظفت قصره"],
+          "correctIndex": 1,
+          "explanation": "The wind would carry Sulayman and his armies, making long journeys very quick.",
+          "explanationArabic": "كانت الريح تحمل سليمان وجيوشه، مما جعل الرحلات الطويلة سريعة جداً."
+        },
+        {
+          "question": "How did Sulayman react to all his blessings?",
+          "questionArabic": "كيف كان رد فعل سليمان تجاه كل نعمه؟",
+          "options": ["He became proud", "He remained humble and grateful to Allah", "He forgot Allah", "He asked for more"],
+          "optionsArabic": ["أصبح متكبراً", "ظل متواضعاً وشاكراً لله", "نسي الله", "طلب المزيد"],
+          "correctIndex": 1,
+          "explanation": "Despite all his powers, Sulayman remained humble and always thanked Allah.",
+          "explanationArabic": "رغم كل قواه، ظل سليمان متواضعاً وكان دائماً يشكر الله."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_sulayman_lesson_3",
+      "title": "The Ant's Warning",
+      "titleArabic": "تحذير النملة",
+      "sortOrder": 3,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "One day, Prophet Sulayman was marching with his great army through a valley. The army was so large - humans, jinn, and birds - all moving together in perfect order.",
+          "contentTextArabic": "في يوم من الأيام، كان النبي سليمان يسير مع جيشه العظيم عبر وادٍ. كان الجيش كبيراً جداً - بشر وجن وطيور - جميعهم يتحركون معاً في نظام تام."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "In that valley lived a colony of ants. As the mighty army approached, one ant saw them coming. She quickly called out to warn her fellow ants to get to safety.",
+          "contentTextArabic": "في ذلك الوادي عاشت مستعمرة من النمل. عندما اقترب الجيش الجبار، رأت نملة واحدة قدومهم. نادت بسرعة لتحذر النمل الآخر ليذهبوا إلى مكان آمن."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "The ant said: 'O ants! Enter your homes so that Sulayman and his armies do not crush you while they do not realize it!' She knew that the great king would not harm them on purpose.",
+          "contentTextArabic": "قالت النملة: 'يا أيها النمل ادخلوا مساكنكم لا يحطمنكم سليمان وجنوده وهم لا يشعرون!' علمت أن الملك العظيم لن يؤذيهم عمداً."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Sulayman heard the tiny ant's words and understood them. He smiled at her concern for her community and her faith that he would not harm them intentionally. His heart was filled with gratitude.",
+          "contentTextArabic": "سمع سليمان كلام النملة الصغيرة وفهمها. ابتسم لاهتمامها بمجتمعها وإيمانها بأنه لن يؤذيهم عمداً. امتلأ قلبه بالشكر."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Sulayman stopped and made dua: 'My Lord, enable me to be grateful for Your favor which You have bestowed upon me and upon my parents, and to do righteousness of which You approve.'",
+          "contentTextArabic": "توقف سليمان ودعا: 'رب أوزعني أن أشكر نعمتك التي أنعمت علي وعلى والديّ وأن أعمل صالحاً ترضاه.'"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What did the ant warn the other ants about?",
+          "questionArabic": "بماذا حذرت النملة النمل الآخر؟",
+          "options": ["Rain was coming", "A fire was starting", "Sulayman's army might crush them", "Food was running out"],
+          "optionsArabic": ["المطر قادم", "حريق بدأ", "جيش سليمان قد يحطمهم", "الطعام ينفد"],
+          "correctIndex": 2,
+          "explanation": "The ant warned the others to enter their homes so Sulayman's army wouldn't accidentally crush them.",
+          "explanationArabic": "حذرت النملة الآخرين بالدخول إلى مساكنهم حتى لا يحطمهم جيش سليمان دون قصد."
+        },
+        {
+          "question": "How did Sulayman react when he heard the ant?",
+          "questionArabic": "كيف كان رد فعل سليمان عندما سمع النملة؟",
+          "options": ["He got angry", "He smiled and made dua thanking Allah", "He ignored it", "He was scared"],
+          "optionsArabic": ["غضب", "ابتسم ودعا شاكراً الله", "تجاهلها", "خاف"],
+          "correctIndex": 1,
+          "explanation": "Sulayman smiled at the ant's words and prayed to Allah, thanking Him for His blessings.",
+          "explanationArabic": "ابتسم سليمان لكلام النملة ودعا الله شاكراً إياه على نعمه."
+        },
+        {
+          "question": "What did the ant's words show about her faith?",
+          "questionArabic": "ماذا أظهرت كلمات النملة عن إيمانها؟",
+          "options": ["She was afraid of Sulayman", "She believed Sulayman wouldn't harm them on purpose", "She didn't trust anyone", "She wanted to fight"],
+          "optionsArabic": ["كانت خائفة من سليمان", "آمنت أن سليمان لن يؤذيهم عمداً", "لم تثق بأحد", "أرادت القتال"],
+          "correctIndex": 1,
+          "explanation": "The ant said 'while they do not realize it,' showing she knew Sulayman would not harm them intentionally.",
+          "explanationArabic": "قالت النملة 'وهم لا يشعرون'، مما يُظهر أنها علمت أن سليمان لن يؤذيهم عمداً."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_sulayman_lesson_4",
+      "title": "The Queen of Sheba",
+      "titleArabic": "ملكة سبأ",
+      "sortOrder": 4,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "One day, Sulayman was reviewing his army of birds. He noticed that the Hoopoe bird was missing. 'Where is the Hoopoe?' he asked. 'I will punish him unless he has a good reason for being absent!'",
+          "contentTextArabic": "في يوم من الأيام، كان سليمان يستعرض جيشه من الطيور. لاحظ أن طائر الهدهد غائب. 'أين الهدهد؟' سأل. 'لأعذبنه أو ليأتيني بسلطان مبين!'"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Soon the Hoopoe returned with exciting news. He had discovered a kingdom called Sheba, ruled by a queen named Bilqis. She had a magnificent throne, but she and her people worshipped the sun instead of Allah!",
+          "contentTextArabic": "سرعان ما عاد الهدهد بأخبار مثيرة. اكتشف مملكة تُدعى سبأ، تحكمها ملكة اسمها بلقيس. كان لديها عرش عظيم، لكنها وقومها كانوا يعبدون الشمس بدلاً من الله!"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Sulayman sent a letter to the queen through the Hoopoe, inviting her and her people to worship Allah alone. The queen was wise - she decided to send gifts first and see how Sulayman would respond.",
+          "contentTextArabic": "أرسل سليمان رسالة إلى الملكة عبر الهدهد، يدعوها وقومها لعبادة الله وحده. كانت الملكة حكيمة - قررت أن ترسل هدايا أولاً وترى كيف سيستجيب سليمان."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "When the gifts arrived, Sulayman refused them! He said, 'What Allah has given me is better than what He has given you.' He was not interested in worldly treasures - he wanted them to know the truth about Allah.",
+          "contentTextArabic": "عندما وصلت الهدايا، رفضها سليمان! قال: 'ما آتاني الله خير مما آتاكم.' لم يكن مهتماً بكنوز الدنيا - أراد أن يعرفوا الحقيقة عن الله."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "The wise queen decided to visit Sulayman herself. Before she arrived, Sulayman asked who could bring her throne to him. A powerful jinn brought it in the blink of an eye! This was to show the queen Allah's power.",
+          "contentTextArabic": "قررت الملكة الحكيمة زيارة سليمان بنفسها. قبل وصولها، سأل سليمان من يستطيع إحضار عرشها. أحضره جني قوي في طرفة عين! كان هذا ليُري الملكة قدرة الله."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What news did the Hoopoe bring to Sulayman?",
+          "questionArabic": "ما الخبر الذي أحضره الهدهد لسليمان؟",
+          "options": ["A war was coming", "He found a kingdom that worshipped the sun", "He found treasure", "He was sick"],
+          "optionsArabic": ["حرب قادمة", "وجد مملكة تعبد الشمس", "وجد كنزاً", "كان مريضاً"],
+          "correctIndex": 1,
+          "explanation": "The Hoopoe discovered the kingdom of Sheba, where the queen and people worshipped the sun instead of Allah.",
+          "explanationArabic": "اكتشف الهدهد مملكة سبأ، حيث كانت الملكة والناس يعبدون الشمس بدلاً من الله."
+        },
+        {
+          "question": "What did Sulayman do when the queen sent him gifts?",
+          "questionArabic": "ماذا فعل سليمان عندما أرسلت له الملكة هدايا؟",
+          "options": ["He accepted them happily", "He refused them", "He asked for more", "He kept them secret"],
+          "optionsArabic": ["قبلها بسعادة", "رفضها", "طلب المزيد", "أخفاها"],
+          "correctIndex": 1,
+          "explanation": "Sulayman refused the gifts because he wanted to guide them to Allah, not receive their treasures.",
+          "explanationArabic": "رفض سليمان الهدايا لأنه أراد هدايتهم إلى الله، لا تلقي كنوزهم."
+        },
+        {
+          "question": "How was the queen's throne brought to Sulayman?",
+          "questionArabic": "كيف أُحضر عرش الملكة إلى سليمان؟",
+          "options": ["Carried by soldiers", "Brought by a jinn in the blink of an eye", "Shipped by sea", "Built new"],
+          "optionsArabic": ["حمله الجنود", "أحضره جني في طرفة عين", "شُحن بالبحر", "بُني جديد"],
+          "correctIndex": 1,
+          "explanation": "A powerful jinn brought the queen's throne instantly, showing Allah's power through Sulayman.",
+          "explanationArabic": "أحضر جني قوي عرش الملكة فوراً، مُظهراً قدرة الله من خلال سليمان."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_sulayman_lesson_5",
+      "title": "The Queen Believes",
+      "titleArabic": "الملكة تؤمن",
+      "sortOrder": 5,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "When the Queen of Sheba arrived at Sulayman's palace, she was amazed. The floor was made of glass so clear that it looked like water. She lifted her dress, thinking she would step into water!",
+          "contentTextArabic": "عندما وصلت ملكة سبأ إلى قصر سليمان، اندهشت. كانت الأرضية من زجاج صافٍ جداً حتى بدت كالماء. رفعت ثوبها، ظنّت أنها ستخوض في الماء!"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Sulayman told her, 'It is a palace made smooth with glass.' The queen was impressed by this marvel. She realized that Sulayman's kingdom was truly blessed by Allah in ways she had never imagined.",
+          "contentTextArabic": "قال لها سليمان: 'إنه صرح ممرد من قوارير.' أُعجبت الملكة بهذه الأعجوبة. أدركت أن مملكة سليمان مباركة حقاً من الله بطرق لم تتخيلها."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "She also saw her own throne, which had been brought from her kingdom in an instant. It was changed slightly, and when asked if it was her throne, she wisely said, 'It seems like it.'",
+          "contentTextArabic": "رأت أيضاً عرشها الذي أُحضر من مملكتها في لحظة. تم تغييره قليلاً، وعندما سُئلت إن كان عرشها، قالت بحكمة: 'كأنه هو.'"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "After seeing all these signs of Allah's power, the queen's heart changed. She declared: 'My Lord, I have wronged myself, and I submit with Sulayman to Allah, the Lord of all the worlds.'",
+          "contentTextArabic": "بعد رؤية كل هذه الآيات من قدرة الله، تغير قلب الملكة. أعلنت: 'رب إني ظلمت نفسي وأسلمت مع سليمان لله رب العالمين.'"
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "The story of Sulayman teaches us that true power comes from Allah alone. All of Sulayman's gifts were meant to bring people to worship Allah. The greatest success is when others find the true path through your good example.",
+          "contentTextArabic": "تعلمنا قصة سليمان أن القوة الحقيقية من الله وحده. كل هبات سليمان كانت لجذب الناس لعبادة الله. أعظم نجاح هو عندما يجد الآخرون الطريق الصحيح من خلال مثالك الطيب."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What surprised the queen about Sulayman's palace floor?",
+          "questionArabic": "ما الذي أدهش الملكة في أرضية قصر سليمان؟",
+          "options": ["It was made of gold", "It was glass that looked like water", "It was covered in flowers", "It was made of sand"],
+          "optionsArabic": ["كانت من ذهب", "كانت زجاجاً يبدو كالماء", "كانت مغطاة بالزهور", "كانت من رمل"],
+          "correctIndex": 1,
+          "explanation": "The palace floor was made of clear glass that looked like water, amazing the queen.",
+          "explanationArabic": "كانت أرضية القصر من زجاج صافٍ بدا كالماء، مما أدهش الملكة."
+        },
+        {
+          "question": "What did the Queen of Sheba do after seeing Allah's signs?",
+          "questionArabic": "ماذا فعلت ملكة سبأ بعد رؤية آيات الله؟",
+          "options": ["She went back home unchanged", "She submitted to Allah with Sulayman", "She declared war", "She asked for more gifts"],
+          "optionsArabic": ["عادت إلى بلدها دون تغيير", "أسلمت لله مع سليمان", "أعلنت الحرب", "طلبت المزيد من الهدايا"],
+          "correctIndex": 1,
+          "explanation": "The queen declared her faith and submitted to Allah, the Lord of all the worlds.",
+          "explanationArabic": "أعلنت الملكة إيمانها وأسلمت لله رب العالمين."
+        },
+        {
+          "question": "What is the main lesson from Prophet Sulayman's story?",
+          "questionArabic": "ما هو الدرس الرئيسي من قصة النبي سليمان؟",
+          "options": ["Power makes you important", "True power comes from Allah alone", "Being rich is the goal", "Animals are our enemies"],
+          "optionsArabic": ["القوة تجعلك مهماً", "القوة الحقيقية من الله وحده", "الثروة هي الهدف", "الحيوانات أعداؤنا"],
+          "correctIndex": 1,
+          "explanation": "Sulayman's story teaches that all power belongs to Allah and should be used to guide others to Him.",
+          "explanationArabic": "تعلمنا قصة سليمان أن كل القوة لله ويجب استخدامها لهداية الآخرين إليه."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "chapter": {
+    "serverId": "prophet_salih",
+    "title": "Prophet Salih",
+    "titleArabic": "النبي صالح",
+    "description": "The story of Prophet Salih and the miracle of the she-camel",
+    "descriptionArabic": "قصة النبي صالح ومعجزة الناقة",
+    "iconName": "salih",
+    "colorHex": "#8D6E63",
+    "sortOrder": 21
+  },
+  "lessons": [
+    {
+      "serverId": "prophet_salih_lesson_1",
+      "title": "The People of Thamud",
+      "titleArabic": "قوم ثمود",
+      "sortOrder": 1,
+      "durationMinutes": 5,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "After the people of 'Ad were destroyed, another powerful nation grew in Arabia. They were called Thamud, and they lived in a valley with huge mountains.",
+          "contentTextArabic": "بعد أن أُهلك قوم عاد، نشأت أمة قوية أخرى في الجزيرة العربية. كانوا يسمون ثمود، وعاشوا في وادٍ به جبال ضخمة."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "The people of Thamud were amazing builders! They carved beautiful homes right into the mountains. Their houses in the rocks were cool in summer and warm in winter.",
+          "contentTextArabic": "كان قوم ثمود بنائين مذهلين! نحتوا بيوتاً جميلة في الجبال مباشرة. كانت بيوتهم في الصخور باردة في الصيف ودافئة في الشتاء."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Allah blessed them with gardens, springs of water, and many animals. They had everything they needed. But instead of thanking Allah, they started worshipping idols.",
+          "contentTextArabic": "باركهم الله بالحدائق وينابيع الماء والكثير من الحيوانات. كان لديهم كل ما يحتاجونه. لكن بدلاً من شكر الله، بدأوا يعبدون الأصنام."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What were the people of Thamud famous for?",
+          "questionArabic": "بماذا اشتهر قوم ثمود؟",
+          "options": ["Sailing ships", "Carving homes in mountains", "Making pottery", "Growing wheat"],
+          "optionsArabic": ["الإبحار بالسفن", "نحت البيوت في الجبال", "صناعة الفخار", "زراعة القمح"],
+          "correctIndex": 1,
+          "explanation": "The people of Thamud were famous for carving their homes into the mountains.",
+          "explanationArabic": "اشتهر قوم ثمود بنحت بيوتهم في الجبال."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_salih_lesson_2",
+      "title": "Prophet Salih's Message",
+      "titleArabic": "رسالة النبي صالح",
+      "sortOrder": 2,
+      "durationMinutes": 5,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Allah sent Prophet Salih (peace be upon him) from among the people of Thamud. He was one of them, so he knew them well and spoke their language.",
+          "contentTextArabic": "أرسل الله النبي صالح عليه السلام من بين قوم ثمود. كان واحداً منهم، فكان يعرفهم جيداً ويتكلم لغتهم."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Salih said to his people: 'O my people! Worship Allah alone. You have no god other than Him. He created you and gave you this beautiful land. Ask for His forgiveness!'",
+          "contentTextArabic": "قال صالح لقومه: 'يا قوم! اعبدوا الله وحده. ما لكم من إله غيره. هو خلقكم وأعطاكم هذه الأرض الجميلة. استغفروه!'"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Some people listened to Salih, especially the poor and humble ones. But the rich and powerful leaders refused. They were proud and did not want to change their ways.",
+          "contentTextArabic": "استمع بعض الناس لصالح، خاصة الفقراء والمتواضعين. لكن القادة الأغنياء والأقوياء رفضوا. كانوا متكبرين ولم يريدوا تغيير طرقهم."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "The leaders said: 'We had high hopes for you, Salih! You were smart and respected. Why are you now telling us to leave what our fathers worshipped?'",
+          "contentTextArabic": "قال القادة: 'كنا نرجو منك خيراً يا صالح! كنت ذكياً ومحترماً. لماذا تطلب منا الآن أن نترك ما كان يعبده آباؤنا؟'"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Who believed in Prophet Salih first?",
+          "questionArabic": "من آمن بالنبي صالح أولاً؟",
+          "options": ["The kings", "The rich leaders", "The poor and humble people", "The soldiers"],
+          "optionsArabic": ["الملوك", "القادة الأغنياء", "الفقراء والمتواضعون", "الجنود"],
+          "correctIndex": 2,
+          "explanation": "The poor and humble people were the first to believe in Prophet Salih's message.",
+          "explanationArabic": "كان الفقراء والمتواضعون أول من آمن برسالة النبي صالح."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_salih_lesson_3",
+      "title": "The Miracle of the She-Camel",
+      "titleArabic": "معجزة الناقة",
+      "sortOrder": 3,
+      "durationMinutes": 6,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "The people challenged Salih. They said: 'If you are really a prophet, show us a miracle! Make a she-camel come out of that big rock over there!'",
+          "contentTextArabic": "تحدى الناس صالحاً. قالوا: 'إذا كنت نبياً حقاً، أرنا معجزة! اجعل ناقة تخرج من تلك الصخرة الكبيرة هناك!'"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "They pointed to a huge mountain rock, thinking it was impossible. They wanted to prove Salih wrong. But Salih prayed to Allah, trusting in His power.",
+          "contentTextArabic": "أشاروا إلى صخرة جبلية ضخمة، ظناً منهم أنه مستحيل. أرادوا إثبات أن صالحاً مخطئ. لكن صالح دعا الله، واثقاً بقدرته."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "And then the miracle happened! The rock split open and out came a beautiful, big she-camel! Everyone watching was amazed. This was truly from Allah!",
+          "contentTextArabic": "وحينها حدثت المعجزة! انشقت الصخرة وخرجت منها ناقة جميلة وكبيرة! كل من شاهد ذلك أُذهل. هذا كان حقاً من الله!"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "This was no ordinary camel. She was very special - a sign from Allah. She gave lots of milk, enough for the whole village to drink every day!",
+          "contentTextArabic": "لم تكن هذه ناقة عادية. كانت مميزة جداً - آية من الله. كانت تعطي حليباً كثيراً، يكفي القرية كلها لتشرب كل يوم!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How did the she-camel appear?",
+          "questionArabic": "كيف ظهرت الناقة؟",
+          "options": ["She walked from the desert", "She came out of a rock", "She fell from the sky", "She swam from the sea"],
+          "optionsArabic": ["مشت من الصحراء", "خرجت من صخرة", "سقطت من السماء", "سبحت من البحر"],
+          "correctIndex": 1,
+          "explanation": "Allah made the she-camel come out of a rock as a miracle for Prophet Salih.",
+          "explanationArabic": "جعل الله الناقة تخرج من صخرة كمعجزة للنبي صالح."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_salih_lesson_4",
+      "title": "The Warning About the Camel",
+      "titleArabic": "التحذير بشأن الناقة",
+      "sortOrder": 4,
+      "durationMinutes": 5,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Prophet Salih told his people: 'This she-camel is a sign from Allah. Let her eat from the land freely. One day the water is for her, and one day it is for you and your animals.'",
+          "contentTextArabic": "قال النبي صالح لقومه: 'هذه الناقة آية من الله. دعوها تأكل من الأرض بحرية. يوم الماء لها، ويوم لكم ولحيواناتكم.'"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Salih warned them seriously: 'Do not harm this camel in any way! If you hurt her, a terrible punishment will come to you. This is Allah's camel!'",
+          "contentTextArabic": "حذرهم صالح بجدية: 'لا تمسوها بسوء! إذا آذيتموها، سيأتيكم عذاب أليم. هذه ناقة الله!'"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "At first, the people agreed. They let the camel drink from the well one day, and they drank the next day. On her drinking days, she gave them plenty of milk.",
+          "contentTextArabic": "في البداية، وافق الناس. تركوا الناقة تشرب من البئر يوماً، وشربوا هم في اليوم التالي. في أيام شربها، أعطتهم الكثير من الحليب."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "But some evil people in the city did not like the camel. They were jealous and angry. They began to plan something very bad...",
+          "contentTextArabic": "لكن بعض الأشرار في المدينة لم يحبوا الناقة. كانوا حاسدين وغاضبين. بدأوا يخططون لشيء سيء جداً..."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What was the rule about the water?",
+          "questionArabic": "ما كانت القاعدة بشأن الماء؟",
+          "options": ["The camel never drank", "One day for the camel, one day for the people", "Only the camel could drink", "There was no rule"],
+          "optionsArabic": ["الناقة لم تشرب أبداً", "يوم للناقة ويوم للناس", "فقط الناقة يمكنها الشرب", "لم تكن هناك قاعدة"],
+          "correctIndex": 1,
+          "explanation": "They took turns - one day the water was for the camel, and one day it was for the people and their animals.",
+          "explanationArabic": "تناوبوا - يوم كان الماء للناقة، ويوم للناس وحيواناتهم."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_salih_lesson_5",
+      "title": "The People Kill the Camel",
+      "titleArabic": "الناس يقتلون الناقة",
+      "sortOrder": 5,
+      "durationMinutes": 5,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Nine wicked men from the city made a terrible plan. They decided to kill the she-camel, even though they knew it was from Allah.",
+          "contentTextArabic": "تسعة رجال أشرار من المدينة وضعوا خطة فظيعة. قرروا قتل الناقة، رغم أنهم كانوا يعلمون أنها من الله."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "One cruel man named Qidar struck the camel with his sword. The blessed she-camel fell down. The people had broken Allah's command!",
+          "contentTextArabic": "رجل قاسٍ يدعى قدار ضرب الناقة بسيفه. سقطت الناقة المباركة. كان الناس قد خالفوا أمر الله!"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "When Prophet Salih heard what they did, he was very sad. He told them: 'Enjoy yourselves for three days. Then the punishment will come. This is a promise that will not fail.'",
+          "contentTextArabic": "عندما سمع النبي صالح بما فعلوا، حزن جداً. قال لهم: 'تمتعوا في داركم ثلاثة أيام. ثم سيأتي العذاب. هذا وعد غير مكذوب.'"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "But instead of being sorry, the wicked people laughed! They even tried to hurt Prophet Salih. They did not believe the punishment would really come.",
+          "contentTextArabic": "لكن بدلاً من الندم، ضحك الأشرار! حتى حاولوا إيذاء النبي صالح. لم يصدقوا أن العذاب سيأتي حقاً."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How many days did Prophet Salih give them?",
+          "questionArabic": "كم يوماً أمهلهم النبي صالح؟",
+          "options": ["One day", "Three days", "Seven days", "Ten days"],
+          "optionsArabic": ["يوم واحد", "ثلاثة أيام", "سبعة أيام", "عشرة أيام"],
+          "correctIndex": 1,
+          "explanation": "Prophet Salih warned them that they had three days before the punishment would come.",
+          "explanationArabic": "حذرهم النبي صالح أن أمامهم ثلاثة أيام قبل أن يأتي العذاب."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_salih_lesson_6",
+      "title": "The Punishment and the Lesson",
+      "titleArabic": "العذاب والعبرة",
+      "sortOrder": 6,
+      "durationMinutes": 5,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "On the first day after the warning, the faces of the disbelievers turned yellow. On the second day, they turned red. On the third day, they turned black. Fear filled their hearts.",
+          "contentTextArabic": "في اليوم الأول بعد التحذير، أصبحت وجوه الكافرين صفراء. في اليوم الثاني، أصبحت حمراء. في اليوم الثالث، أصبحت سوداء. امتلأت قلوبهم بالخوف."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Then came a mighty blast from the sky - a terrible earthquake and a thundering sound! The people of Thamud were destroyed in their own homes.",
+          "contentTextArabic": "ثم جاءت صيحة عظيمة من السماء - زلزال رهيب وصوت مدوٍّ! أُهلك قوم ثمود في بيوتهم."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Allah saved Prophet Salih and all the believers before the punishment came. They left the city and were protected by Allah's mercy.",
+          "contentTextArabic": "أنجى الله النبي صالح وجميع المؤمنين قبل أن يأتي العذاب. غادروا المدينة وحماهم الله برحمته."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Today, you can still see the remains of their stone houses in Arabia. They remind us: no matter how strong you are, always obey Allah and never harm His signs!",
+          "contentTextArabic": "اليوم، لا يزال بإمكانك رؤية بقايا بيوتهم الحجرية في الجزيرة العربية. تذكرنا: مهما كنت قوياً، أطع الله دائماً ولا تؤذِ آياته أبداً!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What happened to Prophet Salih and the believers?",
+          "questionArabic": "ماذا حدث للنبي صالح والمؤمنين؟",
+          "options": ["They were punished too", "Allah saved them before the punishment", "They hid in caves", "They ran to another country"],
+          "optionsArabic": ["عوقبوا أيضاً", "أنجاهم الله قبل العذاب", "اختبأوا في كهوف", "هربوا إلى بلد آخر"],
+          "correctIndex": 1,
+          "explanation": "Allah saved Prophet Salih and all the believers before the punishment came to Thamud.",
+          "explanationArabic": "أنجى الله النبي صالح وجميع المؤمنين قبل أن يأتي العذاب لثمود."
+        }
+      ]
+    }
+  ]
+}

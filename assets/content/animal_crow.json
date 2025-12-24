@@ -1,0 +1,216 @@
+{
+  "chapter": {
+    "serverId": "animal_crow",
+    "title": "The Crow Teacher",
+    "titleArabic": "الغراب المعلم",
+    "description": "The bird that taught humans to bury the dead",
+    "descriptionArabic": "الطائر الذي علم البشر دفن الموتى",
+    "iconName": "pets",
+    "colorHex": "#212121",
+    "sortOrder": 24
+  },
+  "lessons": [
+    {
+      "serverId": "crow_lesson_1",
+      "title": "The Two Brothers",
+      "titleArabic": "الأخوان",
+      "subtitle": "Habil and Qabil's story",
+      "subtitleArabic": "قصة هابيل وقابيل",
+      "sortOrder": 1,
+      "durationMinutes": 6,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "This story takes us back to the very beginning of humanity. Adam and Hawwa (Eve) had children, and among them were two sons: Habil (Abel) and Qabil (Cain). This was the first family on Earth.",
+          "contentTextArabic": "تأخذنا هذه القصة إلى بداية البشرية. آدم وحواء رُزقا بأطفال، ومن بينهم ابنان: هابيل وقابيل. كانت هذه أول عائلة على الأرض."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Both brothers offered a sacrifice to Allah. Habil was a shepherd and offered his best sheep. Qabil was a farmer and offered some of his crops - but not the best ones. He gave what he didn't really care about.",
+          "contentTextArabic": "كلا الأخوين قدم قرباناً لله. كان هابيل راعياً وقدم أفضل غنمه. كان قابيل مزارعاً وقدم بعض محاصيله - لكن ليس الأفضل. أعطى ما لم يهتم به حقاً."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Allah accepted Habil's sacrifice because it was given with a pure heart and true devotion. But Allah did not accept Qabil's sacrifice because it was not given sincerely. This made Qabil very jealous and angry.",
+          "contentTextArabic": "قبل الله قربان هابيل لأنه قُدم بقلب نقي وإخلاص حقيقي. لكن الله لم يقبل قربان قابيل لأنه لم يُقدم بإخلاص. هذا جعل قابيل غيوراً جداً وغاضباً."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Qabil said to Habil: \"I will surely kill you!\" Habil replied peacefully: \"Allah only accepts from those who have taqwa (consciousness of Allah). If you stretch your hand to kill me, I will not stretch my hand to kill you. Indeed, I fear Allah, Lord of the worlds.\"",
+          "contentTextArabic": "قال قابيل لهابيل: \"لأقتلنك!\" أجاب هابيل بسلام: \"إنما يتقبل الله من المتقين. لئن بسطت إلي يدك لتقتلني ما أنا بباسط يدي إليك لأقتلك إني أخاف الله رب العالمين.\""
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "But Qabil's jealousy was too strong. He let Shaytan whisper evil thoughts to him. One day, he attacked his brother Habil and killed him. This was the first murder in human history.",
+          "contentTextArabic": "لكن غيرة قابيل كانت قوية جداً. ترك الشيطان يوسوس له بأفكار شريرة. ذات يوم، هاجم أخاه هابيل وقتله. كانت هذه أول جريمة قتل في تاريخ البشرية."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why was Habil's sacrifice accepted?",
+          "questionArabic": "لماذا قُبل قربان هابيل؟",
+          "options": ["He gave more", "He gave with a pure heart and true devotion", "He was older", "He was stronger"],
+          "optionsArabic": ["أعطى أكثر", "أعطى بقلب نقي وإخلاص حقيقي", "كان أكبر", "كان أقوى"],
+          "correctIndex": 1,
+          "explanation": "Allah accepted Habil's sacrifice because he gave his best with sincerity and taqwa (consciousness of Allah).",
+          "explanationArabic": "قبل الله قربان هابيل لأنه أعطى أفضل ما عنده بإخلاص وتقوى."
+        },
+        {
+          "question": "What did Habil say when Qabil threatened to kill him?",
+          "questionArabic": "ماذا قال هابيل عندما هدده قابيل بالقتل؟",
+          "options": ["I will fight you", "I fear Allah and won't attack you", "Please don't", "I'll run away"],
+          "optionsArabic": ["سأقاتلك", "أخاف الله ولن أهاجمك", "أرجوك لا تفعل", "سأهرب"],
+          "correctIndex": 1,
+          "explanation": "Habil said he would not raise his hand to attack because he feared Allah, Lord of the worlds.",
+          "explanationArabic": "قال هابيل أنه لن يرفع يده للهجوم لأنه يخاف الله رب العالمين."
+        }
+      ]
+    },
+    {
+      "serverId": "crow_lesson_2",
+      "title": "The Crow's Lesson",
+      "titleArabic": "درس الغراب",
+      "subtitle": "Allah sends a teacher",
+      "subtitleArabic": "الله يرسل معلماً",
+      "sortOrder": 2,
+      "durationMinutes": 6,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "After killing his brother, Qabil didn't know what to do with the body. Remember, this was the first death among humans - no one had ever died before! Qabil had never seen anyone buried.",
+          "contentTextArabic": "بعد قتل أخيه، لم يعرف قابيل ماذا يفعل بالجثة. تذكر، كانت هذه أول وفاة بين البشر - لم يمت أحد من قبل! لم يرَ قابيل أحداً يُدفن."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Qabil carried his brother's body, not knowing what to do. He felt lost and confused. That's when Allah sent a teacher - not a human teacher, but a bird: a crow!",
+          "contentTextArabic": "حمل قابيل جثة أخيه، لا يعرف ماذا يفعل. شعر بالضياع والحيرة. عندها أرسل الله معلماً - ليس معلماً بشرياً، بل طائراً: غراباً!"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Allah sent a crow that began scratching the ground. The crow dug and dug, making a hole in the earth. Then it placed something in the hole and covered it with dirt. The crow was showing Qabil how to bury!",
+          "contentTextArabic": "أرسل الله غراباً بدأ يبحث في الأرض. حفر الغراب وحفر، صانعاً حفرة في الأرض. ثم وضع شيئاً في الحفرة وغطاه بالتراب. كان الغراب يُري قابيل كيف يدفن!"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "The Quran tells us: \"Then Allah sent a crow digging in the ground to show him how to hide the disgrace of his brother.\" The crow became the first teacher of burial for mankind.",
+          "contentTextArabic": "يخبرنا القرآن: \"فبعث الله غراباً يبحث في الأرض ليريه كيف يواري سوءة أخيه.\" أصبح الغراب أول معلم للدفن للبشرية."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "When Qabil saw what the crow did, he finally understood. He cried out: \"Woe to me! Am I not able to be like this crow and hide the body of my brother?\" He became full of regret.",
+          "contentTextArabic": "عندما رأى قابيل ما فعله الغراب، فهم أخيراً. صاح: \"يا ويلتا أعجزت أن أكون مثل هذا الغراب فأواري سوءة أخي؟\" امتلأ بالندم."
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "The Quran says he \"became among the regretful.\" He buried his brother as the crow had shown him. But his regret came too late - he had already committed a terrible sin that could not be undone.",
+          "contentTextArabic": "يقول القرآن أنه \"أصبح من النادمين.\" دفن أخاه كما أراه الغراب. لكن ندمه جاء متأخراً جداً - لقد ارتكب ذنباً فظيعاً لا يمكن التراجع عنه."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why didn't Qabil know what to do with his brother's body?",
+          "questionArabic": "لماذا لم يعرف قابيل ماذا يفعل بجثة أخيه؟",
+          "options": ["He was too sad", "No one had ever died before - he didn't know about burial", "He was looking for help", "He forgot"],
+          "optionsArabic": ["كان حزيناً جداً", "لم يمت أحد من قبل - لم يعرف عن الدفن", "كان يبحث عن مساعدة", "نسي"],
+          "correctIndex": 1,
+          "explanation": "This was the first human death ever, so Qabil had never seen anyone buried before.",
+          "explanationArabic": "كانت هذه أول وفاة بشرية على الإطلاق، فلم يرَ قابيل أحداً يُدفن من قبل."
+        },
+        {
+          "question": "What did the crow do?",
+          "questionArabic": "ماذا فعل الغراب؟",
+          "options": ["It flew away", "It scratched the ground to show how to bury", "It sang", "It attacked Qabil"],
+          "optionsArabic": ["طار بعيداً", "بحث في الأرض ليُري كيف يدفن", "غنى", "هاجم قابيل"],
+          "correctIndex": 1,
+          "explanation": "The crow dug in the ground and buried something, teaching Qabil how to bury his brother's body.",
+          "explanationArabic": "حفر الغراب في الأرض ودفن شيئاً، معلماً قابيل كيف يدفن جثة أخيه."
+        },
+        {
+          "question": "What did Qabil say after watching the crow?",
+          "questionArabic": "ماذا قال قابيل بعد مشاهدة الغراب؟",
+          "options": ["Thank you crow!", "Woe to me! Am I not able to be like this crow?", "That's a smart bird", "I don't need help"],
+          "optionsArabic": ["شكراً أيها الغراب!", "يا ويلتا! أعجزت أن أكون مثل هذا الغراب؟", "هذا طائر ذكي", "لا أحتاج مساعدة"],
+          "correctIndex": 1,
+          "explanation": "Qabil was amazed that a bird knew something he didn't, and expressed his regret.",
+          "explanationArabic": "دُهش قابيل أن طائراً يعرف شيئاً لا يعرفه هو، وعبر عن ندمه."
+        }
+      ]
+    },
+    {
+      "serverId": "crow_lesson_3",
+      "title": "Lessons from the Crow",
+      "titleArabic": "دروس من الغراب",
+      "subtitle": "What this story teaches us",
+      "subtitleArabic": "ما تعلمنا هذه القصة",
+      "sortOrder": 3,
+      "durationMinutes": 6,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "The crow teaches us humility. Humans are the best of Allah's creation, yet a simple bird taught the first humans how to bury the dead! We can learn from any source Allah provides, even the smallest creatures.",
+          "contentTextArabic": "يعلمنا الغراب التواضع. البشر أفضل خلق الله، ومع ذلك طائر بسيط علم أول البشر كيف يدفنون الموتى! يمكننا التعلم من أي مصدر يوفره الله، حتى أصغر المخلوقات."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "The story warns us about jealousy. Qabil's jealousy led him to kill his own brother. The Quran says: \"Indeed, Allah does not guide the wrongdoing people.\" Jealousy can lead to terrible sins.",
+          "contentTextArabic": "تحذرنا القصة من الغيرة. غيرة قابيل قادته لقتل أخيه. يقول القرآن: \"إن الله لا يهدي القوم الظالمين.\" الغيرة يمكن أن تؤدي لذنوب فظيعة."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "The story also shows us that regret that comes too late doesn't fix things. Qabil regretted after killing his brother, but the sin was already done. It's better to control our anger before we do something we'll regret.",
+          "contentTextArabic": "تُرينا القصة أيضاً أن الندم المتأخر لا يصلح الأمور. ندم قابيل بعد قتل أخيه، لكن الذنب ارتُكب بالفعل. من الأفضل التحكم في غضبنا قبل أن نفعل شيئاً نندم عليه."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Prophet Muhammad (peace be upon him) said: \"No soul is killed wrongfully except that a share of the sin is upon the first son of Adam, because he was the first to establish the practice of murder.\" Qabil started something terrible.",
+          "contentTextArabic": "قال النبي محمد صلى الله عليه وسلم: \"لا تُقتل نفس ظلماً إلا كان على ابن آدم الأول كفل من دمها، لأنه أول من سن القتل.\" بدأ قابيل شيئاً فظيعاً."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "In contrast, Habil's response was beautiful. Even when threatened with death, he refused to fight back because he feared Allah. He is an example of how to respond to evil with patience and trust in Allah.",
+          "contentTextArabic": "في المقابل، كان رد هابيل جميلاً. حتى عندما هُدد بالموت، رفض الرد لأنه يخاف الله. هو مثال على كيفية الرد على الشر بالصبر والثقة في الله."
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "The crow remains a symbol in Islam - a teacher sent by Allah. Animals have wisdom that Allah has given them. The crow knew naturally how to bury - knowledge that helped humanity learn this important practice.",
+          "contentTextArabic": "يبقى الغراب رمزاً في الإسلام - معلم أرسله الله. للحيوانات حكمة أعطاها الله لها. عرف الغراب بالفطرة كيف يدفن - معرفة ساعدت البشرية تتعلم هذه الممارسة المهمة."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does the crow teach us about learning?",
+          "questionArabic": "ماذا يعلمنا الغراب عن التعلم؟",
+          "options": ["Only learn from humans", "We can learn from any source Allah provides, even animals", "Animals are smarter than humans", "Don't learn from nature"],
+          "optionsArabic": ["تعلم فقط من البشر", "يمكننا التعلم من أي مصدر يوفره الله، حتى الحيوانات", "الحيوانات أذكى من البشر", "لا تتعلم من الطبيعة"],
+          "correctIndex": 1,
+          "explanation": "The crow story teaches humility - even humans can learn from animals that Allah has given wisdom to.",
+          "explanationArabic": "قصة الغراب تعلمنا التواضع - حتى البشر يمكنهم التعلم من الحيوانات التي أعطاها الله حكمة."
+        },
+        {
+          "question": "What led Qabil to kill his brother?",
+          "questionArabic": "ما الذي قاد قابيل لقتل أخيه؟",
+          "options": ["Hunger", "Jealousy", "Self-defense", "An accident"],
+          "optionsArabic": ["الجوع", "الغيرة", "الدفاع عن النفس", "حادث"],
+          "correctIndex": 1,
+          "explanation": "Qabil was jealous because Allah accepted Habil's sacrifice and not his. This jealousy led to murder.",
+          "explanationArabic": "غار قابيل لأن الله قبل قربان هابيل ولم يقبل قربانه. هذه الغيرة أدت للقتل."
+        },
+        {
+          "question": "How did Habil respond to his brother's threat?",
+          "questionArabic": "كيف رد هابيل على تهديد أخيه؟",
+          "options": ["He fought back", "He ran away", "He refused to fight because he feared Allah", "He asked others for help"],
+          "optionsArabic": ["رد بالقتال", "هرب", "رفض القتال لأنه يخاف الله", "طلب المساعدة من الآخرين"],
+          "correctIndex": 2,
+          "explanation": "Habil chose not to fight back because he feared Allah - showing patience and trust in Allah even facing death.",
+          "explanationArabic": "اختار هابيل ألا يرد لأنه يخاف الله - مظهراً الصبر والثقة في الله حتى في مواجهة الموت."
+        }
+      ]
+    }
+  ]
+}

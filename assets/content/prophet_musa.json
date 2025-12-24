@@ -1,0 +1,469 @@
+{
+  "chapter": {
+    "serverId": "prophet_musa",
+    "title": "Prophet Musa",
+    "titleArabic": "النبي موسى",
+    "description": "The one who spoke directly to Allah",
+    "descriptionArabic": "الذي كلمه الله تكليماً",
+    "iconName": "auto_stories",
+    "colorHex": "#6A1B9A",
+    "sortOrder": 4
+  },
+  "lessons": [
+    {
+      "serverId": "musa_lesson_1",
+      "title": "The Baby in the River",
+      "titleArabic": "الطفل في النهر",
+      "subtitle": "How Allah protected baby Musa",
+      "subtitleArabic": "كيف حمى الله الطفل موسى",
+      "sortOrder": 1,
+      "durationMinutes": 8,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "In ancient Egypt, there lived a cruel king called Fir'awn (Pharaoh). He ruled over the land with an iron fist and made the Children of Israel his slaves. They worked in the hot sun, building his palaces and monuments.",
+          "contentTextArabic": "في مصر القديمة، عاش ملك قاسٍ يُدعى فرعون. حكم الأرض بقبضة من حديد وجعل بني إسرائيل عبيداً له. عملوا تحت الشمس الحارقة، يبنون قصوره ومعالمه."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Fir'awn's magicians told him that a boy would be born among the Children of Israel who would end his kingdom. Terrified, Fir'awn ordered his soldiers to kill every baby boy born to them. It was a time of great fear and sadness.",
+          "contentTextArabic": "أخبره سحرة فرعون أن صبياً سيولد بين بني إسرائيل وسينهي مملكته. مرعوباً، أمر فرعون جنوده بقتل كل طفل ذكر يولد لهم. كان زمن خوف وحزن عظيم."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "During this dark time, a righteous woman gave birth to a beautiful baby boy. She looked at her son with love and fear - how could she protect him from Fir'awn's soldiers? Then Allah inspired her heart with a plan.",
+          "contentTextArabic": "في هذا الوقت المظلم، ولدت امرأة صالحة طفلاً جميلاً. نظرت إلى ابنها بحب وخوف - كيف ستحميه من جنود فرعون؟ ثم ألهم الله قلبها بخطة."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Allah revealed to Musa's mother: \"Nurse him, and when you fear for him, cast him into the river and do not fear and do not grieve. Indeed, We will return him to you and will make him one of the messengers.\"",
+          "contentTextArabic": "أوحى الله لأم موسى: \"أرضعيه فإذا خفت عليه فألقيه في اليم ولا تخافي ولا تحزني إنا رادوه إليك وجاعلوه من المرسلين.\""
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "With trembling hands but a trusting heart, the mother made a small basket and waterproofed it. She placed her precious baby inside and gently set it floating on the Nile River. She asked her daughter to follow the basket from the shore.",
+          "contentTextArabic": "بيدين مرتجفتين لكن قلب واثق، صنعت الأم سلة صغيرة وعزلتها عن الماء. وضعت طفلها الغالي بداخلها وأطلقتها برفق لتطفو على نهر النيل. طلبت من ابنتها متابعة السلة من الشاطئ."
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "The basket floated gently down the river until it reached... Fir'awn's palace! The wife of Fir'awn, Asiya, was by the river when she saw the basket. She opened it and found the most beautiful baby boy smiling at her.",
+          "contentTextArabic": "طفت السلة برفق في النهر حتى وصلت... قصر فرعون! كانت زوجة فرعون، آسية، عند النهر عندما رأت السلة. فتحتها ووجدت أجمل طفل يبتسم لها."
+        },
+        {
+          "pageNumber": 7,
+          "contentText": "Asiya's heart was filled with love for this child. She said to Fir'awn: \"He will be a comfort of the eye for me and for you. Do not kill him. Perhaps he will benefit us, or we may adopt him as a son.\" Fir'awn agreed.",
+          "contentTextArabic": "امتلأ قلب آسية بالحب لهذا الطفل. قالت لفرعون: \"قرة عين لي ولك لا تقتلوه عسى أن ينفعنا أو نتخذه ولداً.\" وافق فرعون."
+        },
+        {
+          "pageNumber": 8,
+          "contentText": "But the baby would not nurse from anyone! Musa's sister, who had been watching, stepped forward: \"Shall I direct you to a family who will nurse him for you?\" They agreed, and baby Musa was returned to his own mother - just as Allah had promised!",
+          "contentTextArabic": "لكن الطفل لم يرضع من أحد! تقدمت أخت موسى التي كانت تراقب: \"هل أدلكم على أهل بيت يكفلونه لكم؟\" وافقوا، وعاد الطفل موسى إلى أمه - تماماً كما وعد الله!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why did Fir'awn order the killing of baby boys?",
+          "questionArabic": "لماذا أمر فرعون بقتل الأطفال الذكور؟",
+          "options": ["He didn't like children", "He was told a boy would end his kingdom", "He wanted fewer slaves", "He was testing his soldiers"],
+          "optionsArabic": ["لم يكن يحب الأطفال", "أُخبر أن صبياً سينهي مملكته", "أراد عبيداً أقل", "كان يختبر جنوده"],
+          "correctIndex": 1,
+          "explanation": "Fir'awn's magicians warned him that a boy from the Children of Israel would end his rule, so he tried to prevent this by killing all baby boys.",
+          "explanationArabic": "حذره سحرة فرعون أن صبياً من بني إسرائيل سينهي حكمه، فحاول منع ذلك بقتل جميع الأطفال الذكور."
+        },
+        {
+          "question": "What did Allah inspire Musa's mother to do?",
+          "questionArabic": "ماذا ألهم الله أم موسى أن تفعل؟",
+          "options": ["Run away to another country", "Put him in a basket in the river", "Hide him in a cave", "Give him to another family"],
+          "optionsArabic": ["الهروب إلى بلد آخر", "وضعه في سلة في النهر", "إخفاؤه في كهف", "إعطاؤه لعائلة أخرى"],
+          "correctIndex": 1,
+          "explanation": "Allah told Musa's mother to put him in a basket and cast it into the river, promising to return him to her.",
+          "explanationArabic": "أخبر الله أم موسى أن تضعه في سلة وتلقيها في النهر، واعداً بإرجاعه إليها."
+        },
+        {
+          "question": "Who found baby Musa in the river?",
+          "questionArabic": "من وجد الطفل موسى في النهر؟",
+          "options": ["Fir'awn himself", "Asiya, Fir'awn's wife", "A fisherman", "Musa's sister"],
+          "optionsArabic": ["فرعون نفسه", "آسية زوجة فرعون", "صياد", "أخت موسى"],
+          "correctIndex": 1,
+          "explanation": "Asiya, the wife of Fir'awn, found baby Musa and her heart was filled with love for him. She convinced Fir'awn to let her keep him.",
+          "explanationArabic": "وجدت آسية زوجة فرعون الطفل موسى وامتلأ قلبها بالحب له. أقنعت فرعون بالسماح لها بالاحتفاظ به."
+        },
+        {
+          "question": "How was Musa returned to his own mother?",
+          "questionArabic": "كيف عاد موسى إلى أمه؟",
+          "options": ["He ran away from the palace", "His sister suggested their mother as a nurse when he wouldn't feed", "Fir'awn sent him back", "Asiya gave him away"],
+          "optionsArabic": ["هرب من القصر", "اقترحت أخته أمهما كمرضعة عندما لم يرضع", "أرسله فرعون", "تخلت عنه آسية"],
+          "correctIndex": 1,
+          "explanation": "Baby Musa refused to nurse from anyone. His clever sister suggested a family (their own mother) who could nurse him, fulfilling Allah's promise.",
+          "explanationArabic": "رفض الطفل موسى أن يرضع من أحد. اقترحت أخته الذكية عائلة (أمهما) يمكنها إرضاعه، محققة وعد الله."
+        }
+      ]
+    },
+    {
+      "serverId": "musa_lesson_2",
+      "title": "The Burning Bush",
+      "titleArabic": "الشجرة المشتعلة",
+      "subtitle": "Musa receives his mission",
+      "subtitleArabic": "موسى يتلقى مهمته",
+      "sortOrder": 2,
+      "durationMinutes": 8,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Musa grew up in Fir'awn's palace, but he always knew he was from the Children of Israel. When he became a young man, he left Egypt after an incident and traveled to a land called Madyan, where he married and became a shepherd.",
+          "contentTextArabic": "نشأ موسى في قصر فرعون، لكنه كان يعلم دائماً أنه من بني إسرائيل. عندما أصبح شاباً، غادر مصر بعد حادثة وسافر إلى أرض تُدعى مدين، حيث تزوج وأصبح راعياً."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "For ten years, Musa lived peacefully in Madyan, tending sheep in the mountains and valleys. Then one night, while traveling with his family near Mount Sinai, he saw something strange - a fire burning on the mountainside.",
+          "contentTextArabic": "لمدة عشر سنوات، عاش موسى بسلام في مدين، يرعى الغنم في الجبال والوديان. ثم في ليلة، أثناء سفره مع عائلته قرب جبل سيناء، رأى شيئاً غريباً - ناراً مشتعلة على جانب الجبل."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Musa told his family to wait while he went to investigate. \"Perhaps I can bring you a burning torch or find guidance at the fire,\" he said. As he approached, the fire seemed different - it burned bright but the bush was not being consumed!",
+          "contentTextArabic": "طلب موسى من عائلته الانتظار بينما يذهب للاستطلاع. قال: \"لعلي آتيكم منها بشهاب أو أجد على النار هدى.\" عندما اقترب، بدت النار مختلفة - تشتعل بشدة لكن الشجرة لا تحترق!"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Then Musa heard a voice calling him: \"O Musa!\" He listened in awe. The voice continued: \"Indeed, I am Allah, Lord of the worlds. Indeed, I am your Lord, so remove your sandals. Indeed, you are in the sacred valley of Tuwa.\"",
+          "contentTextArabic": "ثم سمع موسى صوتاً يناديه: \"يا موسى!\" استمع في رهبة. تابع الصوت: \"إني أنا الله رب العالمين. إني أنا ربك فاخلع نعليك إنك بالواد المقدس طوى.\""
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "This was the greatest honor - Allah was speaking directly to Musa! Allah told him: \"I have chosen you, so listen to what is revealed. Indeed, I am Allah. There is no deity except Me, so worship Me and establish prayer for My remembrance.\"",
+          "contentTextArabic": "كان هذا أعظم شرف - الله يتكلم مباشرة مع موسى! قال له الله: \"إني اصطفيتك فاستمع لما يوحى. إنني أنا الله لا إله إلا أنا فاعبدني وأقم الصلاة لذكري.\""
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "Allah asked Musa: \"What is that in your right hand, O Musa?\" He replied: \"It is my staff; I lean upon it, I bring down leaves for my sheep, and I have other uses for it.\" Allah said: \"Throw it down, O Musa!\"",
+          "contentTextArabic": "سأل الله موسى: \"وما تلك بيمينك يا موسى؟\" أجاب: \"هي عصاي أتوكأ عليها وأهش بها على غنمي ولي فيها مآرب أخرى.\" قال الله: \"ألقها يا موسى!\""
+        },
+        {
+          "pageNumber": 7,
+          "contentText": "When Musa threw his staff, it transformed into a living snake! Musa turned to run in fear. But Allah called: \"Take it and fear not; We shall return it to its former state.\" This was one of the miracles Allah gave Musa.",
+          "contentTextArabic": "عندما ألقى موسى عصاه، تحولت إلى حية حقيقية! أدار موسى ظهره ليهرب خائفاً. لكن الله نادى: \"خذها ولا تخف سنعيدها سيرتها الأولى.\" كانت هذه إحدى المعجزات التي أعطاها الله لموسى."
+        },
+        {
+          "pageNumber": 8,
+          "contentText": "Allah gave Musa his mission: \"Go to Fir'awn. Indeed, he has transgressed. Say to him: 'Would you be willing to purify yourself? And let me guide you to your Lord so you would fear Him?'\" Musa was now a prophet with a great task.",
+          "contentTextArabic": "أعطى الله موسى مهمته: \"اذهب إلى فرعون إنه طغى. فقل هل لك إلى أن تزكى وأهديك إلى ربك فتخشى.\" أصبح موسى الآن نبياً بمهمة عظيمة."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Where was Musa when Allah spoke to him?",
+          "questionArabic": "أين كان موسى عندما كلمه الله؟",
+          "options": ["In Egypt", "In the sacred valley near Mount Sinai", "In his home", "In the desert"],
+          "optionsArabic": ["في مصر", "في الوادي المقدس قرب جبل سيناء", "في بيته", "في الصحراء"],
+          "correctIndex": 1,
+          "explanation": "Allah spoke to Musa in the sacred valley of Tuwa near Mount Sinai. Allah told him to remove his sandals because it was a holy place.",
+          "explanationArabic": "كلم الله موسى في الوادي المقدس طوى قرب جبل سيناء. أمره الله بخلع نعليه لأنه مكان مقدس."
+        },
+        {
+          "question": "What miracle did Allah give Musa with his staff?",
+          "questionArabic": "ما المعجزة التي أعطاها الله لموسى بعصاه؟",
+          "options": ["It could fly", "It turned into a snake when thrown", "It produced water", "It glowed in the dark"],
+          "optionsArabic": ["كانت تطير", "تحولت إلى حية عند إلقائها", "أخرجت ماء", "أضاءت في الظلام"],
+          "correctIndex": 1,
+          "explanation": "When Musa threw his staff, it transformed into a living snake. This was one of the miracles Allah gave him to show Fir'awn.",
+          "explanationArabic": "عندما ألقى موسى عصاه، تحولت إلى حية حقيقية. كانت هذه إحدى المعجزات التي أعطاها الله له ليُريها لفرعون."
+        },
+        {
+          "question": "What was Musa's mission from Allah?",
+          "questionArabic": "ما كانت مهمة موسى من الله؟",
+          "options": ["To build a temple", "To go to Fir'awn and call him to Allah", "To stay in Madyan", "To become a king"],
+          "optionsArabic": ["بناء معبد", "الذهاب إلى فرعون ودعوته إلى الله", "البقاء في مدين", "أن يصبح ملكاً"],
+          "correctIndex": 1,
+          "explanation": "Allah sent Musa to Fir'awn to call him to worship Allah alone and to free the Children of Israel from slavery.",
+          "explanationArabic": "أرسل الله موسى إلى فرعون ليدعوه إلى عبادة الله وحده ولتحرير بني إسرائيل من العبودية."
+        },
+        {
+          "question": "Why is Musa special among the prophets?",
+          "questionArabic": "لماذا موسى مميز بين الأنبياء؟",
+          "options": ["He was the richest", "Allah spoke to him directly", "He was the oldest", "He had the most followers"],
+          "optionsArabic": ["كان الأغنى", "كلمه الله مباشرة", "كان الأكبر سناً", "كان لديه أكثر أتباع"],
+          "correctIndex": 1,
+          "explanation": "Musa is known as 'Kaleemullah' - the one Allah spoke to directly. This is a special honor among all the prophets.",
+          "explanationArabic": "يُعرف موسى بـ'كليم الله' - الذي كلمه الله مباشرة. هذا شرف خاص بين جميع الأنبياء."
+        }
+      ]
+    },
+    {
+      "serverId": "musa_lesson_3",
+      "title": "Confronting Fir'awn",
+      "titleArabic": "مواجهة فرعون",
+      "subtitle": "The battle between truth and falsehood",
+      "subtitleArabic": "المعركة بين الحق والباطل",
+      "sortOrder": 3,
+      "durationMinutes": 8,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Musa asked Allah to send his brother Harun with him, as Harun was an eloquent speaker. Allah granted his request. Together, the two brothers went to Egypt to face the mighty Fir'awn and deliver Allah's message.",
+          "contentTextArabic": "طلب موسى من الله أن يرسل معه أخاه هارون، لأن هارون كان فصيح اللسان. استجاب الله لطلبه. معاً، ذهب الأخوان إلى مصر لمواجهة فرعون الجبار وتبليغ رسالة الله."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Musa and Harun entered Fir'awn's grand palace. They said: \"We are messengers of the Lord of the worlds. Send with us the Children of Israel.\" Fir'awn was furious. He reminded Musa of how he had raised him in the palace.",
+          "contentTextArabic": "دخل موسى وهارون قصر فرعون الفخم. قالا: \"إنا رسولا رب العالمين. أن أرسل معنا بني إسرائيل.\" غضب فرعون. ذكّر موسى بكيف ربّاه في القصر."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Fir'awn asked arrogantly: \"And what is the Lord of the worlds?\" Musa replied with wisdom: \"The Lord of the heavens and the earth and that which is between them, if you should be convinced.\" Fir'awn mocked him before his courtiers.",
+          "contentTextArabic": "سأل فرعون بتكبر: \"وما رب العالمين؟\" أجاب موسى بحكمة: \"رب السماوات والأرض وما بينهما إن كنتم موقنين.\" سخر منه فرعون أمام حاشيته."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Fir'awn demanded proof. Musa threw down his staff and it became a huge serpent. He drew out his hand and it shone brilliant white! These were clear signs from Allah, but Fir'awn called them magic tricks.",
+          "contentTextArabic": "طالب فرعون بدليل. ألقى موسى عصاه فصارت ثعباناً عظيماً. أخرج يده فإذا هي بيضاء للناظرين! كانت هذه آيات واضحة من الله، لكن فرعون سماها سحراً."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Fir'awn gathered the best magicians in all of Egypt. On the day of the festival, thousands watched as the magicians threw their ropes and staffs. Through their tricks, the ropes seemed to turn into snakes, slithering across the ground.",
+          "contentTextArabic": "جمع فرعون أفضل السحرة في مصر كلها. في يوم العيد، شاهد الآلاف السحرة وهم يلقون حبالهم وعصيهم. بسحرهم، بدت الحبال وكأنها تحولت إلى ثعابين، تنساب على الأرض."
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "Then Allah told Musa: \"Throw your staff.\" When Musa threw it, his staff became a massive serpent that swallowed all the magicians' snakes! The magicians knew immediately - this was no magic. This was the power of the true God!",
+          "contentTextArabic": "ثم قال الله لموسى: \"ألق عصاك.\" عندما ألقاها موسى، أصبحت عصاه ثعباناً هائلاً ابتلع كل ثعابين السحرة! عرف السحرة فوراً - هذا ليس سحراً. هذه قدرة الإله الحقيقي!"
+        },
+        {
+          "pageNumber": 7,
+          "contentText": "The magicians fell down in prostration! They declared: \"We believe in the Lord of the worlds, the Lord of Musa and Harun!\" Fir'awn was enraged and threatened them, but their faith was now unshakeable.",
+          "contentTextArabic": "خرّ السحرة ساجدين! أعلنوا: \"آمنا برب العالمين، رب موسى وهارون!\" غضب فرعون وهددهم، لكن إيمانهم أصبح راسخاً."
+        },
+        {
+          "pageNumber": 8,
+          "contentText": "Fir'awn's heart was too proud to accept the truth. He tortured those who believed and increased his oppression of the Children of Israel. But Musa remained patient, knowing that Allah's help was near and that truth would ultimately triumph.",
+          "contentTextArabic": "كان قلب فرعون أكبر تكبراً من أن يقبل الحق. عذّب من آمنوا وزاد اضطهاده لبني إسرائيل. لكن موسى بقي صابراً، عالماً أن نصر الله قريب وأن الحق سينتصر في النهاية."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Who did Musa ask Allah to send with him to Fir'awn?",
+          "questionArabic": "من طلب موسى من الله أن يرسله معه إلى فرعون؟",
+          "options": ["An angel", "His brother Harun", "His mother", "A friend"],
+          "optionsArabic": ["ملك", "أخوه هارون", "أمه", "صديق"],
+          "correctIndex": 1,
+          "explanation": "Musa asked for his brother Harun to accompany him because Harun was more eloquent in speech. Allah granted this request.",
+          "explanationArabic": "طلب موسى أن يرافقه أخوه هارون لأن هارون كان أفصح لساناً. استجاب الله لهذا الطلب."
+        },
+        {
+          "question": "What happened when Musa threw his staff against the magicians?",
+          "questionArabic": "ماذا حدث عندما ألقى موسى عصاه أمام السحرة؟",
+          "options": ["Nothing happened", "It became a serpent that swallowed their snakes", "It broke into pieces", "It flew away"],
+          "optionsArabic": ["لم يحدث شيء", "أصبحت ثعباناً وابتلعت ثعابينهم", "انكسرت قطعاً", "طارت بعيداً"],
+          "correctIndex": 1,
+          "explanation": "Musa's staff became a massive serpent that swallowed all the fake snakes created by the magicians' tricks.",
+          "explanationArabic": "أصبحت عصا موسى ثعباناً هائلاً ابتلع كل الثعابين المزيفة التي صنعها سحر السحرة."
+        },
+        {
+          "question": "What did the magicians do after seeing Musa's miracle?",
+          "questionArabic": "ماذا فعل السحرة بعد رؤية معجزة موسى؟",
+          "options": ["They attacked Musa", "They prostrated and believed in Allah", "They ran away", "They asked for more money"],
+          "optionsArabic": ["هاجموا موسى", "سجدوا وآمنوا بالله", "هربوا", "طلبوا مزيداً من المال"],
+          "correctIndex": 1,
+          "explanation": "The magicians recognized that Musa's miracle was not magic but divine power. They immediately believed in Allah and fell in prostration.",
+          "explanationArabic": "أدرك السحرة أن معجزة موسى ليست سحراً بل قدرة إلهية. آمنوا فوراً بالله وخروا ساجدين."
+        },
+        {
+          "question": "How did Fir'awn respond to the magicians believing?",
+          "questionArabic": "كيف رد فرعون على إيمان السحرة؟",
+          "options": ["He also believed", "He was happy for them", "He was enraged and threatened them", "He ignored them"],
+          "optionsArabic": ["آمن هو أيضاً", "فرح لهم", "غضب وهددهم", "تجاهلهم"],
+          "correctIndex": 2,
+          "explanation": "Fir'awn was furious when the magicians believed. His pride prevented him from accepting the truth, and he threatened to punish them.",
+          "explanationArabic": "غضب فرعون عندما آمن السحرة. منعه كبرياؤه من قبول الحق وهددهم بالعقاب."
+        }
+      ]
+    },
+    {
+      "serverId": "musa_lesson_4",
+      "title": "The Parting of the Sea",
+      "titleArabic": "انشقاق البحر",
+      "subtitle": "Allah's greatest rescue",
+      "subtitleArabic": "أعظم إنقاذ من الله",
+      "sortOrder": 4,
+      "durationMinutes": 8,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Despite all the miracles and signs, Fir'awn refused to let the Children of Israel go. So Allah sent nine great signs upon Egypt - plagues of locusts, lice, frogs, blood in the water, and more. Each time, Fir'awn would promise to free them, then break his word.",
+          "contentTextArabic": "رغم كل المعجزات والآيات، رفض فرعون إطلاق بني إسرائيل. فأرسل الله تسع آيات عظيمة على مصر - الجراد والقمل والضفادع والدم في الماء وغيرها. في كل مرة، كان فرعون يعد بتحريرهم ثم ينكث بوعده."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Finally, Allah commanded Musa to leave Egypt with his people at night. The Children of Israel gathered quietly and began their journey to freedom. They walked through the darkness, thousands of men, women, and children, trusting in Allah's promise.",
+          "contentTextArabic": "أخيراً، أمر الله موسى بالخروج من مصر مع قومه ليلاً. تجمع بنو إسرائيل بهدوء وبدأوا رحلتهم نحو الحرية. ساروا في الظلام، آلاف الرجال والنساء والأطفال، واثقين بوعد الله."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "When morning came, Fir'awn discovered they had escaped. He was furious! He gathered his massive army - chariots, horses, and soldiers - and chased after them. The fastest army in the world pursuing escaped slaves!",
+          "contentTextArabic": "عندما جاء الصباح، اكتشف فرعون أنهم هربوا. غضب غضباً شديداً! جمع جيشه الضخم - العربات والخيول والجنود - وطاردهم. أسرع جيش في العالم يطارد عبيداً هاربين!"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "The Children of Israel reached the edge of the Red Sea. Behind them, they could see the dust of Fir'awn's army approaching. In front of them was the vast sea. They cried out in fear: \"We are surely overtaken!\" There seemed to be no escape.",
+          "contentTextArabic": "وصل بنو إسرائيل إلى حافة البحر الأحمر. خلفهم، رأوا غبار جيش فرعون يقترب. أمامهم البحر الواسع. صاحوا خائفين: \"إنا لمدركون!\" بدا أنه لا مفر."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "But Musa's faith never wavered. He said with certainty: \"No! Indeed, with me is my Lord; He will guide me.\" Allah then revealed to Musa: \"Strike the sea with your staff.\" Musa obeyed immediately.",
+          "contentTextArabic": "لكن إيمان موسى لم يتزعزع. قال بيقين: \"كلا! إن معي ربي سيهدين.\" ثم أوحى الله لموسى: \"اضرب بعصاك البحر.\" أطاع موسى فوراً."
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "When Musa struck the sea, an incredible miracle happened! The water parted, creating a dry path through the middle of the sea! Huge walls of water stood on both sides, held by Allah's command. The Children of Israel hurried through to safety.",
+          "contentTextArabic": "عندما ضرب موسى البحر، حدثت معجزة مذهلة! انفلق الماء، مكوناً طريقاً جافاً وسط البحر! جدران ضخمة من الماء وقفت على الجانبين، ثابتة بأمر الله. أسرع بنو إسرائيل عبره نحو الأمان."
+        },
+        {
+          "pageNumber": 7,
+          "contentText": "Fir'awn and his army saw the path and chased after them into the sea. But when the last of the Children of Israel reached the other side, the waters came crashing back together! Fir'awn and his entire army were drowned.",
+          "contentTextArabic": "رأى فرعون وجيشه الطريق وطاردوهم في البحر. لكن عندما وصل آخر بني إسرائيل إلى الجانب الآخر، عاد الماء وانطبق عليهم! غرق فرعون وجيشه بأكمله."
+        },
+        {
+          "pageNumber": 8,
+          "contentText": "As Fir'awn was drowning, he finally cried out: \"I believe that there is no deity except that in whom the Children of Israel believe!\" But it was too late. His belief at the moment of death could not save him from the consequences of his tyranny and disbelief.",
+          "contentTextArabic": "بينما كان فرعون يغرق، صاح أخيراً: \"آمنت أنه لا إله إلا الذي آمنت به بنو إسرائيل!\" لكن كان قد فات الأوان. إيمانه لحظة الموت لم يستطع إنقاذه من عواقب طغيانه وكفره."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How many signs did Allah send upon Egypt before freeing the Children of Israel?",
+          "questionArabic": "كم آية أرسل الله على مصر قبل تحرير بني إسرائيل؟",
+          "options": ["Three", "Five", "Nine", "Twelve"],
+          "optionsArabic": ["ثلاث", "خمس", "تسع", "اثنتا عشرة"],
+          "correctIndex": 2,
+          "explanation": "Allah sent nine great signs upon Egypt, including plagues of locusts, lice, frogs, blood, and more.",
+          "explanationArabic": "أرسل الله تسع آيات عظيمة على مصر، منها الجراد والقمل والضفادع والدم وغيرها."
+        },
+        {
+          "question": "What did Musa say when the people were afraid at the sea?",
+          "questionArabic": "ماذا قال موسى عندما خاف الناس عند البحر؟",
+          "options": ["We are doomed", "No! Indeed, with me is my Lord; He will guide me", "Let's go back to Egypt", "We need to fight"],
+          "optionsArabic": ["لقد هلكنا", "كلا! إن معي ربي سيهدين", "لنعد إلى مصر", "يجب أن نقاتل"],
+          "correctIndex": 1,
+          "explanation": "Musa showed complete trust in Allah even when things seemed impossible. He knew Allah would guide them.",
+          "explanationArabic": "أظهر موسى ثقة كاملة في الله حتى عندما بدت الأمور مستحيلة. كان يعلم أن الله سيهديهم."
+        },
+        {
+          "question": "What happened when Musa struck the sea with his staff?",
+          "questionArabic": "ماذا حدث عندما ضرب موسى البحر بعصاه؟",
+          "options": ["Nothing happened", "The water parted creating a dry path", "The water froze", "A bridge appeared"],
+          "optionsArabic": ["لم يحدث شيء", "انفلق الماء مكوناً طريقاً جافاً", "تجمد الماء", "ظهر جسر"],
+          "correctIndex": 1,
+          "explanation": "The sea parted miraculously, creating a dry path with walls of water on both sides, allowing the Children of Israel to cross safely.",
+          "explanationArabic": "انفلق البحر بمعجزة، مكوناً طريقاً جافاً بجدران من الماء على الجانبين، سامحاً لبني إسرائيل بالعبور بأمان."
+        },
+        {
+          "question": "What happened to Fir'awn and his army?",
+          "questionArabic": "ماذا حدث لفرعون وجيشه؟",
+          "options": ["They escaped", "They turned back", "They drowned when the sea returned", "They crossed safely"],
+          "optionsArabic": ["هربوا", "عادوا", "غرقوا عندما عاد البحر", "عبروا بأمان"],
+          "correctIndex": 2,
+          "explanation": "When Fir'awn and his army entered the path through the sea, the waters came back together and they all drowned.",
+          "explanationArabic": "عندما دخل فرعون وجيشه الطريق في البحر، عاد الماء وانطبق عليهم فغرقوا جميعاً."
+        }
+      ]
+    },
+    {
+      "serverId": "musa_lesson_5",
+      "title": "The Torah and the Golden Calf",
+      "titleArabic": "التوراة والعجل الذهبي",
+      "subtitle": "Guidance and a great test",
+      "subtitleArabic": "الهداية واختبار عظيم",
+      "sortOrder": 5,
+      "durationMinutes": 8,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "After crossing the sea, the Children of Israel were finally free. Allah guided them to Mount Sinai, where Musa would receive a great gift - the Torah, containing Allah's laws and guidance for how to live righteously.",
+          "contentTextArabic": "بعد عبور البحر، أصبح بنو إسرائيل أحراراً أخيراً. هداهم الله إلى جبل سيناء، حيث سيتلقى موسى هدية عظيمة - التوراة، تحتوي شريعة الله وهدايته لكيفية العيش بصلاح."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Allah called Musa to come to the mountain for forty nights. During this time, Allah spoke to Musa directly and gave him tablets inscribed with guidance and mercy for those who are conscious of their Lord.",
+          "contentTextArabic": "دعا الله موسى للمجيء إلى الجبل لأربعين ليلة. خلال هذا الوقت، كلم الله موسى مباشرة وأعطاه ألواحاً مكتوباً فيها هدى ورحمة للذين هم لربهم يرهبون."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Musa left his brother Harun in charge of the people. But while Musa was away, something terrible happened. A man named Samiri collected gold jewelry from the people and made it into a statue of a calf that made a sound.",
+          "contentTextArabic": "ترك موسى أخاه هارون مسؤولاً عن القوم. لكن بينما كان موسى غائباً، حدث شيء فظيع. رجل اسمه السامري جمع حلي الذهب من الناس وصنع منها تمثال عجل له صوت."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Samiri told the people: \"This is your god and the god of Musa!\" Many people began worshipping the golden calf, forgetting all the miracles Allah had shown them. They forgot the sea that parted and Fir'awn who drowned!",
+          "contentTextArabic": "قال لهم السامري: \"هذا إلهكم وإله موسى!\" بدأ كثير من الناس يعبدون العجل الذهبي، ناسين كل المعجزات التي أراهم الله إياها. نسوا البحر الذي انفلق وفرعون الذي غرق!"
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Harun tried to stop them: \"O my people, you are only being tested by this. Your Lord is the Most Merciful, so follow me and obey my order.\" But they refused to listen until Musa returned.",
+          "contentTextArabic": "حاول هارون إيقافهم: \"يا قوم إنما فتنتم به وإن ربكم الرحمن فاتبعوني وأطيعوا أمري.\" لكنهم رفضوا الاستماع حتى عاد موسى."
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "When Musa returned and saw what had happened, he was filled with grief and anger. He threw down the tablets and grabbed his brother: \"O Harun! What prevented you from following me?\" Harun explained he had tried but they wouldn't listen.",
+          "contentTextArabic": "عندما عاد موسى ورأى ما حدث، امتلأ حزناً وغضباً. ألقى الألواح وأمسك بأخيه: \"يا هارون ما منعك إذ رأيتهم ضلوا؟\" شرح هارون أنه حاول لكنهم لم يستمعوا."
+        },
+        {
+          "pageNumber": 7,
+          "contentText": "Musa burned the golden calf and scattered its remains in the sea. He told the people they had committed a great sin. Those who truly repented were forgiven by Allah, but this incident showed how easily people can stray without strong faith.",
+          "contentTextArabic": "أحرق موسى العجل الذهبي ونثر بقاياه في البحر. أخبر الناس أنهم ارتكبوا ذنباً عظيماً. الذين تابوا حقاً غفر الله لهم، لكن هذه الحادثة أظهرت كم يسهل ضلال الناس بدون إيمان قوي."
+        },
+        {
+          "pageNumber": 8,
+          "contentText": "Musa continued to guide the Children of Israel for many years. He taught them the Torah and reminded them of Allah's blessings. His story teaches us to be patient, to trust in Allah completely, and never to forget His guidance no matter what happens.",
+          "contentTextArabic": "استمر موسى في هداية بني إسرائيل لسنوات عديدة. علمهم التوراة وذكّرهم بنعم الله. قصته تعلمنا الصبر والثقة الكاملة في الله وألا ننسى هدايته مهما حدث."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How long did Musa stay on Mount Sinai to receive the Torah?",
+          "questionArabic": "كم مكث موسى على جبل سيناء ليتلقى التوراة؟",
+          "options": ["Seven days", "Forty nights", "One year", "Three months"],
+          "optionsArabic": ["سبعة أيام", "أربعين ليلة", "سنة واحدة", "ثلاثة أشهر"],
+          "correctIndex": 1,
+          "explanation": "Allah called Musa to Mount Sinai for forty nights, during which he received the Torah - tablets containing Allah's laws and guidance.",
+          "explanationArabic": "دعا الله موسى إلى جبل سيناء لأربعين ليلة، تلقى خلالها التوراة - ألواح تحتوي شريعة الله وهدايته."
+        },
+        {
+          "question": "Who made the golden calf?",
+          "questionArabic": "من صنع العجل الذهبي؟",
+          "options": ["Musa", "Harun", "Samiri", "Fir'awn"],
+          "optionsArabic": ["موسى", "هارون", "السامري", "فرعون"],
+          "correctIndex": 2,
+          "explanation": "A man named Samiri collected gold from the people and made it into a calf statue, leading many people astray.",
+          "explanationArabic": "رجل اسمه السامري جمع الذهب من الناس وصنع منه تمثال عجل، مضلاً كثيراً من الناس."
+        },
+        {
+          "question": "What did Harun tell the people about the calf?",
+          "questionArabic": "ماذا قال هارون للناس عن العجل؟",
+          "options": ["To worship it", "That they were being tested", "That Musa approved", "Nothing"],
+          "optionsArabic": ["أن يعبدوه", "أنهم يُفتنون", "أن موسى وافق", "لا شيء"],
+          "correctIndex": 1,
+          "explanation": "Harun warned them that the calf was a test and urged them to follow Allah, but many refused to listen.",
+          "explanationArabic": "حذرهم هارون أن العجل فتنة وحثهم على اتباع الله، لكن كثيرين رفضوا الاستماع."
+        },
+        {
+          "question": "What did Musa do with the golden calf?",
+          "questionArabic": "ماذا فعل موسى بالعجل الذهبي؟",
+          "options": ["Kept it in a temple", "Burned it and scattered it in the sea", "Gave it back to the people", "Buried it in the ground"],
+          "optionsArabic": ["حفظه في معبد", "أحرقه ونثره في البحر", "أعاده للناس", "دفنه في الأرض"],
+          "correctIndex": 1,
+          "explanation": "Musa burned the golden calf and scattered its remains in the sea to completely destroy it and remove the object of their worship.",
+          "explanationArabic": "أحرق موسى العجل الذهبي ونثر بقاياه في البحر ليدمره كلياً ويزيل ما كانوا يعبدونه."
+        }
+      ]
+    }
+  ]
+}

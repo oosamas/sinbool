@@ -1,0 +1,256 @@
+{
+  "chapter": {
+    "serverId": "prophet_yunus",
+    "title": "Prophet Yunus",
+    "titleArabic": "النبي يونس",
+    "description": "The story of Prophet Yunus and his journey in the whale",
+    "descriptionArabic": "قصة النبي يونس ورحلته في بطن الحوت",
+    "iconName": "yunus",
+    "colorHex": "#00838F",
+    "sortOrder": 20
+  },
+  "lessons": [
+    {
+      "serverId": "prophet_yunus_lesson_1",
+      "title": "Prophet Yunus and His People",
+      "titleArabic": "النبي يونس وقومه",
+      "sortOrder": 1,
+      "durationMinutes": 5,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Long ago, Allah sent Prophet Yunus (peace be upon him) to a city called Nineveh. The people there had forgotten about Allah and were doing bad things.",
+          "contentTextArabic": "منذ زمن بعيد، أرسل الله النبي يونس عليه السلام إلى مدينة تسمى نينوى. كان الناس هناك قد نسوا الله وكانوا يفعلون أشياء سيئة."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Prophet Yunus told his people: 'Worship Allah alone! Stop doing wrong things or a punishment will come.' He tried very hard to teach them the right way.",
+          "contentTextArabic": "قال النبي يونس لقومه: 'اعبدوا الله وحده! توقفوا عن فعل الأشياء الخاطئة وإلا سيأتيكم عذاب.' حاول جاهداً أن يعلمهم الطريق الصحيح."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "But the people did not listen. Day after day, they ignored Prophet Yunus. This made him very sad and frustrated.",
+          "contentTextArabic": "لكن الناس لم يستمعوا. يوماً بعد يوم، تجاهلوا النبي يونس. هذا جعله حزيناً ومحبطاً جداً."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Where was Prophet Yunus sent?",
+          "questionArabic": "إلى أين أُرسل النبي يونس؟",
+          "options": ["Makkah", "Nineveh", "Madinah", "Egypt"],
+          "optionsArabic": ["مكة", "نينوى", "المدينة", "مصر"],
+          "correctIndex": 1,
+          "explanation": "Prophet Yunus was sent to the city of Nineveh to guide its people.",
+          "explanationArabic": "أُرسل النبي يونس إلى مدينة نينوى ليهدي أهلها."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_yunus_lesson_2",
+      "title": "Yunus Leaves His People",
+      "titleArabic": "يونس يترك قومه",
+      "sortOrder": 2,
+      "durationMinutes": 5,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Prophet Yunus became so upset with his people that he decided to leave. He thought they would never believe. But he left before Allah gave him permission to go.",
+          "contentTextArabic": "أصبح النبي يونس منزعجاً جداً من قومه لدرجة أنه قرر المغادرة. ظن أنهم لن يؤمنوا أبداً. لكنه غادر قبل أن يأذن له الله بالذهاب."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "He went to the sea and got on a ship. The ship sailed away from the city. But a prophet should wait for Allah's command, and Yunus had left too soon.",
+          "contentTextArabic": "ذهب إلى البحر وركب سفينة. أبحرت السفينة بعيداً عن المدينة. لكن النبي يجب أن ينتظر أمر الله، ويونس غادر مبكراً جداً."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "This teaches us an important lesson: we should always be patient and wait for the right time. Even prophets learn from their experiences!",
+          "contentTextArabic": "هذا يعلمنا درساً مهماً: يجب أن نكون صابرين دائماً وننتظر الوقت المناسب. حتى الأنبياء يتعلمون من تجاربهم!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What mistake did Prophet Yunus make?",
+          "questionArabic": "ما الخطأ الذي ارتكبه النبي يونس؟",
+          "options": ["He was mean to people", "He left before Allah gave permission", "He forgot to pray", "He slept too much"],
+          "optionsArabic": ["كان قاسياً مع الناس", "غادر قبل إذن الله", "نسي أن يصلي", "نام كثيراً"],
+          "correctIndex": 1,
+          "explanation": "Prophet Yunus left his people before waiting for Allah's permission.",
+          "explanationArabic": "غادر النبي يونس قومه قبل انتظار إذن الله."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_yunus_lesson_3",
+      "title": "The Storm and the Whale",
+      "titleArabic": "العاصفة والحوت",
+      "sortOrder": 3,
+      "durationMinutes": 6,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "While the ship was sailing, a terrible storm came! The waves were huge and the ship was in danger. The sailors were very scared.",
+          "contentTextArabic": "بينما كانت السفينة تبحر، جاءت عاصفة رهيبة! كانت الأمواج ضخمة وكانت السفينة في خطر. كان البحارة خائفين جداً."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "The sailors decided to make the ship lighter by having someone jump into the sea. They drew lots to decide who it would be. The lot fell on Prophet Yunus.",
+          "contentTextArabic": "قرر البحارة تخفيف السفينة بأن يقفز أحدهم في البحر. أجروا قرعة ليقرروا من سيكون. وقعت القرعة على النبي يونس."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "When Yunus fell into the water, Allah commanded a huge whale to swallow him! But this was not a punishment - it was to protect him and teach him an important lesson.",
+          "contentTextArabic": "عندما سقط يونس في الماء، أمر الله حوتاً ضخماً أن يبتلعه! لكن هذا لم يكن عقاباً - بل كان لحمايته وتعليمه درساً مهماً."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Inside the whale's belly, it was very dark. Yunus was all alone in the darkness of the sea, inside the darkness of the whale.",
+          "contentTextArabic": "داخل بطن الحوت، كان الظلام شديداً. كان يونس وحيداً في ظلمة البحر، داخل ظلمة الحوت."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What happened when the lot was drawn?",
+          "questionArabic": "ماذا حدث عندما أُجريت القرعة؟",
+          "options": ["The captain won", "Yunus was chosen", "The storm stopped", "Everyone jumped"],
+          "optionsArabic": ["فاز القبطان", "اختير يونس", "توقفت العاصفة", "قفز الجميع"],
+          "correctIndex": 1,
+          "explanation": "The lot fell on Prophet Yunus, and he was thrown into the sea.",
+          "explanationArabic": "وقعت القرعة على النبي يونس، وألقي في البحر."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_yunus_lesson_4",
+      "title": "The Prayer in the Darkness",
+      "titleArabic": "الدعاء في الظلمات",
+      "sortOrder": 4,
+      "durationMinutes": 6,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Inside the whale, Prophet Yunus realized his mistake. He understood that he should have been more patient and waited for Allah's command.",
+          "contentTextArabic": "داخل الحوت، أدرك النبي يونس خطأه. فهم أنه كان يجب أن يكون أكثر صبراً وينتظر أمر الله."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "In that deep darkness, Yunus made a beautiful dua. He said: 'La ilaha illa Anta, Subhanaka, inni kuntu minaz-zalimin' - There is no god but You, Glory be to You, I was among the wrongdoers.",
+          "contentTextArabic": "في ذلك الظلام العميق، دعا يونس دعاءً جميلاً. قال: 'لا إله إلا أنت سبحانك إني كنت من الظالمين'."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "This dua is very special! Allah tells us in the Quran that when we are in trouble, we can say this dua just like Yunus did. Allah loves those who turn back to Him.",
+          "contentTextArabic": "هذا الدعاء خاص جداً! يخبرنا الله في القرآن أنه عندما نكون في ورطة، يمكننا أن نقول هذا الدعاء مثل يونس. الله يحب من يعود إليه."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Allah heard Yunus's prayer. He commanded the whale to swim to the shore and gently put Yunus on the beach. Yunus was saved!",
+          "contentTextArabic": "سمع الله دعاء يونس. أمر الحوت أن يسبح إلى الشاطئ ويضع يونس برفق على الرمال. نجا يونس!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the famous dua of Prophet Yunus?",
+          "questionArabic": "ما هو دعاء النبي يونس المشهور؟",
+          "options": ["Alhamdulillah", "Bismillah", "La ilaha illa Anta Subhanaka", "Allahu Akbar"],
+          "optionsArabic": ["الحمد لله", "بسم الله", "لا إله إلا أنت سبحانك", "الله أكبر"],
+          "correctIndex": 2,
+          "explanation": "Prophet Yunus said 'La ilaha illa Anta, Subhanaka, inni kuntu minaz-zalimin' in the whale.",
+          "explanationArabic": "قال النبي يونس 'لا إله إلا أنت سبحانك إني كنت من الظالمين' في بطن الحوت."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_yunus_lesson_5",
+      "title": "The People of Nineveh Believe",
+      "titleArabic": "أهل نينوى يؤمنون",
+      "sortOrder": 5,
+      "durationMinutes": 5,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "After Yunus left Nineveh, something amazing happened! The people saw dark clouds coming and realized the punishment was near. They became very scared.",
+          "contentTextArabic": "بعد أن غادر يونس نينوى، حدث شيء مذهل! رأى الناس غيوماً سوداء قادمة وأدركوا أن العذاب قريب. أصبحوا خائفين جداً."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "The people of Nineveh finally understood that Yunus was telling the truth! They all came out of their homes, crying and asking Allah to forgive them.",
+          "contentTextArabic": "أخيراً فهم أهل نينوى أن يونس كان يقول الحق! خرجوا جميعاً من بيوتهم، يبكون ويطلبون من الله أن يغفر لهم."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Allah saw that they truly believed and were sorry. He forgave them and removed the punishment! They are the only people in the Quran whose entire city was saved after the warning.",
+          "contentTextArabic": "رأى الله أنهم آمنوا حقاً وندموا. غفر لهم ورفع عنهم العذاب! هم القوم الوحيدون في القرآن الذين نجت مدينتهم بأكملها بعد الإنذار."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "When Yunus recovered on the beach, he went back to his people. He was so happy to find them all believers now! They lived in peace, worshipping Allah together.",
+          "contentTextArabic": "عندما تعافى يونس على الشاطئ، عاد إلى قومه. كان سعيداً جداً عندما وجدهم جميعاً مؤمنين الآن! عاشوا في سلام، يعبدون الله معاً."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What makes the people of Nineveh special?",
+          "questionArabic": "ما الذي يجعل أهل نينوى مميزين؟",
+          "options": ["They were very rich", "Their entire city believed and was saved", "They had a big army", "They could swim well"],
+          "optionsArabic": ["كانوا أغنياء جداً", "آمنت مدينتهم بأكملها ونجت", "كان لديهم جيش كبير", "كانوا يسبحون جيداً"],
+          "correctIndex": 1,
+          "explanation": "The people of Nineveh are the only nation in the Quran whose entire city believed and was saved.",
+          "explanationArabic": "أهل نينوى هم القوم الوحيدون في القرآن الذين آمنت مدينتهم بأكملها ونجت."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_yunus_lesson_6",
+      "title": "Lessons from Prophet Yunus",
+      "titleArabic": "دروس من قصة النبي يونس",
+      "sortOrder": 6,
+      "durationMinutes": 5,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Prophet Yunus teaches us that everyone can make mistakes, even prophets. What matters is that we recognize our mistakes and turn back to Allah.",
+          "contentTextArabic": "يعلمنا النبي يونس أن الجميع يمكن أن يخطئ، حتى الأنبياء. المهم أن نعترف بأخطائنا ونعود إلى الله."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "When we are in trouble or feeling sad, we should make dua to Allah. Just like Yunus in the whale, Allah hears us even in the darkest times.",
+          "contentTextArabic": "عندما نكون في ورطة أو نشعر بالحزن، يجب أن ندعو الله. مثل يونس في بطن الحوت، الله يسمعنا حتى في أحلك الأوقات."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "We also learn about patience. Sometimes we want things to happen quickly, but Allah knows the best time for everything. We should trust His plan.",
+          "contentTextArabic": "نتعلم أيضاً عن الصبر. أحياناً نريد أن تحدث الأشياء بسرعة، لكن الله يعلم أفضل وقت لكل شيء. يجب أن نثق بخطته."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "And most beautiful of all - it's never too late to come back to Allah! The people of Nineveh changed at the last moment, and Allah forgave them. His mercy is endless!",
+          "contentTextArabic": "والأجمل من ذلك كله - لم يفت الأوان أبداً للعودة إلى الله! تغير أهل نينوى في اللحظة الأخيرة، وغفر الله لهم. رحمته لا نهاية لها!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the main lesson from Prophet Yunus's story?",
+          "questionArabic": "ما هو الدرس الرئيسي من قصة النبي يونس؟",
+          "options": ["Never go on ships", "Always turn back to Allah when you make mistakes", "Whales are scary", "Don't talk to sailors"],
+          "optionsArabic": ["لا تركب السفن أبداً", "ارجع دائماً إلى الله عندما تخطئ", "الحيتان مخيفة", "لا تتحدث مع البحارة"],
+          "correctIndex": 1,
+          "explanation": "The main lesson is that we should always turn back to Allah when we make mistakes, and He will forgive us.",
+          "explanationArabic": "الدرس الرئيسي هو أننا يجب أن نعود دائماً إلى الله عندما نخطئ، وسيغفر لنا."
+        }
+      ]
+    }
+  ]
+}

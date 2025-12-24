@@ -1,0 +1,324 @@
+{
+  "chapter": {
+    "serverId": "prophet_hud",
+    "title": "Prophet Hud",
+    "titleArabic": "النبي هود",
+    "description": "The story of Prophet Hud and the mighty people of 'Ad who were destroyed by a powerful wind",
+    "descriptionArabic": "قصة النبي هود وقوم عاد الأقوياء الذين أُهلكوا بريح عاتية",
+    "iconName": "hud",
+    "colorHex": "#795548",
+    "sortOrder": 18
+  },
+  "lessons": [
+    {
+      "serverId": "prophet_hud_lesson_1",
+      "title": "The Mighty People of 'Ad",
+      "titleArabic": "قوم عاد الأقوياء",
+      "sortOrder": 1,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "After the time of Prophet Nuh and the great flood, people began to spread across the earth again. One group became very powerful. They were called the people of 'Ad.",
+          "contentTextArabic": "بعد زمن النبي نوح والطوفان العظيم، بدأ الناس ينتشرون في الأرض مرة أخرى. أصبحت مجموعة منهم قوية جداً. كانوا يُسمون قوم عاد."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "The people of 'Ad lived in a land called Ahqaf, in the southern part of Arabia. Allah had blessed them with many things - they were tall and strong, and had great power.",
+          "contentTextArabic": "عاش قوم عاد في أرض تُسمى الأحقاف، في جنوب الجزيرة العربية. باركهم الله بأشياء كثيرة - كانوا طوالاً وأقوياء، ولديهم قوة عظيمة."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "They built amazing structures and tall buildings. They would carve homes into the mountains and build towers that reached high into the sky. No one could match their strength and skill.",
+          "contentTextArabic": "بنوا هياكل مذهلة ومبانٍ شاهقة. كانوا ينحتون بيوتاً في الجبال ويبنون أبراجاً تصل عالياً في السماء. لم يستطع أحد مجاراة قوتهم ومهارتهم."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "But instead of thanking Allah for all these blessings, the people of 'Ad became arrogant. They forgot that their strength came from Allah. They started to worship idols instead of the One True God.",
+          "contentTextArabic": "لكن بدلاً من شكر الله على كل هذه النعم، تكبّر قوم عاد. نسوا أن قوتهم من الله. بدأوا يعبدون الأصنام بدلاً من الإله الواحد الحق."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "They would proudly say, 'Who is mightier than us in strength?' They thought no one could defeat them. They forgot that Allah, who gave them their strength, was mightier than everything.",
+          "contentTextArabic": "كانوا يقولون بفخر: 'من أشد منا قوة؟' ظنوا أن لا أحد يستطيع هزيمتهم. نسوا أن الله، الذي أعطاهم قوتهم، أشد من كل شيء."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What were the people of 'Ad known for?",
+          "questionArabic": "بماذا عُرف قوم عاد؟",
+          "options": ["Being weak and poor", "Being tall, strong, and powerful builders", "Being peaceful farmers", "Being skilled sailors"],
+          "optionsArabic": ["كونهم ضعفاء وفقراء", "كونهم طوالاً وأقوياء وبنائين ماهرين", "كونهم مزارعين مسالمين", "كونهم بحارة ماهرين"],
+          "correctIndex": 1,
+          "explanation": "The people of 'Ad were famous for their great strength and amazing buildings.",
+          "explanationArabic": "اشتهر قوم عاد بقوتهم العظيمة ومبانيهم المذهلة."
+        },
+        {
+          "question": "What mistake did the people of 'Ad make?",
+          "questionArabic": "ما الخطأ الذي ارتكبه قوم عاد؟",
+          "options": ["They were too humble", "They became arrogant and worshipped idols", "They left their land", "They stopped building"],
+          "optionsArabic": ["كانوا متواضعين جداً", "تكبروا وعبدوا الأصنام", "تركوا أرضهم", "توقفوا عن البناء"],
+          "correctIndex": 1,
+          "explanation": "The people of 'Ad became arrogant about their strength and started worshipping idols.",
+          "explanationArabic": "تكبّر قوم عاد بسبب قوتهم وبدأوا يعبدون الأصنام."
+        },
+        {
+          "question": "What did the people of 'Ad proudly say?",
+          "questionArabic": "ماذا قال قوم عاد بفخر؟",
+          "options": ["Allah is the Greatest", "Who is mightier than us?", "We need help", "We should be humble"],
+          "optionsArabic": ["الله أكبر", "من أشد منا قوة؟", "نحتاج المساعدة", "يجب أن نكون متواضعين"],
+          "correctIndex": 1,
+          "explanation": "In their arrogance, they asked 'Who is mightier than us?' forgetting that Allah is mightier.",
+          "explanationArabic": "في تكبرهم، سألوا 'من أشد منا قوة؟' ناسين أن الله أشد."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_hud_lesson_2",
+      "title": "Prophet Hud's Message",
+      "titleArabic": "رسالة النبي هود",
+      "sortOrder": 2,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Allah, in His mercy, sent Prophet Hud to guide the people of 'Ad. Hud was from their own tribe - he was one of them. He called them to worship Allah alone.",
+          "contentTextArabic": "أرسل الله برحمته النبي هوداً لهداية قوم عاد. كان هود من قبيلتهم - كان واحداً منهم. دعاهم لعبادة الله وحده."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Hud said to them: 'O my people! Worship Allah - you have no god other than Him. Will you not then fear Allah?' He reminded them that only Allah deserves worship.",
+          "contentTextArabic": "قال لهم هود: 'يا قوم اعبدوا الله ما لكم من إله غيره. أفلا تتقون؟' ذكّرهم أن الله وحده يستحق العبادة."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "He told them to be grateful for Allah's blessings: 'Fear the One who provided you with what you know - provided you with livestock and children, and gardens and springs.'",
+          "contentTextArabic": "أخبرهم أن يشكروا نعم الله: 'واتقوا الذي أمدكم بما تعلمون. أمدكم بأنعام وبنين. وجنات وعيون.'"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Hud warned them of a terrible punishment if they continued in their arrogance. He said, 'Indeed, I fear for you the punishment of a terrible Day.' But they would not listen.",
+          "contentTextArabic": "حذرهم هود من عذاب أليم إذا استمروا في تكبرهم. قال: 'إني أخاف عليكم عذاب يوم عظيم.' لكنهم لم يستمعوا."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Hud reminded them: 'I ask of you no payment for this message. My payment is only from the Lord of all the worlds.' He was not seeking money or power - only their guidance.",
+          "contentTextArabic": "ذكّرهم هود: 'وما أسألكم عليه من أجر. إن أجري إلا على رب العالمين.' لم يكن يطلب مالاً أو سلطة - فقط هدايتهم."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Who was Prophet Hud sent to?",
+          "questionArabic": "إلى من أُرسل النبي هود؟",
+          "options": ["The people of Thamud", "The people of 'Ad", "The people of Madyan", "The people of Egypt"],
+          "optionsArabic": ["قوم ثمود", "قوم عاد", "أهل مدين", "أهل مصر"],
+          "correctIndex": 1,
+          "explanation": "Prophet Hud was sent specifically to the people of 'Ad to guide them.",
+          "explanationArabic": "أُرسل النبي هود خصيصاً لقوم عاد لهدايتهم."
+        },
+        {
+          "question": "What did Hud ask his people to do?",
+          "questionArabic": "ماذا طلب هود من قومه؟",
+          "options": ["Build more towers", "Worship Allah alone", "Fight other tribes", "Travel far away"],
+          "optionsArabic": ["بناء المزيد من الأبراج", "عبادة الله وحده", "قتال القبائل الأخرى", "السفر بعيداً"],
+          "correctIndex": 1,
+          "explanation": "Hud called his people to worship Allah alone and abandon their idols.",
+          "explanationArabic": "دعا هود قومه لعبادة الله وحده وترك أصنامهم."
+        },
+        {
+          "question": "Did Hud ask for payment for his message?",
+          "questionArabic": "هل طلب هود أجراً على رسالته؟",
+          "options": ["Yes, he wanted gold", "No, his reward was only from Allah", "Yes, he wanted power", "Yes, he wanted land"],
+          "optionsArabic": ["نعم، أراد ذهباً", "لا، أجره فقط من الله", "نعم، أراد السلطة", "نعم، أراد أرضاً"],
+          "correctIndex": 1,
+          "explanation": "Hud asked for no payment - his reward was only from Allah.",
+          "explanationArabic": "لم يطلب هود أجراً - أجره فقط من الله."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_hud_lesson_3",
+      "title": "The People's Rejection",
+      "titleArabic": "رفض القوم",
+      "sortOrder": 3,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "The leaders of 'Ad rejected Hud's message. They said, 'We see you in foolishness, and we think you are a liar.' They insulted Allah's messenger instead of listening.",
+          "contentTextArabic": "رفض زعماء عاد رسالة هود. قالوا: 'إنا لنراك في سفاهة وإنا لنظنك من الكاذبين.' أهانوا رسول الله بدلاً من الاستماع."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Hud replied calmly, 'O my people, there is no foolishness in me, but I am a messenger from the Lord of all the worlds. I convey to you the messages of my Lord, and I am a trustworthy adviser.'",
+          "contentTextArabic": "أجاب هود بهدوء: 'يا قوم ليس بي سفاهة ولكني رسول من رب العالمين. أبلغكم رسالات ربي وأنا لكم ناصح أمين.'"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "The arrogant people said, 'Have you come to us to make us worship Allah alone and leave what our fathers used to worship? Then bring us what you promise, if you are truthful!'",
+          "contentTextArabic": "قال المتكبرون: 'أجئتنا لنعبد الله وحده ونذر ما كان يعبد آباؤنا؟ فأتنا بما تعدنا إن كنت من الصادقين!'"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "They challenged Hud to bring the punishment! They were so proud of their strength that they thought nothing could hurt them. They didn't fear Allah's power at all.",
+          "contentTextArabic": "تحدوا هوداً أن يأتي بالعذاب! كانوا فخورين جداً بقوتهم حتى ظنوا أن لا شيء يؤذيهم. لم يخافوا قوة الله أبداً."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Only a few people believed in Hud. Most of 'Ad continued in their arrogance and idol worship. They laughed at the warning and waited to see what would happen.",
+          "contentTextArabic": "آمن قليل من الناس بهود. استمر معظم عاد في تكبرهم وعبادة الأصنام. ضحكوا على التحذير وانتظروا ليروا ما سيحدث."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What did the leaders of 'Ad call Prophet Hud?",
+          "questionArabic": "ماذا سمى زعماء عاد النبي هود؟",
+          "options": ["A wise man", "A foolish liar", "A great leader", "A true prophet"],
+          "optionsArabic": ["رجل حكيم", "سفيه كاذب", "قائد عظيم", "نبي صادق"],
+          "correctIndex": 1,
+          "explanation": "The arrogant leaders called Hud foolish and a liar, rejecting his message.",
+          "explanationArabic": "سمى الزعماء المتكبرون هوداً سفيهاً وكاذباً، رافضين رسالته."
+        },
+        {
+          "question": "How did Hud respond to their insults?",
+          "questionArabic": "كيف رد هود على إهاناتهم؟",
+          "options": ["He got angry and left", "He responded calmly and continued advising", "He fought them", "He gave up his mission"],
+          "optionsArabic": ["غضب وغادر", "رد بهدوء واستمر في النصح", "قاتلهم", "تخلى عن رسالته"],
+          "correctIndex": 1,
+          "explanation": "Hud responded calmly, explaining he was a trustworthy messenger from Allah.",
+          "explanationArabic": "رد هود بهدوء، موضحاً أنه رسول أمين من الله."
+        },
+        {
+          "question": "What did the people challenge Hud to do?",
+          "questionArabic": "بماذا تحدى القوم هوداً؟",
+          "options": ["To build a tower", "To bring the punishment he warned about", "To leave their land", "To give them gold"],
+          "optionsArabic": ["أن يبني برجاً", "أن يأتي بالعذاب الذي حذر منه", "أن يغادر أرضهم", "أن يعطيهم ذهباً"],
+          "correctIndex": 1,
+          "explanation": "In their arrogance, they challenged Hud to bring the punishment he warned about.",
+          "explanationArabic": "في تكبرهم، تحدوا هوداً أن يأتي بالعذاب الذي حذر منه."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_hud_lesson_4",
+      "title": "The Terrible Wind",
+      "titleArabic": "الريح العاتية",
+      "sortOrder": 4,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "The people of 'Ad continued in their disbelief. Then, something strange happened. The rain stopped, and a terrible drought struck their land. Their gardens began to dry up.",
+          "contentTextArabic": "استمر قوم عاد في كفرهم. ثم حدث شيء غريب. توقف المطر، وضرب جفاف رهيب أرضهم. بدأت جناتهم تجف."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "One day, they saw a cloud coming toward them. They became happy, thinking it was rain at last! They said, 'This is a cloud bringing us rain!' But they were terribly wrong.",
+          "contentTextArabic": "في يوم، رأوا سحابة قادمة نحوهم. فرحوا ظناً منهم أنه المطر أخيراً! قالوا: 'هذا عارض ممطرنا!' لكنهم كانوا مخطئين تماماً."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Hud told them the truth: 'No! It is what you were asking to hasten - a wind containing a painful punishment, destroying everything by the command of its Lord.'",
+          "contentTextArabic": "أخبرهم هود الحقيقة: 'بل هو ما استعجلتم به. ريح فيها عذاب أليم. تدمر كل شيء بأمر ربها.'"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "A terrible wind began to blow! It was not an ordinary wind. The Quran describes it as 'a screaming, violent wind' that Allah sent upon them for seven nights and eight days continuously.",
+          "contentTextArabic": "بدأت ريح رهيبة تهب! لم تكن ريحاً عادية. يصفها القرآن بأنها 'ريح صرصر عاتية' أرسلها الله عليهم سبع ليالٍ وثمانية أيام حسوماً."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "The powerful wind destroyed everything. Their tall buildings, their strong bodies, their proud towers - nothing could withstand it. The people who once asked 'Who is mightier than us?' were now helpless.",
+          "contentTextArabic": "دمرت الريح القوية كل شيء. مبانيهم الشاهقة، وأجسادهم القوية، وأبراجهم الفخمة - لم يصمد شيء أمامها. الذين سألوا يوماً 'من أشد منا قوة؟' أصبحوا عاجزين."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What did the people of 'Ad think the cloud was?",
+          "questionArabic": "ماذا ظن قوم عاد أن السحابة كانت؟",
+          "options": ["A storm", "Rain coming to save them", "Allah's punishment", "Just dust"],
+          "optionsArabic": ["عاصفة", "مطر قادم لإنقاذهم", "عذاب الله", "مجرد غبار"],
+          "correctIndex": 1,
+          "explanation": "They hopefully thought the cloud was rain, but it was actually the punishment.",
+          "explanationArabic": "ظنوا بأمل أن السحابة مطر، لكنها كانت في الحقيقة العذاب."
+        },
+        {
+          "question": "How long did the wind blow?",
+          "questionArabic": "كم استمرت الريح تهب؟",
+          "options": ["One hour", "One day", "Seven nights and eight days", "One month"],
+          "optionsArabic": ["ساعة واحدة", "يوم واحد", "سبع ليالٍ وثمانية أيام", "شهر واحد"],
+          "correctIndex": 2,
+          "explanation": "The violent wind blew continuously for seven nights and eight days.",
+          "explanationArabic": "هبت الريح العاتية باستمرار سبع ليالٍ وثمانية أيام."
+        },
+        {
+          "question": "What happened to the mighty people of 'Ad?",
+          "questionArabic": "ماذا حدث لقوم عاد الأقوياء؟",
+          "options": ["They escaped", "They were destroyed by the wind", "They became believers", "They built stronger buildings"],
+          "optionsArabic": ["هربوا", "دمرتهم الريح", "أصبحوا مؤمنين", "بنوا مبانٍ أقوى"],
+          "correctIndex": 1,
+          "explanation": "Despite their strength, the people of 'Ad were completely destroyed by Allah's wind.",
+          "explanationArabic": "رغم قوتهم، دُمّر قوم عاد تماماً بريح الله."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_hud_lesson_5",
+      "title": "Lessons from Hud's Story",
+      "titleArabic": "دروس من قصة هود",
+      "sortOrder": 5,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Allah saved Prophet Hud and those who believed with him. They were protected from the terrible wind. This shows that Allah always protects the believers from His punishment.",
+          "contentTextArabic": "أنجى الله النبي هوداً والذين آمنوا معه. حُموا من الريح الرهيبة. هذا يُظهر أن الله يحمي المؤمنين دائماً من عذابه."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "The Quran tells us that after the wind, the people of 'Ad were 'like hollow trunks of palm trees.' Their strong bodies became empty shells. All their power meant nothing before Allah.",
+          "contentTextArabic": "يخبرنا القرآن أنه بعد الريح، أصبح قوم عاد 'كأنهم أعجاز نخل خاوية.' أصبحت أجسادهم القوية قشوراً فارغة. كل قوتهم لم تعنِ شيئاً أمام الله."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "This story teaches us never to be arrogant about our strength or abilities. Everything we have comes from Allah, and He can take it away whenever He wills.",
+          "contentTextArabic": "تعلمنا هذه القصة ألا نتكبر أبداً بقوتنا أو قدراتنا. كل ما لدينا من الله، ويستطيع أخذه متى شاء."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "We also learn that physical strength is not true power. The people of 'Ad were the strongest humans, but they were weak before Allah. True strength is faith and obedience to Allah.",
+          "contentTextArabic": "نتعلم أيضاً أن القوة الجسدية ليست القوة الحقيقية. كان قوم عاد أقوى البشر، لكنهم كانوا ضعفاء أمام الله. القوة الحقيقية هي الإيمان وطاعة الله."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Finally, we learn to be grateful for all blessings. When Allah gives us health, strength, wealth, or any blessing, we should thank Him and use these gifts in His obedience, not in arrogance.",
+          "contentTextArabic": "أخيراً، نتعلم أن نشكر على كل النعم. عندما يعطينا الله صحة أو قوة أو ثروة أو أي نعمة، يجب أن نشكره ونستخدم هذه النعم في طاعته، لا في التكبر."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What happened to Prophet Hud and the believers?",
+          "questionArabic": "ماذا حدث للنبي هود والمؤمنين؟",
+          "options": ["They were destroyed too", "Allah saved them from the wind", "They ran away", "They hid in caves"],
+          "optionsArabic": ["دُمروا أيضاً", "أنجاهم الله من الريح", "هربوا بعيداً", "اختبأوا في الكهوف"],
+          "correctIndex": 1,
+          "explanation": "Allah protected Hud and the believers from the terrible wind.",
+          "explanationArabic": "حمى الله هوداً والمؤمنين من الريح الرهيبة."
+        },
+        {
+          "question": "What does the story teach us about strength?",
+          "questionArabic": "ماذا تعلمنا القصة عن القوة؟",
+          "options": ["Physical strength is most important", "True strength is faith and obedience to Allah", "We should show off our strength", "Strength makes us better than others"],
+          "optionsArabic": ["القوة الجسدية هي الأهم", "القوة الحقيقية هي الإيمان وطاعة الله", "يجب أن نتفاخر بقوتنا", "القوة تجعلنا أفضل من الآخرين"],
+          "correctIndex": 1,
+          "explanation": "True strength is faith and obedience to Allah, not physical power.",
+          "explanationArabic": "القوة الحقيقية هي الإيمان وطاعة الله، لا القوة الجسدية."
+        },
+        {
+          "question": "What should we do when Allah blesses us?",
+          "questionArabic": "ماذا يجب أن نفعل عندما يُنعم الله علينا؟",
+          "options": ["Become arrogant", "Thank Allah and use blessings in His obedience", "Show off to others", "Forget about Allah"],
+          "optionsArabic": ["نتكبر", "نشكر الله ونستخدم النعم في طاعته", "نتفاخر أمام الآخرين", "ننسى الله"],
+          "correctIndex": 1,
+          "explanation": "We should thank Allah and use our blessings to obey Him, not to be arrogant.",
+          "explanationArabic": "يجب أن نشكر الله ونستخدم نعمنا لطاعته، لا للتكبر."
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../../core/constants/app_colors.dart';
@@ -6,18 +8,86 @@ import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/router/app_routes.dart';
 import '../../../../core/widgets/cards/lesson_card.dart';
 import '../../../../core/widgets/progress/progress_bar.dart';
+import '../../../lessons/data/repositories/lesson_repository.dart';
+import '../../../lessons/domain/entities/lesson_entity.dart';
+import '../../data/repositories/chapter_repository.dart';
+import '../../domain/entities/chapter_entity.dart';
 
 /// Chapter detail page showing lessons
 /// From Issue #3 - Navigation & Routing
-class ChapterDetailPage extends StatelessWidget {
+class ChapterDetailPage extends ConsumerWidget {
   const ChapterDetailPage({required this.chapterId, super.key});
 
   final String chapterId;
 
   @override
-  Widget build(BuildContext context) {
-    // TODO: Load chapter data based on chapterId
-    final chapterTitle = _getChapterTitle(chapterId);
+  Widget build(BuildContext context, WidgetRef ref) {
+    final chapterAsync = ref.watch(chapterProvider(chapterId));
+
+    return chapterAsync.when(
+      data: (chapter) {
+        if (chapter == null) {
+          return _buildNotFound(context);
+        }
+        return _ChapterDetailContent(chapter: chapter);
+      },
+      loading: () => const Scaffold(
+        body: Center(child: CircularProgressIndicator()),
+      ),
+      error: (error, stack) => Scaffold(
+        appBar: AppBar(),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Icon(Icons.error_outline, size: 48, color: AppColors.error),
+              const SizedBox(height: Spacing.md),
+              const Text('Failed to load chapter'),
+              const SizedBox(height: Spacing.md),
+              ElevatedButton(
+                onPressed: () => ref.invalidate(chapterProvider(chapterId)),
+                child: const Text('Retry'),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildNotFound(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Icon(Icons.search_off, size: 64, color: AppColors.textHint),
+            const SizedBox(height: Spacing.md),
+            Text(
+              'Chapter not found',
+              style: Theme.of(context).textTheme.titleMedium,
+            ),
+            const SizedBox(height: Spacing.md),
+            ElevatedButton(
+              onPressed: () => context.pop(),
+              child: const Text('Go Back'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _ChapterDetailContent extends ConsumerWidget {
+  const _ChapterDetailContent({required this.chapter});
+
+  final ChapterEntity chapter;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final lessonsAsync = ref.watch(lessonsForChapterProvider(chapter.id));
 
     return Scaffold(
       body: CustomScrollView(
@@ -27,18 +97,29 @@ class ChapterDetailPage extends StatelessWidget {
             expandedHeight: 200,
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
-              title: Text(chapterTitle),
+              title: Text(
+                chapter.title,
+                style: const TextStyle(
+                  fontSize: 16,
+                  shadows: [
+                    Shadow(
+                      blurRadius: 4,
+                      color: Colors.black54,
+                    ),
+                  ],
+                ),
+              ),
               background: Container(
-                decoration: const BoxDecoration(
+                decoration: BoxDecoration(
                   gradient: LinearGradient(
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
-                    colors: [AppColors.primary, AppColors.primaryDark],
+                    colors: [chapter.color, chapter.color.withValues(alpha: 0.8)],
                   ),
                 ),
-                child: const Center(
+                child: Center(
                   child: Icon(
-                    Icons.auto_stories,
+                    chapter.icon,
                     size: 64,
                     color: Colors.white24,
                   ),
@@ -48,15 +129,13 @@ class ChapterDetailPage extends StatelessWidget {
             actions: [
               IconButton(
                 icon: const Icon(Icons.bookmark_border),
-                onPressed: () {
-                  // TODO: Add to bookmarks
-                },
+                tooltip: 'Bookmark lessons',
+                onPressed: () => _showBookmarkInfo(context),
               ),
               IconButton(
                 icon: const Icon(Icons.share),
-                onPressed: () {
-                  // TODO: Share chapter
-                },
+                tooltip: 'Share chapter',
+                onPressed: () => _shareChapter(context),
               ),
             ],
           ),
@@ -74,11 +153,40 @@ class ChapterDetailPage extends StatelessWidget {
                   ),
                   const SizedBox(height: Spacing.sm),
                   Text(
-                    _getChapterDescription(chapterId),
+                    chapter.description,
                     style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                           color: AppColors.textSecondary,
                         ),
                   ),
+                  if (chapter.isPremium) ...[
+                    const SizedBox(height: Spacing.md),
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: Spacing.md,
+                        vertical: Spacing.sm,
+                      ),
+                      decoration: BoxDecoration(
+                        color: AppColors.secondary.withValues(alpha: 0.1),
+                        borderRadius: BorderRadius.circular(AppRadius.md),
+                        border: Border.all(
+                          color: AppColors.secondary.withValues(alpha: 0.3),
+                        ),
+                      ),
+                      child: const Row(
+                        children: [
+                          Icon(Icons.star, color: AppColors.secondary, size: 20),
+                          SizedBox(width: Spacing.sm),
+                          Text(
+                            'Premium Content',
+                            style: TextStyle(
+                              color: AppColors.secondary,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
                   const SizedBox(height: Spacing.lg),
                   Row(
                     children: [
@@ -91,14 +199,14 @@ class ChapterDetailPage extends StatelessWidget {
                               style: Theme.of(context).textTheme.labelMedium,
                             ),
                             const SizedBox(height: Spacing.xs),
-                            const AppProgressBar(progress: 0.4),
+                            AppProgressBar(progress: chapter.progress),
                           ],
                         ),
                       ),
                       const SizedBox(width: Spacing.lg),
-                      const LessonStats(
-                        completedLessons: 4,
-                        totalLessons: 10,
+                      LessonStats(
+                        completedLessons: chapter.completedCount,
+                        totalLessons: chapter.lessonCount,
                       ),
                     ],
                   ),
@@ -119,89 +227,33 @@ class ChapterDetailPage extends StatelessWidget {
           ),
 
           // Lesson list
-          SliverPadding(
-            padding: const EdgeInsets.all(Spacing.lg),
-            sliver: SliverList(
-              delegate: SliverChildListDelegate([
-                LessonCard(
-                  title: 'Introduction',
-                  subtitle: 'Learn about the background',
-                  duration: '5 min',
-                  isCompleted: true,
-                  hasAudio: true,
-                  onTap: () => context.push(
-                    AppRoutes.lessonDetailPath(chapterId, 'lesson-1'),
+          lessonsAsync.when(
+            data: (lessons) => _buildLessonList(context, lessons),
+            loading: () => const SliverToBoxAdapter(
+              child: Padding(
+                padding: EdgeInsets.all(Spacing.xl),
+                child: Center(child: CircularProgressIndicator()),
+              ),
+            ),
+            error: (error, stack) => SliverToBoxAdapter(
+              child: Padding(
+                padding: const EdgeInsets.all(Spacing.lg),
+                child: Center(
+                  child: Column(
+                    children: [
+                      const Icon(Icons.error_outline, color: AppColors.error),
+                      const SizedBox(height: Spacing.sm),
+                      const Text('Failed to load lessons'),
+                      TextButton(
+                        onPressed: () => ref.invalidate(
+                          lessonsForChapterProvider(chapter.id),
+                        ),
+                        child: const Text('Retry'),
+                      ),
+                    ],
                   ),
                 ),
-                const SizedBox(height: Spacing.md),
-                LessonCard(
-                  title: 'Part 1: The Beginning',
-                  subtitle: 'How the story starts',
-                  duration: '8 min',
-                  isCompleted: true,
-                  hasAudio: true,
-                  hasQuiz: true,
-                  onTap: () => context.push(
-                    AppRoutes.lessonDetailPath(chapterId, 'lesson-2'),
-                  ),
-                ),
-                const SizedBox(height: Spacing.md),
-                LessonCard(
-                  title: 'Part 2: The Journey',
-                  subtitle: 'Following the path',
-                  duration: '10 min',
-                  isCompleted: true,
-                  hasAudio: true,
-                  onTap: () => context.push(
-                    AppRoutes.lessonDetailPath(chapterId, 'lesson-3'),
-                  ),
-                ),
-                const SizedBox(height: Spacing.md),
-                LessonCard(
-                  title: 'Part 3: The Challenges',
-                  subtitle: 'Overcoming difficulties',
-                  duration: '12 min',
-                  isCompleted: true,
-                  hasAudio: true,
-                  hasQuiz: true,
-                  onTap: () => context.push(
-                    AppRoutes.lessonDetailPath(chapterId, 'lesson-4'),
-                  ),
-                ),
-                const SizedBox(height: Spacing.md),
-                LessonCard(
-                  title: 'Part 4: The Triumph',
-                  subtitle: 'Success through faith',
-                  duration: '10 min',
-                  isCompleted: false,
-                  hasAudio: true,
-                  onTap: () => context.push(
-                    AppRoutes.lessonDetailPath(chapterId, 'lesson-5'),
-                  ),
-                ),
-                const SizedBox(height: Spacing.md),
-                LessonCard(
-                  title: 'Part 5: Lessons Learned',
-                  subtitle: 'What we can learn',
-                  duration: '7 min',
-                  isCompleted: false,
-                  hasAudio: true,
-                  hasQuiz: true,
-                  onTap: () => context.push(
-                    AppRoutes.lessonDetailPath(chapterId, 'lesson-6'),
-                  ),
-                ),
-                const SizedBox(height: Spacing.md),
-                LessonCard(
-                  title: 'Final Quiz',
-                  subtitle: 'Test your knowledge',
-                  duration: '10 min',
-                  isCompleted: false,
-                  isLocked: true,
-                  hasQuiz: true,
-                  onTap: () {},
-                ),
-              ]),
+              ),
             ),
           ),
         ],
@@ -209,26 +261,136 @@ class ChapterDetailPage extends StatelessWidget {
     );
   }
 
-  String _getChapterTitle(String id) {
-    final titles = {
-      'prophet-adam': 'Prophet Adam (AS)',
-      'prophet-nuh': 'Prophet Nuh (AS)',
-      'prophet-ibrahim': 'Prophet Ibrahim (AS)',
-      'prophet-yusuf': 'Prophet Yusuf (AS)',
-      'prophet-musa': 'Prophet Musa (AS)',
-      'prophet-isa': 'Prophet Isa (AS)',
-      'prophet-muhammad': 'Prophet Muhammad (SAW)',
-      'prophets': 'Stories of the Prophets',
-      'quran-tales': 'Tales from the Quran',
-      'islamic-values': 'Islamic Values',
-    };
-    return titles[id] ?? 'Chapter';
+  Widget _buildLessonList(BuildContext context, List<LessonEntity> lessons) {
+    if (lessons.isEmpty) {
+      return SliverToBoxAdapter(
+        child: Padding(
+          padding: const EdgeInsets.all(Spacing.xl),
+          child: Center(
+            child: Column(
+              children: [
+                const Icon(
+                  Icons.menu_book_outlined,
+                  size: 48,
+                  color: AppColors.textHint,
+                ),
+                const SizedBox(height: Spacing.md),
+                Text(
+                  'No lessons available yet',
+                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                        color: AppColors.textSecondary,
+                      ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+    }
+
+    return SliverPadding(
+      padding: const EdgeInsets.all(Spacing.lg),
+      sliver: SliverList(
+        delegate: SliverChildBuilderDelegate(
+          (context, index) {
+            final lesson = lessons[index];
+            final isFirstLesson = index == 0;
+
+            return Padding(
+              padding: const EdgeInsets.only(bottom: Spacing.md),
+              child: LessonCard(
+                title: lesson.title,
+                subtitle: lesson.subtitle,
+                duration: lesson.duration,
+                isCompleted: lesson.isCompleted,
+                isLocked: lesson.isLocked,
+                hasAudio: lesson.hasAudio,
+                hasQuiz: lesson.hasQuiz,
+                isPremium: lesson.isPremium && !isFirstLesson,
+                isFree: lesson.isPremium && isFirstLesson,
+                onTap: () => context.push(
+                  AppRoutes.lessonDetailPath(chapter.serverId, lesson.serverId),
+                ),
+              ),
+            );
+          },
+          childCount: lessons.length,
+        ),
+      ),
+    );
   }
 
-  String _getChapterDescription(String id) {
-    return 'Discover the beautiful story and learn valuable lessons about '
-        'faith, patience, and trust in Allah. This chapter contains multiple '
-        'lessons with audio narration and interactive quizzes to help '
-        'reinforce learning.';
+  void _showBookmarkInfo(BuildContext context) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        content: Text('Tap on individual lessons to bookmark them'),
+        behavior: SnackBarBehavior.floating,
+      ),
+    );
+  }
+
+  void _shareChapter(BuildContext context) {
+    final shareText = 'Check out "${chapter.title}" on Sinbool - '
+        'Islamic Stories for Kids!\n\n'
+        '${chapter.description}\n\n'
+        'Download the app to learn more!';
+
+    // Copy to clipboard and show confirmation
+    Clipboard.setData(ClipboardData(text: shareText));
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        content: Row(
+          children: [
+            Icon(Icons.check, color: Colors.white),
+            SizedBox(width: Spacing.sm),
+            Text('Chapter info copied to clipboard!'),
+          ],
+        ),
+        behavior: SnackBarBehavior.floating,
+      ),
+    );
+  }
+}
+
+/// Widget to display lesson completion stats
+class LessonStats extends StatelessWidget {
+  const LessonStats({
+    required this.completedLessons,
+    required this.totalLessons,
+    super.key,
+  });
+
+  final int completedLessons;
+  final int totalLessons;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(
+        horizontal: Spacing.md,
+        vertical: Spacing.sm,
+      ),
+      decoration: BoxDecoration(
+        color: AppColors.surfaceVariant,
+        borderRadius: BorderRadius.circular(AppRadius.md),
+      ),
+      child: Column(
+        children: [
+          Text(
+            '$completedLessons/$totalLessons',
+            style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                  fontWeight: FontWeight.bold,
+                  color: AppColors.primary,
+                ),
+          ),
+          Text(
+            'lessons',
+            style: Theme.of(context).textTheme.labelSmall?.copyWith(
+                  color: AppColors.textSecondary,
+                ),
+          ),
+        ],
+      ),
+    );
   }
 }

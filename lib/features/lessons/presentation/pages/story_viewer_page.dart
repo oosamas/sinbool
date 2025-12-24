@@ -1,13 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/theme/app_typography.dart';
 import '../../../../core/widgets/buttons/app_button.dart';
+import '../../../audio/domain/entities/audio_state.dart';
+import '../../../audio/presentation/controllers/audio_controller.dart';
+import '../../../audio/presentation/widgets/audio_player_widget.dart';
+import '../../../settings/presentation/controllers/settings_controller.dart';
+import '../../data/repositories/lesson_repository.dart';
+import '../../domain/entities/lesson_entity.dart';
 
 /// Story viewer page for reading stories
 /// From Issue #3 - Navigation & Routing
-class StoryViewerPage extends StatefulWidget {
+class StoryViewerPage extends ConsumerStatefulWidget {
   const StoryViewerPage({
     required this.chapterId,
     required this.lessonId,
@@ -18,58 +25,15 @@ class StoryViewerPage extends StatefulWidget {
   final String lessonId;
 
   @override
-  State<StoryViewerPage> createState() => _StoryViewerPageState();
+  ConsumerState<StoryViewerPage> createState() => _StoryViewerPageState();
 }
 
-class _StoryViewerPageState extends State<StoryViewerPage> {
+class _StoryViewerPageState extends ConsumerState<StoryViewerPage> {
   final PageController _pageController = PageController();
   int _currentPage = 0;
   double _fontSize = 18;
   bool _showControls = true;
-
-  // Sample story content
-  final List<_StoryPage> _pages = [
-    _StoryPage(
-      content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
-      translation: 'In the name of Allah, the Most Gracious, the Most Merciful',
-      imageDescription: 'Opening page with Islamic calligraphy',
-    ),
-    _StoryPage(
-      content:
-          'Long ago, in a land far away, there lived a righteous man who '
-          'always remembered Allah in everything he did.',
-      translation: null,
-      imageDescription: 'A peaceful village scene',
-    ),
-    _StoryPage(
-      content:
-          'He would pray five times a day and always help those in need. '
-          'His kindness was known throughout the land.',
-      translation: null,
-      imageDescription: 'Man praying at sunset',
-    ),
-    _StoryPage(
-      content:
-          'One day, Allah decided to test his faith with a great trial. '
-          'But he remained patient and trusted in Allah\'s plan.',
-      translation: null,
-      imageDescription: 'Stormy clouds gathering',
-    ),
-    _StoryPage(
-      content:
-          'Through patience and prayer, he overcame every challenge. '
-          'Allah rewarded him for his unwavering faith.',
-      translation: null,
-      imageDescription: 'Beautiful sunrise',
-    ),
-    _StoryPage(
-      content:
-          'The moral of this story teaches us that with faith and patience, '
-          'we can overcome any difficulty in life.',
-      translation: null,
-      imageDescription: 'Peaceful ending scene',
-    ),
-  ];
+  bool _isMarkingComplete = false;
 
   @override
   void dispose() {
@@ -93,8 +57,201 @@ class _StoryViewerPageState extends State<StoryViewerPage> {
     }
   }
 
+  Future<void> _onPageChanged(int index, int lessonId) async {
+    setState(() => _currentPage = index);
+
+    // Update last page viewed in database
+    try {
+      final repository = ref.read(lessonRepositoryProvider);
+      await repository.updateLastPage(lessonId, index + 1);
+    } catch (e) {
+      // Silently fail - page tracking is not critical
+      debugPrint('Failed to update page progress: $e');
+    }
+  }
+
+  Future<void> _markLessonComplete(int lessonId) async {
+    if (_isMarkingComplete) return;
+
+    setState(() => _isMarkingComplete = true);
+
+    try {
+      final repository = ref.read(lessonRepositoryProvider);
+      await repository.markLessonCompleted(lessonId);
+
+      if (mounted) {
+        // Show success message
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Row(
+              children: [
+                Icon(Icons.check_circle, color: Colors.white),
+                SizedBox(width: Spacing.sm),
+                Text('Lesson completed! Great job!'),
+              ],
+            ),
+            backgroundColor: AppColors.success,
+            behavior: SnackBarBehavior.floating,
+          ),
+        );
+
+        // Return to previous screen
+        Navigator.of(context).pop(true); // Return true to indicate completion
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Failed to save progress: $e'),
+            backgroundColor: AppColors.error,
+          ),
+        );
+        setState(() => _isMarkingComplete = false);
+      }
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
+    final lessonAsync = ref.watch(lessonProvider(widget.lessonId));
+
+    return lessonAsync.when(
+      data: (lesson) {
+        if (lesson == null) {
+          return _buildNotFound(context);
+        }
+        return _buildContent(context, lesson);
+      },
+      loading: () => const Scaffold(
+        backgroundColor: AppColors.surface,
+        body: Center(child: CircularProgressIndicator()),
+      ),
+      error: (error, stack) => Scaffold(
+        backgroundColor: AppColors.surface,
+        appBar: AppBar(backgroundColor: Colors.transparent),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Icon(Icons.error_outline, size: 48, color: AppColors.error),
+              const SizedBox(height: Spacing.md),
+              const Text('Failed to load lesson'),
+              const SizedBox(height: Spacing.md),
+              ElevatedButton(
+                onPressed: () => ref.invalidate(lessonProvider(widget.lessonId)),
+                child: const Text('Retry'),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildNotFound(BuildContext context) {
+    return Scaffold(
+      backgroundColor: AppColors.surface,
+      appBar: AppBar(backgroundColor: Colors.transparent),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Icon(Icons.search_off, size: 64, color: AppColors.textHint),
+            const SizedBox(height: Spacing.md),
+            Text(
+              'Lesson not found',
+              style: Theme.of(context).textTheme.titleMedium,
+            ),
+            const SizedBox(height: Spacing.md),
+            ElevatedButton(
+              onPressed: () => Navigator.of(context).pop(),
+              child: const Text('Go Back'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildContent(BuildContext context, LessonEntity lesson) {
+    final contentAsync = ref.watch(lessonContentProvider(lesson.id));
+
+    return contentAsync.when(
+      data: (pages) {
+        if (pages.isEmpty) {
+          return _buildEmptyContent(context, lesson);
+        }
+        return _buildStoryViewer(context, lesson, pages);
+      },
+      loading: () => const Scaffold(
+        backgroundColor: AppColors.surface,
+        body: Center(child: CircularProgressIndicator()),
+      ),
+      error: (error, stack) => Scaffold(
+        backgroundColor: AppColors.surface,
+        appBar: AppBar(backgroundColor: Colors.transparent),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Icon(Icons.error_outline, size: 48, color: AppColors.error),
+              const SizedBox(height: Spacing.md),
+              const Text('Failed to load content'),
+              const SizedBox(height: Spacing.md),
+              ElevatedButton(
+                onPressed: () => ref.invalidate(lessonContentProvider(lesson.id)),
+                child: const Text('Retry'),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildEmptyContent(BuildContext context, LessonEntity lesson) {
+    return Scaffold(
+      backgroundColor: AppColors.surface,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        title: Text(lesson.title),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Icon(Icons.menu_book_outlined, size: 64, color: AppColors.textHint),
+            const SizedBox(height: Spacing.md),
+            Text(
+              'No content available yet',
+              style: Theme.of(context).textTheme.titleMedium,
+            ),
+            const SizedBox(height: Spacing.lg),
+            AppButton(
+              text: 'Mark as Complete Anyway',
+              onPressed: () => _markLessonComplete(lesson.id),
+              isLoading: _isMarkingComplete,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildStoryViewer(
+    BuildContext context,
+    LessonEntity lesson,
+    List<LessonContentEntity> pages,
+  ) {
+    // Initialize page controller to last viewed page
+    if (_currentPage == 0 && lesson.lastPageViewed > 0 && lesson.lastPageViewed <= pages.length) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (_pageController.hasClients) {
+          _pageController.jumpToPage(lesson.lastPageViewed - 1);
+        }
+      });
+    }
+
     return Scaffold(
       backgroundColor: AppColors.surface,
       body: GestureDetector(
@@ -104,13 +261,11 @@ class _StoryViewerPageState extends State<StoryViewerPage> {
             // Story content
             PageView.builder(
               controller: _pageController,
-              onPageChanged: (index) {
-                setState(() => _currentPage = index);
-              },
-              itemCount: _pages.length,
+              onPageChanged: (index) => _onPageChanged(index, lesson.id),
+              itemCount: pages.length,
               itemBuilder: (context, index) {
                 return _StoryPageWidget(
-                  page: _pages[index],
+                  page: pages[index],
                   fontSize: _fontSize,
                 );
               },
@@ -140,11 +295,21 @@ class _StoryViewerPageState extends State<StoryViewerPage> {
                     child: Row(
                       children: [
                         IconButton(
-                          icon:
-                              const Icon(Icons.close, color: Colors.white),
+                          icon: const Icon(Icons.close, color: Colors.white),
                           onPressed: () => Navigator.of(context).pop(),
                         ),
-                        const Spacer(),
+                        Expanded(
+                          child: Text(
+                            lesson.title,
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w600,
+                            ),
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
                         IconButton(
                           icon: const Icon(
                             Icons.text_decrease,
@@ -159,15 +324,8 @@ class _StoryViewerPageState extends State<StoryViewerPage> {
                           ),
                           onPressed: _increaseFontSize,
                         ),
-                        IconButton(
-                          icon: const Icon(
-                            Icons.headphones,
-                            color: Colors.white,
-                          ),
-                          onPressed: () {
-                            // TODO: Play audio
-                          },
-                        ),
+                        if (lesson.hasAudio)
+                          _AudioButton(lesson: lesson),
                       ],
                     ),
                   ),
@@ -203,12 +361,11 @@ class _StoryViewerPageState extends State<StoryViewerPage> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: List.generate(
-                            _pages.length,
+                            pages.length,
                             (index) => Container(
                               width: index == _currentPage ? 24 : 8,
                               height: 8,
-                              margin:
-                                  const EdgeInsets.symmetric(horizontal: 2),
+                              margin: const EdgeInsets.symmetric(horizontal: 2),
                               decoration: BoxDecoration(
                                 color: index == _currentPage
                                     ? AppColors.primary
@@ -221,17 +378,20 @@ class _StoryViewerPageState extends State<StoryViewerPage> {
                         const SizedBox(height: Spacing.md),
                         // Page number
                         Text(
-                          'Page ${_currentPage + 1} of ${_pages.length}',
+                          'Page ${_currentPage + 1} of ${pages.length}',
                           style: const TextStyle(color: Colors.white),
                         ),
-                        if (_currentPage == _pages.length - 1) ...[
+                        // Complete button on last page
+                        if (_currentPage == pages.length - 1) ...[
                           const SizedBox(height: Spacing.md),
                           AppButton(
-                            text: 'Complete Lesson',
-                            onPressed: () {
-                              // TODO: Mark lesson as complete
-                              Navigator.of(context).pop();
-                            },
+                            text: lesson.isCompleted
+                                ? 'Read Again ✓'
+                                : 'Complete Lesson',
+                            onPressed: _isMarkingComplete
+                                ? null
+                                : () => _markLessonComplete(lesson.id),
+                            isLoading: _isMarkingComplete,
                           ),
                         ],
                       ],
@@ -247,69 +407,46 @@ class _StoryViewerPageState extends State<StoryViewerPage> {
   }
 }
 
-class _StoryPage {
-  const _StoryPage({
-    required this.content,
-    this.translation,
-    this.imageDescription,
-  });
-
-  final String content;
-  final String? translation;
-  final String? imageDescription;
-}
-
 class _StoryPageWidget extends StatelessWidget {
   const _StoryPageWidget({
     required this.page,
     required this.fontSize,
   });
 
-  final _StoryPage page;
+  final LessonContentEntity page;
   final double fontSize;
 
   @override
   Widget build(BuildContext context) {
-    final isArabic = RegExp(r'[\u0600-\u06FF]').hasMatch(page.content);
+    final content = page.contentText;
+    final isArabic = RegExp(r'[\u0600-\u06FF]').hasMatch(content);
 
     return SingleChildScrollView(
       padding: const EdgeInsets.all(Spacing.xl),
       child: Column(
         children: [
           const SizedBox(height: 80), // Space for top controls
+
           // Image placeholder
-          Container(
-            height: 200,
-            width: double.infinity,
-            decoration: BoxDecoration(
-              color: AppColors.primary.withValues(alpha: 0.1),
+          if (page.imageUrl != null)
+            ClipRRect(
               borderRadius: BorderRadius.circular(AppRadius.lg),
-            ),
-            child: Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const Icon(
-                    Icons.image,
-                    size: 48,
-                    color: AppColors.textHint,
-                  ),
-                  const SizedBox(height: Spacing.sm),
-                  Text(
-                    page.imageDescription ?? 'Story illustration',
-                    style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                          color: AppColors.textHint,
-                        ),
-                  ),
-                ],
+              child: Image.network(
+                page.imageUrl!,
+                height: 200,
+                width: double.infinity,
+                fit: BoxFit.cover,
+                errorBuilder: (_, __, ___) => _buildImagePlaceholder(context),
               ),
-            ),
-          ),
+            )
+          else
+            _buildImagePlaceholder(context),
+
           const SizedBox(height: Spacing.xl),
 
           // Story text
           Text(
-            page.content,
+            content,
             style: isArabic
                 ? AppTypography.quranArabic(fontSize: fontSize + 8)
                 : TextStyle(
@@ -330,8 +467,248 @@ class _StoryPageWidget extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
           ],
+
           const SizedBox(height: 120), // Space for bottom controls
         ],
+      ),
+    );
+  }
+
+  Widget _buildImagePlaceholder(BuildContext context) {
+    return Container(
+      height: 200,
+      width: double.infinity,
+      decoration: BoxDecoration(
+        color: AppColors.primary.withValues(alpha: 0.1),
+        borderRadius: BorderRadius.circular(AppRadius.lg),
+      ),
+      child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Icon(
+              Icons.image,
+              size: 48,
+              color: AppColors.textHint,
+            ),
+            const SizedBox(height: Spacing.sm),
+            Text(
+              page.imageDescription ?? 'Story illustration',
+              style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                    color: AppColors.textHint,
+                  ),
+              textAlign: TextAlign.center,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Audio button for story viewer
+class _AudioButton extends ConsumerWidget {
+  const _AudioButton({required this.lesson});
+
+  final LessonEntity lesson;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final audioState = ref.watch(audioControllerProvider);
+    final isPlayingThisLesson =
+        audioState.currentTrackId?.startsWith(lesson.serverId) ?? false;
+
+    return IconButton(
+      icon: Icon(
+        isPlayingThisLesson
+            ? (audioState.isPlaying ? Icons.pause : Icons.play_arrow)
+            : Icons.headphones,
+        color: Colors.white,
+      ),
+      onPressed: () => _handleAudioTap(context, ref, isPlayingThisLesson),
+    );
+  }
+
+  void _handleAudioTap(
+      BuildContext context, WidgetRef ref, bool isPlayingThisLesson) {
+    final audioController = ref.read(audioControllerProvider.notifier);
+
+    if (isPlayingThisLesson) {
+      // Toggle play/pause
+      audioController.togglePlayPause();
+      return;
+    }
+
+    // Show audio mode selection
+    _showAudioModeDialog(context, ref);
+  }
+
+  void _showAudioModeDialog(BuildContext context, WidgetRef ref) {
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: Colors.transparent,
+      builder: (context) => Container(
+        padding: const EdgeInsets.all(Spacing.lg),
+        decoration: BoxDecoration(
+          color: Theme.of(context).colorScheme.surface,
+          borderRadius: const BorderRadius.vertical(
+            top: Radius.circular(AppRadius.xl),
+          ),
+        ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Center(
+              child: Container(
+                width: 40,
+                height: 4,
+                decoration: BoxDecoration(
+                  color: AppColors.textHint,
+                  borderRadius: BorderRadius.circular(2),
+                ),
+              ),
+            ),
+            const SizedBox(height: Spacing.lg),
+            Text(
+              'Choose Audio Type',
+              style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+            ),
+            const SizedBox(height: Spacing.lg),
+            ...AudioMode.values.map((mode) => _buildModeOption(context, ref, mode)),
+            const SizedBox(height: Spacing.md),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildModeOption(BuildContext context, WidgetRef ref, AudioMode mode) {
+    return Card(
+      margin: const EdgeInsets.only(bottom: Spacing.sm),
+      child: ListTile(
+        leading: Icon(mode.icon, color: AppColors.primary),
+        title: Text(mode.displayName),
+        subtitle: Text(mode.description),
+        trailing: const Icon(Icons.play_arrow, color: AppColors.primary),
+        onTap: () {
+          Navigator.pop(context);
+          _playAudioWithMode(context, ref, mode);
+        },
+      ),
+    );
+  }
+
+  void _playAudioWithMode(BuildContext context, WidgetRef ref, AudioMode mode) {
+    final audioController = ref.read(audioControllerProvider.notifier);
+    final settingsState = ref.read(settingsControllerProvider);
+    final language = settingsState.settings.language;
+
+    final tracks = LessonAudioHelper.getTracksForLesson(
+      lessonId: lesson.serverId,
+      lessonTitle: lesson.title,
+      lessonTitleArabic: lesson.titleArabic,
+      language: language,
+      mode: mode,
+      durationMinutes: lesson.durationMinutes,
+    );
+
+    if (tracks.isNotEmpty) {
+      audioController.loadAndPlay(tracks.first);
+      _showMiniPlayer(context, tracks.first);
+    }
+  }
+
+  void _showMiniPlayer(BuildContext context, AudioTrack track) {
+    final isQuran = track.trackType == AudioTrackType.quranRecitation;
+
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Row(
+          children: [
+            Icon(
+              isQuran ? Icons.menu_book : Icons.record_voice_over,
+              color: Colors.white,
+            ),
+            const SizedBox(width: Spacing.sm),
+            Text(isQuran ? 'Quran playing' : 'Story playing (${track.language})'),
+          ],
+        ),
+        backgroundColor: AppColors.primary,
+        behavior: SnackBarBehavior.floating,
+        action: SnackBarAction(
+          label: 'PLAYER',
+          textColor: Colors.white,
+          onPressed: () => _showAudioPlayerSheet(context),
+        ),
+      ),
+    );
+  }
+
+  void _showAudioPlayerSheet(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (context) => Consumer(
+        builder: (context, ref, _) {
+          final audioState = ref.watch(audioControllerProvider);
+          final isQuran = audioState.currentTrackId?.contains('quran') ?? false;
+
+          return Container(
+            padding: const EdgeInsets.all(Spacing.lg),
+            decoration: BoxDecoration(
+              color: Theme.of(context).colorScheme.surface,
+              borderRadius: const BorderRadius.vertical(
+                top: Radius.circular(AppRadius.xl),
+              ),
+            ),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Container(
+                  width: 40,
+                  height: 4,
+                  decoration: BoxDecoration(
+                    color: AppColors.textHint,
+                    borderRadius: BorderRadius.circular(2),
+                  ),
+                ),
+                const SizedBox(height: Spacing.lg),
+                Text(
+                  lesson.title,
+                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                        fontWeight: FontWeight.bold,
+                      ),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: Spacing.xs),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      isQuran ? Icons.menu_book : Icons.record_voice_over,
+                      size: 16,
+                      color: AppColors.textSecondary,
+                    ),
+                    const SizedBox(width: Spacing.xs),
+                    Text(
+                      isQuran ? 'Quran Recitation' : 'Story Narration',
+                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                            color: AppColors.textSecondary,
+                          ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: Spacing.xl),
+                const AudioPlayerWidget(),
+                const SizedBox(height: Spacing.lg),
+              ],
+            ),
+          );
+        },
       ),
     );
   }

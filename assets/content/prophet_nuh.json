@@ -1,0 +1,459 @@
+{
+  "chapter": {
+    "serverId": "prophet-nuh",
+    "title": "Prophet Nuh (AS)",
+    "titleArabic": "النبي نوح عليه السلام",
+    "description": "The story of Prophet Nuh and the great flood - a lesson in patience and faith",
+    "descriptionArabic": "قصة النبي نوح والطوفان العظيم - درس في الصبر والإيمان",
+    "iconName": "sailing",
+    "colorHex": "#2196F3",
+    "sortOrder": 2
+  },
+  "lessons": [
+    {
+      "serverId": "prophet-nuh-calling",
+      "title": "The Patient Caller",
+      "titleArabic": "الداعي الصابر",
+      "subtitle": "Nuh calls his people to Allah for 950 years",
+      "subtitleArabic": "نوح يدعو قومه إلى الله 950 سنة",
+      "sortOrder": 1,
+      "durationMinutes": 6,
+      "hasAudio": true,
+      "hasQuiz": true,
+      "keyLesson": "A true believer never gives up calling others to good, no matter how long it takes.",
+      "adultReflection": "Nuh's 950 years of dawah represents the ultimate example of patience in conveying the message. Despite rejection, he never stopped - teaching us that success is in the effort, not the outcome.",
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ\n\nIn the name of Allah, the Most Gracious, the Most Merciful.\n\nThis is the story of Prophet Nuh, peace be upon him - one of the greatest Prophets and the first Messenger sent to correct people who had gone astray.",
+          "contentTextArabic": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ\n\nهذه قصة النبي نوح عليه السلام - أحد أعظم الأنبياء وأول رسول أُرسل لتصحيح قوم ضلوا.",
+          "imageDescription": "Beautiful Islamic calligraphy of Bismillah with ocean blue and silver colors"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Many generations after Prophet Adam, people began to forget Allah. They started worshipping idols - statues they made with their own hands.\n\nThese idols had names: Wadd, Suwa, Yaghuth, Ya'uq, and Nasr. The people bowed to them and asked them for help, even though the idols could do nothing at all!",
+          "contentTextArabic": "بعد أجيال كثيرة من النبي آدم، بدأ الناس ينسون الله. بدأوا يعبدون الأصنام - تماثيل صنعوها بأيديهم.\n\nهذه الأصنام كان لها أسماء: ود وسواع ويغوث ويعوق ونسر. كان الناس يسجدون لها ويطلبون منها المساعدة، رغم أن الأصنام لا تستطيع فعل أي شيء!",
+          "imageDescription": "People bowing to stone idols while darkness surrounds them"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Allah sent Nuh as a messenger to guide them back to the truth.\n\nNuh told his people: 'O my people! Worship Allah alone - you have no god other than Him. Indeed, I fear for you the punishment of a tremendous Day!'\n\nBut most of the people refused to listen.",
+          "contentTextArabic": "أرسل الله نوحاً رسولاً ليهديهم إلى الحق.\n\nقال نوح لقومه: 'يَا قَوْمِ اعْبُدُوا اللَّهَ مَا لَكُم مِّنْ إِلَٰهٍ غَيْرُهُ إِنِّي أَخَافُ عَلَيْكُمْ عَذَابَ يَوْمٍ عَظِيمٍ!'\n\nلكن معظم الناس رفضوا الاستماع.",
+          "imageDescription": "Nuh speaking to a crowd, some turning away"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "The leaders of the disbelievers said: 'We see you are just a man like us. Only the lowest people follow you. We don't see anything special about you - we think you are liars!'\n\nThey mocked Nuh and his followers. They made fun of anyone who believed in Allah.",
+          "contentTextArabic": "قال زعماء الكافرين: 'مَا نَرَاكَ إِلَّا بَشَرًا مِّثْلَنَا وَمَا نَرَاكَ اتَّبَعَكَ إِلَّا الَّذِينَ هُمْ أَرَاذِلُنَا. وَمَا نَرَىٰ لَكُمْ عَلَيْنَا مِن فَضْلٍ بَلْ نَظُنُّكُمْ كَاذِبِينَ!'\n\nسخروا من نوح وأتباعه. استهزأوا بكل من آمن بالله.",
+          "imageDescription": "Wealthy leaders pointing and laughing at humble believers"
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "But Nuh never gave up! He called his people day and night, in public and in private.\n\nHe tried every way to reach their hearts: 'Ask forgiveness from your Lord - He is ever Forgiving. He will send rain from the sky upon you in abundance. He will give you wealth and children, and provide for you gardens and rivers.'",
+          "contentTextArabic": "لكن نوحاً لم يستسلم أبداً! دعا قومه ليلاً ونهاراً، علانية وسراً.\n\nجرّب كل طريقة للوصول إلى قلوبهم: 'اسْتَغْفِرُوا رَبَّكُمْ إِنَّهُ كَانَ غَفَّارًا. يُرْسِلِ السَّمَاءَ عَلَيْكُم مِّدْرَارًا. وَيُمْدِدْكُم بِأَمْوَالٍ وَبَنِينَ وَيَجْعَل لَّكُمْ جَنَّاتٍ وَيَجْعَل لَّكُمْ أَنْهَارًا.'",
+          "imageDescription": "Nuh speaking kindly to people in different settings - day and night"
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "How long did Nuh keep calling his people? An amazing NINE HUNDRED AND FIFTY YEARS!\n\nAllah tells us in the Quran: 'We sent Nuh to his people, and he remained among them a thousand years minus fifty years.'\n\nCan you imagine calling people to good for that long? This is true patience!",
+          "contentTextArabic": "كم استمر نوح يدعو قومه؟ تسعمائة وخمسين سنة مذهلة!\n\nيخبرنا الله في القرآن: 'وَلَقَدْ أَرْسَلْنَا نُوحًا إِلَىٰ قَوْمِهِ فَلَبِثَ فِيهِمْ أَلْفَ سَنَةٍ إِلَّا خَمْسِينَ عَامًا'\n\nهل تتخيل أن تدعو الناس للخير كل هذه المدة؟ هذا هو الصبر الحقيقي!",
+          "imageDescription": "A timeline showing 950 years with Nuh continuing his mission"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What were the people worshipping before Nuh came?",
+          "questionArabic": "ماذا كان الناس يعبدون قبل مجيء نوح؟",
+          "options": ["The sun and moon", "Idols/statues", "Animals", "Trees"],
+          "optionsArabic": ["الشمس والقمر", "الأصنام/التماثيل", "الحيوانات", "الأشجار"],
+          "correctIndex": 1,
+          "explanation": "The people were worshipping idols named Wadd, Suwa, Yaghuth, Ya'uq, and Nasr.",
+          "explanationArabic": "كان الناس يعبدون أصناماً اسمها ود وسواع ويغوث ويعوق ونسر."
+        },
+        {
+          "question": "How many years did Nuh call his people to Allah?",
+          "questionArabic": "كم سنة دعا نوح قومه إلى الله؟",
+          "options": ["100 years", "500 years", "950 years", "50 years"],
+          "optionsArabic": ["100 سنة", "500 سنة", "950 سنة", "50 سنة"],
+          "correctIndex": 2,
+          "explanation": "Nuh remained among his people for 950 years (a thousand minus fifty), calling them to worship Allah alone.",
+          "explanationArabic": "بقي نوح في قومه 950 سنة (ألف سنة إلا خمسين عاماً)، يدعوهم لعبادة الله وحده."
+        },
+        {
+          "question": "What did Nuh promise the people if they asked Allah for forgiveness?",
+          "questionArabic": "ماذا وعد نوح الناس إذا استغفروا الله؟",
+          "options": ["They would become kings", "Rain, wealth, children, gardens and rivers", "They would never die", "They would see angels"],
+          "optionsArabic": ["سيصبحون ملوكاً", "المطر والمال والأولاد والجنات والأنهار", "لن يموتوا أبداً", "سيرون الملائكة"],
+          "correctIndex": 1,
+          "explanation": "Nuh told them that if they seek forgiveness, Allah would bless them with rain, wealth, children, gardens, and rivers.",
+          "explanationArabic": "قال لهم نوح إذا استغفروا سيرزقهم الله المطر والمال والأولاد والجنات والأنهار."
+        },
+        {
+          "question": "What does Nuh's story teach us about patience?",
+          "questionArabic": "ماذا تعلمنا قصة نوح عن الصبر؟",
+          "options": ["Give up after trying once", "Never stop doing good, no matter how long", "Only try for a few years", "Don't help others"],
+          "optionsArabic": ["استسلم بعد محاولة واحدة", "لا تتوقف عن فعل الخير مهما طالت المدة", "حاول لسنوات قليلة فقط", "لا تساعد الآخرين"],
+          "correctIndex": 1,
+          "explanation": "Nuh called his people for 950 years without giving up - teaching us true patience in doing good.",
+          "explanationArabic": "دعا نوح قومه 950 سنة دون استسلام - يعلمنا الصبر الحقيقي في فعل الخير."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet-nuh-ark",
+      "title": "Building the Ark",
+      "titleArabic": "بناء السفينة",
+      "subtitle": "Allah commands Nuh to build a great ship",
+      "subtitleArabic": "الله يأمر نوحاً ببناء سفينة عظيمة",
+      "sortOrder": 2,
+      "durationMinutes": 6,
+      "hasAudio": true,
+      "hasQuiz": true,
+      "keyLesson": "Obey Allah's commands even when others mock you - Allah knows what we do not know.",
+      "adultReflection": "The Ark was built far from water, inviting ridicule. Yet Nuh's obedience to Allah's command, despite not seeing the immediate wisdom, exemplifies true submission (Islam) - trusting Allah's plan completely.",
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "After many, many years, only a few people believed in Nuh's message. Most of the people continued to reject Allah and worship their idols.\n\nNuh felt sad for his people. He prayed to Allah, telling Him how the people had refused to listen.",
+          "contentTextArabic": "بعد سنوات وسنوات، آمن قليل فقط من الناس برسالة نوح. معظم الناس استمروا في رفض الله وعبادة أصنامهم.\n\nحزن نوح على قومه. دعا الله، يخبره كيف رفض الناس الاستماع.",
+          "imageDescription": "Nuh praying alone at night, looking sorrowful"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Allah revealed to Nuh: 'None of your people will believe except those who have already believed. So do not be saddened by what they have been doing.'\n\nThe time for warning was over. Now came an important command from Allah.",
+          "contentTextArabic": "أوحى الله إلى نوح: 'أَنَّهُ لَن يُؤْمِنَ مِن قَوْمِكَ إِلَّا مَن قَدْ آمَنَ فَلَا تَبْتَئِسْ بِمَا كَانُوا يَفْعَلُونَ'\n\nانتهى وقت التحذير. الآن جاء أمر مهم من الله.",
+          "imageDescription": "Divine light descending upon Nuh"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Allah commanded Nuh: 'Build the Ark under Our observation and Our inspiration. And do not speak to Me about those who have wronged - they are surely going to be drowned.'\n\nNuh immediately began building a massive ship - even though there was no sea or ocean nearby!",
+          "contentTextArabic": "أمر الله نوحاً: 'وَاصْنَعِ الْفُلْكَ بِأَعْيُنِنَا وَوَحْيِنَا وَلَا تُخَاطِبْنِي فِي الَّذِينَ ظَلَمُوا إِنَّهُم مُّغْرَقُونَ'\n\nبدأ نوح فوراً ببناء سفينة ضخمة - رغم أنه لم يكن هناك بحر أو محيط قريب!",
+          "imageDescription": "Nuh beginning to construct a large wooden ark on dry land"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "When the disbelievers saw Nuh building a huge ship on dry land, far from any water, they laughed even harder!\n\n'Look at the old man!' they mocked. 'He used to call us to worship his God, and now he's building a ship in the desert! He has truly gone mad!'\n\nEvery time they passed by, they made fun of him.",
+          "contentTextArabic": "عندما رأى الكافرون نوحاً يبني سفينة ضخمة على اليابسة، بعيداً عن أي ماء، ضحكوا أكثر!\n\n'انظروا إلى الشيخ الكبير!' سخروا. 'كان يدعونا لعبادة إلهه، والآن يبني سفينة في الصحراء! لقد جُنَّ حقاً!'\n\nكلما مروا، استهزأوا به.",
+          "imageDescription": "People pointing and laughing at Nuh while he works on the Ark"
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "But Nuh was not bothered by their mockery. He had complete trust in Allah.\n\nHe replied: 'If you mock us now, then we will mock you just as you mock - when you finally see what happens. Soon you will know who will receive a humiliating punishment and upon whom will come an everlasting punishment.'",
+          "contentTextArabic": "لكن نوحاً لم يتأثر بسخريتهم. كان لديه ثقة كاملة بالله.\n\nأجاب: 'إِن تَسْخَرُوا مِنَّا فَإِنَّا نَسْخَرُ مِنكُمْ كَمَا تَسْخَرُونَ. فَسَوْفَ تَعْلَمُونَ مَن يَأْتِيهِ عَذَابٌ يُخْزِيهِ وَيَحِلُّ عَلَيْهِ عَذَابٌ مُّقِيمٌ'",
+          "imageDescription": "Nuh working confidently while others mock him in the background"
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "Day after day, month after month, Nuh and the believers worked on the Ark. It was enormous - large enough to carry many people and animals.\n\nNuh followed every instruction from Allah exactly. He knew that Allah's plan was perfect, even if others could not understand it.\n\nThe Ark was almost ready. What would happen next?",
+          "contentTextArabic": "يوماً بعد يوم، شهراً بعد شهر، عمل نوح والمؤمنون على السفينة. كانت ضخمة - كبيرة بما يكفي لحمل كثير من الناس والحيوانات.\n\nاتبع نوح كل تعليمات الله بالضبط. كان يعلم أن خطة الله مثالية، حتى لو لم يفهمها الآخرون.\n\nكانت السفينة شبه جاهزة. ماذا سيحدث بعد ذلك؟",
+          "imageDescription": "The completed Ark standing majestically on dry land"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why did the people laugh at Nuh for building the Ark?",
+          "questionArabic": "لماذا ضحك الناس على نوح لبنائه السفينة؟",
+          "options": ["It was too small", "He was building it far from any water", "It was ugly", "He was building it too fast"],
+          "optionsArabic": ["كانت صغيرة جداً", "كان يبنيها بعيداً عن أي ماء", "كانت قبيحة", "كان يبنيها بسرعة كبيرة"],
+          "correctIndex": 1,
+          "explanation": "The people mocked Nuh because he was building a huge ship on dry land, far from any sea or ocean.",
+          "explanationArabic": "سخر الناس من نوح لأنه كان يبني سفينة ضخمة على اليابسة، بعيداً عن أي بحر أو محيط."
+        },
+        {
+          "question": "How did Nuh respond to the people mocking him?",
+          "questionArabic": "كيف رد نوح على سخرية الناس منه؟",
+          "options": ["He cried and stopped building", "He trusted Allah and continued working", "He argued with them", "He left the town"],
+          "optionsArabic": ["بكى وتوقف عن البناء", "وثق بالله واستمر في العمل", "جادلهم", "غادر البلدة"],
+          "correctIndex": 1,
+          "explanation": "Nuh had complete trust in Allah and continued building, knowing that Allah's plan was perfect.",
+          "explanationArabic": "كان لدى نوح ثقة كاملة بالله واستمر في البناء، عالماً أن خطة الله مثالية."
+        },
+        {
+          "question": "What does this story teach us about obeying Allah?",
+          "questionArabic": "ماذا تعلمنا هذه القصة عن طاعة الله؟",
+          "options": ["Only obey when it makes sense to us", "Obey Allah even when others don't understand", "Ask others for permission first", "Wait until everyone agrees"],
+          "optionsArabic": ["أطع فقط عندما يبدو الأمر منطقياً لنا", "أطع الله حتى عندما لا يفهم الآخرون", "اطلب إذن الآخرين أولاً", "انتظر حتى يوافق الجميع"],
+          "correctIndex": 1,
+          "explanation": "We should obey Allah's commands even when others mock us or don't understand - Allah knows what we do not know.",
+          "explanationArabic": "يجب أن نطيع أوامر الله حتى عندما يسخر منا الآخرون أو لا يفهمون - الله يعلم ما لا نعلم."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet-nuh-flood",
+      "title": "The Great Flood",
+      "titleArabic": "الطوفان العظيم",
+      "subtitle": "When the waters covered the earth",
+      "subtitleArabic": "عندما غطت المياه الأرض",
+      "sortOrder": 3,
+      "durationMinutes": 7,
+      "hasAudio": true,
+      "hasQuiz": true,
+      "keyLesson": "When we disobey Allah repeatedly and ignore His warnings, there are consequences.",
+      "adultReflection": "The flood represents divine justice after extended mercy. Allah gave the people 950 years of warnings through Nuh. The flood reminds us that Allah's patience is vast, but His justice is also certain.",
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "The time had come. Allah commanded Nuh: 'When Our command comes and the oven overflows with water, load onto the Ark a pair of every species - male and female - and your family, except those against whom the word has already been spoken. And take the believers with you.'\n\nBut only a few had believed.",
+          "contentTextArabic": "حان الوقت. أمر الله نوحاً: 'حَتَّىٰ إِذَا جَاءَ أَمْرُنَا وَفَارَ التَّنُّورُ قُلْنَا احْمِلْ فِيهَا مِن كُلٍّ زَوْجَيْنِ اثْنَيْنِ وَأَهْلَكَ إِلَّا مَن سَبَقَ عَلَيْهِ الْقَوْلُ وَمَنْ آمَنَ'\n\nلكن قليلاً فقط آمنوا.",
+          "imageDescription": "Nuh gathering animals in pairs toward the Ark"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Nuh called the animals, and they came in pairs - two of every kind! Lions and lambs, birds and insects, large and small. They all entered the Ark peacefully.\n\nThe believers also boarded the ship. Nuh said: 'Board it! In the name of Allah is its sailing and its anchoring. Indeed, my Lord is Forgiving and Merciful.'",
+          "contentTextArabic": "نادى نوح الحيوانات، فجاءت أزواجاً - اثنان من كل نوع! الأسود والحملان، الطيور والحشرات، الكبير والصغير. كلها دخلت السفينة بسلام.\n\nصعد المؤمنون أيضاً على السفينة. قال نوح: 'ارْكَبُوا فِيهَا بِسْمِ اللَّهِ مَجْرَاهَا وَمُرْسَاهَا إِنَّ رَبِّي لَغَفُورٌ رَّحِيمٌ'",
+          "imageDescription": "Animals of all kinds entering the Ark in pairs while believers board"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Then it began. Water burst forth from the ground! The sky opened up and rain poured down like never before!\n\nThe Quran describes it: 'So We opened the gates of the sky with rain pouring down, and We caused the earth to burst with springs, and the waters met for a matter already destined.'\n\nThe flood had begun!",
+          "contentTextArabic": "ثم بدأ. انفجر الماء من الأرض! انفتحت السماء وانهمر المطر كما لم يحدث من قبل!\n\nيصفها القرآن: 'فَفَتَحْنَا أَبْوَابَ السَّمَاءِ بِمَاءٍ مُّنْهَمِرٍ وَفَجَّرْنَا الْأَرْضَ عُيُونًا فَالْتَقَى الْمَاءُ عَلَىٰ أَمْرٍ قَدْ قُدِرَ'\n\nبدأ الطوفان!",
+          "imageDescription": "Rain pouring from the sky while water springs from the ground"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "The Ark sailed upon waves as high as mountains! Inside, the believers were safe, protected by Allah.\n\nBut outside, the water kept rising. The same people who had laughed at Nuh now desperately tried to escape. They climbed to the rooftops, then to the hills, then to the mountains - but the water followed them everywhere.",
+          "contentTextArabic": "أبحرت السفينة على موجات بارتفاع الجبال! في الداخل، كان المؤمنون آمنين، يحميهم الله.\n\nلكن في الخارج، استمر الماء في الارتفاع. نفس الناس الذين ضحكوا على نوح حاولوا الآن الهروب بيأس. صعدوا إلى السطوح، ثم إلى التلال، ثم إلى الجبال - لكن الماء تبعهم في كل مكان.",
+          "imageDescription": "The Ark sailing on massive waves while water covers the land"
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "There was no escape for those who had rejected Allah's message for 950 years.\n\nNow they realized the truth - but it was too late. All those who had refused to believe were drowned in the flood.\n\nThis was a severe lesson about what happens when people ignore Allah's warnings again and again.",
+          "contentTextArabic": "لم يكن هناك مفر لمن رفضوا رسالة الله لمدة 950 سنة.\n\nالآن أدركوا الحقيقة - لكن كان قد فات الأوان. كل من رفض الإيمان غرق في الطوفان.\n\nكان هذا درساً قاسياً عما يحدث عندما يتجاهل الناس تحذيرات الله مرة بعد مرة.",
+          "imageDescription": "Water covering even the mountaintops while the Ark floats safely"
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "Meanwhile, inside the Ark, Nuh and the believers were safe. The animals were calm. Even though giant waves crashed around them, they trusted in Allah completely.\n\nThe Ark carried them safely through the greatest flood the world had ever seen.\n\nBut there was one heartbreaking moment still to come...",
+          "contentTextArabic": "في هذه الأثناء، داخل السفينة، كان نوح والمؤمنون آمنين. الحيوانات كانت هادئة. رغم أن الموجات العملاقة تحطمت حولهم، وثقوا بالله تماماً.\n\nحملتهم السفينة بأمان خلال أعظم طوفان شهده العالم.\n\nلكن كانت هناك لحظة مؤلمة لا تزال قادمة...",
+          "imageDescription": "Peaceful scene inside the Ark with Nuh and believers, animals resting"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What did Nuh bring onto the Ark?",
+          "questionArabic": "ماذا أحضر نوح على السفينة؟",
+          "options": ["Only his family", "A pair of every animal and the believers", "Just the animals", "Only young people"],
+          "optionsArabic": ["عائلته فقط", "زوجين من كل حيوان والمؤمنين", "الحيوانات فقط", "الشباب فقط"],
+          "correctIndex": 1,
+          "explanation": "Allah commanded Nuh to bring a pair (male and female) of every species, his family (except disbelievers), and all the believers.",
+          "explanationArabic": "أمر الله نوحاً بإحضار زوجين (ذكر وأنثى) من كل نوع، وعائلته (ما عدا الكافرين)، وكل المؤمنين."
+        },
+        {
+          "question": "Where did the flood water come from?",
+          "questionArabic": "من أين جاء ماء الطوفان؟",
+          "options": ["Only from rain", "Only from the ground", "From both the sky and the ground", "From the ocean"],
+          "optionsArabic": ["من المطر فقط", "من الأرض فقط", "من السماء والأرض معاً", "من المحيط"],
+          "correctIndex": 2,
+          "explanation": "The Quran says Allah opened the gates of the sky with rain and caused the earth to burst with springs - water came from above and below.",
+          "explanationArabic": "يقول القرآن إن الله فتح أبواب السماء بماء منهمر وفجر الأرض عيوناً - الماء جاء من فوق ومن تحت."
+        },
+        {
+          "question": "What did Nuh say when boarding the Ark?",
+          "questionArabic": "ماذا قال نوح عند ركوب السفينة؟",
+          "options": ["We are the best", "In the name of Allah is its sailing and anchoring", "This is my ship", "We will survive"],
+          "optionsArabic": ["نحن الأفضل", "بسم الله مجراها ومرساها", "هذه سفينتي", "سننجو"],
+          "correctIndex": 1,
+          "explanation": "Nuh said: 'Board it! In the name of Allah is its sailing and its anchoring. Indeed, my Lord is Forgiving and Merciful.'",
+          "explanationArabic": "قال نوح: 'اركبوا فيها بسم الله مجراها ومرساها إن ربي لغفور رحيم.'"
+        },
+        {
+          "question": "How high were the waves during the flood?",
+          "questionArabic": "كم كان ارتفاع الأمواج خلال الطوفان؟",
+          "options": ["As high as trees", "As high as houses", "As high as mountains", "Very small waves"],
+          "optionsArabic": ["بارتفاع الأشجار", "بارتفاع المنازل", "بارتفاع الجبال", "أمواج صغيرة جداً"],
+          "correctIndex": 2,
+          "explanation": "The Quran describes that the Ark sailed upon waves like mountains.",
+          "explanationArabic": "يصف القرآن أن السفينة جرت في موج كالجبال."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet-nuh-son",
+      "title": "The Tragedy of Nuh's Son",
+      "titleArabic": "مأساة ابن نوح",
+      "subtitle": "A father's heartbreak and an important lesson",
+      "subtitleArabic": "حسرة أب ودرس مهم",
+      "sortOrder": 4,
+      "durationMinutes": 6,
+      "hasAudio": true,
+      "hasQuiz": true,
+      "keyLesson": "Faith is a personal choice - even a Prophet cannot guarantee his family's guidance. Everyone is responsible for their own choices.",
+      "adultReflection": "This story demonstrates that lineage does not guarantee salvation - faith does. It also shows the proper perspective when loved ones reject guidance: we must accept Allah's decree while continuing to love and call them to truth.",
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "As the flood began and the Ark started to sail, Nuh saw something that broke his heart.\n\nOne of his sons had not boarded the ship. He had chosen to stay with the disbelievers instead of joining his father and the believers.",
+          "contentTextArabic": "عندما بدأ الطوفان وبدأت السفينة تبحر، رأى نوح شيئاً كسر قلبه.\n\nأحد أبنائه لم يصعد على السفينة. اختار البقاء مع الكافرين بدلاً من الانضمام إلى أبيه والمؤمنين.",
+          "imageDescription": "Nuh on the Ark looking out at his son standing on high ground"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Nuh called out to his son desperately: 'O my son! Come aboard with us and do not be with the disbelievers!'\n\nBut his son refused. He said: 'I will take refuge on a mountain - it will protect me from the water.'\n\nHe thought he was smarter than Allah's plan.",
+          "contentTextArabic": "نادى نوح ابنه بيأس: 'يَا بُنَيَّ ارْكَب مَّعَنَا وَلَا تَكُن مَّعَ الْكَافِرِينَ!'\n\nلكن ابنه رفض. قال: 'سَآوِي إِلَىٰ جَبَلٍ يَعْصِمُنِي مِنَ الْمَاءِ'\n\nظن أنه أذكى من خطة الله.",
+          "imageDescription": "Nuh reaching out while his son points to a mountain"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Nuh warned him: 'There is no protector today from Allah's decree, except for those on whom He has mercy!'\n\nBut his son would not listen. He climbed toward the mountain, thinking he would be safe.\n\nThen a massive wave came between them, and his son was among those who drowned.",
+          "contentTextArabic": "حذره نوح: 'لَا عَاصِمَ الْيَوْمَ مِنْ أَمْرِ اللَّهِ إِلَّا مَن رَّحِمَ!'\n\nلكن ابنه لم يستمع. صعد نحو الجبل، ظاناً أنه سيكون آمناً.\n\nثم جاءت موجة ضخمة بينهما، وكان ابنه من الغارقين.",
+          "imageDescription": "A giant wave separating Nuh from his son"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Nuh's heart was filled with grief. After the flood ended, he called upon his Lord:\n\n'My Lord, indeed my son is of my family, and Your promise is true, and You are the most just of judges!'\n\nNuh was asking Allah about his son, hoping there might be some way he could be saved.",
+          "contentTextArabic": "امتلأ قلب نوح بالحزن. بعد انتهاء الطوفان، دعا ربه:\n\n'رَبِّ إِنَّ ابْنِي مِنْ أَهْلِي وَإِنَّ وَعْدَكَ الْحَقُّ وَأَنتَ أَحْكَمُ الْحَاكِمِينَ!'\n\nكان نوح يسأل الله عن ابنه، آملاً أن تكون هناك طريقة لإنقاذه.",
+          "imageDescription": "Nuh in prayer after the flood, tears on his face"
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Allah replied: 'O Nuh, indeed he is not of your family. Indeed, his conduct was unrighteous. So do not ask Me about that which you have no knowledge. I advise you, lest you be among the ignorant.'\n\nThis was a profound lesson: being a Prophet's son does not automatically make someone a believer. Faith is a personal choice.",
+          "contentTextArabic": "أجاب الله: 'يَا نُوحُ إِنَّهُ لَيْسَ مِنْ أَهْلِكَ إِنَّهُ عَمَلٌ غَيْرُ صَالِحٍ فَلَا تَسْأَلْنِ مَا لَيْسَ لَكَ بِهِ عِلْمٌ إِنِّي أَعِظُكَ أَن تَكُونَ مِنَ الْجَاهِلِينَ'\n\nكان هذا درساً عميقاً: كون المرء ابن نبي لا يجعله مؤمناً تلقائياً. الإيمان اختيار شخصي.",
+          "imageDescription": "Divine guidance reaching Nuh, showing wisdom and understanding"
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "Nuh immediately understood and accepted Allah's wisdom. He said: 'My Lord, I seek refuge in You from asking You about that of which I have no knowledge. And unless You forgive me and have mercy upon me, I will be among the losers.'\n\nThis teaches us: We cannot force anyone to believe - not even our own family. Each person makes their own choice, and each person is responsible for their own deeds.",
+          "contentTextArabic": "فهم نوح فوراً وقبل حكمة الله. قال: 'رَبِّ إِنِّي أَعُوذُ بِكَ أَنْ أَسْأَلَكَ مَا لَيْسَ لِي بِهِ عِلْمٌ وَإِلَّا تَغْفِرْ لِي وَتَرْحَمْنِي أَكُن مِّنَ الْخَاسِرِينَ'\n\nهذا يعلمنا: لا يمكننا إجبار أحد على الإيمان - حتى عائلتنا. كل شخص يتخذ قراره، وكل شخص مسؤول عن أعماله.",
+          "imageDescription": "Nuh in humble acceptance, at peace with Allah's decree"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why didn't Nuh's son board the Ark?",
+          "questionArabic": "لماذا لم يصعد ابن نوح على السفينة؟",
+          "options": ["He was sick", "He chose to stay with the disbelievers", "He was too young", "He was already on another ship"],
+          "optionsArabic": ["كان مريضاً", "اختار البقاء مع الكافرين", "كان صغيراً جداً", "كان على سفينة أخرى"],
+          "correctIndex": 1,
+          "explanation": "Nuh's son made the choice to stay with the disbelievers instead of joining the believers on the Ark.",
+          "explanationArabic": "اختار ابن نوح البقاء مع الكافرين بدلاً من الانضمام إلى المؤمنين على السفينة."
+        },
+        {
+          "question": "What did Nuh's son think would save him?",
+          "questionArabic": "ماذا ظن ابن نوح أنه سينقذه؟",
+          "options": ["Swimming", "Climbing a mountain", "Another boat", "His friends"],
+          "optionsArabic": ["السباحة", "صعود جبل", "قارب آخر", "أصدقاؤه"],
+          "correctIndex": 1,
+          "explanation": "He said: 'I will take refuge on a mountain - it will protect me from the water.' But nothing could protect from Allah's decree.",
+          "explanationArabic": "قال: 'سآوي إلى جبل يعصمني من الماء.' لكن لا شيء يمكنه الحماية من أمر الله."
+        },
+        {
+          "question": "What did Allah teach Nuh about his son?",
+          "questionArabic": "ماذا علّم الله نوحاً عن ابنه؟",
+          "options": ["He would be saved later", "He was not truly Nuh's family because of his unrighteous conduct", "He should have forced him on the ship", "The mountain saved him"],
+          "optionsArabic": ["سيُنقذ لاحقاً", "لم يكن من أهل نوح حقاً بسبب عمله غير الصالح", "كان عليه إجباره على الصعود", "الجبل أنقذه"],
+          "correctIndex": 1,
+          "explanation": "Allah told Nuh: 'He is not of your family. Indeed, his conduct was unrighteous.' True family in faith is defined by righteous deeds, not just blood.",
+          "explanationArabic": "قال الله لنوح: 'إنه ليس من أهلك إنه عمل غير صالح.' العائلة الحقيقية في الإيمان تُعرَّف بالأعمال الصالحة، ليس فقط بالدم."
+        },
+        {
+          "question": "What is the main lesson from this story?",
+          "questionArabic": "ما الدرس الرئيسي من هذه القصة؟",
+          "options": ["Prophets' children are always believers", "Faith is a personal choice - we can't force anyone", "Mountains are always safe", "Family doesn't matter"],
+          "optionsArabic": ["أبناء الأنبياء دائماً مؤمنون", "الإيمان اختيار شخصي - لا يمكننا إجبار أحد", "الجبال دائماً آمنة", "العائلة لا تهم"],
+          "correctIndex": 1,
+          "explanation": "Even a Prophet cannot force his own child to believe. Each person is responsible for their own choices and faith.",
+          "explanationArabic": "حتى النبي لا يستطيع إجبار ابنه على الإيمان. كل شخص مسؤول عن اختياراته وإيمانه."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet-nuh-newbeginning",
+      "title": "A New Beginning",
+      "titleArabic": "بداية جديدة",
+      "subtitle": "The Ark lands and humanity starts fresh",
+      "subtitleArabic": "ترسو السفينة والبشرية تبدأ من جديد",
+      "sortOrder": 5,
+      "durationMinutes": 6,
+      "hasAudio": true,
+      "hasQuiz": true,
+      "keyLesson": "After every hardship comes ease. Allah always provides a way for the believers.",
+      "adultReflection": "The landing at Mount Judi symbolizes new beginnings after trials. The believers who persevered through mockery and the flood were granted a fresh start - a reminder that patience through difficulty is always rewarded.",
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "After the flood had destroyed all the disbelievers, Allah commanded the waters to recede.\n\n'O earth, swallow your water! And O sky, withhold your rain!'\n\nThe rain stopped. The water sank back into the ground. Slowly, the land began to appear again.",
+          "contentTextArabic": "بعد أن دمر الطوفان كل الكافرين، أمر الله المياه بالانحسار.\n\n'يَا أَرْضُ ابْلَعِي مَاءَكِ وَيَا سَمَاءُ أَقْلِعِي!'\n\nتوقف المطر. غاص الماء في الأرض مرة أخرى. ببطء، بدأت الأرض تظهر من جديد.",
+          "imageDescription": "The waters receding, revealing land, with the Ark floating peacefully"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "The Ark came to rest on Mount Judi.\n\nAllah announced: 'It was said: O Nuh, disembark in peace from Us, and with blessings upon you and upon the nations that will descend from those with you.'\n\nNuh and the believers had been saved! All the animals were safe too!",
+          "contentTextArabic": "استقرت السفينة على جبل الجودي.\n\nأعلن الله: 'قِيلَ يَا نُوحُ اهْبِطْ بِسَلَامٍ مِّنَّا وَبَرَكَاتٍ عَلَيْكَ وَعَلَىٰ أُمَمٍ مِّمَّن مَّعَكَ'\n\nنجا نوح والمؤمنون! وكل الحيوانات كانت آمنة أيضاً!",
+          "imageDescription": "The Ark resting on Mount Judi with the sun breaking through clouds"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Nuh and the believers stepped off the Ark onto the fresh, clean earth. The animals spread out across the land.\n\nIt was like the world was starting over. The disbelievers who had worshipped idols were gone. Only those who believed in Allah remained.\n\nThis was humanity's second chance!",
+          "contentTextArabic": "نزل نوح والمؤمنون من السفينة إلى الأرض النظيفة الجديدة. انتشرت الحيوانات في الأرض.\n\nكان الأمر كأن العالم يبدأ من جديد. الكافرون الذين عبدوا الأصنام رحلوا. بقي فقط من آمن بالله.\n\nهذه كانت الفرصة الثانية للبشرية!",
+          "imageDescription": "Nuh and believers stepping onto dry land, animals spreading out"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Nuh and the believers thanked Allah for saving them. They had been patient through years of mockery and the terrifying flood, and now they were blessed with a new beginning.\n\nFrom these believers, new generations were born. They spread across the earth, and for a time, they all worshipped Allah alone.",
+          "contentTextArabic": "شكر نوح والمؤمنون الله على إنقاذهم. كانوا صابرين خلال سنوات السخرية والطوفان المرعب، والآن بُوركوا ببداية جديدة.\n\nمن هؤلاء المؤمنين، وُلدت أجيال جديدة. انتشروا في الأرض، ولفترة، كانوا جميعاً يعبدون الله وحده.",
+          "imageDescription": "A thriving community descended from the Ark survivors"
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Nuh continued to guide his people until he passed away. He is remembered as one of the five greatest Prophets - called 'Ulul Azm' (Prophets of Strong Determination).\n\nThe Quran says: 'Indeed, he was a grateful servant.'\n\nNuh was grateful to Allah through everything - the 950 years of patience, the building of the Ark, the loss of his son, and the new beginning.",
+          "contentTextArabic": "استمر نوح في هداية قومه حتى توفي. يُذكر كأحد أعظم خمسة أنبياء - يُسمون 'أولو العزم' (أنبياء العزيمة القوية).\n\nيقول القرآن: 'إِنَّهُ كَانَ عَبْدًا شَكُورًا'\n\nكان نوح شاكراً لله في كل شيء - 950 سنة من الصبر، بناء السفينة، فقدان ابنه، والبداية الجديدة.",
+          "imageDescription": "Elderly Nuh surrounded by his grateful community"
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "The story of Nuh teaches us many lessons:\n\n1. Never give up calling to good - even if it takes a lifetime\n2. Trust Allah's plan even when others mock you\n3. Faith is a personal choice - we can guide but not force\n4. After hardship comes ease - Allah always rewards the patient\n5. Be grateful to Allah in all circumstances\n\nNuh's story is so important that an entire Surah in the Quran is named after him - Surah Nuh (Chapter 71)!",
+          "contentTextArabic": "قصة نوح تعلمنا دروساً كثيرة:\n\n1. لا تستسلم أبداً عن الدعوة للخير - حتى لو استغرق الأمر حياة كاملة\n2. ثق بخطة الله حتى عندما يسخر منك الآخرون\n3. الإيمان اختيار شخصي - يمكننا الإرشاد لكن لا الإجبار\n4. بعد العسر يسر - الله دائماً يُجازي الصابرين\n5. كن شاكراً لله في كل الظروف\n\nقصة نوح مهمة جداً لدرجة أن سورة كاملة في القرآن سُميت باسمه - سورة نوح (الفصل 71)!",
+          "imageDescription": "A beautiful scene showing all the lessons from Nuh's story"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Where did the Ark come to rest?",
+          "questionArabic": "أين استقرت السفينة؟",
+          "options": ["Mount Sinai", "Mount Judi", "Mount Everest", "In the ocean"],
+          "optionsArabic": ["جبل سيناء", "جبل الجودي", "جبل إيفرست", "في المحيط"],
+          "correctIndex": 1,
+          "explanation": "The Quran mentions that the Ark came to rest on Mount Judi.",
+          "explanationArabic": "يذكر القرآن أن السفينة استقرت على جبل الجودي."
+        },
+        {
+          "question": "What command did Allah give to stop the flood?",
+          "questionArabic": "ما الأمر الذي أعطاه الله لإيقاف الطوفان؟",
+          "options": ["He told Nuh to pray", "He commanded the earth to swallow the water and the sky to stop raining", "He sent the sun", "He asked the angels to help"],
+          "optionsArabic": ["طلب من نوح أن يصلي", "أمر الأرض أن تبلع الماء والسماء أن تُقلع", "أرسل الشمس", "طلب من الملائكة المساعدة"],
+          "correctIndex": 1,
+          "explanation": "Allah commanded: 'O earth, swallow your water! And O sky, withhold your rain!' - and the flood ended.",
+          "explanationArabic": "أمر الله: 'يا أرض ابلعي ماءك ويا سماء أقلعي!' - وانتهى الطوفان."
+        },
+        {
+          "question": "What title is Nuh given as one of the greatest Prophets?",
+          "questionArabic": "ما اللقب الذي أُعطي لنوح كأحد أعظم الأنبياء؟",
+          "options": ["Prophet of Peace", "Ulul Azm (Prophet of Strong Determination)", "The Sailor", "The Builder"],
+          "optionsArabic": ["نبي السلام", "أولو العزم", "البحار", "الباني"],
+          "correctIndex": 1,
+          "explanation": "Nuh is one of the five Ulul Azm - Prophets of Strong Determination - along with Ibrahim, Musa, Isa, and Muhammad (peace be upon them all).",
+          "explanationArabic": "نوح هو أحد أولي العزم الخمسة - مع إبراهيم وموسى وعيسى ومحمد (عليهم السلام جميعاً)."
+        },
+        {
+          "question": "What does the Quran call Nuh?",
+          "questionArabic": "ماذا يُسمي القرآن نوحاً؟",
+          "options": ["A wealthy servant", "A grateful servant", "A strong servant", "A young servant"],
+          "optionsArabic": ["عبداً غنياً", "عبداً شكوراً", "عبداً قوياً", "عبداً شاباً"],
+          "correctIndex": 1,
+          "explanation": "The Quran says about Nuh: 'Indeed, he was a grateful servant' (Surah Al-Isra 17:3).",
+          "explanationArabic": "يقول القرآن عن نوح: 'إنه كان عبداً شكوراً' (سورة الإسراء 17:3)."
+        },
+        {
+          "question": "What happened to the survivors after leaving the Ark?",
+          "questionArabic": "ماذا حدث للناجين بعد مغادرة السفينة؟",
+          "options": ["They built another ark", "They started new generations that worshipped Allah alone", "They went back into the water", "They stayed on the mountain forever"],
+          "optionsArabic": ["بنوا سفينة أخرى", "أنجبوا أجيالاً جديدة عبدت الله وحده", "عادوا إلى الماء", "بقوا على الجبل للأبد"],
+          "correctIndex": 1,
+          "explanation": "The believers spread across the earth and had new generations. For a time, everyone worshipped Allah alone - a fresh start for humanity.",
+          "explanationArabic": "انتشر المؤمنون في الأرض وأنجبوا أجيالاً جديدة. لفترة، كان الجميع يعبدون الله وحده - بداية جديدة للبشرية."
+        }
+      ]
+    }
+  ]
+}

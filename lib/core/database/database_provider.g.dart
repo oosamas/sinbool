@@ -121,5 +121,24 @@ final settingsDaoProvider = AutoDisposeProvider<SettingsDao>.internal(
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element
 typedef SettingsDaoRef = AutoDisposeProviderRef<SettingsDao>;
+String _$subscriptionDaoHash() => r'2d5a8cd48005397de7bf5d00dcfbb44947a64147';
+
+/// Subscription DAO provider
+///
+/// Copied from [subscriptionDao].
+@ProviderFor(subscriptionDao)
+final subscriptionDaoProvider = AutoDisposeProvider<SubscriptionDao>.internal(
+  subscriptionDao,
+  name: r'subscriptionDaoProvider',
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$subscriptionDaoHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
+typedef SubscriptionDaoRef = AutoDisposeProviderRef<SubscriptionDao>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

@@ -33,4 +33,7 @@ class ApiEndpoints {
 
   // Achievements
   static String achievements(String childId) => '/achievements/$childId';
+
+  // Subscription
+  static const String promoValidate = '/subscription/promo/validate';
 }

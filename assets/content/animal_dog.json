@@ -1,0 +1,262 @@
+{
+  "chapter": {
+    "serverId": "animal_dog",
+    "title": "The Dog of the Cave",
+    "titleArabic": "كلب أصحاب الكهف",
+    "description": "The story of the loyal dog who stayed with the young believers in the cave",
+    "descriptionArabic": "قصة الكلب الوفي الذي بقي مع الفتية المؤمنين في الكهف",
+    "iconName": "dog",
+    "colorHex": "#8B7355",
+    "sortOrder": 26
+  },
+  "lessons": [
+    {
+      "serverId": "animal_dog_lesson_1",
+      "title": "The Brave Young Believers",
+      "titleArabic": "الفتية المؤمنون الشجعان",
+      "sortOrder": 1,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Long ago, in a faraway land, there lived a cruel king who forced everyone to worship idols. Anyone who refused to worship the idols would be punished. It was a very difficult time for believers.",
+          "contentTextArabic": "منذ زمن بعيد، في أرض بعيدة، عاش ملك ظالم كان يُجبر الجميع على عبادة الأصنام. كل من يرفض عبادة الأصنام يُعاقب. كان وقتاً صعباً جداً للمؤمنين."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "But there were some brave young men who believed in Allah alone. They refused to worship the stone idols. They knew that only Allah deserves to be worshipped, the Creator of the heavens and the earth.",
+          "contentTextArabic": "لكن كان هناك فتية شجعان آمنوا بالله وحده. رفضوا عبادة الأصنام الحجرية. كانوا يعلمون أن الله وحده يستحق العبادة، خالق السماوات والأرض."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "These young believers knew they were in danger. The king would surely punish them if he found out about their faith. They needed to escape and find a safe place to hide.",
+          "contentTextArabic": "عرف هؤلاء الفتية المؤمنون أنهم في خطر. سيعاقبهم الملك حتماً إذا اكتشف إيمانهم. كانوا بحاجة للهرب وإيجاد مكان آمن للاختباء."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Allah guided their hearts and gave them courage. They decided to leave the city and seek refuge in a cave in the mountains. They trusted that Allah would protect them.",
+          "contentTextArabic": "هدى الله قلوبهم ومنحهم الشجاعة. قرروا مغادرة المدينة واللجوء إلى كهف في الجبال. وثقوا بأن الله سيحميهم."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "As they left the city quietly, a loyal dog followed them. This dog had been with them and would stay by their side no matter what. Together, the young believers and their faithful dog headed toward the mountains.",
+          "contentTextArabic": "بينما غادروا المدينة بهدوء، تبعهم كلب وفي. كان هذا الكلب معهم وسيبقى بجانبهم مهما حدث. معاً، توجه الفتية المؤمنون وكلبهم الوفي نحو الجبال."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why were the young believers in danger?",
+          "questionArabic": "لماذا كان الفتية المؤمنون في خطر؟",
+          "options": ["There was a storm coming", "The king punished those who didn't worship idols", "They were very poor", "They were sick"],
+          "optionsArabic": ["كانت هناك عاصفة قادمة", "الملك كان يعاقب من لا يعبد الأصنام", "كانوا فقراء جداً", "كانوا مرضى"],
+          "correctIndex": 1,
+          "explanation": "The cruel king forced everyone to worship idols and would punish anyone who refused.",
+          "explanationArabic": "كان الملك الظالم يُجبر الجميع على عبادة الأصنام ويعاقب من يرفض."
+        },
+        {
+          "question": "What did the young believers decide to do?",
+          "questionArabic": "ماذا قرر الفتية المؤمنون أن يفعلوا؟",
+          "options": ["Fight the king", "Worship the idols", "Seek refuge in a cave", "Leave the country by boat"],
+          "optionsArabic": ["محاربة الملك", "عبادة الأصنام", "اللجوء إلى كهف", "مغادرة البلاد بالقارب"],
+          "correctIndex": 2,
+          "explanation": "The young believers decided to escape to a cave in the mountains where they could worship Allah safely.",
+          "explanationArabic": "قرر الفتية المؤمنون الهروب إلى كهف في الجبال حيث يمكنهم عبادة الله بأمان."
+        },
+        {
+          "question": "Who followed the young believers when they left the city?",
+          "questionArabic": "من تبع الفتية المؤمنين عندما غادروا المدينة؟",
+          "options": ["The king's soldiers", "A loyal dog", "A merchant", "Their parents"],
+          "optionsArabic": ["جنود الملك", "كلب وفي", "تاجر", "والديهم"],
+          "correctIndex": 1,
+          "explanation": "A loyal dog followed the young believers and stayed by their side as they escaped to the cave.",
+          "explanationArabic": "تبع كلب وفي الفتية المؤمنين وبقي بجانبهم وهم يهربون إلى الكهف."
+        }
+      ]
+    },
+    {
+      "serverId": "animal_dog_lesson_2",
+      "title": "The Cave of Safety",
+      "titleArabic": "كهف الأمان",
+      "sortOrder": 2,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "The young believers found a cave high in the mountains. It was the perfect hiding place! They entered the cave and prayed to Allah: 'Our Lord! Grant us mercy from Yourself and guide us in our affairs.'",
+          "contentTextArabic": "وجد الفتية المؤمنون كهفاً عالياً في الجبال. كان مخبأً مثالياً! دخلوا الكهف ودعوا الله: 'ربنا آتنا من لدنك رحمة وهيئ لنا من أمرنا رشداً.'"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Their faithful dog lay down at the entrance of the cave. He stretched out his front legs at the doorway, guarding his companions. He was ready to protect them from any danger.",
+          "contentTextArabic": "استلقى كلبهم الوفي عند مدخل الكهف. مدّ ذراعيه الأماميتين عند الباب، يحرس أصحابه. كان مستعداً لحمايتهم من أي خطر."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Allah answered their prayers in a miraculous way. He made them fall into a deep, peaceful sleep. This was not an ordinary sleep - it was a special sleep that would last for a very long time!",
+          "contentTextArabic": "استجاب الله لدعائهم بطريقة معجزة. جعلهم يغطّون في نوم عميق هادئ. لم يكن نوماً عادياً - كان نوماً خاصاً سيستمر لوقت طويل جداً!"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "The dog slept too, but Allah made him look awake. Anyone who saw him would think he was watching and guarding. Allah turned them over in their sleep, so their bodies stayed healthy.",
+          "contentTextArabic": "نام الكلب أيضاً، لكن الله جعله يبدو مستيقظاً. أي شخص يراه سيظن أنه يراقب ويحرس. كان الله يقلبهم في نومهم، فبقيت أجسادهم صحيحة."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "The Quran tells us that if anyone saw them, they would have run away in fear. Allah protected the sleepers and their dog from being discovered. They were safe in Allah's care.",
+          "contentTextArabic": "يخبرنا القرآن أن أي شخص يراهم سيفر منهم خوفاً. حمى الله النائمين وكلبهم من أن يُكتشفوا. كانوا في أمان برعاية الله."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What did the young believers do when they entered the cave?",
+          "questionArabic": "ماذا فعل الفتية المؤمنون عندما دخلوا الكهف؟",
+          "options": ["They ate food", "They prayed to Allah", "They argued", "They counted their money"],
+          "optionsArabic": ["أكلوا طعاماً", "دعوا الله", "تجادلوا", "عدّوا نقودهم"],
+          "correctIndex": 1,
+          "explanation": "The young believers prayed to Allah asking for His mercy and guidance.",
+          "explanationArabic": "دعا الفتية المؤمنون الله طالبين رحمته وهدايته."
+        },
+        {
+          "question": "Where did the faithful dog stay?",
+          "questionArabic": "أين بقي الكلب الوفي؟",
+          "options": ["Inside the cave", "At the entrance of the cave", "On top of the mountain", "He ran away"],
+          "optionsArabic": ["داخل الكهف", "عند مدخل الكهف", "على قمة الجبل", "هرب بعيداً"],
+          "correctIndex": 1,
+          "explanation": "The dog lay down at the entrance of the cave with his front legs stretched out, guarding his companions.",
+          "explanationArabic": "استلقى الكلب عند مدخل الكهف ماداً ذراعيه الأماميتين، يحرس أصحابه."
+        },
+        {
+          "question": "How did Allah protect the sleepers from being discovered?",
+          "questionArabic": "كيف حمى الله النائمين من أن يُكتشفوا؟",
+          "options": ["He hid the cave", "Anyone who saw them would run away in fear", "He made them invisible", "He sent angels to guard them"],
+          "optionsArabic": ["أخفى الكهف", "أي شخص يراهم سيفر خوفاً", "جعلهم غير مرئيين", "أرسل ملائكة لحراستهم"],
+          "correctIndex": 1,
+          "explanation": "The Quran tells us that anyone who saw them would have been filled with fear and run away.",
+          "explanationArabic": "يخبرنا القرآن أن أي شخص يراهم سيمتلئ رعباً ويفر بعيداً."
+        }
+      ]
+    },
+    {
+      "serverId": "animal_dog_lesson_3",
+      "title": "The Long Sleep",
+      "titleArabic": "النوم الطويل",
+      "sortOrder": 3,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "While the young believers and their dog slept peacefully in the cave, the world outside changed completely. Many, many years passed. The cruel king died, and new generations of people came.",
+          "contentTextArabic": "بينما نام الفتية المؤمنون وكلبهم بسلام في الكهف، تغير العالم في الخارج تماماً. مرت سنوات كثيرة جداً. مات الملك الظالم، وجاءت أجيال جديدة من الناس."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "How long did they sleep? The Quran tells us they stayed in the cave for three hundred years, adding nine. That is 309 years! Can you imagine sleeping that long?",
+          "contentTextArabic": "كم من الوقت ناموا؟ يخبرنا القرآن أنهم لبثوا في كهفهم ثلاث مئة سنين وازدادوا تسعاً. أي ٣٠٩ سنوات! هل يمكنك تخيل النوم كل هذا الوقت؟"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Finally, Allah woke them up. They yawned and stretched. They felt like they had slept for only a day or part of a day! They had no idea how much time had really passed.",
+          "contentTextArabic": "أخيراً، أيقظهم الله. تثاءبوا وتمددوا. شعروا أنهم ناموا يوماً واحداً أو بعض يوم فقط! لم يكن لديهم أي فكرة عن الوقت الذي مر حقاً."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "They sent one of them to the city to buy food. He was told to be careful and not let anyone know where they were hiding. He took some old coins and went to find food.",
+          "contentTextArabic": "أرسلوا واحداً منهم إلى المدينة ليشتري طعاماً. أُخبر أن يكون حذراً ولا يُعلم أحداً بمكان اختبائهم. أخذ بعض العملات القديمة وذهب ليبحث عن طعام."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "When he reached the city, everything looked different! The buildings had changed, and the people wore different clothes. When he tried to pay with his old coins, everyone was amazed - the coins were hundreds of years old!",
+          "contentTextArabic": "عندما وصل إلى المدينة، كان كل شيء مختلفاً! تغيرت المباني، والناس يرتدون ملابس مختلفة. عندما حاول الدفع بعملاته القديمة، اندهش الجميع - كانت العملات عمرها مئات السنين!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How long did the people of the cave sleep?",
+          "questionArabic": "كم من الوقت نام أصحاب الكهف؟",
+          "options": ["One day", "One year", "100 years", "309 years"],
+          "optionsArabic": ["يوم واحد", "سنة واحدة", "١٠٠ سنة", "٣٠٩ سنة"],
+          "correctIndex": 3,
+          "explanation": "The Quran tells us they stayed in the cave for 309 years (300 years and 9 more).",
+          "explanationArabic": "يخبرنا القرآن أنهم لبثوا في الكهف ٣٠٩ سنة (ثلاث مئة سنين وازدادوا تسعاً)."
+        },
+        {
+          "question": "How long did the sleepers THINK they had slept?",
+          "questionArabic": "كم ظن النائمون أنهم ناموا؟",
+          "options": ["A day or part of a day", "A week", "A month", "A year"],
+          "optionsArabic": ["يوماً أو بعض يوم", "أسبوعاً", "شهراً", "سنة"],
+          "correctIndex": 0,
+          "explanation": "When they woke up, they felt like they had only slept for a day or part of a day.",
+          "explanationArabic": "عندما استيقظوا، شعروا أنهم ناموا يوماً واحداً أو بعض يوم فقط."
+        },
+        {
+          "question": "What happened when one of them went to buy food?",
+          "questionArabic": "ماذا حدث عندما ذهب أحدهم لشراء الطعام؟",
+          "options": ["No one noticed him", "His coins were very old and amazed people", "He couldn't find food", "The soldiers caught him"],
+          "optionsArabic": ["لم يلاحظه أحد", "كانت عملاته قديمة جداً وأدهشت الناس", "لم يجد طعاماً", "قبض عليه الجنود"],
+          "correctIndex": 1,
+          "explanation": "When he tried to pay with his old coins, people were amazed because the coins were hundreds of years old!",
+          "explanationArabic": "عندما حاول الدفع بعملاته القديمة، اندهش الناس لأن العملات كانت عمرها مئات السنين!"
+        }
+      ]
+    },
+    {
+      "serverId": "animal_dog_lesson_4",
+      "title": "A Sign for All People",
+      "titleArabic": "آية للناس جميعاً",
+      "sortOrder": 4,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "When the people of the city learned about the sleepers in the cave, they were amazed! By this time, the people had become believers in Allah. The story of the sleepers proved that Allah can bring the dead back to life.",
+          "contentTextArabic": "عندما علم أهل المدينة بالنائمين في الكهف، اندهشوا! في ذلك الوقت، كان الناس قد أصبحوا مؤمنين بالله. أثبتت قصة النائمين أن الله قادر على إحياء الموتى."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Allah tells us this story in Surah Al-Kahf. The story shows that Allah has power over all things. He can make people sleep for hundreds of years and wake them up again!",
+          "contentTextArabic": "يخبرنا الله هذه القصة في سورة الكهف. تُظهر القصة أن الله قادر على كل شيء. يستطيع أن يجعل الناس ينامون مئات السنين ثم يوقظهم مرة أخرى!"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "The faithful dog is mentioned in the Quran three times! Some said there were three sleepers and the dog was the fourth. Some said five and the dog was the sixth. Some said seven and the dog was the eighth.",
+          "contentTextArabic": "ذُكر الكلب الوفي في القرآن ثلاث مرات! قال بعضهم ثلاثة رابعهم كلبهم. وقال بعضهم خمسة سادسهم كلبهم. وقال بعضهم سبعة وثامنهم كلبهم."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "This dog was blessed to be mentioned in the Quran because he was loyal to believers. He stayed with his companions through their difficult journey and their long sleep. His loyalty made him special.",
+          "contentTextArabic": "بُورك هذا الكلب بذكره في القرآن لأنه كان وفياً للمؤمنين. بقي مع أصحابه طوال رحلتهم الصعبة ونومهم الطويل. جعله وفاؤه مميزاً."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "This beautiful story teaches us that Allah protects those who believe in Him. Even when times are hard, we should trust Allah and stay firm in our faith. Good company - even a loyal dog - can be a blessing!",
+          "contentTextArabic": "تعلمنا هذه القصة الجميلة أن الله يحمي من يؤمن به. حتى في الأوقات الصعبة، يجب أن نثق بالله ونثبت على إيماننا. الصحبة الطيبة - حتى كلب وفي - يمكن أن تكون نعمة!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In which Surah is the story of the People of the Cave mentioned?",
+          "questionArabic": "في أي سورة ذُكرت قصة أصحاب الكهف؟",
+          "options": ["Surah Al-Baqarah", "Surah Al-Kahf", "Surah Yusuf", "Surah Maryam"],
+          "optionsArabic": ["سورة البقرة", "سورة الكهف", "سورة يوسف", "سورة مريم"],
+          "correctIndex": 1,
+          "explanation": "The story of the People of the Cave is told in Surah Al-Kahf (The Cave).",
+          "explanationArabic": "تُروى قصة أصحاب الكهف في سورة الكهف."
+        },
+        {
+          "question": "How many times is the dog mentioned in the Quran in this story?",
+          "questionArabic": "كم مرة ذُكر الكلب في القرآن في هذه القصة؟",
+          "options": ["Once", "Twice", "Three times", "Four times"],
+          "optionsArabic": ["مرة واحدة", "مرتين", "ثلاث مرات", "أربع مرات"],
+          "correctIndex": 2,
+          "explanation": "The dog is mentioned three times in the Quran when discussing how many sleepers there were.",
+          "explanationArabic": "ذُكر الكلب ثلاث مرات في القرآن عند مناقشة عدد النائمين."
+        },
+        {
+          "question": "Why is the dog in this story considered special?",
+          "questionArabic": "لماذا يُعتبر الكلب في هذه القصة مميزاً؟",
+          "options": ["He could talk", "He was loyal to the believers", "He was very big", "He found the cave"],
+          "optionsArabic": ["كان يستطيع الكلام", "كان وفياً للمؤمنين", "كان كبيراً جداً", "وجد الكهف"],
+          "correctIndex": 1,
+          "explanation": "The dog was blessed to be mentioned in the Quran because of his loyalty to the believing companions.",
+          "explanationArabic": "بُورك الكلب بذكره في القرآن بسبب وفائه لأصحابه المؤمنين."
+        }
+      ]
+    }
+  ]
+}

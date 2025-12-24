@@ -18,6 +18,8 @@ class LessonCard extends StatelessWidget {
     this.hasQuiz = false,
     this.thumbnailUrl,
     this.trailing,
+    this.isPremium = false,
+    this.isFree = false,
   });
 
   final String title;
@@ -30,6 +32,8 @@ class LessonCard extends StatelessWidget {
   final bool hasQuiz;
   final String? thumbnailUrl;
   final Widget? trailing;
+  final bool isPremium;
+  final bool isFree;
 
   @override
   Widget build(BuildContext context) {
@@ -70,11 +74,69 @@ class LessonCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      title,
-                      style: Theme.of(context).textTheme.titleSmall,
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Text(
+                            title,
+                            style: Theme.of(context).textTheme.titleSmall,
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        ),
+                        if (isFree) ...[
+                          const SizedBox(width: Spacing.xs),
+                          Container(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: Spacing.sm,
+                              vertical: 2,
+                            ),
+                            decoration: BoxDecoration(
+                              color: AppColors.success,
+                              borderRadius: BorderRadius.circular(AppRadius.sm),
+                            ),
+                            child: const Text(
+                              'FREE',
+                              style: TextStyle(
+                                fontSize: 10,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ] else if (isPremium) ...[
+                          const SizedBox(width: Spacing.xs),
+                          Container(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: Spacing.sm,
+                              vertical: 2,
+                            ),
+                            decoration: BoxDecoration(
+                              color: AppColors.secondary,
+                              borderRadius: BorderRadius.circular(AppRadius.sm),
+                            ),
+                            child: const Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Icon(
+                                  Icons.star,
+                                  size: 10,
+                                  color: AppColors.textOnSecondary,
+                                ),
+                                SizedBox(width: 2),
+                                Text(
+                                  'PRO',
+                                  style: TextStyle(
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.bold,
+                                    color: AppColors.textOnSecondary,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ],
                     ),
                     if (subtitle != null) ...[
                       const SizedBox(height: Spacing.xs),

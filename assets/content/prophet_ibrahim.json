@@ -1,0 +1,469 @@
+{
+  "chapter": {
+    "serverId": "prophet_ibrahim",
+    "title": "Prophet Ibrahim",
+    "titleArabic": "النبي إبراهيم",
+    "description": "The Friend of Allah - Father of the Prophets",
+    "descriptionArabic": "خليل الله - أبو الأنبياء",
+    "iconName": "auto_stories",
+    "colorHex": "#1565C0",
+    "sortOrder": 3
+  },
+  "lessons": [
+    {
+      "serverId": "ibrahim_lesson_1",
+      "title": "The Young Truth Seeker",
+      "titleArabic": "الباحث الصغير عن الحقيقة",
+      "subtitle": "Ibrahim's search for the Creator",
+      "subtitleArabic": "بحث إبراهيم عن الخالق",
+      "sortOrder": 1,
+      "durationMinutes": 8,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Long ago in the land of Babylon, there lived a young boy named Ibrahim. Even as a child, he was different from others. While other children played, Ibrahim would look up at the sky and wonder: Who made all of this?",
+          "contentTextArabic": "منذ زمن بعيد في أرض بابل، عاش صبي صغير اسمه إبراهيم. حتى وهو طفل، كان مختلفاً عن الآخرين. بينما كان الأطفال الآخرون يلعبون، كان إبراهيم ينظر إلى السماء ويتساءل: من صنع كل هذا؟"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "The people around Ibrahim, including his own father Azar, worshipped idols - statues made of stone and wood. They would bow to these statues and ask them for help. But young Ibrahim could not understand this.",
+          "contentTextArabic": "كان الناس من حول إبراهيم، بما فيهم أبوه آزر، يعبدون الأصنام - تماثيل مصنوعة من الحجر والخشب. كانوا يسجدون لهذه التماثيل ويطلبون منها المساعدة. لكن إبراهيم الصغير لم يستطع فهم ذلك."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "\"How can these statues help anyone?\" Ibrahim thought. \"They cannot see, they cannot hear, they cannot move. We made them with our own hands! How can something we create be greater than us?\"",
+          "contentTextArabic": "فكر إبراهيم: \"كيف يمكن لهذه التماثيل أن تساعد أحداً؟ إنها لا ترى، ولا تسمع، ولا تتحرك. نحن صنعناها بأيدينا! كيف يمكن لشيء نصنعه أن يكون أعظم منا؟\""
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "One night, Ibrahim looked up at the sky and saw a bright star. \"Perhaps this is my Lord,\" he thought. The star was so beautiful and bright. But then the star set and disappeared. \"I do not love things that set and disappear,\" Ibrahim said.",
+          "contentTextArabic": "ذات ليلة، نظر إبراهيم إلى السماء ورأى نجماً ساطعاً. فكر: \"ربما هذا ربي.\" كان النجم جميلاً ومشرقاً جداً. لكن النجم غاب واختفى. قال إبراهيم: \"لا أحب الأشياء التي تغيب وتختفي.\""
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Then Ibrahim saw the moon rising, full and bright, lighting up the whole sky. \"This must be my Lord!\" he thought. The moon was even more beautiful than the star. But when morning came, the moon also set and disappeared.",
+          "contentTextArabic": "ثم رأى إبراهيم القمر يطلع، بدراً ومنيراً، يضيء السماء كلها. فكر: \"لا بد أن هذا ربي!\" كان القمر أجمل من النجم. لكن عندما جاء الصباح، غاب القمر أيضاً واختفى."
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "\"Unless my Lord guides me, I will surely be among those who are lost,\" Ibrahim said. Then the sun rose - huge, bright, and warming the whole earth. \"This is my Lord! This is the greatest!\" Ibrahim exclaimed.",
+          "contentTextArabic": "قال إبراهيم: \"لئن لم يهدني ربي لأكونن من القوم الضالين.\" ثم طلعت الشمس - ضخمة، مشرقة، تدفئ الأرض كلها. صاح إبراهيم: \"هذا ربي! هذا أكبر!\""
+        },
+        {
+          "pageNumber": 7,
+          "contentText": "But when evening came, the sun also set. Ibrahim then understood the truth: \"I turn my face to the One who created the heavens and the earth. None of these things I see are worthy of worship - only the One who created them all.\"",
+          "contentTextArabic": "لكن عندما جاء المساء، غابت الشمس أيضاً. عندها فهم إبراهيم الحقيقة: \"إني وجهت وجهي للذي فطر السماوات والأرض. لا شيء مما أرى يستحق العبادة - إلا الذي خلقها جميعاً.\""
+        },
+        {
+          "pageNumber": 8,
+          "contentText": "Through his sincere search for truth, Allah guided Ibrahim to the right path. He became certain that there is only One Creator - Allah - who has no beginning and no end, who never sleeps or tires, and who created everything.",
+          "contentTextArabic": "من خلال بحثه الصادق عن الحقيقة، هدى الله إبراهيم إلى الطريق الصحيح. أصبح متيقناً أنه لا يوجد إلا خالق واحد - الله - الذي ليس له بداية ولا نهاية، ولا ينام ولا يتعب، وخلق كل شيء."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What did Ibrahim's father Azar worship?",
+          "questionArabic": "ماذا كان يعبد آزر والد إبراهيم؟",
+          "options": ["The sun", "Idols made of stone and wood", "The moon", "Animals"],
+          "optionsArabic": ["الشمس", "أصنام من الحجر والخشب", "القمر", "الحيوانات"],
+          "correctIndex": 1,
+          "explanation": "Azar and his people worshipped idols - statues they made from stone and wood.",
+          "explanationArabic": "كان آزر وقومه يعبدون الأصنام - تماثيل صنعوها من الحجر والخشب."
+        },
+        {
+          "question": "Why did Ibrahim reject the star, moon, and sun as gods?",
+          "questionArabic": "لماذا رفض إبراهيم النجم والقمر والشمس كآلهة؟",
+          "options": ["They were too small", "They all set and disappeared", "They were not bright enough", "His father told him to"],
+          "optionsArabic": ["كانوا صغاراً جداً", "كلهم غابوا واختفوا", "لم يكونوا مشرقين كفاية", "أبوه أخبره بذلك"],
+          "correctIndex": 1,
+          "explanation": "Ibrahim realized that anything that sets and disappears cannot be the true God. The Creator must be eternal and unchanging.",
+          "explanationArabic": "أدرك إبراهيم أن أي شيء يغيب ويختفي لا يمكن أن يكون الإله الحقيقي. الخالق يجب أن يكون أزلياً وغير متغير."
+        },
+        {
+          "question": "What quality helped Ibrahim find the truth?",
+          "questionArabic": "ما الصفة التي ساعدت إبراهيم على إيجاد الحقيقة؟",
+          "options": ["Being strong", "Being rich", "Sincerely searching and thinking", "Being popular"],
+          "optionsArabic": ["أن يكون قوياً", "أن يكون غنياً", "البحث والتفكير بإخلاص", "أن يكون مشهوراً"],
+          "correctIndex": 2,
+          "explanation": "Ibrahim sincerely searched for the truth and used his mind to think deeply. Allah guides those who genuinely seek Him.",
+          "explanationArabic": "بحث إبراهيم بإخلاص عن الحقيقة واستخدم عقله للتفكير بعمق. الله يهدي من يبحث عنه بصدق."
+        },
+        {
+          "question": "What did Ibrahim conclude after his search?",
+          "questionArabic": "ماذا استنتج إبراهيم بعد بحثه؟",
+          "options": ["The sun is the greatest god", "There are many gods", "Only the Creator of everything deserves worship", "Stars are magical"],
+          "optionsArabic": ["الشمس هي أعظم إله", "هناك آلهة كثيرة", "الخالق وحده يستحق العبادة", "النجوم سحرية"],
+          "correctIndex": 2,
+          "explanation": "Ibrahim concluded that only Allah, the One who created the heavens, earth, stars, moon, and sun, deserves to be worshipped.",
+          "explanationArabic": "استنتج إبراهيم أن الله وحده، الذي خلق السماوات والأرض والنجوم والقمر والشمس، يستحق أن يُعبد."
+        }
+      ]
+    },
+    {
+      "serverId": "ibrahim_lesson_2",
+      "title": "Breaking the Idols",
+      "titleArabic": "تحطيم الأصنام",
+      "subtitle": "Ibrahim stands against falsehood",
+      "subtitleArabic": "إبراهيم يقف ضد الباطل",
+      "sortOrder": 2,
+      "durationMinutes": 8,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "After Ibrahim knew the truth, he felt he must share it with his people. He started with the person closest to him - his own father. \"O my father, why do you worship that which does not hear and does not see and will not benefit you at all?\" Ibrahim asked gently.",
+          "contentTextArabic": "بعدما عرف إبراهيم الحقيقة، شعر أنه يجب أن يشاركها مع قومه. بدأ بأقرب شخص إليه - أبيه. سأل إبراهيم بلطف: \"يا أبت لم تعبد ما لا يسمع ولا يبصر ولا يغني عنك شيئاً؟\""
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "But his father became angry. \"Are you rejecting my gods, O Ibrahim? If you do not stop, I will surely stone you. So leave me for a long time.\" Ibrahim replied with kindness: \"Peace be upon you. I will ask forgiveness for you from my Lord.\"",
+          "contentTextArabic": "لكن أباه غضب. \"أراغب أنت عن آلهتي يا إبراهيم؟ لئن لم تنته لأرجمنك واهجرني ملياً.\" رد إبراهيم بلطف: \"سلام عليك سأستغفر لك ربي.\""
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Ibrahim then spoke to his people at their gathering places. \"What are these statues to which you are devoted?\" he asked. They replied proudly, \"We found our fathers worshipping them.\" Ibrahim said, \"Indeed, you and your fathers have been in clear error.\"",
+          "contentTextArabic": "ثم تحدث إبراهيم إلى قومه في أماكن تجمعهم. سألهم: \"ما هذه التماثيل التي أنتم لها عاكفون؟\" أجابوا بفخر: \"وجدنا آباءنا لها عابدين.\" قال إبراهيم: \"لقد كنتم أنتم وآباؤكم في ضلال مبين.\""
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "One day, there was a big festival and all the people left the city. Ibrahim stayed behind. He went to the temple where all the idols were kept. He looked at the statues of all sizes - some big, some small, all silent and still.",
+          "contentTextArabic": "ذات يوم، كان هناك مهرجان كبير وغادر جميع الناس المدينة. بقي إبراهيم. ذهب إلى المعبد حيث كانت جميع الأصنام محفوظة. نظر إلى التماثيل بأحجامها المختلفة - بعضها كبير، بعضها صغير، كلها صامتة وساكنة."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Ibrahim took an axe and broke all the idols into pieces - except the biggest one. He placed the axe in the hands of the biggest idol and left. When the people returned, they were shocked! \"Who has done this to our gods?\" they cried.",
+          "contentTextArabic": "أخذ إبراهيم فأساً وحطم جميع الأصنام إلى قطع - إلا أكبرها. وضع الفأس في يدي أكبر صنم وغادر. عندما عاد الناس، صُدموا! صاحوا: \"من فعل هذا بآلهتنا؟\""
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "Someone said, \"We heard a young man called Ibrahim speaking against them.\" They brought Ibrahim and asked, \"Are you the one who did this?\" Ibrahim answered wisely, \"Rather, this biggest one did it. Ask them, if they can speak!\"",
+          "contentTextArabic": "قال أحدهم: \"سمعنا فتى يذكرهم يقال له إبراهيم.\" أحضروا إبراهيم وسألوه: \"أأنت فعلت هذا؟\" أجاب إبراهيم بحكمة: \"بل فعله كبيرهم هذا فاسألوهم إن كانوا ينطقون!\""
+        },
+        {
+          "pageNumber": 7,
+          "contentText": "The people were confused. They knew their idols could not speak! They said to each other, \"Indeed, it is you who are the wrongdoers!\" For a moment, they realized the truth. But then their pride took over and they refused to accept it.",
+          "contentTextArabic": "ارتبك الناس. كانوا يعلمون أن أصنامهم لا تستطيع الكلام! قالوا لبعضهم: \"إنكم أنتم الظالمون!\" للحظة، أدركوا الحقيقة. لكن كبرياءهم تغلب عليهم ورفضوا قبولها."
+        },
+        {
+          "pageNumber": 8,
+          "contentText": "Ibrahim's message was clear: How can you worship something that cannot even defend itself? How can you ask for help from something that needs YOUR help? Only Allah, the All-Powerful Creator, deserves our worship.",
+          "contentTextArabic": "كانت رسالة إبراهيم واضحة: كيف تعبدون شيئاً لا يستطيع حتى الدفاع عن نفسه؟ كيف تطلبون المساعدة من شيء يحتاج مساعدتكم؟ الله وحده، الخالق القدير، يستحق عبادتنا."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How did Ibrahim speak to his father about the idols?",
+          "questionArabic": "كيف تحدث إبراهيم مع أبيه عن الأصنام؟",
+          "options": ["Angrily and loudly", "Gently and respectfully", "He didn't speak to his father", "He was rude"],
+          "optionsArabic": ["بغضب وبصوت عالٍ", "بلطف واحترام", "لم يتحدث مع أبيه", "كان وقحاً"],
+          "correctIndex": 1,
+          "explanation": "Even though his father rejected his message, Ibrahim spoke gently and respectfully. He even promised to pray for his father.",
+          "explanationArabic": "رغم أن أباه رفض رسالته، تحدث إبراهيم بلطف واحترام. حتى أنه وعد بالدعاء لأبيه."
+        },
+        {
+          "question": "Why did Ibrahim leave the biggest idol unbroken?",
+          "questionArabic": "لماذا ترك إبراهيم أكبر صنم دون تحطيم؟",
+          "options": ["He was too tired", "To make them think about whether idols can act", "He liked that one", "It was too heavy"],
+          "optionsArabic": ["كان متعباً جداً", "ليجعلهم يفكرون هل يمكن للأصنام أن تفعل شيئاً", "أعجبه ذلك الصنم", "كان ثقيلاً جداً"],
+          "correctIndex": 1,
+          "explanation": "Ibrahim wanted to make a point - if the idols were really gods, they should be able to tell who broke them. By leaving the biggest one, he challenged the people to ask it what happened.",
+          "explanationArabic": "أراد إبراهيم إثبات نقطة - إذا كانت الأصنام آلهة حقاً، يجب أن تستطيع إخبارهم من حطمها. بترك الأكبر، تحدى الناس أن يسألوه ماذا حدث."
+        },
+        {
+          "question": "What did the people realize for a moment?",
+          "questionArabic": "ماذا أدرك الناس للحظة؟",
+          "options": ["That Ibrahim was wrong", "That they were the wrongdoers for worshipping silent idols", "That they needed more idols", "That the idol did it"],
+          "optionsArabic": ["أن إبراهيم كان مخطئاً", "أنهم كانوا ظالمين لعبادتهم أصناماً صامتة", "أنهم بحاجة لمزيد من الأصنام", "أن الصنم فعل ذلك"],
+          "correctIndex": 1,
+          "explanation": "When challenged to ask the idols, the people said to each other 'Indeed, you are the wrongdoers!' - for a moment they realized the truth of Ibrahim's message.",
+          "explanationArabic": "عندما تم تحديهم لسؤال الأصنام، قال الناس لبعضهم 'إنكم أنتم الظالمون!' - للحظة أدركوا حقيقة رسالة إبراهيم."
+        },
+        {
+          "question": "Why couldn't the idols help themselves?",
+          "questionArabic": "لماذا لم تستطع الأصنام مساعدة نفسها؟",
+          "options": ["They were sleeping", "They were just stone and wood with no power", "They were too kind", "They chose not to"],
+          "optionsArabic": ["كانوا نائمين", "كانوا مجرد حجر وخشب بلا قوة", "كانوا لطيفين جداً", "اختاروا ألا يفعلوا"],
+          "correctIndex": 1,
+          "explanation": "The idols were just objects made by human hands. They had no life, no power, no ability to hear, see, or act.",
+          "explanationArabic": "كانت الأصنام مجرد أشياء صنعتها أيدي البشر. لم يكن لها حياة، ولا قوة، ولا قدرة على السمع أو الرؤية أو الفعل."
+        }
+      ]
+    },
+    {
+      "serverId": "ibrahim_lesson_3",
+      "title": "The Fire That Did Not Burn",
+      "titleArabic": "النار التي لم تحرق",
+      "subtitle": "Allah protects His servant",
+      "subtitleArabic": "الله يحمي عبده",
+      "sortOrder": 3,
+      "durationMinutes": 7,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "The people were furious with Ibrahim. Their king, the tyrant Nimrod, was especially angry. \"How dare this young man insult our gods!\" he shouted. They decided to punish Ibrahim in the most terrible way they could imagine.",
+          "contentTextArabic": "غضب الناس من إبراهيم. ملكهم، الطاغية النمرود، كان غاضباً بشكل خاص. صاح: \"كيف يجرؤ هذا الشاب على إهانة آلهتنا!\" قرروا معاقبة إبراهيم بأفظع طريقة يمكنهم تخيلها."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "\"Burn him!\" they cried. \"Burn him and support your gods!\" They began collecting wood from everywhere - it took them days and days. They built the biggest fire anyone had ever seen. The flames were so hot that birds flying overhead would fall from the heat.",
+          "contentTextArabic": "صاحوا: \"حرقوه! حرقوه وانصروا آلهتكم!\" بدأوا يجمعون الحطب من كل مكان - استغرقهم أياماً وأياماً. بنوا أكبر نار رآها أحد. كانت النيران حارة جداً لدرجة أن الطيور التي تطير فوقها كانت تسقط من الحرارة."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "The fire was so massive that they couldn't get close enough to throw Ibrahim in. So they built a huge catapult to launch him into the flames. Ibrahim stood calmly, his heart full of trust in Allah.",
+          "contentTextArabic": "كانت النار ضخمة جداً لدرجة أنهم لم يستطيعوا الاقتراب بما يكفي لإلقاء إبراهيم فيها. فبنوا منجنيقاً ضخماً لقذفه في النيران. وقف إبراهيم بهدوء، قلبه مليء بالثقة في الله."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "As Ibrahim was about to be thrown into the fire, the angel Jibreel came to him and asked, \"O Ibrahim, do you need anything?\" Ibrahim replied, \"From you, no. But from Allah, yes.\" His trust was only in his Creator.",
+          "contentTextArabic": "عندما كان إبراهيم على وشك أن يُلقى في النار، جاءه الملك جبريل وسأله: \"يا إبراهيم، هل تحتاج شيئاً؟\" أجاب إبراهيم: \"منك، لا. لكن من الله، نعم.\" كانت ثقته في خالقه فقط."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Ibrahim said the words that showed his complete trust: \"Hasbunallahu wa ni'mal wakeel\" - \"Allah is sufficient for us, and He is the best Disposer of affairs.\" These powerful words showed his absolute faith.",
+          "contentTextArabic": "قال إبراهيم الكلمات التي أظهرت ثقته الكاملة: \"حسبنا الله ونعم الوكيل.\" هذه الكلمات القوية أظهرت إيمانه المطلق."
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "Then Ibrahim was thrown into the massive fire. But something miraculous happened! Allah commanded the fire: \"O fire, be cool and safe for Ibrahim!\" The fire obeyed its Creator immediately.",
+          "contentTextArabic": "ثم أُلقي إبراهيم في النار الهائلة. لكن شيئاً معجزاً حدث! أمر الله النار: \"يا نار كوني برداً وسلاماً على إبراهيم!\" أطاعت النار خالقها فوراً."
+        },
+        {
+          "pageNumber": 7,
+          "contentText": "The flames that could melt iron became cool and peaceful around Ibrahim. He sat in the middle of the fire, completely unharmed. Not a single hair was burned. Not a thread of his clothes was damaged. He was protected by Allah's command.",
+          "contentTextArabic": "النيران التي كانت تذيب الحديد أصبحت باردة وهادئة حول إبراهيم. جلس في وسط النار، سليماً تماماً. لم تُحرق شعرة واحدة. لم يتضرر خيط واحد من ثيابه. كان محمياً بأمر الله."
+        },
+        {
+          "pageNumber": 8,
+          "contentText": "When the fire finally died down, the people saw Ibrahim walking out, completely safe! This miracle proved that Allah has power over everything - even fire obeys Him. Nothing happens except by His will and command.",
+          "contentTextArabic": "عندما خمدت النار أخيراً، رأى الناس إبراهيم يخرج سالماً تماماً! هذه المعجزة أثبتت أن الله له القدرة على كل شيء - حتى النار تطيعه. لا يحدث شيء إلا بإرادته وأمره."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What words did Ibrahim say when he was about to be thrown into the fire?",
+          "questionArabic": "ما الكلمات التي قالها إبراهيم عندما كان على وشك أن يُلقى في النار؟",
+          "options": ["Help me someone!", "Hasbunallahu wa ni'mal wakeel", "I am scared", "Please don't do this"],
+          "optionsArabic": ["ساعدوني يا أحد!", "حسبنا الله ونعم الوكيل", "أنا خائف", "أرجوكم لا تفعلوا هذا"],
+          "correctIndex": 1,
+          "explanation": "Ibrahim said 'Hasbunallahu wa ni'mal wakeel' which means 'Allah is sufficient for us, and He is the best Disposer of affairs.' This showed his complete trust in Allah.",
+          "explanationArabic": "قال إبراهيم 'حسبنا الله ونعم الوكيل'. هذا أظهر ثقته الكاملة في الله."
+        },
+        {
+          "question": "What did Allah command the fire to do?",
+          "questionArabic": "ماذا أمر الله النار أن تفعل؟",
+          "options": ["To burn faster", "To be cool and safe for Ibrahim", "To spread everywhere", "To disappear"],
+          "optionsArabic": ["أن تحترق أسرع", "أن تكون برداً وسلاماً على إبراهيم", "أن تنتشر في كل مكان", "أن تختفي"],
+          "correctIndex": 1,
+          "explanation": "Allah commanded: 'O fire, be cool and safe for Ibrahim!' And the fire obeyed immediately.",
+          "explanationArabic": "أمر الله: 'يا نار كوني برداً وسلاماً على إبراهيم!' وأطاعت النار فوراً."
+        },
+        {
+          "question": "When the angel Jibreel offered help, what did Ibrahim say?",
+          "questionArabic": "عندما عرض الملك جبريل المساعدة، ماذا قال إبراهيم؟",
+          "options": ["Yes, please help me!", "From you, no. But from Allah, yes.", "I don't need anyone", "Go away"],
+          "optionsArabic": ["نعم، ساعدني من فضلك!", "منك، لا. لكن من الله، نعم.", "لا أحتاج أحداً", "اذهب بعيداً"],
+          "correctIndex": 1,
+          "explanation": "Ibrahim showed that his reliance was only on Allah. Even when an angel offered help, he turned to Allah alone.",
+          "explanationArabic": "أظهر إبراهيم أن اعتماده كان على الله وحده. حتى عندما عرض ملك المساعدة، توجه إلى الله وحده."
+        },
+        {
+          "question": "What does this story teach us about Allah's power?",
+          "questionArabic": "ماذا تعلمنا هذه القصة عن قدرة الله؟",
+          "options": ["Fire is more powerful", "Allah has power over everything, including fire", "Angels are the most powerful", "Nothing can protect us"],
+          "optionsArabic": ["النار أقوى", "الله له القدرة على كل شيء، بما في ذلك النار", "الملائكة هم الأقوى", "لا شيء يمكنه حمايتنا"],
+          "correctIndex": 1,
+          "explanation": "This story teaches us that Allah has complete power over all creation. Fire, which normally burns, became cool because Allah commanded it.",
+          "explanationArabic": "تعلمنا هذه القصة أن الله له القدرة الكاملة على كل المخلوقات. النار التي تحرق عادة أصبحت باردة لأن الله أمرها."
+        }
+      ]
+    },
+    {
+      "serverId": "ibrahim_lesson_4",
+      "title": "Building the Sacred House",
+      "titleArabic": "بناء البيت المقدس",
+      "subtitle": "Ibrahim and Ismail build the Kaaba",
+      "subtitleArabic": "إبراهيم وإسماعيل يبنيان الكعبة",
+      "sortOrder": 4,
+      "durationMinutes": 8,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "After many years and many journeys, Allah blessed Ibrahim with two sons in his old age: Ismail from Hajar, and Ishaq from Sarah. Both sons became prophets, and from their descendants came many more prophets.",
+          "contentTextArabic": "بعد سنوات عديدة ورحلات كثيرة، بارك الله إبراهيم بولدين في شيخوخته: إسماعيل من هاجر، وإسحاق من سارة. كلا الولدين أصبحا نبيين، ومن نسلهما جاء أنبياء كثيرون."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "By Allah's command, Ibrahim had taken Hajar and baby Ismail to a barren valley in Arabia - a place with no water, no trees, and no people. This was where Makkah would one day be built. Allah provided for them through the miraculous well of Zamzam.",
+          "contentTextArabic": "بأمر الله، أخذ إبراهيم هاجر والرضيع إسماعيل إلى واد قاحل في الجزيرة العربية - مكان بلا ماء ولا أشجار ولا ناس. هذا حيث ستُبنى مكة يوماً ما. رزقهم الله من خلال بئر زمزم المعجزة."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Years passed and Ismail grew into a strong young man. Then Allah gave Ibrahim an important command: to build a house for the worship of Allah alone - the first house of worship on earth. This would be the Kaaba.",
+          "contentTextArabic": "مرت السنون وكبر إسماعيل ليصبح شاباً قوياً. ثم أعطى الله إبراهيم أمراً مهماً: أن يبني بيتاً لعبادة الله وحده - أول بيت للعبادة على الأرض. هذا سيكون الكعبة."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Ibrahim and Ismail worked together, father and son. Ibrahim laid the stones while Ismail brought them to him. They built the walls carefully, stone by stone. As they worked, they made a beautiful prayer to Allah.",
+          "contentTextArabic": "عمل إبراهيم وإسماعيل معاً، أب وابن. كان إبراهيم يضع الحجارة بينما كان إسماعيل يحضرها له. بنوا الجدران بعناية، حجراً حجراً. وبينما كانوا يعملون، دعوا الله بدعاء جميل."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "They prayed: \"Our Lord, accept this from us. Indeed, You are the All-Hearing, the All-Knowing. Our Lord, make us Muslims, submitting to You, and from our descendants a Muslim nation, submitting to You.\"",
+          "contentTextArabic": "دعوا: \"ربنا تقبل منا إنك أنت السميع العليم. ربنا واجعلنا مسلمين لك ومن ذريتنا أمة مسلمة لك.\""
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "When the walls grew too high for Ibrahim to reach, Ismail brought him a special stone to stand on. This stone is known as the Maqam Ibrahim (Station of Ibrahim), and it still exists today near the Kaaba with the footprints of Ibrahim preserved in it.",
+          "contentTextArabic": "عندما أصبحت الجدران عالية جداً ليصل إليها إبراهيم، أحضر له إسماعيل حجراً خاصاً ليقف عليه. هذا الحجر معروف بمقام إبراهيم، وهو موجود حتى اليوم قرب الكعبة مع آثار أقدام إبراهيم محفوظة فيه."
+        },
+        {
+          "pageNumber": 7,
+          "contentText": "Ibrahim also prayed: \"Our Lord, send among them a Messenger from themselves who will recite to them Your verses and teach them the Book and wisdom.\" This prayer was answered thousands of years later with Prophet Muhammad, peace be upon him.",
+          "contentTextArabic": "دعا إبراهيم أيضاً: \"ربنا وابعث فيهم رسولاً منهم يتلو عليهم آياتك ويعلمهم الكتاب والحكمة.\" استُجيب هذا الدعاء بعد آلاف السنين بالنبي محمد صلى الله عليه وسلم."
+        },
+        {
+          "pageNumber": 8,
+          "contentText": "After completing the Kaaba, Allah commanded Ibrahim to call people to pilgrimage - Hajj. Ibrahim called out, and Allah made his voice reach every soul that would ever perform Hajj until the Day of Judgment. Every pilgrim is answering Ibrahim's ancient call: \"Labbayk Allahumma Labbayk!\"",
+          "contentTextArabic": "بعد إتمام الكعبة، أمر الله إبراهيم أن يؤذن في الناس بالحج. نادى إبراهيم، وجعل الله صوته يصل إلى كل روح ستحج حتى يوم القيامة. كل حاج يجيب نداء إبراهيم القديم: \"لبيك اللهم لبيك!\""
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Who helped Ibrahim build the Kaaba?",
+          "questionArabic": "من ساعد إبراهيم في بناء الكعبة؟",
+          "options": ["Angels", "His son Ismail", "His son Ishaq", "The people of Makkah"],
+          "optionsArabic": ["الملائكة", "ابنه إسماعيل", "ابنه إسحاق", "أهل مكة"],
+          "correctIndex": 1,
+          "explanation": "Ibrahim and his son Ismail built the Kaaba together. Ismail would bring the stones and Ibrahim would place them.",
+          "explanationArabic": "بنى إبراهيم وابنه إسماعيل الكعبة معاً. كان إسماعيل يحضر الحجارة وإبراهيم يضعها."
+        },
+        {
+          "question": "What is the Maqam Ibrahim?",
+          "questionArabic": "ما هو مقام إبراهيم؟",
+          "options": ["A type of prayer", "The stone Ibrahim stood on while building, with his footprints", "A city", "A type of food"],
+          "optionsArabic": ["نوع من الصلاة", "الحجر الذي وقف عليه إبراهيم أثناء البناء مع آثار أقدامه", "مدينة", "نوع من الطعام"],
+          "correctIndex": 1,
+          "explanation": "The Maqam Ibrahim is the stone that Ibrahim stood on to reach the higher parts of the Kaaba. His footprints are still preserved in it today.",
+          "explanationArabic": "مقام إبراهيم هو الحجر الذي وقف عليه إبراهيم للوصول إلى الأجزاء العليا من الكعبة. آثار أقدامه لا تزال محفوظة فيه حتى اليوم."
+        },
+        {
+          "question": "What did Ibrahim pray for while building the Kaaba?",
+          "questionArabic": "بماذا دعا إبراهيم أثناء بناء الكعبة؟",
+          "options": ["For wealth and power", "For a messenger to be sent to his descendants", "For the Kaaba to be made of gold", "For rain"],
+          "optionsArabic": ["بالثروة والسلطة", "بأن يُبعث رسول في ذريته", "بأن تُصنع الكعبة من الذهب", "بالمطر"],
+          "correctIndex": 1,
+          "explanation": "Ibrahim prayed for Allah to send a messenger among his descendants. This prayer was answered with Prophet Muhammad (peace be upon him).",
+          "explanationArabic": "دعا إبراهيم أن يبعث الله رسولاً في ذريته. استُجيب هذا الدعاء بالنبي محمد صلى الله عليه وسلم."
+        },
+        {
+          "question": "What do pilgrims say when they answer Ibrahim's call to Hajj?",
+          "questionArabic": "ماذا يقول الحجاج عندما يجيبون نداء إبراهيم للحج؟",
+          "options": ["Subhanallah", "Labbayk Allahumma Labbayk", "Alhamdulillah", "Bismillah"],
+          "optionsArabic": ["سبحان الله", "لبيك اللهم لبيك", "الحمد لله", "بسم الله"],
+          "correctIndex": 1,
+          "explanation": "'Labbayk Allahumma Labbayk' means 'Here I am, O Allah, here I am!' - it's the answer to Ibrahim's ancient call to pilgrimage.",
+          "explanationArabic": "'لبيك اللهم لبيك' تعني 'ها أنا ذا يا الله!' - إنها الإجابة على نداء إبراهيم القديم للحج."
+        }
+      ]
+    },
+    {
+      "serverId": "ibrahim_lesson_5",
+      "title": "The Greatest Test",
+      "titleArabic": "الابتلاء الأعظم",
+      "subtitle": "Ibrahim's sacrifice and submission",
+      "subtitleArabic": "تضحية إبراهيم وخضوعه",
+      "sortOrder": 5,
+      "durationMinutes": 8,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Throughout his life, Ibrahim faced many tests from Allah, and he passed them all with patience and complete submission. But the greatest test was yet to come - a test that would show the depth of his love for Allah above all else.",
+          "contentTextArabic": "طوال حياته، واجه إبراهيم اختبارات كثيرة من الله، ونجح فيها جميعاً بالصبر والخضوع الكامل. لكن الاختبار الأعظم كان قادماً - اختبار سيُظهر عمق حبه لله فوق كل شيء."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Ibrahim had waited so many years for a child. When Ismail was born, Ibrahim loved him deeply. Ismail was a righteous son who helped his father and obeyed Allah. Then Ibrahim had a dream - and the dreams of prophets are true revelations.",
+          "contentTextArabic": "انتظر إبراهيم سنوات طويلة للحصول على ولد. عندما وُلد إسماعيل، أحبه إبراهيم بعمق. كان إسماعيل ابناً صالحاً يساعد أباه ويطيع الله. ثم رأى إبراهيم رؤيا - ورؤيا الأنبياء وحي صادق."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "In the dream, Ibrahim saw himself sacrificing his beloved son Ismail. When he woke up, Ibrahim knew this was a command from Allah. His heart was heavy, but his submission to Allah was complete.",
+          "contentTextArabic": "في الرؤيا، رأى إبراهيم نفسه يذبح ابنه الحبيب إسماعيل. عندما استيقظ، علم إبراهيم أن هذا أمر من الله. كان قلبه ثقيلاً، لكن خضوعه لله كان كاملاً."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Ibrahim went to Ismail and said: \"O my son, I have seen in a dream that I must sacrifice you. So what do you think?\" Ibrahim did not hide the truth from his son. He consulted him, knowing Ismail was a believer too.",
+          "contentTextArabic": "ذهب إبراهيم إلى إسماعيل وقال: \"يا بني إني أرى في المنام أني أذبحك فانظر ماذا ترى.\" لم يخف إبراهيم الحقيقة عن ابنه. استشاره، عالماً أن إسماعيل مؤمن أيضاً."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Ismail's answer showed his beautiful faith: \"O my father, do what you are commanded. You will find me, if Allah wills, among the patient.\" This young man was ready to submit to Allah's command, just like his father.",
+          "contentTextArabic": "أظهر جواب إسماعيل إيمانه الجميل: \"يا أبت افعل ما تؤمر ستجدني إن شاء الله من الصابرين.\" هذا الشاب كان مستعداً للخضوع لأمر الله، تماماً مثل أبيه."
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "Father and son went to fulfill the command. Ibrahim laid Ismail down and raised the knife. At that moment of complete submission, Allah called out: \"O Ibrahim! You have fulfilled the vision!\" The test was about willingness to obey, not about the act itself.",
+          "contentTextArabic": "ذهب الأب والابن لتنفيذ الأمر. أضجع إبراهيم إسماعيل ورفع السكين. في تلك اللحظة من الخضوع الكامل، نادى الله: \"يا إبراهيم قد صدقت الرؤيا!\" كان الاختبار عن الاستعداد للطاعة، وليس عن الفعل نفسه."
+        },
+        {
+          "pageNumber": 7,
+          "contentText": "Allah sent a ram from Paradise to be sacrificed instead of Ismail. This is why Muslims sacrifice animals during Eid al-Adha - to remember Ibrahim's submission and Allah's mercy. Ismail was saved because both father and son had proven their complete devotion.",
+          "contentTextArabic": "أرسل الله كبشاً من الجنة ليُذبح بدلاً من إسماعيل. لهذا يضحي المسلمون بالحيوانات في عيد الأضحى - لتذكر خضوع إبراهيم ورحمة الله. نجا إسماعيل لأن الأب والابن أثبتا إخلاصهما الكامل."
+        },
+        {
+          "pageNumber": 8,
+          "contentText": "Allah honored Ibrahim with a special title: \"Khalilullah\" - the Friend of Allah. He became the father of many prophets, including Muhammad (peace be upon him). His legacy teaches us that true faith means trusting Allah completely, even when we don't understand His wisdom.",
+          "contentTextArabic": "أكرم الله إبراهيم بلقب خاص: \"خليل الله\". أصبح أبا لأنبياء كثيرين، بما فيهم محمد صلى الله عليه وسلم. إرثه يعلمنا أن الإيمان الحقيقي يعني الثقة بالله كاملة، حتى عندما لا نفهم حكمته."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How did Ibrahim learn about the command to sacrifice his son?",
+          "questionArabic": "كيف علم إبراهيم بأمر ذبح ابنه؟",
+          "options": ["An angel told him", "Through a dream", "He read it in a book", "Another prophet told him"],
+          "optionsArabic": ["ملك أخبره", "من خلال رؤيا", "قرأه في كتاب", "نبي آخر أخبره"],
+          "correctIndex": 1,
+          "explanation": "Ibrahim saw in a dream that he should sacrifice Ismail. The dreams of prophets are true revelations from Allah.",
+          "explanationArabic": "رأى إبراهيم في المنام أنه يذبح إسماعيل. رؤيا الأنبياء وحي صادق من الله."
+        },
+        {
+          "question": "What was Ismail's response when his father told him about the dream?",
+          "questionArabic": "ماذا كان رد إسماعيل عندما أخبره أبوه عن الرؤيا؟",
+          "options": ["He ran away", "He was angry", "He said to do what Allah commanded and he would be patient", "He cried and refused"],
+          "optionsArabic": ["هرب", "غضب", "قال افعل ما أُمرت وسيكون من الصابرين", "بكى ورفض"],
+          "correctIndex": 2,
+          "explanation": "Ismail showed beautiful faith by accepting the command and promising to be patient. He was willing to submit to Allah just like his father.",
+          "explanationArabic": "أظهر إسماعيل إيماناً جميلاً بقبول الأمر ووعد بالصبر. كان مستعداً للخضوع لله تماماً مثل أبيه."
+        },
+        {
+          "question": "What happened at the moment Ibrahim was about to sacrifice Ismail?",
+          "questionArabic": "ماذا حدث في اللحظة التي كان إبراهيم على وشك ذبح إسماعيل؟",
+          "options": ["The knife broke", "Allah called out that he had fulfilled the vision", "Ismail ran away", "Nothing special happened"],
+          "optionsArabic": ["انكسرت السكين", "نادى الله أنه صدّق الرؤيا", "هرب إسماعيل", "لم يحدث شيء خاص"],
+          "correctIndex": 1,
+          "explanation": "Allah called out to Ibrahim that he had fulfilled the vision. The test was about his willingness to obey, and he had proven his complete submission.",
+          "explanationArabic": "نادى الله إبراهيم أنه صدّق الرؤيا. كان الاختبار عن استعداده للطاعة، وقد أثبت خضوعه الكامل."
+        },
+        {
+          "question": "What special title did Allah give to Ibrahim?",
+          "questionArabic": "ما اللقب الخاص الذي أعطاه الله لإبراهيم؟",
+          "options": ["The Prophet of Fire", "Khalilullah - The Friend of Allah", "The King of Prophets", "The Builder"],
+          "optionsArabic": ["نبي النار", "خليل الله", "ملك الأنبياء", "الباني"],
+          "correctIndex": 1,
+          "explanation": "Ibrahim was honored with the title 'Khalilullah' which means 'The Friend of Allah' - one of the highest honors given to any human being.",
+          "explanationArabic": "أُكرم إبراهيم بلقب 'خليل الله' - وهو من أعلى الشرف الممنوح لأي إنسان."
+        }
+      ]
+    }
+  ]
+}

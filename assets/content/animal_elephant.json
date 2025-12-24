@@ -1,0 +1,374 @@
+{
+  "chapter": {
+    "serverId": "animal_elephant",
+    "title": "The Elephant Army",
+    "titleArabic": "جيش الفيل",
+    "description": "How Allah destroyed Abraha's army",
+    "descriptionArabic": "كيف أهلك الله جيش أبرهة",
+    "iconName": "pets",
+    "colorHex": "#5D4037",
+    "sortOrder": 20
+  },
+  "lessons": [
+    {
+      "serverId": "elephant_lesson_1",
+      "title": "The Army That Came to Destroy",
+      "titleArabic": "الجيش الذي جاء ليدمر",
+      "subtitle": "Abraha marches toward Makkah",
+      "subtitleArabic": "أبرهة يزحف نحو مكة",
+      "sortOrder": 1,
+      "durationMinutes": 6,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "This is the story of an elephant - not just any elephant, but the leader of a mighty army that came to destroy the Kaaba. Allah tells us this story in Surah Al-Fil (The Elephant) to show us His power to protect what He wills.",
+          "contentTextArabic": "هذه قصة فيل - ليس أي فيل، بل قائد جيش جبار جاء ليهدم الكعبة. يخبرنا الله هذه القصة في سورة الفيل ليُرينا قدرته على حماية ما يشاء."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "In the land of Yemen, there ruled a powerful king named Abraha. He had conquered the land and built a grand church decorated with gold and jewels. He wanted everyone to visit his church instead of the Kaaba in Makkah.",
+          "contentTextArabic": "في أرض اليمن، حكم ملك قوي يُدعى أبرهة. غزا الأرض وبنى كنيسة فخمة مزينة بالذهب والجواهر. أراد أن يزور الجميع كنيسته بدلاً من الكعبة في مكة."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "But the Arabs continued to travel to Makkah for pilgrimage. This made Abraha very angry. One day, an Arab man even showed disrespect to his church. Abraha was furious! He decided to march to Makkah and destroy the Kaaba completely.",
+          "contentTextArabic": "لكن العرب استمروا في السفر إلى مكة للحج. هذا أغضب أبرهة جداً. ذات يوم، أظهر رجل عربي عدم احترام لكنيسته. غضب أبرهة غضباً شديداً! قرر أن يزحف إلى مكة ويهدم الكعبة تماماً."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Abraha gathered the largest army anyone had ever seen. He brought soldiers, horses, and most terrifying of all - war elephants! The lead elephant was named Mahmud. He was huge and powerful, trained for battle.",
+          "contentTextArabic": "جمع أبرهة أكبر جيش رآه أحد. أحضر جنوداً وخيولاً، والأكثر رعباً - فيلة الحرب! كان الفيل القائد يُسمى محموداً. كان ضخماً وقوياً، مدرباً للمعركة."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "The army marched north toward Makkah. News spread quickly, and people were terrified. No one had ever seen elephants before! How could the people of Makkah fight against such massive creatures?",
+          "contentTextArabic": "زحف الجيش شمالاً نحو مكة. انتشرت الأخبار بسرعة، وأصاب الناس الرعب. لم يرَ أحد فيلة من قبل! كيف يمكن لأهل مكة محاربة مخلوقات ضخمة كهذه؟"
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "As the army approached Makkah, they captured some camels that belonged to the people, including camels of Abdul-Muttalib, the leader of Makkah and grandfather of Prophet Muhammad (who would be born that same year).",
+          "contentTextArabic": "عندما اقترب الجيش من مكة، أسروا بعض الجمال التي تخص الناس، بما فيها جمال عبد المطلب، زعيم مكة وجد النبي محمد (الذي سيولد في نفس العام)."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why did Abraha want to destroy the Kaaba?",
+          "questionArabic": "لماذا أراد أبرهة هدم الكعبة؟",
+          "options": ["He wanted gold", "He wanted people to visit his church instead", "He was at war", "He didn't like buildings"],
+          "optionsArabic": ["أراد الذهب", "أراد أن يزور الناس كنيسته بدلاً منها", "كان في حرب", "لم يحب المباني"],
+          "correctIndex": 1,
+          "explanation": "Abraha built a grand church and was angry that Arabs still went to the Kaaba. He decided to destroy it so people would visit his church instead.",
+          "explanationArabic": "بنى أبرهة كنيسة فخمة وغضب لأن العرب لا يزالون يذهبون للكعبة. قرر هدمها ليزور الناس كنيسته بدلاً منها."
+        },
+        {
+          "question": "What was the name of the lead elephant?",
+          "questionArabic": "ما اسم الفيل القائد؟",
+          "options": ["Abraha", "Mahmud", "Abdullah", "Makkah"],
+          "optionsArabic": ["أبرهة", "محمود", "عبد الله", "مكة"],
+          "correctIndex": 1,
+          "explanation": "The lead elephant in Abraha's army was named Mahmud. He was huge and trained for battle.",
+          "explanationArabic": "كان الفيل القائد في جيش أبرهة يُسمى محموداً. كان ضخماً ومدرباً للمعركة."
+        },
+        {
+          "question": "Who was the leader of Makkah at this time?",
+          "questionArabic": "من كان زعيم مكة في ذلك الوقت؟",
+          "options": ["Prophet Muhammad", "Abdul-Muttalib", "Abraha", "Abu Talib"],
+          "optionsArabic": ["النبي محمد", "عبد المطلب", "أبرهة", "أبو طالب"],
+          "correctIndex": 1,
+          "explanation": "Abdul-Muttalib was the leader of Makkah and the grandfather of Prophet Muhammad, who would be born in that same year.",
+          "explanationArabic": "كان عبد المطلب زعيم مكة وجد النبي محمد، الذي سيولد في نفس العام."
+        }
+      ]
+    },
+    {
+      "serverId": "elephant_lesson_2",
+      "title": "The House Has Its Lord",
+      "titleArabic": "للبيت رب يحميه",
+      "subtitle": "Abdul-Muttalib's trust in Allah",
+      "subtitleArabic": "ثقة عبد المطلب في الله",
+      "sortOrder": 2,
+      "durationMinutes": 6,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Abdul-Muttalib went to meet Abraha. The king expected him to beg for the Kaaba to be spared. Instead, Abdul-Muttalib only asked for his camels back! Abraha was shocked and confused.",
+          "contentTextArabic": "ذهب عبد المطلب لمقابلة أبرهة. توقع الملك أن يتوسل لإنقاذ الكعبة. بدلاً من ذلك، طلب عبد المطلب فقط استرداد جماله! صُدم أبرهة وارتبك."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "\"I respected you when you came in,\" said Abraha, \"but now I lose respect for you. You come to ask about camels when I am about to destroy your sacred house?\" Abdul-Muttalib's answer showed deep faith.",
+          "contentTextArabic": "قال أبرهة: \"احترمتك عندما دخلت، لكني الآن أفقد احترامي لك. تأتي تسأل عن الجمال وأنا على وشك هدم بيتكم المقدس؟\" أظهر جواب عبد المطلب إيماناً عميقاً."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Abdul-Muttalib replied calmly: \"I am the owner of the camels, so I ask for them. As for the House, it has its own Lord who will protect it.\" He knew that only Allah could stop this mighty army.",
+          "contentTextArabic": "أجاب عبد المطلب بهدوء: \"أنا رب الإبل فأطلبها. وأما البيت فله رب سيحميه.\" كان يعلم أن الله وحده يستطيع إيقاف هذا الجيش الجبار."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Abdul-Muttalib took his camels and returned to Makkah. He told the people to leave the city and go to the mountains for safety. Before leaving, he stood at the Kaaba and made a powerful prayer to Allah.",
+          "contentTextArabic": "أخذ عبد المطلب جماله وعاد إلى مكة. أخبر الناس أن يغادروا المدينة ويذهبوا للجبال للسلامة. قبل المغادرة، وقف عند الكعبة ودعا الله دعاءً قوياً."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "He held the door of the Kaaba and prayed: \"O Allah! A servant protects his home, so protect Your House! Let not their cross overcome Your power tomorrow. If You leave them and our Qiblah, then do as You please.\"",
+          "contentTextArabic": "أمسك بباب الكعبة ودعا: \"اللهم! العبد يحمي بيته فاحم بيتك! لا يغلبن صليبهم غداً محالك. وإن تركتهم وقبلتنا فأمر ما بدا لك.\""
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "The people of Makkah fled to the hills surrounding the city. They watched from above, waiting to see what would happen. They had no weapons that could fight elephants. Their only hope was in Allah.",
+          "contentTextArabic": "فر أهل مكة إلى التلال المحيطة بالمدينة. راقبوا من فوق، منتظرين ما سيحدث. لم يكن لديهم أسلحة تستطيع محاربة الفيلة. كان أملهم الوحيد في الله."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What did Abdul-Muttalib mean when he said 'The House has its Lord'?",
+          "questionArabic": "ماذا قصد عبد المطلب عندما قال 'للبيت رب'؟",
+          "options": ["He owned the Kaaba", "Allah would protect it", "The king would protect it", "It didn't need protection"],
+          "optionsArabic": ["هو يملك الكعبة", "الله سيحميها", "الملك سيحميها", "لا تحتاج حماية"],
+          "correctIndex": 1,
+          "explanation": "Abdul-Muttalib trusted that Allah would protect His sacred House. He knew human power couldn't stop the elephant army, but Allah could.",
+          "explanationArabic": "وثق عبد المطلب أن الله سيحمي بيته المقدس. علم أن قوة البشر لا تستطيع إيقاف جيش الفيل، لكن الله يستطيع."
+        },
+        {
+          "question": "Where did the people of Makkah go?",
+          "questionArabic": "أين ذهب أهل مكة؟",
+          "options": ["They stayed to fight", "They went to the hills", "They went to Yemen", "They hid in the Kaaba"],
+          "optionsArabic": ["بقوا للقتال", "ذهبوا للتلال", "ذهبوا لليمن", "اختبأوا في الكعبة"],
+          "correctIndex": 1,
+          "explanation": "Abdul-Muttalib told the people to flee to the hills surrounding Makkah for safety while trusting Allah to protect the Kaaba.",
+          "explanationArabic": "أخبر عبد المطلب الناس أن يفروا للتلال المحيطة بمكة للسلامة بينما يثقون بالله أن يحمي الكعبة."
+        },
+        {
+          "question": "Why didn't the people of Makkah fight the army?",
+          "questionArabic": "لماذا لم يحارب أهل مكة الجيش؟",
+          "options": ["They were lazy", "They had no weapons to fight elephants", "They were friends with Abraha", "They wanted the Kaaba destroyed"],
+          "optionsArabic": ["كانوا كسالى", "لم يكن لديهم أسلحة لمحاربة الفيلة", "كانوا أصدقاء لأبرهة", "أرادوا هدم الكعبة"],
+          "correctIndex": 1,
+          "explanation": "The people of Makkah had no weapons that could fight against war elephants. Their only hope was in Allah's protection.",
+          "explanationArabic": "لم يكن لأهل مكة أسلحة تستطيع محاربة فيلة الحرب. كان أملهم الوحيد في حماية الله."
+        }
+      ]
+    },
+    {
+      "serverId": "elephant_lesson_3",
+      "title": "The Elephant Refuses",
+      "titleArabic": "الفيل يرفض",
+      "subtitle": "Mahmud will not attack the Kaaba",
+      "subtitleArabic": "محمود لن يهاجم الكعبة",
+      "sortOrder": 3,
+      "durationMinutes": 6,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "The next morning, Abraha's army prepared to attack. The soldiers mounted their horses, the archers readied their bows, and Mahmud the elephant was brought to lead the charge. The army began marching toward Makkah.",
+          "contentTextArabic": "في صباح اليوم التالي، استعد جيش أبرهة للهجوم. ركب الجنود خيولهم، وجهز الرماة أقواسهم، وأُحضر الفيل محمود ليقود الهجوم. بدأ الجيش يزحف نحو مكة."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "But something strange happened. When they pointed Mahmud toward the Kaaba, the mighty elephant refused to move! He sat down and would not budge. The soldiers pushed and pulled, but Mahmud would not stand.",
+          "contentTextArabic": "لكن شيئاً غريباً حدث. عندما وجهوا محموداً نحو الكعبة، رفض الفيل العظيم التحرك! جلس ولم يتزحزح. دفعه الجنود وجذبوه، لكن محموداً لم يقف."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "They beat him and prodded him with sharp sticks. They tried everything they could think of. But whenever they faced him toward the Kaaba, Mahmud would kneel down. It was as if an invisible force was stopping him.",
+          "contentTextArabic": "ضربوه ونخسوه بعصي حادة. جربوا كل ما استطاعوا التفكير فيه. لكن كلما وجهوه نحو الكعبة، كان محمود يبرك. كأن قوة خفية توقفه."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Here is the amazing part: when they turned Mahmud toward Yemen, he would stand up and start walking! When they turned him toward Syria, he would walk. But the moment they faced him toward Makkah, he would sit down again!",
+          "contentTextArabic": "هذا هو الجزء المذهل: عندما أداروا محموداً نحو اليمن، كان يقف ويبدأ بالمشي! عندما أداروه نحو الشام، كان يمشي. لكن لحظة توجيهه نحو مكة، كان يجلس مرة أخرى!"
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Allah had put it in the elephant's heart not to attack His sacred House. Even this mighty animal, trained for war and destruction, could not disobey Allah's will. The elephant knew what Abraha did not understand.",
+          "contentTextArabic": "وضع الله في قلب الفيل ألا يهاجم بيته المقدس. حتى هذا الحيوان الجبار، المدرب للحرب والتدمير، لم يستطع عصيان إرادة الله. الفيل عرف ما لم يفهمه أبرهة."
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "The army was confused and frustrated. Their mightiest weapon refused to fight! But Abraha was stubborn. He refused to turn back. He would destroy the Kaaba even without the elephant. Little did he know what was coming next.",
+          "contentTextArabic": "ارتبك الجيش وأُحبط. أقوى سلاحهم رفض القتال! لكن أبرهة كان عنيداً. رفض العودة. سيهدم الكعبة حتى بدون الفيل. لم يكن يعلم ما سيأتي بعد ذلك."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What did elephant Mahmud do when faced toward the Kaaba?",
+          "questionArabic": "ماذا فعل الفيل محمود عندما وُجه نحو الكعبة؟",
+          "options": ["He charged forward", "He sat down and refused to move", "He ran away", "He attacked the soldiers"],
+          "optionsArabic": ["اندفع للأمام", "جلس ورفض التحرك", "هرب", "هاجم الجنود"],
+          "correctIndex": 1,
+          "explanation": "Mahmud would sit down and refuse to move whenever he was faced toward the Kaaba, but would walk in any other direction.",
+          "explanationArabic": "كان محمود يجلس ويرفض التحرك كلما وُجه نحو الكعبة، لكنه كان يمشي في أي اتجاه آخر."
+        },
+        {
+          "question": "In which directions would Mahmud walk?",
+          "questionArabic": "في أي اتجاهات كان محمود يمشي؟",
+          "options": ["Only toward Makkah", "Toward Yemen and Syria, but not Makkah", "He wouldn't walk at all", "Only backward"],
+          "optionsArabic": ["فقط نحو مكة", "نحو اليمن والشام، لكن ليس مكة", "لم يكن يمشي أبداً", "فقط للخلف"],
+          "correctIndex": 1,
+          "explanation": "Mahmud would walk toward Yemen or Syria, but would refuse to walk toward Makkah where the Kaaba was.",
+          "explanationArabic": "كان محمود يمشي نحو اليمن أو الشام، لكنه رفض المشي نحو مكة حيث الكعبة."
+        },
+        {
+          "question": "Why did the elephant refuse to attack the Kaaba?",
+          "questionArabic": "لماذا رفض الفيل مهاجمة الكعبة؟",
+          "options": ["He was tired", "Allah put it in his heart not to attack", "He was sick", "He was scared of the people"],
+          "optionsArabic": ["كان متعباً", "وضع الله في قلبه ألا يهاجم", "كان مريضاً", "كان خائفاً من الناس"],
+          "correctIndex": 1,
+          "explanation": "Allah put it in the elephant's heart not to attack His sacred House. Even animals obey Allah's will.",
+          "explanationArabic": "وضع الله في قلب الفيل ألا يهاجم بيته المقدس. حتى الحيوانات تطيع إرادة الله."
+        }
+      ]
+    },
+    {
+      "serverId": "elephant_lesson_4",
+      "title": "Birds from the Sky",
+      "titleArabic": "طيور من السماء",
+      "subtitle": "Allah sends His army",
+      "subtitleArabic": "الله يرسل جيشه",
+      "sortOrder": 4,
+      "durationMinutes": 6,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "While Abraha's army struggled with the elephant, something appeared on the horizon. The people watching from the hills saw it first - a dark cloud coming from the direction of the sea. But it wasn't a cloud.",
+          "contentTextArabic": "بينما كان جيش أبرهة يعاني مع الفيل، ظهر شيء في الأفق. رآه الناس الذين يراقبون من التلال أولاً - سحابة داكنة قادمة من جهة البحر. لكنها لم تكن سحابة."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "It was birds - thousands and thousands of birds! They came in waves, darkening the sky. The Quran calls them 'Ababil' - birds flying in flocks. Each bird carried small stones, one in its beak and one in each claw.",
+          "contentTextArabic": "كانت طيوراً - آلاف وآلاف الطيور! جاءت في موجات، تحجب السماء. يسميها القرآن 'أبابيل' - طيور تطير في أسراب. كل طائر يحمل حجارة صغيرة، واحدة في منقاره وواحدة في كل مخلب."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "These were not ordinary stones. They were stones of baked clay, and they were marked. When the birds flew over Abraha's army, they released their stones. Each stone hit its target with deadly accuracy.",
+          "contentTextArabic": "لم تكن هذه حجارة عادية. كانت حجارة من سجيل مسومة. عندما طارت الطيور فوق جيش أبرهة، أسقطت حجارتها. كل حجرة أصابت هدفها بدقة قاتلة."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Wherever a stone struck a soldier, it went right through him! The mighty warriors fell one after another. The elephants were struck down. The horses fled in terror. The proud army of Abraha was being destroyed by tiny birds!",
+          "contentTextArabic": "أينما أصابت حجرة جندياً، اخترقته! سقط المحاربون الأشداء الواحد تلو الآخر. أُصيبت الفيلة. فرت الخيول مرعوبة. جيش أبرهة الفخور كان يُدمر بطيور صغيرة!"
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "The Quran describes what happened: Allah \"made them like eaten straw.\" The entire army was destroyed. Abraha himself was struck and fled, but the punishment followed him. He died a painful death before reaching Yemen.",
+          "contentTextArabic": "يصف القرآن ما حدث: جعلهم الله \"كعصف مأكول.\" دُمر الجيش بأكمله. أُصيب أبرهة نفسه وفر، لكن العقاب لحقه. مات موتاً مؤلماً قبل وصوله اليمن."
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "The people of Makkah watched in amazement from the hills. They had seen the power of Allah! The Kaaba stood untouched, protected by its Lord, just as Abdul-Muttalib had said. Allah's army of birds had defeated the army of elephants.",
+          "contentTextArabic": "راقب أهل مكة بدهشة من التلال. رأوا قدرة الله! الكعبة وقفت سالمة، محمية من ربها، كما قال عبد المطلب. جيش الله من الطيور هزم جيش الفيلة."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What did the Quran call the birds?",
+          "questionArabic": "ماذا سمى القرآن الطيور؟",
+          "options": ["Eagles", "Ababil", "Sparrows", "Hawks"],
+          "optionsArabic": ["نسور", "أبابيل", "عصافير", "صقور"],
+          "correctIndex": 1,
+          "explanation": "The Quran calls the birds 'Ababil' - birds that came in flocks to destroy Abraha's army.",
+          "explanationArabic": "سمى القرآن الطيور 'أبابيل' - طيور جاءت في أسراب لتدمير جيش أبرهة."
+        },
+        {
+          "question": "What were the birds carrying?",
+          "questionArabic": "ماذا كانت الطيور تحمل؟",
+          "options": ["Fire", "Stones of baked clay", "Water", "Sand"],
+          "optionsArabic": ["نار", "حجارة من سجيل", "ماء", "رمل"],
+          "correctIndex": 1,
+          "explanation": "Each bird carried stones of baked clay (sijjil) - one in its beak and one in each claw.",
+          "explanationArabic": "كل طائر حمل حجارة من سجيل - واحدة في منقاره وواحدة في كل مخلب."
+        },
+        {
+          "question": "What did the Quran say the army became like?",
+          "questionArabic": "ماذا قال القرآن أصبح الجيش؟",
+          "options": ["Dust", "Eaten straw", "Sand", "Nothing"],
+          "optionsArabic": ["تراب", "عصف مأكول", "رمل", "لا شيء"],
+          "correctIndex": 1,
+          "explanation": "The Quran says Allah 'made them like eaten straw' - completely destroyed and scattered.",
+          "explanationArabic": "يقول القرآن أن الله 'جعلهم كعصف مأكول' - دُمروا وتبعثروا تماماً."
+        }
+      ]
+    },
+    {
+      "serverId": "elephant_lesson_5",
+      "title": "Lessons from the Elephant",
+      "titleArabic": "دروس من الفيل",
+      "subtitle": "What this story teaches us",
+      "subtitleArabic": "ما تعلمنا هذه القصة",
+      "sortOrder": 5,
+      "durationMinutes": 6,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "This story happened in the same year Prophet Muhammad (peace be upon him) was born - just fifty days before his birth! The Arabs called it 'The Year of the Elephant' and never forgot this amazing event.",
+          "contentTextArabic": "حدثت هذه القصة في نفس السنة التي وُلد فيها النبي محمد صلى الله عليه وسلم - قبل خمسين يوماً فقط من ولادته! سماها العرب 'عام الفيل' ولم ينسوا هذا الحدث المذهل أبداً."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Allah revealed Surah Al-Fil about this event: \"Have you not seen how your Lord dealt with the People of the Elephant? Did He not make their plan go astray? And He sent against them birds in flocks, striking them with stones of baked clay, making them like eaten straw.\"",
+          "contentTextArabic": "أنزل الله سورة الفيل عن هذا الحدث: \"ألم تر كيف فعل ربك بأصحاب الفيل؟ ألم يجعل كيدهم في تضليل؟ وأرسل عليهم طيراً أبابيل، ترميهم بحجارة من سجيل، فجعلهم كعصف مأكول.\""
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "This story teaches us that Allah protects what He wills. The biggest army with the mightiest elephants was nothing compared to Allah's power. Small birds with tiny stones defeated them all!",
+          "contentTextArabic": "تعلمنا هذه القصة أن الله يحمي ما يشاء. أكبر جيش بأقوى الفيلة لم يكن شيئاً مقارنة بقدرة الله. طيور صغيرة بحجارة صغيرة هزمتهم جميعاً!"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "It also teaches us that even animals obey Allah. The elephant Mahmud knew not to attack Allah's House, even when his masters commanded him. Everything in creation submits to Allah's will.",
+          "contentTextArabic": "تعلمنا أيضاً أن حتى الحيوانات تطيع الله. الفيل محمود عرف ألا يهاجم بيت الله، حتى عندما أمره أسياده. كل شيء في الخلق يخضع لإرادة الله."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "The story shows us to trust in Allah like Abdul-Muttalib did. He couldn't fight elephants, but he knew Allah could protect His House. When we face problems bigger than us, we should trust in Allah's power.",
+          "contentTextArabic": "تُرينا القصة أن نثق في الله كما فعل عبد المطلب. لم يستطع محاربة الفيلة، لكنه علم أن الله يستطيع حماية بيته. عندما نواجه مشاكل أكبر منا، يجب أن نثق بقدرة الله."
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "Finally, this event prepared the Arabs for something even greater - the birth of Prophet Muhammad. Allah showed His power to protect the Kaaba, and soon He would send the greatest prophet to teach all of humanity the truth.",
+          "contentTextArabic": "أخيراً، هذا الحدث أعد العرب لشيء أعظم - ولادة النبي محمد. أظهر الله قدرته لحماية الكعبة، وسرعان ما سيرسل أعظم نبي ليعلم البشرية جمعاء الحق."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "When did the Year of the Elephant happen in relation to Prophet Muhammad's birth?",
+          "questionArabic": "متى حدث عام الفيل بالنسبة لولادة النبي محمد؟",
+          "options": ["100 years before", "50 days before", "10 years after", "The same day"],
+          "optionsArabic": ["100 سنة قبل", "50 يوماً قبل", "10 سنوات بعد", "نفس اليوم"],
+          "correctIndex": 1,
+          "explanation": "The Year of the Elephant happened about 50 days before Prophet Muhammad was born. The Arabs used this event to date his birth.",
+          "explanationArabic": "حدث عام الفيل قبل حوالي 50 يوماً من ولادة النبي محمد. استخدم العرب هذا الحدث لتأريخ ولادته."
+        },
+        {
+          "question": "Which surah tells this story?",
+          "questionArabic": "أي سورة تحكي هذه القصة؟",
+          "options": ["Surah Al-Baqarah", "Surah Al-Fil", "Surah An-Nas", "Surah Al-Fatiha"],
+          "optionsArabic": ["سورة البقرة", "سورة الفيل", "سورة الناس", "سورة الفاتحة"],
+          "correctIndex": 1,
+          "explanation": "Surah Al-Fil (The Elephant) tells the story of how Allah destroyed Abraha's army.",
+          "explanationArabic": "سورة الفيل تحكي قصة كيف أهلك الله جيش أبرهة."
+        },
+        {
+          "question": "What main lesson does this story teach?",
+          "questionArabic": "ما الدرس الرئيسي الذي تعلمه هذه القصة؟",
+          "options": ["Elephants are dangerous", "Allah protects what He wills", "Birds are powerful", "Never build churches"],
+          "optionsArabic": ["الفيلة خطيرة", "الله يحمي ما يشاء", "الطيور قوية", "لا تبنِ كنائس أبداً"],
+          "correctIndex": 1,
+          "explanation": "The main lesson is that Allah protects what He wills. No army, no matter how powerful, can succeed against Allah's will.",
+          "explanationArabic": "الدرس الرئيسي أن الله يحمي ما يشاء. لا جيش، مهما كان قوياً، يستطيع النجاح ضد إرادة الله."
+        }
+      ]
+    }
+  ]
+}

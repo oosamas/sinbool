@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/router/app_routes.dart';
+import '../../../../l10n/app_localizations.dart';
+import '../../../subscription/data/repositories/subscription_repository.dart';
+import '../../../subscription/domain/entities/subscription_status.dart';
 import '../../domain/entities/settings_entity.dart';
 import '../controllers/settings_controller.dart';
 
@@ -55,6 +59,12 @@ class SettingsPage extends ConsumerWidget {
                   subtitle: settings.audioAutoPlay ? 'Auto-play enabled' : 'Auto-play disabled',
                   onTap: () => _showAudioSettingsDialog(context, ref),
                 ),
+
+                const SizedBox(height: Spacing.lg),
+
+                // Subscription section
+                _SectionHeader(title: AppLocalizations.of(context)!.subscription),
+                _SubscriptionSection(),
 
                 const SizedBox(height: Spacing.lg),
 
@@ -355,6 +365,140 @@ class _AudioSettingsDialog extends ConsumerWidget {
           child: const Text('Done'),
         ),
       ],
+    );
+  }
+}
+
+class _SubscriptionSection extends ConsumerWidget {
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final subscriptionAsync = ref.watch(subscriptionStatusProvider);
+
+    return subscriptionAsync.when(
+      loading: () => const ListTile(
+        leading: SizedBox(
+          width: 40,
+          height: 40,
+          child: Center(child: CircularProgressIndicator(strokeWidth: 2)),
+        ),
+        title: Text('Loading...'),
+      ),
+      error: (error, stack) => _SettingsItem(
+        icon: Icons.star,
+        title: AppLocalizations.of(context)!.upgradeToPremium,
+        subtitle: AppLocalizations.of(context)!.freeUser,
+        onTap: () => context.push(AppRoutes.paywall),
+      ),
+      data: (status) {
+        if (status.isActive) {
+          // Show active subscription info
+          return Column(
+            children: [
+              _SubscriptionStatusTile(status: status),
+              _SettingsItem(
+                icon: Icons.card_giftcard,
+                title: AppLocalizations.of(context)!.redeemPromoCode,
+                subtitle: 'Have another code?',
+                onTap: () => context.push(AppRoutes.promoCode),
+              ),
+            ],
+          );
+        } else {
+          // Show upgrade options
+          return Column(
+            children: [
+              _SettingsItem(
+                icon: Icons.star,
+                title: AppLocalizations.of(context)!.upgradeToPremium,
+                subtitle: AppLocalizations.of(context)!.freeUser,
+                onTap: () => context.push(AppRoutes.paywall),
+              ),
+              _SettingsItem(
+                icon: Icons.card_giftcard,
+                title: AppLocalizations.of(context)!.redeemPromoCode,
+                onTap: () => context.push(AppRoutes.promoCode),
+              ),
+            ],
+          );
+        }
+      },
+    );
+  }
+}
+
+class _SubscriptionStatusTile extends StatelessWidget {
+  const _SubscriptionStatusTile({required this.status});
+
+  final SubscriptionStatus status;
+
+  @override
+  Widget build(BuildContext context) {
+    String subtitle;
+    if (status.expiryDate != null) {
+      final dateStr = DateFormat.yMMMd().format(status.expiryDate!);
+      subtitle = AppLocalizations.of(context)!.subscriptionExpires(dateStr);
+    } else {
+      subtitle = status.type == SubscriptionType.promoCode
+          ? 'Via promo code: ${status.promoCode}'
+          : AppLocalizations.of(context)!.subscriptionActive;
+    }
+
+    return Container(
+      margin: const EdgeInsets.symmetric(
+        horizontal: Spacing.md,
+        vertical: Spacing.sm,
+      ),
+      padding: const EdgeInsets.all(Spacing.md),
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [AppColors.primary, AppColors.primaryLight],
+        ),
+        borderRadius: BorderRadius.circular(AppRadius.lg),
+      ),
+      child: Row(
+        children: [
+          Container(
+            width: 48,
+            height: 48,
+            decoration: BoxDecoration(
+              color: AppColors.secondary.withValues(alpha: 0.2),
+              shape: BoxShape.circle,
+            ),
+            child: const Icon(
+              Icons.star,
+              color: AppColors.secondary,
+              size: 28,
+            ),
+          ),
+          const SizedBox(width: Spacing.md),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  AppLocalizations.of(context)!.subscriptionActive,
+                  style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                    color: AppColors.textOnPrimary,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: Spacing.xxs),
+                Text(
+                  subtitle,
+                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                    color: AppColors.textOnPrimary.withValues(alpha: 0.9),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const Icon(
+            Icons.check_circle,
+            color: AppColors.secondary,
+            size: 28,
+          ),
+        ],
+      ),
     );
   }
 }

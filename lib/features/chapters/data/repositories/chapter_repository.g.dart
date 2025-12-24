@@ -196,5 +196,27 @@ class _ChapterProviderElement
   String get serverId => (origin as ChapterProvider).serverId;
 }
 
+String _$filteredChaptersHash() => r'bcadede05fd045b18e8a8a716e3edba19207e11c';
+
+/// Filtered chapters provider with search and category filter
+///
+/// Copied from [FilteredChapters].
+@ProviderFor(FilteredChapters)
+final filteredChaptersProvider =
+    AutoDisposeNotifierProvider<
+      FilteredChapters,
+      AsyncValue<List<ChapterEntity>>
+    >.internal(
+      FilteredChapters.new,
+      name: r'filteredChaptersProvider',
+      debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+          ? null
+          : _$filteredChaptersHash,
+      dependencies: null,
+      allTransitiveDependencies: null,
+    );
+
+typedef _$FilteredChapters =
+    AutoDisposeNotifier<AsyncValue<List<ChapterEntity>>>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

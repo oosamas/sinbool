@@ -1,0 +1,374 @@
+{
+  "chapter": {
+    "serverId": "animal_whale",
+    "title": "The Whale and Prophet Yunus",
+    "titleArabic": "الحوت والنبي يونس",
+    "description": "The fish that saved a prophet",
+    "descriptionArabic": "السمكة التي أنقذت نبياً",
+    "iconName": "pets",
+    "colorHex": "#01579B",
+    "sortOrder": 21
+  },
+  "lessons": [
+    {
+      "serverId": "whale_lesson_1",
+      "title": "The Prophet Who Left",
+      "titleArabic": "النبي الذي رحل",
+      "subtitle": "Yunus leaves his people",
+      "subtitleArabic": "يونس يترك قومه",
+      "sortOrder": 1,
+      "durationMinutes": 6,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Prophet Yunus (Jonah) was sent by Allah to the people of Nineveh, a great city with over a hundred thousand people. They had turned away from Allah and were doing many wrong things.",
+          "contentTextArabic": "أُرسل النبي يونس إلى أهل نينوى، مدينة عظيمة فيها أكثر من مئة ألف نسمة. ابتعدوا عن الله وكانوا يفعلون أشياء خاطئة كثيرة."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Yunus called his people to worship Allah alone and leave their bad ways. He preached day and night, warning them of Allah's punishment if they did not change. But the people refused to listen.",
+          "contentTextArabic": "دعا يونس قومه لعبادة الله وحده وترك طرقهم السيئة. وعظ ليلاً ونهاراً، محذراً إياهم من عذاب الله إن لم يتغيروا. لكن الناس رفضوا الاستماع."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Years passed, and still the people rejected his message. Yunus became frustrated and angry. He warned them one final time that Allah's punishment would come soon. Then, without waiting for Allah's permission, he left the city.",
+          "contentTextArabic": "مرت السنون، ولا يزال الناس يرفضون رسالته. أصاب يونس الإحباط والغضب. حذرهم مرة أخيرة أن عذاب الله قادم قريباً. ثم، دون انتظار إذن الله، غادر المدينة."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "This was Yunus's mistake. A prophet should not leave his mission until Allah tells him to. Yunus thought his job was done, but Allah had other plans. He went to the sea and boarded a ship, sailing away from Nineveh.",
+          "contentTextArabic": "كان هذا خطأ يونس. النبي لا ينبغي أن يترك مهمته حتى يأمره الله. ظن يونس أن عمله انتهى، لكن الله كان له خطط أخرى. ذهب للبحر وصعد سفينة، مبحراً بعيداً عن نينوى."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Meanwhile, something amazing happened in Nineveh. After Yunus left, the people saw dark clouds gathering and felt Allah's punishment approaching. They became terrified and finally believed!",
+          "contentTextArabic": "في هذه الأثناء، حدث شيء مذهل في نينوى. بعد رحيل يونس، رأى الناس سحباً داكنة تتجمع وشعروا بعذاب الله يقترب. أصابهم الرعب وآمنوا أخيراً!"
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "The entire city repented! Men, women, children, and even their animals went out to the desert. They cried and begged Allah for forgiveness. Because of their sincere repentance, Allah forgave them and removed the punishment.",
+          "contentTextArabic": "تابت المدينة بأكملها! الرجال والنساء والأطفال وحتى حيواناتهم خرجوا للصحراء. بكوا وتوسلوا لله المغفرة. بسبب توبتهم الصادقة، غفر الله لهم ورفع العذاب."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Where was Prophet Yunus sent?",
+          "questionArabic": "أين أُرسل النبي يونس؟",
+          "options": ["Makkah", "Madinah", "Nineveh", "Egypt"],
+          "optionsArabic": ["مكة", "المدينة", "نينوى", "مصر"],
+          "correctIndex": 2,
+          "explanation": "Yunus was sent to the people of Nineveh, a great city with over a hundred thousand people.",
+          "explanationArabic": "أُرسل يونس إلى أهل نينوى، مدينة عظيمة فيها أكثر من مئة ألف نسمة."
+        },
+        {
+          "question": "What mistake did Yunus make?",
+          "questionArabic": "ما الخطأ الذي ارتكبه يونس؟",
+          "options": ["He prayed too much", "He left without Allah's permission", "He was too patient", "He stayed too long"],
+          "optionsArabic": ["صلى كثيراً", "غادر دون إذن الله", "كان صبوراً جداً", "بقي طويلاً جداً"],
+          "correctIndex": 1,
+          "explanation": "Yunus left his people without waiting for Allah's permission. A prophet should wait for Allah's command before leaving his mission.",
+          "explanationArabic": "ترك يونس قومه دون انتظار إذن الله. النبي ينبغي أن ينتظر أمر الله قبل ترك مهمته."
+        },
+        {
+          "question": "What happened to the people of Nineveh after Yunus left?",
+          "questionArabic": "ماذا حدث لأهل نينوى بعد رحيل يونس؟",
+          "options": ["They were destroyed", "They repented and were forgiven", "They built a new city", "They followed Yunus"],
+          "optionsArabic": ["دُمروا", "تابوا وغُفر لهم", "بنوا مدينة جديدة", "تبعوا يونس"],
+          "correctIndex": 1,
+          "explanation": "When the people saw signs of punishment coming, they sincerely repented and Allah forgave them.",
+          "explanationArabic": "عندما رأى الناس علامات العذاب قادمة، تابوا بإخلاص وغفر الله لهم."
+        }
+      ]
+    },
+    {
+      "serverId": "whale_lesson_2",
+      "title": "Swallowed by the Whale",
+      "titleArabic": "ابتلعه الحوت",
+      "subtitle": "Yunus in the belly of the fish",
+      "subtitleArabic": "يونس في بطن الحوت",
+      "sortOrder": 2,
+      "durationMinutes": 7,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "While the people of Nineveh were being forgiven, Yunus was on a ship sailing across the sea. The ship was packed with passengers and cargo. Everything seemed fine at first, but then the weather changed.",
+          "contentTextArabic": "بينما كان أهل نينوى يُغفر لهم، كان يونس على سفينة تبحر عبر البحر. كانت السفينة مليئة بالركاب والبضائع. بدا كل شيء على ما يرام في البداية، لكن الطقس تغير."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "A terrible storm arose! The waves became huge, tossing the ship like a toy. The ship was too heavy and about to sink. The sailors decided they had to throw someone overboard to lighten the load.",
+          "contentTextArabic": "نشأت عاصفة رهيبة! أصبحت الأمواج ضخمة، تقذف السفينة كلعبة. كانت السفينة ثقيلة جداً وعلى وشك الغرق. قرر البحارة أن يلقوا أحداً في البحر لتخفيف الحمل."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "They drew lots to see who would be thrown overboard. Three times they drew, and three times the lot fell on Yunus! The sailors didn't want to throw him because he seemed like a good man, but the lot kept choosing him.",
+          "contentTextArabic": "أجروا قرعة لمعرفة من سيُلقى في البحر. ثلاث مرات أجروا القرعة، وثلاث مرات وقعت على يونس! لم يرد البحارة إلقاءه لأنه بدا رجلاً صالحاً، لكن القرعة استمرت تختاره."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Yunus understood this was a consequence of leaving his mission. He threw himself into the raging sea. As soon as he hit the water, Allah sent a huge whale that swallowed him whole!",
+          "contentTextArabic": "فهم يونس أن هذه عاقبة تركه لمهمته. ألقى بنفسه في البحر الهائج. بمجرد سقوطه في الماء، أرسل الله حوتاً ضخماً ابتلعه كاملاً!"
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Inside the whale's belly, it was dark - darkness within darkness. Yunus was in the darkness of the whale's stomach, in the darkness of the sea, in the darkness of the night. He could not see anything.",
+          "contentTextArabic": "داخل بطن الحوت، كان مظلماً - ظلمات بعضها فوق بعض. كان يونس في ظلمة بطن الحوت، في ظلمة البحر، في ظلمة الليل. لم يستطع رؤية أي شيء."
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "But the whale did not digest Yunus! Allah commanded the whale to keep him safe inside its belly. The whale became like a living prison, but also a place of protection. Yunus was alive, alone, and in complete darkness.",
+          "contentTextArabic": "لكن الحوت لم يهضم يونس! أمر الله الحوت أن يبقيه سالماً داخل بطنه. أصبح الحوت كسجن حي، لكنه أيضاً مكان حماية. كان يونس حياً، وحيداً، وفي ظلام تام."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why did the sailors throw someone overboard?",
+          "questionArabic": "لماذا ألقى البحارة أحداً في البحر؟",
+          "options": ["He was sick", "The ship was too heavy and about to sink", "He asked them to", "It was a tradition"],
+          "optionsArabic": ["كان مريضاً", "السفينة كانت ثقيلة جداً وعلى وشك الغرق", "طلب منهم ذلك", "كان تقليداً"],
+          "correctIndex": 1,
+          "explanation": "A terrible storm made the ship too heavy and it was about to sink. They drew lots to see who to throw overboard.",
+          "explanationArabic": "جعلت عاصفة رهيبة السفينة ثقيلة جداً وكانت على وشك الغرق. أجروا قرعة لمعرفة من يلقونه."
+        },
+        {
+          "question": "How many times did the lot fall on Yunus?",
+          "questionArabic": "كم مرة وقعت القرعة على يونس؟",
+          "options": ["Once", "Twice", "Three times", "Never"],
+          "optionsArabic": ["مرة", "مرتين", "ثلاث مرات", "أبداً"],
+          "correctIndex": 2,
+          "explanation": "The lot fell on Yunus three times, showing it was Allah's will for him to enter the sea.",
+          "explanationArabic": "وقعت القرعة على يونس ثلاث مرات، مظهرة أنها كانت إرادة الله أن يدخل البحر."
+        },
+        {
+          "question": "What happened when Yunus fell into the water?",
+          "questionArabic": "ماذا حدث عندما سقط يونس في الماء؟",
+          "options": ["He swam to shore", "A whale swallowed him", "He drowned", "A boat saved him"],
+          "optionsArabic": ["سبح للشاطئ", "ابتلعه حوت", "غرق", "أنقذته سفينة"],
+          "correctIndex": 1,
+          "explanation": "Allah sent a huge whale that swallowed Yunus whole, keeping him safe inside its belly.",
+          "explanationArabic": "أرسل الله حوتاً ضخماً ابتلع يونس كاملاً، حافظاً عليه سالماً داخل بطنه."
+        }
+      ]
+    },
+    {
+      "serverId": "whale_lesson_3",
+      "title": "The Prayer in Darkness",
+      "titleArabic": "الدعاء في الظلمات",
+      "subtitle": "Yunus calls out to Allah",
+      "subtitleArabic": "يونس ينادي الله",
+      "sortOrder": 3,
+      "durationMinutes": 7,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "In the darkness of the whale's belly, Yunus realized his mistake. He should not have left his people without Allah's permission. He had been impatient and angry. Now he understood and felt deep regret.",
+          "contentTextArabic": "في ظلمة بطن الحوت، أدرك يونس خطأه. لم يكن ينبغي أن يترك قومه دون إذن الله. كان قد فقد صبره وغضب. الآن فهم وشعر بندم عميق."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Yunus turned to Allah with a sincere heart. In that deep darkness, he made one of the most beautiful prayers ever recorded. This prayer is so special that Muslims still use it today when they are in trouble.",
+          "contentTextArabic": "توجه يونس إلى الله بقلب صادق. في تلك الظلمة العميقة، دعا بأحد أجمل الأدعية المسجلة. هذا الدعاء خاص جداً حتى أن المسلمين لا يزالون يستخدمونه اليوم عندما يكونون في ضيق."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Yunus cried out: \"La ilaha illa Anta, Subhanaka, inni kuntu min adh-dhalimin!\" This means: \"There is no god but You! Glory be to You! Indeed, I was among the wrongdoers!\"",
+          "contentTextArabic": "نادى يونس: \"لا إله إلا أنت سبحانك إني كنت من الظالمين!\" يعترف بخطئه ويسبح الله ويطلب المغفرة."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "This prayer has three parts: First, Yunus declared that there is no god but Allah - pure belief. Second, he glorified Allah - Subhanaka. Third, he admitted his mistake - he was among the wrongdoers. This is true repentance.",
+          "contentTextArabic": "هذا الدعاء له ثلاثة أجزاء: أولاً، أعلن يونس أنه لا إله إلا الله - إيمان خالص. ثانياً، سبح الله - سبحانك. ثالثاً، اعترف بخطئه - كان من الظالمين. هذه توبة حقيقية."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "The angels heard Yunus's prayer rising from the depths of the sea. They said to Allah: \"A familiar voice from a strange place!\" Allah said: \"That is My servant Yunus.\" The angels asked: \"The one whose good deeds used to rise to You?\" Allah said: \"Yes.\"",
+          "contentTextArabic": "سمعت الملائكة دعاء يونس يصعد من أعماق البحر. قالوا لله: \"صوت مألوف من مكان غريب!\" قال الله: \"ذلك عبدي يونس.\" سألت الملائكة: \"الذي كانت أعماله الصالحة ترتفع إليك؟\" قال: \"نعم.\""
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "Because Yunus had been among those who prayed and remembered Allah before this trouble, Allah accepted his prayer now. This teaches us to build our relationship with Allah in good times, so He will help us in hard times.",
+          "contentTextArabic": "لأن يونس كان من المسبحين الذين صلوا وذكروا الله قبل هذه الضيقة، قبل الله دعاءه الآن. هذا يعلمنا أن نبني علاقتنا مع الله في الأوقات الجيدة، ليساعدنا في الأوقات الصعبة."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What prayer did Yunus make inside the whale?",
+          "questionArabic": "ما الدعاء الذي دعاه يونس داخل الحوت؟",
+          "options": ["Help me!", "La ilaha illa Anta, Subhanaka, inni kuntu min adh-dhalimin", "Save me from the fish!", "I want to go home!"],
+          "optionsArabic": ["ساعدني!", "لا إله إلا أنت سبحانك إني كنت من الظالمين", "أنقذني من السمكة!", "أريد العودة للبيت!"],
+          "correctIndex": 1,
+          "explanation": "Yunus prayed 'La ilaha illa Anta, Subhanaka, inni kuntu min adh-dhalimin' - acknowledging Allah's oneness, glorifying Him, and admitting his mistake.",
+          "explanationArabic": "دعا يونس 'لا إله إلا أنت سبحانك إني كنت من الظالمين' - معترفاً بوحدانية الله، ومسبحاً إياه، ومعترفاً بخطئه."
+        },
+        {
+          "question": "What three things are in Yunus's prayer?",
+          "questionArabic": "ما الأشياء الثلاثة في دعاء يونس؟",
+          "options": ["Asking for food, water, and escape", "Belief in Allah, glorifying Allah, admitting his mistake", "Praising himself, blaming others, asking for revenge", "Crying, shouting, sleeping"],
+          "optionsArabic": ["طلب الطعام والماء والهرب", "الإيمان بالله وتسبيحه والاعتراف بخطئه", "مدح نفسه ولوم الآخرين وطلب الانتقام", "البكاء والصراخ والنوم"],
+          "correctIndex": 1,
+          "explanation": "The prayer contains: declaring no god but Allah (belief), Subhanaka (glorifying Allah), and admitting he was wrong (repentance).",
+          "explanationArabic": "الدعاء يحتوي: لا إله إلا أنت (الإيمان)، سبحانك (تسبيح الله)، والاعتراف أنه كان مخطئاً (التوبة)."
+        },
+        {
+          "question": "Why did Allah accept Yunus's prayer?",
+          "questionArabic": "لماذا قبل الله دعاء يونس؟",
+          "options": ["Because he was lucky", "Because he had prayed and remembered Allah before this trouble", "Because the whale asked for him", "Because the angels liked him"],
+          "optionsArabic": ["لأنه كان محظوظاً", "لأنه كان يصلي ويذكر الله قبل هذه الضيقة", "لأن الحوت طلب له", "لأن الملائكة أحبوه"],
+          "correctIndex": 1,
+          "explanation": "The Quran says 'Had he not been among those who glorify (Allah)...' - his previous worship of Allah helped save him now.",
+          "explanationArabic": "يقول القرآن 'فلولا أنه كان من المسبحين...' - عبادته السابقة لله ساعدته الآن."
+        }
+      ]
+    },
+    {
+      "serverId": "whale_lesson_4",
+      "title": "The Whale Releases Yunus",
+      "titleArabic": "الحوت يطلق يونس",
+      "subtitle": "Saved by Allah's mercy",
+      "subtitleArabic": "أُنقذ برحمة الله",
+      "sortOrder": 4,
+      "durationMinutes": 6,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Allah heard Yunus's sincere prayer and accepted his repentance. The Quran says: \"So We responded to him and saved him from the distress. And thus do We save the believers.\" Allah's mercy is always greater than His anger.",
+          "contentTextArabic": "سمع الله دعاء يونس الصادق وقبل توبته. يقول القرآن: \"فاستجبنا له ونجيناه من الغم وكذلك ننجي المؤمنين.\" رحمة الله دائماً أكبر من غضبه."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Allah commanded the whale to release Yunus. The great fish swam to the shore and gently placed Yunus on the beach. After the darkness of the whale's belly, Yunus was back in the light of day.",
+          "contentTextArabic": "أمر الله الحوت أن يُطلق يونس. سبحت السمكة العظيمة للشاطئ ووضعت يونس برفق على الشاطئ. بعد ظلمة بطن الحوت، عاد يونس لنور النهار."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "But Yunus was very weak and sick. His skin had become sensitive from the acids in the whale's stomach. He lay on the beach, unable to move, exposed to the hot sun. Allah had saved him, but he needed time to recover.",
+          "contentTextArabic": "لكن يونس كان ضعيفاً ومريضاً جداً. أصبح جلده حساساً من الأحماض في معدة الحوت. رقد على الشاطئ، غير قادر على الحركة، معرضاً للشمس الحارة. الله أنقذه، لكنه احتاج وقتاً للتعافي."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "So Allah caused a gourd plant (like a squash or pumpkin vine) to grow over Yunus. Its large leaves provided shade from the sun. The fruit gave him food and medicine. Allah took care of every detail of Yunus's recovery.",
+          "contentTextArabic": "فأنبت الله عليه شجرة من يقطين. أوراقها الكبيرة وفرت ظلاً من الشمس. ثمارها أعطته طعاماً ودواء. الله اهتم بكل تفصيل في تعافي يونس."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Gradually, Yunus regained his strength. The plant protected him while his skin healed. The experience in the whale had changed him - he was now more patient, more grateful, and more humble before Allah.",
+          "contentTextArabic": "تدريجياً، استعاد يونس قوته. حمته الشجرة بينما شُفي جلده. تجربته في الحوت غيرته - أصبح الآن أكثر صبراً وامتناناً وتواضعاً أمام الله."
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "The whale had been an instrument of both punishment and protection. Inside it, Yunus learned one of life's most important lessons: never give up hope in Allah's mercy, but also never act without His guidance.",
+          "contentTextArabic": "كان الحوت أداة للعقوبة والحماية معاً. داخله، تعلم يونس أحد أهم دروس الحياة: لا تفقد الأمل أبداً في رحمة الله، لكن أيضاً لا تتصرف أبداً دون هدايته."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Where did the whale put Yunus?",
+          "questionArabic": "أين وضع الحوت يونس؟",
+          "options": ["On an island", "On the beach shore", "Back on the ship", "In a cave"],
+          "optionsArabic": ["على جزيرة", "على شاطئ البحر", "على السفينة مجدداً", "في كهف"],
+          "correctIndex": 1,
+          "explanation": "The whale swam to shore and gently placed Yunus on the beach.",
+          "explanationArabic": "سبح الحوت للشاطئ ووضع يونس برفق على الشاطئ."
+        },
+        {
+          "question": "What plant did Allah grow to help Yunus?",
+          "questionArabic": "ما النبات الذي أنبته الله ليساعد يونس؟",
+          "options": ["A palm tree", "A gourd plant (yaqtin)", "A rose bush", "An olive tree"],
+          "optionsArabic": ["نخلة", "شجرة يقطين", "شجيرة ورد", "شجرة زيتون"],
+          "correctIndex": 1,
+          "explanation": "Allah grew a gourd plant (yaqtin) over Yunus to provide shade, food, and medicine for his recovery.",
+          "explanationArabic": "أنبت الله شجرة يقطين على يونس لتوفر له الظل والطعام والدواء لتعافيه."
+        },
+        {
+          "question": "Why did Yunus need the plant's shade?",
+          "questionArabic": "لماذا احتاج يونس لظل النبات؟",
+          "options": ["He wanted to sleep", "His skin was sensitive from being inside the whale", "He was cold", "He wanted privacy"],
+          "optionsArabic": ["أراد أن ينام", "جلده كان حساساً من وجوده داخل الحوت", "كان يشعر بالبرد", "أراد الخصوصية"],
+          "correctIndex": 1,
+          "explanation": "Yunus's skin had become sensitive from the acids in the whale's stomach and needed protection from the sun.",
+          "explanationArabic": "أصبح جلد يونس حساساً من الأحماض في معدة الحوت واحتاج للحماية من الشمس."
+        }
+      ]
+    },
+    {
+      "serverId": "whale_lesson_5",
+      "title": "Lessons from the Whale",
+      "titleArabic": "دروس من الحوت",
+      "subtitle": "What this story teaches us",
+      "subtitleArabic": "ما تعلمنا هذه القصة",
+      "sortOrder": 5,
+      "durationMinutes": 6,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "When Yunus recovered, Allah sent him back to his people in Nineveh. But when he arrived, he found something wonderful - the entire city had already believed! They had repented while he was inside the whale.",
+          "contentTextArabic": "عندما تعافى يونس، أرسله الله إلى قومه في نينوى. لكن عندما وصل، وجد شيئاً رائعاً - المدينة بأكملها قد آمنت! تابوا بينما كان داخل الحوت."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Yunus is called 'Dhun-Nun' (The One of the Fish) in the Quran. His story is mentioned in several places. Allah praised his prayer and said that anyone who calls upon Allah with his prayer will be answered.",
+          "contentTextArabic": "يُسمى يونس 'ذا النون' (صاحب الحوت) في القرآن. قصته مذكورة في عدة أماكن. مدح الله دعاءه وقال أن من يدعو الله بدعائه سيُستجاب له."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Prophet Muhammad (peace be upon him) said: \"The prayer of my brother Dhun-Nun: 'La ilaha illa Anta, Subhanaka, inni kuntu min adh-dhalimin' - no Muslim who prays to Allah with this prayer for anything will be refused.\"",
+          "contentTextArabic": "قال النبي محمد صلى الله عليه وسلم: \"دعوة أخي ذي النون: 'لا إله إلا أنت سبحانك إني كنت من الظالمين' - ما دعا بها مسلم في شيء إلا استجاب الله له.\""
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "The whale teaches us that Allah uses all of creation to fulfill His plans. The whale that could have killed Yunus became his protector. Sometimes what seems like punishment is actually protection in disguise.",
+          "contentTextArabic": "يعلمنا الحوت أن الله يستخدم كل الخلق لتحقيق خططه. الحوت الذي كان يمكن أن يقتل يونس أصبح حاميه. أحياناً ما يبدو عقوبة هو في الحقيقة حماية متنكرة."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "The story teaches patience. Yunus became impatient with his people and left. But Allah teaches us: \"Do not be like the companion of the fish when he called out while he was distressed.\" We must be patient in our duties.",
+          "contentTextArabic": "تعلمنا القصة الصبر. فقد يونس صبره مع قومه ورحل. لكن الله يعلمنا: \"ولا تكن كصاحب الحوت إذ نادى وهو مكظوم.\" يجب أن نصبر في واجباتنا."
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "Most importantly, the story teaches that it's never too late to turn back to Allah. Even from the belly of a whale at the bottom of the sea, Yunus's prayer reached Allah and was answered. No matter how lost you feel, Allah is always near.",
+          "contentTextArabic": "الأهم، تعلمنا القصة أنه لم يفت الأوان أبداً للعودة لله. حتى من بطن حوت في قاع البحر، وصل دعاء يونس لله واستُجيب له. مهما شعرت بالضياع، الله دائماً قريب."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What did Yunus find when he returned to Nineveh?",
+          "questionArabic": "ماذا وجد يونس عندما عاد لنينوى؟",
+          "options": ["The city was destroyed", "Everyone had believed and repented", "The people attacked him", "The city was empty"],
+          "optionsArabic": ["المدينة دُمرت", "الجميع آمنوا وتابوا", "هاجمه الناس", "المدينة كانت فارغة"],
+          "correctIndex": 1,
+          "explanation": "While Yunus was in the whale, the people of Nineveh had repented and believed, so Allah forgave them.",
+          "explanationArabic": "بينما كان يونس في الحوت، تاب أهل نينوى وآمنوا، فغفر الله لهم."
+        },
+        {
+          "question": "What is Yunus's other name in the Quran?",
+          "questionArabic": "ما اسم يونس الآخر في القرآن؟",
+          "options": ["Dhul-Kifl", "Dhun-Nun (The One of the Fish)", "Dhul-Qarnayn", "Al-Khidr"],
+          "optionsArabic": ["ذو الكفل", "ذو النون (صاحب الحوت)", "ذو القرنين", "الخضر"],
+          "correctIndex": 1,
+          "explanation": "Yunus is called 'Dhun-Nun' which means 'The One of the Fish' or 'The One of the Whale.'",
+          "explanationArabic": "يُسمى يونس 'ذا النون' أي 'صاحب الحوت' أو 'صاحب السمكة.'"
+        },
+        {
+          "question": "What does Yunus's story teach us most?",
+          "questionArabic": "ما أهم ما تعلمنا قصة يونس؟",
+          "options": ["Never go on ships", "Be afraid of fish", "It's never too late to turn back to Allah", "Whales are dangerous"],
+          "optionsArabic": ["لا تركب السفن أبداً", "خف من السمك", "لم يفت الأوان أبداً للعودة لله", "الحيتان خطيرة"],
+          "correctIndex": 2,
+          "explanation": "The most important lesson is that no matter how far you've gone or how lost you feel, Allah's mercy is always available if you sincerely turn to Him.",
+          "explanationArabic": "أهم درس أنه مهما ابتعدت أو شعرت بالضياع، رحمة الله متاحة دائماً إذا توجهت إليه بإخلاص."
+        }
+      ]
+    }
+  ]
+}

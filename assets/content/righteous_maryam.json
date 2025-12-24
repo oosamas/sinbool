@@ -1,0 +1,386 @@
+{
+  "chapter": {
+    "serverId": "righteous_maryam",
+    "title": "Maryam the Righteous",
+    "titleArabic": "مريم الصدّيقة",
+    "description": "The story of Maryam, the blessed mother of Prophet Isa, one of the greatest women in history",
+    "descriptionArabic": "قصة مريم، أم النبي عيسى المباركة، واحدة من أعظم النساء في التاريخ",
+    "iconName": "maryam",
+    "colorHex": "#7B1FA2",
+    "sortOrder": 14
+  },
+  "lessons": [
+    {
+      "serverId": "righteous_maryam_lesson_1",
+      "title": "A Special Promise",
+      "titleArabic": "وعد خاص",
+      "sortOrder": 1,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Long ago, there lived a righteous woman named Hannah. She was the wife of Imran, from a noble and pious family. Hannah longed to have a child and made a special promise to Allah.",
+          "contentTextArabic": "منذ زمن بعيد، عاشت امرأة صالحة اسمها حنة. كانت زوجة عمران، من عائلة نبيلة وتقية. تمنت حنة أن يكون لها طفل وقطعت وعداً خاصاً لله."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Hannah prayed to Allah: 'My Lord, I have vowed to You what is in my womb, dedicated to Your service. So accept this from me.' She promised that her child would serve Allah in the temple.",
+          "contentTextArabic": "دعت حنة الله: 'رب إني نذرت لك ما في بطني محرراً فتقبل مني.' وعدت أن يخدم طفلها الله في المعبد."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "When the baby was born, it was a girl! Hannah named her Maryam. She said, 'My Lord, I have given birth to a female.' In those days, only boys served in the temple, but Allah had a special plan.",
+          "contentTextArabic": "عندما وُلد الطفل، كانت بنتاً! سمتها حنة مريم. قالت: 'رب إني وضعتها أنثى.' في تلك الأيام، كان الأولاد فقط يخدمون في المعبد، لكن الله كان لديه خطة خاصة."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Allah accepted baby Maryam with beautiful acceptance. The Quran tells us that Allah made her grow up in a beautiful way. She would become one of the greatest women ever created.",
+          "contentTextArabic": "تقبل الله الطفلة مريم بقبول حسن. يخبرنا القرآن أن الله أنبتها نباتاً حسناً. ستصبح واحدة من أعظم النساء على الإطلاق."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Prophet Zakariya, a wise and elderly prophet, became Maryam's guardian. He took care of her and raised her in the ways of faith. Maryam grew up devoted to worshipping Allah.",
+          "contentTextArabic": "أصبح النبي زكريا، النبي الحكيم المسن، كفيل مريم. اعتنى بها ورباها على طرق الإيمان. نشأت مريم متفانية في عبادة الله."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What promise did Hannah make to Allah?",
+          "questionArabic": "ما الوعد الذي قطعته حنة لله؟",
+          "options": ["To give charity", "To dedicate her child to Allah's service", "To fast every day", "To travel far"],
+          "optionsArabic": ["أن تتصدق", "أن تُكرّس طفلها لخدمة الله", "أن تصوم كل يوم", "أن تسافر بعيداً"],
+          "correctIndex": 1,
+          "explanation": "Hannah vowed to dedicate her child to serving Allah in the temple.",
+          "explanationArabic": "نذرت حنة أن تُكرّس طفلها لخدمة الله في المعبد."
+        },
+        {
+          "question": "Who became Maryam's guardian?",
+          "questionArabic": "من أصبح كفيل مريم؟",
+          "options": ["Prophet Ibrahim", "Prophet Zakariya", "Prophet Musa", "Prophet Dawud"],
+          "optionsArabic": ["النبي إبراهيم", "النبي زكريا", "النبي موسى", "النبي داود"],
+          "correctIndex": 1,
+          "explanation": "Prophet Zakariya became Maryam's guardian and raised her in the ways of faith.",
+          "explanationArabic": "أصبح النبي زكريا كفيل مريم ورباها على طرق الإيمان."
+        },
+        {
+          "question": "How did Allah accept baby Maryam?",
+          "questionArabic": "كيف تقبل الله الطفلة مريم؟",
+          "options": ["He rejected her", "With beautiful acceptance", "With conditions", "After many years"],
+          "optionsArabic": ["رفضها", "بقبول حسن", "بشروط", "بعد سنوات عديدة"],
+          "correctIndex": 1,
+          "explanation": "Allah accepted Maryam with beautiful acceptance and made her grow up in a beautiful way.",
+          "explanationArabic": "تقبل الله مريم بقبول حسن وأنبتها نباتاً حسناً."
+        }
+      ]
+    },
+    {
+      "serverId": "righteous_maryam_lesson_2",
+      "title": "Miracles in the Temple",
+      "titleArabic": "معجزات في المحراب",
+      "sortOrder": 2,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Maryam had a special room in the temple called a mihrab, where she would worship Allah. She spent her days and nights in prayer, remembrance of Allah, and devotion.",
+          "contentTextArabic": "كان لمريم غرفة خاصة في المعبد تُسمى المحراب، حيث كانت تعبد الله. قضت أيامها ولياليها في الصلاة وذكر الله والتعبد."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Something miraculous would happen whenever Prophet Zakariya visited her. He would find fresh fruits with her - fruits that were out of season! In winter, she had summer fruits. In summer, she had winter fruits.",
+          "contentTextArabic": "كان شيء معجز يحدث كلما زارها النبي زكريا. كان يجد عندها فواكه طازجة - فواكه في غير موسمها! في الشتاء، كان عندها فواكه الصيف. وفي الصيف، فواكه الشتاء."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Zakariya asked in amazement, 'O Maryam, where did you get this from?' Maryam answered simply, 'It is from Allah. Indeed, Allah provides for whoever He wills without limit.'",
+          "contentTextArabic": "سأل زكريا بدهشة: 'يا مريم أنى لك هذا؟' أجابت مريم ببساطة: 'هو من عند الله. إن الله يرزق من يشاء بغير حساب.'"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "This miracle showed Zakariya that nothing is impossible for Allah. It inspired him to ask Allah for a child, even though he was very old. Allah granted him a son named Yahya (John).",
+          "contentTextArabic": "أظهرت هذه المعجزة لزكريا أنه لا شيء مستحيل على الله. ألهمته أن يسأل الله ولداً، رغم أنه كان كبيراً جداً في السن. فرزقه الله ابناً اسمه يحيى."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Maryam continued to grow in faith and devotion. The Quran tells us that Allah chose her and purified her, and chose her above all the women of the worlds. She was truly special.",
+          "contentTextArabic": "استمرت مريم في النمو بالإيمان والتعبد. يخبرنا القرآن أن الله اصطفاها وطهرها واصطفاها على نساء العالمين. كانت حقاً مميزة."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What miracle happened with Maryam's food?",
+          "questionArabic": "ما المعجزة التي حدثت مع طعام مريم؟",
+          "options": ["She never ate", "She had fruits out of season", "She grew her own food", "Animals brought her food"],
+          "optionsArabic": ["لم تأكل أبداً", "كان عندها فواكه في غير موسمها", "زرعت طعامها بنفسها", "جلبت لها الحيوانات طعاماً"],
+          "correctIndex": 1,
+          "explanation": "Allah provided Maryam with fresh fruits out of season - summer fruits in winter and vice versa.",
+          "explanationArabic": "رزق الله مريم فواكه طازجة في غير موسمها - فواكه الصيف في الشتاء والعكس."
+        },
+        {
+          "question": "What did Maryam say when asked where the food came from?",
+          "questionArabic": "ماذا قالت مريم عندما سُئلت من أين جاء الطعام؟",
+          "options": ["She bought it", "It is from Allah", "She found it outside", "Her family brought it"],
+          "optionsArabic": ["اشترته", "هو من عند الله", "وجدته في الخارج", "جلبته عائلتها"],
+          "correctIndex": 1,
+          "explanation": "Maryam said the food was from Allah, who provides without limit for whoever He wills.",
+          "explanationArabic": "قالت مريم إن الطعام من عند الله، الذي يرزق من يشاء بغير حساب."
+        },
+        {
+          "question": "What does the Quran say about Maryam's status?",
+          "questionArabic": "ماذا يقول القرآن عن مكانة مريم؟",
+          "options": ["She was ordinary", "Allah chose her above all women of the worlds", "She was not special", "She was forgotten"],
+          "optionsArabic": ["كانت عادية", "اصطفاها الله على نساء العالمين", "لم تكن مميزة", "نُسيت"],
+          "correctIndex": 1,
+          "explanation": "The Quran states that Allah chose Maryam and purified her and chose her above all women of the worlds.",
+          "explanationArabic": "يذكر القرآن أن الله اصطفى مريم وطهرها واصطفاها على نساء العالمين."
+        }
+      ]
+    },
+    {
+      "serverId": "righteous_maryam_lesson_3",
+      "title": "The Angel's Visit",
+      "titleArabic": "زيارة الملَك",
+      "sortOrder": 3,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "One day, while Maryam was alone in her place of worship, something extraordinary happened. An angel appeared before her in the form of a perfect human being. It was the angel Jibreel.",
+          "contentTextArabic": "في يوم من الأيام، بينما كانت مريم وحدها في محرابها، حدث شيء غير عادي. ظهر أمامها ملَك في صورة بشر سوي. كان الملَك جبريل."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Maryam was frightened and said, 'I seek refuge in the Most Merciful from you, if you fear Allah!' She was a pure and modest woman who protected herself.",
+          "contentTextArabic": "خافت مريم وقالت: 'إني أعوذ بالرحمن منك إن كنت تقياً!' كانت امرأة طاهرة ومحتشمة تحمي نفسها."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "The angel replied, 'I am only the messenger of your Lord, to give you news of a pure son.' Maryam was amazed. 'How can I have a son when no man has touched me?' she asked.",
+          "contentTextArabic": "أجاب الملَك: 'إنما أنا رسول ربك لأهب لك غلاماً زكياً.' دهشت مريم. 'أنى يكون لي غلام ولم يمسسني بشر؟' سألت."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "The angel said, 'Thus says your Lord: It is easy for Me. And We will make him a sign to the people and a mercy from Us.' This child would be created by Allah's word 'Be' - and it is!",
+          "contentTextArabic": "قال الملَك: 'كذلك قال ربك هو عليّ هين ولنجعله آية للناس ورحمة منا.' سيُخلق هذا الطفل بكلمة الله 'كن' - فيكون!"
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "This is how Allah creates - He simply says 'Be' and it happens. The birth of Isa without a father was a miracle, just as the creation of Adam without parents was a miracle. Allah's power has no limits.",
+          "contentTextArabic": "هكذا يخلق الله - يقول 'كن' فيكون. كانت ولادة عيسى بدون أب معجزة، تماماً كما كان خلق آدم بدون والدين معجزة. قدرة الله لا حدود لها."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Who appeared to Maryam?",
+          "questionArabic": "من ظهر لمريم؟",
+          "options": ["Prophet Zakariya", "Angel Jibreel", "Prophet Musa", "Her family"],
+          "optionsArabic": ["النبي زكريا", "الملَك جبريل", "النبي موسى", "عائلتها"],
+          "correctIndex": 1,
+          "explanation": "Angel Jibreel appeared to Maryam in the form of a perfect human being.",
+          "explanationArabic": "ظهر الملَك جبريل لمريم في صورة بشر سوي."
+        },
+        {
+          "question": "What did the angel announce to Maryam?",
+          "questionArabic": "ماذا بشّر الملَك مريم؟",
+          "options": ["A journey", "A pure son", "A test", "A new home"],
+          "optionsArabic": ["رحلة", "غلام زكي", "اختبار", "بيت جديد"],
+          "correctIndex": 1,
+          "explanation": "The angel announced that Maryam would have a pure son - Prophet Isa.",
+          "explanationArabic": "بشّر الملَك مريم بغلام زكي - النبي عيسى."
+        },
+        {
+          "question": "How does Allah create things?",
+          "questionArabic": "كيف يخلق الله الأشياء؟",
+          "options": ["It takes many years", "He says 'Be' and it is", "He needs helpers", "It's very difficult"],
+          "optionsArabic": ["يستغرق سنوات عديدة", "يقول 'كن' فيكون", "يحتاج مساعدين", "صعب جداً"],
+          "correctIndex": 1,
+          "explanation": "Allah simply says 'Be' and it happens - His power has no limits.",
+          "explanationArabic": "الله يقول 'كن' فيكون - قدرته لا حدود لها."
+        }
+      ]
+    },
+    {
+      "serverId": "righteous_maryam_lesson_4",
+      "title": "The Birth of Isa",
+      "titleArabic": "ولادة عيسى",
+      "sortOrder": 4,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "When the time came for Maryam to give birth, she went to a distant place. The pains of childbirth led her to the trunk of a date palm tree. She was alone and worried about what people would say.",
+          "contentTextArabic": "عندما حان وقت ولادة مريم، ذهبت إلى مكان بعيد. قادتها آلام الولادة إلى جذع نخلة. كانت وحيدة وقلقة مما سيقوله الناس."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "In her distress, she said, 'Oh, I wish I had died before this!' But a voice called to her from below, comforting her. It told her not to grieve.",
+          "contentTextArabic": "في كربها، قالت: 'يا ليتني متّ قبل هذا!' لكن صوتاً ناداها من تحتها، يُطمئنها. أخبرها ألا تحزن."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "The voice said, 'Your Lord has provided beneath you a stream. And shake toward you the trunk of the palm tree; it will drop upon you fresh dates. So eat and drink and be content.'",
+          "contentTextArabic": "قال الصوت: 'قد جعل ربك تحتك سرياً. وهزي إليك بجذع النخلة تساقط عليك رطباً جنياً. فكلي واشربي وقرّي عيناً.'"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Allah provided for Maryam - a stream of water and fresh dates from the palm tree. She was not alone; Allah was taking care of her. She gave birth to baby Isa.",
+          "contentTextArabic": "رزق الله مريم - جدول ماء ورطب طازج من النخلة. لم تكن وحيدة؛ كان الله يرعاها. وضعت الطفل عيسى."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "She was told that if anyone asked about the baby, she should simply point to him and not speak. Allah would take care of everything. Maryam trusted Allah completely.",
+          "contentTextArabic": "قيل لها إذا سألها أحد عن الطفل، أن تشير إليه فقط ولا تتكلم. الله سيتولى كل شيء. وثقت مريم بالله ثقة كاملة."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Where did Maryam give birth to Isa?",
+          "questionArabic": "أين وضعت مريم عيسى؟",
+          "options": ["In the temple", "Near a date palm tree", "In her home", "In a city"],
+          "optionsArabic": ["في المعبد", "قرب نخلة", "في بيتها", "في مدينة"],
+          "correctIndex": 1,
+          "explanation": "Maryam gave birth near the trunk of a date palm tree in a distant place.",
+          "explanationArabic": "وضعت مريم طفلها قرب جذع نخلة في مكان بعيد."
+        },
+        {
+          "question": "What did Allah provide for Maryam?",
+          "questionArabic": "ماذا رزق الله مريم؟",
+          "options": ["Gold and silver", "A stream of water and fresh dates", "A house", "Many servants"],
+          "optionsArabic": ["ذهباً وفضة", "جدول ماء ورطباً جنياً", "بيتاً", "خدماً كثيرين"],
+          "correctIndex": 1,
+          "explanation": "Allah provided a stream of water beneath her and fresh dates from the palm tree.",
+          "explanationArabic": "رزقها الله جدول ماء تحتها ورطباً جنياً من النخلة."
+        },
+        {
+          "question": "What was Maryam told to do if people asked about the baby?",
+          "questionArabic": "ماذا قيل لمريم أن تفعل إذا سألها الناس عن الطفل؟",
+          "options": ["Run away", "Point to the baby and not speak", "Lie to them", "Hide the baby"],
+          "optionsArabic": ["أن تهرب", "أن تشير إليه ولا تتكلم", "أن تكذب عليهم", "أن تخفي الطفل"],
+          "correctIndex": 1,
+          "explanation": "Maryam was told to simply point to baby Isa and let Allah handle everything.",
+          "explanationArabic": "قيل لمريم أن تشير إلى الطفل عيسى فقط وتدع الله يتولى كل شيء."
+        }
+      ]
+    },
+    {
+      "serverId": "righteous_maryam_lesson_5",
+      "title": "The Baby Speaks",
+      "titleArabic": "الطفل يتكلم",
+      "sortOrder": 5,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Maryam returned to her people carrying baby Isa. When they saw her, they were shocked and upset. They accused her of doing something terrible, not understanding the miracle.",
+          "contentTextArabic": "عادت مريم إلى قومها تحمل الطفل عيسى. عندما رأوها، صُدموا وانزعجوا. اتهموها بفعل شيء فظيع، لم يفهموا المعجزة."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "They said, 'O Maryam, you have done something terrible! Your father was not a bad man, and your mother was not unchaste.' They didn't believe a baby could come without a father.",
+          "contentTextArabic": "قالوا: 'يا مريم لقد جئتِ شيئاً فرياً! ما كان أبوكِ امرأ سوء وما كانت أمكِ بغياً.' لم يصدقوا أن طفلاً يمكن أن يأتي بدون أب."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Maryam did not argue with them. She simply pointed to the baby, just as she had been told. The people were confused. 'How can we speak to a baby in the cradle?' they asked.",
+          "contentTextArabic": "لم تجادل مريم معهم. ببساطة أشارت إلى الطفل، كما قيل لها. تحير الناس. 'كيف نكلم من كان في المهد صبياً؟' سألوا."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Then something miraculous happened! Baby Isa spoke from the cradle! He said, 'Indeed, I am the servant of Allah. He has given me the Scripture and made me a prophet.'",
+          "contentTextArabic": "ثم حدث شيء معجز! تكلم الطفل عيسى من المهد! قال: 'إني عبد الله آتاني الكتاب وجعلني نبياً.'"
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Isa continued, 'He has made me blessed wherever I am, and commanded me to pray and give charity. And He made me dutiful to my mother.' This miracle proved Maryam's innocence and honored her forever.",
+          "contentTextArabic": "تابع عيسى: 'وجعلني مباركاً أينما كنت وأوصاني بالصلاة والزكاة. وبراً بوالدتي.' أثبتت هذه المعجزة براءة مريم وكرّمتها للأبد."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How did Maryam's people react when they saw the baby?",
+          "questionArabic": "كيف كان رد فعل قوم مريم عندما رأوا الطفل؟",
+          "options": ["They celebrated", "They were shocked and accused her", "They ignored her", "They welcomed her"],
+          "optionsArabic": ["احتفلوا", "صُدموا واتهموها", "تجاهلوها", "رحبوا بها"],
+          "correctIndex": 1,
+          "explanation": "The people were shocked and accused Maryam, not understanding the miracle.",
+          "explanationArabic": "صُدم الناس واتهموا مريم، لم يفهموا المعجزة."
+        },
+        {
+          "question": "What miracle happened when Maryam pointed to the baby?",
+          "questionArabic": "ما المعجزة التي حدثت عندما أشارت مريم إلى الطفل؟",
+          "options": ["He disappeared", "He spoke from the cradle", "He flew away", "He smiled"],
+          "optionsArabic": ["اختفى", "تكلم من المهد", "طار بعيداً", "ابتسم"],
+          "correctIndex": 1,
+          "explanation": "Baby Isa miraculously spoke from the cradle, declaring he was a servant and prophet of Allah.",
+          "explanationArabic": "تكلم الطفل عيسى بشكل معجز من المهد، معلناً أنه عبد الله ونبي."
+        },
+        {
+          "question": "What did baby Isa say about his mother?",
+          "questionArabic": "ماذا قال الطفل عيسى عن أمه؟",
+          "options": ["Nothing", "He was made dutiful to her", "She should leave", "He didn't know her"],
+          "optionsArabic": ["لا شيء", "أُوصي ببرها", "يجب أن تغادر", "لم يعرفها"],
+          "correctIndex": 1,
+          "explanation": "Isa said Allah had made him dutiful (kind and respectful) to his mother Maryam.",
+          "explanationArabic": "قال عيسى إن الله جعله باراً (طيباً ومحترماً) بوالدته مريم."
+        }
+      ]
+    },
+    {
+      "serverId": "righteous_maryam_lesson_6",
+      "title": "Lessons from Maryam",
+      "titleArabic": "دروس من مريم",
+      "sortOrder": 6,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Maryam's story teaches us the importance of complete trust in Allah. When she faced the hardest moments of her life, she put her trust in Allah, and He took care of everything.",
+          "contentTextArabic": "تعلمنا قصة مريم أهمية الثقة الكاملة بالله. عندما واجهت أصعب لحظات حياتها، وضعت ثقتها في الله، وتولى هو كل شيء."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "We learn that devotion to Allah brings special blessings. Maryam spent her life in worship, and Allah honored her above all women of the worlds. True worship is rewarded greatly.",
+          "contentTextArabic": "نتعلم أن التفاني في عبادة الله يجلب بركات خاصة. قضت مريم حياتها في العبادة، وكرّمها الله على نساء العالمين. العبادة الحقيقية تُكافأ بعظمة."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Maryam also teaches us about patience when people don't understand us. She faced harsh accusations but remained calm and let Allah defend her. Sometimes silence and patience are the best response.",
+          "contentTextArabic": "تعلمنا مريم أيضاً عن الصبر عندما لا يفهمنا الناس. واجهت اتهامات قاسية لكنها بقيت هادئة وتركت الله يدافع عنها. أحياناً الصمت والصبر هما أفضل رد."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "The whole Surah Maryam (Chapter 19) is named after her - a great honor! She is the only woman mentioned by name in the Quran. This shows how special she is in Islam.",
+          "contentTextArabic": "سورة كاملة سُميت باسمها - سورة مريم (الفصل 19) - شرف عظيم! هي المرأة الوحيدة المذكورة باسمها في القرآن. هذا يُظهر مكانتها الخاصة في الإسلام."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Prophet Muhammad said that the best women of paradise are Maryam, Khadijah, Fatimah, and Asiyah. Maryam's purity, faith, and devotion made her an example for all believers - men and women - for all time.",
+          "contentTextArabic": "قال النبي محمد إن أفضل نساء الجنة هن مريم وخديجة وفاطمة وآسية. جعلت طهارة مريم وإيمانها وتفانيها منها قدوة لكل المؤمنين - رجالاً ونساءً - لكل الأزمان."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is special about Surah Maryam?",
+          "questionArabic": "ما المميز في سورة مريم؟",
+          "options": ["It's the longest surah", "It's named after Maryam - a great honor", "It's the first surah", "It's the shortest surah"],
+          "optionsArabic": ["أطول سورة", "سُميت باسم مريم - شرف عظيم", "أول سورة", "أقصر سورة"],
+          "correctIndex": 1,
+          "explanation": "Surah Maryam (Chapter 19) is named after her - she's the only woman mentioned by name in the Quran.",
+          "explanationArabic": "سورة مريم (الفصل 19) سُميت باسمها - هي المرأة الوحيدة المذكورة باسمها في القرآن."
+        },
+        {
+          "question": "According to Prophet Muhammad, who are among the best women of paradise?",
+          "questionArabic": "حسب النبي محمد، من هن من أفضل نساء الجنة؟",
+          "options": ["Only queens", "Maryam, Khadijah, Fatimah, and Asiyah", "Only prophets' wives", "Only rich women"],
+          "optionsArabic": ["الملكات فقط", "مريم وخديجة وفاطمة وآسية", "زوجات الأنبياء فقط", "النساء الغنيات فقط"],
+          "correctIndex": 1,
+          "explanation": "Prophet Muhammad mentioned Maryam, Khadijah, Fatimah, and Asiyah as the best women of paradise.",
+          "explanationArabic": "ذكر النبي محمد أن مريم وخديجة وفاطمة وآسية من أفضل نساء الجنة."
+        },
+        {
+          "question": "What is the main lesson from Maryam's story?",
+          "questionArabic": "ما هو الدرس الرئيسي من قصة مريم؟",
+          "options": ["To argue with people", "Complete trust in Allah and devotion", "To be wealthy", "To be famous"],
+          "optionsArabic": ["الجدال مع الناس", "الثقة الكاملة بالله والتفاني", "أن تكون غنياً", "أن تكون مشهوراً"],
+          "correctIndex": 1,
+          "explanation": "Maryam's story teaches us about complete trust in Allah and devotion to worship.",
+          "explanationArabic": "تعلمنا قصة مريم الثقة الكاملة بالله والتفاني في العبادة."
+        }
+      ]
+    }
+  ]
+}

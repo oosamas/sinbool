@@ -55,15 +55,19 @@ class SettingsController extends _$SettingsController {
   /// Load settings
   Future<void> _loadSettings() async {
     try {
-      state = state.copyWith(isLoading: true);
+      // Don't set loading state here - initial state already has isLoading: true
       final settings = await _repository.getSettings();
-      state = state.copyWith(
+      state = SettingsState(
         settings: settings,
         isLoading: false,
         hasParentalPin: settings.parentalPinEnabled,
       );
     } catch (e) {
-      state = state.copyWith(error: e.toString(), isLoading: false);
+      state = SettingsState(
+        settings: AppSettingsEntity.defaultSettings,
+        isLoading: false,
+        error: e.toString(),
+      );
     }
   }
 

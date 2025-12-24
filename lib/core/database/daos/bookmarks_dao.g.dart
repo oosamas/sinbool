@@ -7,4 +7,5 @@ mixin _$BookmarksDaoMixin on DatabaseAccessor<AppDatabase> {
   $ChaptersTable get chapters => attachedDatabase.chapters;
   $LessonsTable get lessons => attachedDatabase.lessons;
   $BookmarksTable get bookmarks => attachedDatabase.bookmarks;
+  $LessonProgressTable get lessonProgress => attachedDatabase.lessonProgress;
 }

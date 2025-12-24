@@ -1,0 +1,469 @@
+{
+  "chapter": {
+    "serverId": "prophet_isa",
+    "title": "Prophet Isa",
+    "titleArabic": "النبي عيسى",
+    "description": "The Messiah - Born by a Miracle",
+    "descriptionArabic": "المسيح - المولود بمعجزة",
+    "iconName": "auto_stories",
+    "colorHex": "#0277BD",
+    "sortOrder": 6
+  },
+  "lessons": [
+    {
+      "serverId": "isa_lesson_1",
+      "title": "Maryam the Chosen One",
+      "titleArabic": "مريم المصطفاة",
+      "subtitle": "The pure woman chosen by Allah",
+      "subtitleArabic": "المرأة الطاهرة التي اختارها الله",
+      "sortOrder": 1,
+      "durationMinutes": 7,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Before the birth of Isa, there lived a righteous woman named Hannah. She was the wife of Imran and prayed for years to have a child. When she finally became pregnant, she made a vow to dedicate her child to the service of Allah at the temple.",
+          "contentTextArabic": "قبل ولادة عيسى، عاشت امرأة صالحة تُدعى حنة. كانت زوجة عمران ودعت لسنوات أن يكون لها ولد. عندما حملت أخيراً، نذرت أن تُكرس طفلها لخدمة الله في المعبد."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "When Hannah gave birth, she was surprised - she had a girl! In those days, only boys served in the temple. But Hannah kept her vow: \"My Lord, I have given birth to a female, and Allah knows best what I have delivered. I have named her Maryam.\"",
+          "contentTextArabic": "عندما ولدت حنة، فوجئت - كانت بنتاً! في تلك الأيام، الأولاد فقط كانوا يخدمون في المعبد. لكن حنة وفت بنذرها: \"رب إني وضعتها أنثى والله أعلم بما وضعت وإني سميتها مريم.\""
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Allah accepted Hannah's dedication and made Maryam grow up in purity and goodness. She was placed in the care of Prophet Zakariyya at the temple. Whenever he visited her prayer chamber, he found fresh food that was out of season!",
+          "contentTextArabic": "قبل الله تكريس حنة وجعل مريم تنشأ في طهارة وصلاح. وُضعت في رعاية النبي زكريا في المعبد. كلما زار محرابها، وجد طعاماً طازجاً في غير موسمه!"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "\"O Maryam, where does this come from?\" Zakariyya would ask in amazement. She would answer simply: \"It is from Allah. Indeed, Allah provides for whom He wills without limit.\" This showed the special status Allah had given her.",
+          "contentTextArabic": "\"يا مريم أنى لك هذا؟\" كان زكريا يسأل متعجباً. كانت تجيب ببساطة: \"هو من عند الله إن الله يرزق من يشاء بغير حساب.\" هذا أظهر المكانة الخاصة التي منحها الله لها."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Maryam spent her days in worship and devotion. The angels brought her glad tidings: \"O Maryam, indeed Allah has chosen you and purified you and chosen you above the women of the worlds.\" She was the most honored woman ever created.",
+          "contentTextArabic": "قضت مريم أيامها في العبادة والتفاني. جاءتها الملائكة ببشرى: \"يا مريم إن الله اصطفاك وطهرك واصطفاك على نساء العالمين.\" كانت أكرم امرأة خُلقت على الإطلاق."
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "The angels instructed her: \"O Maryam, be devoutly obedient to your Lord and prostrate and bow with those who bow.\" Maryam devoted herself even more to worship, praying long into the night and fasting during the day.",
+          "contentTextArabic": "أمرتها الملائكة: \"يا مريم اقنتي لربك واسجدي واركعي مع الراكعين.\" كرست مريم نفسها أكثر للعبادة، تصلي طويلاً في الليل وتصوم في النهار."
+        },
+        {
+          "pageNumber": 7,
+          "contentText": "Maryam was known for her modesty, purity, and complete devotion to Allah. She spoke little but prayed much. Her heart was pure and her faith was strong. Allah was preparing her for an incredible miracle - one that the world had never seen before.",
+          "contentTextArabic": "عُرفت مريم بحيائها وطهارتها وتفانيها الكامل لله. تكلمت قليلاً لكنها صلت كثيراً. كان قلبها طاهراً وإيمانها قوياً. كان الله يُعدها لمعجزة لا تُصدق - لم يرها العالم من قبل."
+        },
+        {
+          "pageNumber": 8,
+          "contentText": "Maryam is so honored in Islam that an entire surah (chapter) of the Quran is named after her - Surah Maryam. Prophet Muhammad (peace be upon him) said that Maryam is one of the four greatest women of Paradise. Her story teaches us that devotion to Allah leads to the greatest blessings.",
+          "contentTextArabic": "مريم مكرمة جداً في الإسلام حتى أن سورة كاملة من القرآن سُميت باسمها - سورة مريم. قال النبي محمد صلى الله عليه وسلم أن مريم من أفضل أربع نساء في الجنة. قصتها تعلمنا أن التفاني لله يؤدي لأعظم البركات."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Who was Maryam's mother?",
+          "questionArabic": "من كانت أم مريم؟",
+          "options": ["Sarah", "Hannah (wife of Imran)", "Hajar", "Asiya"],
+          "optionsArabic": ["سارة", "حنة (زوجة عمران)", "هاجر", "آسية"],
+          "correctIndex": 1,
+          "explanation": "Maryam's mother was Hannah, the wife of Imran. She dedicated Maryam to Allah's service before she was even born.",
+          "explanationArabic": "كانت أم مريم حنة، زوجة عمران. نذرت مريم لخدمة الله قبل ولادتها."
+        },
+        {
+          "question": "Who took care of Maryam at the temple?",
+          "questionArabic": "من رعى مريم في المعبد؟",
+          "options": ["Her father Imran", "Prophet Zakariyya", "The high priest", "Her uncle"],
+          "optionsArabic": ["أبوها عمران", "النبي زكريا", "الكاهن الأعظم", "عمها"],
+          "correctIndex": 1,
+          "explanation": "Prophet Zakariyya was given the responsibility of caring for Maryam at the temple.",
+          "explanationArabic": "أُعطي النبي زكريا مسؤولية رعاية مريم في المعبد."
+        },
+        {
+          "question": "What miracle did Zakariyya witness with Maryam?",
+          "questionArabic": "ما المعجزة التي شهدها زكريا مع مريم؟",
+          "options": ["She could fly", "Fresh food appeared to her out of season", "She could speak to animals", "She glowed in the dark"],
+          "optionsArabic": ["كانت تستطيع الطيران", "ظهر لها طعام طازج في غير موسمه", "كانت تستطيع التحدث مع الحيوانات", "كانت تتوهج في الظلام"],
+          "correctIndex": 1,
+          "explanation": "Zakariyya would find fresh fruits and food with Maryam that were out of season. She told him it was from Allah.",
+          "explanationArabic": "كان زكريا يجد فواكه وطعاماً طازجاً عند مريم في غير موسمها. أخبرته أنها من عند الله."
+        },
+        {
+          "question": "What does the Quran say about Maryam's status?",
+          "questionArabic": "ماذا يقول القرآن عن مكانة مريم؟",
+          "options": ["She was a prophet", "Allah chose her above all women of the worlds", "She was an angel", "She was a queen"],
+          "optionsArabic": ["كانت نبية", "اصطفاها الله على نساء العالمين", "كانت ملاكاً", "كانت ملكة"],
+          "correctIndex": 1,
+          "explanation": "The angels told Maryam that Allah had chosen her and purified her and selected her above all women of the worlds.",
+          "explanationArabic": "أخبرت الملائكة مريم أن الله اصطفاها وطهرها واصطفاها على نساء العالمين."
+        }
+      ]
+    },
+    {
+      "serverId": "isa_lesson_2",
+      "title": "The Miraculous Birth",
+      "titleArabic": "الولادة المعجزة",
+      "subtitle": "Isa is born without a father",
+      "subtitleArabic": "عيسى يولد بلا أب",
+      "sortOrder": 2,
+      "durationMinutes": 8,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "One day, Maryam withdrew from her family to a place in the east, away from everyone. She was alone in prayer and contemplation when something extraordinary happened. She saw a man appear before her!",
+          "contentTextArabic": "ذات يوم، انتبذت مريم من أهلها مكاناً شرقياً، بعيداً عن الجميع. كانت وحدها في الصلاة والتأمل عندما حدث شيء غير عادي. رأت رجلاً يظهر أمامها!"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Maryam was frightened. She said: \"I seek refuge in the Most Merciful from you, if you fear Allah!\" But this was no ordinary man - it was the angel Jibreel, appearing in human form to deliver a message from Allah.",
+          "contentTextArabic": "خافت مريم. قالت: \"إني أعوذ بالرحمن منك إن كنت تقياً!\" لكن هذا لم يكن رجلاً عادياً - كان الملك جبريل، ظاهراً في شكل بشري ليوصل رسالة من الله."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Jibreel said: \"I am only a messenger from your Lord to give you news of a pure son.\" Maryam was confused. \"How can I have a son when no man has touched me and I have not been unchaste?\" she asked.",
+          "contentTextArabic": "قال جبريل: \"إنما أنا رسول ربك لأهب لك غلاماً زكياً.\" ارتبكت مريم. \"أنى يكون لي غلام ولم يمسسني بشر ولم أك بغياً؟\" سألت."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "The angel replied with Allah's answer: \"Thus says your Lord: 'It is easy for Me, and We will make him a sign for mankind and a mercy from Us. And it is a matter already decided.'\" When Allah wills something, He simply says \"Be!\" and it is.",
+          "contentTextArabic": "رد الملك بجواب الله: \"كذلك قال ربك: 'هو علي هين ولنجعله آية للناس ورحمة منا وكان أمراً مقضياً.'\" عندما يشاء الله شيئاً، يقول فقط \"كن!\" فيكون."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Just as Allah created Adam without a father or mother from dust, He created Isa in Maryam's womb without a father. The Quran says: \"Indeed, the example of Isa before Allah is like that of Adam. He created him from dust; then He said to him, 'Be,' and he was.\"",
+          "contentTextArabic": "كما خلق الله آدم بلا أب ولا أم من تراب، خلق عيسى في رحم مريم بلا أب. يقول القرآن: \"إن مثل عيسى عند الله كمثل آدم خلقه من تراب ثم قال له كن فيكون.\""
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "When the time came for the birth, Maryam went to a remote place. The pains of childbirth drove her to the trunk of a palm tree. She cried out in distress, not knowing how she would explain this to her people.",
+          "contentTextArabic": "عندما حان وقت الولادة، ذهبت مريم إلى مكان ناءٍ. أجاءها المخاض إلى جذع نخلة. صاحت في كرب، لا تعرف كيف ستشرح هذا لقومها."
+        },
+        {
+          "pageNumber": 7,
+          "contentText": "Then a voice called to her from below: \"Do not grieve! Your Lord has provided beneath you a stream. Shake the trunk of the palm tree toward you - it will drop fresh, ripe dates upon you. Eat and drink and be content.\"",
+          "contentTextArabic": "ثم ناداها صوت من تحتها: \"ألا تحزني قد جعل ربك تحتك سرياً. وهزي إليك بجذع النخلة تساقط عليك رطباً جنياً. فكلي واشربي وقري عيناً.\""
+        },
+        {
+          "pageNumber": 8,
+          "contentText": "She was told: \"If anyone asks about the child, say you have vowed a fast of silence. Point to the baby and let him speak.\" Maryam trusted Allah's plan completely. She gave birth to Isa, a miracle child who would be a prophet and a sign for all mankind.",
+          "contentTextArabic": "قيل لها: \"إن سألك أحد عن الطفل، قولي أنك نذرت صوماً. أشيري إلى الطفل ودعيه يتكلم.\" وثقت مريم بخطة الله كاملة. ولدت عيسى، طفل معجزة سيكون نبياً وآية للعالمين."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Who appeared to Maryam to give her the news of a son?",
+          "questionArabic": "من ظهر لمريم ليبشرها بالولد؟",
+          "options": ["Prophet Zakariyya", "Angel Jibreel", "Her father", "A priest"],
+          "optionsArabic": ["النبي زكريا", "الملك جبريل", "أبوها", "كاهن"],
+          "correctIndex": 1,
+          "explanation": "Angel Jibreel appeared to Maryam in human form to deliver the news that she would have a son by Allah's command.",
+          "explanationArabic": "ظهر الملك جبريل لمريم في شكل بشري ليخبرها أنها ستحمل بولد بأمر الله."
+        },
+        {
+          "question": "How was Isa's creation similar to Adam's?",
+          "questionArabic": "كيف تشابه خلق عيسى بخلق آدم؟",
+          "options": ["Both were born in a garden", "Both were created by Allah's command without a human father", "Both lived the same number of years", "Both were born in the same place"],
+          "optionsArabic": ["كلاهما وُلد في حديقة", "كلاهما خُلق بأمر الله بدون أب بشري", "كلاهما عاش نفس عدد السنين", "كلاهما وُلد في نفس المكان"],
+          "correctIndex": 1,
+          "explanation": "Both Adam and Isa were created by Allah's direct command. Adam had no father or mother; Isa had no father. Allah said 'Be!' and they came into existence.",
+          "explanationArabic": "كلا آدم وعيسى خُلقا بأمر الله المباشر. آدم لم يكن له أب ولا أم؛ وعيسى لم يكن له أب. قال الله 'كن!' فكانا."
+        },
+        {
+          "question": "What did Allah provide for Maryam during childbirth?",
+          "questionArabic": "ماذا وفر الله لمريم أثناء الولادة؟",
+          "options": ["A house and servants", "A stream of water and dates from a palm tree", "Medicine and doctors", "Angels to help her"],
+          "optionsArabic": ["بيت وخدم", "جدول ماء وتمر من نخلة", "دواء وأطباء", "ملائكة لمساعدتها"],
+          "correctIndex": 1,
+          "explanation": "Allah provided a stream beneath her and made fresh dates fall from the palm tree when she shook it.",
+          "explanationArabic": "جعل الله تحتها جدولاً وأسقط لها رطباً جنياً من النخلة عندما هزتها."
+        },
+        {
+          "question": "What was Maryam told to do if people asked about the baby?",
+          "questionArabic": "ماذا قيل لمريم أن تفعل إذا سألها الناس عن الطفل؟",
+          "options": ["Explain everything", "Run away", "Point to the baby and let him speak", "Hide the baby"],
+          "optionsArabic": ["تشرح كل شيء", "تهرب", "تشير إلى الطفل وتدعه يتكلم", "تخفي الطفل"],
+          "correctIndex": 2,
+          "explanation": "Maryam was told to say she had vowed silence, then point to the baby Isa - who would miraculously speak and defend her.",
+          "explanationArabic": "قيل لمريم أن تقول أنها نذرت صوماً، ثم تشير إلى الطفل عيسى - الذي سيتكلم بمعجزة ويدافع عنها."
+        }
+      ]
+    },
+    {
+      "serverId": "isa_lesson_3",
+      "title": "The Baby Who Spoke",
+      "titleArabic": "الطفل الذي تكلم",
+      "subtitle": "Isa defends his mother from the cradle",
+      "subtitleArabic": "عيسى يدافع عن أمه من المهد",
+      "sortOrder": 3,
+      "durationMinutes": 7,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Maryam carried her newborn baby back to her people. When they saw her with a child, they were shocked and angry. \"O Maryam, you have done something terrible!\" they said. \"Your father was not an evil man, and your mother was not unchaste!\"",
+          "contentTextArabic": "حملت مريم طفلها حديث الولادة وعادت إلى قومها. عندما رأوها مع طفل، صُدموا وغضبوا. قالوا: \"يا مريم لقد جئت شيئاً فرياً! ما كان أبوك امرأ سوء وما كانت أمك بغياً!\""
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "The people accused Maryam of something shameful, not knowing the miraculous truth. But Maryam remembered Allah's instruction. She said nothing - she simply pointed to the baby in her arms.",
+          "contentTextArabic": "اتهم الناس مريم بشيء مخزٍ، غير عالمين بالحقيقة المعجزة. لكن مريم تذكرت أمر الله. لم تقل شيئاً - ببساطة أشارت إلى الطفل في ذراعيها."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "The people were amazed and confused. \"How can we speak to one who is a child in the cradle?\" they asked. They thought Maryam was mocking them. But then something unbelievable happened.",
+          "contentTextArabic": "دُهش الناس وارتبكوا. سألوا: \"كيف نكلم من كان في المهد صبياً؟\" ظنوا أن مريم تسخر منهم. لكن حدث شيء لا يُصدق."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Baby Isa spoke! From the cradle, the newborn infant said: \"Indeed, I am the servant of Allah. He has given me the Scripture and made me a prophet.\" Everyone stood frozen in amazement.",
+          "contentTextArabic": "تكلم الطفل عيسى! من المهد، قال الرضيع حديث الولادة: \"إني عبد الله آتاني الكتاب وجعلني نبياً.\" وقف الجميع مذهولين."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Isa continued: \"And He has made me blessed wherever I am and has commanded me to pray and give charity as long as I remain alive. And He has made me dutiful to my mother and has not made me arrogant or miserable.\"",
+          "contentTextArabic": "تابع عيسى: \"وجعلني مباركاً أينما كنت وأوصاني بالصلاة والزكاة ما دمت حياً. وبراً بوالدتي ولم يجعلني جباراً شقياً.\""
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "The baby concluded with words that would echo through time: \"And peace is on me the day I was born and the day I will die and the day I am raised alive.\" These were the first words of Prophet Isa, a miracle from Allah.",
+          "contentTextArabic": "اختتم الطفل بكلمات سترددها الأزمان: \"والسلام علي يوم ولدت ويوم أموت ويوم أبعث حياً.\" كانت هذه أول كلمات النبي عيسى، معجزة من الله."
+        },
+        {
+          "pageNumber": 7,
+          "contentText": "By this miracle, Allah defended Maryam's honor and announced Isa's prophethood. No one could doubt anymore - this child was special, chosen by Allah for a great mission. Maryam was proven innocent.",
+          "contentTextArabic": "بهذه المعجزة، دافع الله عن شرف مريم وأعلن نبوة عيسى. لم يعد أحد يستطيع الشك - هذا الطفل مميز، اختاره الله لمهمة عظيمة. ثبتت براءة مريم."
+        },
+        {
+          "pageNumber": 8,
+          "contentText": "This miracle teaches us that Allah protects those who are truthful and devoted to Him. Even when all seems lost, Allah can create ways out of difficulties that we cannot imagine. Maryam's trust in Allah was rewarded in the most amazing way.",
+          "contentTextArabic": "تعلمنا هذه المعجزة أن الله يحمي الصادقين المتفانين له. حتى عندما يبدو كل شيء ضائعاً، يمكن لله أن يخلق مخارج من الصعوبات لا نتخيلها. كوفئت ثقة مريم في الله بأروع طريقة."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How did the people react when they saw Maryam with a baby?",
+          "questionArabic": "كيف تفاعل الناس عندما رأوا مريم مع طفل؟",
+          "options": ["They were happy", "They accused her of doing something wrong", "They ignored her", "They celebrated"],
+          "optionsArabic": ["فرحوا", "اتهموها بفعل شيء خاطئ", "تجاهلوها", "احتفلوا"],
+          "correctIndex": 1,
+          "explanation": "The people accused Maryam of something shameful because they didn't understand that the child was born by Allah's miracle.",
+          "explanationArabic": "اتهم الناس مريم بشيء مخزٍ لأنهم لم يفهموا أن الطفل وُلد بمعجزة من الله."
+        },
+        {
+          "question": "What did baby Isa first call himself?",
+          "questionArabic": "ماذا سمى الطفل عيسى نفسه أولاً؟",
+          "options": ["The son of God", "A king", "The servant of Allah", "An angel"],
+          "optionsArabic": ["ابن الله", "ملك", "عبد الله", "ملاك"],
+          "correctIndex": 2,
+          "explanation": "The first thing baby Isa said was 'Indeed, I am the servant of Allah' - making clear his status as Allah's servant and prophet.",
+          "explanationArabic": "أول ما قاله الطفل عيسى كان 'إني عبد الله' - موضحاً مكانته كعبد ونبي لله."
+        },
+        {
+          "question": "What did Isa say Allah commanded him to do?",
+          "questionArabic": "ماذا قال عيسى أن الله أمره به؟",
+          "options": ["To be a king", "To pray and give charity", "To build a temple", "To travel the world"],
+          "optionsArabic": ["أن يكون ملكاً", "الصلاة والزكاة", "بناء معبد", "السفر حول العالم"],
+          "correctIndex": 1,
+          "explanation": "Isa said Allah commanded him to pray and give charity for as long as he lives - the core of worship in Islam.",
+          "explanationArabic": "قال عيسى أن الله أوصاه بالصلاة والزكاة ما دام حياً - جوهر العبادة في الإسلام."
+        },
+        {
+          "question": "What did this miracle prove about Maryam?",
+          "questionArabic": "ماذا أثبتت هذه المعجزة عن مريم؟",
+          "options": ["That she was guilty", "That she was innocent and pure", "That she was an angel", "That she was a prophet"],
+          "optionsArabic": ["أنها مذنبة", "أنها بريئة وطاهرة", "أنها ملاك", "أنها نبية"],
+          "correctIndex": 1,
+          "explanation": "When baby Isa spoke and explained he was Allah's prophet, it proved Maryam was innocent and her child was a miracle from Allah.",
+          "explanationArabic": "عندما تكلم الطفل عيسى وشرح أنه نبي الله، ثبتت براءة مريم وأن طفلها معجزة من الله."
+        }
+      ]
+    },
+    {
+      "serverId": "isa_lesson_4",
+      "title": "The Prophet of Miracles",
+      "titleArabic": "نبي المعجزات",
+      "subtitle": "Isa's incredible signs from Allah",
+      "subtitleArabic": "آيات عيسى المذهلة من الله",
+      "sortOrder": 4,
+      "durationMinutes": 8,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "When Isa grew up, Allah sent him as a prophet to the Children of Israel. He was given the Injeel (Gospel) - a book of guidance that confirmed the Torah that came before it and brought light to the people.",
+          "contentTextArabic": "عندما كبر عيسى، أرسله الله نبياً إلى بني إسرائيل. أُوتي الإنجيل - كتاب هداية يصدق التوراة التي جاءت قبله ويجلب النور للناس."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Isa told his people: \"I have come to you with a sign from your Lord.\" Allah gave him the power to perform miracles that no one else could do. These miracles were proof that he was truly sent by Allah.",
+          "contentTextArabic": "قال عيسى لقومه: \"قد جئتكم بآية من ربكم.\" أعطاه الله القدرة على فعل معجزات لا يستطيعها أحد غيره. كانت هذه المعجزات دليلاً على أنه مُرسل حقاً من الله."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "One of his miracles was creating birds from clay! Isa would form the shape of a bird from clay, then breathe into it, and by Allah's permission, it would become a real bird and fly away. This showed Allah's power to create life.",
+          "contentTextArabic": "إحدى معجزاته كانت خلق الطيور من الطين! كان عيسى يشكل هيئة طير من الطين، ثم ينفخ فيه، وبإذن الله، يصبح طيراً حقيقياً ويطير. هذا أظهر قدرة الله على خلق الحياة."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Isa could heal the sick by Allah's permission. He healed the blind, making them see. He healed those with leprosy, making their skin clean and healthy. These were conditions that no doctor could cure, but Allah gave Isa the power to heal them.",
+          "contentTextArabic": "كان عيسى يشفي المرضى بإذن الله. شفى العمي فأصبحوا يبصرون. شفى المرضى بالبرص فأصبح جلدهم نظيفاً وصحياً. كانت هذه حالات لا يستطيع أي طبيب علاجها، لكن الله أعطى عيسى القدرة على شفائها."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "The greatest miracle was bringing the dead back to life by Allah's permission! Isa would call to the dead and they would rise, alive once more. This showed that only Allah has power over life and death, and He granted this ability to His prophet.",
+          "contentTextArabic": "أعظم معجزة كانت إحياء الموتى بإذن الله! كان عيسى ينادي الموتى فيقومون أحياء مرة أخرى. هذا أظهر أن الله وحده له السلطان على الحياة والموت، ومنح هذه القدرة لنبيه."
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "Isa could also tell people what they had eaten and what they had stored in their homes - knowledge that could only come from Allah. All these miracles were signs that Isa was telling the truth about being sent by Allah.",
+          "contentTextArabic": "كان عيسى يستطيع أيضاً إخبار الناس بما أكلوا وما ادخروا في بيوتهم - علم لا يأتي إلا من الله. كل هذه المعجزات كانت آيات على صدق عيسى في أنه مرسل من الله."
+        },
+        {
+          "pageNumber": 7,
+          "contentText": "But Isa always made one thing clear: \"I do these things only by Allah's permission.\" He never claimed any power for himself. He was a humble servant of Allah, carrying out his mission to call people back to the worship of One God.",
+          "contentTextArabic": "لكن عيسى كان يوضح دائماً شيئاً واحداً: \"أفعل هذه الأشياء فقط بإذن الله.\" لم يدّعِ أي قوة لنفسه. كان عبداً متواضعاً لله، ينفذ مهمته في دعوة الناس للعودة لعبادة إله واحد."
+        },
+        {
+          "pageNumber": 8,
+          "contentText": "Isa taught people to worship Allah alone, to be kind and generous, to pray and give charity, and to prepare for the Day of Judgment. His message was the same as all the prophets before him - there is no god but Allah.",
+          "contentTextArabic": "علم عيسى الناس أن يعبدوا الله وحده، وأن يكونوا طيبين وكرماء، وأن يصلوا ويتصدقوا، ويستعدوا ليوم القيامة. كانت رسالته مثل رسالة كل الأنبياء قبله - لا إله إلا الله."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What book was Isa given?",
+          "questionArabic": "ما الكتاب الذي أُوتي عيسى؟",
+          "options": ["The Torah", "The Quran", "The Injeel (Gospel)", "The Zabur"],
+          "optionsArabic": ["التوراة", "القرآن", "الإنجيل", "الزبور"],
+          "correctIndex": 2,
+          "explanation": "Isa was given the Injeel (Gospel), which confirmed the Torah and brought guidance to the people.",
+          "explanationArabic": "أُوتي عيسى الإنجيل، الذي صدّق التوراة وجلب الهداية للناس."
+        },
+        {
+          "question": "What did Isa create from clay?",
+          "questionArabic": "ماذا خلق عيسى من الطين؟",
+          "options": ["Houses", "Birds", "Animals", "People"],
+          "optionsArabic": ["بيوت", "طيور", "حيوانات", "ناس"],
+          "correctIndex": 1,
+          "explanation": "Isa would shape birds from clay and breathe into them, and by Allah's permission, they would become real birds and fly away.",
+          "explanationArabic": "كان عيسى يشكل الطيور من الطين وينفخ فيها، وبإذن الله، تصبح طيوراً حقيقية وتطير."
+        },
+        {
+          "question": "What was the greatest miracle Isa performed?",
+          "questionArabic": "ما أعظم معجزة فعلها عيسى؟",
+          "options": ["Walking on water", "Bringing the dead back to life", "Moving mountains", "Making food appear"],
+          "optionsArabic": ["المشي على الماء", "إحياء الموتى", "تحريك الجبال", "إظهار الطعام"],
+          "correctIndex": 1,
+          "explanation": "By Allah's permission, Isa could bring the dead back to life - showing that only Allah has power over life and death.",
+          "explanationArabic": "بإذن الله، كان عيسى يستطيع إحياء الموتى - مظهراً أن الله وحده له السلطان على الحياة والموت."
+        },
+        {
+          "question": "What did Isa always say about his miracles?",
+          "questionArabic": "ماذا كان عيسى يقول دائماً عن معجزاته؟",
+          "options": ["I am God", "It is my own power", "I do this by Allah's permission", "Worship me"],
+          "optionsArabic": ["أنا الله", "هذه قوتي الخاصة", "أفعل هذا بإذن الله", "اعبدوني"],
+          "correctIndex": 2,
+          "explanation": "Isa always made clear that his miracles were only by Allah's permission. He was a humble servant, not claiming any divine power.",
+          "explanationArabic": "كان عيسى يوضح دائماً أن معجزاته كانت فقط بإذن الله. كان عبداً متواضعاً، لا يدّعي أي قوة إلهية."
+        }
+      ]
+    },
+    {
+      "serverId": "isa_lesson_5",
+      "title": "The Raising of Isa",
+      "titleArabic": "رفع عيسى",
+      "subtitle": "Allah saved His prophet",
+      "subtitleArabic": "الله أنقذ نبيه",
+      "sortOrder": 5,
+      "durationMinutes": 8,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Despite all his miracles and clear signs, many of the Children of Israel rejected Isa. They plotted against him and planned to kill him. But Allah had a different plan to protect His prophet.",
+          "contentTextArabic": "رغم كل معجزاته وآياته الواضحة، رفض كثير من بني إسرائيل عيسى. تآمروا عليه وخططوا لقتله. لكن الله كان له خطة مختلفة لحماية نبيه."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Some people believed in Isa and became his helpers and disciples. They are called the Hawariyyun in Arabic. They believed in Allah and promised to help Isa spread his message of truth.",
+          "contentTextArabic": "آمن بعض الناس بعيسى وأصبحوا أنصاره وتلاميذه. يُسمون الحواريين بالعربية. آمنوا بالله ووعدوا بمساعدة عيسى في نشر رسالة الحق."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "When the enemies of Isa came to arrest him, something miraculous happened. The Quran tells us: \"They did not kill him, nor did they crucify him; but it was made to appear so to them.\" Allah protected Isa from their plot.",
+          "contentTextArabic": "عندما جاء أعداء عيسى للقبض عليه، حدث شيء معجز. يخبرنا القرآن: \"وما قتلوه وما صلبوه ولكن شُبه لهم.\" حمى الله عيسى من مؤامرتهم."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Allah raised Isa up to Himself! The Quran says: \"Rather, Allah raised him to Himself. And Allah is Almighty and Wise.\" Isa was not killed - he was lifted to the heavens by Allah's power.",
+          "contentTextArabic": "رفع الله عيسى إليه! يقول القرآن: \"بل رفعه الله إليه وكان الله عزيزاً حكيماً.\" لم يُقتل عيسى - بل رُفع إلى السماوات بقدرة الله."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Muslims believe that Isa is alive in the heavens with Allah. He was saved from those who wanted to harm him. This is one of the differences between Islamic belief and other religions' views about Isa.",
+          "contentTextArabic": "يؤمن المسلمون أن عيسى حي في السماوات مع الله. أُنقذ ممن أرادوا إيذاءه. هذا أحد الفروقات بين العقيدة الإسلامية وآراء الأديان الأخرى عن عيسى."
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "The Prophet Muhammad (peace be upon him) told us that Isa will return to Earth before the Day of Judgment. He will descend from heaven, break the cross, and establish justice. He will live on Earth, then die a natural death and be buried.",
+          "contentTextArabic": "أخبرنا النبي محمد صلى الله عليه وسلم أن عيسى سيعود إلى الأرض قبل يوم القيامة. سينزل من السماء، ويكسر الصليب، ويقيم العدل. سيعيش على الأرض، ثم يموت موتة طبيعية ويُدفن."
+        },
+        {
+          "pageNumber": 7,
+          "contentText": "Isa was one of the greatest prophets, called Ulul-Azm (Prophets of Great Determination). He was the Messiah (Al-Masih), born of a miracle, given mighty signs, and will return at the end of time. But he was a servant of Allah, not divine himself.",
+          "contentTextArabic": "كان عيسى أحد أعظم الأنبياء، يُسمى أولي العزم. كان المسيح، مولوداً بمعجزة، مُعطى آيات عظيمة، وسيعود في آخر الزمان. لكنه كان عبداً لله، وليس إلهاً بنفسه."
+        },
+        {
+          "pageNumber": 8,
+          "contentText": "Isa's story teaches us to worship Allah alone, to trust in His protection, and to know that prophets are human beings chosen by Allah - honored and loved, but still servants of the One True God. We love and respect Isa as one of the greatest prophets.",
+          "contentTextArabic": "تعلمنا قصة عيسى أن نعبد الله وحده، ونثق بحمايته، ونعلم أن الأنبياء بشر اختارهم الله - مكرمون ومحبوبون، لكنهم لا يزالون عباداً للإله الواحد الحق. نحب ونحترم عيسى كأحد أعظم الأنبياء."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What happened when Isa's enemies tried to kill him?",
+          "questionArabic": "ماذا حدث عندما حاول أعداء عيسى قتله؟",
+          "options": ["They succeeded", "Allah raised Isa to Himself", "Isa fought them", "He ran away"],
+          "optionsArabic": ["نجحوا", "رفع الله عيسى إليه", "قاتلهم عيسى", "هرب"],
+          "correctIndex": 1,
+          "explanation": "Allah protected Isa by raising him to the heavens. The enemies thought they killed him, but it was made to appear so to them.",
+          "explanationArabic": "حمى الله عيسى برفعه إلى السماوات. ظن الأعداء أنهم قتلوه، لكنه شُبه لهم."
+        },
+        {
+          "question": "Who were the Hawariyyun?",
+          "questionArabic": "من هم الحواريون؟",
+          "options": ["Isa's enemies", "Isa's disciples and helpers", "The angels", "The priests"],
+          "optionsArabic": ["أعداء عيسى", "تلاميذ عيسى وأنصاره", "الملائكة", "الكهنة"],
+          "correctIndex": 1,
+          "explanation": "The Hawariyyun were Isa's faithful disciples who believed in him and helped him spread Allah's message.",
+          "explanationArabic": "الحواريون كانوا تلاميذ عيسى المخلصين الذين آمنوا به وساعدوه في نشر رسالة الله."
+        },
+        {
+          "question": "What do Muslims believe about Isa's return?",
+          "questionArabic": "ماذا يؤمن المسلمون عن عودة عيسى؟",
+          "options": ["He will never return", "He will return before the Day of Judgment", "He has already returned", "Only his spirit will return"],
+          "optionsArabic": ["لن يعود أبداً", "سيعود قبل يوم القيامة", "عاد بالفعل", "روحه فقط ستعود"],
+          "correctIndex": 1,
+          "explanation": "Muslims believe Isa is alive in heaven and will return to Earth before the Day of Judgment to establish justice.",
+          "explanationArabic": "يؤمن المسلمون أن عيسى حي في السماء وسيعود إلى الأرض قبل يوم القيامة ليقيم العدل."
+        },
+        {
+          "question": "What is Isa's status in Islam?",
+          "questionArabic": "ما مكانة عيسى في الإسلام؟",
+          "options": ["He is God", "He is the son of God", "He is one of the greatest prophets and a servant of Allah", "He is an angel"],
+          "optionsArabic": ["هو الله", "هو ابن الله", "هو أحد أعظم الأنبياء وعبد لله", "هو ملاك"],
+          "correctIndex": 2,
+          "explanation": "Isa is honored as one of the greatest prophets in Islam - the Messiah, born of a miracle - but he is a servant of Allah, not divine himself.",
+          "explanationArabic": "يُكرم عيسى كأحد أعظم الأنبياء في الإسلام - المسيح، المولود بمعجزة - لكنه عبد لله، وليس إلهاً بنفسه."
+        }
+      ]
+    }
+  ]
+}

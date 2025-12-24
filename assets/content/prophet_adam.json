@@ -1,0 +1,453 @@
+{
+  "chapter": {
+    "serverId": "prophet-adam",
+    "title": "Prophet Adam (AS)",
+    "titleArabic": "النبي آدم عليه السلام",
+    "description": "The story of the first human and first Prophet, created by Allah from clay",
+    "descriptionArabic": "قصة أول إنسان وأول نبي، خلقه الله من طين",
+    "iconName": "park",
+    "colorHex": "#4CAF50",
+    "sortOrder": 1
+  },
+  "lessons": [
+    {
+      "serverId": "prophet-adam-creation",
+      "title": "The Creation of Adam",
+      "titleArabic": "خلق آدم",
+      "subtitle": "How Allah created the first human from clay",
+      "subtitleArabic": "كيف خلق الله أول إنسان من طين",
+      "sortOrder": 1,
+      "durationMinutes": 6,
+      "hasAudio": true,
+      "hasQuiz": true,
+      "keyLesson": "Allah created humans with His own hands, showing our special status among all creation.",
+      "adultReflection": "The creation of Adam demonstrates Allah's direct involvement in human creation, unlike any other creature. This teaches us our inherent dignity and purpose.",
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ\n\nIn the name of Allah, the Most Gracious, the Most Merciful.\n\nThis is the story of Prophet Adam, peace be upon him - the very first human being and the first Prophet of Allah.",
+          "contentTextArabic": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ\n\nهذه قصة النبي آدم عليه السلام - أول إنسان وأول نبي لله.",
+          "imageDescription": "Beautiful Islamic calligraphy of Bismillah with soft green and gold colors"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Long before there were any people on Earth, Allah created the angels and the jinn. The angels were made from light and always obeyed Allah. The jinn were made from smokeless fire.\n\nThen Allah decided to create something very special - a new creature who would live on Earth.",
+          "contentTextArabic": "قبل وجود أي بشر على الأرض، خلق الله الملائكة والجن. الملائكة خُلقت من نور وتطيع الله دائماً. والجن خُلقوا من نار.\n\nثم قرر الله أن يخلق شيئاً مميزاً جداً - مخلوقاً جديداً سيعيش على الأرض.",
+          "imageDescription": "A peaceful cosmic scene showing light and gentle flames representing angels and jinn"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Allah announced to the angels: 'I am going to place a khalifah (caretaker) on Earth.'\n\nThe angels were curious. They asked: 'Will You place on it one who will cause corruption and shed blood, while we glorify You with praise and declare Your perfection?'\n\nAllah replied: 'Indeed, I know that which you do not know.'",
+          "contentTextArabic": "أعلن الله للملائكة: 'إِنِّي جَاعِلٌ فِي الْأَرْضِ خَلِيفَةً'\n\nتساءلت الملائكة: 'أَتَجْعَلُ فِيهَا مَن يُفْسِدُ فِيهَا وَيَسْفِكُ الدِّمَاءَ وَنَحْنُ نُسَبِّحُ بِحَمْدِكَ وَنُقَدِّسُ لَكَ'\n\nأجاب الله: 'إِنِّي أَعْلَمُ مَا لَا تَعْلَمُونَ'",
+          "imageDescription": "Angels gathered in the heavens, depicted as beings of light, listening attentively"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Allah sent angels to gather clay from different parts of the Earth. The clay came in different colors - red, white, brown, and black. This is why humans today have different skin colors!\n\nAllah shaped the clay with His own two hands, forming it into the shape of a man. This was Adam.",
+          "contentTextArabic": "أرسل الله الملائكة لجمع الطين من أجزاء مختلفة من الأرض. جاء الطين بألوان مختلفة - أحمر وأبيض وبني وأسود. لهذا البشر اليوم لديهم ألوان بشرة مختلفة!\n\nشكّل الله الطين بيديه الكريمتين، صانعاً منه شكل رجل. هذا كان آدم.",
+          "imageDescription": "Gentle depiction of clay being shaped, showing different earth tones coming together"
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "For a long time, Adam's body lay still without life. The angels and Iblis (a powerful jinn) would pass by and look at this new creation.\n\nIblis felt jealous. He thought: 'What is so special about this creature made of clay? I am made of fire, which is better!'\n\nBut Iblis did not understand Allah's wisdom.",
+          "contentTextArabic": "لفترة طويلة، بقي جسد آدم ساكناً بلا حياة. كانت الملائكة وإبليس (جني قوي) يمرون وينظرون إلى هذا المخلوق الجديد.\n\nشعر إبليس بالغيرة. فكر: 'ما المميز في هذا المخلوق المصنوع من الطين؟ أنا مخلوق من نار، وهي أفضل!'\n\nلكن إبليس لم يفهم حكمة الله.",
+          "imageDescription": "A still clay figure lying peacefully while shadows observe from a distance"
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "Then came the most miraculous moment. Allah breathed life into Adam!\n\nAdam's eyes opened. He sneezed and said: 'Alhamdulillah!' (All praise is due to Allah!)\n\nAllah replied: 'Yarhamuka Rabbuka' (May your Lord have mercy on you).\n\nThis is why we say 'Yarhamukallah' when someone sneezes today!",
+          "contentTextArabic": "ثم جاءت اللحظة الأكثر إعجازاً. نفخ الله الروح في آدم!\n\nفتح آدم عينيه. عطس وقال: 'الحمد لله!'\n\nأجاب الله: 'يرحمك ربك'\n\nلهذا نقول 'يرحمك الله' عندما يعطس أحد اليوم!",
+          "imageDescription": "A peaceful awakening scene with soft divine light, Adam opening his eyes"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What was Adam created from?",
+          "questionArabic": "من ماذا خُلق آدم؟",
+          "options": ["Light", "Fire", "Clay", "Water"],
+          "optionsArabic": ["نور", "نار", "طين", "ماء"],
+          "correctIndex": 2,
+          "explanation": "Allah created Adam from clay gathered from different parts of the Earth.",
+          "explanationArabic": "خلق الله آدم من طين جُمع من أجزاء مختلفة من الأرض."
+        },
+        {
+          "question": "Why do humans have different skin colors?",
+          "questionArabic": "لماذا لدى البشر ألوان بشرة مختلفة؟",
+          "options": ["Because of the sun", "Because the clay came in different colors", "Because of where they live", "No reason"],
+          "optionsArabic": ["بسبب الشمس", "لأن الطين جاء بألوان مختلفة", "بسبب مكان سكنهم", "بدون سبب"],
+          "correctIndex": 1,
+          "explanation": "The clay used to create Adam came from different parts of the Earth in different colors - red, white, brown, and black.",
+          "explanationArabic": "الطين المستخدم لخلق آدم جاء من أجزاء مختلفة من الأرض بألوان مختلفة - أحمر وأبيض وبني وأسود."
+        },
+        {
+          "question": "What was the first thing Adam said when he came to life?",
+          "questionArabic": "ما أول شيء قاله آدم عندما أصبح حياً؟",
+          "options": ["Bismillah", "Alhamdulillah", "Subhanallah", "Allahu Akbar"],
+          "optionsArabic": ["بسم الله", "الحمد لله", "سبحان الله", "الله أكبر"],
+          "correctIndex": 1,
+          "explanation": "When Adam sneezed after coming to life, he said 'Alhamdulillah' (All praise is due to Allah).",
+          "explanationArabic": "عندما عطس آدم بعد أن أصبح حياً، قال 'الحمد لله'."
+        },
+        {
+          "question": "Who shaped Adam with His own hands?",
+          "questionArabic": "من شكّل آدم بيديه؟",
+          "options": ["The angels", "Allah", "Iblis", "Adam shaped himself"],
+          "optionsArabic": ["الملائكة", "الله", "إبليس", "آدم شكّل نفسه"],
+          "correctIndex": 1,
+          "explanation": "Allah honored Adam by shaping him with His own two hands, showing the special status of humans.",
+          "explanationArabic": "كرّم الله آدم بتشكيله بيديه الكريمتين، مما يُظهر المكانة الخاصة للبشر."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet-adam-knowledge",
+      "title": "The Gift of Knowledge",
+      "titleArabic": "هبة العلم",
+      "subtitle": "Allah teaches Adam the names of all things",
+      "subtitleArabic": "الله يعلم آدم أسماء كل شيء",
+      "sortOrder": 2,
+      "durationMinutes": 5,
+      "hasAudio": true,
+      "hasQuiz": true,
+      "keyLesson": "Knowledge is a special gift from Allah that makes humans unique among all creation.",
+      "adultReflection": "This story emphasizes the importance of seeking knowledge in Islam. The angels acknowledged their limitations while Adam demonstrated the potential Allah placed within humans.",
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "After creating Adam, Allah gave him a very special gift - the gift of knowledge!\n\nAllah taught Adam the names of everything: the sky, the earth, the animals, the plants, the mountains, the rivers, and so much more.",
+          "contentTextArabic": "بعد خلق آدم، أعطاه الله هدية خاصة جداً - هدية العلم!\n\nعلّم الله آدم أسماء كل شيء: السماء، الأرض، الحيوانات، النباتات، الجبال، الأنهار، وأكثر من ذلك بكثير.",
+          "imageDescription": "Adam surrounded by various creatures and elements of nature, learning their names"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Then Allah called all the angels together for a test.\n\nAllah showed the angels all these things and asked them: 'Tell Me the names of these, if you are truthful.'\n\nThe angels were humble. They replied: 'Glory be to You! We have no knowledge except what You have taught us. Indeed, You are the All-Knowing, the All-Wise.'",
+          "contentTextArabic": "ثم جمع الله كل الملائكة لاختبار.\n\nأرى الله الملائكة كل هذه الأشياء وسألهم: 'أَنبِئُونِي بِأَسْمَاءِ هَٰؤُلَاءِ إِن كُنتُمْ صَادِقِينَ'\n\nكانت الملائكة متواضعة. أجابوا: 'سُبْحَانَكَ لَا عِلْمَ لَنَا إِلَّا مَا عَلَّمْتَنَا إِنَّكَ أَنتَ الْعَلِيمُ الْحَكِيمُ'",
+          "imageDescription": "Angels bowing humbly, admitting their limited knowledge"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Then Allah turned to Adam and said: 'O Adam! Tell them their names.'\n\nAdam stood up and named everything correctly! He named the birds, the animals, the trees, and everything else.\n\nThe angels were amazed. Now they understood why Adam was special!",
+          "contentTextArabic": "ثم التفت الله إلى آدم وقال: 'يَا آدَمُ أَنبِئْهُم بِأَسْمَائِهِمْ'\n\nوقف آدم وسمّى كل شيء بشكل صحيح! سمّى الطيور والحيوانات والأشجار وكل شيء آخر.\n\nاندهشت الملائكة. الآن فهموا لماذا آدم مميز!",
+          "imageDescription": "Adam confidently naming various creatures while angels watch in admiration"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Allah then said to the angels: 'Did I not tell you that I know the secrets of the heavens and the earth? And I know what you reveal and what you have hidden.'\n\nThis showed everyone that Allah's wisdom is perfect. He knew that humans, with knowledge, could do great things on Earth.",
+          "contentTextArabic": "ثم قال الله للملائكة: 'أَلَمْ أَقُل لَّكُمْ إِنِّي أَعْلَمُ غَيْبَ السَّمَاوَاتِ وَالْأَرْضِ وَأَعْلَمُ مَا تُبْدُونَ وَمَا كُنتُمْ تَكْتُمُونَ'\n\nهذا أظهر للجميع أن حكمة الله كاملة. كان يعلم أن البشر، بالعلم، يمكنهم فعل أشياء عظيمة على الأرض.",
+          "imageDescription": "A majestic scene showing the vastness of Allah's knowledge encompassing heavens and earth"
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "This story teaches us something very important: knowledge is a gift from Allah!\n\nWhen we learn new things - whether it's reading, math, science, or the Quran - we are using the special ability Allah gave to humans.\n\nAlways thank Allah for the ability to learn, and never stop seeking knowledge!",
+          "contentTextArabic": "هذه القصة تعلمنا شيئاً مهماً جداً: العلم هدية من الله!\n\nعندما نتعلم أشياء جديدة - سواء القراءة أو الرياضيات أو العلوم أو القرآن - نحن نستخدم القدرة الخاصة التي أعطاها الله للبشر.\n\nاشكر الله دائماً على القدرة على التعلم، ولا تتوقف أبداً عن طلب العلم!",
+          "imageDescription": "Children of different backgrounds learning together, books and nature around them"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What special gift did Allah give Adam?",
+          "questionArabic": "ما الهدية الخاصة التي أعطاها الله لآدم؟",
+          "options": ["Wings", "Strength", "Knowledge of names", "Fire"],
+          "optionsArabic": ["أجنحة", "قوة", "معرفة الأسماء", "نار"],
+          "correctIndex": 2,
+          "explanation": "Allah taught Adam the names of all things, giving him knowledge that even the angels did not have.",
+          "explanationArabic": "علّم الله آدم أسماء كل شيء، معطياً إياه علماً لم يكن حتى عند الملائكة."
+        },
+        {
+          "question": "What did the angels say when asked about the names?",
+          "questionArabic": "ماذا قالت الملائكة عندما سُئلت عن الأسماء؟",
+          "options": ["They knew all the names", "They said they only know what Allah taught them", "They refused to answer", "They asked Adam for help"],
+          "optionsArabic": ["عرفوا كل الأسماء", "قالوا إنهم يعرفون فقط ما علمهم الله", "رفضوا الإجابة", "طلبوا المساعدة من آدم"],
+          "correctIndex": 1,
+          "explanation": "The angels humbly admitted: 'We have no knowledge except what You have taught us.'",
+          "explanationArabic": "اعترفت الملائكة بتواضع: 'لا علم لنا إلا ما علمتنا'."
+        },
+        {
+          "question": "Why did Allah teach Adam the names of things?",
+          "questionArabic": "لماذا علّم الله آدم أسماء الأشياء؟",
+          "options": ["To make him proud", "To show that humans have special abilities", "To confuse the angels", "For no reason"],
+          "optionsArabic": ["ليجعله متكبراً", "ليُظهر أن البشر لديهم قدرات خاصة", "ليُربك الملائكة", "بدون سبب"],
+          "correctIndex": 1,
+          "explanation": "Allah gave Adam knowledge to show the special status and potential of human beings.",
+          "explanationArabic": "أعطى الله آدم العلم ليُظهر المكانة الخاصة وإمكانيات البشر."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet-adam-prostration",
+      "title": "The Angels Bow to Adam",
+      "titleArabic": "سجود الملائكة لآدم",
+      "subtitle": "When Iblis refused to obey Allah's command",
+      "subtitleArabic": "عندما رفض إبليس طاعة أمر الله",
+      "sortOrder": 3,
+      "durationMinutes": 7,
+      "hasAudio": true,
+      "hasQuiz": true,
+      "keyLesson": "Pride and arrogance can lead us away from Allah. We must always be humble and obey Allah's commands.",
+      "adultReflection": "Iblis's downfall was not ignorance but arrogance - he knew Allah's command but his pride prevented obedience. This warns us that knowledge without humility is dangerous.",
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "After Allah created Adam and gave him knowledge, He gave a very important command to all the angels and Iblis.\n\nAllah said: 'Prostrate to Adam!'\n\nThis was not worship - only Allah is worshipped. It was a bow of respect to honor Allah's new creation.",
+          "contentTextArabic": "بعد أن خلق الله آدم وأعطاه العلم، أعطى أمراً مهماً جداً لكل الملائكة وإبليس.\n\nقال الله: 'اسْجُدُوا لِآدَمَ!'\n\nهذا لم يكن عبادة - الله وحده يُعبد. كان سجود احترام لتكريم خلق الله الجديد.",
+          "imageDescription": "A commanding divine scene with angels preparing to bow"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Immediately, all the angels prostrated to Adam as Allah commanded. They obeyed without question because they knew Allah's wisdom is perfect.\n\nBut one creature refused. Iblis stood tall while everyone else bowed down.\n\nIblis was not an angel - he was a jinn who had been allowed to live among the angels because of his worship.",
+          "contentTextArabic": "فوراً، سجد كل الملائكة لآدم كما أمر الله. أطاعوا بدون سؤال لأنهم يعلمون أن حكمة الله كاملة.\n\nلكن مخلوقاً واحداً رفض. وقف إبليس شامخاً بينما انحنى الجميع.\n\nإبليس لم يكن ملاكاً - كان جنياً سُمح له بالعيش بين الملائكة بسبب عبادته.",
+          "imageDescription": "All angels bowing while one dark figure remains standing defiantly"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Allah asked Iblis: 'What prevented you from prostrating when I commanded you?'\n\nIblis answered arrogantly: 'I am better than him! You created me from fire and created him from clay!'\n\nThis was a terrible mistake. Iblis let his pride make him disobey Allah.",
+          "contentTextArabic": "سأل الله إبليس: 'مَا مَنَعَكَ أَن تَسْجُدَ إِذْ أَمَرْتُكَ؟'\n\nأجاب إبليس بتكبر: 'أَنَا خَيْرٌ مِّنْهُ خَلَقْتَنِي مِن نَّارٍ وَخَلَقْتَهُ مِن طِينٍ!'\n\nكان هذا خطأً فظيعاً. جعل الكبر إبليس يعصي الله.",
+          "imageDescription": "Iblis arguing arrogantly, depicted with dark, proud features"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Allah was displeased with Iblis's arrogance.\n\n'Get out from here!' Allah commanded. 'You are expelled and cursed until the Day of Judgment!'\n\nIblis had been close to Allah through worship, but his pride destroyed everything. He became Shaytan - the enemy of all humans.",
+          "contentTextArabic": "لم يرضَ الله عن تكبر إبليس.\n\n'اخْرُجْ مِنْهَا!' أمر الله. 'إِنَّكَ رَجِيمٌ وَإِنَّ عَلَيْكَ لَعْنَتِي إِلَىٰ يَوْمِ الدِّينِ!'\n\nكان إبليس قريباً من الله بعبادته، لكن كبره دمر كل شيء. أصبح الشيطان - عدو كل البشر.",
+          "imageDescription": "Iblis being cast out, surrounded by darkness, while light remains behind"
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "But Iblis made a terrible promise. He said: 'Give me time until the Day of Resurrection, and I will mislead Adam's descendants. I will come at them from the front, from behind, from their right, and from their left!'\n\nAllah said: 'Whoever follows you - I will fill Hell with you and them altogether.'",
+          "contentTextArabic": "لكن إبليس قطع وعداً رهيباً. قال: 'أنظِرْنِي إِلَىٰ يَوْمِ يُبْعَثُونَ وسأُغوي ذرية آدم. سآتيهم من أمامهم ومن خلفهم وعن أيمانهم وعن شمائلهم!'\n\nقال الله: 'مَن تَبِعَكَ مِنْهُمْ لَأَمْلَأَنَّ جَهَنَّمَ مِنكُمْ أَجْمَعِينَ.'",
+          "imageDescription": "A symbolic representation of paths showing Shaytan's attempts to mislead"
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "This story teaches us a very important lesson: PRIDE IS DANGEROUS!\n\nIblis knew Allah. He worshipped Allah for thousands of years. But one moment of pride made him lose everything.\n\nAlways be humble. When Allah commands something, obey without arguing. Don't let pride make you think you know better than Allah!",
+          "contentTextArabic": "هذه القصة تعلمنا درساً مهماً جداً: الكِبر خطير!\n\nإبليس كان يعرف الله. عبد الله آلاف السنين. لكن لحظة واحدة من الكبر جعلته يخسر كل شيء.\n\nكن متواضعاً دائماً. عندما يأمر الله بشيء، أطِع بدون جدال. لا تدع الكبر يجعلك تظن أنك أعلم من الله!",
+          "imageDescription": "A humble person in prayer, contrasted with the darkness of pride"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What did Allah command the angels to do?",
+          "questionArabic": "ماذا أمر الله الملائكة أن يفعلوا؟",
+          "options": ["Fight Adam", "Prostrate to Adam", "Teach Adam", "Leave Paradise"],
+          "optionsArabic": ["محاربة آدم", "السجود لآدم", "تعليم آدم", "مغادرة الجنة"],
+          "correctIndex": 1,
+          "explanation": "Allah commanded the angels and Iblis to prostrate to Adam as a sign of respect for His creation.",
+          "explanationArabic": "أمر الله الملائكة وإبليس بالسجود لآدم كعلامة احترام لخلقه."
+        },
+        {
+          "question": "Why did Iblis refuse to bow?",
+          "questionArabic": "لماذا رفض إبليس السجود؟",
+          "options": ["He was sick", "He thought he was better because he was made from fire", "He didn't hear the command", "He was afraid of Adam"],
+          "optionsArabic": ["كان مريضاً", "ظن أنه أفضل لأنه خُلق من نار", "لم يسمع الأمر", "كان خائفاً من آدم"],
+          "correctIndex": 1,
+          "explanation": "Iblis arrogantly claimed: 'I am better than him! You created me from fire and created him from clay!'",
+          "explanationArabic": "ادعى إبليس بتكبر: 'أنا خير منه! خلقتني من نار وخلقته من طين!'"
+        },
+        {
+          "question": "What happened to Iblis because of his pride?",
+          "questionArabic": "ماذا حدث لإبليس بسبب كبره؟",
+          "options": ["He was forgiven", "He was expelled and cursed", "He became an angel", "Nothing happened"],
+          "optionsArabic": ["غُفر له", "طُرد ولُعن", "أصبح ملاكاً", "لم يحدث شيء"],
+          "correctIndex": 1,
+          "explanation": "Allah expelled Iblis and cursed him until the Day of Judgment because of his arrogance and disobedience.",
+          "explanationArabic": "طرد الله إبليس ولعنه إلى يوم القيامة بسبب تكبره وعصيانه."
+        },
+        {
+          "question": "What was Iblis before he became Shaytan?",
+          "questionArabic": "ماذا كان إبليس قبل أن يصبح الشيطان؟",
+          "options": ["An angel", "A jinn who worshipped Allah a lot", "A human", "A prophet"],
+          "optionsArabic": ["ملاك", "جني عبد الله كثيراً", "إنسان", "نبي"],
+          "correctIndex": 1,
+          "explanation": "Iblis was a jinn who worshipped Allah so much that he was allowed to live among the angels.",
+          "explanationArabic": "كان إبليس جنياً عبد الله كثيراً حتى سُمح له بالعيش بين الملائكة."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet-adam-paradise",
+      "title": "Life in Paradise",
+      "titleArabic": "الحياة في الجنة",
+      "subtitle": "Adam and Hawwa in the Garden, and the forbidden tree",
+      "subtitleArabic": "آدم وحواء في الجنة والشجرة المحرمة",
+      "sortOrder": 4,
+      "durationMinutes": 8,
+      "hasAudio": true,
+      "hasQuiz": true,
+      "keyLesson": "Shaytan is our enemy who uses tricks to lead us away from Allah. We must always be on guard and remember Allah.",
+      "adultReflection": "The story of Paradise shows how Shaytan works through whispers and false promises. Even in a perfect environment, vigilance against his deception is necessary. Adam's mistake came from forgetting Allah's warning.",
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Allah placed Adam in Paradise (Jannah) - a beautiful garden more wonderful than anything we can imagine!\n\nBut Adam was alone. So Allah created for him a companion - Hawwa (Eve). She was created to be his wife, his friend, and his comfort.",
+          "contentTextArabic": "وضع الله آدم في الجنة - حديقة جميلة أروع من أي شيء يمكننا تخيله!\n\nلكن آدم كان وحيداً. فخلق الله له رفيقة - حواء. خُلقت لتكون زوجته وصديقته ومصدر راحته.",
+          "imageDescription": "A beautiful paradise garden with streams, trees, and gentle light"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Allah told Adam and Hawwa: 'Live in this Garden and eat freely from wherever you want. But do not go near this tree, or you will be among the wrongdoers.'\n\nAllah gave them complete freedom - except for one simple rule. Just one tree they should not eat from.",
+          "contentTextArabic": "قال الله لآدم وحواء: 'اسْكُنْ أَنتَ وَزَوْجُكَ الْجَنَّةَ وَكُلَا مِنْهَا رَغَدًا حَيْثُ شِئْتُمَا وَلَا تَقْرَبَا هَٰذِهِ الشَّجَرَةَ فَتَكُونَا مِنَ الظَّالِمِينَ'\n\nأعطاهما الله حرية كاملة - باستثناء قاعدة واحدة بسيطة. شجرة واحدة فقط لا يأكلان منها.",
+          "imageDescription": "Adam and Hawwa in Paradise with one distinct tree set apart"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Adam and Hawwa lived happily in Paradise. They had everything they could ever want!\n\nBut Shaytan (Iblis) had not forgotten his promise to mislead humans. He was determined to make them disobey Allah.\n\nShaytan could not enter Paradise directly, but he found a way to whisper to them.",
+          "contentTextArabic": "عاش آدم وحواء سعيدين في الجنة. كان لديهما كل ما يريدانه!\n\nلكن الشيطان (إبليس) لم ينسَ وعده بإضلال البشر. كان مصمماً على جعلهما يعصيان الله.\n\nلم يستطع الشيطان دخول الجنة مباشرة، لكنه وجد طريقة للوسوسة لهما.",
+          "imageDescription": "Shaytan lurking in shadows outside Paradise, looking in"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Shaytan whispered to them: 'Do you want to know why Allah told you not to eat from that tree? It's because if you eat from it, you will become angels! Or you will live forever!'\n\nThen Shaytan swore to them: 'I am giving you sincere advice!' But he was lying.",
+          "contentTextArabic": "وسوس لهما الشيطان: 'هل تريدان معرفة لماذا نهاكما الله عن الأكل من تلك الشجرة؟ لأنكما إذا أكلتما منها ستصبحان ملائكة! أو ستخلدان!'\n\nثم أقسم لهما الشيطان: 'إِنِّي لَكُمَا لَمِنَ النَّاصِحِينَ!' لكنه كان يكذب.",
+          "imageDescription": "Whispers depicted as shadows reaching toward Adam and Hawwa"
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Sadly, Adam and Hawwa forgot Allah's warning. Shaytan's whispers confused them.\n\nThey ate from the forbidden tree.\n\nImmediately, they realized their mistake! They felt ashamed and tried to cover themselves with leaves from the garden.",
+          "contentTextArabic": "للأسف، نسي آدم وحواء تحذير الله. أربكتهما وساوس الشيطان.\n\nأكلا من الشجرة المحرمة.\n\nفوراً، أدركا خطأهما! شعرا بالخجل وحاولا تغطية أنفسهما بأوراق من الحديقة.",
+          "imageDescription": "Adam and Hawwa looking regretful, covering themselves with leaves"
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "Allah called out to them: 'Did I not forbid you from that tree and tell you that Shaytan is your clear enemy?'\n\nAdam and Hawwa had no excuses. They had made a mistake. But unlike Iblis, they did not become arrogant.\n\nInstead, they turned back to Allah, ready to ask for forgiveness...",
+          "contentTextArabic": "ناداهما الله: 'أَلَمْ أَنْهَكُمَا عَن تِلْكُمَا الشَّجَرَةِ وَأَقُل لَّكُمَا إِنَّ الشَّيْطَانَ لَكُمَا عَدُوٌّ مُّبِينٌ؟'\n\nلم يكن لدى آدم وحواء أعذار. لقد أخطآ. لكن على عكس إبليس، لم يتكبرا.\n\nبدلاً من ذلك، عادا إلى الله، مستعدين لطلب المغفرة...",
+          "imageDescription": "Adam and Hawwa bowing their heads in regret before divine light"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Who was created as Adam's companion?",
+          "questionArabic": "من خُلقت لتكون رفيقة آدم؟",
+          "options": ["An angel", "Hawwa (Eve)", "Another prophet", "Iblis"],
+          "optionsArabic": ["ملاك", "حواء", "نبي آخر", "إبليس"],
+          "correctIndex": 1,
+          "explanation": "Allah created Hawwa (Eve) to be Adam's wife, friend, and companion in Paradise.",
+          "explanationArabic": "خلق الله حواء لتكون زوجة آدم وصديقته ورفيقته في الجنة."
+        },
+        {
+          "question": "What was the ONE rule Allah gave Adam and Hawwa?",
+          "questionArabic": "ما كانت القاعدة الواحدة التي أعطاها الله لآدم وحواء؟",
+          "options": ["Don't talk to angels", "Don't eat from one specific tree", "Don't leave Paradise", "Don't sleep during the day"],
+          "optionsArabic": ["لا تتحدثا مع الملائكة", "لا تأكلا من شجرة محددة", "لا تغادرا الجنة", "لا تناما في النهار"],
+          "correctIndex": 1,
+          "explanation": "Allah told them they could eat from anywhere in Paradise except for one tree.",
+          "explanationArabic": "قال الله لهما أن يأكلا من أي مكان في الجنة باستثناء شجرة واحدة."
+        },
+        {
+          "question": "How did Shaytan trick Adam and Hawwa?",
+          "questionArabic": "كيف خدع الشيطان آدم وحواء؟",
+          "options": ["He forced them", "He whispered lies that the tree would make them angels or immortal", "He changed the tree", "He made them forget they were in Paradise"],
+          "optionsArabic": ["أجبرهما", "وسوس لهما بأكاذيب أن الشجرة ستجعلهما ملائكة أو خالدين", "غيّر الشجرة", "جعلهما ينسيان أنهما في الجنة"],
+          "correctIndex": 1,
+          "explanation": "Shaytan lied and said eating from the tree would make them angels or give them eternal life.",
+          "explanationArabic": "كذب الشيطان وقال إن الأكل من الشجرة سيجعلهما ملائكة أو يعطيهما حياة أبدية."
+        },
+        {
+          "question": "What did Adam and Hawwa do when they realized their mistake?",
+          "questionArabic": "ماذا فعل آدم وحواء عندما أدركا خطأهما؟",
+          "options": ["They blamed each other", "They blamed Allah", "They felt ashamed and turned back to Allah", "They ran away and hid"],
+          "optionsArabic": ["لاما بعضهما", "لاما الله", "شعرا بالخجل وعادا إلى الله", "هربا واختبآ"],
+          "correctIndex": 2,
+          "explanation": "Unlike Iblis, Adam and Hawwa felt ashamed and turned to Allah to ask for forgiveness.",
+          "explanationArabic": "على عكس إبليس، شعر آدم وحواء بالخجل واتجها إلى الله لطلب المغفرة."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet-adam-repentance",
+      "title": "Repentance and Return to Earth",
+      "titleArabic": "التوبة والهبوط إلى الأرض",
+      "subtitle": "Adam's beautiful repentance and new beginning on Earth",
+      "subtitleArabic": "توبة آدم الجميلة وبداية جديدة على الأرض",
+      "sortOrder": 5,
+      "durationMinutes": 7,
+      "hasAudio": true,
+      "hasQuiz": true,
+      "keyLesson": "No matter what mistakes we make, Allah always accepts sincere repentance. We should never lose hope in Allah's mercy.",
+      "adultReflection": "Adam's story ends not with punishment but with hope. The words of repentance (Surah 7:23) became a model for all humans. Allah's plan was always for humans to live on Earth - the 'fall' was actually the beginning of humanity's journey and purpose.",
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Adam and Hawwa were heartbroken. They had disobeyed Allah - the One who had created them and given them everything!\n\nBut here is the beautiful difference between Adam and Iblis: Adam did not make excuses. He did not blame anyone else. He did not become arrogant.",
+          "contentTextArabic": "انكسر قلب آدم وحواء. لقد عصيا الله - الذي خلقهما وأعطاهما كل شيء!\n\nلكن هنا الفرق الجميل بين آدم وإبليس: آدم لم يختلق أعذاراً. لم يلم أحداً آخر. لم يتكبر.",
+          "imageDescription": "Adam and Hawwa with tears, heads bowed in sincere regret"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Allah, in His infinite mercy, taught Adam special words to say - words of repentance that came from the heart.\n\nAdam and Hawwa cried and prayed: \n\n'رَبَّنَا ظَلَمْنَا أَنفُسَنَا وَإِن لَّمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ'\n\n'Our Lord, we have wronged ourselves! And if You do not forgive us and have mercy on us, we will surely be among the losers!'",
+          "contentTextArabic": "الله، برحمته الواسعة، علّم آدم كلمات خاصة ليقولها - كلمات توبة من القلب.\n\nبكى آدم وحواء ودعوا:\n\n'رَبَّنَا ظَلَمْنَا أَنفُسَنَا وَإِن لَّمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ'",
+          "imageDescription": "Adam and Hawwa making sincere dua with raised hands and tears"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Allah accepted their repentance! SubhanAllah!\n\nAllah is At-Tawwab (The Acceptor of Repentance) and Ar-Raheem (The Most Merciful).\n\nBut even though Allah forgave them, Adam and Hawwa could not stay in Paradise. They had to go down to Earth to live.",
+          "contentTextArabic": "قَبِل الله توبتهما! سبحان الله!\n\nالله هو التواب الرحيم.\n\nلكن حتى بعد أن غفر الله لهما، لم يستطع آدم وحواء البقاء في الجنة. كان عليهما النزول إلى الأرض ليعيشا.",
+          "imageDescription": "Divine light embracing Adam and Hawwa, symbolizing forgiveness"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Allah said: 'Go down to Earth! You will live there for a time. The Earth will be your home and your provision until you die.'\n\nAdam, Hawwa, and Iblis all went down to Earth. But there was a promise of hope!\n\nAllah said: 'Guidance will come to you from Me. Whoever follows My guidance will have no fear, nor will they grieve.'",
+          "contentTextArabic": "قال الله: 'اهْبِطُوا! ستعيشون هناك لفترة. الأرض ستكون داركم ومتاعكم حتى تموتوا.'\n\nنزل آدم وحواء وإبليس جميعاً إلى الأرض. لكن كان هناك وعد بالأمل!\n\nقال الله: 'فَإِمَّا يَأْتِيَنَّكُم مِّنِّي هُدًى فَمَن تَبِعَ هُدَايَ فَلَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ'",
+          "imageDescription": "Adam and Hawwa descending to a beautiful Earth with hope in their hearts"
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Adam became the first Prophet on Earth! Allah taught him how to worship, how to live, and how to teach his children about Allah.\n\nAdam and Hawwa had many children. Their descendants spread across the Earth. We are ALL children of Adam!\n\nAdam lived for almost 1,000 years, teaching his family about Allah.",
+          "contentTextArabic": "أصبح آدم أول نبي على الأرض! علّمه الله كيف يعبد، وكيف يعيش، وكيف يعلم أولاده عن الله.\n\nأنجب آدم وحواء أولاداً كثيرين. انتشر نسلهما في الأرض. كلنا أبناء آدم!\n\nعاش آدم ما يقارب 1000 سنة، يعلم عائلته عن الله.",
+          "imageDescription": "Adam as a wise prophet teaching his family, Earth flourishing around them"
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "The story of Adam teaches us the most beautiful lessons:\n\n1. We are special - Allah created us with His own hands\n2. Seek knowledge - it's a gift from Allah\n3. Avoid pride - it destroyed Iblis\n4. Shaytan is our enemy - don't follow his whispers\n5. NEVER lose hope - Allah ALWAYS forgives those who sincerely repent\n\nRemember: We all make mistakes. What matters is that we turn back to Allah!",
+          "contentTextArabic": "قصة آدم تعلمنا أجمل الدروس:\n\n1. نحن مميزون - الله خلقنا بيديه\n2. اطلب العلم - إنه هدية من الله\n3. تجنب الكبر - لقد دمر إبليس\n4. الشيطان عدونا - لا تتبع وساوسه\n5. لا تفقد الأمل أبداً - الله دائماً يغفر لمن يتوب بصدق\n\nتذكر: كلنا نخطئ. المهم أن نعود إلى الله!",
+          "imageDescription": "A hopeful scene showing diverse children of Adam united in worship"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What special words did Allah teach Adam to say?",
+          "questionArabic": "ما الكلمات الخاصة التي علّمها الله لآدم؟",
+          "options": ["Words of anger", "Words of repentance asking for forgiveness", "Words of blame against Hawwa", "Words against Shaytan"],
+          "optionsArabic": ["كلمات غضب", "كلمات توبة تطلب المغفرة", "كلمات لوم لحواء", "كلمات ضد الشيطان"],
+          "correctIndex": 1,
+          "explanation": "Allah taught Adam and Hawwa to say: 'Our Lord, we have wronged ourselves! If You do not forgive us, we will be among the losers!'",
+          "explanationArabic": "علّم الله آدم وحواء أن يقولا: 'ربنا ظلمنا أنفسنا وإن لم تغفر لنا وترحمنا لنكونن من الخاسرين!'"
+        },
+        {
+          "question": "Did Allah accept Adam's repentance?",
+          "questionArabic": "هل قَبِل الله توبة آدم؟",
+          "options": ["No, Allah was too angry", "Yes, Allah forgave them", "Only Hawwa was forgiven", "Adam had to wait 100 years"],
+          "optionsArabic": ["لا، الله كان غاضباً جداً", "نعم، الله غفر لهما", "حواء فقط غُفر لها", "آدم كان عليه الانتظار 100 سنة"],
+          "correctIndex": 1,
+          "explanation": "Allah accepted their sincere repentance because He is At-Tawwab (The Acceptor of Repentance) and Ar-Raheem (Most Merciful).",
+          "explanationArabic": "قَبِل الله توبتهما الصادقة لأنه التواب الرحيم."
+        },
+        {
+          "question": "What did Adam become on Earth?",
+          "questionArabic": "ماذا أصبح آدم على الأرض؟",
+          "options": ["A king", "The first Prophet", "An angel", "A jinn"],
+          "optionsArabic": ["ملك", "أول نبي", "ملاك", "جني"],
+          "correctIndex": 1,
+          "explanation": "Adam became the first Prophet on Earth, teaching his children about Allah.",
+          "explanationArabic": "أصبح آدم أول نبي على الأرض، يعلّم أولاده عن الله."
+        },
+        {
+          "question": "What is the most important lesson from Adam's story?",
+          "questionArabic": "ما أهم درس من قصة آدم؟",
+          "options": ["Never make mistakes", "Allah never forgives", "Always repent and never lose hope in Allah's mercy", "Stay away from trees"],
+          "optionsArabic": ["لا تخطئ أبداً", "الله لا يغفر", "تب دائماً ولا تفقد الأمل في رحمة الله", "ابتعد عن الأشجار"],
+          "correctIndex": 2,
+          "explanation": "The most important lesson is that no matter what mistakes we make, we should always turn back to Allah with sincere repentance - He always forgives!",
+          "explanationArabic": "أهم درس هو أنه مهما أخطأنا، يجب أن نعود دائماً إلى الله بتوبة صادقة - إنه دائماً يغفر!"
+        },
+        {
+          "question": "How long did Prophet Adam live?",
+          "questionArabic": "كم عاش النبي آدم؟",
+          "options": ["100 years", "500 years", "Almost 1,000 years", "Forever"],
+          "optionsArabic": ["100 سنة", "500 سنة", "ما يقارب 1000 سنة", "للأبد"],
+          "correctIndex": 2,
+          "explanation": "Prophet Adam lived for almost 1,000 years, teaching his family about Allah throughout his long life.",
+          "explanationArabic": "عاش النبي آدم ما يقارب 1000 سنة، يعلم عائلته عن الله طوال حياته الطويلة."
+        }
+      ]
+    }
+  ]
+}

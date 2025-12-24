@@ -6,6 +6,7 @@ import 'daos/chapters_dao.dart';
 import 'daos/lessons_dao.dart';
 import 'daos/progress_dao.dart';
 import 'daos/settings_dao.dart';
+import 'daos/subscription_dao.dart';
 
 part 'database_provider.g.dart';
 
@@ -51,4 +52,11 @@ ProgressDao progressDao(ProgressDaoRef ref) {
 SettingsDao settingsDao(SettingsDaoRef ref) {
   final db = ref.watch(appDatabaseProvider);
   return SettingsDao(db);
+}
+
+/// Subscription DAO provider
+@riverpod
+SubscriptionDao subscriptionDao(SubscriptionDaoRef ref) {
+  final db = ref.watch(appDatabaseProvider);
+  return SubscriptionDao(db);
 }

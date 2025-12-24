@@ -61,5 +61,70 @@
         "type": "int"
       }
     }
-  }
+  },
+
+  "unlockAllStories": "Unlock All Islamic Stories",
+  "premiumDescription": "Get full access to 50+ beautifully narrated stories about prophets, companions, and Islamic values for your children.",
+  "monthlySubscription": "Monthly Subscription",
+  "perMonth": "/month",
+  "cancelAnytime": "Cancel anytime. Subscription renews automatically.",
+  "subscribe": "Subscribe Now",
+  "restorePurchases": "Restore Purchases",
+  "havePromoCode": "Have a promo code?",
+  "termsOfService": "Terms of Service",
+  "privacyPolicy": "Privacy Policy",
+  "subscriptionSuccess": "Welcome to Sinbool Premium!",
+  "purchasesRestored": "Your purchases have been restored",
+  "noPurchasesToRestore": "No previous purchases found",
+
+  "benefitAllStories": "50+ Beautiful Stories",
+  "benefitAllStoriesDesc": "Access the complete library of Islamic stories",
+  "benefitAudioNarration": "Audio Narration",
+  "benefitAudioNarrationDesc": "Professional narration for every story",
+  "benefitQuizzes": "Interactive Quizzes",
+  "benefitQuizzesDesc": "Test your knowledge after each story",
+  "benefitNewContent": "New Content Monthly",
+  "benefitNewContentDesc": "Fresh stories added every month",
+  "benefitOffline": "Offline Access",
+  "benefitOfflineDesc": "Download and read anywhere",
+
+  "premium": "Premium",
+  "premiumContent": "Premium Content",
+  "tapToUnlock": "Tap to unlock with Sinbool Premium",
+  "firstLessonFree": "First Lesson Free",
+
+  "promoCode": "Promo Code",
+  "enterPromoCode": "Enter Your Promo Code",
+  "promoCodeDescription": "If you have a promo code, enter it below to unlock premium access.",
+  "promoCodeHint": "e.g. SINBOOL2024",
+  "pleaseEnterPromoCode": "Please enter a promo code",
+  "promoCodeTooShort": "Promo code is too short",
+  "applyPromoCode": "Apply Code",
+  "promoCodeInfo": "Promo codes are case-insensitive and may be limited time offers. Contact support if you have any issues.",
+  "promoCodeSuccess": "Promo code applied successfully! Welcome to Premium!",
+  "promoCodeInvalid": "Invalid or expired promo code",
+
+  "subscription": "Subscription",
+  "subscriptionStatus": "Subscription Status",
+  "subscriptionActive": "Premium Active",
+  "subscriptionExpires": "Expires: {date}",
+  "@subscriptionExpires": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "manageSubscription": "Manage Subscription",
+  "upgradeToPremium": "Upgrade to Premium",
+  "redeemPromoCode": "Redeem Promo Code",
+  "freeUser": "Free User",
+  "premiumFeatures": "Premium Features",
+  "getStartedWithPremium": "Get Started",
+
+  "premiumOnboardingTitle": "Premium Experience",
+  "premiumOnboardingDesc": "Unlock the full Sinbool experience with premium access to all stories, audio narration, and quizzes.",
+  "freeVsPremium": "Free vs Premium",
+  "freeFeatures": "Free: First lesson of each chapter",
+  "premiumFeaturesDesc": "Premium: All stories, audio, quizzes & more"
 }

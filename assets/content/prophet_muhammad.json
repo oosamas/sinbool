@@ -1,0 +1,469 @@
+{
+  "chapter": {
+    "serverId": "prophet_muhammad",
+    "title": "Prophet Muhammad",
+    "titleArabic": "النبي محمد ﷺ",
+    "description": "The Final Messenger - Mercy to All Worlds",
+    "descriptionArabic": "الرسول الخاتم - رحمة للعالمين",
+    "iconName": "auto_stories",
+    "colorHex": "#4E342E",
+    "sortOrder": 7
+  },
+  "lessons": [
+    {
+      "serverId": "muhammad_lesson_1",
+      "title": "The Year of the Elephant",
+      "titleArabic": "عام الفيل",
+      "subtitle": "Allah protects the Kaaba",
+      "subtitleArabic": "الله يحمي الكعبة",
+      "sortOrder": 1,
+      "durationMinutes": 7,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "In the city of Makkah stood the Kaaba, the sacred house built by Prophet Ibrahim and his son Ismail. Arabs from all over would come to visit it. One year, something amazing happened that the people would never forget.",
+          "contentTextArabic": "في مدينة مكة وقفت الكعبة، البيت المقدس الذي بناه النبي إبراهيم وابنه إسماعيل. كان العرب من كل مكان يأتون لزيارتها. في سنة، حدث شيء مذهل لن ينساه الناس أبداً."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "A king named Abraha from Yemen built a great church and wanted people to visit it instead of the Kaaba. When people still went to Makkah, he became angry and decided to destroy the Kaaba. He gathered a huge army with war elephants!",
+          "contentTextArabic": "ملك يُدعى أبرهة من اليمن بنى كنيسة عظيمة وأراد أن يزورها الناس بدلاً من الكعبة. عندما ظل الناس يذهبون لمكة، غضب وقرر هدم الكعبة. جمع جيشاً ضخماً مع فيلة حرب!"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "The people of Makkah were afraid. They had no army strong enough to fight elephants. The leader of Makkah, Abdul-Muttalib (the grandfather of Prophet Muhammad), went to speak with Abraha.",
+          "contentTextArabic": "خاف أهل مكة. لم يكن لديهم جيش قوي بما يكفي لمحاربة الفيلة. ذهب زعيم مكة، عبد المطلب (جد النبي محمد)، للتحدث مع أبرهة."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Abraha was surprised when Abdul-Muttalib asked only for his camels back. \"You come to ask for camels when I'm about to destroy your sacred house?\" Abdul-Muttalib replied wisely: \"I am the owner of the camels. The House has its own Lord who will protect it.\"",
+          "contentTextArabic": "فوجئ أبرهة عندما طلب عبد المطلب فقط استرداد جماله. \"تأتي تسأل عن الجمال وأنا على وشك هدم بيتكم المقدس؟\" أجاب عبد المطلب بحكمة: \"أنا رب الإبل، وللبيت رب سيحميه.\""
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "The next day, Abraha's army marched toward Makkah with the mighty elephant Mahmud at the front. But when they reached the outskirts of Makkah, the elephant refused to move forward! It would kneel down whenever they tried to make it go toward the Kaaba.",
+          "contentTextArabic": "في اليوم التالي، زحف جيش أبرهة نحو مكة والفيل العظيم محمود في المقدمة. لكن عندما وصلوا أطراف مكة، رفض الفيل المضي قدماً! كان يبرك كلما حاولوا توجيهه نحو الكعبة."
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "Then Allah sent His punishment. Flocks of birds came from the sea, each carrying small stones in their beaks and claws. They dropped these stones on Abraha's army. Wherever a stone hit, it destroyed completely.",
+          "contentTextArabic": "ثم أرسل الله عقابه. جاءت أسراب من الطيور من البحر، كل منها يحمل حجارة صغيرة في منقاره ومخالبه. أسقطت هذه الحجارة على جيش أبرهة. أينما أصابت حجرة، دمرت تماماً."
+        },
+        {
+          "pageNumber": 7,
+          "contentText": "Allah made Abraha's army like eaten straw - they were completely destroyed. This miraculous event showed everyone that Allah protects His sacred house. This year became known as the Year of the Elephant (Aam al-Feel).",
+          "contentTextArabic": "جعلهم الله كعصف مأكول - دُمروا تماماً. هذا الحدث المعجز أظهر للجميع أن الله يحمي بيته المقدس. عُرفت هذه السنة بعام الفيل."
+        },
+        {
+          "pageNumber": 8,
+          "contentText": "In this very same year, only fifty days later, a baby was born in Makkah who would become the greatest of all prophets - Muhammad ibn Abdullah, peace and blessings be upon him. The world was about to receive its final messenger.",
+          "contentTextArabic": "في نفس هذا العام، بعد خمسين يوماً فقط، وُلد طفل في مكة سيصبح أعظم الأنبياء - محمد بن عبد الله، صلى الله عليه وسلم. كان العالم على وشك استقبال رسوله الأخير."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why did Abraha want to destroy the Kaaba?",
+          "questionArabic": "لماذا أراد أبرهة هدم الكعبة؟",
+          "options": ["He wanted gold", "He wanted people to visit his church instead", "He was at war with Makkah", "He didn't like the building"],
+          "optionsArabic": ["أراد الذهب", "أراد أن يزور الناس كنيسته بدلاً منها", "كان في حرب مع مكة", "لم يعجبه المبنى"],
+          "correctIndex": 1,
+          "explanation": "Abraha built a grand church and wanted people to visit it instead of the Kaaba. When they didn't, he decided to destroy the Kaaba.",
+          "explanationArabic": "بنى أبرهة كنيسة فخمة وأراد أن يزورها الناس بدلاً من الكعبة. عندما لم يفعلوا، قرر هدم الكعبة."
+        },
+        {
+          "question": "What did Abdul-Muttalib say about the Kaaba?",
+          "questionArabic": "ماذا قال عبد المطلب عن الكعبة؟",
+          "options": ["He would protect it himself", "The House has its own Lord who will protect it", "It was not important", "They should move it"],
+          "optionsArabic": ["سيحميها بنفسه", "للبيت رب سيحميه", "لم تكن مهمة", "يجب نقلها"],
+          "correctIndex": 1,
+          "explanation": "Abdul-Muttalib showed his trust in Allah by saying the House has its own Lord who will protect it.",
+          "explanationArabic": "أظهر عبد المطلب ثقته في الله بقوله أن للبيت رب سيحميه."
+        },
+        {
+          "question": "What happened when the elephant tried to approach the Kaaba?",
+          "questionArabic": "ماذا حدث عندما حاول الفيل الاقتراب من الكعبة؟",
+          "options": ["It charged forward", "It refused to move and knelt down", "It ran away", "It turned around"],
+          "optionsArabic": ["اندفع للأمام", "رفض التحرك وبرك", "هرب", "استدار"],
+          "correctIndex": 1,
+          "explanation": "The elephant Mahmud refused to move toward the Kaaba. It would kneel down every time they tried to make it go forward.",
+          "explanationArabic": "رفض الفيل محمود التحرك نحو الكعبة. كان يبرك كلما حاولوا جعله يمضي قدماً."
+        },
+        {
+          "question": "How did Allah destroy Abraha's army?",
+          "questionArabic": "كيف دمر الله جيش أبرهة؟",
+          "options": ["With a flood", "With birds carrying stones", "With fire", "With a storm"],
+          "optionsArabic": ["بفيضان", "بطيور تحمل حجارة", "بنار", "بعاصفة"],
+          "correctIndex": 1,
+          "explanation": "Allah sent flocks of birds (Ababil) carrying small stones that destroyed Abraha's army completely.",
+          "explanationArabic": "أرسل الله طيوراً أبابيل تحمل حجارة صغيرة دمرت جيش أبرهة تماماً."
+        }
+      ]
+    },
+    {
+      "serverId": "muhammad_lesson_2",
+      "title": "The Honest and Trustworthy",
+      "titleArabic": "الصادق الأمين",
+      "subtitle": "Growing up with beautiful character",
+      "subtitleArabic": "النشأة بأخلاق جميلة",
+      "sortOrder": 2,
+      "durationMinutes": 8,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Muhammad (peace be upon him) was born an orphan - his father Abdullah died before he was born. He was raised first by his loving mother Aminah, then by his grandfather Abdul-Muttalib, and finally by his uncle Abu Talib.",
+          "contentTextArabic": "وُلد محمد صلى الله عليه وسلم يتيماً - توفي أبوه عبد الله قبل ولادته. ربته أولاً أمه الحنون آمنة، ثم جده عبد المطلب، وأخيراً عمه أبو طالب."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Even as a child, Muhammad was different from other children. He never worshipped idols like the people of Makkah. He was kind, truthful, and gentle. He helped the poor and was always fair in his dealings.",
+          "contentTextArabic": "حتى وهو طفل، كان محمد مختلفاً عن الأطفال الآخرين. لم يعبد الأصنام أبداً كأهل مكة. كان طيباً وصادقاً ولطيفاً. ساعد الفقراء وكان دائماً عادلاً في معاملاته."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "As he grew up, the people of Makkah gave him two special titles: \"Al-Sadiq\" (The Truthful) and \"Al-Amin\" (The Trustworthy). People would leave their valuables with him because they knew he would never betray their trust.",
+          "contentTextArabic": "عندما كبر، أعطاه أهل مكة لقبين خاصين: \"الصادق\" و\"الأمين\". كان الناس يتركون أشياءهم الثمينة معه لأنهم يعلمون أنه لن يخون ثقتهم أبداً."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Muhammad worked as a shepherd when he was young, taking care of sheep in the hills around Makkah. This taught him patience and responsibility. Later, he became a merchant, traveling with trading caravans.",
+          "contentTextArabic": "عمل محمد راعياً عندما كان صغيراً، يرعى الأغنام في التلال حول مكة. علمه هذا الصبر والمسؤولية. لاحقاً، أصبح تاجراً، يسافر مع قوافل التجارة."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "A noble woman named Khadijah heard about Muhammad's honesty. She hired him to lead her trading caravan to Syria. He returned with more profit than anyone expected. Impressed by his character, she proposed marriage to him.",
+          "contentTextArabic": "سمعت امرأة نبيلة تُدعى خديجة عن أمانة محمد. وظفته ليقود قافلتها التجارية إلى الشام. عاد بربح أكثر مما توقعه أحد. أُعجبت بأخلاقه، وخطبته للزواج."
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "Muhammad married Khadijah, and they had a loving family. She was his first and greatest supporter. Even though he was respected in Makkah, Muhammad often went alone to a cave called Hira to think and reflect, away from the idol worship around him.",
+          "contentTextArabic": "تزوج محمد خديجة، وكانت لهما عائلة محبة. كانت أول وأعظم داعمة له. رغم أنه كان محترماً في مكة، كان محمد غالباً يذهب وحده إلى غار يُسمى حراء للتفكر والتأمل، بعيداً عن عبادة الأصنام من حوله."
+        },
+        {
+          "pageNumber": 7,
+          "contentText": "One incident showed his wisdom. The Quraysh were rebuilding the Kaaba and argued about who should place the Black Stone. They agreed to let the next person who entered decide. That person was Muhammad. He placed the stone on a cloth and had each tribe hold a corner to lift it together.",
+          "contentTextArabic": "حادثة أظهرت حكمته. كانت قريش تعيد بناء الكعبة واختلفوا حول من يضع الحجر الأسود. اتفقوا أن يترك أول داخل يقرر. كان ذلك الشخص محمداً. وضع الحجر على قماش وجعل كل قبيلة تمسك طرفاً لرفعه معاً."
+        },
+        {
+          "pageNumber": 8,
+          "contentText": "Muhammad spent forty years being known for his excellent character. Little did people know that Allah was preparing him for the greatest mission in history - to be the final prophet and messenger to all of humanity.",
+          "contentTextArabic": "قضى محمد أربعين سنة معروفاً بأخلاقه الممتازة. لم يكن الناس يعلمون أن الله كان يُعده لأعظم مهمة في التاريخ - أن يكون النبي والرسول الخاتم للبشرية جمعاء."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What two titles did the people of Makkah give Muhammad?",
+          "questionArabic": "ما اللقبان اللذان أعطاهما أهل مكة لمحمد؟",
+          "options": ["The King and The Leader", "Al-Sadiq (Truthful) and Al-Amin (Trustworthy)", "The Rich and The Powerful", "The Strong and The Brave"],
+          "optionsArabic": ["الملك والقائد", "الصادق والأمين", "الغني والقوي", "القوي والشجاع"],
+          "correctIndex": 1,
+          "explanation": "Muhammad was known as Al-Sadiq (The Truthful) and Al-Amin (The Trustworthy) because of his excellent character.",
+          "explanationArabic": "كان محمد يُعرف بالصادق والأمين بسبب أخلاقه الممتازة."
+        },
+        {
+          "question": "Who was Khadijah?",
+          "questionArabic": "من كانت خديجة؟",
+          "options": ["His mother", "His sister", "The noble woman who became his wife", "His daughter"],
+          "optionsArabic": ["أمه", "أخته", "المرأة النبيلة التي أصبحت زوجته", "ابنته"],
+          "correctIndex": 2,
+          "explanation": "Khadijah was a noble businesswoman who hired Muhammad, was impressed by his character, and later became his wife and first supporter.",
+          "explanationArabic": "خديجة كانت امرأة أعمال نبيلة وظفت محمداً، وأُعجبت بأخلاقه، ثم أصبحت زوجته وأول داعمة له."
+        },
+        {
+          "question": "How did Muhammad solve the dispute about the Black Stone?",
+          "questionArabic": "كيف حل محمد الخلاف حول الحجر الأسود؟",
+          "options": ["He placed it himself", "He placed it on a cloth for all tribes to lift together", "He asked Allah", "He chose one tribe"],
+          "optionsArabic": ["وضعه بنفسه", "وضعه على قماش لترفعه كل القبائل معاً", "سأل الله", "اختار قبيلة واحدة"],
+          "correctIndex": 1,
+          "explanation": "Muhammad placed the Black Stone on a cloth and had each tribe hold a corner to lift it together, so everyone shared the honor.",
+          "explanationArabic": "وضع محمد الحجر الأسود على قماش وجعل كل قبيلة تمسك طرفاً لرفعه معاً، فيشترك الجميع في الشرف."
+        },
+        {
+          "question": "Where did Muhammad go to think and reflect?",
+          "questionArabic": "أين كان محمد يذهب للتفكر والتأمل؟",
+          "options": ["The Kaaba", "Cave Hira", "The mountains of Yemen", "By the sea"],
+          "optionsArabic": ["الكعبة", "غار حراء", "جبال اليمن", "عند البحر"],
+          "correctIndex": 1,
+          "explanation": "Muhammad would go to Cave Hira on Mount Noor to think and reflect, away from the idol worship in Makkah.",
+          "explanationArabic": "كان محمد يذهب إلى غار حراء على جبل النور للتفكر والتأمل، بعيداً عن عبادة الأصنام في مكة."
+        }
+      ]
+    },
+    {
+      "serverId": "muhammad_lesson_3",
+      "title": "The First Revelation",
+      "titleArabic": "الوحي الأول",
+      "subtitle": "Read! In the name of your Lord",
+      "subtitleArabic": "اقرأ باسم ربك",
+      "sortOrder": 3,
+      "durationMinutes": 8,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Muhammad was forty years old. One night in the month of Ramadan, he was alone in Cave Hira, as he often was, thinking and reflecting. The cave was quiet and peaceful, high up on Mount Noor overlooking Makkah.",
+          "contentTextArabic": "كان محمد في الأربعين من عمره. ذات ليلة في شهر رمضان، كان وحده في غار حراء كعادته، يتفكر ويتأمل. كان الغار هادئاً ومسالماً، عالياً على جبل النور يطل على مكة."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Suddenly, something extraordinary happened. The angel Jibreel appeared to Muhammad and said one word: \"Read!\" (Iqra!) Muhammad replied: \"I am not one who reads.\" He had never learned to read or write.",
+          "contentTextArabic": "فجأة، حدث شيء غير عادي. ظهر الملك جبريل لمحمد وقال كلمة واحدة: \"اقرأ!\" أجاب محمد: \"ما أنا بقارئ.\" لم يتعلم القراءة أو الكتابة قط."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Jibreel embraced Muhammad tightly, then released him and said again: \"Read!\" Muhammad answered the same. This happened three times. Then Jibreel recited the first words of the Quran ever revealed:",
+          "contentTextArabic": "ضم جبريل محمداً بشدة، ثم أطلقه وقال مرة أخرى: \"اقرأ!\" أجاب محمد نفس الجواب. حدث هذا ثلاث مرات. ثم تلا جبريل أول كلمات من القرآن أُنزلت:"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "\"Read! In the name of your Lord who created. Created mankind from a clinging substance. Read! And your Lord is the Most Generous. Who taught by the pen. Taught mankind that which he knew not.\"",
+          "contentTextArabic": "\"اقرأ باسم ربك الذي خلق. خلق الإنسان من علق. اقرأ وربك الأكرم. الذي علم بالقلم. علم الإنسان ما لم يعلم.\""
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Muhammad's heart was racing. He hurried home to his wife Khadijah, trembling. \"Cover me! Cover me!\" he said. She wrapped him in a blanket and comforted him. When he was calm, he told her everything that had happened.",
+          "contentTextArabic": "كان قلب محمد ينبض بسرعة. أسرع إلى بيته لزوجته خديجة، مرتجفاً. قال: \"زملوني! زملوني!\" لفته ببطانية وطمأنته. عندما هدأ، أخبرها بكل ما حدث."
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "Khadijah was the first to believe. She said: \"Rejoice! By Allah, He will never disgrace you. You maintain family ties, you help the poor, you are generous to guests, and you support those in need.\" She knew his good character meant Allah would never harm him.",
+          "contentTextArabic": "كانت خديجة أول من آمن. قالت: \"أبشر! والله لن يخزيك الله أبداً. إنك لتصل الرحم، وتحمل الكل، وتكسب المعدوم، وتقري الضيف، وتعين على نوائب الحق.\" علمت أن أخلاقه الحسنة تعني أن الله لن يؤذيه."
+        },
+        {
+          "pageNumber": 7,
+          "contentText": "Khadijah took Muhammad to her cousin Waraqah, a wise old man who knew the scriptures. When Waraqah heard what happened, he said: \"This is the same angel that came to Musa. I wish I were young to help you when your people turn against you.\"",
+          "contentTextArabic": "أخذت خديجة محمداً إلى ابن عمها ورقة، رجل عجوز حكيم يعرف الكتب. عندما سمع ورقة ما حدث، قال: \"هذا الناموس الذي نزل على موسى. يا ليتني أكون حياً إذ يخرجك قومك.\""
+        },
+        {
+          "pageNumber": 8,
+          "contentText": "This was the beginning of prophethood. Muhammad was now Rasulullah - the Messenger of Allah. For the next 23 years, the Quran would be revealed to him, piece by piece, guiding humanity to the straight path until the Day of Judgment.",
+          "contentTextArabic": "كانت هذه بداية النبوة. أصبح محمد الآن رسول الله. على مدى الـ23 سنة التالية، سيُنزل عليه القرآن، جزءاً جزءاً، هادياً البشرية إلى الصراط المستقيم إلى يوم القيامة."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How old was Muhammad when he received the first revelation?",
+          "questionArabic": "كم كان عمر محمد عندما تلقى الوحي الأول؟",
+          "options": ["Twenty years old", "Thirty years old", "Forty years old", "Fifty years old"],
+          "optionsArabic": ["عشرين سنة", "ثلاثين سنة", "أربعين سنة", "خمسين سنة"],
+          "correctIndex": 2,
+          "explanation": "Muhammad was forty years old when the first revelation came to him in Cave Hira during Ramadan.",
+          "explanationArabic": "كان محمد في الأربعين من عمره عندما جاءه الوحي الأول في غار حراء خلال رمضان."
+        },
+        {
+          "question": "What was the first word revealed in the Quran?",
+          "questionArabic": "ما أول كلمة أُنزلت في القرآن؟",
+          "options": ["Pray", "Read (Iqra)", "Believe", "Fast"],
+          "optionsArabic": ["صلِّ", "اقرأ", "آمن", "صم"],
+          "correctIndex": 1,
+          "explanation": "The first word revealed was 'Iqra' (Read) - emphasizing the importance of knowledge and learning in Islam.",
+          "explanationArabic": "أول كلمة أُنزلت كانت 'اقرأ' - مؤكدة على أهمية العلم والتعلم في الإسلام."
+        },
+        {
+          "question": "Who was the first person to believe in Muhammad's message?",
+          "questionArabic": "من أول شخص آمن برسالة محمد؟",
+          "options": ["Abu Bakr", "Khadijah", "Ali", "Waraqah"],
+          "optionsArabic": ["أبو بكر", "خديجة", "علي", "ورقة"],
+          "correctIndex": 1,
+          "explanation": "Khadijah, Muhammad's wife, was the first person to believe in him and support him.",
+          "explanationArabic": "خديجة، زوجة محمد، كانت أول من آمن به ودعمه."
+        },
+        {
+          "question": "What did Waraqah say about the angel that came to Muhammad?",
+          "questionArabic": "ماذا قال ورقة عن الملك الذي جاء محمداً؟",
+          "options": ["It was new", "It was the same that came to Musa", "He didn't know", "It was dangerous"],
+          "optionsArabic": ["كان جديداً", "نفسه الذي جاء موسى", "لم يعرف", "كان خطيراً"],
+          "correctIndex": 1,
+          "explanation": "Waraqah recognized that this was the same angel (Jibreel) that brought revelation to Prophet Musa.",
+          "explanationArabic": "أدرك ورقة أن هذا نفس الملك (جبريل) الذي جاء بالوحي للنبي موسى."
+        }
+      ]
+    },
+    {
+      "serverId": "muhammad_lesson_4",
+      "title": "The Night Journey",
+      "titleArabic": "الإسراء والمعراج",
+      "subtitle": "A miraculous journey through the heavens",
+      "subtitleArabic": "رحلة معجزة عبر السماوات",
+      "sortOrder": 4,
+      "durationMinutes": 8,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "The Prophet Muhammad faced many difficulties in Makkah. His beloved wife Khadijah and his uncle Abu Talib, who protected him, both passed away in the same year. The people of Makkah increased their persecution. This was called the Year of Sorrow.",
+          "contentTextArabic": "واجه النبي محمد صعوبات كثيرة في مكة. توفيت زوجته الحبيبة خديجة وعمه أبو طالب الذي حماه في نفس السنة. زاد أهل مكة اضطهادهم. سُميت هذه سنة الحزن."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "But then Allah honored His messenger with an incredible miracle - the Isra and Mi'raj. One night, the angel Jibreel came to the Prophet with a special creature called Al-Buraq, a white animal larger than a donkey but smaller than a horse, with wings.",
+          "contentTextArabic": "لكن الله أكرم رسوله بمعجزة لا تُصدق - الإسراء والمعراج. ذات ليلة، جاء الملك جبريل للنبي بمخلوق خاص يُسمى البراق، حيوان أبيض أكبر من الحمار وأصغر من الفرس، له جناحان."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "The Prophet rode Al-Buraq from Makkah to Masjid Al-Aqsa in Jerusalem in an instant! This journey is called Al-Isra (The Night Journey). At Al-Aqsa, the Prophet led all the previous prophets in prayer. Ibrahim, Musa, Isa, and all others prayed behind him.",
+          "contentTextArabic": "ركب النبي البراق من مكة إلى المسجد الأقصى في القدس في لحظة! تُسمى هذه الرحلة الإسراء. في الأقصى، صلى النبي إماماً بجميع الأنبياء السابقين. إبراهيم وموسى وعيسى وجميع الآخرين صلوا خلفه."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Then came Al-Mi'raj (The Ascension). The Prophet was taken up through the seven heavens! In each heaven, he met different prophets. He met Adam in the first heaven, Isa and Yahya in the second, Yusuf in the third, and so on.",
+          "contentTextArabic": "ثم جاء المعراج. عُرج بالنبي عبر السماوات السبع! في كل سماء، التقى أنبياء مختلفين. التقى آدم في السماء الأولى، وعيسى ويحيى في الثانية، ويوسف في الثالثة، وهكذا."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "In the sixth heaven, he met Musa, and in the seventh, he met Ibrahim near the Bayt al-Ma'mur (the heavenly Kaaba). Each prophet welcomed him and said: \"Welcome, O righteous prophet and righteous brother!\"",
+          "contentTextArabic": "في السماء السادسة، التقى موسى، وفي السابعة، التقى إبراهيم عند البيت المعمور (الكعبة السماوية). رحب به كل نبي وقال: \"مرحباً بالنبي الصالح والأخ الصالح!\""
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "The Prophet was then taken to Sidrat al-Muntaha (the Lote Tree of the furthest boundary), a place beyond which no creation had ever gone. There, Allah spoke to His messenger directly and gave him the gift of the five daily prayers.",
+          "contentTextArabic": "ثم عُرج بالنبي إلى سدرة المنتهى، مكان لم يتجاوزه أي مخلوق. هناك، كلم الله رسوله مباشرة ومنحه هدية الصلوات الخمس اليومية."
+        },
+        {
+          "pageNumber": 7,
+          "contentText": "Originally, the prayers were fifty times a day. On his way back, Musa advised the Prophet to ask Allah to reduce them, knowing people would find it difficult. The Prophet went back and forth until the prayers were reduced to five, with the reward of fifty.",
+          "contentTextArabic": "في الأصل، كانت الصلوات خمسين مرة في اليوم. في طريق العودة، نصح موسى النبي بطلب تخفيفها من الله، عالماً أن الناس سيجدونها صعبة. ذهب النبي وعاد حتى خُففت الصلوات إلى خمس، بثواب خمسين."
+        },
+        {
+          "pageNumber": 8,
+          "contentText": "The next morning, the Prophet told the people what happened. Some believed immediately, like Abu Bakr, who earned the title \"As-Siddiq\" (The Truthful Believer). Others mocked. But this miraculous journey showed Muhammad's special status with Allah.",
+          "contentTextArabic": "في صباح اليوم التالي، أخبر النبي الناس بما حدث. بعضهم آمن فوراً، مثل أبي بكر الذي نال لقب \"الصديق\". آخرون سخروا. لكن هذه الرحلة المعجزة أظهرت مكانة محمد الخاصة عند الله."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What was Al-Buraq?",
+          "questionArabic": "ما هو البراق؟",
+          "options": ["A horse", "A winged creature that carried the Prophet", "A type of cloud", "An angel"],
+          "optionsArabic": ["حصان", "مخلوق مجنح حمل النبي", "نوع من السحاب", "ملاك"],
+          "correctIndex": 1,
+          "explanation": "Al-Buraq was a special winged creature, white and larger than a donkey but smaller than a horse, that carried the Prophet on the Night Journey.",
+          "explanationArabic": "البراق مخلوق مجنح خاص، أبيض أكبر من الحمار وأصغر من الفرس، حمل النبي في رحلة الإسراء."
+        },
+        {
+          "question": "What happened at Masjid Al-Aqsa?",
+          "questionArabic": "ماذا حدث في المسجد الأقصى؟",
+          "options": ["The Prophet rested", "The Prophet led all previous prophets in prayer", "The Prophet received the Quran", "The Prophet met Jibreel"],
+          "optionsArabic": ["استراح النبي", "صلى النبي إماماً بجميع الأنبياء السابقين", "تلقى النبي القرآن", "التقى النبي بجبريل"],
+          "correctIndex": 1,
+          "explanation": "At Masjid Al-Aqsa, the Prophet led all the previous prophets in prayer, showing his position as the leader of all prophets.",
+          "explanationArabic": "في المسجد الأقصى، صلى النبي إماماً بجميع الأنبياء السابقين، مظهراً مكانته كإمام جميع الأنبياء."
+        },
+        {
+          "question": "What gift did Allah give to the Prophet during Mi'raj?",
+          "questionArabic": "ما الهدية التي أعطاها الله للنبي خلال المعراج؟",
+          "options": ["Gold", "The five daily prayers", "A special book", "A crown"],
+          "optionsArabic": ["ذهب", "الصلوات الخمس اليومية", "كتاب خاص", "تاج"],
+          "correctIndex": 1,
+          "explanation": "Allah gave the Prophet the five daily prayers as a gift to the Muslim nation. They were originally fifty but were reduced to five with the reward of fifty.",
+          "explanationArabic": "أعطى الله النبي الصلوات الخمس اليومية هدية للأمة الإسلامية. كانت في الأصل خمسين وخُففت إلى خمس بثواب خمسين."
+        },
+        {
+          "question": "Who earned the title 'As-Siddiq' by believing in the Night Journey?",
+          "questionArabic": "من نال لقب 'الصديق' بإيمانه برحلة الإسراء والمعراج؟",
+          "options": ["Umar", "Uthman", "Ali", "Abu Bakr"],
+          "optionsArabic": ["عمر", "عثمان", "علي", "أبو بكر"],
+          "correctIndex": 3,
+          "explanation": "Abu Bakr immediately believed the Prophet's account of the Night Journey and was given the title 'As-Siddiq' (The Truthful Believer).",
+          "explanationArabic": "آمن أبو بكر فوراً برواية النبي عن رحلة الإسراء والمعراج ونال لقب 'الصديق'."
+        }
+      ]
+    },
+    {
+      "serverId": "muhammad_lesson_5",
+      "title": "The Final Message",
+      "titleArabic": "الرسالة الأخيرة",
+      "subtitle": "Completing the religion for all mankind",
+      "subtitleArabic": "إكمال الدين للبشرية جمعاء",
+      "sortOrder": 5,
+      "durationMinutes": 8,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "The Prophet Muhammad emigrated from Makkah to Madinah, where he established the first Muslim community. Over the years, Islam spread across Arabia. People entered Allah's religion in multitudes, and the message of One God reached far and wide.",
+          "contentTextArabic": "هاجر النبي محمد من مكة إلى المدينة، حيث أسس أول مجتمع مسلم. على مر السنين، انتشر الإسلام في الجزيرة العربية. دخل الناس في دين الله أفواجاً، ووصلت رسالة الإله الواحد بعيداً."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "In the tenth year after Hijrah, the Prophet made his final pilgrimage to Makkah with over 100,000 Muslims. This is known as the Farewell Pilgrimage. During this blessed journey, he taught the Muslims everything they needed to know about Hajj.",
+          "contentTextArabic": "في السنة العاشرة بعد الهجرة، أدى النبي حجته الأخيرة إلى مكة مع أكثر من 100,000 مسلم. تُعرف هذه بحجة الوداع. خلال هذه الرحلة المباركة، علم المسلمين كل ما يحتاجون معرفته عن الحج."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "On the Day of Arafah, the Prophet gave his famous Farewell Sermon. Standing on his camel at Mount Arafah, he addressed all of humanity with words that still echo today. He spoke about justice, equality, and the rights of all people.",
+          "contentTextArabic": "في يوم عرفة، ألقى النبي خطبته الشهيرة، خطبة الوداع. واقفاً على ناقته في جبل عرفات، خاطب البشرية جمعاء بكلمات لا تزال ترددها الأزمان. تحدث عن العدل والمساواة وحقوق جميع الناس."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "\"O People! Your Lord is One, and your father Adam is one. An Arab has no superiority over a non-Arab, nor a non-Arab over an Arab. A white person has no superiority over a black person, nor a black over a white, except by piety and good action.\"",
+          "contentTextArabic": "\"أيها الناس! إن ربكم واحد، وإن أباكم واحد. لا فضل لعربي على أعجمي، ولا لأعجمي على عربي، ولا لأبيض على أسود، ولا لأسود على أبيض، إلا بالتقوى والعمل الصالح.\""
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "The Prophet reminded people about their duties to Allah, their families, and each other. He warned against interest, injustice, and wrongdoing. He emphasized the importance of treating women with kindness and respect.",
+          "contentTextArabic": "ذكّر النبي الناس بواجباتهم تجاه الله وعائلاتهم وبعضهم البعض. حذر من الربا والظلم والمنكر. أكد على أهمية معاملة النساء بلطف واحترام."
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "Then he said: \"I have left among you that which, if you hold firmly to it, you will never go astray: the Book of Allah and my Sunnah.\" The Quran and the Prophet's example would guide Muslims forever.",
+          "contentTextArabic": "ثم قال: \"تركت فيكم ما إن تمسكتم به لن تضلوا أبداً: كتاب الله وسنتي.\" القرآن وسنة النبي ستهدي المسلمين للأبد."
+        },
+        {
+          "pageNumber": 7,
+          "contentText": "During this pilgrimage, Allah revealed: \"Today I have perfected for you your religion and completed My favor upon you and have approved for you Islam as your religion.\" The message was complete. The final prophet had fulfilled his mission.",
+          "contentTextArabic": "خلال هذه الحجة، أنزل الله: \"اليوم أكملت لكم دينكم وأتممت عليكم نعمتي ورضيت لكم الإسلام ديناً.\" اكتملت الرسالة. أتم النبي الخاتم مهمته."
+        },
+        {
+          "pageNumber": 8,
+          "contentText": "The Prophet Muhammad, peace and blessings be upon him, passed away in Madinah at age 63. He left behind the complete message of Islam - the same message of all prophets: worship Allah alone, do good, and prepare for the Day of Judgment. He is the final messenger, and the Quran is the final book, preserved perfectly until the end of time.",
+          "contentTextArabic": "توفي النبي محمد صلى الله عليه وسلم في المدينة عن 63 عاماً. ترك وراءه رسالة الإسلام الكاملة - نفس رسالة جميع الأنبياء: اعبدوا الله وحده، وافعلوا الخير، واستعدوا ليوم القيامة. هو الرسول الخاتم، والقرآن هو الكتاب الخاتم، محفوظ تماماً إلى نهاية الزمان."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How many Muslims joined the Prophet for the Farewell Pilgrimage?",
+          "questionArabic": "كم مسلماً انضم للنبي في حجة الوداع؟",
+          "options": ["About 10,000", "About 50,000", "Over 100,000", "About 1,000"],
+          "optionsArabic": ["حوالي 10,000", "حوالي 50,000", "أكثر من 100,000", "حوالي 1,000"],
+          "correctIndex": 2,
+          "explanation": "Over 100,000 Muslims joined the Prophet for his Farewell Pilgrimage in the tenth year after Hijrah.",
+          "explanationArabic": "انضم أكثر من 100,000 مسلم للنبي في حجة الوداع في السنة العاشرة بعد الهجرة."
+        },
+        {
+          "question": "What did the Prophet say about superiority between people?",
+          "questionArabic": "ماذا قال النبي عن التفاضل بين الناس؟",
+          "options": ["Arabs are superior", "Whites are superior", "No one is superior except by piety and good action", "The rich are superior"],
+          "optionsArabic": ["العرب أفضل", "البيض أفضل", "لا فضل لأحد إلا بالتقوى والعمل الصالح", "الأغنياء أفضل"],
+          "correctIndex": 2,
+          "explanation": "The Prophet taught that no one is superior to another except through their piety (taqwa) and good actions.",
+          "explanationArabic": "علّم النبي أنه لا فضل لأحد على آخر إلا بالتقوى والعمل الصالح."
+        },
+        {
+          "question": "What two things did the Prophet leave for Muslims to follow?",
+          "questionArabic": "ما الشيئان اللذان تركهما النبي للمسلمين ليتبعوهما؟",
+          "options": ["Gold and silver", "The Quran and his Sunnah", "His clothes and sword", "Books and letters"],
+          "optionsArabic": ["الذهب والفضة", "القرآن وسنته", "ثيابه وسيفه", "الكتب والرسائل"],
+          "correctIndex": 1,
+          "explanation": "The Prophet said he left the Book of Allah (Quran) and his Sunnah (teachings and example) - if Muslims hold to them, they will never go astray.",
+          "explanationArabic": "قال النبي أنه ترك كتاب الله (القرآن) وسنته - إذا تمسك بهما المسلمون لن يضلوا أبداً."
+        },
+        {
+          "question": "What verse was revealed during the Farewell Pilgrimage?",
+          "questionArabic": "ما الآية التي أُنزلت خلال حجة الوداع؟",
+          "options": ["The first verse of Quran", "Today I have perfected your religion", "Read in the name of your Lord", "Say: He is Allah, the One"],
+          "optionsArabic": ["أول آية من القرآن", "اليوم أكملت لكم دينكم", "اقرأ باسم ربك", "قل هو الله أحد"],
+          "correctIndex": 1,
+          "explanation": "The verse 'Today I have perfected for you your religion' was revealed, indicating that the message of Islam was now complete.",
+          "explanationArabic": "أُنزلت آية 'اليوم أكملت لكم دينكم'، مشيرة إلى أن رسالة الإسلام اكتملت."
+        }
+      ]
+    }
+  ]
+}

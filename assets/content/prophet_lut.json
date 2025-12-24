@@ -1,0 +1,262 @@
+{
+  "chapter": {
+    "serverId": "prophet_lut",
+    "title": "Prophet Lut",
+    "titleArabic": "النبي لوط",
+    "description": "The story of Prophet Lut who called his people to leave their sins and obey Allah",
+    "descriptionArabic": "قصة النبي لوط الذي دعا قومه لترك معاصيهم وطاعة الله",
+    "iconName": "lut",
+    "colorHex": "#455A64",
+    "sortOrder": 11
+  },
+  "lessons": [
+    {
+      "serverId": "prophet_lut_lesson_1",
+      "title": "The Nephew of Ibrahim",
+      "titleArabic": "ابن أخ إبراهيم",
+      "sortOrder": 1,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Prophet Lut was the nephew of Prophet Ibrahim. He believed in Allah and followed his uncle Ibrahim's teachings. When Ibrahim traveled to spread Allah's message, Lut went with him.",
+          "contentTextArabic": "كان النبي لوط ابن أخ النبي إبراهيم. آمن بالله واتبع تعاليم عمه إبراهيم. عندما سافر إبراهيم لنشر رسالة الله، ذهب لوط معه."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Allah chose Lut to be a prophet and sent him to guide the people of a city near the Dead Sea. This city was called Sodom, and the people there had turned away from Allah's path.",
+          "contentTextArabic": "اختار الله لوطاً ليكون نبياً وأرسله لهداية أهل مدينة قرب البحر الميت. كانت هذه المدينة تُسمى سدوم، وكان أهلها قد ابتعدوا عن طريق الله."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "The people of Sodom were doing many wrong things that Allah had forbidden. They were dishonest, they harmed travelers, and they committed sins that no people before them had ever done.",
+          "contentTextArabic": "كان أهل سدوم يفعلون أشياء كثيرة خاطئة حرّمها الله. كانوا غير أمناء، ويؤذون المسافرين، ويرتكبون ذنوباً لم يفعلها أحد قبلهم."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Lut called his people to worship Allah alone and to stop their evil ways. He told them: 'Fear Allah and obey me. I am a trustworthy messenger sent to you.'",
+          "contentTextArabic": "دعا لوط قومه لعبادة الله وحده والتوقف عن طرقهم الشريرة. قال لهم: 'اتقوا الله وأطيعون. إني لكم رسول أمين.'"
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "But the people of Sodom refused to listen. They made fun of Lut and continued their sinful behavior. They even threatened to drive him out of their city if he didn't stop warning them.",
+          "contentTextArabic": "لكن أهل سدوم رفضوا الاستماع. سخروا من لوط واستمروا في سلوكهم الآثم. حتى أنهم هددوا بطرده من مدينتهم إن لم يتوقف عن تحذيرهم."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How was Prophet Lut related to Prophet Ibrahim?",
+          "questionArabic": "ما هي صلة قرابة النبي لوط بالنبي إبراهيم؟",
+          "options": ["He was his son", "He was his brother", "He was his nephew", "He was his cousin"],
+          "optionsArabic": ["كان ابنه", "كان أخاه", "كان ابن أخيه", "كان ابن عمه"],
+          "correctIndex": 2,
+          "explanation": "Prophet Lut was the nephew of Prophet Ibrahim and believed in his message.",
+          "explanationArabic": "كان النبي لوط ابن أخ النبي إبراهيم وآمن برسالته."
+        },
+        {
+          "question": "Where was Prophet Lut sent to deliver his message?",
+          "questionArabic": "أين أُرسل النبي لوط لتبليغ رسالته؟",
+          "options": ["Egypt", "Makkah", "The city of Sodom", "Madinah"],
+          "optionsArabic": ["مصر", "مكة", "مدينة سدوم", "المدينة"],
+          "correctIndex": 2,
+          "explanation": "Lut was sent to the city of Sodom near the Dead Sea to guide its people.",
+          "explanationArabic": "أُرسل لوط إلى مدينة سدوم قرب البحر الميت لهداية أهلها."
+        },
+        {
+          "question": "How did the people of Sodom treat Prophet Lut?",
+          "questionArabic": "كيف عامل أهل سدوم النبي لوط؟",
+          "options": ["They welcomed him", "They made fun of him and threatened him", "They followed him", "They helped him"],
+          "optionsArabic": ["رحبوا به", "سخروا منه وهددوه", "اتبعوه", "ساعدوه"],
+          "correctIndex": 1,
+          "explanation": "The people rejected Lut's message, made fun of him, and threatened to drive him out.",
+          "explanationArabic": "رفض القوم رسالة لوط، وسخروا منه، وهددوا بطرده."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_lut_lesson_2",
+      "title": "The Angel Messengers",
+      "titleArabic": "الملائكة الرسل",
+      "sortOrder": 2,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Years passed, and the people of Sodom continued their sins. They refused to change. Finally, Allah decided to send His punishment. But first, He sent angels in the form of handsome young men.",
+          "contentTextArabic": "مرت السنوات، واستمر أهل سدوم في ذنوبهم. رفضوا التغيير. أخيراً، قرر الله إرسال عذابه. لكن أولاً، أرسل ملائكة في صورة شباب حسان."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "The angels first visited Prophet Ibrahim and gave him good news about a son. Then they told him they were going to the city of Lut to carry out Allah's command.",
+          "contentTextArabic": "زار الملائكة أولاً النبي إبراهيم وبشروه بغلام. ثم أخبروه أنهم ذاهبون إلى قرية لوط لتنفيذ أمر الله."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Ibrahim was worried about Lut. He said, 'But Lut is there!' The angels assured him: 'We know best who is there. We will save him and his family, except his wife who will be among those left behind.'",
+          "contentTextArabic": "قلق إبراهيم على لوط. قال: 'لكن لوطاً هناك!' طمأنه الملائكة: 'نحن أعلم بمن فيها. لننجينه وأهله إلا امرأته كانت من الغابرين.'"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "The angels arrived at Lut's home as guests. Lut was very worried because he knew how the wicked people of his city treated strangers. He wished he had the power to protect his guests.",
+          "contentTextArabic": "وصل الملائكة إلى بيت لوط كضيوف. كان لوط قلقاً جداً لأنه عرف كيف يعامل أشرار مدينته الغرباء. تمنى لو كانت لديه قوة لحماية ضيوفه."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "The angels calmed Lut and told him the truth: 'We are messengers of your Lord. They will never reach you. Leave with your family during the night, and none of you should look back.'",
+          "contentTextArabic": "هدّأ الملائكة لوطاً وأخبروه الحقيقة: 'إنا رسل ربك لن يصلوا إليك. فأسرِ بأهلك بقطع من الليل ولا يلتفت منكم أحد.'"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "In what form did the angels appear?",
+          "questionArabic": "في أي صورة ظهر الملائكة؟",
+          "options": ["As old men", "As handsome young men", "As animals", "As clouds"],
+          "optionsArabic": ["كشيوخ", "كشباب حسان", "كحيوانات", "كسحب"],
+          "correctIndex": 1,
+          "explanation": "The angels came in the form of handsome young men to test the people of Sodom.",
+          "explanationArabic": "جاء الملائكة في صورة شباب حسان لاختبار أهل سدوم."
+        },
+        {
+          "question": "Who did the angels visit before going to Lut?",
+          "questionArabic": "من زار الملائكة قبل الذهاب إلى لوط؟",
+          "options": ["Prophet Musa", "Prophet Ibrahim", "Prophet Nuh", "Prophet Dawud"],
+          "optionsArabic": ["النبي موسى", "النبي إبراهيم", "النبي نوح", "النبي داود"],
+          "correctIndex": 1,
+          "explanation": "The angels first visited Prophet Ibrahim and gave him good news before going to Lut.",
+          "explanationArabic": "زار الملائكة أولاً النبي إبراهيم وبشروه قبل الذهاب إلى لوط."
+        },
+        {
+          "question": "What did the angels tell Lut to do?",
+          "questionArabic": "ماذا أخبر الملائكة لوطاً أن يفعل؟",
+          "options": ["Stay and fight", "Leave with his family at night and not look back", "Hide in his house", "Go to the mountain alone"],
+          "optionsArabic": ["البقاء والقتال", "المغادرة مع أهله ليلاً وعدم الالتفات", "الاختباء في بيته", "الذهاب للجبل وحده"],
+          "correctIndex": 1,
+          "explanation": "The angels told Lut to leave with his family during the night and not to look back.",
+          "explanationArabic": "أخبر الملائكة لوطاً أن يُسري بأهله ليلاً ولا يلتفت."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_lut_lesson_3",
+      "title": "The Destruction of Sodom",
+      "titleArabic": "هلاك سدوم",
+      "sortOrder": 3,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "That night, Lut and his daughters left the city, just as the angels had commanded. They walked quickly through the darkness, never looking back at the city they were leaving behind.",
+          "contentTextArabic": "في تلك الليلة، غادر لوط وبناته المدينة، كما أمر الملائكة. ساروا بسرعة في الظلام، دون أن يلتفتوا للمدينة التي تركوها خلفهم."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "But Lut's wife did not truly believe. Although she left with them, her heart was still with the sinful people. She disobeyed the command and looked back - and she was caught in the punishment.",
+          "contentTextArabic": "لكن زوجة لوط لم تؤمن حقاً. رغم أنها غادرت معهم، كان قلبها مع القوم المذنبين. عصت الأمر والتفتت - فأصابها العذاب."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "When dawn came, Allah's punishment struck. The Quran tells us that Allah sent a terrible storm of stones and turned the city upside down. The wicked people were destroyed.",
+          "contentTextArabic": "عندما جاء الفجر، نزل عذاب الله. يخبرنا القرآن أن الله أرسل عاصفة رهيبة من الحجارة وجعل عاليها سافلها. أُهلك القوم الأشرار."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "The place where Sodom once stood became a barren land. Today, the Dead Sea region is one of the lowest places on Earth - a lasting sign of what happened to those who disobeyed Allah.",
+          "contentTextArabic": "أصبح المكان الذي كانت فيه سدوم أرضاً قاحلة. اليوم، منطقة البحر الميت من أخفض الأماكن على الأرض - علامة دائمة على ما حدث لمن عصوا الله."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Prophet Lut and his believing daughters were saved. They survived because they obeyed Allah and followed His messenger. Allah always protects those who believe and obey Him.",
+          "contentTextArabic": "نجا النبي لوط وبناته المؤمنات. نجوا لأنهم أطاعوا الله واتبعوا رسوله. الله يحمي دائماً من يؤمن به ويطيعه."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What happened to Lut's wife?",
+          "questionArabic": "ماذا حدث لزوجة لوط؟",
+          "options": ["She was saved with Lut", "She looked back and was caught in the punishment", "She escaped to another city", "She became a believer"],
+          "optionsArabic": ["نجت مع لوط", "التفتت فأصابها العذاب", "هربت لمدينة أخرى", "أصبحت مؤمنة"],
+          "correctIndex": 1,
+          "explanation": "Lut's wife disobeyed the command not to look back and was caught in the punishment.",
+          "explanationArabic": "عصت زوجة لوط الأمر بعدم الالتفات فأصابها العذاب."
+        },
+        {
+          "question": "How did Allah punish the people of Sodom?",
+          "questionArabic": "كيف عاقب الله أهل سدوم؟",
+          "options": ["A flood", "A storm of stones and the city was turned upside down", "A drought", "An earthquake only"],
+          "optionsArabic": ["طوفان", "عاصفة من الحجارة وقُلبت المدينة", "جفاف", "زلزال فقط"],
+          "correctIndex": 1,
+          "explanation": "Allah sent a terrible storm of stones and turned the city upside down.",
+          "explanationArabic": "أرسل الله عاصفة رهيبة من الحجارة وجعل عاليها سافلها."
+        },
+        {
+          "question": "Who was saved from the punishment?",
+          "questionArabic": "من نجا من العذاب؟",
+          "options": ["Everyone in the city", "Only Lut", "Lut and his believing daughters", "No one was saved"],
+          "optionsArabic": ["الجميع في المدينة", "لوط فقط", "لوط وبناته المؤمنات", "لم ينجُ أحد"],
+          "correctIndex": 2,
+          "explanation": "Prophet Lut and his believing daughters were saved because they obeyed Allah.",
+          "explanationArabic": "نجا النبي لوط وبناته المؤمنات لأنهم أطاعوا الله."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_lut_lesson_4",
+      "title": "Lessons from the Story",
+      "titleArabic": "دروس من القصة",
+      "sortOrder": 4,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "The story of Prophet Lut teaches us many important lessons. First, we learn that we must always obey Allah's commands, even when the people around us are doing wrong.",
+          "contentTextArabic": "تعلمنا قصة النبي لوط دروساً مهمة كثيرة. أولاً، نتعلم أننا يجب أن نطيع أوامر الله دائماً، حتى عندما يفعل الناس من حولنا الخطأ."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Lut stood alone against a whole city of sinners. It was not easy, but he continued to call them to the right path. We should be brave like Lut and stand up for what is right.",
+          "contentTextArabic": "وقف لوط وحده ضد مدينة كاملة من المذنبين. لم يكن الأمر سهلاً، لكنه استمر في دعوتهم للطريق الصحيح. يجب أن نكون شجعاناً مثل لوط وندافع عن الحق."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "We also learn that faith is what matters to Allah, not family ties. Lut's wife was married to a prophet, but she did not truly believe. This shows that each person must have their own faith.",
+          "contentTextArabic": "نتعلم أيضاً أن الإيمان هو ما يهم الله، لا صلة القرابة. كانت زوجة لوط متزوجة من نبي، لكنها لم تؤمن حقاً. هذا يُظهر أن كل شخص يجب أن يكون له إيمانه الخاص."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "The story also teaches us about the consequences of sin. When people continue to disobey Allah and refuse to repent, eventually punishment will come. But Allah always gives many chances first.",
+          "contentTextArabic": "تعلمنا القصة أيضاً عن عواقب الذنوب. عندما يستمر الناس في معصية الله ويرفضون التوبة، يأتي العقاب في النهاية. لكن الله يعطي فرصاً كثيرة أولاً."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Finally, we learn that Allah always saves the believers. No matter how difficult the situation, if we trust in Allah and obey Him, He will protect us and guide us to safety.",
+          "contentTextArabic": "أخيراً، نتعلم أن الله ينجي المؤمنين دائماً. مهما كان الموقف صعباً، إذا وثقنا بالله وأطعناه، سيحمينا ويهدينا إلى الأمان."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does Lut's bravery teach us?",
+          "questionArabic": "ماذا تعلمنا شجاعة لوط؟",
+          "options": ["To follow the crowd", "To stand up for what is right even when alone", "To stay quiet", "To run away from problems"],
+          "optionsArabic": ["اتباع الجماعة", "الدفاع عن الحق حتى لو كنا وحدنا", "البقاء صامتين", "الهروب من المشاكل"],
+          "correctIndex": 1,
+          "explanation": "Lut stood alone against sinners, teaching us to be brave and stand up for what is right.",
+          "explanationArabic": "وقف لوط وحده ضد المذنبين، معلماً إيانا أن نكون شجعاناً وندافع عن الحق."
+        },
+        {
+          "question": "What does the story teach about family and faith?",
+          "questionArabic": "ماذا تعلمنا القصة عن العائلة والإيمان؟",
+          "options": ["Family is more important than faith", "Each person must have their own faith", "Marriage to a prophet guarantees paradise", "Family members are always saved together"],
+          "optionsArabic": ["العائلة أهم من الإيمان", "كل شخص يجب أن يكون له إيمانه الخاص", "الزواج من نبي يضمن الجنة", "أفراد العائلة ينجون دائماً معاً"],
+          "correctIndex": 1,
+          "explanation": "Lut's wife's fate shows that each person must have their own faith - family ties alone don't save anyone.",
+          "explanationArabic": "يُظهر مصير زوجة لوط أن كل شخص يجب أن يكون له إيمانه الخاص - صلة القرابة وحدها لا تنجي أحداً."
+        },
+        {
+          "question": "What does Allah always do for the believers?",
+          "questionArabic": "ماذا يفعل الله دائماً للمؤمنين؟",
+          "options": ["Ignores them", "Protects them and guides them to safety", "Punishes them too", "Forgets about them"],
+          "optionsArabic": ["يتجاهلهم", "يحميهم ويهديهم إلى الأمان", "يعاقبهم أيضاً", "ينساهم"],
+          "correctIndex": 1,
+          "explanation": "Allah always protects and saves the believers, just as He saved Lut and his believing daughters.",
+          "explanationArabic": "الله يحمي وينجي المؤمنين دائماً، كما أنجى لوطاً وبناته المؤمنات."
+        }
+      ]
+    }
+  ]
+}

@@ -67,7 +67,7 @@ class BookmarkRepository {
       lessonDurationMinutes: data.lesson.durationMinutes,
       hasAudio: data.lesson.hasAudio,
       hasQuiz: data.lesson.hasQuiz,
-      isCompleted: false, // TODO: Join with lesson progress
+      isCompleted: data.progress?.isCompleted ?? false,
       note: data.bookmark.note,
       createdAt: data.bookmark.createdAt,
     );

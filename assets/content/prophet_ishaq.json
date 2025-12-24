@@ -1,0 +1,224 @@
+{
+  "chapter": {
+    "serverId": "prophet_ishaq",
+    "title": "Prophet Ishaq",
+    "titleArabic": "النبي إسحاق",
+    "description": "The story of Prophet Ishaq, the blessed son of Ibrahim",
+    "descriptionArabic": "قصة النبي إسحاق، الابن المبارك لإبراهيم",
+    "iconName": "ishaq",
+    "colorHex": "#5C6BC0",
+    "sortOrder": 22
+  },
+  "lessons": [
+    {
+      "serverId": "prophet_ishaq_lesson_1",
+      "title": "The Good News from Angels",
+      "titleArabic": "البشارة من الملائكة",
+      "sortOrder": 1,
+      "durationMinutes": 5,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Prophet Ibrahim (peace be upon him) and his wife Sarah had been waiting for a child for many, many years. They were now very old, but they never lost hope in Allah.",
+          "contentTextArabic": "كان النبي إبراهيم عليه السلام وزوجته سارة ينتظران طفلاً لسنوات طويلة جداً. كانا الآن كبيرين في السن، لكنهما لم يفقدا الأمل في الله أبداً."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "One day, special guests came to visit Ibrahim. They were angels who looked like men! Ibrahim welcomed them kindly and prepared a delicious meal for them.",
+          "contentTextArabic": "ذات يوم، جاء ضيوف مميزون لزيارة إبراهيم. كانوا ملائكة يبدون كرجال! رحب بهم إبراهيم بلطف وأعد لهم وجبة لذيذة."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "The angels gave Ibrahim wonderful news: 'We bring you glad tidings of a son who will be blessed with knowledge!' This son would be named Ishaq.",
+          "contentTextArabic": "أعطى الملائكة إبراهيم خبراً رائعاً: 'نبشرك بغلام عليم!' هذا الابن سيُسمى إسحاق."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Sarah was listening nearby. She was amazed! 'How can I have a child?' she thought. 'I am so old!' But the angels said: 'This is the will of Allah. He can do anything!'",
+          "contentTextArabic": "كانت سارة تستمع بالقرب. كانت مندهشة! فكرت: 'كيف يمكنني إنجاب طفل؟ أنا كبيرة جداً!' لكن الملائكة قالوا: 'هذه مشيئة الله. هو قادر على كل شيء!'"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Who brought the good news about Ishaq?",
+          "questionArabic": "من أحضر البشارة عن إسحاق؟",
+          "options": ["Other prophets", "Angels", "Travelers", "Family members"],
+          "optionsArabic": ["أنبياء آخرون", "ملائكة", "مسافرون", "أفراد العائلة"],
+          "correctIndex": 1,
+          "explanation": "Angels came to Prophet Ibrahim and gave him the good news about Ishaq.",
+          "explanationArabic": "جاءت الملائكة إلى النبي إبراهيم وأعطته البشارة عن إسحاق."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_ishaq_lesson_2",
+      "title": "A Miraculous Birth",
+      "titleArabic": "ولادة معجزة",
+      "sortOrder": 2,
+      "durationMinutes": 5,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Just as the angels promised, Allah blessed Ibrahim and Sarah with a baby boy! They named him Ishaq, which means 'laughter' because Sarah laughed with joy when she heard the news.",
+          "contentTextArabic": "كما وعد الملائكة، بارك الله إبراهيم وسارة بطفل! سموه إسحاق، وتعني 'الضحك' لأن سارة ضحكت من الفرح عندما سمعت الخبر."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Ishaq was a special blessing from Allah. His birth showed everyone that Allah can do anything, even things that seem impossible to people!",
+          "contentTextArabic": "كان إسحاق نعمة خاصة من الله. أظهرت ولادته للجميع أن الله قادر على كل شيء، حتى الأشياء التي تبدو مستحيلة للناس!"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Ibrahim already had another son named Ismail, who lived in Makkah with his mother Hajar. Now with Ishaq, Ibrahim had two blessed sons who would both become prophets!",
+          "contentTextArabic": "كان لدى إبراهيم ابن آخر يدعى إسماعيل، يعيش في مكة مع أمه هاجر. الآن مع إسحاق، أصبح لدى إبراهيم ابنان مباركان سيصبحان نبيين!"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Ishaq grew up learning from his father Ibrahim, one of the greatest prophets. He learned about Allah, about being kind, and about always telling the truth.",
+          "contentTextArabic": "كبر إسحاق وهو يتعلم من أبيه إبراهيم، أحد أعظم الأنبياء. تعلم عن الله، وعن اللطف، وعن قول الحق دائماً."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does the name 'Ishaq' mean?",
+          "questionArabic": "ماذا يعني اسم 'إسحاق'؟",
+          "options": ["Strong", "Wise", "Laughter", "Blessed"],
+          "optionsArabic": ["قوي", "حكيم", "ضحك", "مبارك"],
+          "correctIndex": 2,
+          "explanation": "Ishaq means 'laughter' because Sarah laughed with joy at the good news.",
+          "explanationArabic": "إسحاق يعني 'الضحك' لأن سارة ضحكت من الفرح عند سماع الخبر."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_ishaq_lesson_3",
+      "title": "Ishaq Becomes a Prophet",
+      "titleArabic": "إسحاق يصبح نبياً",
+      "sortOrder": 3,
+      "durationMinutes": 5,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "When Ishaq grew up, Allah chose him to be a prophet, just like his father Ibrahim. He continued teaching people to worship Allah alone.",
+          "contentTextArabic": "عندما كبر إسحاق، اختاره الله ليكون نبياً، مثل أبيه إبراهيم. واصل تعليم الناس عبادة الله وحده."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Prophet Ishaq lived in the land of Canaan (which is now Palestine). He was known for being righteous, patient, and always grateful to Allah.",
+          "contentTextArabic": "عاش النبي إسحاق في أرض كنعان (وهي فلسطين الآن). كان معروفاً بالصلاح والصبر والشكر لله دائماً."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Allah mentions Ishaq in the Quran as one of the righteous prophets. He was blessed with wisdom and was guided to the straight path.",
+          "contentTextArabic": "يذكر الله إسحاق في القرآن كأحد الأنبياء الصالحين. بورك بالحكمة وهُدي إلى الصراط المستقيم."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Ishaq married a good woman named Rifqah (Rebecca). Together they prayed to Allah for children, and Allah blessed them with twin boys!",
+          "contentTextArabic": "تزوج إسحاق امرأة صالحة تدعى رفقة. معاً دعوا الله أن يرزقهما أطفالاً، وبارك الله لهما بتوأم!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Where did Prophet Ishaq live?",
+          "questionArabic": "أين عاش النبي إسحاق؟",
+          "options": ["Makkah", "Egypt", "Canaan (Palestine)", "Yemen"],
+          "optionsArabic": ["مكة", "مصر", "كنعان (فلسطين)", "اليمن"],
+          "correctIndex": 2,
+          "explanation": "Prophet Ishaq lived in the land of Canaan, which is now Palestine.",
+          "explanationArabic": "عاش النبي إسحاق في أرض كنعان، وهي فلسطين الآن."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_ishaq_lesson_4",
+      "title": "A Family of Prophets",
+      "titleArabic": "عائلة من الأنبياء",
+      "sortOrder": 4,
+      "durationMinutes": 5,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Prophet Ishaq's family was truly special. His father Ibrahim was a prophet, his brother Ismail was a prophet, and his son Yaqub would also become a prophet!",
+          "contentTextArabic": "كانت عائلة النبي إسحاق مميزة حقاً. أبوه إبراهيم كان نبياً، وأخوه إسماعيل كان نبياً، وابنه يعقوب سيصبح نبياً أيضاً!"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "And from Yaqub's children came Prophet Yusuf, one of the most beautiful stories in the Quran! This blessed family carried Allah's message for generations.",
+          "contentTextArabic": "ومن أبناء يعقوب جاء النبي يوسف، صاحب أجمل القصص في القرآن! هذه العائلة المباركة حملت رسالة الله لأجيال."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Allah says in the Quran: 'And We gave to him Ishaq and Yaqub, and placed in his descendants prophethood and scripture.' (29:27) What an amazing blessing!",
+          "contentTextArabic": "يقول الله في القرآن: 'وَوَهَبْنَا لَهُ إِسْحَاقَ وَيَعْقُوبَ وَجَعَلْنَا فِي ذُرِّيَّتِهِ النُّبُوَّةَ وَالْكِتَابَ' (29:27) يا لها من نعمة عظيمة!"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "This teaches us that when we follow Allah's path, He blesses not just us, but our families too. Good parents raise good children who can change the world!",
+          "contentTextArabic": "هذا يعلمنا أنه عندما نتبع طريق الله، يبارك ليس فقط فينا، بل في عائلاتنا أيضاً. الآباء الصالحون يربون أطفالاً صالحين يمكنهم تغيير العالم!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Who was Prophet Ishaq's son?",
+          "questionArabic": "من كان ابن النبي إسحاق؟",
+          "options": ["Yusuf", "Musa", "Yaqub", "Dawud"],
+          "optionsArabic": ["يوسف", "موسى", "يعقوب", "داود"],
+          "correctIndex": 2,
+          "explanation": "Prophet Yaqub was the son of Prophet Ishaq.",
+          "explanationArabic": "النبي يعقوب كان ابن النبي إسحاق."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_ishaq_lesson_5",
+      "title": "Lessons from Prophet Ishaq",
+      "titleArabic": "دروس من النبي إسحاق",
+      "sortOrder": 5,
+      "durationMinutes": 5,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Prophet Ishaq teaches us to never give up hope. His parents waited so long for a child, but Allah answered their prayers at the perfect time.",
+          "contentTextArabic": "يعلمنا النبي إسحاق ألا نفقد الأمل أبداً. انتظر والداه طويلاً لإنجاب طفل، لكن الله استجاب لدعائهم في الوقت المثالي."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "We also learn that Allah can do anything! Even when something seems impossible, Allah has the power to make it happen. We should always trust in Him.",
+          "contentTextArabic": "نتعلم أيضاً أن الله قادر على كل شيء! حتى عندما يبدو شيء مستحيلاً، الله لديه القدرة على تحقيقه. يجب أن نثق به دائماً."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Ishaq shows us the importance of learning from good parents. He learned from Prophet Ibrahim and then taught his own children. Knowledge passes from generation to generation.",
+          "contentTextArabic": "يُظهر لنا إسحاق أهمية التعلم من الوالدين الصالحين. تعلم من النبي إبراهيم ثم علم أبناءه. المعرفة تنتقل من جيل إلى جيل."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "May Allah bless us like He blessed the family of Ibrahim and Ishaq. May we raise children who love Allah and follow His path!",
+          "contentTextArabic": "اللهم بارك لنا كما باركت لعائلة إبراهيم وإسحاق. اللهم ارزقنا ذرية تحب الله وتتبع طريقه!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is the main lesson from Prophet Ishaq's birth?",
+          "questionArabic": "ما هو الدرس الرئيسي من ولادة النبي إسحاق؟",
+          "options": ["Be rich", "Allah can do anything", "Travel a lot", "Build big houses"],
+          "optionsArabic": ["كن غنياً", "الله قادر على كل شيء", "سافر كثيراً", "ابنِ بيوتاً كبيرة"],
+          "correctIndex": 1,
+          "explanation": "Prophet Ishaq's miraculous birth shows us that Allah can do anything, even the impossible.",
+          "explanationArabic": "ولادة النبي إسحاق المعجزة تُظهر لنا أن الله قادر على كل شيء، حتى المستحيل."
+        }
+      ]
+    }
+  ]
+}

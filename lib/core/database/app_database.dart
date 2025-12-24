@@ -10,6 +10,7 @@ import 'tables/lessons_table.dart';
 import 'tables/bookmarks_table.dart';
 import 'tables/progress_table.dart';
 import 'tables/settings_table.dart';
+import 'tables/subscription_table.dart';
 
 part 'app_database.g.dart';
 
@@ -25,6 +26,8 @@ part 'app_database.g.dart';
     UserProgress,
     LessonProgress,
     AppSettings,
+    Subscriptions,
+    PromoCodes,
   ],
 )
 class AppDatabase extends _$AppDatabase {
@@ -33,7 +36,7 @@ class AppDatabase extends _$AppDatabase {
   AppDatabase.forTesting(super.e);
 
   @override
-  int get schemaVersion => 1;
+  int get schemaVersion => 2;
 
   @override
   MigrationStrategy get migration {
@@ -42,7 +45,11 @@ class AppDatabase extends _$AppDatabase {
         await m.createAll();
       },
       onUpgrade: (Migrator m, int from, int to) async {
-        // Handle migrations here when schema changes
+        // Migration from version 1 to 2: Add subscription tables
+        if (from < 2) {
+          await m.createTable(subscriptions);
+          await m.createTable(promoCodes);
+        }
       },
       beforeOpen: (details) async {
         // Enable foreign keys

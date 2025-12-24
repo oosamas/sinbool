@@ -1,0 +1,324 @@
+{
+  "chapter": {
+    "serverId": "prophet_zakariya",
+    "title": "Prophet Zakariya",
+    "titleArabic": "النبي زكريا",
+    "description": "The story of Prophet Zakariya, the elderly prophet who was blessed with a son in old age",
+    "descriptionArabic": "قصة النبي زكريا، النبي المسن الذي بُورك بولد في شيخوخته",
+    "iconName": "zakariya",
+    "colorHex": "#5E35B1",
+    "sortOrder": 16
+  },
+  "lessons": [
+    {
+      "serverId": "prophet_zakariya_lesson_1",
+      "title": "The Righteous Prophet",
+      "titleArabic": "النبي الصالح",
+      "sortOrder": 1,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Prophet Zakariya was a righteous man from the family of Imran. He served Allah faithfully and was known for his devotion and piety. He was a priest who served in the temple.",
+          "contentTextArabic": "كان النبي زكريا رجلاً صالحاً من آل عمران. خدم الله بإخلاص وعُرف بتقواه وورعه. كان كاهناً يخدم في المعبد."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Zakariya and his wife were very old, and they had no children. His wife had never been able to have a baby. This made Zakariya sad, but he never lost hope in Allah's mercy.",
+          "contentTextArabic": "كان زكريا وزوجته كبيرين جداً في السن، ولم يكن لهما أولاد. لم تستطع زوجته أبداً إنجاب طفل. أحزن هذا زكريا، لكنه لم يفقد الأمل في رحمة الله."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Allah gave Zakariya an important responsibility. He was chosen to be the guardian of young Maryam, the daughter of Imran. He took care of her and watched over her upbringing.",
+          "contentTextArabic": "أعطى الله زكريا مسؤولية مهمة. اختير ليكون كفيل مريم الصغيرة، ابنة عمران. اعتنى بها وأشرف على تربيتها."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Maryam had a special room in the temple called a mihrab, where she worshipped Allah. Zakariya would visit her regularly to check on her and bring her what she needed.",
+          "contentTextArabic": "كان لمريم غرفة خاصة في المعبد تُسمى المحراب، حيث كانت تعبد الله. كان زكريا يزورها بانتظام ليطمئن عليها ويحضر لها ما تحتاج."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Zakariya was a patient and devoted servant of Allah. Even though he had no children, he continued to pray and serve Allah with all his heart. His faith never weakened.",
+          "contentTextArabic": "كان زكريا عبداً صبوراً ومخلصاً لله. رغم أنه لم يكن لديه أولاد، استمر في الصلاة وخدمة الله بكل قلبه. لم يضعف إيمانه أبداً."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What was Prophet Zakariya's role in the temple?",
+          "questionArabic": "ما كان دور النبي زكريا في المعبد؟",
+          "options": ["A soldier", "A priest who served Allah", "A merchant", "A builder"],
+          "optionsArabic": ["جندي", "كاهن يخدم الله", "تاجر", "بنّاء"],
+          "correctIndex": 1,
+          "explanation": "Zakariya was a priest who faithfully served Allah in the temple.",
+          "explanationArabic": "كان زكريا كاهناً يخدم الله بإخلاص في المعبد."
+        },
+        {
+          "question": "Who was Zakariya chosen to take care of?",
+          "questionArabic": "من اختير زكريا ليعتني بها؟",
+          "options": ["His sister", "Young Maryam", "The king's daughter", "His niece"],
+          "optionsArabic": ["أخته", "مريم الصغيرة", "ابنة الملك", "ابنة أخيه"],
+          "correctIndex": 1,
+          "explanation": "Allah chose Zakariya to be the guardian of young Maryam.",
+          "explanationArabic": "اختار الله زكريا ليكون كفيل مريم الصغيرة."
+        },
+        {
+          "question": "What was Zakariya's situation regarding children?",
+          "questionArabic": "ما كان وضع زكريا بخصوص الأولاد؟",
+          "options": ["He had many children", "He had no children and was very old", "He had one son", "He didn't want children"],
+          "optionsArabic": ["كان لديه أولاد كثيرون", "لم يكن لديه أولاد وكان كبيراً في السن", "كان لديه ابن واحد", "لم يرد أولاداً"],
+          "correctIndex": 1,
+          "explanation": "Zakariya and his wife were old and had no children, but he never lost hope.",
+          "explanationArabic": "كان زكريا وزوجته كبيرين ولم يكن لهما أولاد، لكنه لم يفقد الأمل."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_zakariya_lesson_2",
+      "title": "The Miracle That Inspired Hope",
+      "titleArabic": "المعجزة التي ألهمت الأمل",
+      "sortOrder": 2,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "One day, Zakariya visited Maryam in her mihrab and found something amazing. She had fresh fruits - fruits that were out of season! In winter, she had summer fruits. In summer, winter fruits.",
+          "contentTextArabic": "في يوم، زار زكريا مريم في محرابها ووجد شيئاً مذهلاً. كان عندها فواكه طازجة - فواكه في غير موسمها! في الشتاء، كان عندها فواكه الصيف. وفي الصيف، فواكه الشتاء."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Zakariya asked in surprise, 'O Maryam, where did you get this from?' She answered, 'It is from Allah. Indeed, Allah provides for whoever He wills without limit.'",
+          "contentTextArabic": "سأل زكريا بدهشة: 'يا مريم أنى لك هذا؟' أجابت: 'هو من عند الله. إن الله يرزق من يشاء بغير حساب.'"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "This miracle opened Zakariya's heart to new hope. If Allah could provide out-of-season fruits, surely He could grant anything! Zakariya thought: maybe Allah could give me a child too, even in my old age.",
+          "contentTextArabic": "فتحت هذه المعجزة قلب زكريا لأمل جديد. إذا كان الله يستطيع أن يرزق فواكه في غير موسمها، فهو قادر على كل شيء! فكر زكريا: ربما يرزقني الله ولداً أيضاً، حتى في شيخوختي."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "The Quran tells us: 'At that moment, Zakariya called upon his Lord.' Right there, inspired by Maryam's miracle, Zakariya made a heartfelt prayer to Allah for a child.",
+          "contentTextArabic": "يخبرنا القرآن: 'هنالك دعا زكريا ربه.' هناك، مُلهماً بمعجزة مريم، دعا زكريا الله دعاءً من القلب أن يرزقه ولداً."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "This teaches us an important lesson: we should never think that something is impossible for Allah. What we see around us of Allah's miracles should increase our hope and inspire us to ask Him for what we need.",
+          "contentTextArabic": "هذا يعلمنا درساً مهماً: يجب ألا نظن أن شيئاً مستحيل على الله. ما نراه من معجزات الله يجب أن يزيد أملنا ويُلهمنا أن نسأله ما نحتاج."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What did Zakariya find with Maryam that surprised him?",
+          "questionArabic": "ماذا وجد زكريا عند مريم فأدهشه؟",
+          "options": ["Gold and silver", "Fresh fruits out of season", "Many books", "Beautiful clothes"],
+          "optionsArabic": ["ذهباً وفضة", "فواكه طازجة في غير موسمها", "كتباً كثيرة", "ملابس جميلة"],
+          "correctIndex": 1,
+          "explanation": "Zakariya found fresh fruits that were out of season - a miracle from Allah.",
+          "explanationArabic": "وجد زكريا فواكه طازجة في غير موسمها - معجزة من الله."
+        },
+        {
+          "question": "How did this miracle affect Zakariya?",
+          "questionArabic": "كيف أثرت هذه المعجزة على زكريا؟",
+          "options": ["He became scared", "It inspired him to pray for a child", "He forgot about it", "He became angry"],
+          "optionsArabic": ["خاف", "ألهمته أن يدعو بولد", "نسيها", "غضب"],
+          "correctIndex": 1,
+          "explanation": "The miracle inspired Zakariya to hope and pray to Allah for a child.",
+          "explanationArabic": "ألهمته المعجزة أن يأمل ويدعو الله أن يرزقه ولداً."
+        },
+        {
+          "question": "What lesson do we learn from this?",
+          "questionArabic": "ما الدرس الذي نتعلمه من هذا؟",
+          "options": ["Some things are impossible for Allah", "Nothing is impossible for Allah", "We shouldn't ask Allah for things", "Miracles only happened long ago"],
+          "optionsArabic": ["بعض الأشياء مستحيلة على الله", "لا شيء مستحيل على الله", "لا يجب أن نسأل الله", "المعجزات حدثت قديماً فقط"],
+          "correctIndex": 1,
+          "explanation": "Nothing is impossible for Allah - He can do anything He wills.",
+          "explanationArabic": "لا شيء مستحيل على الله - يستطيع فعل أي شيء يشاء."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_zakariya_lesson_3",
+      "title": "The Secret Prayer",
+      "titleArabic": "الدعاء السري",
+      "sortOrder": 3,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "The Quran describes Zakariya's beautiful prayer. It says he called upon his Lord 'a secret call.' He prayed quietly and privately, pouring out his heart to Allah.",
+          "contentTextArabic": "يصف القرآن دعاء زكريا الجميل. يقول إنه نادى ربه 'نداءً خفياً.' دعا بهدوء وسرية، يفتح قلبه لله."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Zakariya said, 'My Lord, my bones have weakened, and my head is filled with white hair. But I have never been disappointed in my prayers to You, my Lord.'",
+          "contentTextArabic": "قال زكريا: 'رب إني وهن العظم مني واشتعل الرأس شيباً ولم أكن بدعائك رب شقياً.'"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "He continued, 'I fear for my relatives after me, and my wife is barren. So give me from Yourself a son who will inherit from me and inherit from the family of Yaqub.'",
+          "contentTextArabic": "وتابع: 'وإني خفت الموالي من ورائي وكانت امرأتي عاقراً فهب لي من لدنك ولياً. يرثني ويرث من آل يعقوب.'"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Zakariya wanted a son who would continue the message of the prophets. He wanted someone to carry on the work of teaching people about Allah after he was gone.",
+          "contentTextArabic": "أراد زكريا ابناً يُكمل رسالة الأنبياء. أراد شخصاً يستمر في تعليم الناس عن الله بعد رحيله."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "He ended his prayer saying, 'And make him, my Lord, pleasing to You.' He didn't just want any child - he wanted a righteous child who would please Allah. This is what all parents should pray for.",
+          "contentTextArabic": "أنهى دعاءه قائلاً: 'واجعله رب رضياً.' لم يرد مجرد طفل - أراد طفلاً صالحاً يُرضي الله. هذا ما يجب أن يدعو به كل الآباء."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How did Zakariya make his prayer?",
+          "questionArabic": "كيف دعا زكريا؟",
+          "options": ["Very loudly", "Secretly and quietly", "In front of many people", "While sleeping"],
+          "optionsArabic": ["بصوت عالٍ جداً", "سراً وبهدوء", "أمام كثير من الناس", "وهو نائم"],
+          "correctIndex": 1,
+          "explanation": "Zakariya made a secret, quiet prayer from his heart to Allah.",
+          "explanationArabic": "دعا زكريا دعاءً خفياً هادئاً من قلبه لله."
+        },
+        {
+          "question": "What did Zakariya say about his past prayers?",
+          "questionArabic": "ماذا قال زكريا عن دعائه السابق؟",
+          "options": ["They were always rejected", "He never prayed before", "He was never disappointed in them", "They were too short"],
+          "optionsArabic": ["كانت مرفوضة دائماً", "لم يدعُ من قبل", "لم يكن شقياً بها", "كانت قصيرة جداً"],
+          "correctIndex": 2,
+          "explanation": "Zakariya said he had never been disappointed in his prayers to Allah.",
+          "explanationArabic": "قال زكريا إنه لم يكن بدعائه لله شقياً."
+        },
+        {
+          "question": "What kind of son did Zakariya ask for?",
+          "questionArabic": "أي نوع من الأبناء طلب زكريا؟",
+          "options": ["A rich son", "A strong warrior", "A righteous son pleasing to Allah", "A famous son"],
+          "optionsArabic": ["ابناً غنياً", "محارباً قوياً", "ابناً صالحاً يُرضي الله", "ابناً مشهوراً"],
+          "correctIndex": 2,
+          "explanation": "Zakariya asked for a son who would be righteous and pleasing to Allah.",
+          "explanationArabic": "طلب زكريا ابناً صالحاً يكون رضياً عند الله."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_zakariya_lesson_4",
+      "title": "The Good News",
+      "titleArabic": "البشارة",
+      "sortOrder": 4,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Allah answered Zakariya's prayer immediately! While he was praying in the mihrab, the angels called out to him: 'O Zakariya, We give you good news of a son whose name will be Yahya.'",
+          "contentTextArabic": "استجاب الله لدعاء زكريا فوراً! بينما كان يصلي في المحراب، نادته الملائكة: 'يا زكريا إنا نبشرك بغلام اسمه يحيى.'"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "This name 'Yahya' was special. Allah said: 'We have not given this name to anyone before.' It was a unique name chosen by Allah Himself for this blessed child.",
+          "contentTextArabic": "كان اسم 'يحيى' خاصاً. قال الله: 'لم نجعل له من قبل سمياً.' كان اسماً فريداً اختاره الله بنفسه لهذا الطفل المبارك."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Zakariya was amazed! He said, 'My Lord, how can I have a son when my wife is barren and I have become extremely old?' It seemed impossible by normal standards.",
+          "contentTextArabic": "اندهش زكريا! قال: 'رب أنى يكون لي غلام وكانت امرأتي عاقراً وقد بلغت من الكبر عتياً؟' بدا مستحيلاً بالمعايير العادية."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Allah replied, 'Thus it will be. Your Lord says: It is easy for Me, for I created you before when you were nothing.' Allah reminded him that He created him from nothing - so giving him a son was easy!",
+          "contentTextArabic": "أجاب الله: 'كذلك قال ربك هو عليّ هين وقد خلقتك من قبل ولم تك شيئاً.' ذكّره الله أنه خلقه من لا شيء - فإعطاؤه ولداً أمر هين!"
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "This teaches us that Allah's power is unlimited. He is not bound by the laws of nature that He created. When Allah decides something, He simply says 'Be' and it is.",
+          "contentTextArabic": "هذا يعلمنا أن قدرة الله لا حدود لها. هو ليس مُقيداً بقوانين الطبيعة التي خلقها. عندما يقرر الله شيئاً، يقول فقط 'كن' فيكون."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What name did Allah choose for Zakariya's son?",
+          "questionArabic": "ما الاسم الذي اختاره الله لابن زكريا؟",
+          "options": ["Ibrahim", "Musa", "Yahya", "Dawud"],
+          "optionsArabic": ["إبراهيم", "موسى", "يحيى", "داود"],
+          "correctIndex": 2,
+          "explanation": "Allah gave the name Yahya - a unique name that no one had before.",
+          "explanationArabic": "أعطى الله اسم يحيى - اسم فريد لم يكن لأحد من قبل."
+        },
+        {
+          "question": "What was special about the name Yahya?",
+          "questionArabic": "ما الذي كان مميزاً في اسم يحيى؟",
+          "options": ["It was very common", "No one had been given this name before", "It was Zakariya's father's name", "It was chosen by Zakariya"],
+          "optionsArabic": ["كان شائعاً جداً", "لم يُعطَ لأحد من قبل", "كان اسم والد زكريا", "اختاره زكريا"],
+          "correctIndex": 1,
+          "explanation": "Allah said no one had been given this name before - it was unique.",
+          "explanationArabic": "قال الله إنه لم يُجعل لأحد من قبل هذا الاسم - كان فريداً."
+        },
+        {
+          "question": "How did Allah remind Zakariya of His power?",
+          "questionArabic": "كيف ذكّر الله زكريا بقدرته؟",
+          "options": ["By showing him the stars", "By reminding him He created him from nothing", "By sending a storm", "By making the sun stop"],
+          "optionsArabic": ["بإراءته النجوم", "بتذكيره أنه خلقه من لا شيء", "بإرسال عاصفة", "بإيقاف الشمس"],
+          "correctIndex": 1,
+          "explanation": "Allah reminded Zakariya that He created him when he was nothing - so giving a son was easy.",
+          "explanationArabic": "ذكّر الله زكريا أنه خلقه ولم يكن شيئاً - فإعطاؤه ولداً أمر هين."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_zakariya_lesson_5",
+      "title": "The Sign of Silence",
+      "titleArabic": "آية الصمت",
+      "sortOrder": 5,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Zakariya wanted a sign that this wonderful blessing was really happening. He asked Allah, 'My Lord, give me a sign.' He wanted confirmation of this amazing news.",
+          "contentTextArabic": "أراد زكريا آية أن هذه النعمة الرائعة تحدث حقاً. سأل الله: 'رب اجعل لي آية.' أراد تأكيداً لهذا الخبر المذهل."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Allah gave him a unique sign. He said, 'Your sign is that you will not speak to people for three nights, while being healthy.' Zakariya would be physically fine, but unable to speak!",
+          "contentTextArabic": "أعطاه الله آية فريدة. قال: 'آيتك ألا تكلم الناس ثلاث ليالٍ سوياً.' سيكون زكريا بصحة جيدة، لكنه لن يستطيع الكلام!"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Zakariya came out to his people from the mihrab. He tried to speak but could not! He gestured to them to glorify Allah in the morning and evening. The sign had begun.",
+          "contentTextArabic": "خرج زكريا على قومه من المحراب. حاول أن يتكلم لكنه لم يستطع! أشار إليهم أن يسبحوا الله بكرة وعشياً. بدأت الآية."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "This silence was a gift, not a punishment. It gave Zakariya time to reflect on Allah's blessing with gratitude. He could still communicate - just not with words. He could still remember Allah.",
+          "contentTextArabic": "كان هذا الصمت هبة، لا عقوبة. أعطى زكريا وقتاً للتأمل في نعمة الله بشكر. كان لا يزال يستطيع التواصل - فقط ليس بالكلمات. كان لا يزال يستطيع ذكر الله."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "During these three days, Zakariya spent his time praising and thanking Allah. Soon after, the miracle happened - his elderly wife became pregnant! The impossible became real by Allah's will.",
+          "contentTextArabic": "خلال هذه الأيام الثلاثة، قضى زكريا وقته في الحمد والشكر لله. وسرعان ما حدثت المعجزة - حملت زوجته المسنة! أصبح المستحيل حقيقة بمشيئة الله."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What sign did Allah give Zakariya?",
+          "questionArabic": "ما الآية التي أعطاها الله لزكريا؟",
+          "options": ["He would fly", "He would not speak for three nights", "He would become young", "He would see angels"],
+          "optionsArabic": ["سيطير", "لن يتكلم ثلاث ليالٍ", "سيصبح شاباً", "سيرى الملائكة"],
+          "correctIndex": 1,
+          "explanation": "Allah's sign was that Zakariya would not be able to speak for three nights while being healthy.",
+          "explanationArabic": "آية الله كانت أن زكريا لن يستطيع الكلام ثلاث ليالٍ وهو سوي."
+        },
+        {
+          "question": "How did Zakariya communicate during his silence?",
+          "questionArabic": "كيف تواصل زكريا خلال صمته؟",
+          "options": ["He wrote everything", "He gestured (used signs)", "He couldn't communicate at all", "He whispered"],
+          "optionsArabic": ["كتب كل شيء", "أشار (استخدم الإشارات)", "لم يستطع التواصل أبداً", "همس"],
+          "correctIndex": 1,
+          "explanation": "Zakariya communicated by gesturing to people to glorify Allah.",
+          "explanationArabic": "تواصل زكريا بالإشارة للناس أن يسبحوا الله."
+        },
+        {
+          "question": "What did Zakariya do during his three days of silence?",
+          "questionArabic": "ماذا فعل زكريا خلال ثلاثة أيام صمته؟",
+          "options": ["He slept all day", "He praised and thanked Allah", "He was sad and upset", "He traveled far away"],
+          "optionsArabic": ["نام طوال اليوم", "حمد وشكر الله", "كان حزيناً ومنزعجاً", "سافر بعيداً"],
+          "correctIndex": 1,
+          "explanation": "Zakariya spent the time praising and thanking Allah for His blessing.",
+          "explanationArabic": "قضى زكريا الوقت في حمد وشكر الله على نعمته."
+        }
+      ]
+    }
+  ]
+}

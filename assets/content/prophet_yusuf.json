@@ -1,0 +1,469 @@
+{
+  "chapter": {
+    "serverId": "prophet_yusuf",
+    "title": "Prophet Yusuf",
+    "titleArabic": "النبي يوسف",
+    "description": "The Best of Stories - From Slavery to Kingship",
+    "descriptionArabic": "أحسن القصص - من العبودية إلى الملك",
+    "iconName": "auto_stories",
+    "colorHex": "#00695C",
+    "sortOrder": 5
+  },
+  "lessons": [
+    {
+      "serverId": "yusuf_lesson_1",
+      "title": "The Beautiful Dream",
+      "titleArabic": "الرؤيا الجميلة",
+      "subtitle": "Yusuf sees a special vision",
+      "subtitleArabic": "يوسف يرى رؤيا خاصة",
+      "sortOrder": 1,
+      "durationMinutes": 7,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Yusuf was a young boy living with his family in the land of Canaan. He was the son of Prophet Yaqub (Jacob), who was the son of Prophet Ishaq, who was the son of Prophet Ibrahim. Yusuf came from a noble family of prophets.",
+          "contentTextArabic": "كان يوسف صبياً يعيش مع عائلته في أرض كنعان. كان ابن النبي يعقوب، الذي كان ابن النبي إسحاق، الذي كان ابن النبي إبراهيم. جاء يوسف من عائلة كريمة من الأنبياء."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Yusuf had eleven brothers. His father Yaqub loved all his children, but he had a special affection for Yusuf and his younger brother Binyamin (Benjamin) because they were the sons of his beloved wife Rachel who had passed away.",
+          "contentTextArabic": "كان ليوسف أحد عشر أخاً. أحب أبوه يعقوب جميع أبنائه، لكنه كان يحب يوسف وأخاه الأصغر بنيامين بشكل خاص لأنهما ابنا زوجته الحبيبة راحيل التي توفيت."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "One morning, young Yusuf woke up excited. He had seen an amazing dream! He ran to his father and said: \"O my father, indeed I saw eleven stars and the sun and the moon - I saw them prostrating to me!\"",
+          "contentTextArabic": "ذات صباح، استيقظ يوسف الصغير متحمساً. رأى حلماً مذهلاً! ركض إلى أبيه وقال: \"يا أبت إني رأيت أحد عشر كوكباً والشمس والقمر رأيتهم لي ساجدين!\""
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Yaqub understood this dream was from Allah. The eleven stars represented Yusuf's eleven brothers. The sun and moon represented his parents. This dream meant that one day, Yusuf would become great and his family would honor him.",
+          "contentTextArabic": "فهم يعقوب أن هذا الحلم من الله. الكواكب الأحد عشر تمثل إخوة يوسف الأحد عشر. الشمس والقمر يمثلان والديه. هذا الحلم يعني أن يوسف سيصبح عظيماً يوماً ما وستكرمه عائلته."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "But Yaqub was worried. He knew that jealousy is a dangerous thing. He said: \"O my son, do not tell your brothers about your dream. They might plot against you out of jealousy. Indeed, Satan is to mankind a clear enemy.\"",
+          "contentTextArabic": "لكن يعقوب كان قلقاً. كان يعلم أن الغيرة شيء خطير. قال: \"يا بني لا تقصص رؤياك على إخوتك فيكيدوا لك كيداً إن الشيطان للإنسان عدو مبين.\""
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "Yaqub continued to advise his son: \"And thus will your Lord choose you and teach you the interpretation of dreams and complete His favor upon you and upon the family of Yaqub, as He completed it upon your fathers before.\"",
+          "contentTextArabic": "تابع يعقوب نصح ابنه: \"وكذلك يجتبيك ربك ويعلمك من تأويل الأحاديث ويتم نعمته عليك وعلى آل يعقوب كما أتمها على أبويك من قبل.\""
+        },
+        {
+          "pageNumber": 7,
+          "contentText": "Yusuf was blessed with exceptional beauty and a pure heart. Allah had given him half of all the beauty given to mankind. But more importantly, he had good character, intelligence, and strong faith in Allah.",
+          "contentTextArabic": "كان يوسف مباركاً بجمال استثنائي وقلب طاهر. أعطاه الله نصف الجمال الذي أُعطي للبشرية. لكن الأهم أنه كان ذا أخلاق حسنة وذكاء وإيمان قوي بالله."
+        },
+        {
+          "pageNumber": 8,
+          "contentText": "This dream would take many years to come true. Yusuf would face many trials and difficulties, but through it all, his trust in Allah would never waver. His story teaches us that Allah's plans are always perfect, even when we cannot see the way.",
+          "contentTextArabic": "سيستغرق هذا الحلم سنوات عديدة ليتحقق. سيواجه يوسف تجارب وصعوبات كثيرة، لكن خلال كل ذلك، لن تتزعزع ثقته في الله. قصته تعلمنا أن خطط الله دائماً مثالية، حتى عندما لا نستطيع رؤية الطريق."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Who was Yusuf's father?",
+          "questionArabic": "من كان والد يوسف؟",
+          "options": ["Ibrahim", "Ishaq", "Yaqub", "Ismail"],
+          "optionsArabic": ["إبراهيم", "إسحاق", "يعقوب", "إسماعيل"],
+          "correctIndex": 2,
+          "explanation": "Yusuf was the son of Prophet Yaqub (Jacob), who was the son of Ishaq, who was the son of Ibrahim.",
+          "explanationArabic": "كان يوسف ابن النبي يعقوب، الذي كان ابن إسحاق، الذي كان ابن إبراهيم."
+        },
+        {
+          "question": "What did Yusuf see in his dream?",
+          "questionArabic": "ماذا رأى يوسف في حلمه؟",
+          "options": ["Angels in heaven", "Eleven stars, the sun, and moon prostrating to him", "A big palace", "His brothers playing"],
+          "optionsArabic": ["ملائكة في السماء", "أحد عشر كوكباً والشمس والقمر يسجدون له", "قصر كبير", "إخوته يلعبون"],
+          "correctIndex": 1,
+          "explanation": "Yusuf saw eleven stars (representing his brothers) and the sun and moon (representing his parents) prostrating to him.",
+          "explanationArabic": "رأى يوسف أحد عشر كوكباً (تمثل إخوته) والشمس والقمر (يمثلان والديه) يسجدون له."
+        },
+        {
+          "question": "What did Yaqub tell Yusuf about his dream?",
+          "questionArabic": "ماذا قال يعقوب ليوسف عن حلمه؟",
+          "options": ["Tell everyone about it", "Don't tell your brothers because they might be jealous", "Forget about it", "It means nothing"],
+          "optionsArabic": ["أخبر الجميع عنه", "لا تخبر إخوتك لأنهم قد يغارون", "انسه", "لا يعني شيئاً"],
+          "correctIndex": 1,
+          "explanation": "Yaqub warned Yusuf not to tell his brothers about the dream, fearing they might become jealous and plot against him.",
+          "explanationArabic": "حذر يعقوب يوسف ألا يخبر إخوته عن الحلم، خوفاً من أن يغاروا ويكيدوا له."
+        },
+        {
+          "question": "How many brothers did Yusuf have?",
+          "questionArabic": "كم أخاً كان ليوسف؟",
+          "options": ["Nine", "Ten", "Eleven", "Twelve"],
+          "optionsArabic": ["تسعة", "عشرة", "أحد عشر", "اثنا عشر"],
+          "correctIndex": 2,
+          "explanation": "Yusuf had eleven brothers, which is why he saw eleven stars in his dream.",
+          "explanationArabic": "كان ليوسف أحد عشر أخاً، لهذا رأى أحد عشر كوكباً في حلمه."
+        }
+      ]
+    },
+    {
+      "serverId": "yusuf_lesson_2",
+      "title": "The Brothers' Betrayal",
+      "titleArabic": "خيانة الإخوة",
+      "subtitle": "Jealousy leads to a terrible act",
+      "subtitleArabic": "الغيرة تؤدي إلى فعل شنيع",
+      "sortOrder": 2,
+      "durationMinutes": 8,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Yusuf's older brothers were jealous of him. They saw how much their father loved Yusuf and they felt angry. \"Yusuf and his brother Binyamin are more beloved to our father than us, even though we are a strong group. Our father is clearly wrong,\" they said.",
+          "contentTextArabic": "غار إخوة يوسف الأكبر منه. رأوا كم يحب أبوهم يوسف وشعروا بالغضب. قالوا: \"ليوسف وأخوه أحب إلى أبينا منا ونحن عصبة إن أبانا لفي ضلال مبين.\""
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "The brothers began plotting. Some said, \"Kill Yusuf or cast him out to some land so our father's attention will be only for us.\" But one brother said, \"Do not kill Yusuf. If you must do something, throw him into a well. Some travelers might pick him up.\"",
+          "contentTextArabic": "بدأ الإخوة يتآمرون. قال بعضهم: \"اقتلوا يوسف أو اطرحوه أرضاً يخل لكم وجه أبيكم.\" لكن أخاً قال: \"لا تقتلوا يوسف وألقوه في غيابت الجب يلتقطه بعض السيارة.\""
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "The brothers went to their father with a plan. \"O our father, why do you not trust us with Yusuf? We are sincere to him. Send him with us tomorrow to enjoy himself and play. We will protect him.\" Yaqub's heart was uneasy, but he eventually agreed.",
+          "contentTextArabic": "ذهب الإخوة إلى أبيهم بخطة. \"يا أبانا ما لك لا تأمنا على يوسف وإنا له لناصحون. أرسله معنا غداً يرتع ويلعب وإنا له لحافظون.\" كان قلب يعقوب قلقاً، لكنه وافق في النهاية."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "The next day, the brothers took Yusuf far from home. When they reached a deep well in a remote area, they grabbed young Yusuf and removed his beautiful shirt. Despite his pleas, they threw him into the dark well and left him there.",
+          "contentTextArabic": "في اليوم التالي، أخذ الإخوة يوسف بعيداً عن البيت. عندما وصلوا إلى بئر عميقة في منطقة نائية، أمسكوا يوسف الصغير ونزعوا قميصه الجميل. رغم توسلاته، ألقوه في البئر المظلمة وتركوه هناك."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "In the darkness of the well, Allah revealed to young Yusuf: \"You will surely inform them of this affair of theirs when they do not recognize you.\" This gave Yusuf hope - Allah had a plan, and one day he would meet his brothers again.",
+          "contentTextArabic": "في ظلمة البئر، أوحى الله ليوسف الصغير: \"لتنبئنهم بأمرهم هذا وهم لا يشعرون.\" هذا أعطى يوسف أملاً - كان لدى الله خطة، ويوماً ما سيلتقي إخوته مجدداً."
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "The brothers stained Yusuf's shirt with the blood of a sheep. They returned home at night, pretending to cry. \"O our father! We went racing and left Yusuf with our belongings, and a wolf ate him! But you will not believe us even though we speak the truth!\"",
+          "contentTextArabic": "لطخ الإخوة قميص يوسف بدم شاة. عادوا للبيت ليلاً متظاهرين بالبكاء. \"يا أبانا إنا ذهبنا نستبق وتركنا يوسف عند متاعنا فأكله الذئب وما أنت بمؤمن لنا ولو كنا صادقين!\""
+        },
+        {
+          "pageNumber": 7,
+          "contentText": "Yaqub looked at the shirt - it had blood but no tears from teeth or claws. He knew something was wrong. His heart broke, but he said: \"No, your souls have made this seem good to you. So patience is most fitting. And Allah is the one sought for help against what you describe.\"",
+          "contentTextArabic": "نظر يعقوب إلى القميص - كان فيه دم لكن لا تمزقات من أسنان أو مخالب. علم أن شيئاً خاطئاً. انكسر قلبه، لكنه قال: \"بل سولت لكم أنفسكم أمراً فصبر جميل والله المستعان على ما تصفون.\""
+        },
+        {
+          "pageNumber": 8,
+          "contentText": "Meanwhile, a caravan of travelers stopped at the well to get water. When they lowered their bucket, they pulled up young Yusuf! \"Good news! Here is a boy!\" they shouted. They decided to take him to Egypt and sell him as a slave.",
+          "contentTextArabic": "في هذه الأثناء، توقفت قافلة من المسافرين عند البئر للحصول على الماء. عندما أنزلوا دلوهم، سحبوا يوسف الصغير! صاحوا: \"يا بشرى هذا غلام!\" قرروا أخذه إلى مصر وبيعه عبداً."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why were Yusuf's brothers jealous of him?",
+          "questionArabic": "لماذا غار إخوة يوسف منه؟",
+          "options": ["He was taller", "Their father loved him more", "He had more toys", "He was older"],
+          "optionsArabic": ["كان أطول", "أبوهم يحبه أكثر", "كان لديه ألعاب أكثر", "كان أكبر"],
+          "correctIndex": 1,
+          "explanation": "The brothers were jealous because they felt their father Yaqub loved Yusuf and Binyamin more than them.",
+          "explanationArabic": "غار الإخوة لأنهم شعروا أن أباهم يعقوب يحب يوسف وبنيامين أكثر منهم."
+        },
+        {
+          "question": "What did the brothers do to Yusuf?",
+          "questionArabic": "ماذا فعل الإخوة بيوسف؟",
+          "options": ["Sent him to school", "Threw him in a well", "Gave him gifts", "Took him home"],
+          "optionsArabic": ["أرسلوه للمدرسة", "ألقوه في بئر", "أعطوه هدايا", "أخذوه للبيت"],
+          "correctIndex": 1,
+          "explanation": "The brothers threw Yusuf into a deep well in a remote area and left him there.",
+          "explanationArabic": "ألقى الإخوة يوسف في بئر عميقة في منطقة نائية وتركوه هناك."
+        },
+        {
+          "question": "What lie did the brothers tell their father?",
+          "questionArabic": "ما الكذبة التي أخبرها الإخوة لأبيهم؟",
+          "options": ["Yusuf ran away", "A wolf ate Yusuf", "Yusuf got lost", "Yusuf went to Egypt"],
+          "optionsArabic": ["يوسف هرب", "أكله الذئب", "يوسف ضاع", "يوسف ذهب لمصر"],
+          "correctIndex": 1,
+          "explanation": "The brothers brought Yusuf's shirt stained with sheep's blood and claimed that a wolf had eaten him.",
+          "explanationArabic": "أحضر الإخوة قميص يوسف ملطخاً بدم شاة وادعوا أن ذئباً أكله."
+        },
+        {
+          "question": "Who found Yusuf in the well?",
+          "questionArabic": "من وجد يوسف في البئر؟",
+          "options": ["His father", "His brothers", "Travelers from a caravan", "Soldiers"],
+          "optionsArabic": ["أبوه", "إخوته", "مسافرون من قافلة", "جنود"],
+          "correctIndex": 2,
+          "explanation": "A caravan of travelers stopped at the well for water and discovered Yusuf when they lowered their bucket.",
+          "explanationArabic": "توقفت قافلة من المسافرين عند البئر للماء واكتشفوا يوسف عندما أنزلوا دلوهم."
+        }
+      ]
+    },
+    {
+      "serverId": "yusuf_lesson_3",
+      "title": "The Test of Temptation",
+      "titleArabic": "اختبار الإغراء",
+      "subtitle": "Yusuf chooses righteousness",
+      "subtitleArabic": "يوسف يختار الصلاح",
+      "sortOrder": 3,
+      "durationMinutes": 8,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Yusuf was taken to Egypt and sold as a slave. But Allah's plan was at work. The man who bought him was the Aziz (minister) of Egypt, a powerful and wealthy man. He told his wife: \"Make his stay comfortable. Perhaps he will benefit us or we will adopt him as a son.\"",
+          "contentTextArabic": "أُخذ يوسف إلى مصر وبيع عبداً. لكن خطة الله كانت تعمل. الرجل الذي اشتراه كان عزيز مصر، رجل قوي وغني. قال لزوجته: \"أكرمي مثواه عسى أن ينفعنا أو نتخذه ولداً.\""
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Allah blessed Yusuf and established him in the land. He was given wisdom and knowledge. When he reached full maturity, he was remarkably handsome and had excellent character. Everyone in the house respected the young man.",
+          "contentTextArabic": "بارك الله يوسف ومكّن له في الأرض. أُعطي الحكمة والعلم. عندما بلغ أشده، كان وسيماً بشكل ملحوظ وذا أخلاق حميدة. احترمه كل من في البيت."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "But a great test was coming. The wife of the Aziz was captivated by Yusuf's beauty. One day, when they were alone in the house, she locked the doors and tried to tempt him. She said: \"Come to me.\" This was a severe trial.",
+          "contentTextArabic": "لكن اختباراً عظيماً كان قادماً. افتُتنت زوجة العزيز بجمال يوسف. ذات يوم، عندما كانا وحدهما في البيت، أغلقت الأبواب وحاولت إغراءه. قالت: \"هيت لك.\" كان هذا ابتلاء شديداً."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Yusuf immediately sought refuge in Allah. He said: \"I seek refuge in Allah! Indeed, he (your husband) is my master who has made good my stay. Indeed, wrongdoers will never succeed.\" He refused to betray his master's trust or disobey Allah.",
+          "contentTextArabic": "لجأ يوسف فوراً إلى الله. قال: \"معاذ الله إنه ربي أحسن مثواي إنه لا يفلح الظالمون.\" رفض أن يخون ثقة سيده أو يعصي الله."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Yusuf ran toward the door to escape. She chased after him and grabbed his shirt from behind, tearing it. At that moment, the Aziz arrived at the door! The wife quickly accused Yusuf: \"What is the punishment for one who intended evil toward your wife?\"",
+          "contentTextArabic": "ركض يوسف نحو الباب ليهرب. طاردته وأمسكت قميصه من الخلف فمزقته. في تلك اللحظة، وصل العزيز إلى الباب! اتهمت الزوجة يوسف بسرعة: \"ما جزاء من أراد بأهلك سوءاً؟\""
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "Yusuf defended himself truthfully: \"It was she who tried to seduce me.\" A witness from her own family pointed out the evidence: \"If his shirt is torn from the front, she has told the truth. But if it is torn from behind, then she has lied and he is truthful.\"",
+          "contentTextArabic": "دافع يوسف عن نفسه بصدق: \"هي راودتني عن نفسي.\" شاهد من أهلها أشار إلى الدليل: \"إن كان قميصه قُد من قُبُل فصدقت وهو من الكاذبين. وإن كان قميصه قُد من دُبُر فكذبت وهو من الصادقين.\""
+        },
+        {
+          "pageNumber": 7,
+          "contentText": "When the Aziz saw that the shirt was torn from behind, he knew Yusuf was innocent. But to protect his wife's reputation, he told Yusuf to keep silent about the matter. The story, however, spread through the city.",
+          "contentTextArabic": "عندما رأى العزيز أن القميص قُد من دُبُر، علم أن يوسف بريء. لكن لحماية سمعة زوجته، طلب من يوسف أن يكتم الأمر. لكن القصة انتشرت في المدينة."
+        },
+        {
+          "pageNumber": 8,
+          "contentText": "Yusuf chose prison over sinning against Allah. He prayed: \"My Lord, prison is more beloved to me than what they invite me to. And if You do not turn their plot away from me, I might incline toward them.\" Allah answered his prayer and protected him.",
+          "contentTextArabic": "اختار يوسف السجن على معصية الله. دعا: \"رب السجن أحب إلي مما يدعونني إليه وإلا تصرف عني كيدهن أصب إليهن.\" استجاب الله لدعائه وحماه."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Who bought Yusuf when he was brought to Egypt?",
+          "questionArabic": "من اشترى يوسف عندما أُحضر إلى مصر؟",
+          "options": ["The king of Egypt", "The Aziz (minister) of Egypt", "A farmer", "A merchant"],
+          "optionsArabic": ["ملك مصر", "عزيز مصر", "مزارع", "تاجر"],
+          "correctIndex": 1,
+          "explanation": "The Aziz of Egypt, a powerful minister, bought Yusuf and treated him well.",
+          "explanationArabic": "اشترى عزيز مصر، وزير قوي، يوسف وعامله بإحسان."
+        },
+        {
+          "question": "What did Yusuf say when he was tempted?",
+          "questionArabic": "ماذا قال يوسف عندما أُغري؟",
+          "options": ["He said nothing", "I seek refuge in Allah! Wrongdoers never succeed", "He asked for help", "He agreed"],
+          "optionsArabic": ["لم يقل شيئاً", "معاذ الله إنه لا يفلح الظالمون", "طلب المساعدة", "وافق"],
+          "correctIndex": 1,
+          "explanation": "Yusuf immediately sought refuge in Allah and reminded himself that wrongdoers never succeed.",
+          "explanationArabic": "لجأ يوسف فوراً إلى الله وذكّر نفسه أن الظالمين لا يفلحون."
+        },
+        {
+          "question": "How did they prove Yusuf was innocent?",
+          "questionArabic": "كيف أثبتوا أن يوسف بريء؟",
+          "options": ["He had witnesses", "His shirt was torn from behind, showing he was running away", "The wife confessed", "The Aziz believed him"],
+          "optionsArabic": ["كان لديه شهود", "قميصه مُزق من الخلف مما يدل أنه كان يهرب", "اعترفت الزوجة", "صدقه العزيز"],
+          "correctIndex": 1,
+          "explanation": "The evidence was that Yusuf's shirt was torn from behind, proving he was trying to escape, not pursue.",
+          "explanationArabic": "الدليل أن قميص يوسف مُزق من الخلف، مما يثبت أنه كان يحاول الهرب لا المتابعة."
+        },
+        {
+          "question": "What did Yusuf prefer over sinning?",
+          "questionArabic": "ماذا فضل يوسف على المعصية؟",
+          "options": ["Leaving Egypt", "Prison", "Fighting", "Hiding"],
+          "optionsArabic": ["مغادرة مصر", "السجن", "القتال", "الاختباء"],
+          "correctIndex": 1,
+          "explanation": "Yusuf prayed that prison was more beloved to him than what they invited him to. He chose hardship over sin.",
+          "explanationArabic": "دعا يوسف أن السجن أحب إليه مما يدعونه إليه. اختار المشقة على المعصية."
+        }
+      ]
+    },
+    {
+      "serverId": "yusuf_lesson_4",
+      "title": "From Prison to Palace",
+      "titleArabic": "من السجن إلى القصر",
+      "subtitle": "Allah rewards patience",
+      "subtitleArabic": "الله يكافئ الصبر",
+      "sortOrder": 4,
+      "durationMinutes": 8,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Yusuf was sent to prison, though he was innocent. But even in the darkest place, Allah was with him. In prison, Yusuf continued to worship Allah and be kind to others. Two young men entered prison with him - servants of the king.",
+          "contentTextArabic": "أُرسل يوسف إلى السجن رغم براءته. لكن حتى في أظلم مكان، كان الله معه. في السجن، استمر يوسف في عبادة الله والإحسان للآخرين. دخل شابان معه السجن - خدم للملك."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "The two servants had strange dreams. One saw himself pressing wine; the other saw birds eating bread from his head. They came to Yusuf, knowing he was a righteous man. \"Tell us its interpretation. We see that you are of those who do good.\"",
+          "contentTextArabic": "رأى الخادمان أحلاماً غريبة. رأى أحدهما نفسه يعصر خمراً؛ ورأى الآخر طيوراً تأكل خبزاً من فوق رأسه. جاءا إلى يوسف عالمين أنه رجل صالح. \"نبئنا بتأويله إنا نراك من المحسنين.\""
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Before interpreting their dreams, Yusuf invited them to worship Allah alone. Then he explained: \"One of you will serve wine to his master again. The other will be executed.\" He asked the one who would be freed to mention him to the king. But the man forgot.",
+          "contentTextArabic": "قبل تفسير أحلامهما، دعاهما يوسف لعبادة الله وحده. ثم شرح: \"أحدكما سيسقي ربه خمراً مرة أخرى. والآخر سيُعدم.\" طلب من الذي سيُطلق أن يذكره للملك. لكن الرجل نسي."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Years passed. Then one night, the king of Egypt had a disturbing dream: seven fat cows being eaten by seven lean cows, and seven green ears of grain and seven dry ones. None of his advisors could explain it.",
+          "contentTextArabic": "مرت سنوات. ثم ذات ليلة، رأى ملك مصر حلماً مزعجاً: سبع بقرات سمان يأكلهن سبع عجاف، وسبع سنبلات خضر وأخر يابسات. لم يستطع أحد من مستشاريه تفسيره."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "The servant finally remembered Yusuf! He went to the prison and Yusuf interpreted the dream: \"There will be seven years of good harvest. Store grain during these years. Then seven years of famine will come and consume what you stored, except a little you keep for seed.\"",
+          "contentTextArabic": "أخيراً تذكر الخادم يوسف! ذهب إلى السجن وفسر يوسف الحلم: \"ستكون سبع سنوات حصاد جيد. اخزنوا الحبوب خلالها. ثم ستأتي سبع سنوات قحط تأكل ما خزنتم إلا قليلاً تحفظونه للبذر.\""
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "The king was amazed and wanted to meet Yusuf. But Yusuf refused to leave prison until his innocence was proven. The women who had seen him confessed, and even the Aziz's wife admitted: \"Now the truth has come out. It was I who tried to seduce him.\"",
+          "contentTextArabic": "دُهش الملك وأراد مقابلة يوسف. لكن يوسف رفض مغادرة السجن حتى تُثبت براءته. النسوة اللواتي رأينه اعترفن، وحتى زوجة العزيز قالت: \"الآن حصحص الحق أنا راودته عن نفسه.\""
+        },
+        {
+          "pageNumber": 7,
+          "contentText": "With his name cleared, Yusuf was brought before the king. The king was so impressed with his wisdom that he said: \"Indeed, you are today in a high position and trusted.\" Yusuf replied: \"Put me in charge of the storehouses of the land. I am a skilled guardian.\"",
+          "contentTextArabic": "بعد تبرئة اسمه، أُحضر يوسف أمام الملك. أُعجب الملك بحكمته حتى قال: \"إنك اليوم لدينا مكين أمين.\" أجاب يوسف: \"اجعلني على خزائن الأرض إني حفيظ عليم.\""
+        },
+        {
+          "pageNumber": 8,
+          "contentText": "And so, Yusuf rose from the darkness of prison to become the most powerful man in Egypt after the king. Allah had turned his trials into triumphs. This is the reward for those who remain patient and maintain their faith through hardship.",
+          "contentTextArabic": "وهكذا، ارتقى يوسف من ظلمة السجن ليصبح أقوى رجل في مصر بعد الملك. حوّل الله ابتلاءاته إلى انتصارات. هذا جزاء من يصبر ويحافظ على إيمانه في الشدة."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What dreams did the two prisoners have?",
+          "questionArabic": "ما الأحلام التي رآها السجينان؟",
+          "options": ["Flying and swimming", "Pressing wine and birds eating bread from one's head", "Being kings", "Escaping prison"],
+          "optionsArabic": ["الطيران والسباحة", "عصر الخمر وطيور تأكل خبزاً من رأس أحدهما", "أن يكونا ملوكاً", "الهروب من السجن"],
+          "correctIndex": 1,
+          "explanation": "One prisoner dreamt of pressing wine (meaning he'd serve the king again), and the other of birds eating from his head (meaning he'd be executed).",
+          "explanationArabic": "حلم أحد السجينين أنه يعصر خمراً (أي سيخدم الملك مجدداً)، والآخر بطيور تأكل من رأسه (أي سيُعدم)."
+        },
+        {
+          "question": "What was the king's dream about?",
+          "questionArabic": "عمّا كان حلم الملك؟",
+          "options": ["Gold and silver", "Seven fat cows eaten by seven lean cows", "War with enemies", "Building palaces"],
+          "optionsArabic": ["الذهب والفضة", "سبع بقرات سمان يأكلهن سبع عجاف", "حرب مع الأعداء", "بناء قصور"],
+          "correctIndex": 1,
+          "explanation": "The king dreamt of seven fat cows being eaten by seven lean cows, and seven green ears of grain and seven dry ones - symbolizing years of plenty followed by famine.",
+          "explanationArabic": "حلم الملك بسبع بقرات سمان يأكلهن سبع عجاف، وسبع سنبلات خضر ويابسات - ترمز لسنوات وفرة تتبعها مجاعة."
+        },
+        {
+          "question": "Why did Yusuf refuse to leave prison immediately?",
+          "questionArabic": "لماذا رفض يوسف مغادرة السجن فوراً؟",
+          "options": ["He liked prison", "He wanted his innocence proven first", "He was afraid", "He didn't trust the king"],
+          "optionsArabic": ["أحب السجن", "أراد إثبات براءته أولاً", "كان خائفاً", "لم يثق بالملك"],
+          "correctIndex": 1,
+          "explanation": "Yusuf wanted his name to be cleared publicly. He asked that the women be questioned so his innocence would be known to all.",
+          "explanationArabic": "أراد يوسف تبرئة اسمه علناً. طلب أن تُسأل النسوة ليُعرف للجميع أنه بريء."
+        },
+        {
+          "question": "What position did Yusuf receive from the king?",
+          "questionArabic": "ما المنصب الذي تلقاه يوسف من الملك؟",
+          "options": ["Army commander", "Chief judge", "In charge of the storehouses of Egypt", "Royal advisor"],
+          "optionsArabic": ["قائد الجيش", "كبير القضاة", "على خزائن مصر", "مستشار ملكي"],
+          "correctIndex": 2,
+          "explanation": "Yusuf asked to be put in charge of the storehouses so he could manage the grain storage during the good years to prepare for the famine.",
+          "explanationArabic": "طلب يوسف أن يُوضع على خزائن الأرض ليدير تخزين الحبوب في السنوات الجيدة استعداداً للمجاعة."
+        }
+      ]
+    },
+    {
+      "serverId": "yusuf_lesson_5",
+      "title": "The Dream Comes True",
+      "titleArabic": "الرؤيا تتحقق",
+      "subtitle": "The family reunited",
+      "subtitleArabic": "لمّ شمل العائلة",
+      "sortOrder": 5,
+      "durationMinutes": 8,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "The seven good years came, and under Yusuf's careful management, Egypt stored enormous amounts of grain. Then the famine came, spreading across all lands. People from everywhere traveled to Egypt seeking food, including Yusuf's brothers from Canaan.",
+          "contentTextArabic": "جاءت السبع سنوات الجيدة، وتحت إدارة يوسف الحكيمة، خزنت مصر كميات هائلة من الحبوب. ثم جاءت المجاعة، منتشرة في جميع الأراضي. سافر الناس من كل مكان إلى مصر طلباً للطعام، بما فيهم إخوة يوسف من كنعان."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "When the brothers stood before the minister of Egypt, they did not recognize Yusuf. But Yusuf knew them immediately. He gave them grain but noticed his youngest brother Binyamin was not with them. He made a plan to bring Binyamin to Egypt.",
+          "contentTextArabic": "عندما وقف الإخوة أمام وزير مصر، لم يتعرفوا على يوسف. لكن يوسف عرفهم فوراً. أعطاهم حبوباً لكن لاحظ أن أخاه الأصغر بنيامين ليس معهم. وضع خطة لإحضار بنيامين إلى مصر."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Yusuf said: \"Bring me your brother from your father. If you do not bring him, there will be no grain for you, and you cannot approach me.\" The brothers promised to try to convince their father, who was very protective of Binyamin after losing Yusuf.",
+          "contentTextArabic": "قال يوسف: \"ائتوني بأخ لكم من أبيكم. فإن لم تأتوني به فلا كيل لكم عندي ولا تقربون.\" وعد الإخوة بمحاولة إقناع أبيهم الذي كان حريصاً جداً على بنيامين بعد فقدان يوسف."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "After much pleading, Yaqub allowed Binyamin to go, making his sons promise to protect him. When they arrived in Egypt, Yusuf arranged to be alone with Binyamin and revealed himself: \"I am your brother Yusuf! Do not be sad about what they did.\"",
+          "contentTextArabic": "بعد توسل كثير، سمح يعقوب لبنيامين بالذهاب، جاعلاً أبناءه يعدون بحمايته. عندما وصلوا إلى مصر، رتب يوسف أن يكون وحده مع بنيامين وكشف له عن نفسه: \"أنا أخوك يوسف! لا تحزن على ما فعلوا.\""
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Through a clever plan, Yusuf kept Binyamin in Egypt. The brothers were distressed and returned to their father without Binyamin. Yaqub's grief was overwhelming. He had cried so much over the years that he had become blind, yet he never lost hope in Allah's mercy.",
+          "contentTextArabic": "بخطة ذكية، أبقى يوسف بنيامين في مصر. حزن الإخوة وعادوا لأبيهم بدون بنيامين. كان حزن يعقوب ساحقاً. بكى كثيراً على مر السنين حتى أصبح أعمى، لكنه لم يفقد أمله في رحمة الله."
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "Yaqub said to his sons: \"Go and find out about Yusuf and his brother and do not despair of Allah's mercy. Indeed, no one despairs of Allah's mercy except the disbelieving people.\" He still believed Yusuf might be alive.",
+          "contentTextArabic": "قال يعقوب لأبنائه: \"اذهبوا فتحسسوا من يوسف وأخيه ولا تيأسوا من روح الله إنه لا ييأس من روح الله إلا القوم الكافرون.\" كان لا يزال يؤمن أن يوسف قد يكون حياً."
+        },
+        {
+          "pageNumber": 7,
+          "contentText": "The brothers returned to Egypt and begged for mercy. Finally, Yusuf could no longer contain himself. He said: \"Do you know what you did to Yusuf and his brother when you were ignorant?\" They looked closely and gasped: \"Are you indeed Yusuf?\" He said: \"I am Yusuf, and this is my brother.\"",
+          "contentTextArabic": "عاد الإخوة إلى مصر وتوسلوا الرحمة. أخيراً، لم يستطع يوسف كتمان نفسه. قال: \"هل علمتم ما فعلتم بيوسف وأخيه إذ أنتم جاهلون؟\" نظروا بتمعن وقالوا مندهشين: \"أئنك لأنت يوسف؟\" قال: \"أنا يوسف وهذا أخي.\""
+        },
+        {
+          "pageNumber": 8,
+          "contentText": "Yusuf forgave his brothers completely. He sent his shirt to be placed on his father's face, and miraculously, Yaqub's sight returned! The whole family came to Egypt, and when they entered, they all prostrated before Yusuf - just like in his childhood dream. \"This is the interpretation of my dream of long ago,\" Yusuf said, \"My Lord has made it true.\"",
+          "contentTextArabic": "سامح يوسف إخوته تماماً. أرسل قميصه ليوضع على وجه أبيه، وبمعجزة، عادت رؤية يعقوب! جاءت العائلة كلها إلى مصر، وعندما دخلوا، سجدوا جميعاً ليوسف - تماماً كما في حلم طفولته. قال يوسف: \"هذا تأويل رؤياي من قبل قد جعلها ربي حقاً.\""
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why did Yusuf's brothers come to Egypt?",
+          "questionArabic": "لماذا جاء إخوة يوسف إلى مصر؟",
+          "options": ["To visit Yusuf", "To seek food during the famine", "To trade goods", "To meet the king"],
+          "optionsArabic": ["لزيارة يوسف", "لطلب الطعام خلال المجاعة", "للتجارة", "لمقابلة الملك"],
+          "correctIndex": 1,
+          "explanation": "The famine had spread across all lands, so Yusuf's brothers came to Egypt seeking food, not knowing that Yusuf was the minister.",
+          "explanationArabic": "انتشرت المجاعة في جميع الأراضي، فجاء إخوة يوسف إلى مصر طلباً للطعام، غير عالمين أن يوسف هو الوزير."
+        },
+        {
+          "question": "What happened to Yaqub from crying over Yusuf?",
+          "questionArabic": "ماذا حدث ليعقوب من البكاء على يوسف؟",
+          "options": ["Nothing", "He became blind", "He became sick", "He became stronger"],
+          "optionsArabic": ["لا شيء", "أصبح أعمى", "أصبح مريضاً", "أصبح أقوى"],
+          "correctIndex": 1,
+          "explanation": "Yaqub cried so much over the years that his eyes turned white and he became blind, but he never lost faith in Allah.",
+          "explanationArabic": "بكى يعقوب كثيراً على مر السنين حتى ابيضت عيناه من الحزن وأصبح أعمى، لكنه لم يفقد إيمانه بالله."
+        },
+        {
+          "question": "How was Yaqub's sight restored?",
+          "questionArabic": "كيف عادت رؤية يعقوب؟",
+          "options": ["By medicine", "Yusuf's shirt was placed on his face", "By time", "By surgery"],
+          "optionsArabic": ["بالدواء", "وُضع قميص يوسف على وجهه", "بمرور الوقت", "بالجراحة"],
+          "correctIndex": 1,
+          "explanation": "Yusuf sent his shirt to be placed on his father's face, and by Allah's miracle, Yaqub's eyesight was restored.",
+          "explanationArabic": "أرسل يوسف قميصه ليوضع على وجه أبيه، وبمعجزة من الله، عادت بصيرة يعقوب."
+        },
+        {
+          "question": "How did Yusuf's childhood dream come true?",
+          "questionArabic": "كيف تحقق حلم طفولة يوسف؟",
+          "options": ["He saw real stars prostrating", "His family bowed before him in Egypt", "He went to space", "He became the sun"],
+          "optionsArabic": ["رأى نجوماً حقيقية تسجد", "عائلته سجدت له في مصر", "ذهب للفضاء", "أصبح الشمس"],
+          "correctIndex": 1,
+          "explanation": "When his whole family came to Egypt, they prostrated before him - the eleven brothers (stars), and his parents (sun and moon), just as in his dream.",
+          "explanationArabic": "عندما جاءت عائلته كلها إلى مصر، سجدوا له - الإخوة الأحد عشر (الكواكب)، ووالداه (الشمس والقمر)، تماماً كما في حلمه."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "chapter": {
+    "serverId": "prophet_yahya",
+    "title": "Prophet Yahya",
+    "titleArabic": "النبي يحيى",
+    "description": "The story of Prophet Yahya, the blessed son of Zakariya who was given wisdom as a child",
+    "descriptionArabic": "قصة النبي يحيى، ابن زكريا المبارك الذي أُوتي الحكمة صبياً",
+    "iconName": "yahya",
+    "colorHex": "#00897B",
+    "sortOrder": 17
+  },
+  "lessons": [
+    {
+      "serverId": "prophet_yahya_lesson_1",
+      "title": "The Miraculous Birth",
+      "titleArabic": "الولادة المعجزة",
+      "sortOrder": 1,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Prophet Yahya was born in a miraculous way. His father Zakariya was very old, and his mother had never been able to have children. But Allah made the impossible possible!",
+          "contentTextArabic": "وُلد النبي يحيى بطريقة معجزة. كان أبوه زكريا كبيراً جداً في السن، وأمه لم تستطع أبداً إنجاب أطفال. لكن الله جعل المستحيل ممكناً!"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "When baby Yahya was born, there was great joy! Allah had answered Zakariya's prayers. The elderly couple finally had a child - a blessed baby who would become a great prophet.",
+          "contentTextArabic": "عندما وُلد الطفل يحيى، كانت هناك فرحة عظيمة! استجاب الله لدعاء زكريا. أخيراً رُزق الزوجان المسنان بطفل - طفل مبارك سيصبح نبياً عظيماً."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "The name 'Yahya' was chosen by Allah Himself. Allah had said that no one before had been given this name. It was a unique and special name for a unique and special child.",
+          "contentTextArabic": "اسم 'يحيى' اختاره الله بنفسه. قال الله إنه لم يُجعل لأحد من قبل هذا الاسم. كان اسماً فريداً ومميزاً لطفل فريد ومميز."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "From the moment of his birth, Allah blessed Yahya. The Quran tells us that Allah said: 'Peace be upon him the day he was born.' Yahya was born in Allah's peace and protection.",
+          "contentTextArabic": "منذ لحظة ولادته، بارك الله يحيى. يخبرنا القرآن أن الله قال: 'وسلام عليه يوم وُلد.' وُلد يحيى في سلام الله وحمايته."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "The story of Yahya's birth reminds us that children are a gift from Allah. Whether parents are young or old, rich or poor, it is Allah who decides to bless families with children.",
+          "contentTextArabic": "تذكرنا قصة ولادة يحيى أن الأطفال هبة من الله. سواء كان الوالدان شباباً أو كباراً، أغنياء أو فقراء، الله هو الذي يقرر أن يبارك العائلات بالأطفال."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What was special about Yahya's birth?",
+          "questionArabic": "ما الذي كان مميزاً في ولادة يحيى؟",
+          "options": ["His parents were very young", "His parents were old and couldn't have children before", "He was born in a palace", "He was born during a storm"],
+          "optionsArabic": ["كان والداه صغيرين جداً", "كان والداه كبيرين ولم يستطيعا الإنجاب من قبل", "وُلد في قصر", "وُلد أثناء عاصفة"],
+          "correctIndex": 1,
+          "explanation": "Yahya's birth was miraculous because his father was very old and his mother couldn't have children.",
+          "explanationArabic": "كانت ولادة يحيى معجزة لأن أباه كان كبيراً جداً وأمه لم تستطع الإنجاب."
+        },
+        {
+          "question": "Who chose the name 'Yahya'?",
+          "questionArabic": "من اختار اسم 'يحيى'؟",
+          "options": ["Zakariya", "His mother", "Allah Himself", "The angels"],
+          "optionsArabic": ["زكريا", "أمه", "الله بنفسه", "الملائكة"],
+          "correctIndex": 2,
+          "explanation": "Allah Himself chose the name Yahya - a unique name given to no one before.",
+          "explanationArabic": "اختار الله بنفسه اسم يحيى - اسم فريد لم يُعطَ لأحد من قبل."
+        },
+        {
+          "question": "What did Allah say about the day Yahya was born?",
+          "questionArabic": "ماذا قال الله عن يوم ولادة يحيى؟",
+          "options": ["It was difficult", "Peace be upon him", "It was ordinary", "Nothing special"],
+          "optionsArabic": ["كان صعباً", "سلام عليه", "كان عادياً", "لا شيء مميز"],
+          "correctIndex": 1,
+          "explanation": "Allah blessed Yahya saying 'Peace be upon him the day he was born.'",
+          "explanationArabic": "بارك الله يحيى قائلاً 'سلام عليه يوم وُلد.'"
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_yahya_lesson_2",
+      "title": "Wisdom as a Child",
+      "titleArabic": "الحكمة في الصغر",
+      "sortOrder": 2,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Allah blessed Yahya with something extraordinary. The Quran says: 'O Yahya, hold firmly to the Scripture.' And then it adds something amazing: 'And We gave him wisdom while still a child.'",
+          "contentTextArabic": "بارك الله يحيى بشيء استثنائي. يقول القرآن: 'يا يحيى خذ الكتاب بقوة.' ثم يضيف شيئاً مذهلاً: 'وآتيناه الحكم صبياً.'"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Imagine being given wisdom while still young! While other children were just playing, Yahya already understood important truths about life, faith, and how to please Allah.",
+          "contentTextArabic": "تخيل أن تُعطى الحكمة وأنت لا تزال صغيراً! بينما كان الأطفال الآخرون يلعبون فقط، كان يحيى يفهم بالفعل حقائق مهمة عن الحياة والإيمان وكيفية إرضاء الله."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Allah commanded Yahya to 'hold firmly to the Scripture.' This means to study the holy books, understand them deeply, and follow their teachings with strength and dedication.",
+          "contentTextArabic": "أمر الله يحيى أن 'يأخذ الكتاب بقوة.' هذا يعني دراسة الكتب المقدسة، وفهمها بعمق، واتباع تعاليمها بقوة وإخلاص."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Young Yahya took this command seriously. He spent his time learning, praying, and getting closer to Allah. He didn't waste his youth on useless things.",
+          "contentTextArabic": "أخذ يحيى الصغير هذا الأمر بجدية. قضى وقته في التعلم والصلاة والتقرب إلى الله. لم يضيع شبابه في أشياء لا فائدة منها."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "This teaches us that age is not a barrier to being wise and righteous. Young people can also learn about Allah, understand right from wrong, and be devoted servants of Allah.",
+          "contentTextArabic": "هذا يعلمنا أن السن ليس عائقاً أمام الحكمة والصلاح. الشباب أيضاً يمكنهم التعلم عن الله، وفهم الصواب من الخطأ، ويكونوا عباداً مخلصين لله."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "When did Allah give Yahya wisdom?",
+          "questionArabic": "متى أعطى الله يحيى الحكمة؟",
+          "options": ["When he was old", "While he was still a child", "When he became a king", "After he died"],
+          "optionsArabic": ["عندما كبر", "وهو لا يزال صبياً", "عندما أصبح ملكاً", "بعد وفاته"],
+          "correctIndex": 1,
+          "explanation": "Allah gave Yahya wisdom while he was still a child - an extraordinary blessing.",
+          "explanationArabic": "أعطى الله يحيى الحكمة وهو لا يزال صبياً - نعمة استثنائية."
+        },
+        {
+          "question": "What did Allah command Yahya to do with the Scripture?",
+          "questionArabic": "ماذا أمر الله يحيى أن يفعل بالكتاب؟",
+          "options": ["Ignore it", "Read it sometimes", "Hold firmly to it", "Give it away"],
+          "optionsArabic": ["يتجاهله", "يقرأه أحياناً", "يأخذه بقوة", "يعطيه لغيره"],
+          "correctIndex": 2,
+          "explanation": "Allah commanded Yahya to hold firmly to the Scripture - to study and follow it with dedication.",
+          "explanationArabic": "أمر الله يحيى أن يأخذ الكتاب بقوة - أن يدرسه ويتبعه بإخلاص."
+        },
+        {
+          "question": "What lesson does Yahya's childhood teach us?",
+          "questionArabic": "ما الدرس الذي تعلمنا إياه طفولة يحيى؟",
+          "options": ["Only old people can be wise", "Young people can also be wise and devoted", "Wisdom is not important", "Playing is the only thing for children"],
+          "optionsArabic": ["الكبار فقط يمكن أن يكونوا حكماء", "الشباب أيضاً يمكن أن يكونوا حكماء ومتدينين", "الحكمة ليست مهمة", "اللعب هو الشيء الوحيد للأطفال"],
+          "correctIndex": 1,
+          "explanation": "Yahya's story teaches us that young people can also be wise and devoted to Allah.",
+          "explanationArabic": "قصة يحيى تعلمنا أن الشباب أيضاً يمكن أن يكونوا حكماء ومتدينين."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_yahya_lesson_3",
+      "title": "Beautiful Character",
+      "titleArabic": "أخلاق جميلة",
+      "sortOrder": 3,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Allah describes Yahya's beautiful character in the Quran. He was blessed with many wonderful qualities that made him a special servant of Allah.",
+          "contentTextArabic": "يصف الله أخلاق يحيى الجميلة في القرآن. بُورك بصفات رائعة كثيرة جعلته عبداً مميزاً لله."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "First, Allah says Yahya was 'hananan' - full of compassion and tenderness. He cared deeply for others and showed kindness to everyone. His heart was soft and merciful.",
+          "contentTextArabic": "أولاً، يقول الله إن يحيى كان 'حناناً' - مليء بالحنان والعطف. اهتم بالآخرين بعمق وأظهر اللطف للجميع. كان قلبه رقيقاً ورحيماً."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "He was also 'zakatan' - pure and righteous. Yahya kept himself clean from sins and bad behavior. He was honest, truthful, and always tried to do what was right.",
+          "contentTextArabic": "كان أيضاً 'زكاة' - طاهراً وصالحاً. حفظ يحيى نفسه من الذنوب والسلوك السيء. كان أميناً وصادقاً وحاول دائماً فعل الصواب."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Yahya was 'taqiyyan' - deeply conscious of Allah. He always remembered that Allah was watching, so he was careful in everything he did. He feared displeasing Allah.",
+          "contentTextArabic": "كان يحيى 'تقياً' - شديد الوعي بالله. تذكر دائماً أن الله يراقبه، فكان حذراً في كل ما يفعل. خاف من إغضاب الله."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "And he was 'barran bi walidayhi' - dutiful to his parents. He treated his father Zakariya and his mother with love, respect, and kindness. He never disobeyed or disrespected them.",
+          "contentTextArabic": "وكان 'براً بوالديه' - باراً بوالديه. عامل أباه زكريا وأمه بحب واحترام ولطف. لم يعصِهما أو يُسئ إليهما أبداً."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does 'hananan' mean about Yahya?",
+          "questionArabic": "ماذا تعني 'حناناً' عن يحيى؟",
+          "options": ["He was strong", "He was full of compassion and tenderness", "He was wealthy", "He was tall"],
+          "optionsArabic": ["كان قوياً", "كان مليئاً بالحنان والعطف", "كان غنياً", "كان طويلاً"],
+          "correctIndex": 1,
+          "explanation": "Hananan means Yahya was full of compassion and tenderness - he cared deeply for others.",
+          "explanationArabic": "حناناً تعني أن يحيى كان مليئاً بالحنان والعطف - اهتم بالآخرين بعمق."
+        },
+        {
+          "question": "What does 'taqiyyan' mean?",
+          "questionArabic": "ماذا تعني 'تقياً'؟",
+          "options": ["Very strong", "Deeply conscious of Allah", "Very wealthy", "Very old"],
+          "optionsArabic": ["قوي جداً", "شديد الوعي بالله", "غني جداً", "كبير جداً"],
+          "correctIndex": 1,
+          "explanation": "Taqiyyan means being deeply conscious of Allah and careful not to displease Him.",
+          "explanationArabic": "تقياً تعني شديد الوعي بالله وحذراً من إغضابه."
+        },
+        {
+          "question": "How did Yahya treat his parents?",
+          "questionArabic": "كيف عامل يحيى والديه؟",
+          "options": ["He ignored them", "With love, respect, and kindness", "He was rude to them", "He left them alone"],
+          "optionsArabic": ["تجاهلهما", "بحب واحترام ولطف", "كان وقحاً معهما", "تركهما وحدهما"],
+          "correctIndex": 1,
+          "explanation": "Yahya was dutiful to his parents, treating them with love, respect, and kindness.",
+          "explanationArabic": "كان يحيى باراً بوالديه، يعاملهما بحب واحترام ولطف."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_yahya_lesson_4",
+      "title": "Never Arrogant",
+      "titleArabic": "لم يكن متكبراً أبداً",
+      "sortOrder": 4,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Despite all his blessings - his miraculous birth, his wisdom as a child, his noble character - Yahya never became arrogant. The Quran tells us he was 'not a disobedient tyrant.'",
+          "contentTextArabic": "رغم كل نعمه - ولادته المعجزة، وحكمته في الصغر، وأخلاقه النبيلة - لم يتكبر يحيى أبداً. يخبرنا القرآن أنه 'لم يكن جباراً عصياً.'"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "A 'jabbar' is someone who is arrogant and forceful, who looks down on others. Yahya was the opposite. Even though Allah gave him so much, he remained humble and gentle.",
+          "contentTextArabic": "الجبار هو المتكبر المتسلط، الذي ينظر للآخرين باحتقار. كان يحيى عكس ذلك. رغم أن الله أعطاه الكثير، ظل متواضعاً ولطيفاً."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "He was also not 'asiyyan' - not disobedient. Yahya always obeyed Allah's commands and his parents. He never rebelled or thought he knew better than Allah.",
+          "contentTextArabic": "كان أيضاً ليس 'عصياً' - غير عاصٍ. كان يحيى يطيع أوامر الله ووالديه دائماً. لم يتمرد أو يظن أنه يعلم أفضل من الله."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "This is an important lesson. Sometimes when Allah blesses people, they become proud. But true blessing is shown by becoming more humble and grateful, not more arrogant.",
+          "contentTextArabic": "هذا درس مهم. أحياناً عندما يُنعم الله على الناس، يتكبرون. لكن النعمة الحقيقية تظهر بالتواضع والشكر أكثر، لا بالتكبر."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Yahya used all his blessings to serve Allah and help others. His wisdom made him help people, not look down on them. His pure heart made him kind, not cruel.",
+          "contentTextArabic": "استخدم يحيى كل نعمه لخدمة الله ومساعدة الآخرين. جعلته حكمته يساعد الناس، لا يحتقرهم. جعله قلبه الطاهر لطيفاً، لا قاسياً."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does 'jabbar' mean?",
+          "questionArabic": "ماذا تعني كلمة 'جبار'؟",
+          "options": ["Humble and kind", "Arrogant and forceful", "Weak and scared", "Quiet and shy"],
+          "optionsArabic": ["متواضع ولطيف", "متكبر ومتسلط", "ضعيف وخائف", "هادئ وخجول"],
+          "correctIndex": 1,
+          "explanation": "A jabbar is someone arrogant and forceful - but Yahya was the opposite.",
+          "explanationArabic": "الجبار هو المتكبر المتسلط - لكن يحيى كان عكس ذلك."
+        },
+        {
+          "question": "How did Yahya react to all his blessings?",
+          "questionArabic": "كيف تعامل يحيى مع كل نعمه؟",
+          "options": ["He became arrogant", "He remained humble and grateful", "He forgot about Allah", "He stopped praying"],
+          "optionsArabic": ["تكبّر", "ظل متواضعاً وشاكراً", "نسي الله", "توقف عن الصلاة"],
+          "correctIndex": 1,
+          "explanation": "Despite all his blessings, Yahya remained humble and grateful to Allah.",
+          "explanationArabic": "رغم كل نعمه، ظل يحيى متواضعاً وشاكراً لله."
+        },
+        {
+          "question": "What should we do when Allah blesses us?",
+          "questionArabic": "ماذا يجب أن نفعل عندما يُنعم الله علينا؟",
+          "options": ["Become proud", "Become more humble and grateful", "Forget about others", "Think we're better than everyone"],
+          "optionsArabic": ["نتكبر", "نصبح أكثر تواضعاً وشكراً", "ننسى الآخرين", "نظن أننا أفضل من الجميع"],
+          "correctIndex": 1,
+          "explanation": "When blessed, we should become more humble and grateful, like Yahya.",
+          "explanationArabic": "عندما نُنعم، يجب أن نصبح أكثر تواضعاً وشكراً، مثل يحيى."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_yahya_lesson_5",
+      "title": "Peace Throughout His Life",
+      "titleArabic": "السلام طوال حياته",
+      "sortOrder": 5,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Allah blessed Yahya with peace in a very special way. The Quran says: 'Peace be upon him the day he was born, the day he dies, and the day he is raised alive.'",
+          "contentTextArabic": "بارك الله يحيى بالسلام بطريقة خاصة جداً. يقول القرآن: 'وسلام عليه يوم وُلد ويوم يموت ويوم يُبعث حياً.'"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Allah's peace was with Yahya from the very beginning - the day he was born. He came into this world under Allah's protection and blessing.",
+          "contentTextArabic": "كان سلام الله مع يحيى من البداية - يوم وُلد. جاء إلى هذا العالم تحت حماية الله وبركته."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Allah's peace is with Yahya even in death. When his soul left this world, it was in peace. Death for the righteous is not scary - it is a return to Allah.",
+          "contentTextArabic": "سلام الله مع يحيى حتى في الموت. عندما غادرت روحه هذا العالم، كانت في سلام. الموت للصالحين ليس مخيفاً - إنه عودة إلى الله."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "And Allah's peace will be with Yahya on the Day of Judgment - the day he is raised alive. While others may be afraid, Yahya will be at peace, welcomed by Allah.",
+          "contentTextArabic": "وسلام الله سيكون مع يحيى يوم القيامة - يوم يُبعث حياً. بينما قد يخاف الآخرون، سيكون يحيى في سلام، يُرحب به الله."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "This is the reward for those who live righteous lives. When we follow Allah's path like Yahya did, we too can hope for Allah's peace in this life, at death, and in the afterlife.",
+          "contentTextArabic": "هذا جزاء من يعيش حياة صالحة. عندما نتبع طريق الله كما فعل يحيى، يمكننا أيضاً أن نرجو سلام الله في هذه الحياة وعند الموت وفي الآخرة."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "On which days does Allah mention peace for Yahya?",
+          "questionArabic": "في أي أيام ذكر الله السلام ليحيى؟",
+          "options": ["Only birth", "Birth, death, and resurrection", "Only death", "Only resurrection"],
+          "optionsArabic": ["الولادة فقط", "الولادة والموت والبعث", "الموت فقط", "البعث فقط"],
+          "correctIndex": 1,
+          "explanation": "Allah blessed Yahya with peace on three days: birth, death, and the day of resurrection.",
+          "explanationArabic": "بارك الله يحيى بالسلام في ثلاثة أيام: الولادة والموت ويوم البعث."
+        },
+        {
+          "question": "What does death mean for the righteous?",
+          "questionArabic": "ماذا يعني الموت للصالحين؟",
+          "options": ["Something scary", "A peaceful return to Allah", "The end of everything", "Something to avoid"],
+          "optionsArabic": ["شيء مخيف", "عودة سلمية إلى الله", "نهاية كل شيء", "شيء يجب تجنبه"],
+          "correctIndex": 1,
+          "explanation": "For the righteous, death is a peaceful return to Allah, not something scary.",
+          "explanationArabic": "للصالحين، الموت هو عودة سلمية إلى الله، ليس شيئاً مخيفاً."
+        },
+        {
+          "question": "How can we hope for Allah's peace like Yahya?",
+          "questionArabic": "كيف يمكننا رجاء سلام الله مثل يحيى؟",
+          "options": ["By being rich", "By living a righteous life following Allah's path", "By being famous", "By traveling far"],
+          "optionsArabic": ["بأن نكون أغنياء", "بعيش حياة صالحة نتبع طريق الله", "بأن نكون مشهورين", "بالسفر بعيداً"],
+          "correctIndex": 1,
+          "explanation": "By following Allah's path like Yahya, we can hope for Allah's peace.",
+          "explanationArabic": "باتباع طريق الله مثل يحيى، يمكننا رجاء سلام الله."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_yahya_lesson_6",
+      "title": "Lessons from Yahya",
+      "titleArabic": "دروس من يحيى",
+      "sortOrder": 6,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Prophet Yahya's life teaches us many valuable lessons. Though his story in the Quran is brief, every word carries deep meaning for us to learn from.",
+          "contentTextArabic": "تعلمنا حياة النبي يحيى دروساً قيمة كثيرة. رغم أن قصته في القرآن مختصرة، كل كلمة تحمل معنى عميقاً لنتعلم منه."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "We learn that young people can be wise and righteous. Yahya received wisdom as a child. We shouldn't wait until we're old to start learning about Allah and doing good.",
+          "contentTextArabic": "نتعلم أن الشباب يمكن أن يكونوا حكماء وصالحين. تلقى يحيى الحكمة صبياً. لا يجب أن ننتظر حتى نكبر لنبدأ التعلم عن الله وفعل الخير."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "We learn the importance of being kind to parents. Yahya was described as 'dutiful to his parents' - this is a quality that Allah loves and mentions in His Book.",
+          "contentTextArabic": "نتعلم أهمية البر بالوالدين. وُصف يحيى بأنه 'بار بوالديه' - هذه صفة يحبها الله ويذكرها في كتابه."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "We learn that humility is better than arrogance. Yahya had every reason to be proud, but he chose to be humble. True greatness is in being gentle and humble.",
+          "contentTextArabic": "نتعلم أن التواضع أفضل من التكبر. كان لدى يحيى كل سبب للتفاخر، لكنه اختار التواضع. العظمة الحقيقية في اللطف والتواضع."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Finally, we learn that a righteous life leads to peace - in this world, at death, and in the hereafter. May Allah help us follow the example of Prophet Yahya and earn His peace!",
+          "contentTextArabic": "أخيراً، نتعلم أن الحياة الصالحة تقود إلى السلام - في هذا العالم وعند الموت وفي الآخرة. نسأل الله أن يعيننا على اتباع مثال النبي يحيى ونيل سلامه!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does Yahya's story teach us about age and wisdom?",
+          "questionArabic": "ماذا تعلمنا قصة يحيى عن السن والحكمة؟",
+          "options": ["Only old people can be wise", "Young people can be wise and righteous too", "Wisdom doesn't matter", "Children shouldn't learn about religion"],
+          "optionsArabic": ["الكبار فقط يمكن أن يكونوا حكماء", "الشباب أيضاً يمكن أن يكونوا حكماء وصالحين", "الحكمة لا تهم", "الأطفال لا يجب أن يتعلموا عن الدين"],
+          "correctIndex": 1,
+          "explanation": "Yahya was given wisdom as a child, showing young people can also be wise and righteous.",
+          "explanationArabic": "أُعطي يحيى الحكمة صبياً، مما يُظهر أن الشباب أيضاً يمكن أن يكونوا حكماء وصالحين."
+        },
+        {
+          "question": "What is true greatness according to Yahya's example?",
+          "questionArabic": "ما هي العظمة الحقيقية حسب مثال يحيى؟",
+          "options": ["Being arrogant and proud", "Being gentle and humble", "Being rich and famous", "Being strong and powerful"],
+          "optionsArabic": ["التكبر والفخر", "اللطف والتواضع", "الغنى والشهرة", "القوة والسلطة"],
+          "correctIndex": 1,
+          "explanation": "True greatness is in being gentle and humble, like Prophet Yahya.",
+          "explanationArabic": "العظمة الحقيقية في اللطف والتواضع، مثل النبي يحيى."
+        },
+        {
+          "question": "Where does a righteous life lead to?",
+          "questionArabic": "إلى أين تقود الحياة الصالحة؟",
+          "options": ["Only success in this world", "Peace in this world, at death, and in the hereafter", "Wealth and fame", "Nothing special"],
+          "optionsArabic": ["النجاح في الدنيا فقط", "السلام في الدنيا وعند الموت وفي الآخرة", "الثروة والشهرة", "لا شيء مميز"],
+          "correctIndex": 1,
+          "explanation": "A righteous life leads to peace in this world, at death, and in the hereafter.",
+          "explanationArabic": "الحياة الصالحة تقود إلى السلام في الدنيا وعند الموت وفي الآخرة."
+        }
+      ]
+    }
+  ]
+}

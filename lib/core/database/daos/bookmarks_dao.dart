@@ -3,21 +3,26 @@ import 'package:drift/drift.dart';
 import '../app_database.dart';
 import '../tables/bookmarks_table.dart';
 import '../tables/chapters_table.dart';
+import '../tables/progress_table.dart';
 
 part 'bookmarks_dao.g.dart';
 
 /// DAO for bookmarks operations
 /// From Issue #4 - Database Setup
-@DriftAccessor(tables: [Bookmarks, Lessons, Chapters])
+@DriftAccessor(tables: [Bookmarks, Lessons, Chapters, LessonProgress])
 class BookmarksDao extends DatabaseAccessor<AppDatabase>
     with _$BookmarksDaoMixin {
   BookmarksDao(super.db);
 
-  /// Get all bookmarks with lesson info
+  /// Get all bookmarks with lesson info and progress
   Future<List<BookmarkWithLesson>> getAllBookmarks() async {
     final query = select(bookmarks).join([
       innerJoin(lessons, lessons.id.equalsExp(bookmarks.lessonId)),
       innerJoin(chapters, chapters.id.equalsExp(lessons.chapterId)),
+      leftOuterJoin(
+        lessonProgress,
+        lessonProgress.lessonId.equalsExp(lessons.id),
+      ),
     ])
       ..orderBy([OrderingTerm.desc(bookmarks.createdAt)]);
 
@@ -27,6 +32,7 @@ class BookmarksDao extends DatabaseAccessor<AppDatabase>
         bookmark: row.readTable(bookmarks),
         lesson: row.readTable(lessons),
         chapter: row.readTable(chapters),
+        progress: row.readTableOrNull(lessonProgress),
       );
     }).toList();
   }
@@ -36,6 +42,10 @@ class BookmarksDao extends DatabaseAccessor<AppDatabase>
     final query = select(bookmarks).join([
       innerJoin(lessons, lessons.id.equalsExp(bookmarks.lessonId)),
       innerJoin(chapters, chapters.id.equalsExp(lessons.chapterId)),
+      leftOuterJoin(
+        lessonProgress,
+        lessonProgress.lessonId.equalsExp(lessons.id),
+      ),
     ])
       ..orderBy([OrderingTerm.desc(bookmarks.createdAt)]);
 
@@ -45,6 +55,7 @@ class BookmarksDao extends DatabaseAccessor<AppDatabase>
           bookmark: row.readTable(bookmarks),
           lesson: row.readTable(lessons),
           chapter: row.readTable(chapters),
+          progress: row.readTableOrNull(lessonProgress),
         );
       }).toList();
     });
@@ -102,15 +113,17 @@ class BookmarksDao extends DatabaseAccessor<AppDatabase>
   }
 }
 
-/// Bookmark with associated lesson and chapter info
+/// Bookmark with associated lesson, chapter, and progress info
 class BookmarkWithLesson {
-  final Bookmark bookmark;
-  final Lesson lesson;
-  final Chapter chapter;
-
   BookmarkWithLesson({
     required this.bookmark,
     required this.lesson,
     required this.chapter,
+    this.progress,
   });
+
+  final Bookmark bookmark;
+  final Lesson lesson;
+  final Chapter chapter;
+  final LessonProgressData? progress;
 }

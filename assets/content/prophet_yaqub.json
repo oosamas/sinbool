@@ -1,0 +1,266 @@
+{
+  "chapter": {
+    "serverId": "prophet_yaqub",
+    "title": "Prophet Yaqub",
+    "titleArabic": "النبي يعقوب",
+    "description": "The story of Prophet Yaqub and his beautiful patience",
+    "descriptionArabic": "قصة النبي يعقوب وصبره الجميل",
+    "iconName": "yaqub",
+    "colorHex": "#7E57C2",
+    "sortOrder": 23
+  },
+  "lessons": [
+    {
+      "serverId": "prophet_yaqub_lesson_1",
+      "title": "The Son of Ishaq",
+      "titleArabic": "ابن إسحاق",
+      "sortOrder": 1,
+      "durationMinutes": 5,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Prophet Yaqub (peace be upon him) was the son of Prophet Ishaq and the grandson of Prophet Ibrahim. What a blessed family!",
+          "contentTextArabic": "النبي يعقوب عليه السلام كان ابن النبي إسحاق وحفيد النبي إبراهيم. يا لها من عائلة مباركة!"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Yaqub is also called 'Israel' in the Quran. This name was given to him by Allah, and his children became known as the 'Children of Israel' (Bani Israel).",
+          "contentTextArabic": "يُسمى يعقوب أيضاً 'إسرائيل' في القرآن. أعطاه الله هذا الاسم، وأصبح أبناؤه يُعرفون بـ'بني إسرائيل'."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "From a young age, Yaqub learned about Allah from his father and grandfather. He grew up to be honest, kind, and always worshipping Allah alone.",
+          "contentTextArabic": "منذ صغره، تعلم يعقوب عن الله من أبيه وجده. كبر ليكون صادقاً ولطيفاً ويعبد الله وحده دائماً."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Allah chose Yaqub to be a prophet. He would teach people about the one true God and guide them to do good deeds.",
+          "contentTextArabic": "اختار الله يعقوب ليكون نبياً. سيعلم الناس عن الإله الواحد الحق ويرشدهم لفعل الخير."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What other name is Prophet Yaqub known by?",
+          "questionArabic": "بأي اسم آخر يُعرف النبي يعقوب؟",
+          "options": ["Ismail", "Israel", "Ibrahim", "Ishaq"],
+          "optionsArabic": ["إسماعيل", "إسرائيل", "إبراهيم", "إسحاق"],
+          "correctIndex": 1,
+          "explanation": "Prophet Yaqub is also called Israel, and his children are called Bani Israel.",
+          "explanationArabic": "النبي يعقوب يُسمى أيضاً إسرائيل، وأبناؤه يُسمون بني إسرائيل."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_yaqub_lesson_2",
+      "title": "The Twelve Sons",
+      "titleArabic": "الأبناء الاثنا عشر",
+      "sortOrder": 2,
+      "durationMinutes": 5,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Allah blessed Prophet Yaqub with twelve sons! Among them was Yusuf, who was one of the most beloved to his father.",
+          "contentTextArabic": "بارك الله النبي يعقوب باثني عشر ابناً! من بينهم يوسف، الذي كان من أحب الأبناء إلى أبيه."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Yusuf was special because he had beautiful dreams from Allah. One night, little Yusuf told his father about an amazing dream he had.",
+          "contentTextArabic": "كان يوسف مميزاً لأنه كان يرى أحلاماً جميلة من الله. ذات ليلة، أخبر يوسف الصغير أباه عن حلم مذهل رآه."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "In his dream, Yusuf saw eleven stars, the sun, and the moon all bowing down to him! Yaqub knew this dream meant Yusuf would become very important one day.",
+          "contentTextArabic": "في حلمه، رأى يوسف أحد عشر كوكباً والشمس والقمر يسجدون له! علم يعقوب أن هذا الحلم يعني أن يوسف سيصبح مهماً جداً يوماً ما."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Yaqub wisely told Yusuf: 'Do not tell your brothers about this dream, or they might become jealous.' Good parents give wise advice to protect their children.",
+          "contentTextArabic": "قال يعقوب ليوسف بحكمة: 'لا تقصص رؤياك على إخوتك فيكيدوا لك كيداً.' الآباء الصالحون يقدمون نصائح حكيمة لحماية أبنائهم."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How many sons did Prophet Yaqub have?",
+          "questionArabic": "كم ابناً كان لدى النبي يعقوب؟",
+          "options": ["Seven", "Ten", "Twelve", "Fifteen"],
+          "optionsArabic": ["سبعة", "عشرة", "اثنا عشر", "خمسة عشر"],
+          "correctIndex": 2,
+          "explanation": "Prophet Yaqub was blessed with twelve sons.",
+          "explanationArabic": "بارك الله النبي يعقوب باثني عشر ابناً."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_yaqub_lesson_3",
+      "title": "Losing Yusuf",
+      "titleArabic": "فقدان يوسف",
+      "sortOrder": 3,
+      "durationMinutes": 6,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Sadly, some of Yaqub's sons became jealous of Yusuf. They made a terrible plan to get rid of their little brother.",
+          "contentTextArabic": "للأسف، أصبح بعض أبناء يعقوب غيورين من يوسف. وضعوا خطة سيئة للتخلص من أخيهم الصغير."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "The brothers took Yusuf far away and threw him into a deep well! Then they lied to their father, saying a wolf had eaten Yusuf.",
+          "contentTextArabic": "أخذ الإخوة يوسف بعيداً ورموه في بئر عميقة! ثم كذبوا على أبيهم، قائلين إن ذئباً أكل يوسف."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "They brought Yusuf's shirt with fake blood on it. But Yaqub knew something was wrong. He said: 'Your souls have made something seem good to you. But beautiful patience is my way.'",
+          "contentTextArabic": "أحضروا قميص يوسف وعليه دم كاذب. لكن يعقوب علم أن شيئاً ما خطأ. قال: 'بل سولت لكم أنفسكم أمراً فصبر جميل.'"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Yaqub was heartbroken, but he did not give up hope in Allah. He trusted that Allah had a plan, even when he couldn't understand it.",
+          "contentTextArabic": "كان قلب يعقوب منكسراً، لكنه لم يفقد الأمل في الله. وثق أن لله خطة، حتى عندما لم يستطع فهمها."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What did Prophet Yaqub say when he lost Yusuf?",
+          "questionArabic": "ماذا قال النبي يعقوب عندما فقد يوسف؟",
+          "options": ["He got angry at everyone", "Beautiful patience is my way", "He gave up hope", "He ran away"],
+          "optionsArabic": ["غضب من الجميع", "فصبر جميل", "فقد الأمل", "هرب بعيداً"],
+          "correctIndex": 1,
+          "explanation": "Prophet Yaqub chose beautiful patience (sabr jameel) and trusted in Allah.",
+          "explanationArabic": "اختار النبي يعقوب الصبر الجميل ووثق في الله."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_yaqub_lesson_4",
+      "title": "Years of Patience",
+      "titleArabic": "سنوات من الصبر",
+      "sortOrder": 4,
+      "durationMinutes": 5,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Many years passed, and Yaqub missed Yusuf every single day. He cried so much that his eyes became white and he could not see well anymore.",
+          "contentTextArabic": "مرت سنوات كثيرة، واشتاق يعقوب ليوسف كل يوم. بكى كثيراً حتى ابيضت عيناه ولم يعد يرى جيداً."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "His sons said: 'You keep remembering Yusuf until you become ill!' But Yaqub replied: 'I only complain of my sadness to Allah. I know from Allah what you do not know.'",
+          "contentTextArabic": "قال أبناؤه: 'تالله تفتأ تذكر يوسف حتى تكون حرضاً!' لكن يعقوب أجاب: 'إنما أشكو بثي وحزني إلى الله وأعلم من الله ما لا تعلمون.'"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Even in his deepest sadness, Yaqub never lost hope. He kept praying and trusting Allah. He taught us that real patience means trusting Allah through difficult times.",
+          "contentTextArabic": "حتى في أشد حزنه، لم يفقد يعقوب الأمل أبداً. استمر في الدعاء والثقة بالله. علمنا أن الصبر الحقيقي يعني الثقة بالله في الأوقات الصعبة."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Yaqub knew in his heart that Yusuf was still alive. He told his sons: 'Go and search for Yusuf and his brother. Never give up hope in Allah's mercy!'",
+          "contentTextArabic": "علم يعقوب في قلبه أن يوسف لا يزال حياً. قال لأبنائه: 'اذهبوا فتحسسوا من يوسف وأخيه ولا تيأسوا من روح الله!'"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "To whom did Yaqub complain about his sadness?",
+          "questionArabic": "إلى من شكا يعقوب حزنه؟",
+          "options": ["His sons", "His neighbors", "Only to Allah", "No one"],
+          "optionsArabic": ["أبنائه", "جيرانه", "إلى الله فقط", "لا أحد"],
+          "correctIndex": 2,
+          "explanation": "Yaqub only complained of his grief and sadness to Allah alone.",
+          "explanationArabic": "شكا يعقوب بثه وحزنه إلى الله وحده."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_yaqub_lesson_5",
+      "title": "The Happy Reunion",
+      "titleArabic": "لم الشمل السعيد",
+      "sortOrder": 5,
+      "durationMinutes": 6,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Allah had protected Yusuf all those years! He had become a powerful minister in Egypt. When the brothers came to Egypt for food, they finally met Yusuf again!",
+          "contentTextArabic": "حمى الله يوسف كل تلك السنين! أصبح وزيراً قوياً في مصر. عندما جاء الإخوة إلى مصر طلباً للطعام، التقوا بيوسف أخيراً!"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Yusuf forgave his brothers and sent his shirt back to his father. When the shirt was placed on Yaqub's face, a miracle happened - his sight came back!",
+          "contentTextArabic": "سامح يوسف إخوته وأرسل قميصه إلى أبيه. عندما وُضع القميص على وجه يعقوب، حدثت معجزة - عاد بصره!"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "The whole family traveled to Egypt to be with Yusuf. When Yaqub finally saw his beloved son again, they hugged and cried tears of joy!",
+          "contentTextArabic": "سافرت العائلة كلها إلى مصر ليكونوا مع يوسف. عندما رأى يعقوب ابنه الحبيب أخيراً، تعانقا وبكيا دموع الفرح!"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Allah had answered Yaqub's prayers! His beautiful patience was rewarded. The family was together again, all praising and thanking Allah.",
+          "contentTextArabic": "استجاب الله لدعاء يعقوب! كوفئ صبره الجميل. اجتمعت العائلة مرة أخرى، يسبحون الله ويشكرونه."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What happened when Yusuf's shirt touched Yaqub's face?",
+          "questionArabic": "ماذا حدث عندما لمس قميص يوسف وجه يعقوب؟",
+          "options": ["Nothing happened", "His sight came back", "He fell asleep", "He became young again"],
+          "optionsArabic": ["لم يحدث شيء", "عاد بصره", "نام", "أصبح شاباً مرة أخرى"],
+          "correctIndex": 1,
+          "explanation": "When Yusuf's shirt was placed on Yaqub's face, Allah restored his sight miraculously.",
+          "explanationArabic": "عندما وُضع قميص يوسف على وجه يعقوب، أعاد الله بصره بمعجزة."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_yaqub_lesson_6",
+      "title": "Lessons from Prophet Yaqub",
+      "titleArabic": "دروس من النبي يعقوب",
+      "sortOrder": 6,
+      "durationMinutes": 5,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Prophet Yaqub teaches us about 'Sabr Jameel' - beautiful patience. This means being patient without complaining to people, and only turning to Allah.",
+          "contentTextArabic": "يعلمنا النبي يعقوب عن 'الصبر الجميل'. هذا يعني الصبر دون الشكوى للناس، والتوجه إلى الله فقط."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "We learn to never give up hope, no matter how long we have to wait. Yaqub waited many years, but he always believed Allah would answer his prayers.",
+          "contentTextArabic": "نتعلم ألا نفقد الأمل أبداً، مهما طال انتظارنا. انتظر يعقوب سنوات كثيرة، لكنه آمن دائماً أن الله سيستجيب لدعائه."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Yaqub also teaches us about forgiveness. Even though his sons did something terrible, the family came back together through love and forgiveness.",
+          "contentTextArabic": "يعلمنا يعقوب أيضاً عن المسامحة. رغم أن أبناءه فعلوا شيئاً فظيعاً، اجتمعت العائلة مرة أخرى من خلال الحب والمسامحة."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Remember: when you are sad or going through hard times, do what Yaqub did - complain only to Allah, be patient, and never lose hope. Allah's help is always near!",
+          "contentTextArabic": "تذكر: عندما تكون حزيناً أو تمر بأوقات صعبة، افعل ما فعله يعقوب - اشكُ إلى الله فقط، واصبر، ولا تفقد الأمل أبداً. نصر الله دائماً قريب!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is 'Sabr Jameel'?",
+          "questionArabic": "ما هو 'الصبر الجميل'؟",
+          "options": ["Being angry", "Beautiful patience without complaining to people", "Giving up hope", "Running away from problems"],
+          "optionsArabic": ["الغضب", "الصبر الجميل دون الشكوى للناس", "فقدان الأمل", "الهروب من المشاكل"],
+          "correctIndex": 1,
+          "explanation": "Sabr Jameel means beautiful patience - being patient without complaining to people, only to Allah.",
+          "explanationArabic": "الصبر الجميل يعني الصبر دون الشكوى للناس، فقط إلى الله."
+        }
+      ]
+    }
+  ]
+}

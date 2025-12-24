@@ -1,0 +1,263 @@
+{
+  "chapter": {
+    "serverId": "animal_ant",
+    "title": "The Wise Ant",
+    "titleArabic": "النملة الحكيمة",
+    "description": "The tiny creature that warned her colony",
+    "descriptionArabic": "المخلوق الصغير الذي حذر مستعمرته",
+    "iconName": "pets",
+    "colorHex": "#3E2723",
+    "sortOrder": 23
+  },
+  "lessons": [
+    {
+      "serverId": "ant_lesson_1",
+      "title": "The Marching Army",
+      "titleArabic": "الجيش الزاحف",
+      "subtitle": "Sulayman's mighty forces",
+      "subtitleArabic": "قوات سليمان الجبارة",
+      "sortOrder": 1,
+      "durationMinutes": 5,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Prophet Sulayman had an army unlike any other in history. His forces included not just human soldiers, but also jinn (spirits) and birds! Allah had given him power over all these creatures.",
+          "contentTextArabic": "كان للنبي سليمان جيش لا مثيل له في التاريخ. قواته لم تشمل الجنود البشريين فقط، بل أيضاً الجن والطيور! أعطاه الله السلطة على كل هذه المخلوقات."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "One day, Sulayman gathered his entire army for a march. The Quran describes this amazing sight: \"And gathered for Sulayman were his soldiers of jinn and humans and birds, and they were set in rows.\" What an incredible procession!",
+          "contentTextArabic": "ذات يوم، جمع سليمان جيشه بأكمله لمسيرة. يصف القرآن هذا المشهد المذهل: \"وحُشر لسليمان جنوده من الجن والإنس والطير فهم يوزعون.\" يا له من موكب لا يُصدق!"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "The ground shook as the massive army moved forward. The jinn were powerful and could move mountains. The humans were skilled warriors. The birds flew overhead as scouts and messengers. Nothing could stand in their way.",
+          "contentTextArabic": "اهتزت الأرض مع تقدم الجيش الضخم. كان الجن أقوياء يستطيعون تحريك الجبال. كان البشر محاربين ماهرين. طارت الطيور فوقهم ككشافة ورسل. لا شيء يستطيع الوقوف في طريقهم."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "As they marched through the land, they came upon a valley. This was the Valley of the Ants - home to a colony of tiny creatures going about their daily lives, unaware of the approaching army.",
+          "contentTextArabic": "بينما ساروا عبر الأرض، وصلوا إلى واد. كان هذا وادي النمل - موطن مستعمرة من مخلوقات صغيرة تمارس حياتها اليومية، غير مدركة للجيش القادم."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What three types of creatures were in Sulayman's army?",
+          "questionArabic": "ما أنواع المخلوقات الثلاثة التي كانت في جيش سليمان؟",
+          "options": ["Lions, tigers, and bears", "Jinn, humans, and birds", "Fish, snakes, and elephants", "Angels, humans, and animals"],
+          "optionsArabic": ["أسود ونمور ودببة", "جن وإنس وطير", "سمك وثعابين وفيلة", "ملائكة وبشر وحيوانات"],
+          "correctIndex": 1,
+          "explanation": "Sulayman's unique army consisted of jinn (spirits), humans, and birds, all arranged in perfect rows.",
+          "explanationArabic": "جيش سليمان الفريد تكون من الجن والإنس والطير، كلهم مصطفون في صفوف منتظمة."
+        },
+        {
+          "question": "Where did Sulayman's army arrive?",
+          "questionArabic": "أين وصل جيش سليمان؟",
+          "options": ["A mountain", "A river", "The Valley of the Ants", "A city"],
+          "optionsArabic": ["جبل", "نهر", "وادي النمل", "مدينة"],
+          "correctIndex": 2,
+          "explanation": "The army came upon the Valley of the Ants (Wadi An-Naml) where a colony of ants lived.",
+          "explanationArabic": "وصل الجيش إلى وادي النمل حيث كانت تعيش مستعمرة من النمل."
+        }
+      ]
+    },
+    {
+      "serverId": "ant_lesson_2",
+      "title": "The Ant's Warning",
+      "titleArabic": "تحذير النملة",
+      "subtitle": "A tiny leader speaks",
+      "subtitleArabic": "قائدة صغيرة تتكلم",
+      "sortOrder": 2,
+      "durationMinutes": 6,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Among the ants in the valley, there was one wise ant who saw the danger first. She looked up and saw the massive army approaching - thousands of feet that could crush the entire ant colony in seconds!",
+          "contentTextArabic": "من بين النمل في الوادي، كانت هناك نملة حكيمة رأت الخطر أولاً. نظرت للأعلى ورأت الجيش الضخم يقترب - آلاف الأقدام التي يمكن أن تسحق مستعمرة النمل بأكملها في ثوانٍ!"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "This ant didn't panic or think only of herself. Instead, she thought of her community. She called out loudly to warn all the other ants: \"O ants! Enter your homes so that Sulayman and his soldiers do not crush you while they do not realize it!\"",
+          "contentTextArabic": "هذه النملة لم تفزع أو تفكر في نفسها فقط. بدلاً من ذلك، فكرت في مجتمعها. نادت بصوت عالٍ لتحذير كل النمل الآخر: \"يا أيها النمل ادخلوا مساكنكم لا يحطمنكم سليمان وجنوده وهم لا يشعرون!\""
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Notice how the ant spoke! She mentioned Sulayman by name - she knew who he was! She also said \"while they do not realize it\" - she understood that Sulayman wouldn't hurt them on purpose. This tiny creature had knowledge and wisdom.",
+          "contentTextArabic": "لاحظ كيف تكلمت النملة! ذكرت سليمان بالاسم - كانت تعرف من هو! وقالت أيضاً \"وهم لا يشعرون\" - فهمت أن سليمان لن يؤذيهم عمداً. هذا المخلوق الصغير كان لديه علم وحكمة."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "This is remarkable because ants are so tiny - about the size of a grain of rice! Yet this little ant knew about the great Prophet-King Sulayman and even knew that he was a good person who wouldn't harm them intentionally.",
+          "contentTextArabic": "هذا أمر مذهل لأن النمل صغير جداً - بحجم حبة أرز تقريباً! ومع ذلك، هذه النملة الصغيرة عرفت عن الملك النبي العظيم سليمان وحتى عرفت أنه شخص طيب لن يؤذيهم عمداً."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What did the ant tell the other ants to do?",
+          "questionArabic": "ماذا قالت النملة للنمل الآخر أن يفعلوا؟",
+          "options": ["Attack the army", "Enter their homes", "Run away from the valley", "Hide in the trees"],
+          "optionsArabic": ["هاجموا الجيش", "ادخلوا مساكنكم", "اهربوا من الوادي", "اختبئوا في الأشجار"],
+          "correctIndex": 1,
+          "explanation": "The ant told the other ants to enter their homes (ant tunnels) so they wouldn't be crushed by the army.",
+          "explanationArabic": "قالت النملة للنمل الآخر أن يدخلوا مساكنهم (أنفاق النمل) حتى لا يحطمهم الجيش."
+        },
+        {
+          "question": "What did the ant say about Sulayman and his soldiers?",
+          "questionArabic": "ماذا قالت النملة عن سليمان وجنوده؟",
+          "options": ["They want to kill us", "They don't realize they might crush us", "They are our enemies", "They are looking for us"],
+          "optionsArabic": ["يريدون قتلنا", "لا يشعرون أنهم قد يحطموننا", "هم أعداؤنا", "يبحثون عنا"],
+          "correctIndex": 1,
+          "explanation": "The ant said 'while they do not realize it' - understanding that Sulayman wouldn't hurt them on purpose.",
+          "explanationArabic": "قالت النملة 'وهم لا يشعرون' - فاهمة أن سليمان لن يؤذيهم عمداً."
+        },
+        {
+          "question": "What does this show about the ant?",
+          "questionArabic": "ماذا يُظهر هذا عن النملة؟",
+          "options": ["It was scared", "It had wisdom and knowledge", "It was the queen", "It was very old"],
+          "optionsArabic": ["كانت خائفة", "كان لديها حكمة وعلم", "كانت الملكة", "كانت كبيرة جداً"],
+          "correctIndex": 1,
+          "explanation": "The ant showed wisdom by knowing who Sulayman was and knowledge that he was a good person who wouldn't harm them intentionally.",
+          "explanationArabic": "أظهرت النملة حكمة بمعرفة من هو سليمان وعلماً بأنه شخص طيب لن يؤذيهم عمداً."
+        }
+      ]
+    },
+    {
+      "serverId": "ant_lesson_3",
+      "title": "Sulayman's Smile",
+      "titleArabic": "ابتسامة سليمان",
+      "subtitle": "The Prophet hears the ant",
+      "subtitleArabic": "النبي يسمع النملة",
+      "sortOrder": 3,
+      "durationMinutes": 5,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Here comes the most beautiful part of the story. Prophet Sulayman, the mighty king with his massive army, heard the tiny ant's words! Remember, Allah had given him the ability to understand the speech of all creatures.",
+          "contentTextArabic": "هنا يأتي أجمل جزء من القصة. النبي سليمان، الملك الجبار بجيشه الضخم، سمع كلمات النملة الصغيرة! تذكر، الله أعطاه القدرة على فهم كلام جميع المخلوقات."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "When Sulayman heard the ant's warning, he smiled. The Quran says: \"So Sulayman smiled, amused at her speech.\" He was delighted by this tiny creature's concern for her community and her knowledge of who he was.",
+          "contentTextArabic": "عندما سمع سليمان تحذير النملة، ابتسم. يقول القرآن: \"فتبسم ضاحكاً من قولها.\" سُر بهذا المخلوق الصغير وقلقها على مجتمعها ومعرفتها بمن يكون."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Sulayman then turned to Allah in gratitude. He said: \"My Lord, enable me to be grateful for Your favor which You have bestowed upon me and upon my parents, and to do righteousness that pleases You.\"",
+          "contentTextArabic": "ثم توجه سليمان لله بالشكر. قال: \"رب أوزعني أن أشكر نعمتك التي أنعمت علي وعلى والدي وأن أعمل صالحاً ترضاه.\""
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "He continued: \"And admit me by Your mercy into the ranks of Your righteous servants.\" Even with all his power and kingdom, Sulayman remained humble before Allah and grateful for every blessing.",
+          "contentTextArabic": "وتابع: \"وأدخلني برحمتك في عبادك الصالحين.\" حتى مع كل قوته ومملكته، بقي سليمان متواضعاً أمام الله وشاكراً لكل نعمة."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How did Sulayman react when he heard the ant?",
+          "questionArabic": "كيف تفاعل سليمان عندما سمع النملة؟",
+          "options": ["He was angry", "He smiled", "He ignored it", "He was scared"],
+          "optionsArabic": ["غضب", "ابتسم", "تجاهلها", "خاف"],
+          "correctIndex": 1,
+          "explanation": "Sulayman smiled, amused by the ant's speech. He was delighted by her wisdom and concern.",
+          "explanationArabic": "ابتسم سليمان ضاحكاً من قولها. سُر بحكمتها وقلقها."
+        },
+        {
+          "question": "What did Sulayman pray for after hearing the ant?",
+          "questionArabic": "ماذا دعا سليمان بعد سماعه النملة؟",
+          "options": ["More power", "To be grateful and do good deeds", "More soldiers", "To understand more animals"],
+          "optionsArabic": ["مزيد من القوة", "أن يشكر ويعمل صالحاً", "مزيد من الجنود", "أن يفهم مزيداً من الحيوانات"],
+          "correctIndex": 1,
+          "explanation": "Sulayman prayed to be grateful for Allah's blessings and to do righteous deeds that please Allah.",
+          "explanationArabic": "دعا سليمان أن يشكر نعم الله وأن يعمل صالحاً يرضي الله."
+        },
+        {
+          "question": "What does Sulayman's reaction show about him?",
+          "questionArabic": "ماذا يُظهر تفاعل سليمان عنه؟",
+          "options": ["He was proud", "He was humble and grateful to Allah", "He was tired", "He didn't care"],
+          "optionsArabic": ["كان متكبراً", "كان متواضعاً وشاكراً لله", "كان متعباً", "لم يهتم"],
+          "correctIndex": 1,
+          "explanation": "Despite his great power, Sulayman remained humble and immediately thanked Allah for His blessings.",
+          "explanationArabic": "رغم قوته العظيمة، بقي سليمان متواضعاً وشكر الله فوراً على نعمه."
+        }
+      ]
+    },
+    {
+      "serverId": "ant_lesson_4",
+      "title": "Lessons from the Ant",
+      "titleArabic": "دروس من النملة",
+      "subtitle": "What this tiny creature teaches us",
+      "subtitleArabic": "ما يعلمنا هذا المخلوق الصغير",
+      "sortOrder": 4,
+      "durationMinutes": 6,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "This story is found in Surah An-Naml, which means \"The Ant.\" An entire surah is named after this tiny creature! This shows how important even the smallest creatures are in Allah's creation.",
+          "contentTextArabic": "هذه القصة موجودة في سورة النمل. سورة كاملة سُميت بهذا المخلوق الصغير! هذا يُظهر كم هي مهمة حتى أصغر المخلوقات في خلق الله."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "The ant teaches us about leadership. When danger came, she didn't just save herself - she warned everyone. A good leader thinks of others first and takes action to protect the community.",
+          "contentTextArabic": "تعلمنا النملة عن القيادة. عندما جاء الخطر، لم تنقذ نفسها فقط - بل حذرت الجميع. القائد الجيد يفكر في الآخرين أولاً ويتخذ إجراء لحماية المجتمع."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "The ant also teaches us about community and teamwork. Ants work together, help each other, and look out for one another. They are organized, hardworking, and prepared for difficult times.",
+          "contentTextArabic": "تعلمنا النملة أيضاً عن المجتمع والعمل الجماعي. النمل يعمل معاً، ويساعد بعضه، ويحترس لبعضه. هم منظمون، مجتهدون، ومستعدون للأوقات الصعبة."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "The Quran mentions ants again in a beautiful verse reminding us how they store food in summer for winter. Prophet Muhammad (peace be upon him) also taught us not to harm ants unless they harm us.",
+          "contentTextArabic": "يذكر القرآن النمل مرة أخرى في آية جميلة تذكرنا كيف يخزن الطعام في الصيف للشتاء. علمنا النبي محمد صلى الله عليه وسلم أيضاً ألا نؤذي النمل إلا إذا آذانا."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Even tiny creatures glorify Allah! The ant knew about Allah's prophet and trusted in His goodness. Every creature in creation worships Allah in its own way - the trees, the birds, the ants, and everything else.",
+          "contentTextArabic": "حتى المخلوقات الصغيرة تسبح الله! النملة عرفت عن نبي الله ووثقت بخيره. كل مخلوق في الخلق يعبد الله بطريقته - الأشجار والطيور والنمل وكل شيء آخر."
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "Finally, the story teaches us gratitude. When Sulayman heard the ant, he immediately thanked Allah. No matter how successful we become, we should always remember that everything we have comes from Allah.",
+          "contentTextArabic": "أخيراً، تعلمنا القصة الامتنان. عندما سمع سليمان النملة، شكر الله فوراً. مهما نجحنا، يجب أن نتذكر دائماً أن كل ما لدينا من الله."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which surah is named after the ant?",
+          "questionArabic": "أي سورة سُميت بالنملة؟",
+          "options": ["Surah Al-Baqarah", "Surah An-Naml", "Surah Al-Fil", "Surah An-Nahl"],
+          "optionsArabic": ["سورة البقرة", "سورة النمل", "سورة الفيل", "سورة النحل"],
+          "correctIndex": 1,
+          "explanation": "Surah An-Naml means 'The Ant' and contains the story of Sulayman and the ant.",
+          "explanationArabic": "سورة النمل تعني 'النملة' وتحتوي قصة سليمان والنملة."
+        },
+        {
+          "question": "What does the ant teach us about leadership?",
+          "questionArabic": "ماذا تعلمنا النملة عن القيادة؟",
+          "options": ["Think of yourself first", "A good leader protects the community", "Run from danger", "Leaders don't need to help others"],
+          "optionsArabic": ["فكر في نفسك أولاً", "القائد الجيد يحمي المجتمع", "اهرب من الخطر", "القادة لا يحتاجون لمساعدة الآخرين"],
+          "correctIndex": 1,
+          "explanation": "The ant didn't just save herself - she warned everyone. A good leader thinks of others and protects the community.",
+          "explanationArabic": "النملة لم تنقذ نفسها فقط - بل حذرت الجميع. القائد الجيد يفكر في الآخرين ويحمي المجتمع."
+        },
+        {
+          "question": "What should we learn from Sulayman's response?",
+          "questionArabic": "ماذا يجب أن نتعلم من رد سليمان؟",
+          "options": ["Be proud of your achievements", "Always thank Allah for His blessings", "Ignore small creatures", "Power is everything"],
+          "optionsArabic": ["كن فخوراً بإنجازاتك", "اشكر الله دائماً على نعمه", "تجاهل المخلوقات الصغيرة", "القوة هي كل شيء"],
+          "correctIndex": 1,
+          "explanation": "Despite his power, Sulayman immediately thanked Allah. We should always be grateful for Allah's blessings.",
+          "explanationArabic": "رغم قوته، شكر سليمان الله فوراً. يجب أن نكون دائماً شاكرين لنعم الله."
+        }
+      ]
+    }
+  ]
+}

@@ -205,3 +205,89 @@ Future<ChapterEntity?> chapter(ChapterRef ref, String serverId) {
   final repository = ref.watch(chapterRepositoryProvider);
   return repository.getChapterByServerId(serverId);
 }
+
+/// Chapter categories
+enum ChapterCategory {
+  all,
+  prophets,
+  quranStories,
+  islamicValues,
+  history,
+}
+
+/// Get display name for category
+extension ChapterCategoryExtension on ChapterCategory {
+  String get displayName {
+    switch (this) {
+      case ChapterCategory.all:
+        return 'All';
+      case ChapterCategory.prophets:
+        return 'Prophets';
+      case ChapterCategory.quranStories:
+        return 'Quran Stories';
+      case ChapterCategory.islamicValues:
+        return 'Values';
+      case ChapterCategory.history:
+        return 'History';
+    }
+  }
+
+  /// Check if a chapter belongs to this category
+  bool matches(ChapterEntity chapter) {
+    switch (this) {
+      case ChapterCategory.all:
+        return true;
+      case ChapterCategory.prophets:
+        return chapter.title.toLowerCase().contains('prophet') ||
+            chapter.serverId.startsWith('prophet-');
+      case ChapterCategory.quranStories:
+        return chapter.title.toLowerCase().contains('quran') ||
+            chapter.description.toLowerCase().contains('quran');
+      case ChapterCategory.islamicValues:
+        return chapter.title.toLowerCase().contains('value') ||
+            chapter.description.toLowerCase().contains('patience') ||
+            chapter.description.toLowerCase().contains('forgiveness') ||
+            chapter.description.toLowerCase().contains('kindness');
+      case ChapterCategory.history:
+        return chapter.title.toLowerCase().contains('history') ||
+            chapter.description.toLowerCase().contains('history');
+    }
+  }
+}
+
+/// Filtered chapters provider with search and category filter
+@riverpod
+class FilteredChapters extends _$FilteredChapters {
+  @override
+  AsyncValue<List<ChapterEntity>> build() {
+    final chaptersAsync = ref.watch(chaptersProvider);
+    return chaptersAsync.whenData((chapters) => chapters);
+  }
+
+  /// Filter chapters by search query and category
+  List<ChapterEntity> filter(
+    List<ChapterEntity> chapters, {
+    String? searchQuery,
+    ChapterCategory category = ChapterCategory.all,
+  }) {
+    var filtered = chapters;
+
+    // Apply category filter
+    if (category != ChapterCategory.all) {
+      filtered = filtered.where((c) => category.matches(c)).toList();
+    }
+
+    // Apply search filter
+    if (searchQuery != null && searchQuery.isNotEmpty) {
+      final query = searchQuery.toLowerCase();
+      filtered = filtered.where((chapter) {
+        return chapter.title.toLowerCase().contains(query) ||
+            chapter.description.toLowerCase().contains(query) ||
+            (chapter.titleArabic?.contains(query) ?? false) ||
+            (chapter.descriptionArabic?.contains(query) ?? false);
+      }).toList();
+    }
+
+    return filtered;
+  }
+}

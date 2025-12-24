@@ -1,0 +1,374 @@
+{
+  "chapter": {
+    "serverId": "animal_hoopoe",
+    "title": "The Hoopoe Bird",
+    "titleArabic": "طائر الهدهد",
+    "description": "The messenger bird of Prophet Sulayman",
+    "descriptionArabic": "طائر الرسول للنبي سليمان",
+    "iconName": "pets",
+    "colorHex": "#FF6F00",
+    "sortOrder": 22
+  },
+  "lessons": [
+    {
+      "serverId": "hoopoe_lesson_1",
+      "title": "The King Who Understood Birds",
+      "titleArabic": "الملك الذي فهم الطيور",
+      "subtitle": "Sulayman's special gift",
+      "subtitleArabic": "هبة سليمان الخاصة",
+      "sortOrder": 1,
+      "durationMinutes": 6,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Prophet Sulayman (Solomon) was the son of Prophet Dawud (David). Allah gave him a kingdom greater than any before or after him. But his greatest gift was not gold or power - it was the ability to understand the speech of animals and birds!",
+          "contentTextArabic": "النبي سليمان كان ابن النبي داود. أعطاه الله ملكاً أعظم من أي ملك قبله أو بعده. لكن أعظم هباته لم تكن الذهب أو السلطة - بل القدرة على فهم كلام الحيوانات والطيور!"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Sulayman could command the wind, control the jinn, and even understand ants and birds. The Quran says: \"And Sulayman inherited Dawud. He said, 'O people, we have been taught the language of birds.'\" This was a miraculous gift from Allah.",
+          "contentTextArabic": "استطاع سليمان أن يأمر الريح، ويسيطر على الجن، وحتى يفهم النمل والطيور. يقول القرآن: \"وورث سليمان داود وقال يا أيها الناس علمنا منطق الطير.\" كانت هذه هبة معجزة من الله."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Among his birds was a special one called the Hoopoe (Hudhud in Arabic). The hoopoe is a beautiful bird with a crown of feathers on its head and orange-brown wings with black and white stripes. It was one of Sulayman's scouts.",
+          "contentTextArabic": "من بين طيوره كان هناك طائر خاص يُسمى الهدهد. الهدهد طائر جميل له تاج من الريش على رأسه وأجنحة برتقالية بنية مع خطوط سوداء وبيضاء. كان أحد كشافة سليمان."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "One day, Sulayman gathered his great army - humans, jinn, and birds. They were arranged in perfect rows. Sulayman inspected his forces, checking that everyone was present and ready. But he noticed something was missing.",
+          "contentTextArabic": "ذات يوم، جمع سليمان جيشه العظيم - البشر والجن والطيور. صُفوا في صفوف منتظمة. تفقد سليمان قواته، متأكداً أن الجميع حاضرون ومستعدون. لكنه لاحظ أن شيئاً مفقود."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "\"Why do I not see the hoopoe?\" Sulayman asked. \"Is he absent?\" This was serious - no one should be absent from the king's inspection without permission. Where could the hoopoe have gone?",
+          "contentTextArabic": "سأل سليمان: \"ما لي لا أرى الهدهد أم كان من الغائبين؟\" كان هذا أمراً خطيراً - لا ينبغي لأحد أن يغيب عن تفقد الملك دون إذن. أين يمكن أن يكون الهدهد قد ذهب؟"
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "Sulayman was not pleased. He declared: \"I will surely punish him with a severe punishment or slaughter him unless he brings me a clear reason.\" The hoopoe needed a very good explanation for his absence!",
+          "contentTextArabic": "لم يكن سليمان راضياً. أعلن: \"لأعذبنه عذاباً شديداً أو لأذبحنه أو ليأتيني بسلطان مبين.\" احتاج الهدهد لتفسير جيد جداً لغيابه!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What special gift did Allah give Prophet Sulayman?",
+          "questionArabic": "ما الهبة الخاصة التي أعطاها الله للنبي سليمان؟",
+          "options": ["Power to fly", "Understanding the language of birds and animals", "Power to become invisible", "Ability to live forever"],
+          "optionsArabic": ["القدرة على الطيران", "فهم لغة الطيور والحيوانات", "القدرة على الاختفاء", "القدرة على الحياة للأبد"],
+          "correctIndex": 1,
+          "explanation": "Allah gave Sulayman the miraculous ability to understand the speech of birds and animals.",
+          "explanationArabic": "أعطى الله سليمان القدرة المعجزة على فهم كلام الطيور والحيوانات."
+        },
+        {
+          "question": "What is the Arabic name for the hoopoe bird?",
+          "questionArabic": "ما الاسم العربي لطائر الهدهد؟",
+          "options": ["Ghuraab", "Hudhud", "Naml", "Baqarah"],
+          "optionsArabic": ["غراب", "هدهد", "نمل", "بقرة"],
+          "correctIndex": 1,
+          "explanation": "The hoopoe is called 'Hudhud' in Arabic. It's mentioned by this name in the Quran.",
+          "explanationArabic": "يُسمى الهدهد 'هدهد' بالعربية. ذُكر بهذا الاسم في القرآن."
+        },
+        {
+          "question": "Why was Sulayman upset with the hoopoe?",
+          "questionArabic": "لماذا كان سليمان مستاءً من الهدهد؟",
+          "options": ["The hoopoe was sick", "The hoopoe was absent without permission", "The hoopoe couldn't fly", "The hoopoe ate too much"],
+          "optionsArabic": ["الهدهد كان مريضاً", "الهدهد غاب دون إذن", "الهدهد لم يستطع الطيران", "الهدهد أكل كثيراً"],
+          "correctIndex": 1,
+          "explanation": "The hoopoe was absent from the army inspection without permission, which was a serious offense.",
+          "explanationArabic": "الهدهد غاب عن تفقد الجيش دون إذن، وهذا كان جرماً خطيراً."
+        }
+      ]
+    },
+    {
+      "serverId": "hoopoe_lesson_2",
+      "title": "The Hoopoe's Discovery",
+      "titleArabic": "اكتشاف الهدهد",
+      "subtitle": "News of the Queen of Sheba",
+      "subtitleArabic": "أخبار ملكة سبأ",
+      "sortOrder": 2,
+      "durationMinutes": 7,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Soon the hoopoe arrived, landing before Sulayman. But before the king could punish him, the hoopoe spoke: \"I have come to you with news that you do not have. I have come from Sheba with certain information!\"",
+          "contentTextArabic": "سرعان ما وصل الهدهد، حاطاً أمام سليمان. لكن قبل أن يعاقبه الملك، تحدث الهدهد: \"أحطت بما لم تحط به وجئتك من سبأ بنبأ يقين!\""
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "The hoopoe had been on a mission of his own. He had flown far to the south and discovered a great kingdom called Sheba (Saba in Arabic). This was in the land that is now Yemen.",
+          "contentTextArabic": "كان الهدهد في مهمة خاصة به. طار بعيداً جنوباً واكتشف مملكة عظيمة تُسمى سبأ. كانت هذه في الأرض التي هي الآن اليمن."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "\"I found a woman ruling over them,\" the hoopoe continued. \"And she has been given everything, and she has a magnificent throne!\" This queen was named Bilqis, and her kingdom was wealthy and powerful.",
+          "contentTextArabic": "تابع الهدهد: \"إني وجدت امرأة تملكهم وأوتيت من كل شيء ولها عرش عظيم!\" هذه الملكة كانت تُسمى بلقيس، ومملكتها كانت غنية وقوية."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "But then the hoopoe shared the most important news: \"I found her and her people prostrating to the sun instead of Allah!\" They were worshipping the sun, not the One who created the sun. This was serious.",
+          "contentTextArabic": "لكن الهدهد شارك أهم خبر: \"وجدتها وقومها يسجدون للشمس من دون الله!\" كانوا يعبدون الشمس، لا الذي خلق الشمس. هذا كان أمراً خطيراً."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "The hoopoe was upset by what he saw. He said: \"Shaytan has made their deeds pleasing to them and turned them away from the right path. They do not worship Allah, who brings forth what is hidden in the heavens and earth.\"",
+          "contentTextArabic": "استاء الهدهد مما رأى. قال: \"وزين لهم الشيطان أعمالهم فصدهم عن السبيل. ألا يسجدوا لله الذي يخرج الخبء في السماوات والأرض.\""
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "This tiny bird understood something that the mighty queen and her people had forgotten - that only Allah deserves worship! The hoopoe's news was indeed important. It had saved him from punishment.",
+          "contentTextArabic": "هذا الطائر الصغير فهم شيئاً نسيته الملكة العظيمة وقومها - أن الله وحده يستحق العبادة! خبر الهدهد كان مهماً فعلاً. أنقذه من العقوبة."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What kingdom did the hoopoe discover?",
+          "questionArabic": "أي مملكة اكتشفها الهدهد؟",
+          "options": ["Egypt", "Rome", "Sheba (Saba)", "Babylon"],
+          "optionsArabic": ["مصر", "روما", "سبأ", "بابل"],
+          "correctIndex": 2,
+          "explanation": "The hoopoe discovered the kingdom of Sheba (Saba), ruled by a queen, in the land that is now Yemen.",
+          "explanationArabic": "اكتشف الهدهد مملكة سبأ، تحكمها ملكة، في الأرض التي هي الآن اليمن."
+        },
+        {
+          "question": "Who was the ruler of Sheba?",
+          "questionArabic": "من كان حاكم سبأ؟",
+          "options": ["A king", "A queen (Bilqis)", "A prince", "A priest"],
+          "optionsArabic": ["ملك", "ملكة (بلقيس)", "أمير", "كاهن"],
+          "correctIndex": 1,
+          "explanation": "Sheba was ruled by a queen named Bilqis, who had a magnificent throne and great wealth.",
+          "explanationArabic": "حكمت سبأ ملكة تُسمى بلقيس، كان لها عرش عظيم وثروة كبيرة."
+        },
+        {
+          "question": "What wrong thing were the people of Sheba doing?",
+          "questionArabic": "ما الخطأ الذي كان أهل سبأ يفعلونه؟",
+          "options": ["They were stealing", "They were worshipping the sun", "They were fighting each other", "They were not paying taxes"],
+          "optionsArabic": ["كانوا يسرقون", "كانوا يعبدون الشمس", "كانوا يتقاتلون", "لم يدفعوا الضرائب"],
+          "correctIndex": 1,
+          "explanation": "The people of Sheba were prostrating to the sun instead of worshipping Allah, the Creator of the sun.",
+          "explanationArabic": "كان أهل سبأ يسجدون للشمس بدلاً من عبادة الله، خالق الشمس."
+        }
+      ]
+    },
+    {
+      "serverId": "hoopoe_lesson_3",
+      "title": "The Letter to the Queen",
+      "titleArabic": "الرسالة للملكة",
+      "subtitle": "The hoopoe becomes a messenger",
+      "subtitleArabic": "الهدهد يصبح رسولاً",
+      "sortOrder": 3,
+      "durationMinutes": 6,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Sulayman listened carefully to the hoopoe's report. He decided to verify this news. \"We will see whether you speak the truth or are among the liars,\" he said. But he also had a plan.",
+          "contentTextArabic": "استمع سليمان بعناية لتقرير الهدهد. قرر التحقق من هذا الخبر. قال: \"سننظر أصدقت أم كنت من الكاذبين.\" لكن كان لديه خطة أيضاً."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Sulayman wrote a letter to Queen Bilqis. It was a noble letter, beginning with the name of Allah. It invited her and her people to stop worshipping the sun and to submit to Allah alone. He gave this letter to the hoopoe.",
+          "contentTextArabic": "كتب سليمان رسالة للملكة بلقيس. كانت رسالة كريمة، تبدأ باسم الله. دعتها وقومها للتوقف عن عبادة الشمس والخضوع لله وحده. أعطى هذه الرسالة للهدهد."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "\"Take this letter of mine and deliver it to them,\" Sulayman commanded. \"Then leave them and observe what they will return.\" The hoopoe was now an official messenger - carrying a letter from a mighty king to a mighty queen!",
+          "contentTextArabic": "أمر سليمان: \"اذهب بكتابي هذا فألقه إليهم ثم تول عنهم فانظر ماذا يرجعون.\" أصبح الهدهد الآن رسولاً رسمياً - يحمل رسالة من ملك عظيم لملكة عظيمة!"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "The hoopoe flew across deserts and mountains until he reached Sheba. He found the queen's palace and dropped the letter to her. Then he hid nearby to watch what would happen, just as Sulayman had commanded.",
+          "contentTextArabic": "طار الهدهد عبر الصحاري والجبال حتى وصل سبأ. وجد قصر الملكة وأسقط الرسالة إليها. ثم اختبأ قريباً ليراقب ما سيحدث، تماماً كما أمره سليمان."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Queen Bilqis was shocked to receive a letter in such an unusual way. She gathered her advisors and read the letter to them: \"It is from Sulayman, and it is: 'In the name of Allah, the Most Merciful. Do not be haughty with me but come to me in submission.'\"",
+          "contentTextArabic": "صُدمت الملكة بلقيس بتلقي رسالة بطريقة غير عادية كهذه. جمعت مستشاريها وقرأت عليهم الرسالة: \"إنه من سليمان وإنه بسم الله الرحمن الرحيم. ألا تعلوا علي وأتوني مسلمين.\""
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "The little hoopoe had completed a big mission. A small bird had carried a message that would change a whole kingdom! This shows how Allah can use even the smallest creatures for great purposes.",
+          "contentTextArabic": "أتم الهدهد الصغير مهمة كبيرة. طائر صغير حمل رسالة ستغير مملكة بأكملها! هذا يُظهر كيف يمكن لله أن يستخدم حتى أصغر المخلوقات لأغراض عظيمة."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What did Sulayman give the hoopoe to deliver?",
+          "questionArabic": "ماذا أعطى سليمان الهدهد ليوصله؟",
+          "options": ["Gold", "A letter", "Food", "A gift"],
+          "optionsArabic": ["ذهب", "رسالة", "طعام", "هدية"],
+          "correctIndex": 1,
+          "explanation": "Sulayman wrote a letter inviting Queen Bilqis to worship Allah alone and gave it to the hoopoe to deliver.",
+          "explanationArabic": "كتب سليمان رسالة يدعو فيها الملكة بلقيس لعبادة الله وحده وأعطاها للهدهد ليوصلها."
+        },
+        {
+          "question": "How did the letter begin?",
+          "questionArabic": "كيف بدأت الرسالة؟",
+          "options": ["Dear Queen", "In the name of Allah, the Most Merciful", "Greetings from Sulayman", "To whom it may concern"],
+          "optionsArabic": ["عزيزتي الملكة", "بسم الله الرحمن الرحيم", "تحيات من سليمان", "إلى من يهمه الأمر"],
+          "correctIndex": 1,
+          "explanation": "Sulayman's letter began with 'Bismillah' - In the name of Allah, the Most Merciful. This is the proper way to begin important matters.",
+          "explanationArabic": "بدأت رسالة سليمان بـ'بسم الله الرحمن الرحيم'. هذه الطريقة الصحيحة لبدء الأمور المهمة."
+        },
+        {
+          "question": "What did Sulayman command the hoopoe to do after delivering the letter?",
+          "questionArabic": "ماذا أمر سليمان الهدهد أن يفعل بعد إيصال الرسالة؟",
+          "options": ["Come back immediately", "Stay and hide to observe their response", "Fly around the palace", "Attack the queen"],
+          "optionsArabic": ["يعود فوراً", "يبقى ويختبئ ليراقب ردهم", "يطير حول القصر", "يهاجم الملكة"],
+          "correctIndex": 1,
+          "explanation": "Sulayman told the hoopoe to deliver the letter, then leave and observe what the queen's response would be.",
+          "explanationArabic": "أخبر سليمان الهدهد أن يوصل الرسالة، ثم يتولى ويراقب ما سيكون رد الملكة."
+        }
+      ]
+    },
+    {
+      "serverId": "hoopoe_lesson_4",
+      "title": "The Queen's Response",
+      "titleArabic": "رد الملكة",
+      "subtitle": "Bilqis chooses wisely",
+      "subtitleArabic": "بلقيس تختار بحكمة",
+      "sortOrder": 4,
+      "durationMinutes": 6,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Queen Bilqis asked her advisors for counsel. \"O chiefs, advise me in my affair. I do not decide any matter until you are present.\" She was a wise queen who listened to advice.",
+          "contentTextArabic": "طلبت الملكة بلقيس من مستشاريها المشورة. \"يا أيها الملأ أفتوني في أمري ما كنت قاطعة أمراً حتى تشهدون.\" كانت ملكة حكيمة تستمع للنصيحة."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Her advisors said: \"We are men of strength and great military might, but the command is yours. See what you will command.\" They were ready to fight, but the queen had a wiser plan.",
+          "contentTextArabic": "قال مستشاروها: \"نحن أولو قوة وأولو بأس شديد والأمر إليك فانظري ماذا تأمرين.\" كانوا مستعدين للقتال، لكن الملكة كان لها خطة أحكم."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Bilqis replied wisely: \"Indeed, when kings enter a city, they ruin it and make its honored people humiliated.\" She knew that war would destroy her kingdom. Instead, she decided to send gifts to test Sulayman.",
+          "contentTextArabic": "ردت بلقيس بحكمة: \"إن الملوك إذا دخلوا قرية أفسدوها وجعلوا أعزة أهلها أذلة.\" علمت أن الحرب ستدمر مملكتها. بدلاً من ذلك، قررت إرسال هدايا لاختبار سليمان."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "She sent magnificent gifts to Sulayman. But when her messengers arrived, Sulayman was not impressed. He said: \"Do you provide me with wealth? What Allah has given me is better than what He has given you!\"",
+          "contentTextArabic": "أرسلت هدايا فخمة لسليمان. لكن عندما وصل رسلها، لم يُعجب سليمان. قال: \"أتمدونني بمال فما آتاني الله خير مما آتاكم!\""
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Sulayman sent her messengers back with a warning: \"Return to them, for we will surely come to them with soldiers they cannot resist.\" He wasn't interested in wealth - he wanted them to know the truth about Allah.",
+          "contentTextArabic": "أعاد سليمان رسلها بتحذير: \"ارجع إليهم فلنأتينهم بجنود لا قبل لهم بها.\" لم يكن مهتماً بالثروة - أراد أن يعرفوا الحق عن الله."
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "Queen Bilqis realized this was no ordinary king. A man who refused great wealth must have something greater. She decided to visit Sulayman herself to see his kingdom and learn more. The hoopoe's mission had worked!",
+          "contentTextArabic": "أدركت الملكة بلقيس أن هذا ليس ملكاً عادياً. رجل يرفض ثروة عظيمة لا بد أنه يملك شيئاً أعظم. قررت زيارة سليمان بنفسها لترى مملكته وتتعلم المزيد. نجحت مهمة الهدهد!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What did Queen Bilqis first send to Sulayman?",
+          "questionArabic": "ماذا أرسلت الملكة بلقيس أولاً لسليمان؟",
+          "options": ["An army", "Magnificent gifts", "A letter", "Her advisors"],
+          "optionsArabic": ["جيشاً", "هدايا فخمة", "رسالة", "مستشاريها"],
+          "correctIndex": 1,
+          "explanation": "Bilqis decided to send magnificent gifts to test Sulayman instead of going to war.",
+          "explanationArabic": "قررت بلقيس إرسال هدايا فخمة لاختبار سليمان بدلاً من الذهاب للحرب."
+        },
+        {
+          "question": "How did Sulayman respond to the gifts?",
+          "questionArabic": "كيف رد سليمان على الهدايا؟",
+          "options": ["He was very happy", "He was not impressed and said what Allah gave him was better", "He asked for more", "He accepted them gladly"],
+          "optionsArabic": ["فرح جداً", "لم يُعجب وقال ما آتاه الله خير", "طلب المزيد", "قبلها بسعادة"],
+          "correctIndex": 1,
+          "explanation": "Sulayman rejected the gifts, saying that what Allah had given him was better than any worldly wealth.",
+          "explanationArabic": "رفض سليمان الهدايا، قائلاً أن ما آتاه الله خير من أي ثروة دنيوية."
+        },
+        {
+          "question": "What did Bilqis decide to do after Sulayman rejected her gifts?",
+          "questionArabic": "ماذا قررت بلقيس أن تفعل بعد رفض سليمان لهداياها؟",
+          "options": ["Go to war", "Send more gifts", "Visit Sulayman herself", "Ignore him"],
+          "optionsArabic": ["الذهاب للحرب", "إرسال مزيد من الهدايا", "زيارة سليمان بنفسها", "تجاهله"],
+          "correctIndex": 2,
+          "explanation": "Bilqis decided to visit Sulayman herself to see his kingdom and learn what made him reject such wealth.",
+          "explanationArabic": "قررت بلقيس زيارة سليمان بنفسها لترى مملكته وتتعلم ما جعله يرفض ثروة كهذه."
+        }
+      ]
+    },
+    {
+      "serverId": "hoopoe_lesson_5",
+      "title": "Lessons from the Hoopoe",
+      "titleArabic": "دروس من الهدهد",
+      "subtitle": "What this bird teaches us",
+      "subtitleArabic": "ما يعلمنا هذا الطائر",
+      "sortOrder": 5,
+      "durationMinutes": 6,
+      "hasAudio": false,
+      "hasQuiz": true,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "The story ends beautifully. Queen Bilqis came to visit Sulayman. She was amazed by his kingdom and recognized that his power came from Allah. She declared: \"My Lord, I have wronged myself, and I submit with Sulayman to Allah, Lord of the worlds.\"",
+          "contentTextArabic": "انتهت القصة بشكل جميل. جاءت الملكة بلقيس لزيارة سليمان. دُهشت بمملكته وأدركت أن قوته جاءت من الله. أعلنت: \"رب إني ظلمت نفسي وأسلمت مع سليمان لله رب العالمين.\""
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "All of this happened because of a small bird! The hoopoe's discovery and faithful service led to an entire kingdom accepting the worship of Allah alone. Never underestimate what small actions can achieve.",
+          "contentTextArabic": "كل هذا حدث بسبب طائر صغير! اكتشاف الهدهد وخدمته الأمينة أدت لقبول مملكة بأكملها عبادة الله وحده. لا تستخف أبداً بما يمكن للأفعال الصغيرة أن تحقق."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "The hoopoe teaches us to be observant. While flying, he noticed something important - people worshipping the wrong thing. He didn't ignore it; he reported it. We should also notice when people do wrong and try to guide them.",
+          "contentTextArabic": "يعلمنا الهدهد أن نكون ملاحظين. أثناء طيرانه، لاحظ شيئاً مهماً - أناس يعبدون شيئاً خاطئاً. لم يتجاهله؛ بل أبلغ عنه. يجب أن نلاحظ أيضاً عندما يخطئ الناس ونحاول إرشادهم."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "The hoopoe also teaches us to have good excuses for our actions. When Sulayman was angry, the hoopoe had a valid reason for being absent. If we must miss our duties, we should have good reasons.",
+          "contentTextArabic": "يعلمنا الهدهد أيضاً أن يكون لدينا أعذار جيدة لأفعالنا. عندما غضب سليمان، كان للهدهد سبب وجيه لغيابه. إذا اضطررنا للتغيب عن واجباتنا، يجب أن تكون لدينا أسباب جيدة."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Most importantly, the hoopoe teaches us that even small creatures know the truth about worship. The hoopoe knew that worshipping the sun was wrong. This little bird understood tawheed (the oneness of Allah) better than a whole kingdom!",
+          "contentTextArabic": "الأهم، يعلمنا الهدهد أن حتى المخلوقات الصغيرة تعرف الحق عن العبادة. عرف الهدهد أن عبادة الشمس خاطئة. هذا الطائر الصغير فهم التوحيد أفضل من مملكة بأكملها!"
+        },
+        {
+          "pageNumber": 6,
+          "contentText": "The hoopoe appears in Surah An-Naml (The Ant). This surah contains stories of animals and how they interact with prophets. It reminds us that all of creation worships and glorifies Allah in its own way.",
+          "contentTextArabic": "يظهر الهدهد في سورة النمل. هذه السورة تحتوي قصص حيوانات وكيف تتفاعل مع الأنبياء. تذكرنا أن كل الخلق يعبد ويسبح الله بطريقته الخاصة."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What did Queen Bilqis finally do?",
+          "questionArabic": "ماذا فعلت الملكة بلقيس أخيراً؟",
+          "options": ["She went to war", "She submitted to Allah with Sulayman", "She stayed in Sheba", "She sent more gifts"],
+          "optionsArabic": ["ذهبت للحرب", "أسلمت لله مع سليمان", "بقيت في سبأ", "أرسلت مزيداً من الهدايا"],
+          "correctIndex": 1,
+          "explanation": "After seeing Sulayman's kingdom and understanding the truth, Queen Bilqis declared her submission to Allah, Lord of the worlds.",
+          "explanationArabic": "بعد رؤية مملكة سليمان وفهم الحق، أعلنت الملكة بلقيس إسلامها لله رب العالمين."
+        },
+        {
+          "question": "What did the hoopoe know about worship?",
+          "questionArabic": "ماذا عرف الهدهد عن العبادة؟",
+          "options": ["Nothing", "That only Allah deserves worship", "That the sun is powerful", "That kings should be worshipped"],
+          "optionsArabic": ["لا شيء", "أن الله وحده يستحق العبادة", "أن الشمس قوية", "أن الملوك يجب أن يُعبدوا"],
+          "correctIndex": 1,
+          "explanation": "The hoopoe understood tawheed - that only Allah deserves worship, not the sun or anything else in creation.",
+          "explanationArabic": "فهم الهدهد التوحيد - أن الله وحده يستحق العبادة، لا الشمس ولا أي شيء آخر في الخلق."
+        },
+        {
+          "question": "In which surah does the hoopoe's story appear?",
+          "questionArabic": "في أي سورة تظهر قصة الهدهد؟",
+          "options": ["Surah Al-Baqarah", "Surah An-Naml", "Surah Al-Fil", "Surah Yusuf"],
+          "optionsArabic": ["سورة البقرة", "سورة النمل", "سورة الفيل", "سورة يوسف"],
+          "correctIndex": 1,
+          "explanation": "The hoopoe's story appears in Surah An-Naml (The Ant), which contains stories about animals and prophets.",
+          "explanationArabic": "قصة الهدهد تظهر في سورة النمل، التي تحتوي قصصاً عن الحيوانات والأنبياء."
+        }
+      ]
+    }
+  ]
+}

@@ -7,7 +7,7 @@ part of 'data_initialization_service.dart';
 // **************************************************************************
 
 String _$dataInitializationServiceHash() =>
-    r'1d00284044ea7831a5062c044191b87ab224e73e';
+    r'6190ac815dfdc1988ce65972502d743b22c5f99c';
 
 /// Data initialization service provider
 ///

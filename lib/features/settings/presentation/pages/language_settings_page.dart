@@ -1,31 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../domain/entities/settings_entity.dart';
+import '../controllers/settings_controller.dart';
 
 /// Language settings page
 /// From Issue #3 - Navigation & Routing
-class LanguageSettingsPage extends StatefulWidget {
+class LanguageSettingsPage extends ConsumerWidget {
   const LanguageSettingsPage({super.key});
 
   @override
-  State<LanguageSettingsPage> createState() => _LanguageSettingsPageState();
-}
+  Widget build(BuildContext context, WidgetRef ref) {
+    final settingsState = ref.watch(settingsControllerProvider);
+    final selectedLanguage = settingsState.settings.language;
 
-class _LanguageSettingsPageState extends State<LanguageSettingsPage> {
-  String _selectedLanguage = 'en';
-
-  final List<_LanguageOption> _languages = [
-    _LanguageOption(code: 'en', name: 'English', nativeName: 'English'),
-    _LanguageOption(code: 'ar', name: 'Arabic', nativeName: 'العربية'),
-    _LanguageOption(code: 'ur', name: 'Urdu', nativeName: 'اردو'),
-    _LanguageOption(code: 'id', name: 'Indonesian', nativeName: 'Bahasa Indonesia'),
-    _LanguageOption(code: 'es', name: 'Spanish', nativeName: 'Español'),
-    _LanguageOption(code: 'fr', name: 'French', nativeName: 'Français'),
-  ];
-
-  @override
-  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Language'),
@@ -58,8 +48,8 @@ class _LanguageSettingsPageState extends State<LanguageSettingsPage> {
           // Language list
           Card(
             child: Column(
-              children: _languages.map((language) {
-                final isSelected = _selectedLanguage == language.code;
+              children: SupportedLanguages.all.map((language) {
+                final isSelected = selectedLanguage == language.code;
                 return Column(
                   children: [
                     ListTile(
@@ -87,24 +77,30 @@ class _LanguageSettingsPageState extends State<LanguageSettingsPage> {
                       title: Text(language.name),
                       subtitle: Text(
                         language.nativeName,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: AppColors.textSecondary,
                         ),
                       ),
                       trailing: isSelected
                           ? const Icon(Icons.check_circle, color: AppColors.primary)
                           : null,
-                      onTap: () {
-                        setState(() => _selectedLanguage = language.code);
-                        // TODO: Actually change the app locale
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(
-                            content: Text('Language changed to ${language.name}'),
-                          ),
-                        );
+                      onTap: () async {
+                        // Change the app locale via settings controller
+                        await ref
+                            .read(settingsControllerProvider.notifier)
+                            .setLanguage(language.code);
+
+                        if (context.mounted) {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                              content: Text('Language changed to ${language.name}'),
+                            ),
+                          );
+                        }
                       },
                     ),
-                    if (language != _languages.last) const Divider(height: 1),
+                    if (language != SupportedLanguages.all.last)
+                      const Divider(height: 1),
                   ],
                 );
               }).toList(),
@@ -114,16 +110,4 @@ class _LanguageSettingsPageState extends State<LanguageSettingsPage> {
       ),
     );
   }
-}
-
-class _LanguageOption {
-  const _LanguageOption({
-    required this.code,
-    required this.name,
-    required this.nativeName,
-  });
-
-  final String code;
-  final String name;
-  final String nativeName;
 }

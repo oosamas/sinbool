@@ -1,0 +1,324 @@
+{
+  "chapter": {
+    "serverId": "animal_camel",
+    "title": "The Miraculous She-Camel",
+    "titleArabic": "ناقة صالح",
+    "description": "The story of Prophet Salih and the she-camel sent as a miraculous sign to the people of Thamud",
+    "descriptionArabic": "قصة النبي صالح والناقة التي أرسلها الله آية للثمود",
+    "iconName": "camel",
+    "colorHex": "#D4A574",
+    "sortOrder": 25
+  },
+  "lessons": [
+    {
+      "serverId": "animal_camel_lesson_1",
+      "title": "The People of Thamud",
+      "titleArabic": "قوم ثمود",
+      "sortOrder": 1,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Long ago, there lived a people called Thamud. They lived in a beautiful valley with mountains all around. They were very skilled at carving homes right into the rocks of the mountains!",
+          "contentTextArabic": "منذ زمن بعيد، عاش قوم يُدعون ثمود. كانوا يعيشون في وادٍ جميل تحيط به الجبال من كل جانب. وكانوا ماهرين جداً في نحت بيوتهم في صخور الجبال!"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Their rock houses were magnificent! They carved beautiful rooms and hallways right inside the mountain. These homes were cool in summer and warm in winter. Allah had given them many blessings.",
+          "contentTextArabic": "كانت بيوتهم الصخرية رائعة! نحتوا غرفاً جميلة وممرات داخل الجبال. كانت هذه البيوت باردة في الصيف ودافئة في الشتاء. لقد أنعم الله عليهم بنعم كثيرة."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "But instead of thanking Allah for all these blessings, the people of Thamud worshipped idols made of stone. They forgot that Allah alone had created them and given them their skills.",
+          "contentTextArabic": "لكن بدلاً من شكر الله على كل هذه النعم، عبد قوم ثمود أصناماً من الحجر. نسوا أن الله وحده هو الذي خلقهم وأعطاهم مهاراتهم."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "So Allah, in His mercy, sent them a prophet named Salih. Prophet Salih was from their own tribe. He was known to be honest and wise. He called his people to worship Allah alone.",
+          "contentTextArabic": "فأرسل الله برحمته نبياً اسمه صالح. كان النبي صالح من قبيلتهم. عُرف بالصدق والحكمة. دعا قومه إلى عبادة الله وحده."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Prophet Salih said to his people: 'O my people! Worship Allah. You have no god other than Him. He brought you from the earth and made you dwell in it. So ask His forgiveness and turn to Him in repentance.'",
+          "contentTextArabic": "قال النبي صالح لقومه: 'يا قوم اعبدوا الله ما لكم من إله غيره. هو أنشأكم من الأرض واستعمركم فيها. فاستغفروه ثم توبوا إليه.'"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What were the people of Thamud famous for?",
+          "questionArabic": "بماذا اشتهر قوم ثمود؟",
+          "options": ["Building boats", "Carving homes in mountains", "Growing crops", "Making jewelry"],
+          "optionsArabic": ["بناء السفن", "نحت البيوت في الجبال", "زراعة المحاصيل", "صناعة المجوهرات"],
+          "correctIndex": 1,
+          "explanation": "The people of Thamud were skilled at carving magnificent homes into the rocky mountains.",
+          "explanationArabic": "كان قوم ثمود ماهرين في نحت بيوت رائعة في الجبال الصخرية."
+        },
+        {
+          "question": "Who was the prophet sent to the people of Thamud?",
+          "questionArabic": "من هو النبي الذي أُرسل إلى قوم ثمود؟",
+          "options": ["Prophet Nuh", "Prophet Hud", "Prophet Salih", "Prophet Shuayb"],
+          "optionsArabic": ["النبي نوح", "النبي هود", "النبي صالح", "النبي شعيب"],
+          "correctIndex": 2,
+          "explanation": "Allah sent Prophet Salih to the people of Thamud to guide them to the right path.",
+          "explanationArabic": "أرسل الله النبي صالح إلى قوم ثمود ليهديهم إلى الطريق المستقيم."
+        },
+        {
+          "question": "What did Prophet Salih call his people to do?",
+          "questionArabic": "إلى ماذا دعا النبي صالح قومه؟",
+          "options": ["To build bigger houses", "To worship Allah alone", "To travel far away", "To make more idols"],
+          "optionsArabic": ["لبناء بيوت أكبر", "لعبادة الله وحده", "للسفر بعيداً", "لصنع المزيد من الأصنام"],
+          "correctIndex": 1,
+          "explanation": "Prophet Salih called his people to worship Allah alone and to stop worshipping idols.",
+          "explanationArabic": "دعا النبي صالح قومه إلى عبادة الله وحده والتوقف عن عبادة الأصنام."
+        }
+      ]
+    },
+    {
+      "serverId": "animal_camel_lesson_2",
+      "title": "The Request for a Sign",
+      "titleArabic": "طلب الآية",
+      "sortOrder": 2,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Most of the people of Thamud refused to listen to Prophet Salih. They said, 'You are just a man like us. Why should we follow you?' They were arrogant and stubborn.",
+          "contentTextArabic": "رفض معظم قوم ثمود الاستماع إلى النبي صالح. قالوا: 'أنت مجرد بشر مثلنا. لماذا نتبعك؟' كانوا متكبرين وعنيدين."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "The leaders of Thamud gathered together. They said, 'If you really are a prophet from Allah, then bring us a miracle! Show us a sign that proves you speak the truth!'",
+          "contentTextArabic": "اجتمع زعماء ثمود معاً. قالوا: 'إن كنت حقاً نبياً من عند الله، فأتنا بمعجزة! أرنا آية تثبت أنك تقول الحق!'"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "They pointed to a huge rock in the mountain and said, 'Make a she-camel come out of this rock! She must be large and pregnant, and she must be like no other camel we have ever seen!'",
+          "contentTextArabic": "أشاروا إلى صخرة ضخمة في الجبل وقالوا: 'أخرج لنا من هذه الصخرة ناقة! يجب أن تكون كبيرة وحاملاً، ولا تشبه أي ناقة رأيناها من قبل!'"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Prophet Salih made them promise: 'If Allah brings this she-camel out of the rock, will you believe in Him and worship Him alone?' They agreed and made a promise.",
+          "contentTextArabic": "أخذ النبي صالح عليهم عهداً: 'إذا أخرج الله لكم هذه الناقة من الصخرة، هل ستؤمنون به وتعبدونه وحده؟' وافقوا وأعطوا وعدهم."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Prophet Salih turned to Allah and prayed sincerely. He asked Allah to show the people a miracle that would help them believe. Allah, the All-Powerful, answered his prayer.",
+          "contentTextArabic": "توجه النبي صالح إلى الله ودعا بإخلاص. سأل الله أن يُري القوم معجزة تساعدهم على الإيمان. واستجاب الله القدير لدعائه."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why did the people refuse to believe Prophet Salih at first?",
+          "questionArabic": "لماذا رفض القوم الإيمان بالنبي صالح في البداية؟",
+          "options": ["He was too young", "He was a stranger", "They said he was just a man like them", "He spoke a different language"],
+          "optionsArabic": ["كان صغيراً جداً", "كان غريباً", "قالوا إنه مجرد بشر مثلهم", "كان يتكلم لغة مختلفة"],
+          "correctIndex": 2,
+          "explanation": "The arrogant people said Salih was just a man like them, refusing to accept his message.",
+          "explanationArabic": "قال المتكبرون إن صالح مجرد بشر مثلهم، رافضين قبول رسالته."
+        },
+        {
+          "question": "What miracle did the people demand from Prophet Salih?",
+          "questionArabic": "ما هي المعجزة التي طلبها القوم من النبي صالح؟",
+          "options": ["Turn the mountains into gold", "Make a river appear", "Bring a she-camel from a rock", "Make the sun stop moving"],
+          "optionsArabic": ["تحويل الجبال إلى ذهب", "إظهار نهر", "إخراج ناقة من صخرة", "إيقاف الشمس عن الحركة"],
+          "correctIndex": 2,
+          "explanation": "The people demanded that a she-camel come out of a large rock in the mountain.",
+          "explanationArabic": "طلب القوم أن تخرج ناقة من صخرة كبيرة في الجبل."
+        },
+        {
+          "question": "What did Prophet Salih do after they made their demand?",
+          "questionArabic": "ماذا فعل النبي صالح بعد أن طلبوا منه ذلك؟",
+          "options": ["He ran away", "He prayed to Allah sincerely", "He argued with them", "He gave up"],
+          "optionsArabic": ["هرب", "دعا الله بإخلاص", "جادلهم", "استسلم"],
+          "correctIndex": 1,
+          "explanation": "Prophet Salih turned to Allah and prayed sincerely for a miracle to help his people believe.",
+          "explanationArabic": "توجه النبي صالح إلى الله ودعا بإخلاص أن يُظهر لقومه معجزة تساعدهم على الإيمان."
+        }
+      ]
+    },
+    {
+      "serverId": "animal_camel_lesson_3",
+      "title": "The Miraculous She-Camel",
+      "titleArabic": "الناقة المعجزة",
+      "sortOrder": 3,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Something amazing happened! The huge rock began to move and shake. The people watched in wonder as the rock split open. Out came a beautiful, large she-camel - just as they had asked!",
+          "contentTextArabic": "حدث شيء مذهل! بدأت الصخرة الضخمة تتحرك وتهتز. راقب الناس بدهشة وهي تنشق. خرجت منها ناقة جميلة كبيرة - تماماً كما طلبوا!"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "This she-camel was truly special. She was larger than any camel they had ever seen. She gave so much milk that all the people of Thamud could drink from it. She was a clear sign from Allah!",
+          "contentTextArabic": "كانت هذه الناقة مميزة حقاً. كانت أكبر من أي ناقة رأوها من قبل. كانت تعطي حليباً كثيراً يكفي كل قوم ثمود للشرب منه. كانت آية واضحة من الله!"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Prophet Salih told them: 'This is the she-camel of Allah, sent as a sign for you. So let her eat on Allah's earth and do not harm her, or a painful punishment will come upon you.'",
+          "contentTextArabic": "قال لهم النبي صالح: 'هذه ناقة الله لكم آية. فذروها تأكل في أرض الله ولا تمسوها بسوء فيأخذكم عذاب أليم.'"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "There was also a special rule about water. The valley had a well that everyone shared. Prophet Salih said: 'One day is for the she-camel to drink, and one day is for you to drink.' They had to take turns.",
+          "contentTextArabic": "كان هناك أيضاً قاعدة خاصة للماء. كان في الوادي بئر يتشاركها الجميع. قال النبي صالح: 'يوم للناقة تشرب، ويوم لكم.' كان عليهم التناوب."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "On the days when the she-camel drank water, she would give the people plenty of milk in return. This was fair and generous! The camel was peaceful and never harmed anyone.",
+          "contentTextArabic": "في الأيام التي كانت الناقة تشرب فيها الماء، كانت تعطي الناس الكثير من الحليب في المقابل. كان هذا عادلاً وكريماً! كانت الناقة مسالمة ولم تؤذِ أحداً قط."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How did the she-camel appear?",
+          "questionArabic": "كيف ظهرت الناقة؟",
+          "options": ["She walked from the desert", "She came out of a rock", "She fell from the sky", "She was found in the river"],
+          "optionsArabic": ["مشت من الصحراء", "خرجت من صخرة", "سقطت من السماء", "وُجدت في النهر"],
+          "correctIndex": 1,
+          "explanation": "By Allah's power, the she-camel miraculously came out of a huge rock, just as the people had requested.",
+          "explanationArabic": "بقدرة الله، خرجت الناقة بشكل معجز من صخرة ضخمة، تماماً كما طلب القوم."
+        },
+        {
+          "question": "What was special about the she-camel's milk?",
+          "questionArabic": "ما الذي كان مميزاً في حليب الناقة؟",
+          "options": ["It was golden colored", "There was enough for everyone to drink", "It tasted like honey", "It was very cold"],
+          "optionsArabic": ["كان ذهبي اللون", "كان يكفي للجميع للشرب", "كان طعمه كالعسل", "كان بارداً جداً"],
+          "correctIndex": 1,
+          "explanation": "The she-camel gave so much milk that all the people of Thamud could drink from it.",
+          "explanationArabic": "كانت الناقة تعطي حليباً كثيراً يكفي كل قوم ثمود للشرب منه."
+        },
+        {
+          "question": "What was the rule about water for the she-camel?",
+          "questionArabic": "ما هي قاعدة الماء للناقة؟",
+          "options": ["She never needed water", "She drank every day", "She took turns with the people - one day each", "She drank only at night"],
+          "optionsArabic": ["لم تكن تحتاج للماء", "كانت تشرب كل يوم", "كانت تتناوب مع الناس - يوم لكل منهم", "كانت تشرب في الليل فقط"],
+          "correctIndex": 2,
+          "explanation": "One day was for the she-camel to drink from the well, and one day was for the people.",
+          "explanationArabic": "كان يوم للناقة تشرب من البئر، ويوم للناس."
+        }
+      ]
+    },
+    {
+      "serverId": "animal_camel_lesson_4",
+      "title": "The Evil Plot",
+      "titleArabic": "المؤامرة الشريرة",
+      "sortOrder": 4,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Even after seeing this amazing miracle, most people of Thamud still did not believe. Their hearts were hard with arrogance. A few good people believed, but the majority were stubborn.",
+          "contentTextArabic": "حتى بعد رؤية هذه المعجزة المذهلة، لم يؤمن معظم قوم ثمود. كانت قلوبهم قاسية بالكبر. آمن قليل من الصالحين، لكن الأغلبية كانوا عنيدين."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Some wicked people began to complain. They were jealous and greedy. They said, 'This camel drinks too much water! We don't want to share with it!' They forgot all the milk she gave them.",
+          "contentTextArabic": "بدأ بعض الأشرار يشتكون. كانوا حاقدين وطماعين. قالوا: 'هذه الناقة تشرب كثيراً من الماء! لا نريد أن نتشارك معها!' نسوا كل الحليب الذي أعطتهم إياه."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Nine wicked men in the city made an evil plan. They were the worst people among Thamud. They decided to kill the she-camel of Allah! They encouraged one of them named Qidar to do this terrible deed.",
+          "contentTextArabic": "دبّر تسعة رجال أشرار في المدينة خطة شريرة. كانوا أسوأ الناس في ثمود. قرروا قتل ناقة الله! شجعوا واحداً منهم يُدعى قِدار للقيام بهذا الفعل الفظيع."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Prophet Salih warned them again and again: 'Do not harm the she-camel! She is a sign from Allah! If you hurt her, a terrible punishment will come!' But they did not listen to his warning.",
+          "contentTextArabic": "حذرهم النبي صالح مراراً وتكراراً: 'لا تمسوا الناقة بسوء! إنها آية من الله! إن آذيتموها سيأتيكم عذاب شديد!' لكنهم لم يستمعوا لتحذيره."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "One day, the wicked men attacked the peaceful she-camel. They killed her in a cruel way. The other people of Thamud saw this but did nothing to stop it. They were all responsible for this terrible crime.",
+          "contentTextArabic": "في يوم من الأيام، هاجم الأشرار الناقة المسالمة. قتلوها بطريقة قاسية. رأى بقية قوم ثمود ذلك لكنهم لم يفعلوا شيئاً لمنعه. كانوا جميعاً مسؤولين عن هذه الجريمة الفظيعة."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How did most people of Thamud react to the miracle of the she-camel?",
+          "questionArabic": "كيف كان رد فعل معظم قوم ثمود على معجزة الناقة؟",
+          "options": ["They all believed", "Most still did not believe", "They ran away", "They celebrated"],
+          "optionsArabic": ["آمنوا جميعاً", "لم يؤمن معظمهم", "هربوا", "احتفلوا"],
+          "correctIndex": 1,
+          "explanation": "Even after seeing the miraculous she-camel, most people remained stubborn and did not believe.",
+          "explanationArabic": "حتى بعد رؤية الناقة المعجزة، ظل معظم الناس عنيدين ولم يؤمنوا."
+        },
+        {
+          "question": "Why did the wicked people want to kill the she-camel?",
+          "questionArabic": "لماذا أراد الأشرار قتل الناقة؟",
+          "options": ["She was dangerous", "They were jealous and greedy about water", "She was sick", "Allah told them to"],
+          "optionsArabic": ["كانت خطيرة", "كانوا حاقدين وطماعين بشأن الماء", "كانت مريضة", "أمرهم الله بذلك"],
+          "correctIndex": 1,
+          "explanation": "The wicked people were jealous and greedy. They complained about sharing water with the she-camel.",
+          "explanationArabic": "كان الأشرار حاقدين وطماعين. اشتكوا من مشاركة الماء مع الناقة."
+        },
+        {
+          "question": "How many wicked men plotted to kill the she-camel?",
+          "questionArabic": "كم عدد الأشرار الذين خططوا لقتل الناقة؟",
+          "options": ["Three", "Five", "Seven", "Nine"],
+          "optionsArabic": ["ثلاثة", "خمسة", "سبعة", "تسعة"],
+          "correctIndex": 3,
+          "explanation": "Nine wicked men in the city made an evil plan to kill the she-camel of Allah.",
+          "explanationArabic": "دبّر تسعة رجال أشرار في المدينة خطة لقتل ناقة الله."
+        }
+      ]
+    },
+    {
+      "serverId": "animal_camel_lesson_5",
+      "title": "The Punishment of Thamud",
+      "titleArabic": "عقوبة ثمود",
+      "sortOrder": 5,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "After the she-camel was killed, Prophet Salih came to his people with great sadness. He said, 'You have done a terrible thing! Enjoy yourselves in your homes for three days. Then the punishment will come.'",
+          "contentTextArabic": "بعد قتل الناقة، جاء النبي صالح إلى قومه بحزن شديد. قال: 'لقد فعلتم أمراً فظيعاً! تمتعوا في دياركم ثلاثة أيام. ثم يأتيكم العذاب.'"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "The wicked people did not repent. Instead, they became more arrogant. They even made fun of Prophet Salih and said, 'Bring the punishment if you are truthful!' They challenged Allah's warning!",
+          "contentTextArabic": "لم يتب الأشرار. بل أصبحوا أكثر تكبراً. حتى أنهم سخروا من النبي صالح وقالوا: 'ائتنا بالعذاب إن كنت من الصادقين!' تحدّوا تحذير الله!"
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Allah saved Prophet Salih and the few believers before the punishment came. They left the city safely. Allah always protects those who believe in Him and follow His messengers.",
+          "contentTextArabic": "أنجى الله النبي صالح والمؤمنين القلائل قبل أن يأتي العذاب. غادروا المدينة بسلام. الله يحمي دائماً الذين يؤمنون به ويتبعون رسله."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "On the third day, a mighty punishment came from Allah. A terrible earthquake shook the land, and a frightening sound came from the sky. The people of Thamud were destroyed in their own homes.",
+          "contentTextArabic": "في اليوم الثالث، جاء عذاب شديد من الله. زلزلت الأرض زلزالاً رهيباً، وجاءت صيحة مرعبة من السماء. أُهلك قوم ثمود في ديارهم."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "The story of the she-camel teaches us many lessons. We must always respect the signs Allah sends us. We must never be arrogant or ungrateful. Those who harm what Allah has blessed will face His justice.",
+          "contentTextArabic": "تعلمنا قصة الناقة دروساً كثيرة. يجب أن نحترم دائماً الآيات التي يرسلها الله لنا. يجب ألا نتكبر أو نجحد. الذين يؤذون ما بارك الله سيواجهون عدله."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How many days did Prophet Salih give the people before the punishment?",
+          "questionArabic": "كم يوماً أعطى النبي صالح القوم قبل العذاب؟",
+          "options": ["One day", "Three days", "Seven days", "Ten days"],
+          "optionsArabic": ["يوم واحد", "ثلاثة أيام", "سبعة أيام", "عشرة أيام"],
+          "correctIndex": 1,
+          "explanation": "Prophet Salih told them to enjoy themselves for three days, then the punishment would come.",
+          "explanationArabic": "قال لهم النبي صالح أن يتمتعوا ثلاثة أيام، ثم يأتيهم العذاب."
+        },
+        {
+          "question": "What happened to Prophet Salih and the believers?",
+          "questionArabic": "ماذا حدث للنبي صالح والمؤمنين؟",
+          "options": ["They were punished too", "Allah saved them before the punishment", "They stayed and watched", "They became sick"],
+          "optionsArabic": ["عُوقبوا أيضاً", "أنجاهم الله قبل العذاب", "بقوا وشاهدوا", "مرضوا"],
+          "correctIndex": 1,
+          "explanation": "Allah saved Prophet Salih and the few believers before the punishment came to the wicked people.",
+          "explanationArabic": "أنجى الله النبي صالح والمؤمنين القلائل قبل أن يأتي العذاب على الأشرار."
+        },
+        {
+          "question": "What lesson does the story of the she-camel teach us?",
+          "questionArabic": "ما الدرس الذي تعلمنا إياه قصة الناقة؟",
+          "options": ["To collect animals", "To respect Allah's signs and not be arrogant", "To live in caves", "To never drink milk"],
+          "optionsArabic": ["جمع الحيوانات", "احترام آيات الله وعدم التكبر", "العيش في الكهوف", "عدم شرب الحليب أبداً"],
+          "correctIndex": 1,
+          "explanation": "We must respect the signs Allah sends us and never be arrogant or ungrateful.",
+          "explanationArabic": "يجب أن نحترم الآيات التي يرسلها الله لنا ولا نتكبر أو نجحد."
+        }
+      ]
+    }
+  ]
+}

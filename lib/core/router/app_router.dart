@@ -20,6 +20,8 @@ import '../../features/settings/presentation/pages/privacy_policy_page.dart';
 import '../../features/settings/presentation/pages/settings_page.dart';
 import '../../features/settings/presentation/pages/terms_of_service_page.dart';
 import '../../features/settings/presentation/pages/theme_settings_page.dart';
+import '../../features/subscription/presentation/pages/paywall_page.dart';
+import '../../features/subscription/presentation/pages/promo_code_page.dart';
 import '../widgets/navigation/main_shell.dart';
 import 'app_routes.dart';
 
@@ -196,6 +198,18 @@ GoRouter appRouter(AppRouterRef ref) {
         path: AppRoutes.termsOfService,
         name: RouteNames.termsOfService,
         builder: (context, state) => const TermsOfServicePage(),
+      ),
+
+      // Subscription
+      GoRoute(
+        path: AppRoutes.paywall,
+        name: RouteNames.paywall,
+        builder: (context, state) => const PaywallPage(),
+      ),
+      GoRoute(
+        path: AppRoutes.promoCode,
+        name: RouteNames.promoCode,
+        builder: (context, state) => const PromoCodePage(),
       ),
     ],
     errorBuilder: (context, state) => ErrorRoutePage(error: state.error),

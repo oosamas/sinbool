@@ -1,19 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/router/app_routes.dart';
+import '../../../../core/services/data_initialization_service.dart';
+import '../../../settings/data/repositories/settings_repository.dart';
 
 /// Splash screen shown on app launch
 /// From Issue #3 - Navigation & Routing
-class SplashPage extends StatefulWidget {
+class SplashPage extends ConsumerStatefulWidget {
   const SplashPage({super.key});
 
   @override
-  State<SplashPage> createState() => _SplashPageState();
+  ConsumerState<SplashPage> createState() => _SplashPageState();
 }
 
-class _SplashPageState extends State<SplashPage>
+class _SplashPageState extends ConsumerState<SplashPage>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _fadeAnimation;
@@ -46,11 +49,22 @@ class _SplashPageState extends State<SplashPage>
   }
 
   Future<void> _navigateToNext() async {
+    // Initialize sample data for development
+    final dataService = ref.read(dataInitializationServiceProvider);
+    await dataService.initializeSampleData();
+
     await Future.delayed(const Duration(seconds: 2));
     if (mounted) {
-      // TODO: Check if onboarding completed, if not go to onboarding
-      // For now, go directly to home
-      context.go(AppRoutes.home);
+      final settingsRepo = ref.read(settingsRepositoryProvider);
+      final settings = await settingsRepo.getSettings();
+
+      if (mounted) {
+        if (settings.onboardingCompleted) {
+          context.go(AppRoutes.home);
+        } else {
+          context.go(AppRoutes.onboarding);
+        }
+      }
     }
   }
 

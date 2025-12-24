@@ -1,0 +1,324 @@
+{
+  "chapter": {
+    "serverId": "prophet_dawud",
+    "title": "Prophet Dawud",
+    "titleArabic": "النبي داود",
+    "description": "The story of Prophet Dawud, the shepherd who became a king and was given the Zabur",
+    "descriptionArabic": "قصة النبي داود، الراعي الذي أصبح ملكاً وأُعطي الزبور",
+    "iconName": "dawud",
+    "colorHex": "#5D4037",
+    "sortOrder": 8
+  },
+  "lessons": [
+    {
+      "serverId": "prophet_dawud_lesson_1",
+      "title": "The Young Shepherd",
+      "titleArabic": "الراعي الصغير",
+      "sortOrder": 1,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Long ago, among the Children of Israel, there lived a young man named Dawud. He was a shepherd who took care of sheep in the hills and valleys. He was not rich or famous, but he had a strong faith in Allah.",
+          "contentTextArabic": "منذ زمن بعيد، بين بني إسرائيل، عاش شاب يُدعى داود. كان راعياً يرعى الأغنام في التلال والوديان. لم يكن غنياً أو مشهوراً، لكنه كان قوي الإيمان بالله."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Dawud had a beautiful voice. When he praised Allah, the mountains would echo his words, and the birds would join him in singing praises to their Creator. Allah had blessed him with this special gift.",
+          "contentTextArabic": "كان لداود صوت جميل. عندما كان يسبح الله، كانت الجبال تردد كلماته، والطيور تشاركه في التسبيح لخالقها. لقد بارك الله له بهذه الموهبة الخاصة."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "During this time, the Children of Israel were being attacked by a powerful army led by a giant warrior named Jalut, known as Goliath. Jalut was huge and terrifying, and everyone was afraid of him.",
+          "contentTextArabic": "في ذلك الوقت، كان بنو إسرائيل يتعرضون لهجوم جيش قوي بقيادة محارب عملاق يُدعى جالوت. كان جالوت ضخماً ومخيفاً، وكان الجميع يخافونه."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "The king of the Israelites, Talut (Saul), gathered an army to fight against Jalut. He promised a great reward to anyone brave enough to defeat the giant. But no soldier dared to face Jalut.",
+          "contentTextArabic": "جمع ملك بني إسرائيل، طالوت، جيشاً لقتال جالوت. وعد بمكافأة عظيمة لأي شخص شجاع يهزم العملاق. لكن لم يجرؤ أي جندي على مواجهة جالوت."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Young Dawud came to the battlefield to bring food to his brothers who were soldiers. When he saw that everyone was afraid of Jalut, his heart was filled with courage. He trusted in Allah completely.",
+          "contentTextArabic": "جاء داود الشاب إلى ساحة المعركة ليحضر الطعام لإخوته الجنود. عندما رأى أن الجميع يخافون من جالوت، امتلأ قلبه شجاعة. وثق بالله ثقة تامة."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What was Dawud's job when he was young?",
+          "questionArabic": "ما هي مهنة داود عندما كان شاباً؟",
+          "options": ["A king", "A shepherd", "A soldier", "A merchant"],
+          "optionsArabic": ["ملك", "راعي أغنام", "جندي", "تاجر"],
+          "correctIndex": 1,
+          "explanation": "Dawud was a humble shepherd who took care of sheep before he became famous.",
+          "explanationArabic": "كان داود راعياً متواضعاً يرعى الأغنام قبل أن يصبح مشهوراً."
+        },
+        {
+          "question": "What special gift did Allah give Dawud?",
+          "questionArabic": "ما هي الموهبة الخاصة التي أعطاها الله لداود؟",
+          "options": ["Great strength", "A beautiful voice", "The ability to fly", "Invisibility"],
+          "optionsArabic": ["قوة عظيمة", "صوت جميل", "القدرة على الطيران", "الاختفاء"],
+          "correctIndex": 1,
+          "explanation": "Allah blessed Dawud with a beautiful voice. When he praised Allah, the mountains and birds would join him.",
+          "explanationArabic": "بارك الله داود بصوت جميل. عندما كان يسبح الله، كانت الجبال والطيور تشاركه."
+        },
+        {
+          "question": "Who was Jalut (Goliath)?",
+          "questionArabic": "من كان جالوت؟",
+          "options": ["A prophet", "A king of Israel", "A giant warrior enemy", "A shepherd"],
+          "optionsArabic": ["نبي", "ملك إسرائيل", "محارب عملاق عدو", "راعٍ"],
+          "correctIndex": 2,
+          "explanation": "Jalut (Goliath) was a giant warrior who led an army against the Children of Israel.",
+          "explanationArabic": "كان جالوت محارباً عملاقاً قاد جيشاً ضد بني إسرائيل."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_dawud_lesson_2",
+      "title": "Dawud Defeats Jalut",
+      "titleArabic": "داود يهزم جالوت",
+      "sortOrder": 2,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Young Dawud stepped forward and said he would fight Jalut. The soldiers laughed at him - he was just a young shepherd with no armor! But Dawud said, 'Allah will help me.'",
+          "contentTextArabic": "تقدم داود الشاب وقال إنه سيحارب جالوت. ضحك الجنود منه - كان مجرد راعٍ شاب بدون درع! لكن داود قال: 'الله سينصرني.'"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "King Talut gave Dawud armor to wear, but it was too heavy for him. So Dawud went to face the giant with only his simple sling and a few smooth stones. His weapon was his trust in Allah.",
+          "contentTextArabic": "أعطى الملك طالوت داود درعاً ليرتديه، لكنه كان ثقيلاً جداً عليه. فذهب داود لمواجهة العملاق بمقلاعه البسيط وبضعة حجارة ملساء. كان سلاحه الحقيقي هو ثقته بالله."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "When Jalut saw the young shepherd coming to fight him, he laughed with pride. 'Is this the best you can send against me?' he mocked. But Dawud was not afraid.",
+          "contentTextArabic": "عندما رأى جالوت الراعي الشاب قادماً لقتاله، ضحك بغرور. 'هل هذا أفضل ما يمكنكم إرساله ضدي؟' سخر منه. لكن داود لم يخف."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Dawud placed a stone in his sling, said 'Bismillah' (In the name of Allah), and threw it with all his might. By Allah's will, the stone struck Jalut right in the forehead, and the giant fell down defeated!",
+          "contentTextArabic": "وضع داود حجراً في مقلاعه، وقال 'بسم الله'، ورماه بكل قوته. بمشيئة الله، أصاب الحجر جالوت في جبينه مباشرة، وسقط العملاق مهزوماً!"
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "The enemy army fled in fear when they saw their champion defeated. The Children of Israel won the battle! Allah showed everyone that with true faith, even a young shepherd can defeat a mighty giant.",
+          "contentTextArabic": "فر جيش العدو خوفاً عندما رأوا بطلهم مهزوماً. انتصر بنو إسرائيل في المعركة! أظهر الله للجميع أنه بالإيمان الحقيقي، حتى راعٍ شاب يمكنه هزيمة عملاق قوي."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What weapon did Dawud use to fight Jalut?",
+          "questionArabic": "ما السلاح الذي استخدمه داود لقتال جالوت؟",
+          "options": ["A sword", "A spear", "A sling and stones", "A bow and arrow"],
+          "optionsArabic": ["سيف", "رمح", "مقلاع وحجارة", "قوس وسهام"],
+          "correctIndex": 2,
+          "explanation": "Dawud used a simple sling with smooth stones to defeat the giant Jalut.",
+          "explanationArabic": "استخدم داود مقلاعاً بسيطاً مع حجارة ملساء لهزيمة العملاق جالوت."
+        },
+        {
+          "question": "Why was Dawud able to defeat Jalut?",
+          "questionArabic": "لماذا تمكن داود من هزيمة جالوت؟",
+          "options": ["He was stronger", "He had better armor", "Allah helped him because of his faith", "Jalut was sick"],
+          "optionsArabic": ["كان أقوى", "كان لديه درع أفضل", "الله نصره بسبب إيمانه", "كان جالوت مريضاً"],
+          "correctIndex": 2,
+          "explanation": "Dawud's complete trust in Allah gave him victory over the powerful giant.",
+          "explanationArabic": "ثقة داود الكاملة بالله منحته النصر على العملاق القوي."
+        },
+        {
+          "question": "What happened to the enemy army after Jalut was defeated?",
+          "questionArabic": "ماذا حدث لجيش العدو بعد هزيمة جالوت؟",
+          "options": ["They kept fighting", "They fled in fear", "They surrendered", "They celebrated"],
+          "optionsArabic": ["استمروا في القتال", "فروا خوفاً", "استسلموا", "احتفلوا"],
+          "correctIndex": 1,
+          "explanation": "When the enemy army saw their champion defeated, they fled in fear.",
+          "explanationArabic": "عندما رأى جيش العدو بطلهم مهزوماً، فروا خوفاً."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_dawud_lesson_3",
+      "title": "Dawud Becomes King",
+      "titleArabic": "داود يصبح ملكاً",
+      "sortOrder": 3,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "After his great victory, Dawud became famous throughout the land. The people loved him for his bravery and his faith in Allah. Eventually, Allah made Dawud the king of the Children of Israel.",
+          "contentTextArabic": "بعد انتصاره العظيم، أصبح داود مشهوراً في جميع أنحاء البلاد. أحبه الناس لشجاعته وإيمانه بالله. في النهاية، جعله الله ملكاً على بني إسرائيل."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Allah also made Dawud a prophet. He was blessed with both kingship and prophethood - a special honor! Allah gave him the Zabur, a holy book filled with beautiful prayers and praises to Allah.",
+          "contentTextArabic": "كما جعل الله داود نبياً. بُورك بالملك والنبوة معاً - شرف عظيم! أعطاه الله الزبور، كتاب مقدس مليء بالأدعية الجميلة والتسابيح لله."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "The Zabur contained songs of praise, prayers for guidance, and words of wisdom. When Dawud recited from the Zabur, his beautiful voice made everyone's heart soften with love for Allah.",
+          "contentTextArabic": "احتوى الزبور على أناشيد التسبيح والدعاء للهداية وكلمات الحكمة. عندما كان داود يتلو من الزبور، كان صوته الجميل يُلين قلوب الجميع بمحبة الله."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Allah tells us in the Quran that He made the mountains and the birds glorify Allah along with Dawud. Can you imagine? The mountains and birds would praise Allah together with him!",
+          "contentTextArabic": "يخبرنا الله في القرآن أنه سخّر الجبال والطيور لتسبيح الله مع داود. هل تتخيل ذلك؟ كانت الجبال والطيور تسبح الله معه!"
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "As a king, Dawud was just and fair. He ruled with wisdom and always tried to please Allah. He spent his nights in prayer and his days helping his people and judging between them fairly.",
+          "contentTextArabic": "كملك، كان داود عادلاً ومنصفاً. حكم بحكمة وكان يسعى دائماً لإرضاء الله. قضى لياليه في الصلاة وأيامه في مساعدة شعبه والحكم بينهم بالعدل."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What holy book did Allah give to Prophet Dawud?",
+          "questionArabic": "ما الكتاب المقدس الذي أعطاه الله للنبي داود؟",
+          "options": ["The Torah", "The Injeel", "The Zabur", "The Quran"],
+          "optionsArabic": ["التوراة", "الإنجيل", "الزبور", "القرآن"],
+          "correctIndex": 2,
+          "explanation": "Allah gave Prophet Dawud the Zabur (Psalms), filled with beautiful praises and prayers.",
+          "explanationArabic": "أعطى الله النبي داود الزبور، المليء بالتسابيح والأدعية الجميلة."
+        },
+        {
+          "question": "What did Allah make glorify Him along with Dawud?",
+          "questionArabic": "ماذا سخّر الله ليسبح معه مع داود؟",
+          "options": ["The rivers and seas", "The mountains and birds", "The sun and moon", "The wind and rain"],
+          "optionsArabic": ["الأنهار والبحار", "الجبال والطيور", "الشمس والقمر", "الريح والمطر"],
+          "correctIndex": 1,
+          "explanation": "Allah made the mountains and birds glorify Him together with Prophet Dawud.",
+          "explanationArabic": "سخّر الله الجبال والطيور لتسبيحه مع النبي داود."
+        },
+        {
+          "question": "What kind of king was Dawud?",
+          "questionArabic": "أي نوع من الملوك كان داود؟",
+          "options": ["Cruel and unfair", "Lazy and careless", "Just and fair", "Weak and afraid"],
+          "optionsArabic": ["قاسٍ وظالم", "كسول ومهمل", "عادل ومنصف", "ضعيف وخائف"],
+          "correctIndex": 2,
+          "explanation": "Dawud was a just and fair king who ruled with wisdom and always tried to please Allah.",
+          "explanationArabic": "كان داود ملكاً عادلاً ومنصفاً حكم بحكمة وسعى دائماً لإرضاء الله."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_dawud_lesson_4",
+      "title": "The Gift of Iron",
+      "titleArabic": "نعمة الحديد",
+      "sortOrder": 4,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Allah gave Prophet Dawud another special gift - the ability to work with iron. Allah made iron soft in Dawud's hands, like dough! He could shape it however he wanted without heating it in fire.",
+          "contentTextArabic": "أعطى الله النبي داود موهبة خاصة أخرى - القدرة على العمل بالحديد. ألان الله الحديد في يدي داود، كالعجين! كان يشكله كيفما شاء دون تسخينه في النار."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "With this gift, Dawud made strong armor and shields to protect his soldiers. The Quran says Allah taught him to make coats of mail - armor made of connected metal rings that protected warriors in battle.",
+          "contentTextArabic": "بهذه الموهبة، صنع داود دروعاً قوية لحماية جنوده. يقول القرآن إن الله علّمه صنع الدروع - زرد من حلقات معدنية متصلة تحمي المحاربين في المعركة."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Even though Dawud was a king, he worked with his own hands. He did not think any honest work was beneath him. He earned his own living and never burdened his people with extra taxes.",
+          "contentTextArabic": "رغم أن داود كان ملكاً، إلا أنه عمل بيديه. لم يعتقد أن أي عمل شريف أقل من مستواه. كسب رزقه بنفسه ولم يُثقل شعبه بضرائب إضافية."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Prophet Muhammad (peace be upon him) later said that the best earnings are from the work of one's own hands. He mentioned that Prophet Dawud would eat from what he earned with his own labor.",
+          "contentTextArabic": "قال النبي محمد (صلى الله عليه وسلم) لاحقاً إن أفضل الكسب من عمل اليد. وذكر أن النبي داود كان يأكل من كسب يده."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "This teaches us an important lesson: no matter how important or wealthy we become, there is honor in working hard. Allah blessed Dawud with a kingdom, but Dawud still valued honest work.",
+          "contentTextArabic": "هذا يعلمنا درساً مهماً: مهما أصبحنا مهمين أو أثرياء، هناك شرف في العمل الجاد. بارك الله داود بملكٍ، لكن داود ظل يُقدّر العمل الشريف."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What special ability did Allah give Dawud with iron?",
+          "questionArabic": "ما القدرة الخاصة التي أعطاها الله لداود مع الحديد؟",
+          "options": ["He could find iron easily", "Iron became soft in his hands like dough", "Iron turned to gold", "He could make iron disappear"],
+          "optionsArabic": ["كان يجد الحديد بسهولة", "أصبح الحديد ليناً في يديه كالعجين", "تحول الحديد إلى ذهب", "كان يُخفي الحديد"],
+          "correctIndex": 1,
+          "explanation": "Allah made iron soft in Dawud's hands so he could shape it easily without fire.",
+          "explanationArabic": "ألان الله الحديد في يدي داود فكان يشكله بسهولة دون نار."
+        },
+        {
+          "question": "What did Dawud make with iron?",
+          "questionArabic": "ماذا صنع داود من الحديد؟",
+          "options": ["Jewelry", "Armor and shields", "Buildings", "Ships"],
+          "optionsArabic": ["مجوهرات", "دروعاً ورماحاً", "مبانٍ", "سفناً"],
+          "correctIndex": 1,
+          "explanation": "Dawud made strong armor and coats of mail to protect soldiers in battle.",
+          "explanationArabic": "صنع داود دروعاً قوية لحماية الجنود في المعركة."
+        },
+        {
+          "question": "What lesson does Dawud's work teach us?",
+          "questionArabic": "ما الدرس الذي يعلمنا إياه عمل داود؟",
+          "options": ["Kings should not work", "There is honor in honest hard work", "Iron is the best metal", "We should avoid taxes"],
+          "optionsArabic": ["الملوك لا يجب أن يعملوا", "هناك شرف في العمل الشريف الجاد", "الحديد أفضل المعادن", "يجب تجنب الضرائب"],
+          "correctIndex": 1,
+          "explanation": "Even as a king, Dawud valued honest work and earned his own living with his hands.",
+          "explanationArabic": "حتى كملك، قدّر داود العمل الشريف وكسب رزقه بيديه."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_dawud_lesson_5",
+      "title": "Dawud's Worship and Legacy",
+      "titleArabic": "عبادة داود وإرثه",
+      "sortOrder": 5,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Prophet Dawud was known for his devoted worship of Allah. He would fast every other day - one day fasting, one day eating. Prophet Muhammad later said this was the most beloved way of fasting to Allah.",
+          "contentTextArabic": "عُرف النبي داود بعبادته المخلصة لله. كان يصوم يوماً ويفطر يوماً - صيام يوم وإفطار يوم. قال النبي محمد لاحقاً إن هذا أحب الصيام إلى الله."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Dawud would also spend a third of the night in prayer. He would wake up when others were sleeping to pray and remember Allah. His love for Allah was shown in everything he did.",
+          "contentTextArabic": "كان داود أيضاً يقضي ثلث الليل في الصلاة. كان يستيقظ عندما ينام الآخرون ليصلي ويذكر الله. كان حبه لله يظهر في كل ما يفعله."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Prophet Dawud had a son named Sulayman, who would also become a great prophet and king. Allah blessed Sulayman with even more extraordinary gifts, as we will learn in his story.",
+          "contentTextArabic": "كان للنبي داود ابن اسمه سليمان، الذي أصبح هو أيضاً نبياً وملكاً عظيماً. بارك الله سليمان بمواهب أكثر استثنائية، كما سنتعلم في قصته."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "The story of Dawud reminds us that Allah can raise anyone who has faith, no matter how humble their beginning. A young shepherd became one of the greatest kings because he trusted in Allah.",
+          "contentTextArabic": "تذكرنا قصة داود أن الله يمكن أن يرفع أي شخص لديه إيمان، مهما كانت بداياته متواضعة. أصبح راعٍ شاب من أعظم الملوك لأنه وثق بالله."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "We can learn from Dawud to always trust Allah, work hard with our hands, worship sincerely, and be just to others. His beautiful legacy lives on in the Zabur and in the lessons he left for all of us.",
+          "contentTextArabic": "يمكننا أن نتعلم من داود أن نثق دائماً بالله، ونعمل بجد بأيدينا، ونعبد بإخلاص، ونكون عادلين مع الآخرين. يعيش إرثه الجميل في الزبور والدروس التي تركها لنا جميعاً."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How did Prophet Dawud fast?",
+          "questionArabic": "كيف كان النبي داود يصوم؟",
+          "options": ["Every day", "Every Friday", "One day fasting, one day eating", "Only in Ramadan"],
+          "optionsArabic": ["كل يوم", "كل جمعة", "يوم صيام ويوم إفطار", "فقط في رمضان"],
+          "correctIndex": 2,
+          "explanation": "Dawud fasted every other day, which Prophet Muhammad said was the most beloved fasting to Allah.",
+          "explanationArabic": "كان داود يصوم يوماً ويفطر يوماً، وقال النبي محمد إنه أحب الصيام إلى الله."
+        },
+        {
+          "question": "Who was Prophet Dawud's famous son?",
+          "questionArabic": "من هو ابن النبي داود الشهير؟",
+          "options": ["Musa", "Ibrahim", "Sulayman", "Yusuf"],
+          "optionsArabic": ["موسى", "إبراهيم", "سليمان", "يوسف"],
+          "correctIndex": 2,
+          "explanation": "Prophet Dawud's son was Sulayman, who also became a great prophet and king.",
+          "explanationArabic": "ابن النبي داود هو سليمان، الذي أصبح أيضاً نبياً وملكاً عظيماً."
+        },
+        {
+          "question": "What does Dawud's story teach us about beginnings?",
+          "questionArabic": "ماذا تعلمنا قصة داود عن البدايات؟",
+          "options": ["Only rich people succeed", "Humble beginnings don't matter with faith in Allah", "Shepherds cannot be kings", "Education is most important"],
+          "optionsArabic": ["فقط الأغنياء ينجحون", "البدايات المتواضعة لا تهم مع الإيمان بالله", "الرعاة لا يمكن أن يصبحوا ملوكاً", "التعليم هو الأهم"],
+          "correctIndex": 1,
+          "explanation": "Dawud went from a humble shepherd to a great king because of his faith in Allah.",
+          "explanationArabic": "انتقل داود من راعٍ متواضع إلى ملك عظيم بسبب إيمانه بالله."
+        }
+      ]
+    }
+  ]
+}

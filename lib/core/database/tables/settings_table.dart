@@ -42,4 +42,9 @@ class SettingsKeys {
 
   // Sync
   static const String lastSyncDate = 'last_sync_date';
+
+  // Subscription
+  static const String subscriptionStatus = 'subscription_status'; // 'none', 'monthly', 'promo_code'
+  static const String subscriptionExpiry = 'subscription_expiry'; // ISO8601 date string
+  static const String activePromoCode = 'active_promo_code'; // The redeemed promo code
 }

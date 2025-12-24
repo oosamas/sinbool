@@ -1,0 +1,386 @@
+{
+  "chapter": {
+    "serverId": "righteous_luqman",
+    "title": "Luqman the Wise",
+    "titleArabic": "لقمان الحكيم",
+    "description": "The story of Luqman, the wise man who gave timeless advice to his son",
+    "descriptionArabic": "قصة لقمان، الرجل الحكيم الذي أعطى ابنه نصائح خالدة",
+    "iconName": "luqman",
+    "colorHex": "#37474F",
+    "sortOrder": 15
+  },
+  "lessons": [
+    {
+      "serverId": "righteous_luqman_lesson_1",
+      "title": "The Gift of Wisdom",
+      "titleArabic": "هبة الحكمة",
+      "sortOrder": 1,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Long ago, there lived a man named Luqman. He was not a prophet, but Allah blessed him with something very special - wisdom. The Quran tells us: 'We gave Luqman wisdom.'",
+          "contentTextArabic": "منذ زمن بعيد، عاش رجل اسمه لقمان. لم يكن نبياً، لكن الله باركه بشيء خاص جداً - الحكمة. يخبرنا القرآن: 'ولقد آتينا لقمان الحكمة.'"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "What is wisdom? Wisdom is understanding what is right and wrong. It is knowing how to act in the best way. It is using knowledge to make good decisions. Allah gives wisdom to those He chooses.",
+          "contentTextArabic": "ما هي الحكمة؟ الحكمة هي فهم الصواب والخطأ. هي معرفة كيفية التصرف بأفضل طريقة. هي استخدام المعرفة لاتخاذ قرارات جيدة. الله يعطي الحكمة لمن يشاء."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Along with wisdom, Allah told Luqman to be grateful. The Quran says: 'Be grateful to Allah.' Being thankful to Allah is a sign of wisdom. Those who are ungrateful only harm themselves.",
+          "contentTextArabic": "مع الحكمة، أمر الله لقمان أن يكون شاكراً. يقول القرآن: 'أن اشكر لله.' الشكر لله علامة الحكمة. من يجحد إنما يضر نفسه."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "A whole surah in the Quran is named after Luqman - Surah Luqman (Chapter 31). This shows how important his wisdom and advice are. His words are lessons for all people until the Day of Judgment.",
+          "contentTextArabic": "سورة كاملة في القرآن سُميت باسم لقمان - سورة لقمان (الفصل 31). هذا يُظهر أهمية حكمته ونصائحه. كلماته دروس لجميع الناس إلى يوم القيامة."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Luqman had a son whom he loved dearly. Like any good father, he wanted his son to be successful in this life and the next. He gave him advice that every child should hear and follow.",
+          "contentTextArabic": "كان للقمان ابن أحبه كثيراً. كأي أب صالح، أراد لابنه النجاح في الدنيا والآخرة. أعطاه نصائح يجب أن يسمعها ويتبعها كل طفل."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What special gift did Allah give Luqman?",
+          "questionArabic": "ما الهبة الخاصة التي أعطاها الله لقمان؟",
+          "options": ["Wealth", "Wisdom", "A kingdom", "Strength"],
+          "optionsArabic": ["الثروة", "الحكمة", "مملكة", "القوة"],
+          "correctIndex": 1,
+          "explanation": "Allah blessed Luqman with wisdom, as mentioned in the Quran.",
+          "explanationArabic": "بارك الله لقمان بالحكمة، كما ذُكر في القرآن."
+        },
+        {
+          "question": "Was Luqman a prophet?",
+          "questionArabic": "هل كان لقمان نبياً؟",
+          "options": ["Yes, he was a great prophet", "No, but he was blessed with wisdom", "He was a king", "He was an angel"],
+          "optionsArabic": ["نعم، كان نبياً عظيماً", "لا، لكنه بُورك بالحكمة", "كان ملكاً", "كان ملَكاً"],
+          "correctIndex": 1,
+          "explanation": "Luqman was not a prophet, but Allah blessed him with special wisdom.",
+          "explanationArabic": "لم يكن لقمان نبياً، لكن الله باركه بحكمة خاصة."
+        },
+        {
+          "question": "What does the Quran tell Luqman to be?",
+          "questionArabic": "ماذا يأمر القرآن لقمان أن يكون؟",
+          "options": ["Rich", "Famous", "Grateful to Allah", "A leader"],
+          "optionsArabic": ["غنياً", "مشهوراً", "شاكراً لله", "قائداً"],
+          "correctIndex": 2,
+          "explanation": "Allah told Luqman to be grateful - gratitude is a sign of wisdom.",
+          "explanationArabic": "أمر الله لقمان أن يكون شاكراً - الشكر علامة الحكمة."
+        }
+      ]
+    },
+    {
+      "serverId": "righteous_luqman_lesson_2",
+      "title": "Worship Allah Alone",
+      "titleArabic": "اعبد الله وحده",
+      "sortOrder": 2,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "The first and most important advice Luqman gave his son was about worshipping Allah alone. He said, 'O my dear son, do not associate anything with Allah. Indeed, associating others with Allah is a great injustice.'",
+          "contentTextArabic": "أول وأهم نصيحة أعطاها لقمان لابنه كانت عن عبادة الله وحده. قال: 'يا بني لا تشرك بالله. إن الشرك لظلم عظيم.'"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "This means we should worship only Allah, not anyone or anything else. Worshipping others besides Allah is called 'shirk' and it is the greatest sin. It is unfair to give Allah's rights to others.",
+          "contentTextArabic": "هذا يعني أننا يجب أن نعبد الله فقط، لا أحد أو شيء آخر. عبادة غير الله تُسمى 'الشرك' وهو أعظم الذنوب. من الظلم أن تُعطي حقوق الله لغيره."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Allah alone created us, provides for us, and gives us everything we have. Only He deserves our worship, love, and obedience. No one else has the power that belongs to Allah.",
+          "contentTextArabic": "الله وحده خلقنا، ويرزقنا، ويعطينا كل ما لدينا. هو وحده يستحق عبادتنا ومحبتنا وطاعتنا. لا أحد غيره يملك القوة التي لله."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "A wise person understands that Allah is One and has no partners. Everything in the heavens and earth belongs to Him. When we truly understand this, we feel peace in our hearts.",
+          "contentTextArabic": "الحكيم يفهم أن الله واحد ولا شريك له. كل شيء في السماوات والأرض له. عندما نفهم هذا حقاً، نشعر بالسلام في قلوبنا."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Luqman's advice reminds us that the foundation of everything is believing in Allah alone. This is called 'Tawheed' - the oneness of Allah. It is the most important belief in Islam.",
+          "contentTextArabic": "تذكرنا نصيحة لقمان أن أساس كل شيء هو الإيمان بالله وحده. هذا يُسمى 'التوحيد' - وحدانية الله. وهو أهم عقيدة في الإسلام."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What was Luqman's first advice to his son?",
+          "questionArabic": "ما هي أول نصيحة أعطاها لقمان لابنه؟",
+          "options": ["Be wealthy", "Do not associate anything with Allah", "Travel far", "Learn to fight"],
+          "optionsArabic": ["كن غنياً", "لا تشرك بالله", "سافر بعيداً", "تعلم القتال"],
+          "correctIndex": 1,
+          "explanation": "Luqman's first advice was to worship Allah alone and not associate partners with Him.",
+          "explanationArabic": "أول نصيحة لقمان كانت عبادة الله وحده وعدم الشرك به."
+        },
+        {
+          "question": "What is 'shirk'?",
+          "questionArabic": "ما هو 'الشرك'؟",
+          "options": ["Being kind", "Worshipping others besides Allah", "Praying", "Giving charity"],
+          "optionsArabic": ["أن تكون لطيفاً", "عبادة غير الله", "الصلاة", "الصدقة"],
+          "correctIndex": 1,
+          "explanation": "Shirk is associating partners with Allah or worshipping others besides Him - the greatest sin.",
+          "explanationArabic": "الشرك هو إشراك غير الله في العبادة - وهو أعظم الذنوب."
+        },
+        {
+          "question": "What is 'Tawheed'?",
+          "questionArabic": "ما هو 'التوحيد'؟",
+          "options": ["A type of prayer", "The oneness of Allah", "A month of fasting", "A pilgrimage"],
+          "optionsArabic": ["نوع من الصلاة", "وحدانية الله", "شهر صيام", "حج"],
+          "correctIndex": 1,
+          "explanation": "Tawheed is the belief in the oneness of Allah - the most important belief in Islam.",
+          "explanationArabic": "التوحيد هو الإيمان بوحدانية الله - أهم عقيدة في الإسلام."
+        }
+      ]
+    },
+    {
+      "serverId": "righteous_luqman_lesson_3",
+      "title": "Honoring Parents",
+      "titleArabic": "بر الوالدين",
+      "sortOrder": 3,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "After advising about worshipping Allah, the Quran reminds us about being good to parents. It says: 'We have commanded people to honor their parents. Their mothers carried them with hardship upon hardship.'",
+          "contentTextArabic": "بعد النصيحة بعبادة الله، يذكرنا القرآن ببر الوالدين. يقول: 'ووصينا الإنسان بوالديه حملته أمه وهناً على وهن.'"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Think about how much your mother went through for you. She carried you for nine months, feeling tired and uncomfortable. She went through the pain of giving birth. She stayed up at night to care for you.",
+          "contentTextArabic": "فكر كم تحملت أمك من أجلك. حملتك تسعة أشهر، تشعر بالتعب والإرهاق. تحملت آلام الولادة. سهرت الليالي لرعايتك."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "And think about your father who works hard to provide for you. He protects you, guides you, and wants the best for you. Both parents sacrifice so much for their children.",
+          "contentTextArabic": "وفكر في أبيك الذي يعمل بجد ليوفر لك احتياجاتك. يحميك ويرشدك ويريد الأفضل لك. كلا الوالدين يضحيان كثيراً من أجل أطفالهما."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "The Quran tells us: 'Be grateful to Me and to your parents.' Being thankful to Allah includes being grateful to our parents. After our duty to Allah, our biggest duty is to our parents.",
+          "contentTextArabic": "يقول القرآن: 'أن اشكر لي ولوالديك.' الشكر لله يشمل الشكر لوالدينا. بعد واجبنا تجاه الله، أعظم واجب هو تجاه والدينا."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "We should speak to our parents kindly, help them, and never say harsh words to them. Even when we grow up, we should continue to respect them, pray for them, and take care of them.",
+          "contentTextArabic": "يجب أن نتكلم مع والدينا بلطف، ونساعدهم، ولا نقول لهم كلمات قاسية أبداً. حتى عندما نكبر، يجب أن نستمر في احترامهم والدعاء لهم ورعايتهم."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does the Quran say about mothers?",
+          "questionArabic": "ماذا يقول القرآن عن الأمهات؟",
+          "options": ["They sleep a lot", "They carried us with hardship upon hardship", "They travel often", "They are always happy"],
+          "optionsArabic": ["ينمن كثيراً", "حملننا وهناً على وهن", "يسافرن كثيراً", "سعيدات دائماً"],
+          "correctIndex": 1,
+          "explanation": "The Quran reminds us that mothers carried us with hardship upon hardship.",
+          "explanationArabic": "يذكرنا القرآن أن الأمهات حملننا وهناً على وهن."
+        },
+        {
+          "question": "Who should we be grateful to after Allah?",
+          "questionArabic": "لمن يجب أن نكون شاكرين بعد الله؟",
+          "options": ["Our friends", "Our teachers", "Our parents", "Our neighbors"],
+          "optionsArabic": ["أصدقائنا", "معلمينا", "والدينا", "جيراننا"],
+          "correctIndex": 2,
+          "explanation": "The Quran tells us to be grateful to Allah and to our parents.",
+          "explanationArabic": "يقول القرآن أن نشكر الله ونشكر والدينا."
+        },
+        {
+          "question": "How should we speak to our parents?",
+          "questionArabic": "كيف يجب أن نتكلم مع والدينا؟",
+          "options": ["Rudely", "We shouldn't speak to them", "Kindly and respectfully", "Only when we need something"],
+          "optionsArabic": ["بوقاحة", "لا نتكلم معهم", "بلطف واحترام", "فقط عندما نحتاج شيئاً"],
+          "correctIndex": 2,
+          "explanation": "We should always speak to our parents kindly and respectfully.",
+          "explanationArabic": "يجب أن نتكلم دائماً مع والدينا بلطف واحترام."
+        }
+      ]
+    },
+    {
+      "serverId": "righteous_luqman_lesson_4",
+      "title": "Allah Sees Everything",
+      "titleArabic": "الله يرى كل شيء",
+      "sortOrder": 4,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Luqman gave his son another beautiful piece of wisdom. He said, 'O my dear son, even if a deed is as small as a mustard seed, hidden in a rock, or in the heavens or the earth, Allah will bring it forth.'",
+          "contentTextArabic": "أعطى لقمان ابنه حكمة جميلة أخرى. قال: 'يا بني إنها إن تك مثقال حبة من خردل فتكن في صخرة أو في السماوات أو في الأرض يأت بها الله.'"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "A mustard seed is one of the smallest seeds in the world! Even something that tiny, hidden inside a rock or anywhere in the universe - Allah knows about it and will bring it to account.",
+          "contentTextArabic": "حبة الخردل من أصغر البذور في العالم! حتى شيء بهذا الصغر، مخفي داخل صخرة أو في أي مكان في الكون - الله يعلمه وسيحاسب عليه."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "This teaches us that nothing is hidden from Allah. Every good deed we do, no matter how small, is recorded. Every bad deed, no matter how secret, is also known to Allah.",
+          "contentTextArabic": "هذا يعلمنا أنه لا شيء مخفي عن الله. كل حسنة نفعلها، مهما كانت صغيرة، مسجلة. وكل سيئة، مهما كانت سرية، الله يعلمها."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Luqman added: 'Indeed, Allah is Subtle and All-Aware.' Allah's knowledge reaches everything, even the smallest details. He is aware of what is in our hearts and minds.",
+          "contentTextArabic": "وأضاف لقمان: 'إن الله لطيف خبير.' علم الله يصل إلى كل شيء، حتى أصغر التفاصيل. هو خبير بما في قلوبنا وعقولنا."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "This wisdom should make us do good deeds, even when no one is watching. And it should make us avoid bad deeds, even when we think no one can see. Allah always sees us!",
+          "contentTextArabic": "هذه الحكمة يجب أن تجعلنا نفعل الخير، حتى عندما لا يرانا أحد. ويجب أن تجعلنا نتجنب السوء، حتى عندما نظن أن لا أحد يرى. الله يرانا دائماً!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What example did Luqman use for something very small?",
+          "questionArabic": "ما المثال الذي استخدمه لقمان لشيء صغير جداً؟",
+          "options": ["A grain of rice", "A mustard seed", "A drop of water", "A piece of sand"],
+          "optionsArabic": ["حبة أرز", "حبة خردل", "قطرة ماء", "حبة رمل"],
+          "correctIndex": 1,
+          "explanation": "Luqman used a mustard seed as an example of something very small that Allah still knows about.",
+          "explanationArabic": "استخدم لقمان حبة الخردل كمثال لشيء صغير جداً لا يزال الله يعلمه."
+        },
+        {
+          "question": "Can anything be hidden from Allah?",
+          "questionArabic": "هل يمكن إخفاء شيء عن الله؟",
+          "options": ["Yes, if it's very small", "Yes, if it's in a rock", "No, Allah knows everything", "Yes, if it's far away"],
+          "optionsArabic": ["نعم، إذا كان صغيراً جداً", "نعم، إذا كان في صخرة", "لا، الله يعلم كل شيء", "نعم، إذا كان بعيداً"],
+          "correctIndex": 2,
+          "explanation": "Nothing can be hidden from Allah - He knows everything in the heavens and earth.",
+          "explanationArabic": "لا شيء يمكن إخفاؤه عن الله - يعلم كل شيء في السماوات والأرض."
+        },
+        {
+          "question": "What should this knowledge make us do?",
+          "questionArabic": "ماذا يجب أن تجعلنا هذه المعرفة نفعل؟",
+          "options": ["Hide more carefully", "Do good even when no one is watching", "Not care about our actions", "Only do good in public"],
+          "optionsArabic": ["نختبئ بحذر أكثر", "نفعل الخير حتى عندما لا يرانا أحد", "لا نهتم بأفعالنا", "نفعل الخير في العلن فقط"],
+          "correctIndex": 1,
+          "explanation": "Knowing Allah sees everything should make us do good deeds even when alone.",
+          "explanationArabic": "معرفة أن الله يرى كل شيء يجب أن تجعلنا نفعل الخير حتى وحدنا."
+        }
+      ]
+    },
+    {
+      "serverId": "righteous_luqman_lesson_5",
+      "title": "Prayer and Good Character",
+      "titleArabic": "الصلاة وحسن الخلق",
+      "sortOrder": 5,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Luqman continued his wise advice: 'O my dear son, establish prayer.' Prayer connects us to Allah five times a day. It reminds us of our purpose and keeps us on the right path.",
+          "contentTextArabic": "تابع لقمان نصيحته الحكيمة: 'يا بني أقم الصلاة.' الصلاة تربطنا بالله خمس مرات في اليوم. تذكرنا بهدفنا وتبقينا على الطريق الصحيح."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "He also said: 'Enjoin what is good and forbid what is wrong.' This means we should encourage people to do good things and kindly advise them against doing bad things.",
+          "contentTextArabic": "وقال أيضاً: 'وأمر بالمعروف وانهَ عن المنكر.' هذا يعني أننا يجب أن نشجع الناس على فعل الخير وننصحهم بلطف بترك السوء."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Luqman added: 'And be patient over what befalls you.' Life will have difficulties. Sometimes we will face problems and hardships. But we should be patient and trust in Allah.",
+          "contentTextArabic": "وأضاف لقمان: 'واصبر على ما أصابك.' الحياة ستكون فيها صعوبات. أحياناً سنواجه مشاكل ومحن. لكن يجب أن نصبر ونثق بالله."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Luqman said all of this 'is of the matters requiring determination.' These things - prayer, encouraging good, forbidding wrong, and patience - require strong will. But they lead to success.",
+          "contentTextArabic": "قال لقمان إن كل هذا 'من عزم الأمور.' هذه الأشياء - الصلاة والأمر بالمعروف والنهي عن المنكر والصبر - تحتاج إرادة قوية. لكنها تقود للنجاح."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "When we pray regularly, encourage good, advise against wrong, and are patient, we become the best version of ourselves. These are the qualities that please Allah and earn His love.",
+          "contentTextArabic": "عندما نصلي بانتظام، ونشجع على الخير، وننهى عن المنكر، ونصبر، نصبح أفضل نسخة من أنفسنا. هذه الصفات التي ترضي الله وتكسب محبته."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What did Luqman tell his son to establish?",
+          "questionArabic": "ماذا أمر لقمان ابنه أن يُقيم؟",
+          "options": ["A business", "A kingdom", "Prayer", "A school"],
+          "optionsArabic": ["عملاً تجارياً", "مملكة", "الصلاة", "مدرسة"],
+          "correctIndex": 2,
+          "explanation": "Luqman told his son to establish prayer, connecting with Allah regularly.",
+          "explanationArabic": "أمر لقمان ابنه بإقامة الصلاة، والتواصل مع الله بانتظام."
+        },
+        {
+          "question": "What does 'enjoin what is good and forbid what is wrong' mean?",
+          "questionArabic": "ماذا يعني 'أمر بالمعروف وانهَ عن المنكر'؟",
+          "options": ["Only do good yourself", "Encourage good and advise against bad", "Ignore other people", "Only forbid wrong"],
+          "optionsArabic": ["افعل الخير لنفسك فقط", "شجع على الخير وانصح بترك السوء", "تجاهل الآخرين", "انهَ عن المنكر فقط"],
+          "correctIndex": 1,
+          "explanation": "It means encouraging people to do good things and kindly advising them against bad things.",
+          "explanationArabic": "يعني تشجيع الناس على فعل الخير ونصحهم بلطف بترك السوء."
+        },
+        {
+          "question": "What should we be when facing difficulties?",
+          "questionArabic": "ماذا يجب أن نكون عند مواجهة الصعوبات؟",
+          "options": ["Angry", "Patient", "Give up", "Complain"],
+          "optionsArabic": ["غاضبين", "صابرين", "نستسلم", "نشتكي"],
+          "correctIndex": 1,
+          "explanation": "Luqman advised being patient when facing difficulties and trusting in Allah.",
+          "explanationArabic": "نصح لقمان بالصبر عند مواجهة الصعوبات والثقة بالله."
+        }
+      ]
+    },
+    {
+      "serverId": "righteous_luqman_lesson_6",
+      "title": "Humility and Moderation",
+      "titleArabic": "التواضع والاعتدال",
+      "sortOrder": 6,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Luqman also taught his son about how to behave. He said, 'Do not turn your face away from people in arrogance.' This means we should not act like we are better than others.",
+          "contentTextArabic": "علّم لقمان ابنه أيضاً كيف يتصرف. قال: 'ولا تصعّر خدك للناس.' هذا يعني ألا نتصرف كأننا أفضل من الآخرين."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "He continued: 'And do not walk through the earth arrogantly. Indeed, Allah does not like any self-conceited boaster.' Walking proudly and showing off is not liked by Allah.",
+          "contentTextArabic": "وتابع: 'ولا تمشِ في الأرض مرحاً. إن الله لا يحب كل مختال فخور.' المشي بتكبر والتفاخر لا يحبه الله."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Then Luqman said: 'Be moderate in your walk and lower your voice.' We should walk with balance - not too slow and lazy, not too fast and arrogant. And we should speak softly and kindly.",
+          "contentTextArabic": "ثم قال لقمان: 'واقصد في مشيك واغضض من صوتك.' يجب أن نمشي باعتدال - لا بطيء وكسول، ولا سريع ومتكبر. ونتكلم بهدوء ولطف."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Luqman explained why we should lower our voice: 'Indeed, the most unpleasant of voices is the voice of donkeys!' Speaking loudly and harshly is like the braying of a donkey - not pleasant at all.",
+          "contentTextArabic": "شرح لقمان لماذا نخفض صوتنا: 'إن أنكر الأصوات لصوت الحمير!' الكلام بصوت عالٍ وخشن كنهيق الحمار - غير مستحب أبداً."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Luqman's advice teaches us to be humble and moderate in everything. Don't be arrogant, don't show off, speak gently, and walk with dignity. These are the manners that Allah loves.",
+          "contentTextArabic": "نصيحة لقمان تعلمنا التواضع والاعتدال في كل شيء. لا تتكبر، لا تتفاخر، تكلم بلطف، وامشِ بوقار. هذه الأخلاق التي يحبها الله."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does 'do not turn your face away from people' mean?",
+          "questionArabic": "ماذا يعني 'لا تصعّر خدك للناس'؟",
+          "options": ["Don't look at people", "Don't act arrogant or better than others", "Don't talk to people", "Don't help people"],
+          "optionsArabic": ["لا تنظر للناس", "لا تتكبر أو تتصرف كأنك أفضل من الآخرين", "لا تتكلم مع الناس", "لا تساعد الناس"],
+          "correctIndex": 1,
+          "explanation": "It means we should not act arrogant or like we are better than other people.",
+          "explanationArabic": "يعني ألا نتكبر أو نتصرف كأننا أفضل من الآخرين."
+        },
+        {
+          "question": "How should we walk according to Luqman?",
+          "questionArabic": "كيف يجب أن نمشي حسب لقمان؟",
+          "options": ["Very slowly", "Arrogantly", "Moderately and with dignity", "Very fast"],
+          "optionsArabic": ["ببطء شديد", "بتكبر", "باعتدال ووقار", "بسرعة شديدة"],
+          "correctIndex": 2,
+          "explanation": "Luqman advised walking moderately - with balance and dignity, not arrogantly.",
+          "explanationArabic": "نصح لقمان بالمشي باعتدال - بتوازن ووقار، لا بتكبر."
+        },
+        {
+          "question": "What did Luqman compare loud, harsh voices to?",
+          "questionArabic": "بماذا شبّه لقمان الصوت العالي الخشن؟",
+          "options": ["Thunder", "The voice of donkeys", "Music", "Wind"],
+          "optionsArabic": ["الرعد", "صوت الحمير", "الموسيقى", "الريح"],
+          "correctIndex": 1,
+          "explanation": "Luqman said that the most unpleasant voices are like the braying of donkeys.",
+          "explanationArabic": "قال لقمان إن أنكر الأصوات كنهيق الحمير."
+        }
+      ]
+    }
+  ]
+}

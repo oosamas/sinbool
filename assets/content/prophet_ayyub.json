@@ -1,0 +1,324 @@
+{
+  "chapter": {
+    "serverId": "prophet_ayyub",
+    "title": "Prophet Ayyub",
+    "titleArabic": "النبي أيوب",
+    "description": "The story of Prophet Ayyub, known for his incredible patience through years of hardship",
+    "descriptionArabic": "قصة النبي أيوب، المعروف بصبره العظيم خلال سنوات من المشقة",
+    "iconName": "ayyub",
+    "colorHex": "#6D4C41",
+    "sortOrder": 10
+  },
+  "lessons": [
+    {
+      "serverId": "prophet_ayyub_lesson_1",
+      "title": "A Blessed Life",
+      "titleArabic": "حياة مباركة",
+      "sortOrder": 1,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Prophet Ayyub was a righteous man who lived a blessed life. Allah had given him wealth, a large family, good health, and land with farms and animals. He had everything a person could wish for.",
+          "contentTextArabic": "كان النبي أيوب رجلاً صالحاً عاش حياة مباركة. أعطاه الله ثروة وعائلة كبيرة وصحة جيدة وأراضٍ بها مزارع وحيوانات. كان لديه كل ما يتمناه الإنسان."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "But Ayyub never forgot to thank Allah for all his blessings. He prayed regularly, helped the poor, and was always grateful. He knew that everything he had was a gift from Allah.",
+          "contentTextArabic": "لكن أيوب لم ينسَ قط شكر الله على كل نعمه. كان يصلي بانتظام ويساعد الفقراء وكان دائماً شاكراً. علم أن كل ما لديه هبة من الله."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Ayyub used his wealth to do good. He fed the hungry, clothed the poor, and gave shelter to travelers. He was known throughout the land for his kindness and generosity.",
+          "contentTextArabic": "استخدم أيوب ثروته لفعل الخير. أطعم الجائعين وكسا الفقراء وآوى المسافرين. عُرف في جميع أنحاء البلاد بلطفه وكرمه."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "He taught his children to love Allah and to be grateful for all their blessings. His family was happy and their home was filled with love and faith.",
+          "contentTextArabic": "علّم أولاده حب الله والشكر على كل نعمهم. كانت عائلته سعيدة ومنزلهم مليء بالحب والإيمان."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Ayyub's story teaches us an important lesson: true faith is shown not just in good times, but especially when times become difficult. And soon, Ayyub's faith would be tested in the hardest way.",
+          "contentTextArabic": "تعلمنا قصة أيوب درساً مهماً: الإيمان الحقيقي لا يظهر فقط في الأوقات الجيدة، بل خاصة عندما تصبح الأوقات صعبة. وقريباً، سيُختبر إيمان أيوب بأصعب طريقة."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What blessings did Allah give Prophet Ayyub?",
+          "questionArabic": "ما النعم التي أعطاها الله للنبي أيوب؟",
+          "options": ["Only wealth", "Only good health", "Wealth, family, health, and land", "Only a large family"],
+          "optionsArabic": ["الثروة فقط", "الصحة الجيدة فقط", "الثروة والعائلة والصحة والأرض", "عائلة كبيرة فقط"],
+          "correctIndex": 2,
+          "explanation": "Allah blessed Ayyub with wealth, a large family, good health, and land with farms and animals.",
+          "explanationArabic": "بارك الله أيوب بالثروة والعائلة الكبيرة والصحة الجيدة والأراضي بها مزارع وحيوانات."
+        },
+        {
+          "question": "How did Ayyub use his wealth?",
+          "questionArabic": "كيف استخدم أيوب ثروته؟",
+          "options": ["He kept it all for himself", "He helped the poor and needy", "He hid it", "He wasted it"],
+          "optionsArabic": ["احتفظ بها لنفسه", "ساعد الفقراء والمحتاجين", "أخفاها", "أضاعها"],
+          "correctIndex": 1,
+          "explanation": "Ayyub used his wealth to feed the hungry, clothe the poor, and help travelers.",
+          "explanationArabic": "استخدم أيوب ثروته لإطعام الجائعين وكساء الفقراء ومساعدة المسافرين."
+        },
+        {
+          "question": "What did Ayyub never forget to do?",
+          "questionArabic": "ماذا لم ينسَ أيوب أن يفعل أبداً؟",
+          "options": ["Count his money", "Thank Allah for his blessings", "Travel to new places", "Build bigger houses"],
+          "optionsArabic": ["عدّ ماله", "شكر الله على نعمه", "السفر لأماكن جديدة", "بناء منازل أكبر"],
+          "correctIndex": 1,
+          "explanation": "Despite all his wealth, Ayyub always remembered to thank Allah for all his blessings.",
+          "explanationArabic": "رغم كل ثروته، تذكر أيوب دائماً شكر الله على كل نعمه."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_ayyub_lesson_2",
+      "title": "The Test Begins",
+      "titleArabic": "يبدأ الاختبار",
+      "sortOrder": 2,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Then Allah decided to test Ayyub's faith. Slowly, things began to change. His animals died, his crops failed, and his wealth started to disappear. But Ayyub remained patient and grateful to Allah.",
+          "contentTextArabic": "ثم قرر الله اختبار إيمان أيوب. ببطء، بدأت الأمور تتغير. ماتت حيواناته وفشلت محاصيله وبدأت ثروته تختفي. لكن أيوب ظل صابراً وشاكراً لله."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "He said, 'Allah gave me everything, and Allah can take it away. I will not complain.' He continued to pray and thank Allah, even when he had lost almost everything he owned.",
+          "contentTextArabic": "قال: 'الله أعطاني كل شيء، والله يستطيع أخذه. لن أشتكي.' استمر في الصلاة وشكر الله، حتى عندما خسر تقريباً كل ما يملك."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Then came an even harder test. Ayyub became very sick. His illness was so severe that it affected his whole body. He was in constant pain, but still he did not complain against Allah.",
+          "contentTextArabic": "ثم جاء اختبار أصعب. أصبح أيوب مريضاً جداً. كان مرضه شديداً لدرجة أنه أثر على جسده كله. كان في ألم دائم، لكنه مع ذلك لم يشتكِ من الله."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Many years passed, and Ayyub remained ill. People who once admired him now avoided him. They thought his suffering meant Allah was angry with him - but they were wrong.",
+          "contentTextArabic": "مرت سنوات عديدة، وظل أيوب مريضاً. الناس الذين كانوا يعجبون به أصبحوا يتجنبونه. ظنوا أن معاناته تعني أن الله غاضب منه - لكنهم كانوا مخطئين."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Through all this suffering, Ayyub never lost faith. He understood that this life is a test, and Allah tests those He loves. He knew that patience in hardship brings great reward from Allah.",
+          "contentTextArabic": "خلال كل هذه المعاناة، لم يفقد أيوب إيمانه أبداً. فهم أن هذه الحياة اختبار، وأن الله يختبر من يحب. علم أن الصبر في الشدة يجلب ثواباً عظيماً من الله."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How did Ayyub react when he lost his wealth?",
+          "questionArabic": "كيف كان رد فعل أيوب عندما فقد ثروته؟",
+          "options": ["He complained to everyone", "He remained patient and grateful", "He became angry", "He stopped praying"],
+          "optionsArabic": ["اشتكى للجميع", "ظل صابراً وشاكراً", "غضب", "توقف عن الصلاة"],
+          "correctIndex": 1,
+          "explanation": "Even when losing his wealth, Ayyub remained patient and continued to thank Allah.",
+          "explanationArabic": "حتى عند فقدان ثروته، ظل أيوب صابراً واستمر في شكر الله."
+        },
+        {
+          "question": "What happened to Ayyub's health?",
+          "questionArabic": "ماذا حدث لصحة أيوب؟",
+          "options": ["He stayed healthy", "He became very sick for many years", "He became stronger", "Nothing changed"],
+          "optionsArabic": ["بقي بصحة جيدة", "أصبح مريضاً جداً لسنوات عديدة", "أصبح أقوى", "لم يتغير شيء"],
+          "correctIndex": 1,
+          "explanation": "Ayyub became severely ill, suffering for many years while remaining patient.",
+          "explanationArabic": "أصبح أيوب مريضاً بشدة، وعانى لسنوات عديدة بينما ظل صابراً."
+        },
+        {
+          "question": "What did Ayyub understand about his suffering?",
+          "questionArabic": "ماذا فهم أيوب عن معاناته؟",
+          "options": ["Allah had forgotten him", "Life is a test and patience brings reward", "He deserved punishment", "It was bad luck"],
+          "optionsArabic": ["الله نسيه", "الحياة اختبار والصبر يجلب الثواب", "كان يستحق العقاب", "كان حظاً سيئاً"],
+          "correctIndex": 1,
+          "explanation": "Ayyub understood that this life is a test and patience in hardship brings great reward from Allah.",
+          "explanationArabic": "فهم أيوب أن هذه الحياة اختبار وأن الصبر في الشدة يجلب ثواباً عظيماً من الله."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_ayyub_lesson_3",
+      "title": "The Faithful Wife",
+      "titleArabic": "الزوجة الوفية",
+      "sortOrder": 3,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Throughout all of Ayyub's suffering, his wife stayed by his side. When everyone else had left, she remained faithful. She worked hard to take care of him and find food for them both.",
+          "contentTextArabic": "طوال معاناة أيوب، بقيت زوجته بجانبه. عندما رحل الجميع، ظلت وفية. عملت بجد لرعايته وإيجاد الطعام لكليهما."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "She would go out to work and bring back whatever food she could find. Even when times were hardest, she never abandoned her husband. Her love and loyalty were a blessing from Allah.",
+          "contentTextArabic": "كانت تخرج للعمل وتحضر أي طعام يمكنها إيجاده. حتى في أصعب الأوقات، لم تتخلَّ عن زوجها أبداً. كان حبها ووفاؤها نعمة من الله."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Years passed - some scholars say it was eighteen years of illness. Through all that time, Ayyub never complained to Allah. He only prayed and remained patient, trusting in Allah's wisdom.",
+          "contentTextArabic": "مرت السنوات - يقول بعض العلماء إنها ثمانية عشر عاماً من المرض. طوال ذلك الوقت، لم يشتكِ أيوب لله أبداً. كان يصلي فقط ويظل صابراً، واثقاً بحكمة الله."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Finally, when the test had reached its peak, Ayyub called upon his Lord. He said: 'Indeed, adversity has touched me, and You are the Most Merciful of the merciful.'",
+          "contentTextArabic": "أخيراً، عندما بلغ الاختبار ذروته، دعا أيوب ربه. قال: 'أني مسني الضر وأنت أرحم الراحمين.'"
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Notice how beautiful Ayyub's prayer was. He did not complain or demand. He simply stated his situation and acknowledged that Allah is the Most Merciful. This is the perfect way to ask Allah for help.",
+          "contentTextArabic": "لاحظ كم كان دعاء أيوب جميلاً. لم يشتكِ أو يطالب. ببساطة ذكر حاله واعترف بأن الله أرحم الراحمين. هذه هي الطريقة المثلى لطلب العون من الله."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Who stayed with Ayyub throughout his illness?",
+          "questionArabic": "من بقي مع أيوب طوال مرضه؟",
+          "options": ["His friends", "His neighbors", "His faithful wife", "His brothers"],
+          "optionsArabic": ["أصدقاؤه", "جيرانه", "زوجته الوفية", "إخوته"],
+          "correctIndex": 2,
+          "explanation": "Ayyub's wife remained faithful and stayed by his side, caring for him throughout his illness.",
+          "explanationArabic": "ظلت زوجة أيوب وفية وبقيت بجانبه، ترعاه طوال مرضه."
+        },
+        {
+          "question": "How long did Ayyub suffer according to some scholars?",
+          "questionArabic": "كم عانى أيوب حسب بعض العلماء؟",
+          "options": ["One year", "Five years", "Eighteen years", "Three months"],
+          "optionsArabic": ["سنة واحدة", "خمس سنوات", "ثمانية عشر عاماً", "ثلاثة أشهر"],
+          "correctIndex": 2,
+          "explanation": "Some scholars say Ayyub's illness lasted eighteen years, yet he remained patient throughout.",
+          "explanationArabic": "يقول بعض العلماء إن مرض أيوب استمر ثمانية عشر عاماً، ومع ذلك ظل صابراً طوال الوقت."
+        },
+        {
+          "question": "How did Ayyub pray to Allah for help?",
+          "questionArabic": "كيف دعا أيوب الله للمساعدة؟",
+          "options": ["He complained loudly", "He humbly stated his situation and praised Allah's mercy", "He demanded immediate help", "He stopped praying"],
+          "optionsArabic": ["اشتكى بصوت عالٍ", "ذكر حاله بتواضع وأثنى على رحمة الله", "طالب بمساعدة فورية", "توقف عن الدعاء"],
+          "correctIndex": 1,
+          "explanation": "Ayyub simply stated his situation and acknowledged that Allah is the Most Merciful.",
+          "explanationArabic": "ببساطة ذكر أيوب حاله واعترف بأن الله أرحم الراحمين."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_ayyub_lesson_4",
+      "title": "Allah's Mercy",
+      "titleArabic": "رحمة الله",
+      "sortOrder": 4,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Allah heard Ayyub's sincere prayer. The Quran tells us that Allah responded to him immediately. Allah said: 'Strike the ground with your foot; this is a cool spring for bathing and drinking.'",
+          "contentTextArabic": "سمع الله دعاء أيوب المخلص. يخبرنا القرآن أن الله استجاب له فوراً. قال الله: 'اركض برجلك هذا مغتسل بارد وشراب.'"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Ayyub struck the ground with his foot, and a spring of fresh, cool water gushed out! When he bathed in this blessed water and drank from it, his sickness was completely healed! His body became healthy and strong again.",
+          "contentTextArabic": "ضرب أيوب الأرض برجله، فتفجر ينبوع من الماء العذب البارد! عندما اغتسل بهذا الماء المبارك وشرب منه، شُفي مرضه تماماً! أصبح جسده صحيحاً وقوياً مرة أخرى."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "But Allah's blessings did not stop there. Allah restored everything Ayyub had lost - and gave him even more! He was given back his family, his wealth, and his health, all multiplied as a reward for his patience.",
+          "contentTextArabic": "لكن نعم الله لم تتوقف هناك. أعاد الله لأيوب كل ما فقده - وأعطاه أكثر! أُعيدت له عائلته وثروته وصحته، كلها مضاعفة كمكافأة على صبره."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Allah says in the Quran that He gave Ayyub his family back and doubled their number as a mercy from Allah and a reminder for people who worship Him.",
+          "contentTextArabic": "يقول الله في القرآن إنه وهب لأيوب أهله ومثلهم معهم رحمة منه وذكرى لأولي الألباب."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Ayyub's story shows us that after hardship comes ease. No matter how long or difficult the test, those who are patient and trust in Allah will be rewarded beyond their imagination.",
+          "contentTextArabic": "تُظهر لنا قصة أيوب أن بعد العسر يسراً. مهما طال الاختبار أو صعب، فإن الصابرين الذين يثقون بالله سيُكافأون بما يفوق خيالهم."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What happened when Ayyub struck the ground with his foot?",
+          "questionArabic": "ماذا حدث عندما ضرب أيوب الأرض برجله؟",
+          "options": ["Nothing happened", "A spring of water gushed out", "Gold appeared", "A tree grew"],
+          "optionsArabic": ["لم يحدث شيء", "تفجر ينبوع ماء", "ظهر ذهب", "نمت شجرة"],
+          "correctIndex": 1,
+          "explanation": "When Ayyub struck the ground, a spring of fresh, cool water gushed out that healed him.",
+          "explanationArabic": "عندما ضرب أيوب الأرض، تفجر ينبوع من الماء العذب البارد الذي شفاه."
+        },
+        {
+          "question": "What did Allah give Ayyub after he was healed?",
+          "questionArabic": "ماذا أعطى الله لأيوب بعد شفائه؟",
+          "options": ["Nothing more", "His family and wealth doubled", "Only his health", "A new home"],
+          "optionsArabic": ["لا شيء أكثر", "عائلته وثروته مضاعفة", "صحته فقط", "منزلاً جديداً"],
+          "correctIndex": 1,
+          "explanation": "Allah gave Ayyub back his family and wealth, all multiplied as a reward for his patience.",
+          "explanationArabic": "أعاد الله لأيوب عائلته وثروته، كلها مضاعفة كمكافأة على صبره."
+        },
+        {
+          "question": "What does Ayyub's story teach us about hardship?",
+          "questionArabic": "ماذا تعلمنا قصة أيوب عن الشدة؟",
+          "options": ["Hardship never ends", "After hardship comes ease for the patient", "We should complain", "We should give up"],
+          "optionsArabic": ["الشدة لا تنتهي أبداً", "بعد العسر يسر للصابرين", "يجب أن نشتكي", "يجب أن نستسلم"],
+          "correctIndex": 1,
+          "explanation": "Ayyub's story shows that after hardship comes ease for those who are patient and trust Allah.",
+          "explanationArabic": "تُظهر قصة أيوب أن بعد العسر يسراً للصابرين الذين يثقون بالله."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_ayyub_lesson_5",
+      "title": "Lessons from Ayyub",
+      "titleArabic": "دروس من أيوب",
+      "sortOrder": 5,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Prophet Ayyub's story is told in the Quran as an example for all of us. Allah praises him saying: 'Indeed, We found him patient - an excellent servant. Indeed, he was one who repeatedly turned back to Allah.'",
+          "contentTextArabic": "تُروى قصة النبي أيوب في القرآن كمثال لنا جميعاً. يمدحه الله قائلاً: 'إنا وجدناه صابراً نعم العبد إنه أواب.'"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "The word 'sabr' (patience) in Arabic means more than just waiting. It means being strong and steady during hard times, trusting Allah, and not losing hope. Ayyub is the perfect example of sabr.",
+          "contentTextArabic": "كلمة 'صبر' في العربية تعني أكثر من مجرد الانتظار. تعني القوة والثبات في الأوقات الصعبة، والثقة بالله، وعدم فقدان الأمل. أيوب هو المثال الكامل للصبر."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "We learn from Ayyub that blessings and hardships are both tests from Allah. When we have blessings, we should be grateful. When we face hardships, we should be patient. Both are ways to earn Allah's pleasure.",
+          "contentTextArabic": "نتعلم من أيوب أن النعم والشدائد كلاهما اختبارات من الله. عندما لدينا نعم، يجب أن نكون شاكرين. عندما نواجه شدائد، يجب أن نكون صابرين. كلاهما طريق لنيل رضا الله."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "We also learn the importance of making dua. Even after years of patience, Ayyub finally called upon Allah - and Allah answered him immediately. Never be shy to ask Allah for help.",
+          "contentTextArabic": "نتعلم أيضاً أهمية الدعاء. حتى بعد سنوات من الصبر، دعا أيوب ربه أخيراً - واستجاب له الله فوراً. لا تستحِ أبداً من طلب العون من الله."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "May we all learn from Prophet Ayyub to be patient in difficult times, grateful in good times, and to always trust that Allah knows what is best for us. Patience is truly one of the greatest qualities a believer can have.",
+          "contentTextArabic": "نسأل الله أن نتعلم جميعاً من النبي أيوب الصبر في الأوقات الصعبة، والشكر في الأوقات الجيدة، والثقة دائماً بأن الله يعلم ما هو الأفضل لنا. الصبر حقاً من أعظم صفات المؤمن."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does Allah call Ayyub in the Quran?",
+          "questionArabic": "ماذا يسمي الله أيوب في القرآن؟",
+          "options": ["A rich man", "An excellent servant who was patient", "A king", "A warrior"],
+          "optionsArabic": ["رجل غني", "نعم العبد الصابر", "ملك", "محارب"],
+          "correctIndex": 1,
+          "explanation": "Allah praises Ayyub as an excellent servant who was patient and always turned back to Allah.",
+          "explanationArabic": "يمدح الله أيوب كنعم العبد الذي كان صابراً وأواباً."
+        },
+        {
+          "question": "What does 'sabr' (patience) mean in Islam?",
+          "questionArabic": "ماذا تعني كلمة 'صبر' في الإسلام؟",
+          "options": ["Just waiting", "Being strong, trusting Allah, and not losing hope", "Giving up", "Being silent"],
+          "optionsArabic": ["مجرد الانتظار", "القوة والثقة بالله وعدم فقدان الأمل", "الاستسلام", "الصمت"],
+          "correctIndex": 1,
+          "explanation": "Sabr means being strong and steady during hard times, trusting Allah, and not losing hope.",
+          "explanationArabic": "الصبر يعني القوة والثبات في الأوقات الصعبة، والثقة بالله، وعدم فقدان الأمل."
+        },
+        {
+          "question": "What should we do in both good times and hard times?",
+          "questionArabic": "ماذا يجب أن نفعل في الأوقات الجيدة والصعبة؟",
+          "options": ["Complain always", "Be grateful in good times, patient in hard times", "Ignore both", "Only pray in hard times"],
+          "optionsArabic": ["نشتكي دائماً", "نشكر في الأوقات الجيدة ونصبر في الصعبة", "نتجاهل كليهما", "نصلي في الأوقات الصعبة فقط"],
+          "correctIndex": 1,
+          "explanation": "We should be grateful when blessed and patient during hardships - both are ways to please Allah.",
+          "explanationArabic": "يجب أن نكون شاكرين عند النعم وصابرين في الشدائد - كلاهما طريق لإرضاء الله."
+        }
+      ]
+    }
+  ]
+}

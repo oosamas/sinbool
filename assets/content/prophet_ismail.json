@@ -1,0 +1,324 @@
+{
+  "chapter": {
+    "serverId": "prophet_ismail",
+    "title": "Prophet Ismail",
+    "titleArabic": "النبي إسماعيل",
+    "description": "The story of Prophet Ismail, the patient son who helped build the Kaaba",
+    "descriptionArabic": "قصة النبي إسماعيل، الابن الصبور الذي ساعد في بناء الكعبة",
+    "iconName": "ismail",
+    "colorHex": "#00796B",
+    "sortOrder": 12
+  },
+  "lessons": [
+    {
+      "serverId": "prophet_ismail_lesson_1",
+      "title": "A Special Baby",
+      "titleArabic": "طفل مميز",
+      "sortOrder": 1,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Prophet Ibrahim and his wife Hajar were blessed with a baby boy. They named him Ismail, which means 'Allah hears.' Ibrahim was very old when this baby was born, so he was very thankful to Allah.",
+          "contentTextArabic": "بُورك النبي إبراهيم وزوجته هاجر بطفل. سمّوه إسماعيل، وتعني 'الله يسمع.' كان إبراهيم كبيراً في السن عند ولادة هذا الطفل، فكان شاكراً جداً لله."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Baby Ismail brought great joy to his parents. Ibrahim loved him dearly and thanked Allah for this wonderful gift. He knew that this child was very special.",
+          "contentTextArabic": "جلب الطفل إسماعيل سعادة كبيرة لوالديه. أحبه إبراهيم كثيراً وشكر الله على هذه الهبة الرائعة. علم أن هذا الطفل مميز جداً."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Then Allah commanded Ibrahim to take Hajar and baby Ismail to a desert valley far away. This valley was empty - no people lived there, no water, no trees. It would later become the city of Makkah.",
+          "contentTextArabic": "ثم أمر الله إبراهيم أن يأخذ هاجر والطفل إسماعيل إلى وادٍ صحراوي بعيد. كان هذا الوادي خالياً - لا يسكنه أحد، لا ماء، لا أشجار. سيصبح لاحقاً مدينة مكة."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Ibrahim obeyed Allah's command, even though it was very hard. He left Hajar and Ismail in the desert with only some dates and a water skin. Then he had to leave them and return home.",
+          "contentTextArabic": "أطاع إبراهيم أمر الله، رغم أنه كان صعباً جداً. ترك هاجر وإسماعيل في الصحراء مع بعض التمر وقربة ماء فقط. ثم كان عليه تركهما والعودة."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Hajar asked Ibrahim, 'Are you leaving us here with no one to help us?' Ibrahim could not speak. Then she asked, 'Did Allah command you to do this?' Ibrahim nodded. Hajar said, 'Then Allah will not abandon us.'",
+          "contentTextArabic": "سألت هاجر إبراهيم: 'أتتركنا هنا بلا أحد يساعدنا؟' لم يستطع إبراهيم الكلام. ثم سألت: 'هل أمرك الله بهذا؟' أومأ إبراهيم. قالت هاجر: 'إذن لن يضيعنا الله.'"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does the name 'Ismail' mean?",
+          "questionArabic": "ماذا يعني اسم 'إسماعيل'؟",
+          "options": ["Allah is great", "Allah hears", "Allah loves", "Allah helps"],
+          "optionsArabic": ["الله أكبر", "الله يسمع", "الله يحب", "الله يساعد"],
+          "correctIndex": 1,
+          "explanation": "Ismail means 'Allah hears,' showing that Allah heard Ibrahim's prayers for a child.",
+          "explanationArabic": "إسماعيل تعني 'الله يسمع'، مما يدل أن الله سمع دعاء إبراهيم للحصول على ولد."
+        },
+        {
+          "question": "Where did Ibrahim leave Hajar and Ismail?",
+          "questionArabic": "أين ترك إبراهيم هاجر وإسماعيل؟",
+          "options": ["In a palace", "In an empty desert valley", "In a city", "By a river"],
+          "optionsArabic": ["في قصر", "في وادٍ صحراوي خالٍ", "في مدينة", "عند نهر"],
+          "correctIndex": 1,
+          "explanation": "Ibrahim left them in an empty desert valley that would later become Makkah.",
+          "explanationArabic": "تركهما إبراهيم في وادٍ صحراوي خالٍ سيصبح لاحقاً مكة."
+        },
+        {
+          "question": "What was Hajar's response when she learned it was Allah's command?",
+          "questionArabic": "ما كان رد هاجر عندما علمت أنه أمر الله؟",
+          "options": ["She was angry", "She said Allah will not abandon us", "She refused to stay", "She cried"],
+          "optionsArabic": ["غضبت", "قالت لن يضيعنا الله", "رفضت البقاء", "بكت"],
+          "correctIndex": 1,
+          "explanation": "Hajar trusted Allah completely and said 'Then Allah will not abandon us.'",
+          "explanationArabic": "وثقت هاجر بالله تماماً وقالت 'إذن لن يضيعنا الله.'"
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_ismail_lesson_2",
+      "title": "The Miracle of Zamzam",
+      "titleArabic": "معجزة زمزم",
+      "sortOrder": 2,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Soon the water ran out and baby Ismail became very thirsty. He began to cry from thirst. Hajar could not bear to see her baby suffer. She had to find water!",
+          "contentTextArabic": "سرعان ما نفد الماء وأصبح الطفل إسماعيل عطشاناً جداً. بدأ يبكي من العطش. لم تستطع هاجر تحمل رؤية طفلها يعاني. كان عليها إيجاد الماء!"
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Hajar ran to a nearby hill called Safa to look for water or travelers. She saw nothing. Then she ran to another hill called Marwa. Still nothing. She ran back and forth seven times, hoping and praying.",
+          "contentTextArabic": "ركضت هاجر إلى تل قريب يُسمى الصفا للبحث عن ماء أو مسافرين. لم ترَ شيئاً. ثم ركضت إلى تل آخر يُسمى المروة. لا شيء أيضاً. ركضت ذهاباً وإياباً سبع مرات، تأمل وتدعو."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "When she returned to Ismail, she saw something amazing! An angel had struck the ground near the baby, and fresh water was gushing out! This spring is called Zamzam, and it still flows today in Makkah!",
+          "contentTextArabic": "عندما عادت إلى إسماعيل، رأت شيئاً مذهلاً! ملاك ضرب الأرض قرب الطفل، وماء عذب يتفجر! هذا الينبوع يُسمى زمزم، ولا يزال يتدفق اليوم في مكة!"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Hajar was overjoyed! She quickly gathered stones around the spring to keep the water from escaping. She said 'Zom, zom!' meaning 'Stop, stop!' - and that is how Zamzam got its name.",
+          "contentTextArabic": "فرحت هاجر فرحاً عظيماً! جمعت الحجارة بسرعة حول الينبوع لمنع الماء من التسرب. قالت 'زُمّي، زُمّي!' أي 'توقفي، توقفي!' - وهكذا سُمي زمزم."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "The water of Zamzam attracted birds, and travelers noticed. Soon a tribe called Jurhum came and asked to settle there. Ismail grew up among them, learning their language and ways. Allah had kept His promise!",
+          "contentTextArabic": "جذب ماء زمزم الطيور، ولاحظ المسافرون. سرعان ما جاءت قبيلة تُسمى جُرهم وطلبوا الإقامة هناك. نشأ إسماعيل بينهم، يتعلم لغتهم وعاداتهم. حقق الله وعده!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "How many times did Hajar run between Safa and Marwa?",
+          "questionArabic": "كم مرة ركضت هاجر بين الصفا والمروة؟",
+          "options": ["Three times", "Five times", "Seven times", "Ten times"],
+          "optionsArabic": ["ثلاث مرات", "خمس مرات", "سبع مرات", "عشر مرات"],
+          "correctIndex": 2,
+          "explanation": "Hajar ran between Safa and Marwa seven times searching for water.",
+          "explanationArabic": "ركضت هاجر بين الصفا والمروة سبع مرات بحثاً عن الماء."
+        },
+        {
+          "question": "How did the Zamzam water appear?",
+          "questionArabic": "كيف ظهر ماء زمزم؟",
+          "options": ["It rained", "An angel struck the ground near Ismail", "Hajar dug a well", "Ibrahim brought it"],
+          "optionsArabic": ["أمطرت السماء", "ملاك ضرب الأرض قرب إسماعيل", "حفرت هاجر بئراً", "أحضره إبراهيم"],
+          "correctIndex": 1,
+          "explanation": "An angel struck the ground near baby Ismail, and water gushed out miraculously.",
+          "explanationArabic": "ضرب ملاك الأرض قرب الطفل إسماعيل، فتفجر الماء بشكل معجز."
+        },
+        {
+          "question": "Is the Zamzam well still flowing today?",
+          "questionArabic": "هل لا يزال بئر زمزم يتدفق اليوم؟",
+          "options": ["No, it dried up", "Yes, it still flows in Makkah", "It was moved to another city", "It only flows sometimes"],
+          "optionsArabic": ["لا، جف", "نعم، لا يزال يتدفق في مكة", "نُقل لمدينة أخرى", "يتدفق أحياناً فقط"],
+          "correctIndex": 1,
+          "explanation": "Zamzam has been flowing for thousands of years and still provides water to pilgrims in Makkah today.",
+          "explanationArabic": "يتدفق زمزم منذ آلاف السنين ولا يزال يوفر الماء للحجاج في مكة اليوم."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_ismail_lesson_3",
+      "title": "The Great Test",
+      "titleArabic": "الاختبار العظيم",
+      "sortOrder": 3,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Years passed, and Ismail grew into a kind and obedient young man. Ibrahim would visit them sometimes, and the bond between father and son was very strong. They both loved Allah deeply.",
+          "contentTextArabic": "مرت السنوات، وكبر إسماعيل وأصبح شاباً طيباً ومطيعاً. كان إبراهيم يزورهم أحياناً، وكانت الرابطة بين الأب والابن قوية جداً. كلاهما أحبّ الله بعمق."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Then came the greatest test. Ibrahim had a dream where he saw himself sacrificing his son Ismail. For prophets, dreams can be commands from Allah. Ibrahim knew he had to obey.",
+          "contentTextArabic": "ثم جاء أعظم اختبار. رأى إبراهيم في المنام أنه يذبح ابنه إسماعيل. بالنسبة للأنبياء، الرؤى يمكن أن تكون أوامر من الله. علم إبراهيم أنه يجب أن يطيع."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Ibrahim told Ismail about the dream. He said, 'O my son, I have seen in a dream that I must sacrifice you. What do you think?' Ismail gave an amazing answer that showed his faith.",
+          "contentTextArabic": "أخبر إبراهيم إسماعيل عن الرؤيا. قال: 'يا بني إني أرى في المنام أني أذبحك فانظر ماذا ترى.' أعطى إسماعيل إجابة مذهلة أظهرت إيمانه."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Ismail said, 'O my father, do as you are commanded. You will find me, if Allah wills, among the patient.' What incredible faith! This young man was ready to obey Allah completely.",
+          "contentTextArabic": "قال إسماعيل: 'يا أبت افعل ما تؤمر ستجدني إن شاء الله من الصابرين.' يا لهذا الإيمان المذهل! كان هذا الشاب مستعداً لطاعة الله تماماً."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Both father and son submitted to Allah's will. Ibrahim laid Ismail down and was about to carry out the sacrifice when Allah called out: 'O Ibrahim! You have fulfilled the vision!' They had passed the test!",
+          "contentTextArabic": "استسلم كل من الأب والابن لإرادة الله. أضجع إبراهيم إسماعيل وكان على وشك تنفيذ الذبح عندما ناداه الله: 'يا إبراهيم! قد صدّقت الرؤيا!' نجحا في الاختبار!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What did Ibrahim see in his dream?",
+          "questionArabic": "ماذا رأى إبراهيم في منامه؟",
+          "options": ["Building a house", "Traveling to a new land", "Sacrificing his son", "Finding treasure"],
+          "optionsArabic": ["بناء بيت", "السفر لأرض جديدة", "ذبح ابنه", "إيجاد كنز"],
+          "correctIndex": 2,
+          "explanation": "Ibrahim dreamed that he was sacrificing his son Ismail, which was a command from Allah.",
+          "explanationArabic": "رأى إبراهيم في المنام أنه يذبح ابنه إسماعيل، وكان هذا أمراً من الله."
+        },
+        {
+          "question": "How did Ismail respond to his father?",
+          "questionArabic": "كيف ردّ إسماعيل على أبيه؟",
+          "options": ["He ran away", "He said do as Allah commands, I will be patient", "He refused", "He cried"],
+          "optionsArabic": ["هرب", "قال افعل ما تؤمر وسأكون صابراً", "رفض", "بكى"],
+          "correctIndex": 1,
+          "explanation": "Ismail showed amazing faith, telling his father to do as commanded and promising to be patient.",
+          "explanationArabic": "أظهر إسماعيل إيماناً مذهلاً، وأخبر أباه أن يفعل ما أُمر ووعد بالصبر."
+        },
+        {
+          "question": "What happened when Ibrahim was about to sacrifice Ismail?",
+          "questionArabic": "ماذا حدث عندما كان إبراهيم على وشك ذبح إسماعيل؟",
+          "options": ["He couldn't do it", "Allah stopped him - they had passed the test", "Ismail ran away", "Nothing happened"],
+          "optionsArabic": ["لم يستطع فعل ذلك", "أوقفه الله - نجحا في الاختبار", "هرب إسماعيل", "لم يحدث شيء"],
+          "correctIndex": 1,
+          "explanation": "Allah called out to Ibrahim that he had fulfilled the vision - they had passed the test of obedience.",
+          "explanationArabic": "نادى الله إبراهيم أنه صدّق الرؤيا - نجحا في اختبار الطاعة."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_ismail_lesson_4",
+      "title": "The Ransom and the Ram",
+      "titleArabic": "الفداء والكبش",
+      "sortOrder": 4,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Allah was pleased with Ibrahim and Ismail's complete obedience. He sent a ram from paradise to be sacrificed instead of Ismail. This showed Allah's mercy and reward for those who submit to Him.",
+          "contentTextArabic": "رضي الله عن طاعة إبراهيم وإسماعيل الكاملة. أرسل كبشاً من الجنة ليُذبح بدلاً من إسماعيل. أظهر هذا رحمة الله ومكافأته لمن يستسلم له."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Allah says in the Quran: 'And We ransomed him with a great sacrifice.' The ram took Ismail's place. This was a great blessing from Allah for their faithfulness.",
+          "contentTextArabic": "يقول الله في القرآن: 'وفديناه بذبح عظيم.' حلّ الكبش مكان إسماعيل. كانت هذه نعمة عظيمة من الله لإخلاصهما."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "This is why Muslims celebrate Eid al-Adha every year. We remember Ibrahim and Ismail's sacrifice and their complete trust in Allah. Families sacrifice an animal and share the meat with the poor.",
+          "contentTextArabic": "لهذا يحتفل المسلمون بعيد الأضحى كل عام. نتذكر تضحية إبراهيم وإسماعيل وثقتهما الكاملة بالله. تذبح العائلات حيواناً وتتقاسم اللحم مع الفقراء."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "The pilgrims who go to Hajj also remember Hajar. When they run between Safa and Marwa, they are following her footsteps and remembering her trust in Allah.",
+          "contentTextArabic": "يتذكر الحجاج الذاهبون للحج هاجر أيضاً. عندما يسعون بين الصفا والمروة، يتبعون خطاها ويتذكرون ثقتها بالله."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Allah blessed Ibrahim and said: 'Peace be upon Ibrahim! Thus do We reward those who do good. Indeed, he was of Our believing servants.'",
+          "contentTextArabic": "بارك الله إبراهيم وقال: 'سلام على إبراهيم! كذلك نجزي المحسنين. إنه من عبادنا المؤمنين.'"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What did Allah send to be sacrificed instead of Ismail?",
+          "questionArabic": "ماذا أرسل الله ليُذبح بدلاً من إسماعيل؟",
+          "options": ["A camel", "A ram from paradise", "A cow", "Nothing"],
+          "optionsArabic": ["جمل", "كبش من الجنة", "بقرة", "لا شيء"],
+          "correctIndex": 1,
+          "explanation": "Allah sent a ram from paradise to be sacrificed instead of Ismail.",
+          "explanationArabic": "أرسل الله كبشاً من الجنة ليُذبح بدلاً من إسماعيل."
+        },
+        {
+          "question": "Which Eid celebrates this story?",
+          "questionArabic": "أي عيد يحتفل بهذه القصة؟",
+          "options": ["Eid al-Fitr", "Eid al-Adha", "Mawlid", "Isra"],
+          "optionsArabic": ["عيد الفطر", "عيد الأضحى", "المولد", "الإسراء"],
+          "correctIndex": 1,
+          "explanation": "Eid al-Adha celebrates Ibrahim and Ismail's sacrifice and trust in Allah.",
+          "explanationArabic": "عيد الأضحى يحتفل بتضحية إبراهيم وإسماعيل وثقتهما بالله."
+        },
+        {
+          "question": "What do pilgrims do to remember Hajar?",
+          "questionArabic": "ماذا يفعل الحجاج لتذكر هاجر؟",
+          "options": ["Climb a mountain", "Run between Safa and Marwa", "Fast for three days", "Read special prayers"],
+          "optionsArabic": ["تسلق جبل", "السعي بين الصفا والمروة", "صيام ثلاثة أيام", "قراءة أدعية خاصة"],
+          "correctIndex": 1,
+          "explanation": "Pilgrims run between Safa and Marwa, following Hajar's footsteps and remembering her trust in Allah.",
+          "explanationArabic": "يسعى الحجاج بين الصفا والمروة، متبعين خطى هاجر ومتذكرين ثقتها بالله."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_ismail_lesson_5",
+      "title": "Building the Kaaba",
+      "titleArabic": "بناء الكعبة",
+      "sortOrder": 5,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "When Ismail was older, Allah commanded Ibrahim to build a special house for His worship. This would be the Kaaba - the first house built for worshipping Allah alone on Earth.",
+          "contentTextArabic": "عندما كبر إسماعيل، أمر الله إبراهيم ببناء بيت خاص لعبادته. سيكون هذا الكعبة - أول بيت بُني لعبادة الله وحده على الأرض."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Ibrahim and Ismail worked together to build the Kaaba. Ismail would bring the stones while Ibrahim placed them. Father and son worked side by side, building the house of Allah.",
+          "contentTextArabic": "عمل إبراهيم وإسماعيل معاً لبناء الكعبة. كان إسماعيل يحضر الحجارة بينما كان إبراهيم يضعها. عمل الأب والابن جنباً إلى جنب، يبنيان بيت الله."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "As they built, they made a beautiful dua: 'Our Lord, accept this from us. Indeed, You are the All-Hearing, the All-Knowing. Our Lord, make us Muslims [submitting] to You.'",
+          "contentTextArabic": "وهما يبنيان، دعوا دعاءً جميلاً: 'ربنا تقبل منا إنك أنت السميع العليم. ربنا واجعلنا مسلمين لك.'"
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "They also prayed: 'Our Lord, and raise among them a messenger from themselves who will recite to them Your verses.' This prayer was answered with Prophet Muhammad, peace be upon him!",
+          "contentTextArabic": "ودعوا أيضاً: 'ربنا وابعث فيهم رسولاً منهم يتلو عليهم آياتك.' استُجيب هذا الدعاء بالنبي محمد صلى الله عليه وسلم!"
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Today, millions of Muslims face the Kaaba when they pray and visit it during Hajj. Prophet Ismail's story teaches us about faith, patience, and complete obedience to Allah. He is the ancestor of Prophet Muhammad!",
+          "contentTextArabic": "اليوم، يتجه ملايين المسلمين نحو الكعبة عند الصلاة ويزورونها في الحج. تعلمنا قصة النبي إسماعيل عن الإيمان والصبر والطاعة الكاملة لله. إنه جدّ النبي محمد!"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What did Ibrahim and Ismail build together?",
+          "questionArabic": "ماذا بنى إبراهيم وإسماعيل معاً؟",
+          "options": ["A palace", "The Kaaba", "A mosque", "A house"],
+          "optionsArabic": ["قصراً", "الكعبة", "مسجداً", "بيتاً"],
+          "correctIndex": 1,
+          "explanation": "Ibrahim and Ismail built the Kaaba together - the first house for worshipping Allah alone.",
+          "explanationArabic": "بنى إبراهيم وإسماعيل الكعبة معاً - أول بيت لعبادة الله وحده."
+        },
+        {
+          "question": "What dua did Ibrahim and Ismail make while building?",
+          "questionArabic": "ما الدعاء الذي دعا به إبراهيم وإسماعيل وهما يبنيان؟",
+          "options": ["For wealth", "Our Lord, accept this from us", "For a long life", "For power"],
+          "optionsArabic": ["بالثروة", "ربنا تقبل منا", "بطول العمر", "بالقوة"],
+          "correctIndex": 1,
+          "explanation": "They prayed 'Our Lord, accept this from us' as they built the Kaaba together.",
+          "explanationArabic": "دعوا 'ربنا تقبل منا' وهما يبنيان الكعبة معاً."
+        },
+        {
+          "question": "Who is a descendant of Prophet Ismail?",
+          "questionArabic": "من هو من نسل النبي إسماعيل؟",
+          "options": ["Prophet Musa", "Prophet Isa", "Prophet Muhammad", "Prophet Dawud"],
+          "optionsArabic": ["النبي موسى", "النبي عيسى", "النبي محمد", "النبي داود"],
+          "correctIndex": 2,
+          "explanation": "Prophet Muhammad, peace be upon him, is a descendant of Prophet Ismail.",
+          "explanationArabic": "النبي محمد صلى الله عليه وسلم من نسل النبي إسماعيل."
+        }
+      ]
+    }
+  ]
+}

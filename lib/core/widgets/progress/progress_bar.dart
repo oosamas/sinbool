@@ -178,36 +178,31 @@ class LessonStats extends StatelessWidget {
         totalLessons > 0 ? completedLessons / totalLessons : 0.0;
 
     return Row(
+      mainAxisSize: MainAxisSize.min,
       children: [
-        Expanded(
-          child: _StatItem(
-            icon: Icons.menu_book,
-            value: '$completedLessons/$totalLessons',
-            label: 'Lessons',
-          ),
+        _StatItem(
+          icon: Icons.menu_book,
+          value: '$completedLessons/$totalLessons',
+          label: 'Lessons',
         ),
         const SizedBox(width: Spacing.md),
-        Expanded(
-          child: _StatItem(
-            icon: Icons.local_fire_department,
-            value: '$streakDays',
-            label: 'Day Streak',
-            valueColor: streakDays > 0 ? AppColors.secondary : null,
-          ),
+        _StatItem(
+          icon: Icons.local_fire_department,
+          value: '$streakDays',
+          label: 'Day Streak',
+          valueColor: streakDays > 0 ? AppColors.secondary : null,
         ),
         const SizedBox(width: Spacing.md),
-        Expanded(
-          child: CircularProgress(
-            progress: progress,
-            size: 56,
-            strokeWidth: 6,
-            child: Text(
-              '${(progress * 100).toInt()}%',
-              style: Theme.of(context).textTheme.labelMedium?.copyWith(
-                    fontWeight: FontWeight.w600,
-                    color: AppColors.primary,
-                  ),
-            ),
+        CircularProgress(
+          progress: progress,
+          size: 56,
+          strokeWidth: 6,
+          child: Text(
+            '${(progress * 100).toInt()}%',
+            style: Theme.of(context).textTheme.labelMedium?.copyWith(
+                  fontWeight: FontWeight.w600,
+                  color: AppColors.primary,
+                ),
           ),
         ),
       ],

@@ -1,21 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/router/app_routes.dart';
 import '../../../../core/widgets/buttons/app_button.dart';
+import '../../../settings/data/repositories/settings_repository.dart';
 
 /// Onboarding page for first-time users
 /// From Issue #3 - Navigation & Routing
-class OnboardingPage extends StatefulWidget {
+class OnboardingPage extends ConsumerStatefulWidget {
   const OnboardingPage({super.key});
 
   @override
-  State<OnboardingPage> createState() => _OnboardingPageState();
+  ConsumerState<OnboardingPage> createState() => _OnboardingPageState();
 }
 
-class _OnboardingPageState extends State<OnboardingPage> {
+class _OnboardingPageState extends ConsumerState<OnboardingPage> {
   final PageController _pageController = PageController();
   int _currentPage = 0;
 
@@ -52,6 +54,15 @@ class _OnboardingPageState extends State<OnboardingPage> {
           'A safe environment for your children to learn.',
       color: AppColors.info,
     ),
+    _OnboardingData(
+      icon: Icons.star_rounded,
+      title: 'Premium Experience',
+      description:
+          'Try the first lesson of each chapter FREE! '
+          'Unlock full access to all stories, audio, and quizzes with Premium.',
+      color: AppColors.secondary,
+      isPremium: true,
+    ),
   ];
 
   @override
@@ -71,9 +82,12 @@ class _OnboardingPageState extends State<OnboardingPage> {
     }
   }
 
-  void _completeOnboarding() {
-    // TODO: Save onboarding completed flag
-    context.go(AppRoutes.home);
+  Future<void> _completeOnboarding() async {
+    final settingsRepo = ref.read(settingsRepositoryProvider);
+    await settingsRepo.setOnboardingCompleted(true);
+    if (mounted) {
+      context.go(AppRoutes.home);
+    }
   }
 
   @override
@@ -154,12 +168,14 @@ class _OnboardingData {
     required this.title,
     required this.description,
     required this.color,
+    this.isPremium = false,
   });
 
   final IconData icon;
   final String title;
   final String description;
   final Color color;
+  final bool isPremium;
 }
 
 class _OnboardingPageContent extends StatelessWidget {
@@ -203,8 +219,113 @@ class _OnboardingPageContent extends StatelessWidget {
                 ),
             textAlign: TextAlign.center,
           ),
+          // Premium comparison for the premium page
+          if (data.isPremium) ...[
+            const SizedBox(height: Spacing.xl),
+            _PremiumComparisonWidget(),
+          ],
         ],
       ),
+    );
+  }
+}
+
+class _PremiumComparisonWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(Spacing.md),
+      decoration: BoxDecoration(
+        color: AppColors.surfaceVariant,
+        borderRadius: BorderRadius.circular(AppRadius.lg),
+      ),
+      child: Column(
+        children: [
+          _ComparisonRow(
+            feature: 'First lesson of each chapter',
+            isFree: true,
+            isPremium: true,
+          ),
+          const Divider(height: Spacing.md),
+          _ComparisonRow(
+            feature: 'All stories & lessons',
+            isFree: false,
+            isPremium: true,
+          ),
+          const Divider(height: Spacing.md),
+          _ComparisonRow(
+            feature: 'Audio narration',
+            isFree: false,
+            isPremium: true,
+          ),
+          const Divider(height: Spacing.md),
+          _ComparisonRow(
+            feature: 'Interactive quizzes',
+            isFree: false,
+            isPremium: true,
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _ComparisonRow extends StatelessWidget {
+  const _ComparisonRow({
+    required this.feature,
+    required this.isFree,
+    required this.isPremium,
+  });
+
+  final String feature;
+  final bool isFree;
+  final bool isPremium;
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Expanded(
+          flex: 2,
+          child: Text(
+            feature,
+            style: Theme.of(context).textTheme.bodySmall,
+          ),
+        ),
+        Expanded(
+          child: _CheckMark(isEnabled: isFree, label: 'Free'),
+        ),
+        Expanded(
+          child: _CheckMark(isEnabled: isPremium, label: 'Pro', isPro: true),
+        ),
+      ],
+    );
+  }
+}
+
+class _CheckMark extends StatelessWidget {
+  const _CheckMark({
+    required this.isEnabled,
+    required this.label,
+    this.isPro = false,
+  });
+
+  final bool isEnabled;
+  final String label;
+  final bool isPro;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Icon(
+          isEnabled ? Icons.check_circle : Icons.cancel,
+          color: isEnabled
+              ? (isPro ? AppColors.secondary : AppColors.success)
+              : AppColors.textHint,
+          size: 20,
+        ),
+      ],
     );
   }
 }

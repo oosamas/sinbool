@@ -1,0 +1,262 @@
+{
+  "chapter": {
+    "serverId": "prophet_idris",
+    "title": "Prophet Idris",
+    "titleArabic": "النبي إدريس",
+    "description": "The story of Prophet Idris, the truthful prophet who was raised to a high station",
+    "descriptionArabic": "قصة النبي إدريس، النبي الصادق الذي رُفع مكاناً علياً",
+    "iconName": "idris",
+    "colorHex": "#3949AB",
+    "sortOrder": 19
+  },
+  "lessons": [
+    {
+      "serverId": "prophet_idris_lesson_1",
+      "title": "An Early Prophet",
+      "titleArabic": "نبي مبكر",
+      "sortOrder": 1,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Prophet Idris lived long, long ago - in the early times of humanity. He was one of the first prophets after Adam. Some scholars say he was the great-grandfather of Prophet Nuh.",
+          "contentTextArabic": "عاش النبي إدريس منذ زمن بعيد جداً - في الأزمنة الأولى للبشرية. كان من أوائل الأنبياء بعد آدم. يقول بعض العلماء إنه كان جد النبي نوح الأكبر."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "The Quran mentions Idris in a beautiful way. Allah says: 'And mention in the Book, Idris. Indeed, he was a man of truth and a prophet.' These are the qualities that made him special.",
+          "contentTextArabic": "يذكر القرآن إدريس بطريقة جميلة. يقول الله: 'واذكر في الكتاب إدريس. إنه كان صديقاً نبياً.' هذه الصفات جعلته مميزاً."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "Being called 'Siddiq' (a man of truth) is a high honor. It means Idris was completely truthful in everything - his words, his actions, and his faith in Allah. He never lied or deceived.",
+          "contentTextArabic": "أن يُسمى 'صديقاً' هو شرف عظيم. يعني أن إدريس كان صادقاً تماماً في كل شيء - كلماته وأفعاله وإيمانه بالله. لم يكذب أو يخدع أبداً."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "Idris taught people to worship Allah alone. In those early days, many had forgotten the teachings of Adam. Idris reminded them of their Creator and called them back to the right path.",
+          "contentTextArabic": "علّم إدريس الناس عبادة الله وحده. في تلك الأيام الأولى، نسي كثيرون تعاليم آدم. ذكّرهم إدريس بخالقهم ودعاهم للعودة إلى الطريق الصحيح."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "He spent his life calling people to good and teaching them about Allah. He was patient with those who rejected him and continued his mission with dedication.",
+          "contentTextArabic": "قضى حياته يدعو الناس للخير ويعلمهم عن الله. كان صبوراً مع من رفضوه واستمر في رسالته بإخلاص."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "When did Prophet Idris live?",
+          "questionArabic": "متى عاش النبي إدريس؟",
+          "options": ["After Prophet Muhammad", "In the early times of humanity", "During the time of Musa", "After the flood of Nuh"],
+          "optionsArabic": ["بعد النبي محمد", "في الأزمنة الأولى للبشرية", "في زمن موسى", "بعد طوفان نوح"],
+          "correctIndex": 1,
+          "explanation": "Idris lived in the early times of humanity, as one of the first prophets after Adam.",
+          "explanationArabic": "عاش إدريس في الأزمنة الأولى للبشرية، كأحد أوائل الأنبياء بعد آدم."
+        },
+        {
+          "question": "What does 'Siddiq' mean?",
+          "questionArabic": "ماذا تعني كلمة 'صديق'؟",
+          "options": ["A king", "A man of truth", "A warrior", "A teacher"],
+          "optionsArabic": ["ملك", "رجل صادق", "محارب", "معلم"],
+          "correctIndex": 1,
+          "explanation": "Siddiq means 'a man of truth' - someone completely truthful in everything.",
+          "explanationArabic": "صديق تعني 'رجل صادق' - شخص صادق تماماً في كل شيء."
+        },
+        {
+          "question": "What did Idris teach people?",
+          "questionArabic": "ماذا علّم إدريس الناس؟",
+          "options": ["To worship idols", "To worship Allah alone", "To forget about religion", "To fight each other"],
+          "optionsArabic": ["عبادة الأصنام", "عبادة الله وحده", "نسيان الدين", "قتال بعضهم البعض"],
+          "correctIndex": 1,
+          "explanation": "Idris taught people to worship Allah alone and reminded them of their Creator.",
+          "explanationArabic": "علّم إدريس الناس عبادة الله وحده وذكّرهم بخالقهم."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_idris_lesson_2",
+      "title": "A Man of Knowledge",
+      "titleArabic": "رجل علم",
+      "sortOrder": 2,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Prophet Idris was known for his great knowledge. Some scholars say he was the first person after Adam to write with a pen. Allah taught him many things that people didn't know before.",
+          "contentTextArabic": "عُرف النبي إدريس بعلمه الكبير. يقول بعض العلماء إنه كان أول شخص بعد آدم يكتب بالقلم. علّمه الله أشياء كثيرة لم يعرفها الناس من قبل."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "He is said to have studied the stars and understood the patterns in the sky. He taught people about measuring time and understanding the seasons. This knowledge helped them in their daily lives.",
+          "contentTextArabic": "يُقال إنه درس النجوم وفهم الأنماط في السماء. علّم الناس قياس الوقت وفهم الفصول. ساعدهم هذا العلم في حياتهم اليومية."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "He also taught people useful skills like sewing clothes. Before him, people wore animal skins. Idris showed them how to make proper clothing. He used his knowledge to help others.",
+          "contentTextArabic": "علّم الناس أيضاً مهارات مفيدة مثل خياطة الملابس. قبله، كان الناس يلبسون جلود الحيوانات. أراهم إدريس كيف يصنعون ملابس حقيقية. استخدم علمه لمساعدة الآخرين."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "But most importantly, Idris used his knowledge to teach people about Allah. All his learning was in service of his faith. He showed that knowledge and faith go together.",
+          "contentTextArabic": "لكن الأهم، أن إدريس استخدم علمه لتعليم الناس عن الله. كل تعلمه كان في خدمة إيمانه. أظهر أن العلم والإيمان يسيران معاً."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "This teaches us that seeking knowledge is good, but we should use it for good purposes. Knowledge should bring us closer to Allah and help us serve others, not make us arrogant.",
+          "contentTextArabic": "هذا يعلمنا أن طلب العلم جيد، لكن يجب أن نستخدمه لأغراض جيدة. العلم يجب أن يقربنا من الله ويساعدنا على خدمة الآخرين، لا أن يجعلنا متكبرين."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What is Idris known for regarding writing?",
+          "questionArabic": "بماذا عُرف إدريس فيما يخص الكتابة؟",
+          "options": ["He never wrote", "He was the first to write with a pen after Adam", "He invented the computer", "He wrote only in Arabic"],
+          "optionsArabic": ["لم يكتب أبداً", "كان أول من كتب بالقلم بعد آدم", "اخترع الحاسوب", "كتب بالعربية فقط"],
+          "correctIndex": 1,
+          "explanation": "Some scholars say Idris was the first person after Adam to write with a pen.",
+          "explanationArabic": "يقول بعض العلماء إن إدريس كان أول شخص بعد آدم يكتب بالقلم."
+        },
+        {
+          "question": "What skill did Idris teach people about clothing?",
+          "questionArabic": "ما المهارة التي علمها إدريس للناس بخصوص الملابس؟",
+          "options": ["To go without clothes", "To sew and make proper clothing", "To buy expensive clothes", "To only wear silk"],
+          "optionsArabic": ["أن يذهبوا بدون ملابس", "خياطة وصنع ملابس حقيقية", "شراء ملابس غالية", "لبس الحرير فقط"],
+          "correctIndex": 1,
+          "explanation": "Idris taught people how to sew and make proper clothing instead of just wearing animal skins.",
+          "explanationArabic": "علّم إدريس الناس كيف يخيطون ويصنعون ملابس حقيقية بدلاً من مجرد لبس جلود الحيوانات."
+        },
+        {
+          "question": "How should we use knowledge according to Idris's example?",
+          "questionArabic": "كيف يجب أن نستخدم العلم حسب مثال إدريس؟",
+          "options": ["To become arrogant", "To serve Allah and help others", "To ignore everyone", "To show off"],
+          "optionsArabic": ["لنتكبر", "لخدمة الله ومساعدة الآخرين", "لتجاهل الجميع", "للتفاخر"],
+          "correctIndex": 1,
+          "explanation": "Idris used his knowledge to serve Allah and help others - this is how we should use knowledge.",
+          "explanationArabic": "استخدم إدريس علمه لخدمة الله ومساعدة الآخرين - هكذا يجب أن نستخدم العلم."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_idris_lesson_3",
+      "title": "Raised to a High Station",
+      "titleArabic": "رُفع مكاناً علياً",
+      "sortOrder": 3,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Allah honored Prophet Idris in a very special way. The Quran says: 'And We raised him to a high station.' This is a unique honor mentioned specifically for Idris.",
+          "contentTextArabic": "كرّم الله النبي إدريس بطريقة خاصة جداً. يقول القرآن: 'ورفعناه مكاناً علياً.' هذا شرف فريد ذُكر خصيصاً لإدريس."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Scholars have different opinions about what this means. Some say Allah raised his rank and status among people and prophets. Others say Allah physically raised him to the heavens.",
+          "contentTextArabic": "للعلماء آراء مختلفة حول معنى هذا. يقول بعضهم إن الله رفع مكانته بين الناس والأنبياء. ويقول آخرون إن الله رفعه جسدياً إلى السماوات."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "What we know for sure is that Allah honored Idris greatly. Whether it was a high rank in this world or being raised to the heavens, it was a special blessing from Allah.",
+          "contentTextArabic": "ما نعرفه بالتأكيد أن الله كرّم إدريس تكريماً عظيماً. سواء كان مكانة عالية في الدنيا أو رفعاً إلى السماوات، كانت نعمة خاصة من الله."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "When Prophet Muhammad went on the night journey (Isra and Mi'raj), he met Prophet Idris in the fourth heaven. Idris greeted him and welcomed him, saying 'Welcome, righteous brother and righteous prophet!'",
+          "contentTextArabic": "عندما ذهب النبي محمد في رحلة الإسراء والمعراج، التقى بالنبي إدريس في السماء الرابعة. رحب به إدريس قائلاً: 'مرحباً بالأخ الصالح والنبي الصالح!'"
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "This shows us that prophets are honored by Allah in special ways. When we follow their example in being truthful and devoted to Allah, we too can hope for Allah's honor and reward.",
+          "contentTextArabic": "هذا يُظهر لنا أن الأنبياء يُكرمون من الله بطرق خاصة. عندما نتبع مثالهم في الصدق والإخلاص لله، يمكننا أيضاً أن نأمل في تكريم الله ومكافأته."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What special honor does the Quran mention for Idris?",
+          "questionArabic": "ما التكريم الخاص الذي يذكره القرآن لإدريس؟",
+          "options": ["He was made a king", "He was raised to a high station", "He lived forever", "He became very rich"],
+          "optionsArabic": ["جُعل ملكاً", "رُفع مكاناً علياً", "عاش للأبد", "أصبح غنياً جداً"],
+          "correctIndex": 1,
+          "explanation": "Allah says in the Quran that He raised Idris to a high station - a special honor.",
+          "explanationArabic": "يقول الله في القرآن إنه رفع إدريس مكاناً علياً - تكريم خاص."
+        },
+        {
+          "question": "Where did Prophet Muhammad meet Idris during the night journey?",
+          "questionArabic": "أين التقى النبي محمد بإدريس في رحلة الإسراء؟",
+          "options": ["On earth", "In the fourth heaven", "In the first heaven", "On the moon"],
+          "optionsArabic": ["على الأرض", "في السماء الرابعة", "في السماء الأولى", "على القمر"],
+          "correctIndex": 1,
+          "explanation": "Prophet Muhammad met Idris in the fourth heaven during the Isra and Mi'raj.",
+          "explanationArabic": "التقى النبي محمد بإدريس في السماء الرابعة خلال الإسراء والمعراج."
+        },
+        {
+          "question": "How can we hope for Allah's honor like Idris?",
+          "questionArabic": "كيف يمكننا أن نأمل في تكريم الله مثل إدريس؟",
+          "options": ["By being arrogant", "By following the prophets' example in being truthful and devoted", "By ignoring Allah's commands", "By being lazy"],
+          "optionsArabic": ["بالتكبر", "باتباع مثال الأنبياء في الصدق والإخلاص", "بتجاهل أوامر الله", "بالكسل"],
+          "correctIndex": 1,
+          "explanation": "By following the prophets' example in being truthful and devoted to Allah.",
+          "explanationArabic": "باتباع مثال الأنبياء في الصدق والإخلاص لله."
+        }
+      ]
+    },
+    {
+      "serverId": "prophet_idris_lesson_4",
+      "title": "Lessons from Idris",
+      "titleArabic": "دروس من إدريس",
+      "sortOrder": 4,
+      "content": [
+        {
+          "pageNumber": 1,
+          "contentText": "Though the Quran mentions Idris briefly, his story contains important lessons. The first lesson is the importance of truthfulness. Idris was called 'Siddiq' - we should always strive to be truthful.",
+          "contentTextArabic": "رغم أن القرآن يذكر إدريس باختصار، قصته تحتوي على دروس مهمة. الدرس الأول هو أهمية الصدق. سُمي إدريس 'صديقاً' - يجب أن نسعى دائماً لنكون صادقين."
+        },
+        {
+          "pageNumber": 2,
+          "contentText": "Truthfulness is not just about not lying. It means being honest in everything - our words, our actions, our promises, and our faith. A truthful person is trusted by Allah and by people.",
+          "contentTextArabic": "الصدق ليس فقط عدم الكذب. يعني أن نكون أمناء في كل شيء - كلماتنا وأفعالنا ووعودنا وإيماننا. الشخص الصادق يثق به الله والناس."
+        },
+        {
+          "pageNumber": 3,
+          "contentText": "The second lesson is the value of knowledge. Idris was a scholar who used his knowledge for good. Islam encourages seeking knowledge - but always with the intention of pleasing Allah.",
+          "contentTextArabic": "الدرس الثاني هو قيمة العلم. كان إدريس عالماً استخدم علمه للخير. الإسلام يشجع على طلب العلم - لكن دائماً بنية إرضاء الله."
+        },
+        {
+          "pageNumber": 4,
+          "contentText": "The third lesson is patience in worship. Idris devoted his life to worshipping Allah and teaching others. He didn't get tired or give up. Patience in faith leads to success.",
+          "contentTextArabic": "الدرس الثالث هو الصبر في العبادة. كرّس إدريس حياته لعبادة الله وتعليم الآخرين. لم يتعب أو يستسلم. الصبر في الإيمان يقود للنجاح."
+        },
+        {
+          "pageNumber": 5,
+          "contentText": "Finally, we learn that Allah rewards His faithful servants in ways beyond imagination. Idris was raised to a high station. When we are faithful to Allah, He will honor us in ways we cannot even imagine.",
+          "contentTextArabic": "أخيراً، نتعلم أن الله يكافئ عباده المخلصين بطرق تفوق الخيال. رُفع إدريس مكاناً علياً. عندما نكون مخلصين لله، سيكرمنا بطرق لا نتخيلها."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does being 'Siddiq' (truthful) include?",
+          "questionArabic": "ماذا يشمل أن تكون 'صديقاً'؟",
+          "options": ["Only not lying", "Being honest in words, actions, promises, and faith", "Being quiet all the time", "Only speaking about religion"],
+          "optionsArabic": ["عدم الكذب فقط", "الأمانة في الكلام والأفعال والوعود والإيمان", "السكوت طوال الوقت", "التحدث عن الدين فقط"],
+          "correctIndex": 1,
+          "explanation": "Being truthful means being honest in everything - words, actions, promises, and faith.",
+          "explanationArabic": "الصدق يعني الأمانة في كل شيء - الكلام والأفعال والوعود والإيمان."
+        },
+        {
+          "question": "How should we seek knowledge according to Islam?",
+          "questionArabic": "كيف يجب أن نطلب العلم حسب الإسلام؟",
+          "options": ["To show off", "With the intention of pleasing Allah", "Only for money", "To become famous"],
+          "optionsArabic": ["للتفاخر", "بنية إرضاء الله", "للمال فقط", "للشهرة"],
+          "correctIndex": 1,
+          "explanation": "We should seek knowledge with the intention of pleasing Allah and using it for good.",
+          "explanationArabic": "يجب أن نطلب العلم بنية إرضاء الله واستخدامه للخير."
+        },
+        {
+          "question": "What happens when we are faithful to Allah?",
+          "questionArabic": "ماذا يحدث عندما نكون مخلصين لله؟",
+          "options": ["Nothing changes", "Allah honors us in ways we cannot imagine", "We become poor", "Life becomes harder"],
+          "optionsArabic": ["لا شيء يتغير", "يكرمنا الله بطرق لا نتخيلها", "نصبح فقراء", "الحياة تصبح أصعب"],
+          "correctIndex": 1,
+          "explanation": "When we are faithful to Allah, He honors us in ways beyond our imagination.",
+          "explanationArabic": "عندما نكون مخلصين لله، يكرمنا بطرق تفوق خيالنا."
+        }
+      ]
+    }
+  ]
+}

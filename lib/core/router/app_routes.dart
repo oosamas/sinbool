@@ -34,6 +34,11 @@ class AppRoutes {
   static const String privacyPolicy = '/privacy';
   static const String termsOfService = '/terms';
 
+  // Subscription
+  static const String paywall = '/paywall';
+  static const String promoCode = '/promo-code';
+  static const String subscriptionManagement = '/subscription';
+
   // Helper methods for parameterized routes
   static String chapterDetailPath(String chapterId) => '/chapters/$chapterId';
 
@@ -72,4 +77,7 @@ class RouteNames {
   static const String about = 'about';
   static const String privacyPolicy = 'privacyPolicy';
   static const String termsOfService = 'termsOfService';
+  static const String paywall = 'paywall';
+  static const String promoCode = 'promoCode';
+  static const String subscriptionManagement = 'subscriptionManagement';
 }

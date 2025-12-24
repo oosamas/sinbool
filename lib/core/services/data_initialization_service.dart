@@ -1,37 +1,20 @@
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-import '../../features/chapters/data/repositories/chapter_repository.dart';
-import '../../features/lessons/data/repositories/lesson_repository.dart';
+import 'content_loader_service.dart';
 
 part 'data_initialization_service.g.dart';
 
-/// Service for initializing sample data
+/// Service for initializing content data
 /// From Issue #5 - Content Domain
 class DataInitializationService {
-  DataInitializationService(this._chapterRepo, this._lessonRepo);
+  DataInitializationService(this._contentLoader);
 
-  final ChapterRepository _chapterRepo;
-  final LessonRepository _lessonRepo;
+  final ContentLoaderService _contentLoader;
 
-  /// Initialize sample data for development
+  /// Initialize content from JSON asset files
   Future<void> initializeSampleData() async {
-    // Insert sample chapters
-    await _chapterRepo.insertSampleData();
-
-    // Get all chapters and insert lessons for each
-    final chapters = await _chapterRepo.getAllChapters();
-    for (final chapter in chapters) {
-      await _lessonRepo.insertSampleLessons(chapter.id, chapter.serverId);
-
-      // Get lessons and insert content/quiz for first lesson
-      final lessons = await _lessonRepo.getLessonsForChapter(chapter.id);
-      if (lessons.isNotEmpty) {
-        await _lessonRepo.insertSampleContent(lessons.first.id);
-        if (lessons.first.hasQuiz) {
-          await _lessonRepo.insertSampleQuiz(lessons.first.id);
-        }
-      }
-    }
+    // Load all content from JSON files
+    await _contentLoader.loadAllContent();
   }
 }
 
@@ -40,9 +23,8 @@ class DataInitializationService {
 DataInitializationService dataInitializationService(
   DataInitializationServiceRef ref,
 ) {
-  final chapterRepo = ref.watch(chapterRepositoryProvider);
-  final lessonRepo = ref.watch(lessonRepositoryProvider);
-  return DataInitializationService(chapterRepo, lessonRepo);
+  final contentLoader = ref.watch(contentLoaderServiceProvider);
+  return DataInitializationService(contentLoader);
 }
 
 /// Initialize data on app start
