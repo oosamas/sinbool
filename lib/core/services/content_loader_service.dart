@@ -44,10 +44,15 @@ class ContentLoaderService {
 
   /// Force reload all content (clears existing and reloads from JSON)
   Future<void> forceReloadAllContent() async {
-    // Delete all existing content
+    // Delete all existing content in correct order (respect foreign key constraints)
+    // First delete tables that reference lessons
+    await _db.delete(_db.lessonProgress).go();
+    await _db.delete(_db.bookmarks).go();
     await _db.delete(_db.quizQuestions).go();
     await _db.delete(_db.lessonContent).go();
+    // Then delete lessons (which reference chapters)
     await _db.delete(_db.lessons).go();
+    // Finally delete chapters
     await _db.delete(_db.chapters).go();
 
     // Reload everything
