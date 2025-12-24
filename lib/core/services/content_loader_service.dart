@@ -16,18 +16,16 @@ class ContentLoaderService {
   final AppDatabase _db;
 
   // Content version - increment this when content JSON files change
-  static const int _contentVersion = 2;
+  static const int _contentVersion = 3;
   static const String _contentVersionKey = 'content_version';
 
-  /// Check if content needs to be reloaded (version changed)
+  /// Check if content needs to be reloaded (version changed or missing content)
   Future<bool> _needsContentReload() async {
-    final settings = await _db.select(_db.appSettings).getSingleOrNull();
-    if (settings == null) return true;
-
-    // Check stored version in settings metadata or use default check
-    // For now, we'll force reload by checking lesson count
     final chapters = await _db.select(_db.chapters).get();
-    if (chapters.isEmpty) return true;
+    if (chapters.isEmpty) {
+      print('ContentLoader: No chapters found - need reload');
+      return true;
+    }
 
     // Check if any chapter has fewer lessons than expected (indicates stale data)
     for (final chapter in chapters) {
@@ -35,10 +33,23 @@ class ContentLoaderService {
             ..where((t) => t.chapterId.equals(chapter.id)))
           .get();
       if (lessons.length < chapter.lessonCount) {
+        print('ContentLoader: Chapter ${chapter.serverId} has ${lessons.length} lessons, expected ${chapter.lessonCount}');
         return true; // Mismatch - need reload
+      }
+
+      // Also check if lessons have content
+      for (final lesson in lessons) {
+        final content = await (_db.select(_db.lessonContent)
+              ..where((t) => t.lessonId.equals(lesson.id)))
+            .get();
+        if (content.isEmpty) {
+          print('ContentLoader: Lesson ${lesson.serverId} (id=${lesson.id}) has no content - need reload');
+          return true;
+        }
       }
     }
 
+    print('ContentLoader: All content present, no reload needed');
     return false;
   }
 
@@ -277,7 +288,7 @@ class ContentLoaderService {
 
     // Load content pages
     final contentList = lessonData['content'] as List<dynamic>?;
-    if (contentList != null) {
+    if (contentList != null && contentList.isNotEmpty) {
       // Delete existing content for this lesson
       await (_db.delete(_db.lessonContent)
             ..where((t) => t.lessonId.equals(lessonId)))
@@ -300,6 +311,9 @@ class ContentLoaderService {
               ),
             );
       }
+      print('ContentLoader: Loaded ${contentList.length} pages for lesson $serverId (id=$lessonId)');
+    } else {
+      print('ContentLoader: WARNING - No content found in JSON for lesson $serverId');
     }
 
     // Load quiz questions

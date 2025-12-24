@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -371,14 +372,27 @@ class _LessonDetailContentState extends ConsumerState<_LessonDetailContent> {
       return;
     }
 
-    // Get lesson content and read it aloud
-    final contentAsync = ref.read(lessonContentProvider(lesson.id));
-    final content = contentAsync.valueOrNull;
+    // Show loading indicator
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        content: Text('Loading story content...'),
+        duration: Duration(seconds: 1),
+      ),
+    );
 
-    if (content == null || content.isEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('No content available to read')),
-      );
+    // Get lesson content from repository (await the future)
+    final repository = ref.read(lessonRepositoryProvider);
+    debugPrint('TTS: Fetching content for lesson.id=${lesson.id}, serverId=${lesson.serverId}');
+    final content = await repository.getContentForLesson(lesson.id);
+    debugPrint('TTS: Found ${content.length} content pages');
+
+    if (content.isEmpty) {
+      debugPrint('TTS: No content found!');
+      if (context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('No content available to read')),
+        );
+      }
       return;
     }
 
@@ -400,19 +414,21 @@ class _LessonDetailContentState extends ConsumerState<_LessonDetailContent> {
     }).join('\n\n');
 
     // Show confirmation and start reading
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Row(
-          children: [
-            const Icon(Icons.record_voice_over, color: Colors.white),
-            const SizedBox(width: Spacing.sm),
-            Expanded(child: Text('Reading "${lesson.title}"...')),
-          ],
+    if (context.mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Row(
+            children: [
+              const Icon(Icons.record_voice_over, color: Colors.white),
+              const SizedBox(width: Spacing.sm),
+              Expanded(child: Text('Reading "${lesson.title}"...')),
+            ],
+          ),
+          backgroundColor: AppColors.secondary,
+          duration: const Duration(seconds: 2),
         ),
-        backgroundColor: AppColors.secondary,
-        duration: const Duration(seconds: 2),
-      ),
-    );
+      );
+    }
 
     await ttsService.speak(allText);
   }
