@@ -1,13 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/widgets/buttons/app_button.dart';
 import '../../../../core/widgets/progress/progress_bar.dart';
+import '../../../settings/presentation/controllers/settings_controller.dart';
+import '../../data/repositories/lesson_repository.dart';
+import '../../domain/entities/lesson_entity.dart';
 
 /// Quiz page for testing knowledge
-/// From Issue #3 - Navigation & Routing
-class QuizPage extends StatefulWidget {
+/// Loads actual quiz content from the lesson database
+class QuizPage extends ConsumerStatefulWidget {
   const QuizPage({
     required this.chapterId,
     required this.lessonId,
@@ -18,72 +23,37 @@ class QuizPage extends StatefulWidget {
   final String lessonId;
 
   @override
-  State<QuizPage> createState() => _QuizPageState();
+  ConsumerState<QuizPage> createState() => _QuizPageState();
 }
 
-class _QuizPageState extends State<QuizPage> {
+class _QuizPageState extends ConsumerState<QuizPage> {
   int _currentQuestion = 0;
   int? _selectedAnswer;
   bool _answered = false;
   int _correctAnswers = 0;
   bool _quizCompleted = false;
+  bool _showExplanation = false;
 
-  final List<_QuizQuestion> _questions = [
-    _QuizQuestion(
-      question: 'What is the most important thing the Prophet taught us?',
-      options: [
-        'To be kind to others',
-        'To worship only Allah',
-        'To pray sometimes',
-        'To be rich',
-      ],
-      correctIndex: 1,
-    ),
-    _QuizQuestion(
-      question: 'How many times a day should Muslims pray?',
-      options: ['3 times', '4 times', '5 times', '2 times'],
-      correctIndex: 2,
-    ),
-    _QuizQuestion(
-      question: 'What should we say before eating?',
-      options: [
-        'Alhamdulillah',
-        'Bismillah',
-        'SubhanAllah',
-        'Assalamu Alaikum',
-      ],
-      correctIndex: 1,
-    ),
-    _QuizQuestion(
-      question: 'What does patience mean?',
-      options: [
-        'Getting angry quickly',
-        'Waiting calmly and trusting Allah',
-        'Running away from problems',
-        'Complaining all the time',
-      ],
-      correctIndex: 1,
-    ),
-  ];
-
-  void _selectAnswer(int index) {
+  void _selectAnswer(int index, List<QuizQuestionEntity> questions) {
     if (_answered) return;
 
     setState(() {
       _selectedAnswer = index;
       _answered = true;
-      if (index == _questions[_currentQuestion].correctIndex) {
+      _showExplanation = true;
+      if (index == questions[_currentQuestion].correctIndex) {
         _correctAnswers++;
       }
     });
   }
 
-  void _nextQuestion() {
-    if (_currentQuestion < _questions.length - 1) {
+  void _nextQuestion(List<QuizQuestionEntity> questions) {
+    if (_currentQuestion < questions.length - 1) {
       setState(() {
         _currentQuestion++;
         _selectedAnswer = null;
         _answered = false;
+        _showExplanation = false;
       });
     } else {
       setState(() => _quizCompleted = true);
@@ -97,34 +67,197 @@ class _QuizPageState extends State<QuizPage> {
       _answered = false;
       _correctAnswers = 0;
       _quizCompleted = false;
+      _showExplanation = false;
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    if (_quizCompleted) {
-      return _buildResultsScreen();
-    }
+    // Get the lesson first to get its database ID
+    final lessonAsync = ref.watch(lessonProvider(widget.lessonId));
 
-    final question = _questions[_currentQuestion];
-    final progress = (_currentQuestion + 1) / _questions.length;
+    return lessonAsync.when(
+      data: (lesson) {
+        if (lesson == null) {
+          return _buildNotFound(context);
+        }
+        return _buildQuizContent(context, lesson);
+      },
+      loading: () => const Scaffold(
+        body: Center(child: CircularProgressIndicator()),
+      ),
+      error: (error, stack) => Scaffold(
+        appBar: AppBar(title: const Text('Quiz')),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Icon(Icons.error_outline, size: 48, color: AppColors.error),
+              const SizedBox(height: Spacing.md),
+              const Text('Failed to load quiz'),
+              const SizedBox(height: Spacing.md),
+              ElevatedButton(
+                onPressed: () => ref.invalidate(lessonProvider(widget.lessonId)),
+                child: const Text('Retry'),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildNotFound(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Quiz')),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Icon(Icons.quiz_outlined, size: 64, color: AppColors.textHint),
+            const SizedBox(height: Spacing.md),
+            Text(
+              'Quiz not found',
+              style: Theme.of(context).textTheme.titleMedium,
+            ),
+            const SizedBox(height: Spacing.md),
+            ElevatedButton(
+              onPressed: () => context.pop(),
+              child: const Text('Go Back'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildQuizContent(BuildContext context, LessonEntity lesson) {
+    // Fetch quiz questions for this lesson
+    final quizAsync = ref.watch(quizQuestionsProvider(lesson.id));
+
+    return quizAsync.when(
+      data: (questions) {
+        if (questions.isEmpty) {
+          return _buildNoQuestions(context, lesson);
+        }
+
+        if (_quizCompleted) {
+          return _buildResultsScreen(context, lesson, questions);
+        }
+
+        return _buildQuizScreen(context, lesson, questions);
+      },
+      loading: () => const Scaffold(
+        body: Center(child: CircularProgressIndicator()),
+      ),
+      error: (error, stack) => Scaffold(
+        appBar: AppBar(title: const Text('Quiz')),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Icon(Icons.error_outline, size: 48, color: AppColors.error),
+              const SizedBox(height: Spacing.md),
+              Text('Failed to load questions: $error'),
+              const SizedBox(height: Spacing.md),
+              ElevatedButton(
+                onPressed: () => ref.invalidate(quizQuestionsProvider(lesson.id)),
+                child: const Text('Retry'),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildNoQuestions(BuildContext context, LessonEntity lesson) {
+    return Scaffold(
+      appBar: AppBar(title: Text('${lesson.title} Quiz')),
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.all(Spacing.lg),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Icon(Icons.quiz_outlined, size: 64, color: AppColors.textHint),
+              const SizedBox(height: Spacing.md),
+              Text(
+                'No quiz questions available',
+                style: Theme.of(context).textTheme.titleMedium,
+              ),
+              const SizedBox(height: Spacing.sm),
+              Text(
+                'This lesson doesn\'t have a quiz yet.',
+                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                      color: AppColors.textSecondary,
+                    ),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: Spacing.xl),
+              AppButton(
+                text: 'Go Back',
+                onPressed: () => context.pop(),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildQuizScreen(
+    BuildContext context,
+    LessonEntity lesson,
+    List<QuizQuestionEntity> questions,
+  ) {
+    final question = questions[_currentQuestion];
+    final progress = (_currentQuestion + 1) / questions.length;
+
+    // Check language setting for Arabic support
+    final settingsState = ref.watch(settingsControllerProvider);
+    final isArabic = settingsState.settings.language == 'ar';
+
+    // Get localized content
+    final questionText = isArabic && question.questionArabic != null
+        ? question.questionArabic!
+        : question.question;
+    final options = isArabic && question.optionsArabic != null
+        ? question.optionsArabic!
+        : question.options;
+    final explanation = isArabic && question.explanationArabic != null
+        ? question.explanationArabic
+        : question.explanation;
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Quiz'),
+        title: Text(lesson.title),
         actions: [
           Center(
             child: Padding(
               padding: const EdgeInsets.only(right: Spacing.md),
-              child: Text(
-                '${_currentQuestion + 1}/${_questions.length}',
-                style: Theme.of(context).textTheme.titleMedium,
+              child: Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: Spacing.md,
+                  vertical: Spacing.xs,
+                ),
+                decoration: BoxDecoration(
+                  color: AppColors.primary.withValues(alpha: 0.1),
+                  borderRadius: BorderRadius.circular(AppRadius.md),
+                ),
+                child: Text(
+                  '${_currentQuestion + 1}/${questions.length}',
+                  style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                        color: AppColors.primary,
+                        fontWeight: FontWeight.bold,
+                      ),
+                ),
               ),
             ),
           ),
         ],
       ),
-      body: Padding(
+      body: SingleChildScrollView(
         padding: const EdgeInsets.all(Spacing.lg),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -133,31 +266,56 @@ class _QuizPageState extends State<QuizPage> {
             AppProgressBar(progress: progress),
             const SizedBox(height: Spacing.xl),
 
-            // Question
-            Text(
-              question.question,
-              style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                    fontWeight: FontWeight.bold,
+            // Question card
+            Container(
+              padding: const EdgeInsets.all(Spacing.lg),
+              decoration: BoxDecoration(
+                color: AppColors.primary.withValues(alpha: 0.05),
+                borderRadius: BorderRadius.circular(AppRadius.lg),
+                border: Border.all(
+                  color: AppColors.primary.withValues(alpha: 0.2),
+                ),
+              ),
+              child: Column(
+                children: [
+                  Icon(
+                    Icons.help_outline,
+                    size: 32,
+                    color: AppColors.primary,
                   ),
+                  const SizedBox(height: Spacing.md),
+                  Text(
+                    questionText,
+                    style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
+                    textAlign: TextAlign.center,
+                    textDirection: isArabic ? TextDirection.rtl : TextDirection.ltr,
+                  ),
+                ],
+              ),
             ),
             const SizedBox(height: Spacing.xl),
 
             // Options
-            ...List.generate(question.options.length, (index) {
+            ...List.generate(options.length, (index) {
               final isSelected = _selectedAnswer == index;
               final isCorrect = index == question.correctIndex;
               final showResult = _answered;
 
               Color? backgroundColor;
               Color? borderColor;
+              IconData? trailingIcon;
 
               if (showResult) {
                 if (isCorrect) {
                   backgroundColor = AppColors.success.withValues(alpha: 0.15);
                   borderColor = AppColors.success;
+                  trailingIcon = Icons.check_circle;
                 } else if (isSelected && !isCorrect) {
                   backgroundColor = AppColors.error.withValues(alpha: 0.15);
                   borderColor = AppColors.error;
+                  trailingIcon = Icons.cancel;
                 }
               } else if (isSelected) {
                 backgroundColor = AppColors.primary.withValues(alpha: 0.15);
@@ -167,22 +325,23 @@ class _QuizPageState extends State<QuizPage> {
               return Padding(
                 padding: const EdgeInsets.only(bottom: Spacing.md),
                 child: InkWell(
-                  onTap: () => _selectAnswer(index),
+                  onTap: () => _selectAnswer(index, questions),
                   borderRadius: BorderRadius.circular(AppRadius.lg),
                   child: Container(
                     padding: const EdgeInsets.all(Spacing.md),
                     decoration: BoxDecoration(
                       color: backgroundColor ?? AppColors.surfaceVariant,
                       borderRadius: BorderRadius.circular(AppRadius.lg),
-                      border: borderColor != null
-                          ? Border.all(color: borderColor, width: 2)
-                          : null,
+                      border: Border.all(
+                        color: borderColor ?? Colors.transparent,
+                        width: 2,
+                      ),
                     ),
                     child: Row(
                       children: [
                         Container(
-                          width: 32,
-                          height: 32,
+                          width: 36,
+                          height: 36,
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             color: isSelected
@@ -196,33 +355,36 @@ class _QuizPageState extends State<QuizPage> {
                               color: isSelected
                                   ? Colors.transparent
                                   : AppColors.textHint,
+                              width: 1.5,
                             ),
                           ),
                           child: Center(
-                            child: isSelected && showResult
-                                ? Icon(
-                                    isCorrect ? Icons.check : Icons.close,
-                                    size: 18,
-                                    color: Colors.white,
-                                  )
-                                : Text(
-                                    String.fromCharCode(65 + index),
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: isSelected
-                                          ? Colors.white
-                                          : AppColors.textSecondary,
-                                    ),
-                                  ),
+                            child: Text(
+                              String.fromCharCode(65 + index),
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: isSelected
+                                    ? Colors.white
+                                    : AppColors.textSecondary,
+                              ),
+                            ),
                           ),
                         ),
                         const SizedBox(width: Spacing.md),
                         Expanded(
                           child: Text(
-                            question.options[index],
-                            style: Theme.of(context).textTheme.bodyLarge,
+                            options[index],
+                            style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                                  fontWeight: isSelected ? FontWeight.w600 : null,
+                                ),
+                            textDirection: isArabic ? TextDirection.rtl : TextDirection.ltr,
                           ),
                         ),
+                        if (showResult && trailingIcon != null)
+                          Icon(
+                            trailingIcon,
+                            color: isCorrect ? AppColors.success : AppColors.error,
+                          ),
                       ],
                     ),
                   ),
@@ -230,15 +392,50 @@ class _QuizPageState extends State<QuizPage> {
               );
             }),
 
-            const Spacer(),
+            // Explanation (shown after answering)
+            if (_showExplanation && explanation != null) ...[
+              const SizedBox(height: Spacing.md),
+              Container(
+                padding: const EdgeInsets.all(Spacing.md),
+                decoration: BoxDecoration(
+                  color: AppColors.info.withValues(alpha: 0.1),
+                  borderRadius: BorderRadius.circular(AppRadius.md),
+                  border: Border.all(
+                    color: AppColors.info.withValues(alpha: 0.3),
+                  ),
+                ),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Icon(
+                      Icons.lightbulb_outline,
+                      color: AppColors.info,
+                      size: 20,
+                    ),
+                    const SizedBox(width: Spacing.sm),
+                    Expanded(
+                      child: Text(
+                        explanation,
+                        style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                              color: AppColors.info,
+                            ),
+                        textDirection: isArabic ? TextDirection.rtl : TextDirection.ltr,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+
+            const SizedBox(height: Spacing.xl),
 
             // Next button
             if (_answered)
               AppButton(
-                text: _currentQuestion < _questions.length - 1
+                text: _currentQuestion < questions.length - 1
                     ? 'Next Question'
                     : 'See Results',
-                onPressed: _nextQuestion,
+                onPressed: () => _nextQuestion(questions),
               ),
           ],
         ),
@@ -246,9 +443,39 @@ class _QuizPageState extends State<QuizPage> {
     );
   }
 
-  Widget _buildResultsScreen() {
-    final percentage = (_correctAnswers / _questions.length * 100).round();
+  Widget _buildResultsScreen(
+    BuildContext context,
+    LessonEntity lesson,
+    List<QuizQuestionEntity> questions,
+  ) {
+    final percentage = (_correctAnswers / questions.length * 100).round();
     final passed = percentage >= 70;
+
+    String resultEmoji;
+    String resultMessage;
+    Color resultColor;
+
+    if (percentage == 100) {
+      resultEmoji = '🌟';
+      resultMessage = 'Perfect! Mashallah!';
+      resultColor = AppColors.success;
+    } else if (percentage >= 80) {
+      resultEmoji = '🎉';
+      resultMessage = 'Excellent work!';
+      resultColor = AppColors.success;
+    } else if (percentage >= 70) {
+      resultEmoji = '👍';
+      resultMessage = 'Good job!';
+      resultColor = AppColors.success;
+    } else if (percentage >= 50) {
+      resultEmoji = '📚';
+      resultMessage = 'Keep learning!';
+      resultColor = AppColors.warning;
+    } else {
+      resultEmoji = '💪';
+      resultMessage = 'Try again!';
+      resultColor = AppColors.warning;
+    }
 
     return Scaffold(
       appBar: AppBar(title: const Text('Quiz Results')),
@@ -257,59 +484,67 @@ class _QuizPageState extends State<QuizPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Result icon
-            Container(
-              width: 120,
-              height: 120,
-              decoration: BoxDecoration(
-                color: (passed ? AppColors.success : AppColors.warning)
-                    .withValues(alpha: 0.15),
-                shape: BoxShape.circle,
-              ),
-              child: Icon(
-                passed ? Icons.celebration : Icons.refresh,
-                size: 64,
-                color: passed ? AppColors.success : AppColors.warning,
-              ),
+            // Result emoji
+            Text(
+              resultEmoji,
+              style: const TextStyle(fontSize: 80),
             ),
-            const SizedBox(height: Spacing.xl),
+            const SizedBox(height: Spacing.lg),
 
             // Result text
             Text(
-              passed ? 'Great Job!' : 'Keep Learning!',
+              resultMessage,
               style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                     fontWeight: FontWeight.bold,
+                    color: resultColor,
                   ),
             ),
             const SizedBox(height: Spacing.md),
 
             // Score
             Text(
-              'You got $_correctAnswers out of ${_questions.length} correct!',
+              'You got $_correctAnswers out of ${questions.length} correct!',
               style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                     color: AppColors.textSecondary,
                   ),
             ),
-            const SizedBox(height: Spacing.sm),
+            const SizedBox(height: Spacing.lg),
 
-            // Percentage
-            Text(
-              '$percentage%',
-              style: Theme.of(context).textTheme.displayMedium?.copyWith(
-                    fontWeight: FontWeight.bold,
-                    color: passed ? AppColors.success : AppColors.warning,
-                  ),
+            // Percentage circle
+            Container(
+              width: 120,
+              height: 120,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: resultColor.withValues(alpha: 0.15),
+                border: Border.all(color: resultColor, width: 4),
+              ),
+              child: Center(
+                child: Text(
+                  '$percentage%',
+                  style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                        fontWeight: FontWeight.bold,
+                        color: resultColor,
+                      ),
+                ),
+              ),
             ),
             const SizedBox(height: Spacing.xl),
 
-            // Message
-            Text(
-              passed
-                  ? 'Mashallah! You have learned well. Keep up the great work!'
-                  : 'Don\'t worry! Learning takes time. Try reading the story '
-                      'again and come back for another try.',
-              style: Theme.of(context).textTheme.bodyMedium,
-              textAlign: TextAlign.center,
+            // Encouragement message
+            Container(
+              padding: const EdgeInsets.all(Spacing.md),
+              decoration: BoxDecoration(
+                color: AppColors.surfaceVariant,
+                borderRadius: BorderRadius.circular(AppRadius.md),
+              ),
+              child: Text(
+                passed
+                    ? 'Mashallah! You have learned the lesson well. Keep up the great work and continue learning about our beautiful faith!'
+                    : 'Don\'t worry! Learning takes time. Try reading the story again and come back for another try. You can do it!',
+                style: Theme.of(context).textTheme.bodyMedium,
+                textAlign: TextAlign.center,
+              ),
             ),
             const SizedBox(height: Spacing.xl),
 
@@ -320,26 +555,18 @@ class _QuizPageState extends State<QuizPage> {
                 onPressed: _restartQuiz,
               ),
               const SizedBox(height: Spacing.md),
-            ],
-            AppOutlinedButton(
-              text: passed ? 'Continue' : 'Back to Lesson',
-              onPressed: () => Navigator.of(context).pop(),
-            ),
+              AppOutlinedButton(
+                text: 'Back to Lesson',
+                onPressed: () => context.pop(),
+              ),
+            ] else
+              AppButton(
+                text: 'Continue',
+                onPressed: () => context.pop(),
+              ),
           ],
         ),
       ),
     );
   }
-}
-
-class _QuizQuestion {
-  const _QuizQuestion({
-    required this.question,
-    required this.options,
-    required this.correctIndex,
-  });
-
-  final String question;
-  final List<String> options;
-  final int correctIndex;
 }
