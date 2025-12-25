@@ -103,11 +103,21 @@ class _LessonDetailContent extends ConsumerStatefulWidget {
 
 class _LessonDetailContentState extends ConsumerState<_LessonDetailContent> {
   bool _isReadingAloud = false;
+  TtsService? _ttsService;
+
+  @override
+  void initState() {
+    super.initState();
+    // Cache reference to TTS service for use in dispose
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _ttsService = ref.read(ttsServiceProvider);
+    });
+  }
 
   @override
   void dispose() {
-    // Stop TTS when leaving
-    ref.read(ttsServiceProvider).stop();
+    // Stop TTS when leaving - use cached reference
+    _ttsService?.stop();
     super.dispose();
   }
 
@@ -404,12 +414,24 @@ class _LessonDetailContentState extends ConsumerState<_LessonDetailContent> {
     await ttsService.setPitch(1.0);
 
     // Combine all pages into one text with proper pauses
-    final allText = content.map((page) {
+    final rawText = content.map((page) {
       if (language == 'ar' && page.contentTextArabic != null) {
         return page.contentTextArabic!;
       }
       return page.contentText;
-    }).join('\n\n... ');
+    }).join('\n\n');
+
+    // Clean text for speech - removes Arabic script when reading in English
+    final cleanedText = ttsService.cleanTextForSpeech(rawText, language);
+
+    if (cleanedText.isEmpty) {
+      if (context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('No readable content available')),
+        );
+      }
+      return;
+    }
 
     // Show confirmation and start reading
     if (context.mounted) {
@@ -428,7 +450,7 @@ class _LessonDetailContentState extends ConsumerState<_LessonDetailContent> {
       );
     }
 
-    await ttsService.speak(allText);
+    await ttsService.speak(cleanedText);
   }
 }
 

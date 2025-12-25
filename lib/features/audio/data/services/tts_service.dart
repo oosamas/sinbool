@@ -227,32 +227,84 @@ class TtsService {
       final voices = await _flutterTts.getVoices as List<dynamic>;
       final localePrefix = locale.split('-')[0].toLowerCase();
 
-      // Find premium/enhanced voices for this locale
+      // Blacklist novelty/robotic voices
+      const blacklistedVoices = [
+        'trinoids', 'whisper', 'zarvox', 'bad news', 'bahh', 'bells',
+        'boing', 'bubbles', 'cellos', 'good news', 'hysterical',
+        'organ', 'superstar', 'wobble', 'jester', 'deranged',
+        'pipe organ', 'albert', 'fred', 'junior', 'kathy', 'princess',
+        'ralph', 'agnes', 'bruce',
+      ];
+
+      // Preferred natural voices for English
+      const preferredEnglishVoices = [
+        'samantha', 'karen', 'daniel', 'moira', 'tessa', 'fiona',
+        'alex', 'allison', 'ava', 'susan', 'tom', 'kate', 'oliver',
+        'serena', 'stephanie', 'victoria', 'evan', 'nathan', 'nicky',
+        'aaron', 'gordon', 'lee', 'malcolm',
+      ];
+
+      // Find voices for this locale
       final localeVoices = voices.where((voice) {
         final voiceLocale = (voice['locale'] ?? '').toString().toLowerCase();
-        return voiceLocale.startsWith(localePrefix);
+        final voiceName = (voice['name'] ?? '').toString().toLowerCase();
+
+        // Must match locale
+        if (!voiceLocale.startsWith(localePrefix)) return false;
+
+        // Filter out blacklisted novelty voices
+        for (final bad in blacklistedVoices) {
+          if (voiceName.contains(bad)) return false;
+        }
+
+        return true;
       }).toList();
 
       if (localeVoices.isEmpty) {
-        debugPrint('TTS: No voices found for locale $locale');
+        debugPrint('TTS: No suitable voices found for locale $locale');
         return;
       }
 
-      // Prefer enhanced/premium voices
+      // Find best voice - prefer enhanced/premium, then preferred names
       dynamic bestVoice;
+
+      // First try to find enhanced/premium voice
       for (final voice in localeVoices) {
         final name = (voice['name'] ?? '').toString().toLowerCase();
         final id = (voice['identifier'] ?? '').toString().toLowerCase();
         if (name.contains('enhanced') || name.contains('premium') ||
-            id.contains('enhanced') || id.contains('premium') ||
-            id.contains('compact') == false) {
+            id.contains('enhanced') || id.contains('premium')) {
           bestVoice = voice;
+          debugPrint('TTS: Found enhanced voice: $name');
           break;
         }
       }
 
-      // If no premium voice, use first available
-      bestVoice ??= localeVoices.first;
+      // If no enhanced, try preferred voices
+      if (bestVoice == null && localePrefix == 'en') {
+        for (final preferred in preferredEnglishVoices) {
+          for (final voice in localeVoices) {
+            final name = (voice['name'] ?? '').toString().toLowerCase();
+            if (name.contains(preferred)) {
+              bestVoice = voice;
+              break;
+            }
+          }
+          if (bestVoice != null) break;
+        }
+      }
+
+      // Fall back to first non-compact voice, or first available
+      if (bestVoice == null) {
+        for (final voice in localeVoices) {
+          final id = (voice['identifier'] ?? '').toString().toLowerCase();
+          if (!id.contains('compact')) {
+            bestVoice = voice;
+            break;
+          }
+        }
+        bestVoice ??= localeVoices.first;
+      }
 
       final voiceName = bestVoice['name']?.toString() ?? '';
       if (voiceName.isNotEmpty) {
@@ -263,6 +315,25 @@ class TtsService {
     } catch (e) {
       debugPrint('TTS: Error selecting voice for $locale: $e');
     }
+  }
+
+  /// Clean text for TTS - remove Arabic script when reading English
+  String cleanTextForSpeech(String text, String language) {
+    if (language.startsWith('ar')) {
+      // For Arabic, keep Arabic text
+      return text;
+    }
+
+    // For English and other languages, remove Arabic script
+    // Arabic Unicode range: \u0600-\u06FF, \u0750-\u077F, \u08A0-\u08FF
+    String cleaned = text.replaceAll(RegExp(r'[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]+'), '');
+
+    // Clean up extra whitespace and newlines
+    cleaned = cleaned.replaceAll(RegExp(r'\n{3,}'), '\n\n');
+    cleaned = cleaned.replaceAll(RegExp(r'  +'), ' ');
+    cleaned = cleaned.trim();
+
+    return cleaned;
   }
 
   /// Set speech rate (0.0 to 1.0)
