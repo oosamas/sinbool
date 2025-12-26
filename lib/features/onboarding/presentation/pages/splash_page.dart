@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -49,21 +50,30 @@ class _SplashPageState extends ConsumerState<SplashPage>
   }
 
   Future<void> _navigateToNext() async {
-    // Initialize sample data for development
-    final dataService = ref.read(dataInitializationServiceProvider);
-    await dataService.initializeSampleData();
+    try {
+      // Initialize sample data for development
+      final dataService = ref.read(dataInitializationServiceProvider);
+      await dataService.initializeSampleData();
 
-    await Future.delayed(const Duration(seconds: 2));
-    if (mounted) {
-      final settingsRepo = ref.read(settingsRepositoryProvider);
-      final settings = await settingsRepo.getSettings();
-
+      await Future.delayed(const Duration(seconds: 2));
       if (mounted) {
-        if (settings.onboardingCompleted) {
-          context.go(AppRoutes.home);
-        } else {
-          context.go(AppRoutes.onboarding);
+        final settingsRepo = ref.read(settingsRepositoryProvider);
+        final settings = await settingsRepo.getSettings();
+
+        if (mounted) {
+          if (settings.onboardingCompleted) {
+            context.go(AppRoutes.home);
+          } else {
+            context.go(AppRoutes.onboarding);
+          }
         }
+      }
+    } catch (e) {
+      // If initialization fails, still navigate to onboarding
+      debugPrint('Splash: Initialization error: $e');
+      await Future.delayed(const Duration(seconds: 2));
+      if (mounted) {
+        context.go(AppRoutes.onboarding);
       }
     }
   }

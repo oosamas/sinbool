@@ -220,13 +220,24 @@ class _ParentalPinPageState extends ConsumerState<ParentalPinPage> {
             child: const Text('Cancel'),
           ),
           TextButton(
-            onPressed: () {
-              ref.read(settingsControllerProvider.notifier).removeParentalPin();
-              Navigator.of(context).pop(); // Close dialog
-              Navigator.of(context).pop(); // Go back
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('PIN removed')),
-              );
+            onPressed: () async {
+              try {
+                await ref.read(settingsControllerProvider.notifier).removeParentalPin();
+                if (context.mounted) {
+                  Navigator.of(context).pop(); // Close dialog
+                  Navigator.of(context).pop(); // Go back
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('PIN removed')),
+                  );
+                }
+              } catch (e) {
+                if (context.mounted) {
+                  Navigator.of(context).pop(); // Close dialog
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text('Failed to remove PIN: $e')),
+                  );
+                }
+              }
             },
             style: TextButton.styleFrom(foregroundColor: AppColors.error),
             child: const Text('Remove'),

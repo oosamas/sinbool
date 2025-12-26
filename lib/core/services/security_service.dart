@@ -141,4 +141,5 @@ class SecureStorageKeys {
   static const String deviceId = 'device_id';
   static const String sessionToken = 'session_token';
   static const String lastSyncTime = 'last_sync_time';
+  static const String googleCloudApiKey = 'google_cloud_api_key';
 }

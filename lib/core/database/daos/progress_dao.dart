@@ -210,4 +210,19 @@ class ProgressDao extends DatabaseAccessor<AppDatabase>
     final progress = await getLessonProgress(lessonId);
     return progress?.isCompleted ?? false;
   }
+
+  /// Get total lessons count in the app
+  Future<int> getTotalLessonsCount() async {
+    final count = countAll();
+    final query = selectOnly(lessons)..addColumns([count]);
+    final result = await query.getSingle();
+    return result.read(count) ?? 0;
+  }
+
+  /// Watch total lessons count
+  Stream<int> watchTotalLessonsCount() {
+    final count = countAll();
+    final query = selectOnly(lessons)..addColumns([count]);
+    return query.watchSingle().map((row) => row.read(count) ?? 0);
+  }
 }

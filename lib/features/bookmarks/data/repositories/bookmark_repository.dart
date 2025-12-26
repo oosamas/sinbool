@@ -60,6 +60,8 @@ class BookmarkRepository {
     return BookmarkEntity(
       id: data.bookmark.id,
       lessonId: data.lesson.id,
+      lessonServerId: data.lesson.serverId,
+      chapterServerId: data.chapter.serverId,
       lessonTitle: data.lesson.title,
       lessonTitleArabic: data.lesson.titleArabic,
       chapterTitle: data.chapter.title,

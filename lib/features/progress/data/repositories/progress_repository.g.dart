@@ -221,5 +221,24 @@ final achievementsProvider =
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element
 typedef AchievementsRef = AutoDisposeStreamProviderRef<List<AchievementEntity>>;
+String _$totalLessonsCountHash() => r'77470bdb6cb585a5d877d1887d81ba72e1ec679b';
+
+/// Total lessons count provider
+///
+/// Copied from [totalLessonsCount].
+@ProviderFor(totalLessonsCount)
+final totalLessonsCountProvider = AutoDisposeStreamProvider<int>.internal(
+  totalLessonsCount,
+  name: r'totalLessonsCountProvider',
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$totalLessonsCountHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
+typedef TotalLessonsCountRef = AutoDisposeStreamProviderRef<int>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

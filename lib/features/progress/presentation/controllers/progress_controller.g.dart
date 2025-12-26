@@ -7,7 +7,7 @@ part of 'progress_controller.dart';
 // **************************************************************************
 
 String _$progressControllerHash() =>
-    r'd5035254979d6b5ce2988b156bb5886b45e4966e';
+    r'd885e6ff5ad52bf35bb774534e861804b67bbc23';
 
 /// Progress controller for managing user progress state
 ///

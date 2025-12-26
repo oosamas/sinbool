@@ -84,15 +84,6 @@ class BookmarksPage extends ConsumerWidget {
                 ),
               )),
         ],
-        if (recentBookmarks.isEmpty && olderBookmarks.isEmpty)
-          ...state.bookmarks.map((bookmark) => Padding(
-                padding: const EdgeInsets.only(bottom: Spacing.md),
-                child: _BookmarkCard(
-                  bookmark: bookmark,
-                  onTap: () => _navigateToLesson(context, bookmark),
-                  onRemove: () => _removeBookmark(context, ref, bookmark),
-                ),
-              )),
         const SizedBox(height: Spacing.xl),
       ],
     );
@@ -108,8 +99,8 @@ class BookmarksPage extends ConsumerWidget {
   void _navigateToLesson(BuildContext context, BookmarkEntity bookmark) {
     context.push(
       AppRoutes.lessonDetailPath(
-        bookmark.lessonId.toString(),
-        bookmark.lessonId.toString(),
+        bookmark.chapterServerId,
+        bookmark.lessonServerId,
       ),
     );
   }
@@ -128,7 +119,7 @@ class BookmarksPage extends ConsumerWidget {
           onPressed: () {
             ref
                 .read(bookmarkControllerProvider.notifier)
-                .addBookmark(bookmark.lessonId);
+                .addBookmark(bookmark.lessonId, note: bookmark.note);
           },
         ),
       ),

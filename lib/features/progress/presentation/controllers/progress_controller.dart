@@ -11,7 +11,7 @@ class ProgressState {
   const ProgressState({
     required this.userProgress,
     required this.achievements,
-    this.totalLessons = 40, // Default total lessons in app
+    this.totalLessons = 0,
     this.isLoading = false,
     this.error,
   });
@@ -35,7 +35,7 @@ class ProgressState {
 
   /// Recently unlocked achievements (last 3)
   List<AchievementEntity> get recentAchievements {
-    return achievements.where((a) => a.isUnlocked).take(4).toList();
+    return achievements.where((a) => a.isUnlocked).take(3).toList();
   }
 
   /// Locked achievements for display
@@ -104,6 +104,17 @@ class ProgressController extends _$ProgressController {
         next.when(
           data: (achievements) {
             state = state.copyWith(achievements: achievements);
+          },
+          loading: () {},
+          error: (e, _) {},
+        );
+      });
+
+      // Watch total lessons count
+      ref.listen(totalLessonsCountProvider, (previous, next) {
+        next.when(
+          data: (count) {
+            state = state.copyWith(totalLessons: count);
           },
           loading: () {},
           error: (e, _) {},

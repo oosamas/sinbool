@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -6,6 +7,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/router/app_routes.dart';
 import '../../../../core/widgets/buttons/app_button.dart';
+import '../../../audio/data/services/cloud_tts_service.dart';
 import '../../../audio/data/services/tts_service.dart';
 import '../../../bookmarks/data/repositories/bookmark_repository.dart';
 import '../../../settings/presentation/controllers/settings_controller.dart';
@@ -373,11 +375,13 @@ class _LessonDetailContentState extends ConsumerState<_LessonDetailContent> {
 
   /// Handle tap on "Listen to Story" button
   Future<void> _handleListenTap(BuildContext context) async {
-    final ttsService = ref.read(ttsServiceProvider);
+    final cloudTtsService = ref.read(cloudTtsServiceProvider);
+    final deviceTtsService = ref.read(ttsServiceProvider);
 
-    // If already playing, stop
-    if (ttsService.isPlaying) {
-      await ttsService.stop();
+    // If already playing, stop both services
+    if (cloudTtsService.isPlaying || deviceTtsService.isPlaying) {
+      await cloudTtsService.stop();
+      await deviceTtsService.stop();
       return;
     }
 
@@ -406,13 +410,6 @@ class _LessonDetailContentState extends ConsumerState<_LessonDetailContent> {
     final settingsState = ref.read(settingsControllerProvider);
     final language = settingsState.settings.language;
 
-    // Configure TTS for natural storytelling voice
-    await ttsService.setLanguage(language);
-    // Natural speech rate - 0.5 is conversational pace
-    await ttsService.setSpeechRate(0.5);
-    // Keep pitch at 1.0 for natural tone
-    await ttsService.setPitch(1.0);
-
     // Combine all pages into one text with proper pauses
     final rawText = content.map((page) {
       if (language == 'ar' && page.contentTextArabic != null) {
@@ -422,7 +419,7 @@ class _LessonDetailContentState extends ConsumerState<_LessonDetailContent> {
     }).join('\n\n');
 
     // Clean text for speech - removes Arabic script when reading in English
-    final cleanedText = ttsService.cleanTextForSpeech(rawText, language);
+    final cleanedText = deviceTtsService.cleanTextForSpeech(rawText, language);
 
     if (cleanedText.isEmpty) {
       if (context.mounted) {
@@ -450,7 +447,27 @@ class _LessonDetailContentState extends ConsumerState<_LessonDetailContent> {
       );
     }
 
-    await ttsService.speak(cleanedText);
+    // Try Cloud TTS first (natural voices), fall back to device TTS
+    await cloudTtsService.ensureInitialized();
+    debugPrint('CloudTTS isConfigured: ${cloudTtsService.isConfigured}');
+
+    if (cloudTtsService.isConfigured) {
+      debugPrint('CloudTTS: Using Google Cloud TTS with WaveNet voice');
+      cloudTtsService.setLanguage(language);
+      final success = await cloudTtsService.speak(cleanedText);
+      if (success) {
+        debugPrint('CloudTTS: Successfully playing audio');
+        return;
+      }
+      debugPrint('CloudTTS: Failed, falling back to device TTS');
+    }
+
+    // Fall back to device TTS
+    debugPrint('Using device TTS (fallback)');
+    await deviceTtsService.setLanguage(language);
+    await deviceTtsService.setSpeechRate(0.5);
+    await deviceTtsService.setPitch(1.0);
+    await deviceTtsService.speak(cleanedText);
   }
 }
 

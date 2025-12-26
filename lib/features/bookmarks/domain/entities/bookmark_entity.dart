@@ -4,6 +4,8 @@ class BookmarkEntity {
   const BookmarkEntity({
     required this.id,
     required this.lessonId,
+    required this.lessonServerId,
+    required this.chapterServerId,
     required this.lessonTitle,
     this.lessonTitleArabic,
     required this.chapterTitle,
@@ -18,6 +20,8 @@ class BookmarkEntity {
 
   final int id;
   final int lessonId;
+  final String lessonServerId;
+  final String chapterServerId;
   final String lessonTitle;
   final String? lessonTitleArabic;
   final String chapterTitle;
@@ -73,6 +77,8 @@ class BookmarkEntity {
   BookmarkEntity copyWith({
     int? id,
     int? lessonId,
+    String? lessonServerId,
+    String? chapterServerId,
     String? lessonTitle,
     String? lessonTitleArabic,
     String? chapterTitle,
@@ -87,6 +93,8 @@ class BookmarkEntity {
     return BookmarkEntity(
       id: id ?? this.id,
       lessonId: lessonId ?? this.lessonId,
+      lessonServerId: lessonServerId ?? this.lessonServerId,
+      chapterServerId: chapterServerId ?? this.chapterServerId,
       lessonTitle: lessonTitle ?? this.lessonTitle,
       lessonTitleArabic: lessonTitleArabic ?? this.lessonTitleArabic,
       chapterTitle: chapterTitle ?? this.chapterTitle,

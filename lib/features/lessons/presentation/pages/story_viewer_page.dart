@@ -336,11 +336,14 @@ class _StoryViewerPageState extends ConsumerState<StoryViewerPage> {
   ) {
     // Initialize page controller to last viewed page
     if (_currentPage == 0 && lesson.lastPageViewed > 0 && lesson.lastPageViewed <= pages.length) {
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        if (_pageController.hasClients) {
-          _pageController.jumpToPage(lesson.lastPageViewed - 1);
-        }
-      });
+      final targetPage = lesson.lastPageViewed - 1;
+      if (targetPage >= 0 && targetPage < pages.length) {
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          if (_pageController.hasClients) {
+            _pageController.jumpToPage(targetPage);
+          }
+        });
+      }
     }
 
     return Scaffold(

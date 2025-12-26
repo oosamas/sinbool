@@ -186,16 +186,33 @@ class ContentLoaderService {
       final jsonString = await rootBundle.loadString(assetPath);
       final data = jsonDecode(jsonString) as Map<String, dynamic>;
       await _loadChapterContent(data);
+    } on FormatException catch (e) {
+      // JSON parsing error - this is a real error that should be visible
+      print('ContentLoader: JSON parse error in $assetPath: $e');
+      rethrow;
     } catch (e) {
-      // Asset might not exist yet, that's okay
-      print('Could not load content from $assetPath: $e');
+      // Asset might not exist yet or other errors
+      // Check if it's an asset not found error (contains 'Unable to load asset')
+      final errorMsg = e.toString();
+      if (errorMsg.contains('Unable to load asset')) {
+        print('ContentLoader: Asset not found $assetPath');
+      } else {
+        print('ContentLoader: Error loading $assetPath: $e');
+      }
     }
   }
 
   /// Load chapter content from parsed JSON data
   Future<void> _loadChapterContent(Map<String, dynamic> data) async {
-    final chapterData = data['chapter'] as Map<String, dynamic>;
-    final lessonsData = data['lessons'] as List<dynamic>;
+    final chapterData = data['chapter'];
+    final lessonsData = data['lessons'];
+
+    if (chapterData is! Map<String, dynamic>) {
+      throw FormatException('Invalid chapter data: expected Map, got ${chapterData.runtimeType}');
+    }
+    if (lessonsData is! List<dynamic>) {
+      throw FormatException('Invalid lessons data: expected List, got ${lessonsData.runtimeType}');
+    }
 
     // Check if chapter already exists
     final existingChapter = await (_db.select(_db.chapters)

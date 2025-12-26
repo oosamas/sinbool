@@ -76,6 +76,16 @@ class ProgressRepository {
     return _dao.isLessonCompleted(lessonId);
   }
 
+  /// Get total lessons count
+  Future<int> getTotalLessonsCount() async {
+    return _dao.getTotalLessonsCount();
+  }
+
+  /// Watch total lessons count
+  Stream<int> watchTotalLessonsCount() {
+    return _dao.watchTotalLessonsCount();
+  }
+
   /// Get achievements with current progress
   Future<List<AchievementEntity>> getAchievements() async {
     final progress = await getUserProgress();
@@ -189,4 +199,11 @@ Stream<LessonProgressEntity?> lessonProgress(
 Stream<List<AchievementEntity>> achievements(AchievementsRef ref) {
   final repo = ref.watch(progressRepositoryProvider);
   return repo.watchAchievements();
+}
+
+/// Total lessons count provider
+@riverpod
+Stream<int> totalLessonsCount(TotalLessonsCountRef ref) {
+  final repo = ref.watch(progressRepositoryProvider);
+  return repo.watchTotalLessonsCount();
 }

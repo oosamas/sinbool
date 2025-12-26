@@ -6,6 +6,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'app.dart';
 import 'core/services/error_handler_service.dart';
+import 'core/services/security_service.dart';
 import 'firebase_options.dart';
 import 'injection.dart';
 
@@ -50,6 +51,9 @@ Future<void> main() async {
     // Initialize dependencies
     await configureDependencies();
 
+    // Initialize Google Cloud TTS API key (if not already stored)
+    await _initializeCloudTts();
+
     ErrorHandlerService.instance.info('App initialization complete');
 
     runApp(
@@ -58,6 +62,34 @@ Future<void> main() async {
       ),
     );
   });
+}
+
+/// Initialize Google Cloud TTS with API key
+Future<void> _initializeCloudTts() async {
+  // Check if API key is already stored
+  final existingKey = await SecurityService.instance.readSecure(
+    SecureStorageKeys.googleCloudApiKey,
+  );
+
+  if (existingKey == null || existingKey.isEmpty) {
+    // Store the API key on first run
+    // API key should be provided via --dart-define=GOOGLE_CLOUD_API_KEY=your_key
+    const apiKey = String.fromEnvironment(
+      'GOOGLE_CLOUD_API_KEY',
+      defaultValue: '',
+    );
+    if (apiKey.isNotEmpty) {
+      await SecurityService.instance.storeSecure(
+        SecureStorageKeys.googleCloudApiKey,
+        apiKey,
+      );
+      if (kDebugMode) {
+        print('CloudTTS: API key initialized from environment');
+      }
+    } else if (kDebugMode) {
+      print('CloudTTS: No API key provided. Use --dart-define=GOOGLE_CLOUD_API_KEY=your_key');
+    }
+  }
 }
 
 /// Environment configuration
