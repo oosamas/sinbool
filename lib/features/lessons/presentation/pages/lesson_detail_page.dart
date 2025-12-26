@@ -104,7 +104,6 @@ class _LessonDetailContent extends ConsumerStatefulWidget {
 }
 
 class _LessonDetailContentState extends ConsumerState<_LessonDetailContent> {
-  bool _isReadingAloud = false;
   TtsService? _ttsService;
 
   @override

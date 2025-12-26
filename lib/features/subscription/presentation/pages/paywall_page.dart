@@ -203,7 +203,7 @@ class PaywallPage extends ConsumerWidget {
                       TextButton(
                         onPressed: state.isLoading
                             ? null
-                            : () => _handleRestore(context, controller),
+                            : () => _handleRestore(context, ref),
                         child: Text(
                           AppLocalizations.of(context)!.restorePurchases,
                           style: TextStyle(
@@ -289,10 +289,10 @@ class PaywallPage extends ConsumerWidget {
 
   Future<void> _handleRestore(
     BuildContext context,
-    SubscriptionController controller,
+    WidgetRef ref,
   ) async {
-    await controller.restorePurchases();
-    final state = controller.state;
+    await ref.read(subscriptionControllerProvider.notifier).restorePurchases();
+    final state = ref.read(subscriptionControllerProvider);
     if (context.mounted) {
       if (state.isSubscribed) {
         ScaffoldMessenger.of(context).showSnackBar(

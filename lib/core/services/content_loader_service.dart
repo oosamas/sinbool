@@ -15,10 +15,6 @@ class ContentLoaderService {
 
   final AppDatabase _db;
 
-  // Content version - increment this when content JSON files change
-  static const int _contentVersion = 3;
-  static const String _contentVersionKey = 'content_version';
-
   /// Check if content needs to be reloaded (version changed or missing content)
   Future<bool> _needsContentReload() async {
     final chapters = await _db.select(_db.chapters).get();
