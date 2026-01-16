@@ -225,6 +225,30 @@ class SettingsController extends _$SettingsController {
     }
   }
 
+  /// Set voice quality
+  Future<void> setVoiceQuality(VoiceQuality quality) async {
+    try {
+      await _repository.setVoiceQuality(quality);
+      state = state.copyWith(
+        settings: state.settings.copyWith(voiceQuality: quality),
+      );
+    } catch (e) {
+      state = state.copyWith(error: e.toString());
+    }
+  }
+
+  /// Set speech rate
+  Future<void> setSpeechRate(SpeechRate rate) async {
+    try {
+      await _repository.setSpeechRate(rate);
+      state = state.copyWith(
+        settings: state.settings.copyWith(speechRate: rate),
+      );
+    } catch (e) {
+      state = state.copyWith(error: e.toString());
+    }
+  }
+
   /// Mark onboarding completed
   Future<void> completeOnboarding() async {
     try {

@@ -14,6 +14,8 @@ class AppSettingsEntity {
     required this.audioAutoPlay,
     required this.allowPremiumContent,
     required this.allowAudioPlayback,
+    required this.voiceQuality,
+    required this.speechRate,
   });
 
   final ThemeMode themeMode;
@@ -26,6 +28,8 @@ class AppSettingsEntity {
   final bool audioAutoPlay;
   final bool allowPremiumContent;
   final bool allowAudioPlayback;
+  final VoiceQuality voiceQuality;
+  final SpeechRate speechRate;
 
   /// Get language display name
   String get languageDisplayName {
@@ -68,6 +72,8 @@ class AppSettingsEntity {
     audioAutoPlay: true,
     allowPremiumContent: true,
     allowAudioPlayback: true,
+    voiceQuality: VoiceQuality.standard,
+    speechRate: SpeechRate.normal,
   );
 
   AppSettingsEntity copyWith({
@@ -81,6 +87,8 @@ class AppSettingsEntity {
     bool? audioAutoPlay,
     bool? allowPremiumContent,
     bool? allowAudioPlayback,
+    VoiceQuality? voiceQuality,
+    SpeechRate? speechRate,
   }) {
     return AppSettingsEntity(
       themeMode: themeMode ?? this.themeMode,
@@ -93,6 +101,8 @@ class AppSettingsEntity {
       audioAutoPlay: audioAutoPlay ?? this.audioAutoPlay,
       allowPremiumContent: allowPremiumContent ?? this.allowPremiumContent,
       allowAudioPlayback: allowAudioPlayback ?? this.allowAudioPlayback,
+      voiceQuality: voiceQuality ?? this.voiceQuality,
+      speechRate: speechRate ?? this.speechRate,
     );
   }
 
@@ -111,6 +121,74 @@ enum FontSize {
   small,
   medium,
   large,
+}
+
+/// Voice quality enum for TTS
+enum VoiceQuality {
+  standard,  // Device TTS (free, works offline)
+  premium,   // Cloud TTS with neural voices (better quality, requires internet)
+}
+
+/// Speech rate enum for TTS
+enum SpeechRate {
+  slow,      // 0.35 - For younger children or learning
+  normal,    // 0.5 - Default storytelling pace
+  fast,      // 0.65 - For advanced readers
+}
+
+extension VoiceQualityExtension on VoiceQuality {
+  String get displayName {
+    switch (this) {
+      case VoiceQuality.standard:
+        return 'Standard';
+      case VoiceQuality.premium:
+        return 'Premium (Neural)';
+    }
+  }
+
+  String get description {
+    switch (this) {
+      case VoiceQuality.standard:
+        return 'Device voice, works offline';
+      case VoiceQuality.premium:
+        return 'Natural AI voice, requires internet';
+    }
+  }
+}
+
+extension SpeechRateExtension on SpeechRate {
+  String get displayName {
+    switch (this) {
+      case SpeechRate.slow:
+        return 'Slow';
+      case SpeechRate.normal:
+        return 'Normal';
+      case SpeechRate.fast:
+        return 'Fast';
+    }
+  }
+
+  String get description {
+    switch (this) {
+      case SpeechRate.slow:
+        return 'Great for younger children';
+      case SpeechRate.normal:
+        return 'Natural storytelling pace';
+      case SpeechRate.fast:
+        return 'For advanced readers';
+    }
+  }
+
+  double get rateValue {
+    switch (this) {
+      case SpeechRate.slow:
+        return 0.35;
+      case SpeechRate.normal:
+        return 0.5;
+      case SpeechRate.fast:
+        return 0.65;
+    }
+  }
 }
 
 /// Supported languages

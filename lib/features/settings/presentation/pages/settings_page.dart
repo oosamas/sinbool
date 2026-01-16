@@ -56,7 +56,7 @@ class SettingsPage extends ConsumerWidget {
                 _SettingsItem(
                   icon: Icons.volume_up,
                   title: 'Audio Settings',
-                  subtitle: settings.audioAutoPlay ? 'Auto-play enabled' : 'Auto-play disabled',
+                  subtitle: '${settings.voiceQuality.displayName} voice, ${settings.speechRate.displayName.toLowerCase()} speed',
                   onTap: () => _showAudioSettingsDialog(context, ref),
                 ),
 
@@ -346,18 +346,84 @@ class _AudioSettingsDialog extends ConsumerWidget {
 
     return AlertDialog(
       title: const Text('Audio Settings'),
-      content: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          SwitchListTile(
-            title: const Text('Auto-play audio'),
-            subtitle: const Text('Play audio automatically when available'),
-            value: settings.audioAutoPlay,
-            onChanged: (value) {
-              ref.read(settingsControllerProvider.notifier).setAudioAutoPlay(value);
-            },
-          ),
-        ],
+      content: SingleChildScrollView(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // Auto-play toggle
+            SwitchListTile(
+              contentPadding: EdgeInsets.zero,
+              title: const Text('Auto-play audio'),
+              subtitle: const Text('Play audio automatically when available'),
+              value: settings.audioAutoPlay,
+              onChanged: (value) {
+                ref.read(settingsControllerProvider.notifier).setAudioAutoPlay(value);
+              },
+            ),
+            const Divider(),
+
+            // Voice Quality section
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: Spacing.sm),
+              child: Text(
+                'Voice Quality',
+                style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                      fontWeight: FontWeight.bold,
+                      color: AppColors.primary,
+                    ),
+              ),
+            ),
+            _VoiceQualityOption(
+              quality: VoiceQuality.standard,
+              isSelected: settings.voiceQuality == VoiceQuality.standard,
+              onTap: () {
+                ref.read(settingsControllerProvider.notifier).setVoiceQuality(VoiceQuality.standard);
+              },
+            ),
+            _VoiceQualityOption(
+              quality: VoiceQuality.premium,
+              isSelected: settings.voiceQuality == VoiceQuality.premium,
+              onTap: () {
+                ref.read(settingsControllerProvider.notifier).setVoiceQuality(VoiceQuality.premium);
+              },
+            ),
+            const Divider(),
+
+            // Speech Rate section
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: Spacing.sm),
+              child: Text(
+                'Reading Speed',
+                style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                      fontWeight: FontWeight.bold,
+                      color: AppColors.primary,
+                    ),
+              ),
+            ),
+            _SpeechRateOption(
+              rate: SpeechRate.slow,
+              isSelected: settings.speechRate == SpeechRate.slow,
+              onTap: () {
+                ref.read(settingsControllerProvider.notifier).setSpeechRate(SpeechRate.slow);
+              },
+            ),
+            _SpeechRateOption(
+              rate: SpeechRate.normal,
+              isSelected: settings.speechRate == SpeechRate.normal,
+              onTap: () {
+                ref.read(settingsControllerProvider.notifier).setSpeechRate(SpeechRate.normal);
+              },
+            ),
+            _SpeechRateOption(
+              rate: SpeechRate.fast,
+              isSelected: settings.speechRate == SpeechRate.fast,
+              onTap: () {
+                ref.read(settingsControllerProvider.notifier).setSpeechRate(SpeechRate.fast);
+              },
+            ),
+          ],
+        ),
       ),
       actions: [
         TextButton(
@@ -365,6 +431,78 @@ class _AudioSettingsDialog extends ConsumerWidget {
           child: const Text('Done'),
         ),
       ],
+    );
+  }
+}
+
+class _VoiceQualityOption extends StatelessWidget {
+  const _VoiceQualityOption({
+    required this.quality,
+    required this.isSelected,
+    required this.onTap,
+  });
+
+  final VoiceQuality quality;
+  final bool isSelected;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      contentPadding: EdgeInsets.zero,
+      leading: Icon(
+        quality == VoiceQuality.premium ? Icons.auto_awesome : Icons.record_voice_over,
+        color: isSelected ? AppColors.primary : AppColors.textHint,
+      ),
+      title: Text(quality.displayName),
+      subtitle: Text(
+        quality.description,
+        style: Theme.of(context).textTheme.bodySmall?.copyWith(
+              color: AppColors.textSecondary,
+            ),
+      ),
+      trailing: isSelected
+          ? const Icon(Icons.check_circle, color: AppColors.primary)
+          : const Icon(Icons.circle_outlined, color: AppColors.textHint),
+      onTap: onTap,
+    );
+  }
+}
+
+class _SpeechRateOption extends StatelessWidget {
+  const _SpeechRateOption({
+    required this.rate,
+    required this.isSelected,
+    required this.onTap,
+  });
+
+  final SpeechRate rate;
+  final bool isSelected;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      contentPadding: EdgeInsets.zero,
+      leading: Icon(
+        rate == SpeechRate.slow
+            ? Icons.slow_motion_video
+            : rate == SpeechRate.fast
+                ? Icons.fast_forward
+                : Icons.play_arrow,
+        color: isSelected ? AppColors.primary : AppColors.textHint,
+      ),
+      title: Text(rate.displayName),
+      subtitle: Text(
+        rate.description,
+        style: Theme.of(context).textTheme.bodySmall?.copyWith(
+              color: AppColors.textSecondary,
+            ),
+      ),
+      trailing: isSelected
+          ? const Icon(Icons.check_circle, color: AppColors.primary)
+          : const Icon(Icons.circle_outlined, color: AppColors.textHint),
+      onTap: onTap,
     );
   }
 }

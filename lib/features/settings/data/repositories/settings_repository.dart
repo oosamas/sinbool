@@ -34,6 +34,8 @@ class SettingsRepository {
         await _dao.getSetting(SettingsKeys.allowPremiumContent) == null;
     final allowAudio = await _dao.getSetting(SettingsKeys.allowAudioPlayback) == 'true' ||
         await _dao.getSetting(SettingsKeys.allowAudioPlayback) == null;
+    final voiceQualityStr = await _dao.getSetting(SettingsKeysExt.voiceQuality);
+    final speechRateStr = await _dao.getSetting(SettingsKeysExt.speechRate);
 
     return AppSettingsEntity(
       themeMode: _parseThemeMode(themeMode),
@@ -46,6 +48,8 @@ class SettingsRepository {
       audioAutoPlay: audioAutoPlay,
       allowPremiumContent: allowPremium,
       allowAudioPlayback: allowAudio,
+      voiceQuality: _parseVoiceQuality(voiceQualityStr),
+      speechRate: _parseSpeechRate(speechRateStr),
     );
   }
 
@@ -133,6 +137,16 @@ class SettingsRepository {
     await _dao.setSetting(SettingsKeys.allowAudioPlayback, enabled.toString());
   }
 
+  /// Set voice quality
+  Future<void> setVoiceQuality(VoiceQuality quality) async {
+    await _dao.setSetting(SettingsKeysExt.voiceQuality, _voiceQualityToString(quality));
+  }
+
+  /// Set speech rate
+  Future<void> setSpeechRate(SpeechRate rate) async {
+    await _dao.setSetting(SettingsKeysExt.speechRate, _speechRateToString(rate));
+  }
+
   /// Hash PIN for secure storage
   String _hashPin(String pin) {
     final bytes = utf8.encode(pin);
@@ -183,6 +197,46 @@ class SettingsRepository {
         return 'medium';
     }
   }
+
+  VoiceQuality _parseVoiceQuality(String? value) {
+    switch (value) {
+      case 'premium':
+        return VoiceQuality.premium;
+      default:
+        return VoiceQuality.standard;
+    }
+  }
+
+  String _voiceQualityToString(VoiceQuality quality) {
+    switch (quality) {
+      case VoiceQuality.standard:
+        return 'standard';
+      case VoiceQuality.premium:
+        return 'premium';
+    }
+  }
+
+  SpeechRate _parseSpeechRate(String? value) {
+    switch (value) {
+      case 'slow':
+        return SpeechRate.slow;
+      case 'fast':
+        return SpeechRate.fast;
+      default:
+        return SpeechRate.normal;
+    }
+  }
+
+  String _speechRateToString(SpeechRate rate) {
+    switch (rate) {
+      case SpeechRate.slow:
+        return 'slow';
+      case SpeechRate.normal:
+        return 'normal';
+      case SpeechRate.fast:
+        return 'fast';
+    }
+  }
 }
 
 /// Settings keys extension
@@ -190,6 +244,8 @@ extension SettingsKeysExt on SettingsKeys {
   static const audioAutoPlay = 'audio_auto_play';
   static const allowPremiumContent = 'allow_premium_content';
   static const allowAudioPlayback = 'allow_audio_playback';
+  static const voiceQuality = 'voice_quality';
+  static const speechRate = 'speech_rate';
 }
 
 /// Settings repository provider

@@ -107,7 +107,7 @@ class TermsOfServicePage extends StatelessWidget {
 
             const SizedBox(height: Spacing.lg),
             Text(
-              'Last updated: January 2024',
+              'Last updated: January 2025',
               style: Theme.of(context).textTheme.bodySmall?.copyWith(
                     color: AppColors.textHint,
                   ),
