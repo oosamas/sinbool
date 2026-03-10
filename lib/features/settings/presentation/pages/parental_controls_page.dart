@@ -5,6 +5,9 @@ import 'package:go_router/go_router.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/router/app_routes.dart';
+import '../../../auth/presentation/controllers/auth_controller.dart';
+import '../../../auth/presentation/widgets/account_info_card.dart';
+import '../../../auth/presentation/widgets/sign_in_buttons.dart';
 import '../../../progress/presentation/controllers/progress_controller.dart';
 import '../controllers/settings_controller.dart';
 
@@ -161,6 +164,19 @@ class ParentalControlsPage extends ConsumerWidget {
                         },
                       ),
                     ],
+                  ),
+                ),
+                const SizedBox(height: Spacing.md),
+
+                // Account & Cloud Sync
+                _ControlSection(
+                  title: 'Account & Cloud Sync',
+                  description: 'Sign in to save progress across devices',
+                  child: Padding(
+                    padding: const EdgeInsets.all(Spacing.md),
+                    child: ref.watch(authControllerProvider).isAuthenticated
+                        ? const AccountInfoCard()
+                        : const SignInButtons(),
                   ),
                 ),
                 const SizedBox(height: Spacing.md),
