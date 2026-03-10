@@ -37,7 +37,7 @@ GoRouter appRouter(AppRouterRef ref) {
   return GoRouter(
     navigatorKey: rootNavigatorKey,
     initialLocation: AppRoutes.splash,
-    debugLogDiagnostics: true,
+    debugLogDiagnostics: false,
     routes: [
       // Splash screen
       GoRoute(

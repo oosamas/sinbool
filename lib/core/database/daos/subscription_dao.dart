@@ -1,4 +1,5 @@
 import 'package:drift/drift.dart';
+import 'package:rxdart/rxdart.dart';
 
 import '../app_database.dart';
 import '../tables/subscription_table.dart';
@@ -69,11 +70,41 @@ class SubscriptionDao extends DatabaseAccessor<AppDatabase>
         ));
   }
 
+  /// Reactivate a subscription by token
+  Future<int> reactivateSubscription(String purchaseToken) {
+    return (update(subscriptions)..where((t) => t.purchaseToken.equals(purchaseToken)))
+        .write(SubscriptionsCompanion(
+          isActive: const Value(true),
+          updatedAt: Value(DateTime.now()),
+        ));
+  }
+
   /// Deactivate all subscriptions
   Future<int> deactivateAllSubscriptions() {
     return update(subscriptions).write(const SubscriptionsCompanion(
       isActive: Value(false),
     ));
+  }
+
+  /// Deactivate expired subscriptions in the database
+  Future<void> deactivateExpiredSubscriptions() async {
+    final now = DateTime.now();
+    await (update(subscriptions)
+          ..where((t) => t.isActive.equals(true))
+          ..where((t) => t.expiryDate.isSmallerThanValue(now)))
+        .write(SubscriptionsCompanion(
+          isActive: const Value(false),
+          updatedAt: Value(now),
+        ));
+  }
+
+  /// Deactivate expired promo codes in the database
+  Future<void> deactivateExpiredPromoCodes() async {
+    final now = DateTime.now();
+    await (update(promoCodes)
+          ..where((t) => t.isActive.equals(true))
+          ..where((t) => t.expiryDate.isSmallerThanValue(now)))
+        .write(const PromoCodesCompanion(isActive: Value(false)));
   }
 
   /// Get subscription by purchase token
@@ -150,15 +181,19 @@ class SubscriptionDao extends DatabaseAccessor<AppDatabase>
   }
 
   /// Watch whether user has active access (subscription or promo code)
+  /// Combines both subscription and promo code streams for reactive updates
   Stream<bool> watchHasActiveAccess() {
-    // Combine subscription and promo code streams
-    return watchActiveSubscription().asyncMap((subscription) async {
-      if (subscription != null &&
-          (subscription.expiryDate == null || subscription.expiryDate!.isAfter(DateTime.now()))) {
-        return true;
-      }
-      final promoCode = await getActivePromoCode();
-      return promoCode != null;
-    });
+    return Rx.combineLatest2(
+      watchActiveSubscription(),
+      watchActivePromoCode(),
+      (Subscription? subscription, PromoCode? promoCode) {
+        if (subscription != null &&
+            (subscription.expiryDate == null ||
+                subscription.expiryDate!.isAfter(DateTime.now()))) {
+          return true;
+        }
+        return promoCode != null;
+      },
+    );
   }
 }

@@ -42,7 +42,7 @@ class SecurityService {
       await _secureStorage.write(key: key, value: value);
     } catch (e) {
       if (kDebugMode) {
-        print('SecurityService: Failed to store secure value: $e');
+        debugPrint('SecurityService: Failed to store secure value: $e');
       }
     }
   }
@@ -53,7 +53,7 @@ class SecurityService {
       return await _secureStorage.read(key: key);
     } catch (e) {
       if (kDebugMode) {
-        print('SecurityService: Failed to read secure value: $e');
+        debugPrint('SecurityService: Failed to read secure value: $e');
       }
       return null;
     }
@@ -65,7 +65,7 @@ class SecurityService {
       await _secureStorage.delete(key: key);
     } catch (e) {
       if (kDebugMode) {
-        print('SecurityService: Failed to delete secure value: $e');
+        debugPrint('SecurityService: Failed to delete secure value: $e');
       }
     }
   }
@@ -76,15 +76,15 @@ class SecurityService {
       await _secureStorage.deleteAll();
     } catch (e) {
       if (kDebugMode) {
-        print('SecurityService: Failed to clear secure storage: $e');
+        debugPrint('SecurityService: Failed to clear secure storage: $e');
       }
     }
   }
 
-  /// Validate parental PIN format (4-6 digits)
+  /// Validate parental PIN format (exactly 4 digits)
   bool isValidPin(String pin) {
-    if (pin.length < 4 || pin.length > 6) return false;
-    return RegExp(r'^\d+$').hasMatch(pin);
+    if (pin.length != 4) return false;
+    return RegExp(r'^\d{4}$').hasMatch(pin);
   }
 
   /// Store parental PIN (hashed)

@@ -125,7 +125,7 @@ class PaywallPage extends ConsumerWidget {
                               text: TextSpan(
                                 children: [
                                   TextSpan(
-                                    text: '\$9.95',
+                                    text: _getDisplayPrice(state),
                                     style: Theme.of(context).textTheme.headlineLarge?.copyWith(
                                       color: AppColors.primary,
                                       fontWeight: FontWeight.bold,
@@ -271,6 +271,14 @@ class PaywallPage extends ConsumerWidget {
     );
   }
 
+  /// Get the display price from store ProductDetails, with fallback
+  String _getDisplayPrice(SubscriptionState state) {
+    if (state.products.isNotEmpty) {
+      return state.products.first.price;
+    }
+    return '';
+  }
+
   Future<void> _handlePurchase(
     BuildContext context,
     SubscriptionController controller,
@@ -291,10 +299,11 @@ class PaywallPage extends ConsumerWidget {
     BuildContext context,
     WidgetRef ref,
   ) async {
-    await ref.read(subscriptionControllerProvider.notifier).restorePurchases();
-    final state = ref.read(subscriptionControllerProvider);
+    final restored = await ref
+        .read(subscriptionControllerProvider.notifier)
+        .restorePurchases();
     if (context.mounted) {
-      if (state.isSubscribed) {
+      if (restored) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(AppLocalizations.of(context)!.purchasesRestored),

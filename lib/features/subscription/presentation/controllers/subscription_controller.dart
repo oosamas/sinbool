@@ -48,7 +48,6 @@ class SubscriptionState {
 class SubscriptionController extends _$SubscriptionController {
   @override
   SubscriptionState build() {
-    // Load initial state
     _loadInitialState();
     return const SubscriptionState(isLoading: true);
   }
@@ -69,10 +68,12 @@ class SubscriptionController extends _$SubscriptionController {
         status: status,
         products: products,
         isLoading: false,
+        isPurchasing: false,
       );
     } catch (e) {
       state = state.copyWith(
         isLoading: false,
+        isPurchasing: false,
         error: 'Failed to load subscription status',
       );
     }
@@ -90,21 +91,38 @@ class SubscriptionController extends _$SubscriptionController {
 
     state = state.copyWith(isPurchasing: true, error: null);
 
-    try {
-      final success = await _repository.purchaseSubscription();
-      if (!success) {
+    // Listen for purchase status updates from the repository
+    _repository.onPurchaseUpdate = (status, error) {
+      if (status == PurchaseStatus.pending) {
+        state = state.copyWith(isPurchasing: true, error: null);
+      } else if (status == PurchaseStatus.error) {
         state = state.copyWith(
           isPurchasing: false,
-          error: 'Failed to initiate purchase',
+          error: error ?? 'Purchase failed',
+        );
+      } else if (status == PurchaseStatus.canceled) {
+        state = state.copyWith(isPurchasing: false);
+      }
+    };
+
+    try {
+      final success = await _repository.purchaseSubscription();
+
+      // Clean up callback
+      _repository.onPurchaseUpdate = null;
+
+      if (success) {
+        await refresh();
+        return state.isSubscribed;
+      } else {
+        state = state.copyWith(
+          isPurchasing: false,
+          error: state.error ?? 'Failed to complete purchase',
         );
         return false;
       }
-
-      // Wait a bit for purchase to process
-      await Future.delayed(const Duration(seconds: 2));
-      await refresh();
-      return state.isSubscribed;
     } catch (e) {
+      _repository.onPurchaseUpdate = null;
       state = state.copyWith(
         isPurchasing: false,
         error: 'Purchase failed: $e',
@@ -114,19 +132,19 @@ class SubscriptionController extends _$SubscriptionController {
   }
 
   /// Restore purchases
-  Future<void> restorePurchases() async {
+  Future<bool> restorePurchases() async {
     state = state.copyWith(isLoading: true, error: null);
 
     try {
-      await _repository.restorePurchases();
-      // Wait for restore to process
-      await Future.delayed(const Duration(seconds: 2));
+      final restored = await _repository.restorePurchases();
       await refresh();
+      return restored || state.isSubscribed;
     } catch (e) {
       state = state.copyWith(
         isLoading: false,
         error: 'Failed to restore purchases',
       );
+      return false;
     }
   }
 

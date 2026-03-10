@@ -155,7 +155,7 @@ class AboutPage extends StatelessWidget {
 
             // Copyright
             Text(
-              '© 2024 Sinbool. All rights reserved.',
+              '© 2025 Sinbool. All rights reserved.',
               style: Theme.of(context).textTheme.bodySmall?.copyWith(
                     color: AppColors.textHint,
                   ),

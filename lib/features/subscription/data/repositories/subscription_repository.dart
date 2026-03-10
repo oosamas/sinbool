@@ -7,9 +7,13 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 import '../../../../core/database/daos/subscription_dao.dart';
 import '../../../../core/database/database_provider.dart';
 import '../../../../core/database/tables/subscription_table.dart';
+import '../../../../core/services/error_handler_service.dart';
 import '../../domain/entities/subscription_status.dart';
 
 part 'subscription_repository.g.dart';
+
+/// Callback type for purchase status updates
+typedef PurchaseUpdateCallback = void Function(PurchaseStatus status, String? error);
 
 /// Repository for managing in-app subscriptions
 class SubscriptionRepository {
@@ -19,6 +23,12 @@ class SubscriptionRepository {
   final InAppPurchase _iap;
 
   StreamSubscription<List<PurchaseDetails>>? _purchaseSubscription;
+
+  /// Completer used to signal when a purchase or restore flow finishes
+  Completer<bool>? _purchaseCompleter;
+
+  /// Optional callback for notifying controllers of purchase updates
+  PurchaseUpdateCallback? onPurchaseUpdate;
 
   /// Product ID for monthly subscription
   static const String monthlyProductId = ProductIds.monthlySubscription;
@@ -31,7 +41,12 @@ class SubscriptionRepository {
     _purchaseSubscription = _iap.purchaseStream.listen(
       _handlePurchaseUpdate,
       onError: (error) {
-        // Log error but don't crash
+        ErrorHandlerService.instance.error(
+          'Purchase stream error',
+          error,
+        );
+        _purchaseCompleter?.complete(false);
+        _purchaseCompleter = null;
       },
     );
   }
@@ -39,10 +54,15 @@ class SubscriptionRepository {
   /// Dispose resources
   void dispose() {
     _purchaseSubscription?.cancel();
+    _purchaseCompleter = null;
   }
 
-  /// Get current subscription status
+  /// Get current subscription status, also deactivates expired records
   Future<SubscriptionStatus> getSubscriptionStatus() async {
+    // Clean up expired subscriptions in the database
+    await _dao.deactivateExpiredSubscriptions();
+    await _dao.deactivateExpiredPromoCodes();
+
     // Check for active store subscription
     final subscription = await _dao.getActiveSubscription();
     if (subscription != null) {
@@ -89,13 +109,17 @@ class SubscriptionRepository {
 
     final response = await _iap.queryProductDetails({monthlyProductId});
     if (response.error != null) {
+      ErrorHandlerService.instance.warning(
+        'Failed to query products',
+        response.error!.message,
+      );
       return [];
     }
 
     return response.productDetails;
   }
 
-  /// Purchase subscription
+  /// Purchase subscription - returns true if purchase succeeds
   Future<bool> purchaseSubscription() async {
     final products = await getProducts();
     if (products.isEmpty) return false;
@@ -103,50 +127,133 @@ class SubscriptionRepository {
     final product = products.first;
     final purchaseParam = PurchaseParam(productDetails: product);
 
-    return _iap.buyNonConsumable(purchaseParam: purchaseParam);
+    // Set up completer to wait for the purchase stream result
+    _purchaseCompleter = Completer<bool>();
+
+    final initiated = await _iap.buyNonConsumable(purchaseParam: purchaseParam);
+    if (!initiated) {
+      _purchaseCompleter = null;
+      return false;
+    }
+
+    // Wait for the purchase stream to resolve (with a timeout)
+    try {
+      return await _purchaseCompleter!.future.timeout(
+        const Duration(minutes: 5),
+        onTimeout: () {
+          _purchaseCompleter = null;
+          return false;
+        },
+      );
+    } catch (_) {
+      _purchaseCompleter = null;
+      return false;
+    }
   }
 
-  /// Restore purchases
-  Future<void> restorePurchases() async {
+  /// Restore purchases - returns true if any purchases were restored
+  Future<bool> restorePurchases() async {
+    _purchaseCompleter = Completer<bool>();
+
     await _iap.restorePurchases();
+
+    // Wait for restore to complete through the purchase stream
+    try {
+      return await _purchaseCompleter!.future.timeout(
+        const Duration(seconds: 30),
+        onTimeout: () {
+          _purchaseCompleter = null;
+          return false;
+        },
+      );
+    } catch (_) {
+      _purchaseCompleter = null;
+      return false;
+    }
   }
 
   /// Handle purchase updates from the store
   Future<void> _handlePurchaseUpdate(List<PurchaseDetails> purchases) async {
+    var anySuccessful = false;
+
     for (final purchase in purchases) {
-      if (purchase.status == PurchaseStatus.purchased ||
-          purchase.status == PurchaseStatus.restored) {
-        // Verify and save the purchase
-        await _verifyAndSavePurchase(purchase);
+      switch (purchase.status) {
+        case PurchaseStatus.purchased:
+        case PurchaseStatus.restored:
+          await _verifyAndSavePurchase(purchase);
+          anySuccessful = true;
+          onPurchaseUpdate?.call(purchase.status, null);
+          break;
+
+        case PurchaseStatus.pending:
+          onPurchaseUpdate?.call(PurchaseStatus.pending, null);
+          break;
+
+        case PurchaseStatus.error:
+          final errorMessage = purchase.error?.message ?? 'Purchase failed';
+          ErrorHandlerService.instance.error('Purchase error', errorMessage);
+          onPurchaseUpdate?.call(PurchaseStatus.error, errorMessage);
+          break;
+
+        case PurchaseStatus.canceled:
+          onPurchaseUpdate?.call(PurchaseStatus.canceled, null);
+          break;
       }
 
       if (purchase.pendingCompletePurchase) {
         await _iap.completePurchase(purchase);
       }
     }
+
+    // Resolve the completer if one is waiting
+    if (_purchaseCompleter != null && !_purchaseCompleter!.isCompleted) {
+      _purchaseCompleter!.complete(anySuccessful);
+      _purchaseCompleter = null;
+    }
   }
 
   /// Verify and save a purchase
   Future<void> _verifyAndSavePurchase(PurchaseDetails purchase) async {
-    // In a production app, you should verify the purchase with your server
-    // For now, we'll save it locally
+    // Validate purchase ID exists
+    final purchaseId = purchase.purchaseID;
+    if (purchaseId == null || purchaseId.isEmpty) {
+      ErrorHandlerService.instance.warning(
+        'Purchase has no ID',
+        'Product: ${purchase.productID}',
+      );
+      return;
+    }
 
     final platform = Platform.isIOS ? 'ios' : 'android';
-    final existingPurchase = await _dao.getSubscriptionByToken(
-      purchase.purchaseID ?? '',
-    );
+    final existingPurchase = await _dao.getSubscriptionByToken(purchaseId);
 
     if (existingPurchase == null) {
-      // Calculate expiry date (1 month from purchase)
-      final expiryDate = DateTime.now().add(const Duration(days: 30));
+      // Parse the transaction date from the purchase if available,
+      // otherwise use current time
+      final purchaseDate = purchase.transactionDate != null
+          ? DateTime.fromMillisecondsSinceEpoch(
+              int.tryParse(purchase.transactionDate!) ?? DateTime.now().millisecondsSinceEpoch,
+            )
+          : DateTime.now();
+
+      // For auto-renewable subscriptions, the store manages renewal.
+      // We store a 30-day window locally and refresh on each app launch.
+      // Server-side receipt validation should be added for production.
+      final expiryDate = purchaseDate.add(const Duration(days: 30));
 
       await _dao.saveSubscription(
-        purchaseToken: purchase.purchaseID ?? DateTime.now().toIso8601String(),
+        purchaseToken: purchaseId,
         productId: purchase.productID,
         platform: platform,
-        purchaseDate: DateTime.now(),
+        purchaseDate: purchaseDate,
         expiryDate: expiryDate,
       );
+    } else {
+      // Existing purchase found - renew its expiry (handles re-subscribe / restore)
+      final newExpiry = DateTime.now().add(const Duration(days: 30));
+      await _dao.updateSubscriptionExpiry(purchaseId, newExpiry);
+      // Ensure it's marked active
+      await _dao.reactivateSubscription(purchaseId);
     }
   }
 

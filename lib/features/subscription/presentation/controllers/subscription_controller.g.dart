@@ -7,7 +7,7 @@ part of 'subscription_controller.dart';
 // **************************************************************************
 
 String _$subscriptionControllerHash() =>
-    r'84d5e0516a4fe8183a1e128de1cd08cc96badc25';
+    r'0ee02b2c4a877c5d3014c2da4ab63a917dba9809';
 
 /// Controller for managing subscription state and actions
 ///

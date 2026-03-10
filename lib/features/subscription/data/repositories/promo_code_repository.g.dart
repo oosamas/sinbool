@@ -7,7 +7,7 @@ part of 'promo_code_repository.dart';
 // **************************************************************************
 
 String _$promoCodeRepositoryHash() =>
-    r'25307ee52249e663ac322cb616d4b20907038ae0';
+    r'7b35e84a4c589ba4d30c11d744d71287022273a8';
 
 /// Promo code repository provider
 ///

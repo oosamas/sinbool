@@ -17,10 +17,15 @@ class PromoCodeRepository {
 
   /// Validate a promo code with the backend
   Future<PromoCodeResult> validatePromoCode(String code) async {
-    try {
-      final normalizedCode = code.toUpperCase().trim();
+    final normalizedCode = code.toUpperCase().trim();
 
-      // Make API request to validate code
+    // Allow test codes only in debug builds
+    if (kDebugMode) {
+      final testResult = _checkTestCode(normalizedCode);
+      if (testResult != null) return testResult;
+    }
+
+    try {
       final response = await _dio.post(
         '${ApiEndpoints.production}${ApiEndpoints.promoValidate}',
         data: {
@@ -69,33 +74,32 @@ class PromoCodeRepository {
         return PromoCodeResult.failure('Promo code has expired');
       } else if (e.response?.statusCode == 409) {
         return PromoCodeResult.failure('Promo code has already been used');
+      } else if (e.type == DioExceptionType.connectionTimeout ||
+          e.type == DioExceptionType.receiveTimeout ||
+          e.type == DioExceptionType.connectionError) {
+        return PromoCodeResult.failure(
+          'Unable to validate promo code. Please check your internet connection.',
+        );
       }
 
-      // For development/testing, allow certain codes locally
-      return _handleOfflineValidation(code);
+      return PromoCodeResult.failure('Failed to validate promo code. Please try again.');
     } catch (e) {
-      return _handleOfflineValidation(code);
+      return PromoCodeResult.failure('An unexpected error occurred. Please try again.');
     }
   }
 
-  /// Handle offline validation - only allows test codes in debug mode
-  PromoCodeResult _handleOfflineValidation(String code) {
-    final normalizedCode = code.toUpperCase().trim();
-
-    // Test codes only available in debug mode
-    if (kDebugMode) {
-      if (normalizedCode == 'SINBOOL2024' || normalizedCode == 'TESTPREMIUM') {
-        return PromoCodeResult.success(
-          PromoCodeEntity.valid(
-            code: normalizedCode,
-            expiryDate: DateTime.now().add(const Duration(days: 365)),
-            durationDays: 365,
-          ),
-        );
-      }
+  /// Check for test promo codes (debug builds only)
+  PromoCodeResult? _checkTestCode(String code) {
+    if (code == 'SINBOOL2024' || code == 'TESTPREMIUM') {
+      return PromoCodeResult.success(
+        PromoCodeEntity.valid(
+          code: code,
+          expiryDate: DateTime.now().add(const Duration(days: 365)),
+          durationDays: 365,
+        ),
+      );
     }
-
-    return PromoCodeResult.failure('Unable to validate promo code. Please check your internet connection.');
+    return null;
   }
 
   /// Activate a validated promo code
@@ -133,7 +137,11 @@ class PromoCodeRepository {
 /// Promo code repository provider
 @riverpod
 PromoCodeRepository promoCodeRepository(PromoCodeRepositoryRef ref) {
-  final dio = Dio();
+  final dio = Dio(BaseOptions(
+    connectTimeout: const Duration(seconds: 15),
+    receiveTimeout: const Duration(seconds: 15),
+    sendTimeout: const Duration(seconds: 15),
+  ));
   final subscriptionRepo = ref.watch(subscriptionRepositoryProvider);
   return PromoCodeRepository(dio, subscriptionRepo);
 }

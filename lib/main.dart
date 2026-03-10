@@ -84,10 +84,10 @@ Future<void> _initializeCloudTts() async {
         apiKey,
       );
       if (kDebugMode) {
-        print('CloudTTS: API key initialized from environment');
+        debugPrint('CloudTTS: API key initialized from environment');
       }
     } else if (kDebugMode) {
-      print('CloudTTS: No API key provided. Use --dart-define=GOOGLE_CLOUD_API_KEY=your_key');
+      debugPrint('CloudTTS: No API key provided. Use --dart-define=GOOGLE_CLOUD_API_KEY=your_key');
     }
   }
 }
