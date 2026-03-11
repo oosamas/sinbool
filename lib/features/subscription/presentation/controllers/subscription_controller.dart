@@ -86,7 +86,7 @@ class SubscriptionController extends _$SubscriptionController {
   }
 
   /// Purchase subscription
-  Future<bool> purchaseSubscription() async {
+  Future<bool> purchaseSubscription({String? productId}) async {
     if (state.isPurchasing) return false;
 
     state = state.copyWith(isPurchasing: true, error: null);
@@ -106,7 +106,7 @@ class SubscriptionController extends _$SubscriptionController {
     };
 
     try {
-      final success = await _repository.purchaseSubscription();
+      final success = await _repository.purchaseSubscription(productId: productId);
 
       // Clean up callback
       _repository.onPurchaseUpdate = null;

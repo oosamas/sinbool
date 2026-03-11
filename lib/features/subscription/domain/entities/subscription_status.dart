@@ -6,6 +6,8 @@ enum SubscriptionType {
   none,
   /// Monthly subscription via app stores
   monthly,
+  /// Yearly subscription via app stores
+  yearly,
   /// Subscription via promo code
   promoCode,
 }

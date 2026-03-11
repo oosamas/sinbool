@@ -145,10 +145,24 @@ class AppLocalizationsAr extends AppLocalizations {
       'Get full access to 50+ beautifully narrated stories about prophets, companions, and Islamic values for your children.';
 
   @override
-  String get monthlySubscription => 'Monthly Subscription';
+  String get monthlySubscription => 'Monthly';
+
+  @override
+  String get yearlySubscription => 'Yearly';
 
   @override
   String get perMonth => '/month';
+
+  @override
+  String get perYear => '/year';
+
+  @override
+  String get bestValue => 'Best Value';
+
+  @override
+  String savePercent(int percent) {
+    return 'Save $percent%';
+  }
 
   @override
   String get cancelAnytime =>
@@ -156,6 +170,9 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get subscribe => 'Subscribe Now';
+
+  @override
+  String get choosePlan => 'Choose Your Plan';
 
   @override
   String get restorePurchases => 'Restore Purchases';

@@ -65,10 +65,22 @@
 
   "unlockAllStories": "Unlock All Islamic Stories",
   "premiumDescription": "Get full access to 50+ beautifully narrated stories about prophets, companions, and Islamic values for your children.",
-  "monthlySubscription": "Monthly Subscription",
+  "monthlySubscription": "Monthly",
+  "yearlySubscription": "Yearly",
   "perMonth": "/month",
+  "perYear": "/year",
+  "bestValue": "Best Value",
+  "savePercent": "Save {percent}%",
+  "@savePercent": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
   "cancelAnytime": "Cancel anytime. Subscription renews automatically.",
   "subscribe": "Subscribe Now",
+  "choosePlan": "Choose Your Plan",
   "restorePurchases": "Restore Purchases",
   "havePromoCode": "Have a promo code?",
   "termsOfService": "Terms of Service",

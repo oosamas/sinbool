@@ -367,14 +367,38 @@ abstract class AppLocalizations {
   /// No description provided for @monthlySubscription.
   ///
   /// In en, this message translates to:
-  /// **'Monthly Subscription'**
+  /// **'Monthly'**
   String get monthlySubscription;
+
+  /// No description provided for @yearlySubscription.
+  ///
+  /// In en, this message translates to:
+  /// **'Yearly'**
+  String get yearlySubscription;
 
   /// No description provided for @perMonth.
   ///
   /// In en, this message translates to:
   /// **'/month'**
   String get perMonth;
+
+  /// No description provided for @perYear.
+  ///
+  /// In en, this message translates to:
+  /// **'/year'**
+  String get perYear;
+
+  /// No description provided for @bestValue.
+  ///
+  /// In en, this message translates to:
+  /// **'Best Value'**
+  String get bestValue;
+
+  /// No description provided for @savePercent.
+  ///
+  /// In en, this message translates to:
+  /// **'Save {percent}%'**
+  String savePercent(int percent);
 
   /// No description provided for @cancelAnytime.
   ///
@@ -387,6 +411,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Subscribe Now'**
   String get subscribe;
+
+  /// No description provided for @choosePlan.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose Your Plan'**
+  String get choosePlan;
 
   /// No description provided for @restorePurchases.
   ///

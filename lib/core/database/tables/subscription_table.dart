@@ -29,6 +29,7 @@ class SubscriptionTypes {
 
   static const String none = 'none';
   static const String monthly = 'monthly';
+  static const String yearly = 'yearly';
   static const String promoCode = 'promo_code';
 }
 
@@ -38,4 +39,10 @@ class ProductIds {
 
   // Same ID for both iOS and Android for consistency
   static const String monthlySubscription = 'com.sinbool.app.premium.monthly';
+  static const String yearlySubscription = 'com.sinbool.app.premium.yearly';
+
+  static const Set<String> allProductIds = {
+    monthlySubscription,
+    yearlySubscription,
+  };
 }

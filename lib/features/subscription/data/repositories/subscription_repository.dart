@@ -30,8 +30,9 @@ class SubscriptionRepository {
   /// Optional callback for notifying controllers of purchase updates
   PurchaseUpdateCallback? onPurchaseUpdate;
 
-  /// Product ID for monthly subscription
+  /// Product IDs
   static const String monthlyProductId = ProductIds.monthlySubscription;
+  static const String yearlyProductId = ProductIds.yearlySubscription;
 
   /// Initialize the repository and start listening to purchases
   Future<void> initialize() async {
@@ -70,9 +71,10 @@ class SubscriptionRepository {
           subscription.expiryDate!.isBefore(DateTime.now());
 
       if (!isExpired) {
+        final isYearly = subscription.productId == yearlyProductId;
         return SubscriptionStatus(
           isActive: true,
-          type: SubscriptionType.monthly,
+          type: isYearly ? SubscriptionType.yearly : SubscriptionType.monthly,
           expiryDate: subscription.expiryDate,
         );
       }
@@ -107,7 +109,7 @@ class SubscriptionRepository {
     final available = await _iap.isAvailable();
     if (!available) return [];
 
-    final response = await _iap.queryProductDetails({monthlyProductId});
+    final response = await _iap.queryProductDetails(ProductIds.allProductIds);
     if (response.error != null) {
       ErrorHandlerService.instance.warning(
         'Failed to query products',
@@ -120,11 +122,15 @@ class SubscriptionRepository {
   }
 
   /// Purchase subscription - returns true if purchase succeeds
-  Future<bool> purchaseSubscription() async {
+  Future<bool> purchaseSubscription({String? productId}) async {
     final products = await getProducts();
     if (products.isEmpty) return false;
 
-    final product = products.first;
+    final targetId = productId ?? monthlyProductId;
+    final product = products.firstWhere(
+      (p) => p.id == targetId,
+      orElse: () => products.first,
+    );
     final purchaseParam = PurchaseParam(productDetails: product);
 
     // Set up completer to wait for the purchase stream result
@@ -237,9 +243,12 @@ class SubscriptionRepository {
           : DateTime.now();
 
       // For auto-renewable subscriptions, the store manages renewal.
-      // We store a 30-day window locally and refresh on each app launch.
+      // We store a local expiry window and refresh on each app launch.
       // Server-side receipt validation should be added for production.
-      final expiryDate = purchaseDate.add(const Duration(days: 30));
+      final isYearly = purchase.productID == yearlyProductId;
+      final expiryDate = purchaseDate.add(
+        Duration(days: isYearly ? 365 : 30),
+      );
 
       await _dao.saveSubscription(
         purchaseToken: purchaseId,

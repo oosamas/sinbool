@@ -1,22 +1,32 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:in_app_purchase/in_app_purchase.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/database/tables/subscription_table.dart';
 import '../../../../core/router/app_routes.dart';
 import '../../../../l10n/app_localizations.dart';
 import '../controllers/subscription_controller.dart';
 import '../widgets/subscription_benefits_list.dart';
 
 /// Paywall page shown when user tries to access premium content
-class PaywallPage extends ConsumerWidget {
+class PaywallPage extends ConsumerStatefulWidget {
   const PaywallPage({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<PaywallPage> createState() => _PaywallPageState();
+}
+
+class _PaywallPageState extends ConsumerState<PaywallPage> {
+  String _selectedProductId = ProductIds.yearlySubscription;
+
+  @override
+  Widget build(BuildContext context) {
     final state = ref.watch(subscriptionControllerProvider);
     final controller = ref.read(subscriptionControllerProvider.notifier);
+    final l10n = AppLocalizations.of(context)!;
 
     return Scaffold(
       body: Container(
@@ -71,7 +81,7 @@ class PaywallPage extends ConsumerWidget {
 
                       // Headline
                       Text(
-                        AppLocalizations.of(context)!.unlockAllStories,
+                        l10n.unlockAllStories,
                         style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                           color: AppColors.textOnPrimary,
                           fontWeight: FontWeight.bold,
@@ -83,7 +93,7 @@ class PaywallPage extends ConsumerWidget {
 
                       // Subheadline
                       Text(
-                        AppLocalizations.of(context)!.premiumDescription,
+                        l10n.premiumDescription,
                         style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                           color: AppColors.textOnPrimary.withValues(alpha: 0.9),
                         ),
@@ -97,58 +107,29 @@ class PaywallPage extends ConsumerWidget {
 
                       const SizedBox(height: Spacing.xl),
 
-                      // Price card
-                      Container(
-                        width: double.infinity,
-                        padding: const EdgeInsets.all(Spacing.lg),
-                        decoration: BoxDecoration(
-                          color: AppColors.surface,
-                          borderRadius: BorderRadius.circular(AppRadius.xl),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.black.withValues(alpha: 0.2),
-                              blurRadius: 10,
-                              offset: const Offset(0, 4),
-                            ),
-                          ],
+                      // Choose plan label
+                      Text(
+                        l10n.choosePlan,
+                        style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                          color: AppColors.textOnPrimary,
+                          fontWeight: FontWeight.bold,
                         ),
-                        child: Column(
-                          children: [
-                            Text(
-                              AppLocalizations.of(context)!.monthlySubscription,
-                              style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                                color: AppColors.textSecondary,
-                              ),
-                            ),
-                            const SizedBox(height: Spacing.xs),
-                            RichText(
-                              text: TextSpan(
-                                children: [
-                                  TextSpan(
-                                    text: _getDisplayPrice(state),
-                                    style: Theme.of(context).textTheme.headlineLarge?.copyWith(
-                                      color: AppColors.primary,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  TextSpan(
-                                    text: AppLocalizations.of(context)!.perMonth,
-                                    style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                                      color: AppColors.textSecondary,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            const SizedBox(height: Spacing.sm),
-                            Text(
-                              AppLocalizations.of(context)!.cancelAnytime,
-                              style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                                color: AppColors.textHint,
-                              ),
-                            ),
-                          ],
+                      ),
+
+                      const SizedBox(height: Spacing.md),
+
+                      // Plan cards
+                      _buildPlanCards(context, state),
+
+                      const SizedBox(height: Spacing.sm),
+
+                      // Cancel anytime note
+                      Text(
+                        l10n.cancelAnytime,
+                        style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                          color: AppColors.textOnPrimary.withValues(alpha: 0.7),
                         ),
+                        textAlign: TextAlign.center,
                       ),
 
                       const SizedBox(height: Spacing.lg),
@@ -188,7 +169,7 @@ class PaywallPage extends ConsumerWidget {
                                   ),
                                 )
                               : Text(
-                                  AppLocalizations.of(context)!.subscribe,
+                                  l10n.subscribe,
                                   style: const TextStyle(
                                     fontSize: 18,
                                     fontWeight: FontWeight.bold,
@@ -205,7 +186,7 @@ class PaywallPage extends ConsumerWidget {
                             ? null
                             : () => _handleRestore(context, ref),
                         child: Text(
-                          AppLocalizations.of(context)!.restorePurchases,
+                          l10n.restorePurchases,
                           style: TextStyle(
                             color: AppColors.textOnPrimary.withValues(alpha: 0.8),
                           ),
@@ -216,7 +197,7 @@ class PaywallPage extends ConsumerWidget {
                       TextButton(
                         onPressed: () => context.push(AppRoutes.promoCode),
                         child: Text(
-                          AppLocalizations.of(context)!.havePromoCode,
+                          l10n.havePromoCode,
                           style: TextStyle(
                             color: AppColors.secondary,
                             fontWeight: FontWeight.w600,
@@ -233,7 +214,7 @@ class PaywallPage extends ConsumerWidget {
                           TextButton(
                             onPressed: () => context.push(AppRoutes.termsOfService),
                             child: Text(
-                              AppLocalizations.of(context)!.termsOfService,
+                              l10n.termsOfService,
                               style: TextStyle(
                                 color: AppColors.textOnPrimary.withValues(alpha: 0.7),
                                 fontSize: 12,
@@ -249,7 +230,7 @@ class PaywallPage extends ConsumerWidget {
                           TextButton(
                             onPressed: () => context.push(AppRoutes.privacyPolicy),
                             child: Text(
-                              AppLocalizations.of(context)!.privacyPolicy,
+                              l10n.privacyPolicy,
                               style: TextStyle(
                                 color: AppColors.textOnPrimary.withValues(alpha: 0.7),
                                 fontSize: 12,
@@ -271,19 +252,60 @@ class PaywallPage extends ConsumerWidget {
     );
   }
 
-  /// Get the display price from store ProductDetails, with fallback
-  String _getDisplayPrice(SubscriptionState state) {
-    if (state.products.isNotEmpty) {
-      return state.products.first.price;
+  Widget _buildPlanCards(BuildContext context, SubscriptionState state) {
+    final l10n = AppLocalizations.of(context)!;
+    final monthlyProduct = _findProduct(state.products, ProductIds.monthlySubscription);
+    final yearlyProduct = _findProduct(state.products, ProductIds.yearlySubscription);
+
+    final monthlyPrice = monthlyProduct?.price ?? '\$4.99';
+    final yearlyPrice = yearlyProduct?.price ?? '\$49.99';
+
+    return Row(
+      children: [
+        // Yearly plan (recommended)
+        Expanded(
+          child: _PlanCard(
+            label: l10n.yearlySubscription,
+            price: yearlyPrice,
+            period: l10n.perYear,
+            badge: l10n.bestValue,
+            isSelected: _selectedProductId == ProductIds.yearlySubscription,
+            onTap: () => setState(() {
+              _selectedProductId = ProductIds.yearlySubscription;
+            }),
+          ),
+        ),
+        const SizedBox(width: Spacing.md),
+        // Monthly plan
+        Expanded(
+          child: _PlanCard(
+            label: l10n.monthlySubscription,
+            price: monthlyPrice,
+            period: l10n.perMonth,
+            isSelected: _selectedProductId == ProductIds.monthlySubscription,
+            onTap: () => setState(() {
+              _selectedProductId = ProductIds.monthlySubscription;
+            }),
+          ),
+        ),
+      ],
+    );
+  }
+
+  ProductDetails? _findProduct(List<ProductDetails> products, String productId) {
+    for (final product in products) {
+      if (product.id == productId) return product;
     }
-    return '';
+    return null;
   }
 
   Future<void> _handlePurchase(
     BuildContext context,
     SubscriptionController controller,
   ) async {
-    final success = await controller.purchaseSubscription();
+    final success = await controller.purchaseSubscription(
+      productId: _selectedProductId,
+    );
     if (success && context.mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
@@ -320,5 +342,105 @@ class PaywallPage extends ConsumerWidget {
         );
       }
     }
+  }
+}
+
+class _PlanCard extends StatelessWidget {
+  const _PlanCard({
+    required this.label,
+    required this.price,
+    required this.period,
+    required this.isSelected,
+    required this.onTap,
+    this.badge,
+  });
+
+  final String label;
+  final String price;
+  final String period;
+  final bool isSelected;
+  final VoidCallback onTap;
+  final String? badge;
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 200),
+        padding: const EdgeInsets.all(Spacing.md),
+        decoration: BoxDecoration(
+          color: isSelected
+              ? AppColors.surface
+              : AppColors.surface.withValues(alpha: 0.6),
+          borderRadius: BorderRadius.circular(AppRadius.xl),
+          border: Border.all(
+            color: isSelected ? AppColors.secondary : Colors.transparent,
+            width: 2.5,
+          ),
+          boxShadow: isSelected
+              ? [
+                  BoxShadow(
+                    color: AppColors.secondary.withValues(alpha: 0.3),
+                    blurRadius: 12,
+                    offset: const Offset(0, 4),
+                  ),
+                ]
+              : null,
+        ),
+        child: Column(
+          children: [
+            if (badge != null) ...[
+              Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: Spacing.sm,
+                  vertical: 2,
+                ),
+                decoration: BoxDecoration(
+                  color: AppColors.secondary,
+                  borderRadius: BorderRadius.circular(AppRadius.sm),
+                ),
+                child: Text(
+                  badge!,
+                  style: Theme.of(context).textTheme.labelSmall?.copyWith(
+                    color: AppColors.textOnSecondary,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              const SizedBox(height: Spacing.xs),
+            ] else
+              const SizedBox(height: 22),
+            Text(
+              label,
+              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                color: AppColors.textSecondary,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+            const SizedBox(height: Spacing.xs),
+            Text(
+              price,
+              style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                color: isSelected ? AppColors.primary : AppColors.textPrimary,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
+              period,
+              style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                color: AppColors.textSecondary,
+              ),
+            ),
+            const SizedBox(height: Spacing.xs),
+            Icon(
+              isSelected ? Icons.check_circle : Icons.radio_button_unchecked,
+              color: isSelected ? AppColors.secondary : AppColors.textHint,
+              size: 24,
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
