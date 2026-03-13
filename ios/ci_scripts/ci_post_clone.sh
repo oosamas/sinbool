@@ -4,9 +4,6 @@
 set -e
 
 echo "=== ci_post_clone.sh starting ==="
-echo "CI_PRIMARY_REPOSITORY_PATH: $CI_PRIMARY_REPOSITORY_PATH"
-echo "Current directory: $(pwd)"
-echo "macOS version: $(sw_vers -productVersion)"
 
 # Install Flutter using git.
 if [ -d "$HOME/flutter" ]; then
@@ -17,33 +14,22 @@ else
 fi
 export PATH="$PATH:$HOME/flutter/bin"
 
-# Print Flutter version (also triggers first-time setup).
+# Disable analytics to speed up first run.
+flutter config --no-analytics >/dev/null 2>&1 || true
+
 echo "Flutter version:"
 flutter --version
 
-# Install Flutter artifacts for iOS.
-echo "Running flutter precache --ios..."
-flutter precache --ios
-
-# Navigate to repository root for Flutter commands.
+# Navigate to repository root.
 cd "$CI_PRIMARY_REPOSITORY_PATH"
-echo "Working directory: $(pwd)"
 
-# Install Flutter dependencies.
+# Install Flutter dependencies (also registers iOS plugins).
 echo "Running flutter pub get..."
 flutter pub get
 
-# Install CocoaPods if not already available.
-if command -v pod >/dev/null 2>&1; then
-  echo "CocoaPods already installed: $(pod --version)"
-else
-  echo "Installing CocoaPods..."
-  sudo gem install cocoapods --no-document
-fi
-
 # Install CocoaPods dependencies.
-echo "Running pod install in ios/..."
+echo "Running pod install..."
 cd "$CI_PRIMARY_REPOSITORY_PATH/ios"
-pod install --repo-update
+pod install
 
 echo "=== ci_post_clone.sh completed successfully ==="
