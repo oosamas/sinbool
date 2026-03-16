@@ -5821,6 +5821,550 @@ class PromoCodesCompanion extends UpdateCompanion<PromoCode> {
   }
 }
 
+class $AudioCacheTable extends AudioCache
+    with TableInfo<$AudioCacheTable, AudioCacheData> {
+  @override
+  final GeneratedDatabase attachedDatabase;
+  final String? _alias;
+  $AudioCacheTable(this.attachedDatabase, [this._alias]);
+  static const VerificationMeta _idMeta = const VerificationMeta('id');
+  @override
+  late final GeneratedColumn<int> id = GeneratedColumn<int>(
+    'id',
+    aliasedName,
+    false,
+    hasAutoIncrement: true,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+    defaultConstraints: GeneratedColumn.constraintIsAlways(
+      'PRIMARY KEY AUTOINCREMENT',
+    ),
+  );
+  static const VerificationMeta _lessonServerIdMeta = const VerificationMeta(
+    'lessonServerId',
+  );
+  @override
+  late final GeneratedColumn<String> lessonServerId = GeneratedColumn<String>(
+    'lesson_server_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _languageMeta = const VerificationMeta(
+    'language',
+  );
+  @override
+  late final GeneratedColumn<String> language = GeneratedColumn<String>(
+    'language',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _localFilePathMeta = const VerificationMeta(
+    'localFilePath',
+  );
+  @override
+  late final GeneratedColumn<String> localFilePath = GeneratedColumn<String>(
+    'local_file_path',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _storagePathMeta = const VerificationMeta(
+    'storagePath',
+  );
+  @override
+  late final GeneratedColumn<String> storagePath = GeneratedColumn<String>(
+    'storage_path',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _fileSizeBytesMeta = const VerificationMeta(
+    'fileSizeBytes',
+  );
+  @override
+  late final GeneratedColumn<int> fileSizeBytes = GeneratedColumn<int>(
+    'file_size_bytes',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+    defaultValue: const Constant(0),
+  );
+  static const VerificationMeta _durationSecondsMeta = const VerificationMeta(
+    'durationSeconds',
+  );
+  @override
+  late final GeneratedColumn<int> durationSeconds = GeneratedColumn<int>(
+    'duration_seconds',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+    defaultValue: const Constant(0),
+  );
+  static const VerificationMeta _downloadedAtMeta = const VerificationMeta(
+    'downloadedAt',
+  );
+  @override
+  late final GeneratedColumn<DateTime> downloadedAt = GeneratedColumn<DateTime>(
+    'downloaded_at',
+    aliasedName,
+    false,
+    type: DriftSqlType.dateTime,
+    requiredDuringInsert: false,
+    defaultValue: currentDateAndTime,
+  );
+  @override
+  List<GeneratedColumn> get $columns => [
+    id,
+    lessonServerId,
+    language,
+    localFilePath,
+    storagePath,
+    fileSizeBytes,
+    durationSeconds,
+    downloadedAt,
+  ];
+  @override
+  String get aliasedName => _alias ?? actualTableName;
+  @override
+  String get actualTableName => $name;
+  static const String $name = 'audio_cache';
+  @override
+  VerificationContext validateIntegrity(
+    Insertable<AudioCacheData> instance, {
+    bool isInserting = false,
+  }) {
+    final context = VerificationContext();
+    final data = instance.toColumns(true);
+    if (data.containsKey('id')) {
+      context.handle(_idMeta, id.isAcceptableOrUnknown(data['id']!, _idMeta));
+    }
+    if (data.containsKey('lesson_server_id')) {
+      context.handle(
+        _lessonServerIdMeta,
+        lessonServerId.isAcceptableOrUnknown(
+          data['lesson_server_id']!,
+          _lessonServerIdMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_lessonServerIdMeta);
+    }
+    if (data.containsKey('language')) {
+      context.handle(
+        _languageMeta,
+        language.isAcceptableOrUnknown(data['language']!, _languageMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_languageMeta);
+    }
+    if (data.containsKey('local_file_path')) {
+      context.handle(
+        _localFilePathMeta,
+        localFilePath.isAcceptableOrUnknown(
+          data['local_file_path']!,
+          _localFilePathMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_localFilePathMeta);
+    }
+    if (data.containsKey('storage_path')) {
+      context.handle(
+        _storagePathMeta,
+        storagePath.isAcceptableOrUnknown(
+          data['storage_path']!,
+          _storagePathMeta,
+        ),
+      );
+    } else if (isInserting) {
+      context.missing(_storagePathMeta);
+    }
+    if (data.containsKey('file_size_bytes')) {
+      context.handle(
+        _fileSizeBytesMeta,
+        fileSizeBytes.isAcceptableOrUnknown(
+          data['file_size_bytes']!,
+          _fileSizeBytesMeta,
+        ),
+      );
+    }
+    if (data.containsKey('duration_seconds')) {
+      context.handle(
+        _durationSecondsMeta,
+        durationSeconds.isAcceptableOrUnknown(
+          data['duration_seconds']!,
+          _durationSecondsMeta,
+        ),
+      );
+    }
+    if (data.containsKey('downloaded_at')) {
+      context.handle(
+        _downloadedAtMeta,
+        downloadedAt.isAcceptableOrUnknown(
+          data['downloaded_at']!,
+          _downloadedAtMeta,
+        ),
+      );
+    }
+    return context;
+  }
+
+  @override
+  Set<GeneratedColumn> get $primaryKey => {id};
+  @override
+  List<Set<GeneratedColumn>> get uniqueKeys => [
+    {lessonServerId, language},
+  ];
+  @override
+  AudioCacheData map(Map<String, dynamic> data, {String? tablePrefix}) {
+    final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
+    return AudioCacheData(
+      id: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}id'],
+      )!,
+      lessonServerId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}lesson_server_id'],
+      )!,
+      language: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}language'],
+      )!,
+      localFilePath: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}local_file_path'],
+      )!,
+      storagePath: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}storage_path'],
+      )!,
+      fileSizeBytes: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}file_size_bytes'],
+      )!,
+      durationSeconds: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}duration_seconds'],
+      )!,
+      downloadedAt: attachedDatabase.typeMapping.read(
+        DriftSqlType.dateTime,
+        data['${effectivePrefix}downloaded_at'],
+      )!,
+    );
+  }
+
+  @override
+  $AudioCacheTable createAlias(String alias) {
+    return $AudioCacheTable(attachedDatabase, alias);
+  }
+}
+
+class AudioCacheData extends DataClass implements Insertable<AudioCacheData> {
+  final int id;
+
+  /// Lesson serverId (e.g., "prophet_ayyub_lesson_1") - used to match Firebase Storage paths
+  final String lessonServerId;
+
+  /// Language code (e.g., "en", "ar")
+  final String language;
+
+  /// Local file path where the audio is stored on this device
+  final String localFilePath;
+
+  /// Firebase Storage path for re-download if needed
+  final String storagePath;
+
+  /// File size in bytes (for cache management)
+  final int fileSizeBytes;
+
+  /// Audio duration in seconds
+  final int durationSeconds;
+
+  /// When the audio was downloaded
+  final DateTime downloadedAt;
+  const AudioCacheData({
+    required this.id,
+    required this.lessonServerId,
+    required this.language,
+    required this.localFilePath,
+    required this.storagePath,
+    required this.fileSizeBytes,
+    required this.durationSeconds,
+    required this.downloadedAt,
+  });
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    map['id'] = Variable<int>(id);
+    map['lesson_server_id'] = Variable<String>(lessonServerId);
+    map['language'] = Variable<String>(language);
+    map['local_file_path'] = Variable<String>(localFilePath);
+    map['storage_path'] = Variable<String>(storagePath);
+    map['file_size_bytes'] = Variable<int>(fileSizeBytes);
+    map['duration_seconds'] = Variable<int>(durationSeconds);
+    map['downloaded_at'] = Variable<DateTime>(downloadedAt);
+    return map;
+  }
+
+  AudioCacheCompanion toCompanion(bool nullToAbsent) {
+    return AudioCacheCompanion(
+      id: Value(id),
+      lessonServerId: Value(lessonServerId),
+      language: Value(language),
+      localFilePath: Value(localFilePath),
+      storagePath: Value(storagePath),
+      fileSizeBytes: Value(fileSizeBytes),
+      durationSeconds: Value(durationSeconds),
+      downloadedAt: Value(downloadedAt),
+    );
+  }
+
+  factory AudioCacheData.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return AudioCacheData(
+      id: serializer.fromJson<int>(json['id']),
+      lessonServerId: serializer.fromJson<String>(json['lessonServerId']),
+      language: serializer.fromJson<String>(json['language']),
+      localFilePath: serializer.fromJson<String>(json['localFilePath']),
+      storagePath: serializer.fromJson<String>(json['storagePath']),
+      fileSizeBytes: serializer.fromJson<int>(json['fileSizeBytes']),
+      durationSeconds: serializer.fromJson<int>(json['durationSeconds']),
+      downloadedAt: serializer.fromJson<DateTime>(json['downloadedAt']),
+    );
+  }
+  @override
+  Map<String, dynamic> toJson({ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return <String, dynamic>{
+      'id': serializer.toJson<int>(id),
+      'lessonServerId': serializer.toJson<String>(lessonServerId),
+      'language': serializer.toJson<String>(language),
+      'localFilePath': serializer.toJson<String>(localFilePath),
+      'storagePath': serializer.toJson<String>(storagePath),
+      'fileSizeBytes': serializer.toJson<int>(fileSizeBytes),
+      'durationSeconds': serializer.toJson<int>(durationSeconds),
+      'downloadedAt': serializer.toJson<DateTime>(downloadedAt),
+    };
+  }
+
+  AudioCacheData copyWith({
+    int? id,
+    String? lessonServerId,
+    String? language,
+    String? localFilePath,
+    String? storagePath,
+    int? fileSizeBytes,
+    int? durationSeconds,
+    DateTime? downloadedAt,
+  }) => AudioCacheData(
+    id: id ?? this.id,
+    lessonServerId: lessonServerId ?? this.lessonServerId,
+    language: language ?? this.language,
+    localFilePath: localFilePath ?? this.localFilePath,
+    storagePath: storagePath ?? this.storagePath,
+    fileSizeBytes: fileSizeBytes ?? this.fileSizeBytes,
+    durationSeconds: durationSeconds ?? this.durationSeconds,
+    downloadedAt: downloadedAt ?? this.downloadedAt,
+  );
+  AudioCacheData copyWithCompanion(AudioCacheCompanion data) {
+    return AudioCacheData(
+      id: data.id.present ? data.id.value : this.id,
+      lessonServerId: data.lessonServerId.present
+          ? data.lessonServerId.value
+          : this.lessonServerId,
+      language: data.language.present ? data.language.value : this.language,
+      localFilePath: data.localFilePath.present
+          ? data.localFilePath.value
+          : this.localFilePath,
+      storagePath: data.storagePath.present
+          ? data.storagePath.value
+          : this.storagePath,
+      fileSizeBytes: data.fileSizeBytes.present
+          ? data.fileSizeBytes.value
+          : this.fileSizeBytes,
+      durationSeconds: data.durationSeconds.present
+          ? data.durationSeconds.value
+          : this.durationSeconds,
+      downloadedAt: data.downloadedAt.present
+          ? data.downloadedAt.value
+          : this.downloadedAt,
+    );
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('AudioCacheData(')
+          ..write('id: $id, ')
+          ..write('lessonServerId: $lessonServerId, ')
+          ..write('language: $language, ')
+          ..write('localFilePath: $localFilePath, ')
+          ..write('storagePath: $storagePath, ')
+          ..write('fileSizeBytes: $fileSizeBytes, ')
+          ..write('durationSeconds: $durationSeconds, ')
+          ..write('downloadedAt: $downloadedAt')
+          ..write(')'))
+        .toString();
+  }
+
+  @override
+  int get hashCode => Object.hash(
+    id,
+    lessonServerId,
+    language,
+    localFilePath,
+    storagePath,
+    fileSizeBytes,
+    durationSeconds,
+    downloadedAt,
+  );
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is AudioCacheData &&
+          other.id == this.id &&
+          other.lessonServerId == this.lessonServerId &&
+          other.language == this.language &&
+          other.localFilePath == this.localFilePath &&
+          other.storagePath == this.storagePath &&
+          other.fileSizeBytes == this.fileSizeBytes &&
+          other.durationSeconds == this.durationSeconds &&
+          other.downloadedAt == this.downloadedAt);
+}
+
+class AudioCacheCompanion extends UpdateCompanion<AudioCacheData> {
+  final Value<int> id;
+  final Value<String> lessonServerId;
+  final Value<String> language;
+  final Value<String> localFilePath;
+  final Value<String> storagePath;
+  final Value<int> fileSizeBytes;
+  final Value<int> durationSeconds;
+  final Value<DateTime> downloadedAt;
+  const AudioCacheCompanion({
+    this.id = const Value.absent(),
+    this.lessonServerId = const Value.absent(),
+    this.language = const Value.absent(),
+    this.localFilePath = const Value.absent(),
+    this.storagePath = const Value.absent(),
+    this.fileSizeBytes = const Value.absent(),
+    this.durationSeconds = const Value.absent(),
+    this.downloadedAt = const Value.absent(),
+  });
+  AudioCacheCompanion.insert({
+    this.id = const Value.absent(),
+    required String lessonServerId,
+    required String language,
+    required String localFilePath,
+    required String storagePath,
+    this.fileSizeBytes = const Value.absent(),
+    this.durationSeconds = const Value.absent(),
+    this.downloadedAt = const Value.absent(),
+  }) : lessonServerId = Value(lessonServerId),
+       language = Value(language),
+       localFilePath = Value(localFilePath),
+       storagePath = Value(storagePath);
+  static Insertable<AudioCacheData> custom({
+    Expression<int>? id,
+    Expression<String>? lessonServerId,
+    Expression<String>? language,
+    Expression<String>? localFilePath,
+    Expression<String>? storagePath,
+    Expression<int>? fileSizeBytes,
+    Expression<int>? durationSeconds,
+    Expression<DateTime>? downloadedAt,
+  }) {
+    return RawValuesInsertable({
+      if (id != null) 'id': id,
+      if (lessonServerId != null) 'lesson_server_id': lessonServerId,
+      if (language != null) 'language': language,
+      if (localFilePath != null) 'local_file_path': localFilePath,
+      if (storagePath != null) 'storage_path': storagePath,
+      if (fileSizeBytes != null) 'file_size_bytes': fileSizeBytes,
+      if (durationSeconds != null) 'duration_seconds': durationSeconds,
+      if (downloadedAt != null) 'downloaded_at': downloadedAt,
+    });
+  }
+
+  AudioCacheCompanion copyWith({
+    Value<int>? id,
+    Value<String>? lessonServerId,
+    Value<String>? language,
+    Value<String>? localFilePath,
+    Value<String>? storagePath,
+    Value<int>? fileSizeBytes,
+    Value<int>? durationSeconds,
+    Value<DateTime>? downloadedAt,
+  }) {
+    return AudioCacheCompanion(
+      id: id ?? this.id,
+      lessonServerId: lessonServerId ?? this.lessonServerId,
+      language: language ?? this.language,
+      localFilePath: localFilePath ?? this.localFilePath,
+      storagePath: storagePath ?? this.storagePath,
+      fileSizeBytes: fileSizeBytes ?? this.fileSizeBytes,
+      durationSeconds: durationSeconds ?? this.durationSeconds,
+      downloadedAt: downloadedAt ?? this.downloadedAt,
+    );
+  }
+
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    if (id.present) {
+      map['id'] = Variable<int>(id.value);
+    }
+    if (lessonServerId.present) {
+      map['lesson_server_id'] = Variable<String>(lessonServerId.value);
+    }
+    if (language.present) {
+      map['language'] = Variable<String>(language.value);
+    }
+    if (localFilePath.present) {
+      map['local_file_path'] = Variable<String>(localFilePath.value);
+    }
+    if (storagePath.present) {
+      map['storage_path'] = Variable<String>(storagePath.value);
+    }
+    if (fileSizeBytes.present) {
+      map['file_size_bytes'] = Variable<int>(fileSizeBytes.value);
+    }
+    if (durationSeconds.present) {
+      map['duration_seconds'] = Variable<int>(durationSeconds.value);
+    }
+    if (downloadedAt.present) {
+      map['downloaded_at'] = Variable<DateTime>(downloadedAt.value);
+    }
+    return map;
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('AudioCacheCompanion(')
+          ..write('id: $id, ')
+          ..write('lessonServerId: $lessonServerId, ')
+          ..write('language: $language, ')
+          ..write('localFilePath: $localFilePath, ')
+          ..write('storagePath: $storagePath, ')
+          ..write('fileSizeBytes: $fileSizeBytes, ')
+          ..write('durationSeconds: $durationSeconds, ')
+          ..write('downloadedAt: $downloadedAt')
+          ..write(')'))
+        .toString();
+  }
+}
+
 abstract class _$AppDatabase extends GeneratedDatabase {
   _$AppDatabase(QueryExecutor e) : super(e);
   $AppDatabaseManager get managers => $AppDatabaseManager(this);
@@ -5834,6 +6378,7 @@ abstract class _$AppDatabase extends GeneratedDatabase {
   late final $AppSettingsTable appSettings = $AppSettingsTable(this);
   late final $SubscriptionsTable subscriptions = $SubscriptionsTable(this);
   late final $PromoCodesTable promoCodes = $PromoCodesTable(this);
+  late final $AudioCacheTable audioCache = $AudioCacheTable(this);
   @override
   Iterable<TableInfo<Table, Object?>> get allTables =>
       allSchemaEntities.whereType<TableInfo<Table, Object?>>();
@@ -5849,6 +6394,7 @@ abstract class _$AppDatabase extends GeneratedDatabase {
     appSettings,
     subscriptions,
     promoCodes,
+    audioCache,
   ];
 }
 
@@ -9767,6 +10313,269 @@ typedef $$PromoCodesTableProcessedTableManager =
       PromoCode,
       PrefetchHooks Function()
     >;
+typedef $$AudioCacheTableCreateCompanionBuilder =
+    AudioCacheCompanion Function({
+      Value<int> id,
+      required String lessonServerId,
+      required String language,
+      required String localFilePath,
+      required String storagePath,
+      Value<int> fileSizeBytes,
+      Value<int> durationSeconds,
+      Value<DateTime> downloadedAt,
+    });
+typedef $$AudioCacheTableUpdateCompanionBuilder =
+    AudioCacheCompanion Function({
+      Value<int> id,
+      Value<String> lessonServerId,
+      Value<String> language,
+      Value<String> localFilePath,
+      Value<String> storagePath,
+      Value<int> fileSizeBytes,
+      Value<int> durationSeconds,
+      Value<DateTime> downloadedAt,
+    });
+
+class $$AudioCacheTableFilterComposer
+    extends Composer<_$AppDatabase, $AudioCacheTable> {
+  $$AudioCacheTableFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnFilters<int> get id => $composableBuilder(
+    column: $table.id,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get lessonServerId => $composableBuilder(
+    column: $table.lessonServerId,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get language => $composableBuilder(
+    column: $table.language,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get localFilePath => $composableBuilder(
+    column: $table.localFilePath,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get storagePath => $composableBuilder(
+    column: $table.storagePath,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<int> get fileSizeBytes => $composableBuilder(
+    column: $table.fileSizeBytes,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<int> get durationSeconds => $composableBuilder(
+    column: $table.durationSeconds,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<DateTime> get downloadedAt => $composableBuilder(
+    column: $table.downloadedAt,
+    builder: (column) => ColumnFilters(column),
+  );
+}
+
+class $$AudioCacheTableOrderingComposer
+    extends Composer<_$AppDatabase, $AudioCacheTable> {
+  $$AudioCacheTableOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnOrderings<int> get id => $composableBuilder(
+    column: $table.id,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get lessonServerId => $composableBuilder(
+    column: $table.lessonServerId,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get language => $composableBuilder(
+    column: $table.language,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get localFilePath => $composableBuilder(
+    column: $table.localFilePath,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get storagePath => $composableBuilder(
+    column: $table.storagePath,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<int> get fileSizeBytes => $composableBuilder(
+    column: $table.fileSizeBytes,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<int> get durationSeconds => $composableBuilder(
+    column: $table.durationSeconds,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<DateTime> get downloadedAt => $composableBuilder(
+    column: $table.downloadedAt,
+    builder: (column) => ColumnOrderings(column),
+  );
+}
+
+class $$AudioCacheTableAnnotationComposer
+    extends Composer<_$AppDatabase, $AudioCacheTable> {
+  $$AudioCacheTableAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  GeneratedColumn<int> get id =>
+      $composableBuilder(column: $table.id, builder: (column) => column);
+
+  GeneratedColumn<String> get lessonServerId => $composableBuilder(
+    column: $table.lessonServerId,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get language =>
+      $composableBuilder(column: $table.language, builder: (column) => column);
+
+  GeneratedColumn<String> get localFilePath => $composableBuilder(
+    column: $table.localFilePath,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get storagePath => $composableBuilder(
+    column: $table.storagePath,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<int> get fileSizeBytes => $composableBuilder(
+    column: $table.fileSizeBytes,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<int> get durationSeconds => $composableBuilder(
+    column: $table.durationSeconds,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<DateTime> get downloadedAt => $composableBuilder(
+    column: $table.downloadedAt,
+    builder: (column) => column,
+  );
+}
+
+class $$AudioCacheTableTableManager
+    extends
+        RootTableManager<
+          _$AppDatabase,
+          $AudioCacheTable,
+          AudioCacheData,
+          $$AudioCacheTableFilterComposer,
+          $$AudioCacheTableOrderingComposer,
+          $$AudioCacheTableAnnotationComposer,
+          $$AudioCacheTableCreateCompanionBuilder,
+          $$AudioCacheTableUpdateCompanionBuilder,
+          (
+            AudioCacheData,
+            BaseReferences<_$AppDatabase, $AudioCacheTable, AudioCacheData>,
+          ),
+          AudioCacheData,
+          PrefetchHooks Function()
+        > {
+  $$AudioCacheTableTableManager(_$AppDatabase db, $AudioCacheTable table)
+    : super(
+        TableManagerState(
+          db: db,
+          table: table,
+          createFilteringComposer: () =>
+              $$AudioCacheTableFilterComposer($db: db, $table: table),
+          createOrderingComposer: () =>
+              $$AudioCacheTableOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer: () =>
+              $$AudioCacheTableAnnotationComposer($db: db, $table: table),
+          updateCompanionCallback:
+              ({
+                Value<int> id = const Value.absent(),
+                Value<String> lessonServerId = const Value.absent(),
+                Value<String> language = const Value.absent(),
+                Value<String> localFilePath = const Value.absent(),
+                Value<String> storagePath = const Value.absent(),
+                Value<int> fileSizeBytes = const Value.absent(),
+                Value<int> durationSeconds = const Value.absent(),
+                Value<DateTime> downloadedAt = const Value.absent(),
+              }) => AudioCacheCompanion(
+                id: id,
+                lessonServerId: lessonServerId,
+                language: language,
+                localFilePath: localFilePath,
+                storagePath: storagePath,
+                fileSizeBytes: fileSizeBytes,
+                durationSeconds: durationSeconds,
+                downloadedAt: downloadedAt,
+              ),
+          createCompanionCallback:
+              ({
+                Value<int> id = const Value.absent(),
+                required String lessonServerId,
+                required String language,
+                required String localFilePath,
+                required String storagePath,
+                Value<int> fileSizeBytes = const Value.absent(),
+                Value<int> durationSeconds = const Value.absent(),
+                Value<DateTime> downloadedAt = const Value.absent(),
+              }) => AudioCacheCompanion.insert(
+                id: id,
+                lessonServerId: lessonServerId,
+                language: language,
+                localFilePath: localFilePath,
+                storagePath: storagePath,
+                fileSizeBytes: fileSizeBytes,
+                durationSeconds: durationSeconds,
+                downloadedAt: downloadedAt,
+              ),
+          withReferenceMapper: (p0) => p0
+              .map((e) => (e.readTable(table), BaseReferences(db, table, e)))
+              .toList(),
+          prefetchHooksCallback: null,
+        ),
+      );
+}
+
+typedef $$AudioCacheTableProcessedTableManager =
+    ProcessedTableManager<
+      _$AppDatabase,
+      $AudioCacheTable,
+      AudioCacheData,
+      $$AudioCacheTableFilterComposer,
+      $$AudioCacheTableOrderingComposer,
+      $$AudioCacheTableAnnotationComposer,
+      $$AudioCacheTableCreateCompanionBuilder,
+      $$AudioCacheTableUpdateCompanionBuilder,
+      (
+        AudioCacheData,
+        BaseReferences<_$AppDatabase, $AudioCacheTable, AudioCacheData>,
+      ),
+      AudioCacheData,
+      PrefetchHooks Function()
+    >;
 
 class $AppDatabaseManager {
   final _$AppDatabase _db;
@@ -9791,4 +10600,6 @@ class $AppDatabaseManager {
       $$SubscriptionsTableTableManager(_db, _db.subscriptions);
   $$PromoCodesTableTableManager get promoCodes =>
       $$PromoCodesTableTableManager(_db, _db.promoCodes);
+  $$AudioCacheTableTableManager get audioCache =>
+      $$AudioCacheTableTableManager(_db, _db.audioCache);
 }

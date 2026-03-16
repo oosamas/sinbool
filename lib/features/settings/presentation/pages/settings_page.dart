@@ -7,6 +7,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/router/app_routes.dart';
 import '../../../../l10n/app_localizations.dart';
+import '../../../audio/data/services/audio_cache_service.dart';
 import '../../../subscription/data/repositories/subscription_repository.dart';
 import '../../../subscription/domain/entities/subscription_status.dart';
 import '../../domain/entities/settings_entity.dart';
@@ -86,19 +87,10 @@ class SettingsPage extends ConsumerWidget {
                 _SettingsItem(
                   icon: Icons.download,
                   title: 'Downloads',
-                  subtitle: 'Manage offline content',
-                  onTap: () {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(content: Text('Downloads management coming soon!')),
-                    );
-                  },
+                  subtitle: 'Audio narrations are downloaded automatically',
+                  onTap: () {},
                 ),
-                _SettingsItem(
-                  icon: Icons.delete_outline,
-                  title: 'Clear Cache',
-                  subtitle: 'Free up storage space',
-                  onTap: () => _showClearCacheDialog(context),
-                ),
+                _AudioCacheTile(),
 
                 const SizedBox(height: Spacing.lg),
 
@@ -132,8 +124,20 @@ class SettingsPage extends ConsumerWidget {
                   icon: Icons.feedback_outlined,
                   title: 'Send Feedback',
                   onTap: () {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(content: Text('Feedback form coming soon!')),
+                    showDialog(
+                      context: context,
+                      builder: (ctx) => AlertDialog(
+                        title: const Text('Send Feedback'),
+                        content: const Text(
+                          'We\'d love to hear from you! Please email us at:\n\nsupport@sinbool.com',
+                        ),
+                        actions: [
+                          TextButton(
+                            onPressed: () => Navigator.of(ctx).pop(),
+                            child: const Text('OK'),
+                          ),
+                        ],
+                      ),
                     );
                   },
                 ),
@@ -167,34 +171,6 @@ class SettingsPage extends ConsumerWidget {
     showDialog(
       context: context,
       builder: (context) => const _AudioSettingsDialog(),
-    );
-  }
-
-  void _showClearCacheDialog(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (context) => AlertDialog(
-        title: const Text('Clear Cache?'),
-        content: const Text(
-          'This will remove temporary files to free up storage space. '
-          'Your progress and bookmarks will be preserved.',
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(context).pop(),
-            child: const Text('Cancel'),
-          ),
-          TextButton(
-            onPressed: () {
-              Navigator.of(context).pop();
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('Cache cleared successfully!')),
-              );
-            },
-            child: const Text('Clear'),
-          ),
-        ],
-      ),
     );
   }
 }
@@ -559,6 +535,55 @@ class _SubscriptionSection extends ConsumerWidget {
             ],
           );
         }
+      },
+    );
+  }
+}
+
+class _AudioCacheTile extends ConsumerWidget {
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    return FutureBuilder<String>(
+      future: ref.read(audioCacheServiceProvider).getFormattedCacheSize(),
+      builder: (context, snapshot) {
+        final cacheSize = snapshot.data ?? '0 B';
+        return _SettingsItem(
+          icon: Icons.delete_outline,
+          title: 'Clear Audio Cache',
+          subtitle: 'Cached narrations: $cacheSize',
+          onTap: () {
+            showDialog(
+              context: context,
+              builder: (ctx) => AlertDialog(
+                title: const Text('Clear Audio Cache?'),
+                content: Text(
+                  'This will remove $cacheSize of downloaded narrations. '
+                  'They will be re-downloaded when you listen again. '
+                  'Your progress and bookmarks are preserved.',
+                ),
+                actions: [
+                  TextButton(
+                    onPressed: () => Navigator.of(ctx).pop(),
+                    child: const Text('Cancel'),
+                  ),
+                  TextButton(
+                    onPressed: () async {
+                      Navigator.of(ctx).pop();
+                      await ref.read(audioCacheServiceProvider).clearCache();
+                      if (context.mounted) {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          const SnackBar(
+                              content: Text('Audio cache cleared!')),
+                        );
+                      }
+                    },
+                    child: const Text('Clear'),
+                  ),
+                ],
+              ),
+            );
+          },
+        );
       },
     );
   }

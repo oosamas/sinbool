@@ -7,6 +7,8 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/router/app_routes.dart';
 import '../../../../core/widgets/buttons/app_button.dart';
+import '../../../audio/data/services/audio_cache_service.dart';
+import '../../../audio/data/services/audio_service.dart';
 import '../../../audio/data/services/cloud_tts_service.dart';
 import '../../../audio/data/services/tts_service.dart';
 import '../../../bookmarks/data/repositories/bookmark_repository.dart';
@@ -105,20 +107,23 @@ class _LessonDetailContent extends ConsumerStatefulWidget {
 
 class _LessonDetailContentState extends ConsumerState<_LessonDetailContent> {
   TtsService? _ttsService;
+  AudioService? _audioService;
 
   @override
   void initState() {
     super.initState();
-    // Cache reference to TTS service for use in dispose
+    // Cache references for use in dispose
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _ttsService = ref.read(ttsServiceProvider);
+      _audioService = ref.read(audioServiceProvider);
     });
   }
 
   @override
   void dispose() {
-    // Stop TTS when leaving - use cached reference
+    // Stop TTS and audio playback when leaving
     _ttsService?.stop();
+    _audioService?.stop();
     super.dispose();
   }
 
@@ -134,7 +139,13 @@ class _LessonDetailContentState extends ConsumerState<_LessonDetailContent> {
     // Watch TTS state
     final ttsStateAsync = ref.watch(ttsStateStreamProvider);
     final ttsState = ttsStateAsync.valueOrNull;
-    final isPlaying = ttsState == TtsState.playing;
+    final isTtsPlaying = ttsState == TtsState.playing;
+
+    // Watch audio player state (for pre-generated Gemini audio)
+    final audioStateAsync = ref.watch(audioStateProvider);
+    final isAudioPlaying = audioStateAsync.valueOrNull?.isPlaying ?? false;
+
+    final isPlaying = isTtsPlaying || isAudioPlaying;
 
     return Scaffold(
       appBar: AppBar(
@@ -362,7 +373,10 @@ class _LessonDetailContentState extends ConsumerState<_LessonDetailContent> {
                     ),
                     IconButton(
                       icon: const Icon(Icons.stop_circle, color: AppColors.secondary),
-                      onPressed: () => ref.read(ttsServiceProvider).stop(),
+                      onPressed: () {
+                        ref.read(audioServiceProvider).stop();
+                        ref.read(ttsServiceProvider).stop();
+                      },
                     ),
                   ],
                 ),
@@ -373,26 +387,95 @@ class _LessonDetailContentState extends ConsumerState<_LessonDetailContent> {
   }
 
   /// Handle tap on "Listen to Story" button
+  /// Priority: 1) Cached Gemini audio  2) Download from Firebase  3) Cloud TTS  4) Device TTS
   Future<void> _handleListenTap(BuildContext context) async {
+    final audioService = ref.read(audioServiceProvider);
+    final audioCacheService = ref.read(audioCacheServiceProvider);
     final cloudTtsService = ref.read(cloudTtsServiceProvider);
     final deviceTtsService = ref.read(ttsServiceProvider);
 
-    // If already playing, stop both services
-    if (cloudTtsService.isPlaying || deviceTtsService.isPlaying) {
+    // If already playing, stop all services
+    if (audioService.isPlaying || cloudTtsService.isPlaying || deviceTtsService.isPlaying) {
+      await audioService.stop();
       await cloudTtsService.stop();
       await deviceTtsService.stop();
       return;
     }
 
-    // Show loading indicator
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Loading story content...'),
-        duration: Duration(seconds: 1),
-      ),
+    // Get current language setting
+    final settingsState = ref.read(settingsControllerProvider);
+    final language = settingsState.settings.language;
+
+    // --- Try pre-generated Gemini audio (cached or download) ---
+    final cachedPath = await audioCacheService.getCachedAudioPath(
+      lesson.serverId,
+      language,
     );
 
-    // Get lesson content from repository (await the future)
+    if (cachedPath != null) {
+      // Play from local cache
+      debugPrint('Audio: Playing cached Gemini audio for ${lesson.serverId}');
+      if (context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Row(
+              children: [
+                const Icon(Icons.record_voice_over, color: Colors.white),
+                const SizedBox(width: Spacing.sm),
+                Expanded(child: Text('Playing "${lesson.title}"...')),
+              ],
+            ),
+            backgroundColor: AppColors.secondary,
+            duration: const Duration(seconds: 2),
+          ),
+        );
+      }
+      await audioService.loadFile(cachedPath, trackId: lesson.serverId);
+      await audioService.play();
+      return;
+    }
+
+    // Try downloading from Firebase Storage
+    if (context.mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Downloading narration...'),
+          duration: Duration(seconds: 2),
+        ),
+      );
+    }
+
+    final downloadedPath = await audioCacheService.downloadAndCache(
+      lesson.serverId,
+      language,
+    );
+
+    if (downloadedPath != null) {
+      debugPrint('Audio: Playing freshly downloaded Gemini audio');
+      if (context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Row(
+              children: [
+                const Icon(Icons.record_voice_over, color: Colors.white),
+                const SizedBox(width: Spacing.sm),
+                Expanded(child: Text('Playing "${lesson.title}"...')),
+              ],
+            ),
+            backgroundColor: AppColors.secondary,
+            duration: const Duration(seconds: 2),
+          ),
+        );
+      }
+      await audioService.loadFile(downloadedPath, trackId: lesson.serverId);
+      await audioService.play();
+      return;
+    }
+
+    // --- Fallback: generate on-the-fly with Cloud TTS or device TTS ---
+    debugPrint('Audio: No pre-generated audio, falling back to TTS');
+
+    // Get lesson content
     final repository = ref.read(lessonRepositoryProvider);
     final content = await repository.getContentForLesson(lesson.id);
 
@@ -405,11 +488,6 @@ class _LessonDetailContentState extends ConsumerState<_LessonDetailContent> {
       return;
     }
 
-    // Get current language setting
-    final settingsState = ref.read(settingsControllerProvider);
-    final language = settingsState.settings.language;
-
-    // Combine all pages into one text with proper pauses
     final rawText = content.map((page) {
       if (language == 'ar' && page.contentTextArabic != null) {
         return page.contentTextArabic!;
@@ -417,7 +495,6 @@ class _LessonDetailContentState extends ConsumerState<_LessonDetailContent> {
       return page.contentText;
     }).join('\n\n');
 
-    // Clean text for speech - removes Arabic script when reading in English
     final cleanedText = deviceTtsService.cleanTextForSpeech(rawText, language);
 
     if (cleanedText.isEmpty) {
@@ -429,7 +506,6 @@ class _LessonDetailContentState extends ConsumerState<_LessonDetailContent> {
       return;
     }
 
-    // Show confirmation and start reading
     if (context.mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
@@ -446,23 +522,14 @@ class _LessonDetailContentState extends ConsumerState<_LessonDetailContent> {
       );
     }
 
-    // Try Cloud TTS first (natural voices), fall back to device TTS
+    // Try Cloud TTS first, fall back to device TTS
     await cloudTtsService.ensureInitialized();
-    debugPrint('CloudTTS isConfigured: ${cloudTtsService.isConfigured}');
-
     if (cloudTtsService.isConfigured) {
-      debugPrint('CloudTTS: Using Google Cloud TTS with WaveNet voice');
       cloudTtsService.setLanguage(language);
       final success = await cloudTtsService.speak(cleanedText);
-      if (success) {
-        debugPrint('CloudTTS: Successfully playing audio');
-        return;
-      }
-      debugPrint('CloudTTS: Failed, falling back to device TTS');
+      if (success) return;
     }
 
-    // Fall back to device TTS
-    debugPrint('Using device TTS (fallback)');
     await deviceTtsService.setLanguage(language);
     await deviceTtsService.setSpeechRate(0.5);
     await deviceTtsService.setPitch(1.0);

@@ -316,9 +316,7 @@ class ProfilePage extends ConsumerWidget {
   }
 
   void _showLearningHistory(BuildContext context) {
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Learning history coming soon!')),
-    );
+    context.go(AppRoutes.chapters);
   }
 
   void _shareProgress(BuildContext context, ProgressState state) {

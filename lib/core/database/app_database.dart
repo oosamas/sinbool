@@ -10,6 +10,7 @@ import 'tables/lessons_table.dart';
 import 'tables/bookmarks_table.dart';
 import 'tables/progress_table.dart';
 import 'tables/settings_table.dart';
+import 'tables/audio_cache_table.dart';
 import 'tables/subscription_table.dart';
 
 part 'app_database.g.dart';
@@ -28,6 +29,7 @@ part 'app_database.g.dart';
     AppSettings,
     Subscriptions,
     PromoCodes,
+    AudioCache,
   ],
 )
 class AppDatabase extends _$AppDatabase {
@@ -36,7 +38,7 @@ class AppDatabase extends _$AppDatabase {
   AppDatabase.forTesting(super.e);
 
   @override
-  int get schemaVersion => 2;
+  int get schemaVersion => 4;
 
   @override
   MigrationStrategy get migration {
@@ -49,6 +51,15 @@ class AppDatabase extends _$AppDatabase {
         if (from < 2) {
           await m.createTable(subscriptions);
           await m.createTable(promoCodes);
+        }
+        // Migration from version 2 to 3: Add audio cache table
+        if (from < 3) {
+          await m.createTable(audioCache);
+        }
+        // Migration from version 3 to 4: Recreate audio cache with composite unique key
+        if (from == 3) {
+          await m.deleteTable('audio_cache');
+          await m.createTable(audioCache);
         }
       },
       beforeOpen: (details) async {

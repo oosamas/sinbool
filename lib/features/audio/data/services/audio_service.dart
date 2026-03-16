@@ -49,6 +49,17 @@ class AudioService {
     }
   }
 
+  /// Load audio from a local file path
+  Future<Duration?> loadFile(String filePath, {String? trackId}) async {
+    _currentTrackId = trackId;
+    try {
+      final duration = await _player.setFilePath(filePath);
+      return duration;
+    } catch (e) {
+      throw AudioException('Failed to load audio file: $e');
+    }
+  }
+
   /// Load audio from asset
   Future<Duration?> loadAsset(String assetPath, {String? trackId}) async {
     _currentTrackId = trackId;

@@ -140,5 +140,24 @@ final subscriptionDaoProvider = AutoDisposeProvider<SubscriptionDao>.internal(
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element
 typedef SubscriptionDaoRef = AutoDisposeProviderRef<SubscriptionDao>;
+String _$audioCacheDaoHash() => r'a20220d24375cd2b6facb79581904c157f5c72f0';
+
+/// Audio Cache DAO provider
+///
+/// Copied from [audioCacheDao].
+@ProviderFor(audioCacheDao)
+final audioCacheDaoProvider = AutoDisposeProvider<AudioCacheDao>.internal(
+  audioCacheDao,
+  name: r'audioCacheDaoProvider',
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$audioCacheDaoHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
+typedef AudioCacheDaoRef = AutoDisposeProviderRef<AudioCacheDao>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

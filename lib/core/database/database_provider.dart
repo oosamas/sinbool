@@ -6,6 +6,7 @@ import 'daos/chapters_dao.dart';
 import 'daos/lessons_dao.dart';
 import 'daos/progress_dao.dart';
 import 'daos/settings_dao.dart';
+import 'daos/audio_cache_dao.dart';
 import 'daos/subscription_dao.dart';
 
 part 'database_provider.g.dart';
@@ -59,4 +60,11 @@ SettingsDao settingsDao(SettingsDaoRef ref) {
 SubscriptionDao subscriptionDao(SubscriptionDaoRef ref) {
   final db = ref.watch(appDatabaseProvider);
   return SubscriptionDao(db);
+}
+
+/// Audio Cache DAO provider
+@riverpod
+AudioCacheDao audioCacheDao(AudioCacheDaoRef ref) {
+  final db = ref.watch(appDatabaseProvider);
+  return AudioCacheDao(db);
 }

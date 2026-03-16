@@ -19,9 +19,6 @@ class AppRoutes {
   static const String storyViewer = '/chapters/:chapterId/lessons/:lessonId/story';
   static const String quizScreen = '/chapters/:chapterId/lessons/:lessonId/quiz';
 
-  // Audio routes
-  static const String audioPlayer = '/audio/:contentId';
-
   // Settings & Parental
   static const String settings = '/settings';
   static const String parentalControls = '/settings/parental';
@@ -37,8 +34,6 @@ class AppRoutes {
   // Subscription
   static const String paywall = '/paywall';
   static const String promoCode = '/promo-code';
-  static const String subscriptionManagement = '/subscription';
-
   // Helper methods for parameterized routes
   static String chapterDetailPath(String chapterId) => '/chapters/$chapterId';
 
@@ -51,7 +46,6 @@ class AppRoutes {
   static String quizScreenPath(String chapterId, String lessonId) =>
       '/chapters/$chapterId/lessons/$lessonId/quiz';
 
-  static String audioPlayerPath(String contentId) => '/audio/$contentId';
 }
 
 /// Route names for named navigation
@@ -68,7 +62,6 @@ class RouteNames {
   static const String quizScreen = 'quizScreen';
   static const String bookmarks = 'bookmarks';
   static const String profile = 'profile';
-  static const String audioPlayer = 'audioPlayer';
   static const String settings = 'settings';
   static const String parentalControls = 'parentalControls';
   static const String parentalPin = 'parentalPin';
@@ -79,5 +72,4 @@ class RouteNames {
   static const String termsOfService = 'termsOfService';
   static const String paywall = 'paywall';
   static const String promoCode = 'promoCode';
-  static const String subscriptionManagement = 'subscriptionManagement';
 }

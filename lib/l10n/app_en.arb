@@ -108,7 +108,7 @@
   "promoCode": "Promo Code",
   "enterPromoCode": "Enter Your Promo Code",
   "promoCodeDescription": "If you have a promo code, enter it below to unlock premium access.",
-  "promoCodeHint": "e.g. SINBOOL2024",
+  "promoCodeHint": "Enter your code",
   "pleaseEnterPromoCode": "Please enter a promo code",
   "promoCodeTooShort": "Promo code is too short",
   "applyPromoCode": "Apply Code",

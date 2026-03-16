@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../../core/constants/app_colors.dart';
@@ -7,14 +8,19 @@ import '../../../../core/router/app_routes.dart';
 import '../../../../core/widgets/cards/chapter_card.dart';
 import '../../../../core/widgets/cards/story_card.dart';
 import '../../../../core/widgets/progress/progress_bar.dart';
+import '../../../chapters/data/repositories/chapter_repository.dart';
+import '../../../progress/presentation/controllers/progress_controller.dart';
 
 /// Home page - main landing screen
 /// From Issue #3 - Navigation & Routing
-class HomePage extends StatelessWidget {
+class HomePage extends ConsumerWidget {
   const HomePage({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final progressState = ref.watch(progressControllerProvider);
+    final chaptersAsync = ref.watch(chaptersProvider);
+
     return Scaffold(
       body: CustomScrollView(
         slivers: [
@@ -88,15 +94,18 @@ class HomePage extends StatelessWidget {
                             'Your Progress',
                             style: Theme.of(context).textTheme.titleMedium,
                           ),
-                          const LessonStats(
-                            completedLessons: 12,
-                            totalLessons: 40,
+                          LessonStats(
+                            completedLessons:
+                                progressState.userProgress.totalLessonsCompleted,
+                            totalLessons: progressState.totalLessons,
+                            streakDays:
+                                progressState.userProgress.currentStreak,
                           ),
                         ],
                       ),
                       const SizedBox(height: Spacing.sm),
-                      const AppProgressBar(
-                        progress: 0.3,
+                      AppProgressBar(
+                        progress: progressState.overallProgress,
                         height: 10,
                       ),
                     ],
@@ -126,34 +135,45 @@ class HomePage extends StatelessWidget {
             ),
           ),
 
-          // Continue learning cards
+          // Continue learning cards - show in-progress or first chapters
           SliverToBoxAdapter(
             child: SizedBox(
               height: 200,
-              child: ListView(
-                scrollDirection: Axis.horizontal,
-                padding: const EdgeInsets.symmetric(horizontal: Spacing.lg),
-                children: [
-                  StoryCardHorizontal(
-                    title: 'Prophet Yusuf (AS)',
-                    subtitle: 'Chapter 3 - The Dream',
-                    imageUrl: null,
-                    progress: 0.6,
-                    onTap: () => context.push(
-                      AppRoutes.chapterDetailPath('prophet-yusuf'),
-                    ),
-                  ),
-                  const SizedBox(width: Spacing.md),
-                  StoryCardHorizontal(
-                    title: 'Prophet Musa (AS)',
-                    subtitle: 'Chapter 1 - The Beginning',
-                    imageUrl: null,
-                    progress: 0.2,
-                    onTap: () => context.push(
-                      AppRoutes.chapterDetailPath('prophet-musa'),
-                    ),
-                  ),
-                ],
+              child: chaptersAsync.when(
+                loading: () => const Center(child: CircularProgressIndicator()),
+                error: (_, __) => const Center(child: Text('Could not load chapters')),
+                data: (chapters) {
+                  // Show in-progress chapters first, then first unstarted chapters
+                  final inProgress = chapters.where((c) => c.isStarted && !c.isCompleted).toList();
+                  final notStarted = chapters.where((c) => !c.isStarted).toList();
+                  final displayChapters = [
+                    ...inProgress,
+                    ...notStarted,
+                  ].take(5).toList();
+
+                  if (displayChapters.isEmpty) {
+                    return const Center(child: Text('All chapters completed!'));
+                  }
+
+                  return ListView.separated(
+                    scrollDirection: Axis.horizontal,
+                    padding: const EdgeInsets.symmetric(horizontal: Spacing.lg),
+                    itemCount: displayChapters.length,
+                    separatorBuilder: (_, __) => const SizedBox(width: Spacing.md),
+                    itemBuilder: (context, index) {
+                      final chapter = displayChapters[index];
+                      return StoryCardHorizontal(
+                        title: chapter.title,
+                        subtitle: '${chapter.completedCount}/${chapter.lessonCount} lessons',
+                        imageUrl: null,
+                        progress: chapter.progress,
+                        onTap: () => context.push(
+                          AppRoutes.chapterDetailPath(chapter.serverId),
+                        ),
+                      );
+                    },
+                  );
+                },
               ),
             ),
           ),
@@ -169,50 +189,47 @@ class HomePage extends StatelessWidget {
             ),
           ),
 
-          SliverPadding(
-            padding: const EdgeInsets.symmetric(horizontal: Spacing.lg),
-            sliver: SliverList(
-              delegate: SliverChildListDelegate([
-                ChapterCard(
-                  title: 'Stories of the Prophets',
-                  description:
-                      'Learn about the great Prophets and their teachings',
-                  icon: Icons.auto_stories,
-                  lessonCount: 25,
-                  completedCount: 8,
-                  color: AppColors.primary,
-                  onTap: () => context.push(
-                    AppRoutes.chapterDetailPath('prophets'),
-                  ),
-                ),
-                const SizedBox(height: Spacing.md),
-                ChapterCard(
-                  title: 'Tales from the Quran',
-                  description: 'Beautiful stories mentioned in the Holy Quran',
-                  icon: Icons.menu_book,
-                  lessonCount: 15,
-                  completedCount: 4,
-                  color: AppColors.secondary,
-                  onTap: () => context.push(
-                    AppRoutes.chapterDetailPath('quran-tales'),
-                  ),
-                ),
-                const SizedBox(height: Spacing.md),
-                ChapterCard(
-                  title: 'Islamic Values',
-                  description: 'Stories teaching honesty, kindness, and faith',
-                  icon: Icons.favorite,
-                  lessonCount: 10,
-                  completedCount: 0,
-                  color: AppColors.success,
-                  isPremium: true,
-                  onTap: () => context.push(
-                    AppRoutes.chapterDetailPath('islamic-values'),
-                  ),
-                ),
-                const SizedBox(height: Spacing.xl),
-              ]),
+          // Featured chapter cards from real data
+          chaptersAsync.when(
+            loading: () => const SliverToBoxAdapter(
+              child: Center(child: CircularProgressIndicator()),
             ),
+            error: (_, __) => const SliverToBoxAdapter(
+              child: Center(child: Text('Could not load chapters')),
+            ),
+            data: (chapters) {
+              // Show first 3 chapters as featured
+              final featured = chapters.take(3).toList();
+              return SliverPadding(
+                padding: const EdgeInsets.symmetric(horizontal: Spacing.lg),
+                sliver: SliverList(
+                  delegate: SliverChildBuilderDelegate(
+                    (context, index) {
+                      if (index >= featured.length) return null;
+                      final chapter = featured[index];
+                      return Padding(
+                        padding: EdgeInsets.only(
+                          bottom: index < featured.length - 1 ? Spacing.md : Spacing.xl,
+                        ),
+                        child: ChapterCard(
+                          title: chapter.title,
+                          description: chapter.description,
+                          icon: chapter.icon,
+                          lessonCount: chapter.lessonCount,
+                          completedCount: chapter.completedCount,
+                          color: chapter.color,
+                          isPremium: chapter.isPremium,
+                          onTap: () => context.push(
+                            AppRoutes.chapterDetailPath(chapter.serverId),
+                          ),
+                        ),
+                      );
+                    },
+                    childCount: featured.length,
+                  ),
+                ),
+              );
+            },
           ),
         ],
       ),
