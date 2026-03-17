@@ -66,3 +66,7 @@ android/*.jks
 # API keys and secrets
 **/secrets/
 **/credentials/
+
+# Build tools and generated assets
+tools/generated_audio/
+sinbool-website.zip

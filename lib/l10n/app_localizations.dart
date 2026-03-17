@@ -565,7 +565,7 @@ abstract class AppLocalizations {
   /// No description provided for @promoCodeHint.
   ///
   /// In en, this message translates to:
-  /// **'e.g. SINBOOL2024'**
+  /// **'Enter your code'**
   String get promoCodeHint;
 
   /// No description provided for @pleaseEnterPromoCode.

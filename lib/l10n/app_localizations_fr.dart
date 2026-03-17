@@ -250,7 +250,7 @@ class AppLocalizationsFr extends AppLocalizations {
       'If you have a promo code, enter it below to unlock premium access.';
 
   @override
-  String get promoCodeHint => 'e.g. SINBOOL2024';
+  String get promoCodeHint => 'Enter your code';
 
   @override
   String get pleaseEnterPromoCode => 'Please enter a promo code';
