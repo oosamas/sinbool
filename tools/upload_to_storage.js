@@ -6,6 +6,16 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 
+const CLIENT_ID = process.env.FIREBASE_CLIENT_ID;
+const CLIENT_SECRET = process.env.FIREBASE_CLIENT_SECRET;
+
+if (!CLIENT_ID || !CLIENT_SECRET) {
+  console.error('Missing required environment variables:');
+  console.error('  FIREBASE_CLIENT_ID');
+  console.error('  FIREBASE_CLIENT_SECRET');
+  process.exit(1);
+}
+
 const BUCKET = 'sinbool-6e4c3.firebasestorage.app';
 const language = process.argv[2] || 'en';
 const audioDir = path.join(__dirname, 'generated_audio', language);
@@ -21,8 +31,8 @@ function refreshAccessToken(refreshToken) {
     const params = new URLSearchParams();
     params.append('grant_type', 'refresh_token');
     params.append('refresh_token', refreshToken);
-    params.append('client_id', '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com');
-    params.append('client_secret', 'j9iVZfS8kkCEFUPaAeJV0sAi');
+    params.append('client_id', CLIENT_ID);
+    params.append('client_secret', CLIENT_SECRET);
     const data = params.toString();
 
     const req = https.request({
