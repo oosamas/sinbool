@@ -138,7 +138,7 @@ class HomePage extends ConsumerWidget {
           // Continue learning cards - show in-progress or first chapters
           SliverToBoxAdapter(
             child: SizedBox(
-              height: 200,
+              height: 220,
               child: chaptersAsync.when(
                 loading: () => const Center(child: CircularProgressIndicator()),
                 error: (_, __) => const Center(child: Text('Could not load chapters')),

@@ -166,43 +166,44 @@ class StoryCardHorizontal extends StatelessWidget {
               ),
 
               // Content
-              Padding(
-                padding: const EdgeInsets.all(Spacing.sm),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      title,
-                      style: Theme.of(context).textTheme.titleSmall,
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                    if (subtitle != null) ...[
-                      const SizedBox(height: Spacing.xs),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(Spacing.sm),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
                       Text(
-                        subtitle!,
-                        style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                              color: AppColors.textSecondary,
-                            ),
-                        maxLines: 1,
+                        title,
+                        style: Theme.of(context).textTheme.titleSmall,
+                        maxLines: 2,
                         overflow: TextOverflow.ellipsis,
                       ),
-                    ],
-                    if (progress != null) ...[
-                      const SizedBox(height: Spacing.sm),
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(2),
-                        child: LinearProgressIndicator(
-                          value: progress,
-                          minHeight: 4,
-                          backgroundColor: AppColors.surfaceVariant,
-                          valueColor: const AlwaysStoppedAnimation<Color>(
-                            AppColors.primary,
+                      if (subtitle != null) ...[
+                        const SizedBox(height: Spacing.xs),
+                        Text(
+                          subtitle!,
+                          style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                                color: AppColors.textSecondary,
+                              ),
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ],
+                      const Spacer(),
+                      if (progress != null)
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(2),
+                          child: LinearProgressIndicator(
+                            value: progress,
+                            minHeight: 4,
+                            backgroundColor: AppColors.surfaceVariant,
+                            valueColor: const AlwaysStoppedAnimation<Color>(
+                              AppColors.primary,
+                            ),
                           ),
                         ),
-                      ),
                     ],
-                  ],
+                  ),
                 ),
               ),
             ],
