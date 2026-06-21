@@ -55,6 +55,12 @@
 		<false/>
 	</dict>
 
+	<!-- Privacy: required for App Store. Bundled audio/TTS SDKs reference
+	     microphone APIs, so a purpose string is mandatory even though Sinbool
+	     never records (Apple ITMS-90683). -->
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Sinbool does not use the microphone.</string>
+
 	<!-- Localization -->
 	<key>CFBundleLocalizations</key>
 	<array>
