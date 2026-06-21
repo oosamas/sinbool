@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:crypto/crypto.dart';
-import 'package:flutter/foundation.dart';
+import 'package:flutter/foundation.dart' show kDebugMode, kReleaseMode;
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
 /// Security service for handling sensitive data and security features
@@ -40,10 +40,8 @@ class SecurityService {
   Future<void> storeSecure(String key, String value) async {
     try {
       await _secureStorage.write(key: key, value: value);
-    } catch (e) {
-      if (kDebugMode) {
-        debugPrint('SecurityService: Failed to store secure value: $e');
-      }
+    } catch (_) {
+      // Secure storage write failed - silently handle
     }
   }
 
@@ -51,10 +49,7 @@ class SecurityService {
   Future<String?> readSecure(String key) async {
     try {
       return await _secureStorage.read(key: key);
-    } catch (e) {
-      if (kDebugMode) {
-        debugPrint('SecurityService: Failed to read secure value: $e');
-      }
+    } catch (_) {
       return null;
     }
   }
@@ -63,10 +58,8 @@ class SecurityService {
   Future<void> deleteSecure(String key) async {
     try {
       await _secureStorage.delete(key: key);
-    } catch (e) {
-      if (kDebugMode) {
-        debugPrint('SecurityService: Failed to delete secure value: $e');
-      }
+    } catch (_) {
+      // Secure storage delete failed - silently handle
     }
   }
 
@@ -74,10 +67,8 @@ class SecurityService {
   Future<void> clearAllSecure() async {
     try {
       await _secureStorage.deleteAll();
-    } catch (e) {
-      if (kDebugMode) {
-        debugPrint('SecurityService: Failed to clear secure storage: $e');
-      }
+    } catch (_) {
+      // Secure storage clear failed - silently handle
     }
   }
 

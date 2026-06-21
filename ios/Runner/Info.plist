@@ -53,13 +53,7 @@
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
 		<false/>
-		<key>NSAllowsArbitraryLoadsForMedia</key>
-		<true/>
 	</dict>
-
-	<!-- Privacy descriptions (required for App Store) -->
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Sinbool does not access your microphone.</string>
 
 	<!-- Localization -->
 	<key>CFBundleLocalizations</key>

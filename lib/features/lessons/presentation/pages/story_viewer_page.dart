@@ -155,9 +155,8 @@ class _StoryViewerPageState extends ConsumerState<StoryViewerPage> {
     try {
       final repository = ref.read(lessonRepositoryProvider);
       await repository.updateLastPage(lessonId, index + 1);
-    } catch (e) {
+    } catch (_) {
       // Silently fail - page tracking is not critical
-      debugPrint('Failed to update page progress: $e');
     }
   }
 

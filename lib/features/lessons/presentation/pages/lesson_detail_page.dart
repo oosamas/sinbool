@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -414,7 +413,6 @@ class _LessonDetailContentState extends ConsumerState<_LessonDetailContent> {
 
     if (cachedPath != null) {
       // Play from local cache
-      debugPrint('Audio: Playing cached Gemini audio for ${lesson.serverId}');
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -451,7 +449,6 @@ class _LessonDetailContentState extends ConsumerState<_LessonDetailContent> {
     );
 
     if (downloadedPath != null) {
-      debugPrint('Audio: Playing freshly downloaded Gemini audio');
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -473,7 +470,6 @@ class _LessonDetailContentState extends ConsumerState<_LessonDetailContent> {
     }
 
     // --- Fallback: generate on-the-fly with Cloud TTS or device TTS ---
-    debugPrint('Audio: No pre-generated audio, falling back to TTS');
 
     // Get lesson content
     final repository = ref.read(lessonRepositoryProvider);

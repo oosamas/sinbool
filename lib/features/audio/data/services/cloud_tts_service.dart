@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:dio/dio.dart';
-import 'package:flutter/foundation.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
@@ -53,11 +52,7 @@ class CloudTtsService {
     _apiKey = await SecurityService.instance.readSecure(
       SecureStorageKeys.googleCloudApiKey,
     );
-    if (_apiKey != null) {
-      debugPrint('CloudTTS: API key loaded: ${_apiKey!.substring(0, 10)}...');
-    } else {
-      debugPrint('CloudTTS: No API key found in secure storage');
-    }
+    // API key loaded (or not found) from secure storage
   }
 
   /// Set and store the API key for Google Cloud TTS
@@ -67,7 +62,7 @@ class CloudTtsService {
       SecureStorageKeys.googleCloudApiKey,
       apiKey,
     );
-    debugPrint('CloudTTS: API key stored securely');
+    // API key stored securely
   }
 
   /// Set the language for TTS
@@ -140,15 +135,8 @@ class CloudTtsService {
   /// Speak text using Google Cloud TTS
   /// Returns true if successful
   Future<bool> speak(String text) async {
-    if (_apiKey == null || _apiKey!.isEmpty) {
-      debugPrint('CloudTTS: No API key configured, falling back to device TTS');
-      return false;
-    }
-
-    if (text.isEmpty) {
-      debugPrint('CloudTTS: Empty text, nothing to speak');
-      return false;
-    }
+    if (_apiKey == null || _apiKey!.isEmpty) return false;
+    if (text.isEmpty) return false;
 
     try {
       // Stop any current playback
@@ -173,9 +161,6 @@ class CloudTtsService {
         },
       };
 
-      debugPrint('CloudTTS: Requesting audio for ${text.length} chars');
-      debugPrint('CloudTTS: Using voice ${voiceConfig['name']}');
-
       // Make API request
       final response = await _dio.post(
         '$_apiEndpoint?key=$_apiKey',
@@ -194,7 +179,6 @@ class CloudTtsService {
         final tempFile = File('${tempDir.path}/tts_audio_${DateTime.now().millisecondsSinceEpoch}.mp3');
         await tempFile.writeAsBytes(audioBytes);
 
-        debugPrint('CloudTTS: Audio saved, playing...');
         await _audioPlayer.setFilePath(tempFile.path);
         await _audioPlayer.play();
 
@@ -207,19 +191,17 @@ class CloudTtsService {
               if (await tempFile.exists()) {
                 await tempFile.delete();
               }
-            } catch (e) {
-              debugPrint('CloudTTS: Failed to delete temp file: $e');
+            } catch (_) {
+              // Temp file cleanup failed - non-critical
             }
           }),
         );
 
         return true;
       } else {
-        debugPrint('CloudTTS: API error ${response.statusCode}');
         return false;
       }
-    } catch (e) {
-      debugPrint('CloudTTS: Error - $e');
+    } catch (_) {
       return false;
     }
   }

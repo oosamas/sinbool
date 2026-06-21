@@ -83,11 +83,6 @@ Future<void> _initializeCloudTts() async {
         SecureStorageKeys.googleCloudApiKey,
         apiKey,
       );
-      if (kDebugMode) {
-        debugPrint('CloudTTS: API key initialized from environment');
-      }
-    } else if (kDebugMode) {
-      debugPrint('CloudTTS: No API key provided. Use --dart-define=GOOGLE_CLOUD_API_KEY=your_key');
     }
   }
 }

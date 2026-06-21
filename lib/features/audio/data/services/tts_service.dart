@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:flutter/foundation.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
@@ -77,10 +77,9 @@ class TtsService {
       _stateController.add(_ttsState);
     });
 
-    _flutterTts.setErrorHandler((msg) {
+    _flutterTts.setErrorHandler((_) {
       _ttsState = TtsState.stopped;
       _stateController.add(_ttsState);
-      debugPrint('TTS Error: $msg');
     });
 
     // Progress handler for word highlighting (if needed)
@@ -171,14 +170,9 @@ class TtsService {
       if (selectedVoice != null) {
         await _flutterTts.setVoice({'name': selectedVoice, 'locale': 'en-US'});
         _currentVoice = selectedVoice;
-        debugPrint('TTS: Selected premium voice: $selectedVoice');
-      } else {
-        // Fall back to default en-US voice
-        debugPrint('TTS: Using default voice (no premium voice found)');
-        debugPrint('TTS: Available voices: ${voices.take(10)}');
       }
-    } catch (e) {
-      debugPrint('TTS: Error selecting voice: $e');
+    } catch (_) {
+      // Voice selection failed - use default
     }
   }
 
@@ -260,10 +254,7 @@ class TtsService {
         return true;
       }).toList();
 
-      if (localeVoices.isEmpty) {
-        debugPrint('TTS: No suitable voices found for locale $locale');
-        return;
-      }
+      if (localeVoices.isEmpty) return;
 
       // Find best voice - prefer enhanced/premium, then preferred names
       dynamic bestVoice;
@@ -275,7 +266,6 @@ class TtsService {
         if (name.contains('enhanced') || name.contains('premium') ||
             id.contains('enhanced') || id.contains('premium')) {
           bestVoice = voice;
-          debugPrint('TTS: Found enhanced voice: $name');
           break;
         }
       }
@@ -310,10 +300,9 @@ class TtsService {
       if (voiceName.isNotEmpty) {
         await _flutterTts.setVoice({'name': voiceName, 'locale': locale});
         _currentVoice = voiceName;
-        debugPrint('TTS: Selected voice "$voiceName" for $locale');
       }
-    } catch (e) {
-      debugPrint('TTS: Error selecting voice for $locale: $e');
+    } catch (_) {
+      // Voice selection failed - use default
     }
   }
 

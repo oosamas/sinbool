@@ -1,7 +1,6 @@
 import 'dart:convert';
 
 import 'package:drift/drift.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
@@ -20,7 +19,7 @@ class ContentLoaderService {
   Future<bool> _needsContentReload() async {
     final chapters = await _db.select(_db.chapters).get();
     if (chapters.isEmpty) {
-      debugPrint('ContentLoader: No chapters found - need reload');
+      // No chapters found - need reload
       return true;
     }
 
@@ -30,7 +29,7 @@ class ContentLoaderService {
             ..where((t) => t.chapterId.equals(chapter.id)))
           .get();
       if (lessons.length < chapter.lessonCount) {
-        debugPrint('ContentLoader: Chapter ${chapter.serverId} has ${lessons.length} lessons, expected ${chapter.lessonCount}');
+        // Mismatch detected
         return true; // Mismatch - need reload
       }
 
@@ -40,13 +39,13 @@ class ContentLoaderService {
               ..where((t) => t.lessonId.equals(lesson.id)))
             .get();
         if (content.isEmpty) {
-          debugPrint('ContentLoader: Lesson ${lesson.serverId} (id=${lesson.id}) has no content - need reload');
+          // Lesson has no content - need reload
           return true;
         }
       }
     }
 
-    debugPrint('ContentLoader: All content present, no reload needed');
+    // All content present, no reload needed
     return false;
   }
 
@@ -72,7 +71,7 @@ class ContentLoaderService {
     // Check if we need to force reload due to stale data
     final needsReload = await _needsContentReload();
     if (needsReload) {
-      debugPrint('Content reload needed - clearing and reloading all content');
+      // Content reload needed - clearing and reloading all content
       await forceReloadAllContent();
       return;
     }
@@ -183,19 +182,10 @@ class ContentLoaderService {
       final jsonString = await rootBundle.loadString(assetPath);
       final data = jsonDecode(jsonString) as Map<String, dynamic>;
       await _loadChapterContent(data);
-    } on FormatException catch (e) {
-      // JSON parsing error - this is a real error that should be visible
-      debugPrint('ContentLoader: JSON parse error in $assetPath: $e');
+    } on FormatException {
       rethrow;
-    } catch (e) {
-      // Asset might not exist yet or other errors
-      // Check if it's an asset not found error (contains 'Unable to load asset')
-      final errorMsg = e.toString();
-      if (errorMsg.contains('Unable to load asset')) {
-        debugPrint('ContentLoader: Asset not found $assetPath');
-      } else {
-        debugPrint('ContentLoader: Error loading $assetPath: $e');
-      }
+    } catch (_) {
+      // Asset might not exist yet - silently skip
     }
   }
 
@@ -325,9 +315,9 @@ class ContentLoaderService {
               ),
             );
       }
-      debugPrint('ContentLoader: Loaded ${contentList.length} pages for lesson $serverId (id=$lessonId)');
+      // Content loaded successfully
     } else {
-      debugPrint('ContentLoader: WARNING - No content found in JSON for lesson $serverId');
+      // No content found in JSON for this lesson
     }
 
     // Load quiz questions

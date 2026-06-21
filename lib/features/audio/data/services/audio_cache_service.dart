@@ -1,7 +1,6 @@
 import 'dart:io';
 
 import 'package:firebase_storage/firebase_storage.dart';
-import 'package:flutter/foundation.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart' as p;
 import 'package:riverpod_annotation/riverpod_annotation.dart';
@@ -89,8 +88,6 @@ class AudioCacheService {
       final localPath = await _localPath(lessonServerId, language);
       final localFile = File(localPath);
 
-      debugPrint('AudioCache: Downloading $storagePath');
-
       final ref = _storage.ref(storagePath);
       final metadata = await ref.getMetadata();
       final totalBytes = metadata.size ?? 0;
@@ -119,11 +116,8 @@ class AudioCacheService {
         fileSizeBytes: fileSize,
       );
 
-      debugPrint(
-          'AudioCache: Downloaded ${(fileSize / 1024).toStringAsFixed(1)} KB');
       return localPath;
-    } catch (e) {
-      debugPrint('AudioCache: Download failed - $e');
+    } catch (_) {
       return null;
     }
   }
@@ -137,10 +131,7 @@ class AudioCacheService {
   }) async {
     // Check local cache first
     final cachedPath = await getCachedAudioPath(lessonServerId, language);
-    if (cachedPath != null) {
-      debugPrint('AudioCache: Using cached audio for $lessonServerId');
-      return cachedPath;
-    }
+    if (cachedPath != null) return cachedPath;
 
     // Download from Firebase Storage
     return downloadAndCache(lessonServerId, language, onProgress: onProgress);
